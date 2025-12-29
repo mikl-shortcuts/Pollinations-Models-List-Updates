@@ -1,4 +1,4 @@
-name: Pollinations Models Monitor (Unified)
+name: Pollinations Models Monitor
 
 on:
   schedule:
@@ -9,34 +9,19 @@ permissions:
   contents: write
 
 env:
-  # Telegram Config
-  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-  TELEGRAM_TO_TEXT: ${{ secrets.TELEGRAM_TO }}
-  TELEGRAM_TO_IMAGE: ${{ secrets.TELEGRAM_TO }}
-  TELEGRAM_TO_BETA: ${{ secrets.TELEGRAM_TO }}
-  TELEGRAM_TO_ERROR: ${{ secrets.TELEGRAM_TO_ERROR }}
-  
-  # Discord Webhooks (Mapped based on your JS code logic)
-  # Legacy Text -> DISCORD_WEBHOOK_URL
-  # Legacy Image -> DISCORD_WEBHOOK_TEST
-  # Pollens (Beta) -> DS_WB
-  DISCORD_WEBHOOK_LEGACY_TEXT: ${{ secrets.DISCORD_WEBHOOK_URL }}
-  DISCORD_WEBHOOK_LEGACY_IMAGE: ${{ secrets.DISCORD_WEBHOOK_URL }}
-  DISCORD_WEBHOOK_BETA: ${{ secrets.DS_WB }}
+  TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+  TG_CHAT: ${{ secrets.TELEGRAM_TO }}
+  DS_LEGACY: ${{ secrets.DISCORD_WEBHOOK_URL }}
+  DS_POLLENS: ${{ secrets.DS_WB }}
 
 jobs:
-  check-and-update-all:
+  check-and-update:
     runs-on: ubuntu-latest
     steps:
-      - name: Get current date
-        id: date
-        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-
       - name: Checkout saves branch
         uses: actions/checkout@v4
         with:
           ref: saves
-          # We fetch all necessary JSON files at once
           sparse-checkout: |
             pollinations_text_models.json
             pollinations_image_models.json
@@ -45,51 +30,29 @@ jobs:
           sparse-checkout-cone-mode: false
         continue-on-error: true
 
-      # ========================================================
-      # 1. LEGACY TEXT MODELS
-      # ========================================================
-      - name: [Legacy Text] Fetch and Compare
-        id: legacy_text
+      - name: Check Legacy Text Models
         run: |
-          # 1. Fetch
           set +e
           for i in {1..3}; do
             curl -sS --fail -A "github-actions-bot" "https://text.pollinations.ai/models" -o /tmp/text_models.json && break
-            echo "Attempt $i failed"
             sleep 5
           done
           
           if [ ! -f /tmp/text_models.json ]; then
-             echo "::error::Legacy Text API Down"
-             # Send Error Notification
-             curl -s -X POST "https://api.telegram.org/bot${{ env.TELEGRAM_TOKEN }}/sendMessage" \
-               -d chat_id="${{ env.TELEGRAM_TO_ERROR }}" \
-               -d text="‼️<i>Maybe</i> <b>Pollinations AI Text API is down</b>‼️ Failed to fetch." \
+             curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
+               -d chat_id="${{ env.TG_CHAT }}" \
+               -d text="‼️<i>Maybe</i> <b>Pollinations AI Text API is down</b>‼️" \
                -d parse_mode="HTML"
-             echo "status=failure" >> $GITHUB_OUTPUT
              exit 0
           fi
           set -e
 
-          # 2. Python Processing (Compare + Generate Discord JSON)
           python3 - <<'PY'
           import json, sys
           from pathlib import Path
 
-          # --- Helper for Discord Monospace (Ported from JS) ---
           def to_monospace(s):
-              mono_map = {
-                  'a': '𝚊', 'b': '𝚋', 'c': '𝚌', 'd': '𝚍', 'e': '𝚎', 'f': '𝚏', 'g': '𝚐',
-                  'h': '𝚑', 'i': '𝚒', 'j': '𝚓', 'k': '𝚔', 'l': '𝚕', 'm': '𝚖', 'n': '𝚗',
-                  'o': '𝚘', 'p': '𝚙', 'q': '𝚚', 'r': '𝚛', 's': '𝚜', 't': '𝚝', 'u': '𝚞',
-                  'v': '𝚟', 'w': '𝚠', 'x': '𝚡', 'y': '𝚢', 'z': '𝚣',
-                  'A': '𝙰', 'B': '𝙱', 'C': '𝙲', 'D': '𝙳', 'E': '𝙴', 'F': '𝙵', 'G': '𝙶',
-                  'H': '𝙷', 'I': '𝙸', 'J': '𝙹', 'K': '𝙺', 'L': '𝙻', 'M': '𝙼', 'N': '𝙽',
-                  'O': '𝙾', 'P': '𝙿', 'Q': '𝚀', 'R': '𝚁', 'S': '𝚂', 'T': '𝚃', 'U': '𝚄',
-                  'V': '𝚅', 'W': '𝚆', 'X': '𝚇', 'Y': '𝚈', 'Z': '𝚉',
-                  '0': '𝟶', '1': '𝟷', '2': '𝟸', '3': '𝟹', '4': '𝟺', '5': '𝟻',
-                  '6': '𝟼', '7': '𝟽', '8': '𝟾', '9': '𝟿'
-              }
+              mono_map = {'a': '𝚊', 'b': '𝚋', 'c': '𝚌', 'd': '𝚍', 'e': '𝚎', 'f': '𝚏', 'g': '𝚐', 'h': '𝚑', 'i': '𝚒', 'j': '𝚓', 'k': '𝚔', 'l': '𝚕', 'm': '𝚖', 'n': '𝚗', 'o': '𝚘', 'p': '𝚙', 'q': '𝚚', 'r': '𝚛', 's': '𝚜', 't': '𝚝', 'u': '𝚞', 'v': '𝚟', 'w': '𝚠', 'x': '𝚡', 'y': '𝚢', 'z': '𝚣', 'A': '𝙰', 'B': '𝙱', 'C': '𝙲', 'D': '𝙳', 'E': '𝙴', 'F': '𝙵', 'G': '𝙶', 'H': '𝙷', 'I': '𝙸', 'J': '𝙹', 'K': '𝙺', 'L': '𝙻', 'M': '𝙼', 'N': '𝙽', 'O': '𝙾', 'P': '𝙿', 'Q': '𝚀', 'R': '𝚁', 'S': '𝚂', 'T': '𝚃', 'U': '𝚄', 'V': '𝚅', 'W': '𝚆', 'X': '𝚇', 'Y': '𝚈', 'Z': '𝚉', '0': '𝟶', '1': '𝟷', '2': '𝟸', '3': '𝟹', '4': '𝟺', '5': '𝟻', '6': '𝟼', '7': '𝟽', '8': '𝟾', '9': '𝟿'}
               return "".join(mono_map.get(c, c) for c in s)
 
           def normalize_model(m):
@@ -145,7 +108,6 @@ jobs:
           if has_changes:
               prev_path.write_text(curr_txt, encoding="utf-8")
               
-              # --- Generate Telegram Message ---
               lines = []
               if added:
                   lines.append("\n<b>+ Added models:</b>")
@@ -162,7 +124,6 @@ jobs:
               full_msg = "<b>📜 Pollinations AI (Legacy) Text Models Update:</b>\n" + "\n".join(lines)
               Path("/tmp/msg_lt.txt").write_text(full_msg, encoding="utf-8")
 
-              # --- Generate Discord JSON Payload ---
               embeds = []
               if added:
                   desc = []
@@ -192,11 +153,7 @@ jobs:
               Path("/tmp/discord_lt.json").write_text(json.dumps(discord_payload), encoding="utf-8")
           PY
 
-      # ========================================================
-      # 2. LEGACY IMAGE MODELS
-      # ========================================================
-      - name: [Legacy Image] Fetch and Compare
-        id: legacy_image
+      - name: Check Legacy Image Models
         run: |
           set +e
           for i in {1..3}; do
@@ -204,8 +161,8 @@ jobs:
             sleep 5
           done
           if [ ! -f /tmp/image_models.json ]; then
-             curl -s -X POST "https://api.telegram.org/bot${{ env.TELEGRAM_TOKEN }}/sendMessage" \
-               -d chat_id="${{ env.TELEGRAM_TO_ERROR }}" \
+             curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
+               -d chat_id="${{ env.TG_CHAT }}" \
                -d text="‼️<i>Maybe</i> <b>Pollinations Image Source is down</b>‼️" -d parse_mode="HTML"
              exit 0
           fi
@@ -241,7 +198,6 @@ jobs:
           if has_changes:
               prev_path.write_text(json.dumps(sorted(curr_set), indent=2) + "\n", encoding="utf-8")
               
-              # TG
               lines = []
               if added:
                   lines.append("\n<b>+ Added models:</b>")
@@ -252,7 +208,6 @@ jobs:
               full_msg = "<b>📠 Pollinations AI (Legacy) Image Models Update:</b>\n" + "\n".join(lines)
               Path("/tmp/msg_li.txt").write_text(full_msg, encoding="utf-8")
 
-              # Discord
               embeds = []
               if added:
                   desc = [f"- {to_monospace(n)}" for n in added]
@@ -270,11 +225,7 @@ jobs:
               Path("/tmp/discord_li.json").write_text(json.dumps(discord_payload), encoding="utf-8")
           PY
 
-      # ========================================================
-      # 3. POLLENS (BETA) TEXT MODELS
-      # ========================================================
-      - name: [Pollens Text] Fetch and Compare
-        id: pollens_text
+      - name: Check Pollens Text Models
         run: |
           set +e
           for i in {1..3}; do
@@ -282,8 +233,8 @@ jobs:
             sleep 5
           done
           if [ ! -f /tmp/p_text.json ]; then
-             curl -s -X POST "https://api.telegram.org/bot${{ env.TELEGRAM_TOKEN }}/sendMessage" \
-               -d chat_id="${{ env.TELEGRAM_TO_ERROR }}" \
+             curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
+               -d chat_id="${{ env.TG_CHAT }}" \
                -d text="‼️<i>Maybe</i> <b>Pollens Text API is down</b>‼️" -d parse_mode="HTML"
              exit 0
           fi
@@ -345,7 +296,6 @@ jobs:
           if has_changes:
               prev_path.write_text(curr_txt, encoding="utf-8")
               
-              # TG (Splitting logic preserved)
               blocks = []
               for n in added: blocks.append(("added", f"  - <code>{n}</code> ({curr_map[n].get('description','?')})"))
               for n in removed: blocks.append(("removed", f"  - <code>{n}</code> ({prev_map[n].get('description','?')})"))
@@ -374,7 +324,6 @@ jobs:
                   Path(f"/tmp/msg_pt_{i}.txt").write_text(f"{header}\n{p}", encoding="utf-8")
               Path("/tmp/pt_count.txt").write_text(str(len(parts)), encoding="utf-8")
 
-              # Discord
               embeds = []
               if added:
                   desc = [f"- {to_monospace(n)} {curr_map[n].get('description','')}" for n in added]
@@ -398,11 +347,7 @@ jobs:
               Path("/tmp/discord_pt.json").write_text(json.dumps(discord_payload), encoding="utf-8")
           PY
 
-      # ========================================================
-      # 4. POLLENS (BETA) IMAGE MODELS
-      # ========================================================
-      - name: [Pollens Image] Fetch and Compare
-        id: pollens_image
+      - name: Check Pollens Image Models
         run: |
           set +e
           for i in {1..3}; do
@@ -410,8 +355,8 @@ jobs:
             sleep 5
           done
           if [ ! -f /tmp/p_image.json ]; then
-             curl -s -X POST "https://api.telegram.org/bot${{ env.TELEGRAM_TOKEN }}/sendMessage" \
-               -d chat_id="${{ env.TELEGRAM_TO_ERROR }}" \
+             curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
+               -d chat_id="${{ env.TG_CHAT }}" \
                -d text="‼️<i>Maybe</i> <b>Pollens Image API is down</b>‼️" -d parse_mode="HTML"
              exit 0
           fi
@@ -473,7 +418,6 @@ jobs:
           if has_changes:
               prev_path.write_text(curr_txt, encoding="utf-8")
               
-              # TG
               blocks = []
               for n in added: blocks.append(("added", f"  - <code>{n}</code> ({curr_map[n].get('description','?')})"))
               for n in removed: blocks.append(("removed", f"  - <code>{n}</code> ({prev_map[n].get('description','?')})"))
@@ -502,7 +446,6 @@ jobs:
                   Path(f"/tmp/msg_pi_{i}.txt").write_text(f"{header}\n{p}", encoding="utf-8")
               Path("/tmp/pi_count.txt").write_text(str(len(parts)), encoding="utf-8")
 
-              # Discord
               embeds = []
               if added:
                   desc = [f"- {to_monospace(n)} {curr_map[n].get('description','')}" for n in added]
@@ -526,83 +469,56 @@ jobs:
               Path("/tmp/discord_pi.json").write_text(json.dumps(discord_payload), encoding="utf-8")
           PY
 
-      # ========================================================
-      # SEND NOTIFICATIONS (If Changed)
-      # ========================================================
       - name: Send Notifications
         run: |
-          # 1. LEGACY TEXT
           if [ "$(cat /tmp/changed_lt.flag 2>/dev/null)" = "true" ]; then
-             echo "Sending Legacy Text updates..."
-             # Telegram
              MSG=$(cat /tmp/msg_lt.txt)
-             curl -s -X POST "https://api.telegram.org/bot${{ env.TELEGRAM_TOKEN }}/sendMessage" \
-               -d chat_id="${{ env.TELEGRAM_TO_TEXT }}" \
+             curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
+               -d chat_id="${{ env.TG_CHAT }}" \
                -d text="$MSG" -d parse_mode="HTML" -d disable_web_page_preview=true
-             # Discord
-             curl -H "Content-Type: application/json" -d @/tmp/discord_lt.json "${{ env.DISCORD_WEBHOOK_LEGACY_TEXT }}"
+             curl -H "Content-Type: application/json" -d @/tmp/discord_lt.json "${{ env.DS_LEGACY }}"
           fi
 
-          # 2. LEGACY IMAGE
           if [ "$(cat /tmp/changed_li.flag 2>/dev/null)" = "true" ]; then
-             echo "Sending Legacy Image updates..."
-             # Telegram
              MSG=$(cat /tmp/msg_li.txt)
-             curl -s -X POST "https://api.telegram.org/bot${{ env.TELEGRAM_TOKEN }}/sendMessage" \
-               -d chat_id="${{ env.TELEGRAM_TO_IMAGE }}" \
+             curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
+               -d chat_id="${{ env.TG_CHAT }}" \
                -d text="$MSG" -d parse_mode="HTML" -d disable_web_page_preview=true
-             # Discord
-             curl -H "Content-Type: application/json" -d @/tmp/discord_li.json "${{ env.DISCORD_WEBHOOK_LEGACY_IMAGE }}"
+             curl -H "Content-Type: application/json" -d @/tmp/discord_li.json "${{ env.DS_LEGACY }}"
           fi
 
-          # 3. POLLENS TEXT
           if [ "$(cat /tmp/changed_pt.flag 2>/dev/null)" = "true" ]; then
-             echo "Sending Pollens Text updates..."
-             # Telegram (Multipart)
              PARTS=$(cat /tmp/pt_count.txt)
              for i in $(seq 0 $((PARTS - 1))); do
                MSG=$(cat /tmp/msg_pt_${i}.txt)
-               curl -s -X POST "https://api.telegram.org/bot${{ env.TELEGRAM_TOKEN }}/sendMessage" \
+               curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
                  -H "Content-Type: application/json" \
-                 -d "$(jq -n --arg chat "${{ env.TELEGRAM_TO_BETA }}" --arg text "$MSG" '{chat_id: $chat, text: $text, parse_mode: "HTML", disable_web_page_preview: true}')"
+                 -d "$(jq -n --arg chat "${{ env.TG_CHAT }}" --arg text "$MSG" '{chat_id: $chat, text: $text, parse_mode: "HTML", disable_web_page_preview: true}')"
                sleep 1
              done
-             # Discord
-             curl -H "Content-Type: application/json" -d @/tmp/discord_pt.json "${{ env.DISCORD_WEBHOOK_BETA }}"
+             curl -H "Content-Type: application/json" -d @/tmp/discord_pt.json "${{ env.DS_POLLENS }}"
           fi
 
-          # 4. POLLENS IMAGE
           if [ "$(cat /tmp/changed_pi.flag 2>/dev/null)" = "true" ]; then
-             echo "Sending Pollens Image updates..."
-             # Telegram (Multipart)
              PARTS=$(cat /tmp/pi_count.txt)
              for i in $(seq 0 $((PARTS - 1))); do
                MSG=$(cat /tmp/msg_pi_${i}.txt)
-               curl -s -X POST "https://api.telegram.org/bot${{ env.TELEGRAM_TOKEN }}/sendMessage" \
+               curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
                  -H "Content-Type: application/json" \
-                 -d "$(jq -n --arg chat "${{ env.TELEGRAM_TO_BETA }}" --arg text "$MSG" '{chat_id: $chat, text: $text, parse_mode: "HTML", disable_web_page_preview: true}')"
+                 -d "$(jq -n --arg chat "${{ env.TG_CHAT }}" --arg text "$MSG" '{chat_id: $chat, text: $text, parse_mode: "HTML", disable_web_page_preview: true}')"
                sleep 1
              done
-             # Discord
-             curl -H "Content-Type: application/json" -d @/tmp/discord_pi.json "${{ env.DISCORD_WEBHOOK_BETA }}"
+             curl -H "Content-Type: application/json" -d @/tmp/discord_pi.json "${{ env.DS_POLLENS }}"
           fi
 
-      # ========================================================
-      # COMMIT & PUSH (SINGLE COMMIT)
-      # ========================================================
       - name: Commit and Push
         run: |
-          # Check if git has any changes
           if git diff --quiet pollinations_text_models.json pollinations_image_models.json pollens_text_models.json pollens_image_models.json; then
-             echo "No file changes to commit."
              exit 0
           fi
           
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # Add all files that might have changed
           git add pollinations_text_models.json pollinations_image_models.json pollens_text_models.json pollens_image_models.json
-          
           git commit -m "Update models snapshot [$(date +'%Y-%m-%d %H:%M')]"
           git push origin saves
