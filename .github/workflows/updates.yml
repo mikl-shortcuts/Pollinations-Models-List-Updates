@@ -23,8 +23,8 @@ jobs:
         with:
           ref: saves
           sparse-checkout: |
-            pollens_text_models.json
-            pollens_image_models.json
+            text_models.json
+            image_models.json
           sparse-checkout-cone-mode: false
         continue-on-error: true
 
@@ -63,7 +63,7 @@ jobs:
           normalized = [dict(m) for m in models]
           normalized.sort(key=lambda x: str(x.get("name","")))
           curr_txt = json.dumps(normalized, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-          prev_path = Path("pollens_text_models.json")
+          prev_path = Path("text_models.json")
 
           if not prev_path.exists():
               prev_path.write_text(curr_txt, encoding="utf-8")
@@ -185,7 +185,7 @@ jobs:
           normalized = [dict(m) for m in models]
           normalized.sort(key=lambda x: str(x.get("name","")))
           curr_txt = json.dumps(normalized, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-          prev_path = Path("pollens_image_models.json")
+          prev_path = Path("image_models.json")
 
           if not prev_path.exists():
               prev_path.write_text(curr_txt, encoding="utf-8")
@@ -302,12 +302,12 @@ jobs:
 
       - name: Commit and Push
         run: |
-          if git diff --quiet pollens_text_models.json pollens_image_models.json; then
+          if git diff --quiet text_models.json image_models.json; then
              exit 0
           fi
           
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pollens_text_models.json pollens_image_models.json
+          git add text_models.json image_models.json
           git commit -m "Update Pollinations models [$(date +'%Y-%m-%d %H:%M')]"
           git push origin saves
