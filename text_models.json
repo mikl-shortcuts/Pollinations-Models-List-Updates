@@ -1,1 +1,484 @@
-[]
+[
+  {
+    "aliases": [],
+    "description": "ChickyTutor AI Language Tutor - (chickytutor.com)",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": true,
+    "name": "chickytutor",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 4e-06,
+      "currency": "pollen",
+      "promptTextTokens": 8.000000000000001e-07
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "claude-sonnet-4.5",
+      "claude-sonnet"
+    ],
+    "description": "Anthropic Claude Sonnet 4.5 - Most Capable & Balanced",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "claude",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 1.5e-05,
+      "currency": "pollen",
+      "promptTextTokens": 3e-06
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "claude-haiku-4.5",
+      "claude-haiku"
+    ],
+    "description": "Anthropic Claude Haiku 4.5 - Fast & Intelligent",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "claude-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 5e-06,
+      "currency": "pollen",
+      "promptTextTokens": 1e-06
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "claude-opus-4.5",
+      "claude-opus"
+    ],
+    "description": "Anthropic Claude Opus 4.5 - Most Intelligent Model",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "claude-large",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 2.5e-05,
+      "currency": "pollen",
+      "promptTextTokens": 5e-06
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "deepseek-v3",
+      "deepseek-reasoning"
+    ],
+    "description": "DeepSeek V3.2 - Efficient Reasoning & Agentic AI",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "deepseek",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 1.68e-06,
+      "currency": "pollen",
+      "promptTextTokens": 5.8e-07
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "gemini-3-flash",
+      "gemini-3-flash-preview"
+    ],
+    "description": "Google Gemini 3 Flash - Pro-Grade Reasoning at Flash Speed",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "is_specialized": false,
+    "name": "gemini",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 3e-06,
+      "currency": "pollen",
+      "promptAudioTokens": 5e-07,
+      "promptCachedTokens": 5.0000000000000004e-08,
+      "promptTextTokens": 5e-07
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "gemini-2.5-flash-lite"
+    ],
+    "description": "Google Gemini 2.5 Flash Lite - Ultra Fast & Cost-Effective",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "gemini-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 4.0000000000000003e-07,
+      "currency": "pollen",
+      "promptAudioTokens": 1.0000000000000001e-07,
+      "promptCachedTokens": 1e-08,
+      "promptTextTokens": 1.0000000000000001e-07
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "gemini-3-pro",
+      "gemini-3",
+      "gemini-3-pro-preview"
+    ],
+    "description": "Google Gemini 3 Pro - Most Intelligent Model with 1M Context (Preview)",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "is_specialized": false,
+    "name": "gemini-large",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 1.2e-05,
+      "currency": "pollen",
+      "promptCachedTokens": 2.0000000000000002e-07,
+      "promptTextTokens": 2e-06
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "gemini-3-flash-search"
+    ],
+    "description": "Google Gemini 3 Flash - With Google Search",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "gemini-search",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 3e-06,
+      "currency": "pollen",
+      "promptAudioTokens": 5e-07,
+      "promptCachedTokens": 5.0000000000000004e-08,
+      "promptTextTokens": 5e-07
+    },
+    "tools": false
+  },
+  {
+    "aliases": [
+      "grok-fast",
+      "grok-4",
+      "grok-4-fast"
+    ],
+    "description": "xAI Grok 4 Fast - High Speed & Real-Time",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "grok",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 5e-07,
+      "currency": "pollen",
+      "promptCachedTokens": 2.0000000000000002e-07,
+      "promptTextTokens": 2.0000000000000002e-07
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "kimi-k2",
+      "kimi-thinking"
+    ],
+    "description": "Moonshot Kimi K2 Thinking - Deep Reasoning & Tool Orchestration",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "kimi-k2-thinking",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 2.5e-06,
+      "currency": "pollen",
+      "promptTextTokens": 6e-07
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [],
+    "description": "MIDIjourney - AI Music Composition Assistant",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": true,
+    "name": "midijourney",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 8.8e-06,
+      "currency": "pollen",
+      "promptCachedTokens": 5.5e-07,
+      "promptTextTokens": 2.2e-06
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "mistral-small",
+      "mistral-small-3.2",
+      "mistral-small-3.2-24b-instruct-2506"
+    ],
+    "description": "Mistral Small 3.2 24B - Efficient & Cost-Effective",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "mistral",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 3.5e-07,
+      "currency": "pollen",
+      "promptTextTokens": 1.5e-07
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "amazon-nova-micro",
+      "nova"
+    ],
+    "description": "Amazon Nova Micro - Ultra Fast & Ultra Cheap",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "nova-micro",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 1.4e-07,
+      "currency": "pollen",
+      "promptTextTokens": 3.5e-08
+    },
+    "tools": true
+  },
+  {
+    "aliases": [],
+    "description": "OpenAI GPT-5 Mini - Fast & Balanced",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "openai",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 6e-07,
+      "currency": "pollen",
+      "promptCachedTokens": 4e-08,
+      "promptTextTokens": 1.5e-07
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "gpt-4o-mini-audio-preview",
+      "gpt-4o-mini-audio-preview-2024-12-17"
+    ],
+    "description": "OpenAI GPT-4o Mini Audio - Voice Input & Output",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "is_specialized": false,
+    "name": "openai-audio",
+    "output_modalities": [
+      "audio",
+      "text"
+    ],
+    "pricing": {
+      "completionAudioTokens": 2.2e-05,
+      "completionTextTokens": 6.6e-07,
+      "currency": "pollen",
+      "promptAudioTokens": 1.1e-05,
+      "promptTextTokens": 1.65e-07
+    },
+    "tools": true,
+    "voices": [
+      "alloy",
+      "echo",
+      "fable",
+      "onyx",
+      "nova",
+      "shimmer",
+      "coral",
+      "verse",
+      "ballad",
+      "ash",
+      "sage",
+      "amuch",
+      "dan"
+    ]
+  },
+  {
+    "aliases": [
+      "gpt-5-nano",
+      "gpt-5-nano-2025-08-07"
+    ],
+    "description": "OpenAI GPT-5 Nano - Ultra Fast & Affordable",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "openai-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 4.4e-07,
+      "currency": "pollen",
+      "promptCachedTokens": 1e-08,
+      "promptTextTokens": 6e-08
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "gpt-5.2",
+      "openai-reasoning",
+      "gpt-5.2-reasoning"
+    ],
+    "description": "OpenAI GPT-5.2 - Most Powerful & Intelligent",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "openai-large",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 1.4e-05,
+      "currency": "pollen",
+      "promptCachedTokens": 1.75e-07,
+      "promptTextTokens": 1.75e-06
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "sonar"
+    ],
+    "description": "Perplexity Sonar - Fast & Affordable with Web Search",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "perplexity-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 1e-06,
+      "currency": "pollen",
+      "promptTextTokens": 1e-06
+    },
+    "tools": false
+  },
+  {
+    "aliases": [
+      "sonar-reasoning"
+    ],
+    "description": "Perplexity Sonar Reasoning - Advanced Reasoning with Web Search",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "perplexity-reasoning",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 5e-06,
+      "currency": "pollen",
+      "promptTextTokens": 1e-06
+    },
+    "reasoning": true,
+    "tools": false
+  },
+  {
+    "aliases": [
+      "qwen2.5-coder-32b-instruct"
+    ],
+    "description": "Qwen 2.5 Coder 32B - Specialized for Code Generation",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "qwen-coder",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 9.000000000000001e-07,
+      "currency": "pollen",
+      "promptTextTokens": 9.000000000000001e-07
+    },
+    "tools": true
+  }
+]
