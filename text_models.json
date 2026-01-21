@@ -184,6 +184,31 @@
   },
   {
     "aliases": [
+      "gemini-2.5-pro"
+    ],
+    "description": "Google Gemini 2.5 Pro - Stable Reasoning Model with 1M Context",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "is_specialized": false,
+    "name": "gemini-legacy",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": 1e-05,
+      "currency": "pollen",
+      "promptCachedTokens": 3.1e-07,
+      "promptTextTokens": 1.25e-06
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
       "gemini-3-flash-search"
     ],
     "description": "Google Gemini 3 Flash - With Google Search",
