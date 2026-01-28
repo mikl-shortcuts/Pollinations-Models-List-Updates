@@ -279,13 +279,16 @@
   },
   {
     "aliases": [
-      "kimi-k2",
+      "kimi-k2.5",
+      "kimi-k2p5",
       "kimi-reasoning",
-      "kimi-k2-thinking"
+      "kimi-large"
     ],
-    "description": "Moonshot Kimi K2 Thinking - Deep Reasoning & Tool Orchestration",
+    "context_window": 256000,
+    "description": "Moonshot Kimi K2.5 - Flagship Agentic Model with Vision & Multi-Agent",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "is_specialized": false,
     "name": "kimi",
@@ -293,8 +296,9 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": 2.5e-06,
+      "completionTextTokens": 3e-06,
       "currency": "pollen",
+      "promptCachedTokens": 1.0000000000000001e-07,
       "promptTextTokens": 6e-07
     },
     "reasoning": true,
