@@ -184,31 +184,6 @@
   },
   {
     "aliases": [
-      "gemini-2.5-pro"
-    ],
-    "description": "Google Gemini 2.5 Pro - Stable Reasoning Model with 1M Context",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "is_specialized": false,
-    "name": "gemini-legacy",
-    "output_modalities": [
-      "text"
-    ],
-    "pricing": {
-      "completionTextTokens": 1e-05,
-      "currency": "pollen",
-      "promptCachedTokens": 3.1e-07,
-      "promptTextTokens": 1.25e-06
-    },
-    "reasoning": true,
-    "tools": true
-  },
-  {
-    "aliases": [
       "gemini-3-flash-search"
     ],
     "description": "Google Gemini 3 Flash - With Google Search",
@@ -279,16 +254,13 @@
   },
   {
     "aliases": [
-      "kimi-k2.5",
-      "kimi-k2p5",
+      "kimi-k2",
       "kimi-reasoning",
-      "kimi-large"
+      "kimi-k2-thinking"
     ],
-    "context_window": 256000,
-    "description": "Moonshot Kimi K2.5 - Flagship Agentic Model with Vision & Multi-Agent",
+    "description": "Moonshot Kimi K2 Thinking - Deep Reasoning & Tool Orchestration",
     "input_modalities": [
-      "text",
-      "image"
+      "text"
     ],
     "is_specialized": false,
     "name": "kimi",
@@ -296,9 +268,8 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": 3e-06,
+      "completionTextTokens": 2.5e-06,
       "currency": "pollen",
-      "promptCachedTokens": 1.0000000000000001e-07,
       "promptTextTokens": 6e-07
     },
     "reasoning": true,
