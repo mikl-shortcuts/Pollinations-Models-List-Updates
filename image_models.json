@@ -77,6 +77,25 @@
     }
   },
   {
+    "aliases": [
+      "flux-klein-9b",
+      "klein-9b"
+    ],
+    "description": "FLUX.2 Klein 9B - Higher quality image generation & editing on Modal",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "klein-large",
+    "output_modalities": [
+      "image"
+    ],
+    "pricing": {
+      "completionImageTokens": 0.012,
+      "currency": "pollen"
+    }
+  },
+  {
     "aliases": [],
     "description": "FLUX.1 Kontext - In-context editing & generation",
     "input_modalities": [
@@ -223,6 +242,26 @@
     ],
     "pricing": {
       "completionVideoSeconds": 0.15,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "wan2.6",
+      "wan-i2v"
+    ],
+    "description": "Wan 2.6 - Alibaba image-to-video with audio (2-15s, up to 1080P)",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "wan",
+    "output_modalities": [
+      "video"
+    ],
+    "pricing": {
+      "completionAudioSeconds": 0.025,
+      "completionVideoSeconds": 0.025,
       "currency": "pollen"
     }
   },
