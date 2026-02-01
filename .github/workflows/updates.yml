@@ -131,16 +131,16 @@ jobs:
 
               embeds = []
               if added:
-                  desc = [f"- {to_monospace(n)} {curr_map[n].get('description','')}" for n in added]
+                  desc = [f"- {to_monospace(n)} ({curr_map[n].get('description','?')})" for n in added]
                   embeds.append({"title": "Added Models:", "description": "\n".join(desc), "color": 0x86B953})
               if modified:
                   desc = []
                   for n in sorted(modified):
-                      desc.append(f"- {to_monospace(n)}:")
+                      desc.append(f"- {to_monospace(n)} ({curr_map[n].get('description','?')}):")
                       for k,ch in modified[n].items(): desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
                   embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
               if removed:
-                  desc = [f"- {to_monospace(n)} {prev_map[n].get('description','')}" for n in removed]
+                  desc = [f"- {to_monospace(n)} ({prev_map[n].get('description','?')})" for n in removed]
                   embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
 
               discord_payload = {
@@ -253,16 +253,16 @@ jobs:
 
               embeds = []
               if added:
-                  desc = [f"- {to_monospace(n)} {curr_map[n].get('description','')}" for n in added]
+                  desc = [f"- {to_monospace(n)} ({curr_map[n].get('description','?')})" for n in added]
                   embeds.append({"title": "Added Models:", "description": "\n".join(desc), "color": 0x86B953})
               if modified:
                   desc = []
                   for n in sorted(modified):
-                      desc.append(f"- {to_monospace(n)}:")
+                      desc.append(f"- {to_monospace(n)} ({curr_map[n].get('description','?')}):")
                       for k,ch in modified[n].items(): desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
                   embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
               if removed:
-                  desc = [f"- {to_monospace(n)} {prev_map[n].get('description','')}" for n in removed]
+                  desc = [f"- {to_monospace(n)} ({prev_map[n].get('description','?')})" for n in removed]
                   embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
 
               discord_payload = {
