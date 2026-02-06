@@ -61,6 +61,40 @@
   },
   {
     "aliases": [
+      "grok-imagine-video"
+    ],
+    "description": "Grok Imagine Video (api.airforce) - xAI's video generation model",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "grok-video",
+    "output_modalities": [
+      "video"
+    ],
+    "pricing": {
+      "completionVideoSeconds": 0.005,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "imagen-3"
+    ],
+    "description": "Imagen 3 (api.airforce) - Google's image generation model",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "imagen",
+    "output_modalities": [
+      "image"
+    ],
+    "pricing": {
+      "completionImageTokens": 0.005,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
       "flux-klein"
     ],
     "description": "FLUX.2 Klein 4B - Fast image generation & editing on Modal",
@@ -107,6 +141,7 @@
     "output_modalities": [
       "image"
     ],
+    "paid_only": true,
     "pricing": {
       "completionImageTokens": 0.04,
       "currency": "pollen"
@@ -123,6 +158,7 @@
     "output_modalities": [
       "image"
     ],
+    "paid_only": true,
     "pricing": {
       "completionImageTokens": 3e-05,
       "currency": "pollen",
@@ -176,6 +212,7 @@
     "output_modalities": [
       "video"
     ],
+    "paid_only": true,
     "pricing": {
       "completionVideoTokens": 1e-06,
       "currency": "pollen"
@@ -192,6 +229,7 @@
     "output_modalities": [
       "image"
     ],
+    "paid_only": true,
     "pricing": {
       "completionImageTokens": 0.03,
       "currency": "pollen"
