@@ -16,6 +16,24 @@
   },
   {
     "aliases": [
+      "flux2",
+      "flux-2"
+    ],
+    "description": "FLUX.2 Dev (api.airforce) - Black Forest Labs' latest image model",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "flux-2-dev",
+    "output_modalities": [
+      "image"
+    ],
+    "pricing": {
+      "completionImageTokens": 0.005,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
       "gpt-image",
       "gpt-image-1-mini"
     ],
@@ -57,6 +75,40 @@
       "promptCachedTokens": 2e-06,
       "promptImageTokens": 8e-06,
       "promptTextTokens": 8e-06
+    }
+  },
+  {
+    "aliases": [
+      "grok-imagine-video"
+    ],
+    "description": "Grok Imagine Video (api.airforce) - xAI's video generation model",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "grok-video",
+    "output_modalities": [
+      "video"
+    ],
+    "pricing": {
+      "completionVideoSeconds": 0.005,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "imagen"
+    ],
+    "description": "Imagen 4 (api.airforce) - Google's latest image generation model",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "imagen-4",
+    "output_modalities": [
+      "image"
+    ],
+    "pricing": {
+      "completionImageTokens": 0.005,
+      "currency": "pollen"
     }
   },
   {
