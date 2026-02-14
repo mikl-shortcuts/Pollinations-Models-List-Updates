@@ -297,7 +297,7 @@
       "wan2.6",
       "wan-i2v"
     ],
-    "description": "Wan 2.6 (api.airforce) - Alibaba text/image-to-video with audio (2-15s, up to 1080P)",
+    "description": "Wan 2.6 - Alibaba text/image-to-video with audio (2-15s, up to 1080P). Primary via api.airforce, fallback via DashScope",
     "input_modalities": [
       "text",
       "image"
@@ -307,7 +307,8 @@
       "video"
     ],
     "pricing": {
-      "completionVideoSeconds": 0.01,
+      "completionAudioSeconds": 0.0125,
+      "completionVideoSeconds": 0.0125,
       "currency": "pollen"
     }
   },
