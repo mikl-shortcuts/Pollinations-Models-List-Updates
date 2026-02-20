@@ -61,41 +61,6 @@
   },
   {
     "aliases": [
-      "grok-imagine-video"
-    ],
-    "description": "Grok Video (api.airforce) - xAI video gen",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "grok-video",
-    "output_modalities": [
-      "video"
-    ],
-    "pricing": {
-      "completionVideoSeconds": 0.0025,
-      "currency": "pollen"
-    }
-  },
-  {
-    "aliases": [
-      "imagen"
-    ],
-    "description": "Imagen 4 (api.airforce) - Google's latest image gen",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "imagen-4",
-    "output_modalities": [
-      "image"
-    ],
-    "pricing": {
-      "completionImageTokens": 0.0025,
-      "currency": "pollen"
-    }
-  },
-  {
-    "aliases": [
       "flux-klein"
     ],
     "description": "FLUX.2 Klein 4B - Fast image generation & editing on Modal",
@@ -298,7 +263,7 @@
       "wan2.6",
       "wan-i2v"
     ],
-    "description": "Wan 2.6 - Alibaba text/image-to-video with audio (2-15s, up to 1080P). Primary via api.airforce, fallback via DashScope",
+    "description": "Wan 2.6 - Alibaba text/image-to-video with audio (2-15s, up to 1080P) via DashScope",
     "input_modalities": [
       "text",
       "image"
@@ -307,9 +272,10 @@
     "output_modalities": [
       "video"
     ],
+    "paid_only": true,
     "pricing": {
-      "completionAudioSeconds": 0.0125,
-      "completionVideoSeconds": 0.0125,
+      "completionAudioSeconds": 0.05,
+      "completionVideoSeconds": 0.05,
       "currency": "pollen"
     }
   },
