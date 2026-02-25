@@ -60,6 +60,56 @@
     }
   },
   {
+    "aliases": [],
+    "description": "Grok Imagine (api.airforce) - xAI image gen",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "grok-imagine",
+    "output_modalities": [
+      "image"
+    ],
+    "pricing": {
+      "completionImageTokens": 0.0025,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "grok-imagine-video"
+    ],
+    "description": "Grok Video (api.airforce) - xAI video gen",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "grok-video",
+    "output_modalities": [
+      "video"
+    ],
+    "pricing": {
+      "completionVideoSeconds": 0.0025,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "imagen"
+    ],
+    "description": "Imagen 4 (api.airforce) - Google's latest image gen",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "imagen-4",
+    "output_modalities": [
+      "image"
+    ],
+    "pricing": {
+      "completionImageTokens": 0.0025,
+      "currency": "pollen"
+    }
+  },
+  {
     "aliases": [
       "flux-klein"
     ],
