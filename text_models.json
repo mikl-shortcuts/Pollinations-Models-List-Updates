@@ -4,6 +4,7 @@
       "claude-sonnet-4.6",
       "claude-sonnet"
     ],
+    "context_length": 200000,
     "description": "Anthropic Claude Sonnet 4.6 - Most Capable & Balanced",
     "input_modalities": [
       "text",
@@ -28,6 +29,7 @@
       "claude-haiku-4.5",
       "claude-haiku"
     ],
+    "context_length": 200000,
     "description": "Anthropic Claude Haiku 4.5 - Fast & Intelligent",
     "input_modalities": [
       "text",
@@ -51,6 +53,7 @@
       "claude-opus-4.6",
       "claude-opus"
     ],
+    "context_length": 200000,
     "description": "Anthropic Claude Opus 4.6 - Most Intelligent Model",
     "input_modalities": [
       "text",
@@ -75,6 +78,7 @@
       "deepseek-v3",
       "deepseek-reasoning"
     ],
+    "context_length": 163840,
     "description": "DeepSeek V3.2 - Efficient Reasoning & Agentic AI",
     "input_modalities": [
       "text"
@@ -98,6 +102,7 @@
       "gemini-3-flash",
       "gemini-3-flash-preview"
     ],
+    "context_length": 1048576,
     "description": "Google Gemini 3 Flash - Pro-Grade Reasoning at Flash Speed",
     "input_modalities": [
       "text",
@@ -124,6 +129,7 @@
     "aliases": [
       "gemini-2.5-flash-lite"
     ],
+    "context_length": 1048576,
     "description": "Google Gemini 2.5 Flash Lite - Ultra Fast & Cost-Effective",
     "input_modalities": [
       "text",
@@ -145,11 +151,10 @@
   },
   {
     "aliases": [
-      "gemini-3-pro",
-      "gemini-3",
-      "gemini-3-pro-preview"
+      "gemini-3.1-pro"
     ],
-    "description": "Google Gemini 3 Pro - Most Intelligent Model with 1M Context (Preview)",
+    "context_length": 1048576,
+    "description": "Google Gemini 3.1 Pro - Most Intelligent Model with 1M Context (Preview)",
     "input_modalities": [
       "text",
       "image",
@@ -176,6 +181,7 @@
       "gemini-2.5-flash-search",
       "gemini-2.5-flash-lite-search"
     ],
+    "context_length": 1048576,
     "description": "Google Gemini 2.5 Flash Lite - With Google Search",
     "input_modalities": [
       "text",
@@ -201,7 +207,7 @@
       "glm-4.7",
       "glm-4p7"
     ],
-    "context_window": 198000,
+    "context_length": 198000,
     "description": "Z.ai GLM-5 - 744B MoE, Long Context Reasoning & Agentic Workflows",
     "input_modalities": [
       "text"
@@ -226,6 +232,7 @@
       "grok-4",
       "grok-4-fast"
     ],
+    "context_length": 128000,
     "description": "xAI Grok 4 Fast - High Speed & Real-Time",
     "input_modalities": [
       "text"
@@ -251,7 +258,7 @@
       "kimi-reasoning",
       "kimi-large"
     ],
-    "context_window": 256000,
+    "context_length": 256000,
     "description": "Moonshot Kimi K2.5 - Flagship Agentic Model with Vision & Multi-Agent",
     "input_modalities": [
       "text",
@@ -292,11 +299,11 @@
   },
   {
     "aliases": [
-      "minimax-m2.1",
-      "minimax-m2p1"
+      "minimax-m2.5",
+      "minimax-m2p5"
     ],
-    "context_window": 200000,
-    "description": "MiniMax M2.1 - Multi-Language & Agent Workflows",
+    "context_length": 200000,
+    "description": "MiniMax M2.5 - Coding, Agentic & Multi-Language",
     "input_modalities": [
       "text"
     ],
@@ -308,7 +315,7 @@
     "pricing": {
       "completionTextTokens": 1.2e-06,
       "currency": "pollen",
-      "promptCachedTokens": 1.5e-07,
+      "promptCachedTokens": 3e-08,
       "promptTextTokens": 3e-07
     },
     "reasoning": true,
@@ -320,6 +327,7 @@
       "mistral-small-3.2",
       "mistral-small-3.2-24b-instruct-2506"
     ],
+    "context_length": 131072,
     "description": "Mistral Small 3.2 24B - Efficient & Cost-Effective",
     "input_modalities": [
       "text"
@@ -362,6 +370,7 @@
       "nova",
       "nova-micro"
     ],
+    "context_length": 128000,
     "description": "Amazon Nova Micro - Ultra Fast & Ultra Cheap",
     "input_modalities": [
       "text"
@@ -380,6 +389,7 @@
   },
   {
     "aliases": [],
+    "context_length": 400000,
     "description": "OpenAI GPT-5 Mini - Fast & Balanced",
     "input_modalities": [
       "text",
@@ -403,6 +413,7 @@
       "gpt-4o-mini-audio-preview",
       "gpt-4o-mini-audio-preview-2024-12-17"
     ],
+    "context_length": 128000,
     "description": "OpenAI GPT-4o Mini Audio - Voice Input & Output",
     "input_modalities": [
       "text",
@@ -444,6 +455,7 @@
       "gpt-5-nano",
       "gpt-5-nano-2025-08-07"
     ],
+    "context_length": 400000,
     "description": "OpenAI GPT-5 Nano - Ultra Fast & Affordable",
     "input_modalities": [
       "text",
@@ -468,6 +480,7 @@
       "openai-reasoning",
       "gpt-5.2-reasoning"
     ],
+    "context_length": 400000,
     "description": "OpenAI GPT-5.2 - Most Powerful & Intelligent",
     "input_modalities": [
       "text",
@@ -491,6 +504,7 @@
     "aliases": [
       "sonar"
     ],
+    "context_length": 127072,
     "description": "Perplexity Sonar - Fast & Affordable with Web Search",
     "input_modalities": [
       "text"
@@ -512,6 +526,7 @@
       "sonar-reasoning",
       "sonar-reasoning-pro"
     ],
+    "context_length": 128000,
     "description": "Perplexity Sonar Reasoning - Advanced Reasoning with Web Search",
     "input_modalities": [
       "text"
@@ -572,6 +587,7 @@
       "qwen3-coder",
       "qwen3-coder-30b-a3b-instruct"
     ],
+    "context_length": 262144,
     "description": "Qwen3 Coder 30B - Specialized for Code Generation",
     "input_modalities": [
       "text"

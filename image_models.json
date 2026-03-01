@@ -203,6 +203,27 @@
     }
   },
   {
+    "aliases": [
+      "nanobanana2"
+    ],
+    "description": "NanoBanana 2 - Gemini 3.1 Flash Image",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "nanobanana-2",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": 6e-05,
+      "currency": "pollen",
+      "promptImageTokens": 5e-07,
+      "promptTextTokens": 5e-07
+    }
+  },
+  {
     "aliases": [],
     "description": "NanoBanana Pro - Gemini 3 Pro Image (4K, Thinking)",
     "input_modalities": [
@@ -256,35 +277,18 @@
   },
   {
     "aliases": [],
-    "description": "Seedream 4.0 - ByteDance ARK (better quality)",
+    "description": "Seedream 5.0 Lite - ByteDance ARK (web search, reasoning)",
     "input_modalities": [
       "text",
       "image"
     ],
-    "name": "seedream",
+    "name": "seedream5",
     "output_modalities": [
       "image"
     ],
     "paid_only": true,
     "pricing": {
-      "completionImageTokens": 0.03,
-      "currency": "pollen"
-    }
-  },
-  {
-    "aliases": [],
-    "description": "Seedream 4.5 Pro - ByteDance ARK (4K, Multi-Image)",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "seedream-pro",
-    "output_modalities": [
-      "image"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionImageTokens": 0.04,
+      "completionImageTokens": 0.035,
       "currency": "pollen"
     }
   },
