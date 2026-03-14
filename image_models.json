@@ -275,6 +275,64 @@
     }
   },
   {
+    "aliases": [
+      "pruna-image",
+      "pruna"
+    ],
+    "description": "Pruna p-image - Fast text-to-image generation",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "p-image",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": 0.005,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "pruna-edit",
+      "pruna-image-edit"
+    ],
+    "description": "Pruna p-image-edit - Image-to-image editing",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "p-image-edit",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": 0.01,
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "pruna-video"
+    ],
+    "description": "Pruna p-video - Text/image-to-video generation (up to 1080p)",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "p-video",
+    "output_modalities": [
+      "video"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": 0.024,
+      "currency": "pollen"
+    }
+  },
+  {
     "aliases": [],
     "description": "Seedance Lite - BytePlus video generation (better quality)",
     "input_modalities": [
