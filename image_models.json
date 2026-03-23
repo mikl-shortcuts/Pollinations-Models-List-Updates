@@ -54,9 +54,64 @@
     "pricing": {
       "completionImageTokens": "0.000032",
       "currency": "pollen",
-      "promptCachedTokens": "0.000002",
+      "promptCachedTokens": "0.00000125",
       "promptImageTokens": "0.000008",
-      "promptTextTokens": "0.000008"
+      "promptTextTokens": "0.000005"
+    }
+  },
+  {
+    "aliases": [
+      "grok-imagine-image"
+    ],
+    "description": "Grok Imagine - xAI official image generation",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "grok-imagine",
+    "output_modalities": [
+      "image"
+    ],
+    "pricing": {
+      "completionImageTokens": "0.02",
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "grok-aurora",
+      "aurora",
+      "grok-imagine-image-pro"
+    ],
+    "description": "Grok Imagine Pro - xAI official pro image generation (Aurora)",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "grok-imagine-pro",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.07",
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "grok-imagine-video"
+    ],
+    "description": "Grok Video Pro - xAI official video generation (720p, 1-15s)",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "grok-video-pro",
+    "output_modalities": [
+      "video"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.05",
+      "currency": "pollen"
     }
   },
   {
@@ -91,6 +146,25 @@
     "paid_only": true,
     "pricing": {
       "completionImageTokens": "0.04",
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "ltx2",
+      "ltxvideo",
+      "ltx-video"
+    ],
+    "description": "LTX-2 - Fast text-to-video generation on Vast.ai",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "ltx-2",
+    "output_modalities": [
+      "video"
+    ],
+    "pricing": {
+      "completionVideoSeconds": "0.01",
       "currency": "pollen"
     }
   },
@@ -155,6 +229,43 @@
   },
   {
     "aliases": [
+      "amazon-nova-canvas"
+    ],
+    "description": "Amazon Nova Canvas - Bedrock Image Generation & Editing",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "nova-canvas",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.04",
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "amazon-nova-reel"
+    ],
+    "description": "Amazon Nova Reel - Bedrock Video Generation (6-30s, 720p)",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "nova-reel",
+    "output_modalities": [
+      "video"
+    ],
+    "pricing": {
+      "completionVideoSeconds": "0.08",
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
       "pruna-image",
       "pruna"
     ],
@@ -208,6 +319,27 @@
     "paid_only": true,
     "pricing": {
       "completionVideoSeconds": "0.024",
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "qwen-image-plus",
+      "qwen-image-2512",
+      "qwen-image-edit",
+      "qwen-image-edit-plus"
+    ],
+    "description": "Qwen Image Plus - Alibaba text-to-image and image editing via DashScope",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "qwen-image",
+    "output_modalities": [
+      "image"
+    ],
+    "pricing": {
+      "completionImageTokens": "0.03",
       "currency": "pollen"
     }
   },
@@ -300,6 +432,26 @@
     "pricing": {
       "completionAudioSeconds": "0.05",
       "completionVideoSeconds": "0.05",
+      "currency": "pollen"
+    }
+  },
+  {
+    "aliases": [
+      "wan2.2",
+      "wan-2.2"
+    ],
+    "description": "Wan 2.2 - Fast & cheap text/image-to-video (5s, 480P) via DashScope",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "wan-fast",
+    "output_modalities": [
+      "video"
+    ],
+    "pricing": {
+      "completionAudioSeconds": "0.01",
+      "completionVideoSeconds": "0.01",
       "currency": "pollen"
     }
   },

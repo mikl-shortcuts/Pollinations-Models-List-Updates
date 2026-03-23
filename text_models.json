@@ -229,11 +229,10 @@
   {
     "aliases": [
       "grok-fast",
-      "grok-4",
-      "grok-4-fast"
+      "grok-4-1-fast"
     ],
-    "context_length": 128000,
-    "description": "xAI Grok 4 Fast - High Speed & Real-Time",
+    "context_length": 2000000,
+    "description": "xAI Grok 4.1 Fast - High Speed & Real-Time",
     "input_modalities": [
       "text"
     ],
@@ -246,9 +245,33 @@
     "pricing": {
       "completionTextTokens": "0.0000005",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000002",
+      "promptCachedTokens": "0.00000005",
       "promptTextTokens": "0.0000002"
     },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "grok-4-1-fast-reasoning"
+    ],
+    "context_length": 2000000,
+    "description": "xAI Grok 4.1 Fast Reasoning - Chain-of-Thought Reasoning",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "grok-reasoning",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000005",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000005",
+      "promptTextTokens": "0.0000002"
+    },
+    "reasoning": true,
     "tools": true
   },
   {
@@ -346,8 +369,32 @@
   },
   {
     "aliases": [
+      "nova-2-lite",
+      "amazon-nova-2-lite",
+      "nova-2"
+    ],
+    "context_length": 1048576,
+    "description": "Amazon Nova 2 Lite - 1M Context with Reasoning",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "nova",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000025",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000003"
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
       "amazon-nova-micro",
-      "nova",
       "nova-micro"
     ],
     "context_length": 128000,
@@ -570,6 +617,51 @@
   },
   {
     "aliases": [
+      "qwen3-coder-next"
+    ],
+    "context_length": 262144,
+    "description": "Qwen3 Coder Next - Advanced Code Generation via DashScope",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "qwen-coder-large",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000015",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000003"
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "qwen3.5",
+      "qwen3.5-plus"
+    ],
+    "context_length": 1048576,
+    "description": "Qwen3.5 Plus - Alibaba Frontier MoE Model with Reasoning via DashScope",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "qwen-large",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000024",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000004"
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
       "qwen3guard-gen-8b"
     ],
     "description": "Qwen3Guard 8B - Content Safety & Moderation (OVH)",
@@ -586,5 +678,30 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000001"
     }
+  },
+  {
+    "aliases": [
+      "qwen3-vl",
+      "qwen3-vl-plus",
+      "qwen-vl"
+    ],
+    "context_length": 131072,
+    "description": "Qwen3 VL Plus - Vision-Language Understanding with Reasoning via DashScope",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "qwen-vision",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000016",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000002"
+    },
+    "reasoning": true,
+    "tools": true
   }
 ]
