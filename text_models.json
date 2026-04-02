@@ -457,11 +457,13 @@
   },
   {
     "aliases": [
+      "gpt-audio-mini",
+      "gpt-audio-mini-2025-12-15",
       "gpt-4o-mini-audio-preview",
       "gpt-4o-mini-audio-preview-2024-12-17"
     ],
     "context_length": 128000,
-    "description": "OpenAI GPT-4o Mini Audio - Voice Input & Output",
+    "description": "OpenAI GPT Audio Mini - Voice Input & Output",
     "input_modalities": [
       "text",
       "image",
@@ -474,11 +476,54 @@
       "text"
     ],
     "pricing": {
-      "completionAudioTokens": "0.000022",
-      "completionTextTokens": "0.00000066",
+      "completionAudioTokens": "0.00002",
+      "completionTextTokens": "0.0000024",
       "currency": "pollen",
-      "promptAudioTokens": "0.000011",
-      "promptTextTokens": "0.000000165"
+      "promptAudioTokens": "0.00001",
+      "promptTextTokens": "0.0000006"
+    },
+    "tools": true,
+    "voices": [
+      "alloy",
+      "echo",
+      "fable",
+      "onyx",
+      "nova",
+      "shimmer",
+      "coral",
+      "verse",
+      "ballad",
+      "ash",
+      "sage",
+      "amuch",
+      "dan"
+    ]
+  },
+  {
+    "aliases": [
+      "gpt-audio",
+      "gpt-audio-2025-12-15"
+    ],
+    "context_length": 128000,
+    "description": "OpenAI GPT Audio - Premium Voice Input & Output",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "is_specialized": false,
+    "name": "openai-audio-large",
+    "output_modalities": [
+      "audio",
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionAudioTokens": "0.00008",
+      "completionTextTokens": "0.00001",
+      "currency": "pollen",
+      "promptAudioTokens": "0.00004",
+      "promptTextTokens": "0.0000025"
     },
     "tools": true,
     "voices": [
