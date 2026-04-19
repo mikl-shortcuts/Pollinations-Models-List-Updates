@@ -211,7 +211,7 @@
       "gemini-2.5-flash-lite-search"
     ],
     "context_length": 1048576,
-    "description": "Google Gemini 2.5 Flash Lite - With Google Search",
+    "description": "Google Gemini 2.5 Flash Lite Search - Web-grounded answers via Google Search",
     "input_modalities": [
       "text",
       "image"
@@ -222,11 +222,11 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000008",
+      "completionTextTokens": "0.0000012",
       "currency": "pollen",
-      "promptAudioTokens": "0.0000002",
-      "promptCachedTokens": "0.00000002",
-      "promptTextTokens": "0.0000002"
+      "promptAudioTokens": "0.0000003",
+      "promptCachedTokens": "0.00000003",
+      "promptTextTokens": "0.0000003"
     },
     "tools": false
   },
@@ -379,11 +379,13 @@
   },
   {
     "aliases": [
+      "minimax-m2.7",
+      "minimax-m2p7",
       "minimax-m2.5",
       "minimax-m2p5"
     ],
     "context_length": 200000,
-    "description": "MiniMax M2.5 - Coding, Agentic & Multi-Language",
+    "description": "MiniMax M2.7 - Coding, Agentic & Multi-Language",
     "input_modalities": [
       "text"
     ],
@@ -395,7 +397,7 @@
     "pricing": {
       "completionTextTokens": "0.0000012",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000003",
+      "promptCachedTokens": "0.00000006",
       "promptTextTokens": "0.0000003"
     },
     "reasoning": true,
@@ -760,9 +762,9 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000015",
+      "completionTextTokens": "0.00000225",
       "currency": "pollen",
-      "promptTextTokens": "0.0000003"
+      "promptTextTokens": "0.00000045"
     },
     "tools": true
   },
@@ -814,11 +816,13 @@
   {
     "aliases": [
       "qwen3-vl",
+      "qwen3-vl-30b-a3b-thinking",
+      "qwen3-vl-thinking",
       "qwen3-vl-plus",
       "qwen-vl"
     ],
-    "context_length": 131072,
-    "description": "Qwen3 VL Plus - Vision-Language Understanding with Reasoning via DashScope",
+    "context_length": 262144,
+    "description": "Qwen3 VL 30B A3B Thinking - Vision-Language Reasoning (Fireworks)",
     "input_modalities": [
       "text",
       "image"
@@ -829,9 +833,10 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000016",
+      "completionTextTokens": "0.0000006",
       "currency": "pollen",
-      "promptTextTokens": "0.0000002"
+      "promptCachedTokens": "0.00000008",
+      "promptTextTokens": "0.00000015"
     },
     "reasoning": true,
     "tools": true
