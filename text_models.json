@@ -51,7 +51,8 @@
   {
     "aliases": [
       "claude-opus-4.6",
-      "claude-opus"
+      "claude-opus",
+      "claude-opus-4.5"
     ],
     "context_length": 200000,
     "description": "Claude Opus 4.6 - Most Intelligent Model",
@@ -61,6 +62,28 @@
     ],
     "is_specialized": false,
     "name": "claude-large",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000275",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000055",
+      "promptTextTokens": "0.0000055"
+    },
+    "tools": true
+  },
+  {
+    "aliases": [],
+    "context_length": 200000,
+    "description": "Claude Opus 4.7 - Most Intelligent Model",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "claude-opus-4.7",
     "output_modalities": [
       "text"
     ],
@@ -118,11 +141,11 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.000003",
+      "completionTextTokens": "0.0000045",
       "currency": "pollen",
-      "promptAudioTokens": "0.0000005",
-      "promptCachedTokens": "0.00000005",
-      "promptTextTokens": "0.0000005"
+      "promptAudioTokens": "0.00000075",
+      "promptCachedTokens": "0.000000075",
+      "promptTextTokens": "0.00000075"
     },
     "tools": true
   },
@@ -170,17 +193,18 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.0000015",
+      "completionTextTokens": "0.00000225",
       "currency": "pollen",
-      "promptAudioTokens": "0.0000005",
-      "promptCachedTokens": "0.000000025",
-      "promptTextTokens": "0.00000025"
+      "promptAudioTokens": "0.00000075",
+      "promptCachedTokens": "0.0000000375",
+      "promptTextTokens": "0.000000375"
     },
     "tools": true
   },
   {
     "aliases": [
-      "gemini-3.1-pro"
+      "gemini-3.1-pro",
+      "gemini-2.5-pro"
     ],
     "context_length": 1048576,
     "description": "Gemini 3.1 Pro - Most Intelligent Model with 1M Context (Preview)",
@@ -197,10 +221,10 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.000012",
+      "completionTextTokens": "0.000018",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000002",
-      "promptTextTokens": "0.000002"
+      "promptCachedTokens": "0.0000003",
+      "promptTextTokens": "0.000003"
     },
     "reasoning": true,
     "tools": true
@@ -334,6 +358,30 @@
       "currency": "pollen",
       "promptCachedTokens": "0.0000001",
       "promptTextTokens": "0.0000006"
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "kimi-k2p6"
+    ],
+    "context_length": 262000,
+    "description": "Moonshot Kimi K2.6 - Flagship Agentic Model with CoT Reasoning",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "kimi-k2.6",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.000004",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000016",
+      "promptTextTokens": "0.00000095"
     },
     "reasoning": true,
     "tools": true
