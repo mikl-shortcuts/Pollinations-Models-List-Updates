@@ -98,12 +98,14 @@
   },
   {
     "aliases": [
-      "deepseek-v3",
-      "deepseek-v3.2",
-      "deepseek-reasoning"
+      "deepseek-v4",
+      "deepseek-v4-flash",
+      "deepseek-v4-lite",
+      "deepseek-lite",
+      "deepseek-flash"
     ],
-    "context_length": 163840,
-    "description": "DeepSeek V3.2 - Efficient Reasoning & Agentic AI",
+    "context_length": 1048576,
+    "description": "DeepSeek V4 Flash (Lite) - Fast Reasoning & Coding",
     "input_modalities": [
       "text"
     ],
@@ -112,11 +114,36 @@
     "output_modalities": [
       "text"
     ],
+    "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.00000168",
+      "completionTextTokens": "0.00000028",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000028",
-      "promptTextTokens": "0.00000056"
+      "promptCachedTokens": "0.000000028",
+      "promptTextTokens": "0.00000014"
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "deepseek-v4-pro"
+    ],
+    "context_length": 65536,
+    "description": "DeepSeek V4 Pro - Advanced Reasoning & Coding",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "deepseek-pro",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.00000348",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000145",
+      "promptTextTokens": "0.00000174"
     },
     "reasoning": true,
     "tools": true
