@@ -319,10 +319,11 @@
       "grok-4-20-non-reasoning",
       "grok-non-reasoning"
     ],
-    "context_length": 2000000,
-    "description": "Grok 4.20 Non-Reasoning - High Speed",
+    "context_length": 262144,
+    "description": "Grok 4.20 Non-Reasoning - Fast multimodal tool-calling",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "is_specialized": false,
     "name": "grok",
@@ -330,7 +331,11 @@
       "text"
     ],
     "pricing": {
-      "currency": "pollen"
+      "completionTextTokens": "0.000006",
+      "currency": "pollen",
+      "promptCachedTokens": "0.0000002",
+      "promptImageTokens": "0.000002",
+      "promptTextTokens": "0.000002"
     },
     "tools": true
   },
@@ -341,10 +346,11 @@
       "grok-reasoning",
       "grok-4-1-fast-reasoning"
     ],
-    "context_length": 2000000,
-    "description": "Grok 4.20 Reasoning - Most Powerful Grok",
+    "context_length": 262144,
+    "description": "Grok 4.20 Reasoning - Multimodal reasoning and agentic tasks",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "is_specialized": false,
     "name": "grok-large",
@@ -356,6 +362,7 @@
       "completionTextTokens": "0.000006",
       "currency": "pollen",
       "promptCachedTokens": "0.0000002",
+      "promptImageTokens": "0.000002",
       "promptTextTokens": "0.000002"
     },
     "reasoning": true,
