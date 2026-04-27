@@ -312,12 +312,15 @@
     "aliases": [
       "grok-fast",
       "grok-4-1-fast",
+      "grok-4-1-fast-non-reasoning",
       "grok-legacy",
       "grok-4",
-      "grok-4-fast"
+      "grok-4-fast",
+      "grok-4-20-non-reasoning",
+      "grok-non-reasoning"
     ],
     "context_length": 2000000,
-    "description": "Grok 4.1 Fast - High Speed & Real-Time",
+    "description": "Grok 4.20 Non-Reasoning - High Speed",
     "input_modalities": [
       "text"
     ],
@@ -327,10 +330,7 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000005",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000005",
-      "promptTextTokens": "0.0000002"
+      "currency": "pollen"
     },
     "tools": true
   },
@@ -351,6 +351,7 @@
     "output_modalities": [
       "text"
     ],
+    "paid_only": true,
     "pricing": {
       "completionTextTokens": "0.000006",
       "currency": "pollen",
