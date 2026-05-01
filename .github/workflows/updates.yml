@@ -32,7 +32,7 @@ jobs:
         run: |
           set +e
           for i in {1..3}; do
-            curl -sS --fail -A "github-actions-bot" "https://gen.pollinations.ai/api/generate/text/models" -o /tmp/text_models.json && break
+            curl -sS --fail -A "github-actions-bot" "https://gen.pollinations.ai/text/models" -o /tmp/text_models.json && break
             sleep 5
           done
           
@@ -161,7 +161,7 @@ jobs:
         run: |
           set +e
           for i in {1..3}; do
-            curl -sS --fail -A "github-actions-bot" "https://gen.pollinations.ai/api/generate/image/models" -o /tmp/image_models.json && break
+            curl -sS --fail -A "github-actions-bot" "https://gen.pollinations.ai/image/models" -o /tmp/image_models.json && break
             sleep 5
           done
           if [ ! -f /tmp/image_models.json ]; then
