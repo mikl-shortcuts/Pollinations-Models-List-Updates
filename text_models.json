@@ -453,7 +453,7 @@
       "llama-v3p3-70b-instruct"
     ],
     "context_length": 131072,
-    "description": "Meta Llama 3.3 70B Instruct - Fast & Capable",
+    "description": "Meta Llama 3.3 70B Instruct",
     "input_modalities": [
       "text"
     ],
@@ -463,12 +463,61 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000009",
+      "completionTextTokens": "0.00000071",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000045",
-      "promptTextTokens": "0.0000009"
+      "promptTextTokens": "0.00000071"
     },
     "tools": true
+  },
+  {
+    "aliases": [
+      "llama-4",
+      "llama-4-maverick",
+      "llama-maverick-17b",
+      "llama-4-maverick-17b-128e-instruct-fp8"
+    ],
+    "context_length": 1048576,
+    "description": "Meta Llama 4 Maverick 17B 128E Instruct",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "llama-maverick",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.000001",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000025"
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "llama-4-scout",
+      "llama-scout-17b",
+      "llama-4-scout-17b-16e-instruct"
+    ],
+    "context_length": 10000000,
+    "description": "Meta Llama 4 Scout 17B 16E Instruct",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "llama-scout",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.00000064",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000016"
+    },
+    "tools": false
   },
   {
     "aliases": [],
