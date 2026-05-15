@@ -114,12 +114,11 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.00000028",
+      "completionTextTokens": "0.000000252",
       "currency": "pollen",
-      "promptCachedTokens": "0.000000028",
-      "promptTextTokens": "0.00000014"
+      "promptCachedTokens": "0.0000000252",
+      "promptTextTokens": "0.000000126"
     },
     "reasoning": true,
     "tools": true
@@ -333,6 +332,30 @@
       "promptTextTokens": "0.000001"
     },
     "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "gpt-5-mini",
+      "openai-mini"
+    ],
+    "context_length": 400000,
+    "description": "GPT-5.4 Mini - Balanced Speed & Cost",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "gpt-5.4-mini",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000045",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000075",
+      "promptTextTokens": "0.00000075"
+    },
     "tools": true
   },
   {
@@ -732,8 +755,7 @@
   },
   {
     "aliases": [
-      "gpt-5.4-nano",
-      "gpt-5-mini"
+      "gpt-5.4-nano"
     ],
     "context_length": 400000,
     "description": "GPT-5.4 Nano - Fast & Balanced",
@@ -1049,13 +1071,13 @@
   {
     "aliases": [
       "qwen3-vl",
-      "qwen3-vl-30b-a3b-thinking",
-      "qwen3-vl-thinking",
+      "qwen3-vl-30b-a3b-instruct",
+      "qwen3-vl-instruct",
       "qwen3-vl-plus",
       "qwen-vl"
     ],
-    "context_length": 262144,
-    "description": "Qwen3 VL 30B A3B Thinking - Vision-Language Reasoning",
+    "context_length": 131072,
+    "description": "Qwen3 VL 30B A3B Instruct - Fast vision-language model",
     "input_modalities": [
       "text",
       "image"
@@ -1066,11 +1088,11 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.00000156",
+      "completionTextTokens": "0.00000052",
       "currency": "pollen",
       "promptTextTokens": "0.00000013"
     },
-    "reasoning": true,
+    "reasoning": false,
     "tools": true
   },
   {
