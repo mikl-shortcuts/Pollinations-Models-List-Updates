@@ -289,7 +289,7 @@
       "gemma-4-26b-a4b-it"
     ],
     "context_length": 262144,
-    "description": "Gemma 4 26B A4B - Google's open multimodal MoE model",
+    "description": "Gemma 4 26B A4B - Open-source multimodal MoE for fast inference",
     "input_modalities": [
       "text",
       "image"
@@ -480,7 +480,7 @@
       "llama-v3p3-70b-instruct"
     ],
     "context_length": 131072,
-    "description": "Meta Llama 3.3 70B Instruct",
+    "description": "Meta Llama 3.3 70B - Open-source dense model for general chat",
     "input_modalities": [
       "text"
     ],
@@ -504,7 +504,7 @@
       "llama-4-maverick-17b-128e-instruct-fp8"
     ],
     "context_length": 1048576,
-    "description": "Meta Llama 4 Maverick 17B 128E Instruct",
+    "description": "Meta Llama 4 Maverick - Open-source multimodal MoE with vision",
     "input_modalities": [
       "text",
       "image"
@@ -528,8 +528,8 @@
       "llama-scout-17b",
       "llama-4-scout-17b-16e-instruct"
     ],
-    "context_length": 10000000,
-    "description": "Meta Llama 4 Scout 17B 16E Instruct",
+    "context_length": 327680,
+    "description": "Meta Llama 4 Scout - Open-source MoE for long context & retrieval",
     "input_modalities": [
       "text",
       "image"
@@ -540,11 +540,11 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.00000064",
+      "completionTextTokens": "0.0000003",
       "currency": "pollen",
-      "promptTextTokens": "0.00000016"
+      "promptTextTokens": "0.00000008"
     },
-    "tools": false
+    "tools": true
   },
   {
     "aliases": [],
@@ -619,8 +619,8 @@
       "mistral-small-3.2",
       "mistral-small-3.2-24b-instruct-2506"
     ],
-    "context_length": 131072,
-    "description": "Mistral Small 3.1 - Efficient & Cost-Effective",
+    "context_length": 128000,
+    "description": "Mistral Small 3.2 - Improved Instruction Following & Function Calling",
     "input_modalities": [
       "text",
       "image"
@@ -631,9 +631,32 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000003",
+      "completionTextTokens": "0.0000002",
       "currency": "pollen",
-      "promptTextTokens": "0.0000001"
+      "promptTextTokens": "0.000000075"
+    },
+    "tools": true
+  },
+  {
+    "aliases": [
+      "mistral-small-4",
+      "mistral-small-2603"
+    ],
+    "context_length": 262144,
+    "description": "Mistral Small 4 - Unified Reasoning & Multimodal",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "mistral-4",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000006",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000015"
     },
     "tools": true
   },
@@ -1008,7 +1031,7 @@
     "aliases": [
       "qwen3guard-gen-8b"
     ],
-    "description": "Qwen3Guard 8B - Content Safety & Moderation (OVH)",
+    "description": "Qwen3Guard 8B - Content Safety & Moderation",
     "input_modalities": [
       "text"
     ],
@@ -1032,7 +1055,7 @@
       "qwen-vl"
     ],
     "context_length": 262144,
-    "description": "Qwen3 VL 30B A3B Thinking - Vision-Language Reasoning (Fireworks)",
+    "description": "Qwen3 VL 30B A3B Thinking - Vision-Language Reasoning",
     "input_modalities": [
       "text",
       "image"
@@ -1043,10 +1066,35 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000006",
+      "completionTextTokens": "0.00000156",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000008",
-      "promptTextTokens": "0.00000015"
+      "promptTextTokens": "0.00000013"
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "qwen3-vl-pro",
+      "qwen3-vl-235b",
+      "qwen3-vl-235b-a22b-thinking",
+      "qwen-vl-pro"
+    ],
+    "context_length": 262144,
+    "description": "Qwen3 VL 235B A22B Thinking - Vision-Language Reasoning",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "qwen-vision-pro",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000026",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000026"
     },
     "reasoning": true,
     "tools": true
