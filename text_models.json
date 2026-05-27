@@ -115,10 +115,10 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.000000252",
+      "completionTextTokens": "0.00000028",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000000252",
-      "promptTextTokens": "0.000000126"
+      "promptCachedTokens": "0.000000014",
+      "promptTextTokens": "0.00000014"
     },
     "reasoning": true,
     "tools": true
@@ -137,7 +137,6 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
     "pricing": {
       "completionTextTokens": "0.00000348",
       "currency": "pollen",
@@ -311,6 +310,59 @@
   },
   {
     "aliases": [
+      "gemini-3.1-flash-lite-search"
+    ],
+    "context_length": 1048576,
+    "description": "Gemini 3.1 Flash Lite Search - Cheap grounded web answers",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "is_specialized": false,
+    "name": "gemini-search-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.00000225",
+      "currency": "pollen",
+      "promptAudioTokens": "0.00000075",
+      "promptCachedTokens": "0.0000000375",
+      "promptTextTokens": "0.000000375"
+    },
+    "tools": false
+  },
+  {
+    "aliases": [
+      "gemini-3.5-flash-search"
+    ],
+    "context_length": 1048576,
+    "description": "Gemini 3.5 Flash Search - Premium grounded web research",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "is_specialized": false,
+    "name": "gemini-search-large",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000135",
+      "currency": "pollen",
+      "promptAudioTokens": "0.00000225",
+      "promptCachedTokens": "0.000000225",
+      "promptTextTokens": "0.00000225"
+    },
+    "tools": false
+  },
+  {
+    "aliases": [
       "gemma-4",
       "gemma-4-26b",
       "gemma-4-26b-a4b",
@@ -327,7 +379,6 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
     "pricing": {
       "completionTextTokens": "0.00000034",
       "currency": "pollen",
@@ -402,7 +453,6 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
     "pricing": {
       "completionTextTokens": "0.00003",
       "currency": "pollen",
@@ -445,6 +495,31 @@
   },
   {
     "aliases": [
+      "grok-4-3"
+    ],
+    "context_length": 262144,
+    "description": "Grok 4.3 - Newer & cheaper multimodal reasoning",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "grok-4.3",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000025",
+      "currency": "pollen",
+      "promptCachedTokens": "0.0000002",
+      "promptImageTokens": "0.00000125",
+      "promptTextTokens": "0.00000125"
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
       "grok-4-20",
       "grok-4-20-reasoning",
       "grok-reasoning",
@@ -461,7 +536,6 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
     "pricing": {
       "completionTextTokens": "0.000006",
       "currency": "pollen",
@@ -610,10 +684,10 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000055",
+      "completionTextTokens": "0.0000045",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000011",
-      "promptTextTokens": "0.0000011"
+      "promptCachedTokens": "0.000000075",
+      "promptTextTokens": "0.00000075"
     },
     "tools": true
   },
@@ -628,12 +702,11 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.0000275",
+      "completionTextTokens": "0.00003",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000055",
-      "promptTextTokens": "0.0000055"
+      "promptCachedTokens": "0.0000005",
+      "promptTextTokens": "0.000005"
     },
     "tools": true
   },
@@ -1039,7 +1112,7 @@
       "qwen3-coder-next"
     ],
     "context_length": 262144,
-    "description": "Qwen3 Coder Next - Advanced Code Generation via DashScope",
+    "description": "Qwen3 Coder Next - Advanced Code Generation",
     "input_modalities": [
       "text"
     ],

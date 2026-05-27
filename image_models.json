@@ -273,7 +273,6 @@
     "output_modalities": [
       "image"
     ],
-    "paid_only": true,
     "pricing": {
       "completionImageTokens": "0.04",
       "currency": "pollen"
@@ -368,7 +367,7 @@
       "qwen-image-edit",
       "qwen-image-edit-plus"
     ],
-    "description": "Qwen Image Plus - Alibaba text-to-image and image editing via DashScope",
+    "description": "Qwen Image Plus - Alibaba text-to-image and image editing",
     "input_modalities": [
       "text",
       "image"
@@ -386,7 +385,7 @@
     "aliases": [
       "seedance-2"
     ],
-    "description": "Seedance 2.0 - ByteDance multimodal video gen via Replicate (720p, native audio)",
+    "description": "Seedance 2.0 - ByteDance multimodal video gen (720p, native audio)",
     "input_modalities": [
       "text",
       "image"
@@ -508,7 +507,7 @@
       "wan2.6",
       "wan-i2v"
     ],
-    "description": "Wan 2.6 - Alibaba text/image-to-video with audio (2-15s, up to 1080P) via DashScope",
+    "description": "Wan 2.6 - Alibaba text/image-to-video with audio (2-15s, up to 1080P)",
     "input_modalities": [
       "text",
       "image"
@@ -533,7 +532,7 @@
       "wan2.2",
       "wan-2.2"
     ],
-    "description": "Wan 2.2 - Fast & cheap text/image-to-video (5s, 480P) via DashScope",
+    "description": "Wan 2.2 - Fast & cheap text/image-to-video (5s, 480P)",
     "input_modalities": [
       "text",
       "image"
@@ -591,6 +590,31 @@
       "completionImageTokens": "0.1125",
       "currency": "pollen"
     }
+  },
+  {
+    "aliases": [
+      "wan2.7",
+      "wan-2.7"
+    ],
+    "description": "Wan 2.7 - Alibaba text/image-to-video with bundled audio (720P / 1080P)",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "wan-pro",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.15",
+      "currency": "pollen"
+    },
+    "video_capabilities": [
+      "start_frame",
+      "audio_output"
+    ]
   },
   {
     "aliases": [
