@@ -1020,13 +1020,55 @@
   },
   {
     "aliases": [
+      "sonar-pro",
+      "perplexity-pro"
+    ],
+    "context_length": 200000,
+    "description": "Perplexity Sonar Pro - Advanced multi-source web search",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "perplexity",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000225",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000045"
+    },
+    "tools": false
+  },
+  {
+    "aliases": [
+      "sonar-deep"
+    ],
+    "context_length": 128000,
+    "description": "Perplexity Sonar - Deep web search with broad grounding",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "perplexity-deep",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000015",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000015"
+    },
+    "tools": false
+  },
+  {
+    "aliases": [
       "sonar"
     ],
-    "context_length": 127072,
-    "description": "Perplexity Sonar - Fast & Affordable with Web Search",
+    "context_length": 128000,
+    "description": "Perplexity Sonar - Fast & affordable web search",
     "input_modalities": [
-      "text",
-      "image"
+      "text"
     ],
     "is_specialized": false,
     "name": "perplexity-fast",
@@ -1034,9 +1076,9 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.000001",
+      "completionTextTokens": "0.0000015",
       "currency": "pollen",
-      "promptTextTokens": "0.000001"
+      "promptTextTokens": "0.0000015"
     },
     "tools": false
   },
@@ -1046,10 +1088,9 @@
       "sonar-reasoning-pro"
     ],
     "context_length": 128000,
-    "description": "Perplexity Sonar Reasoning - Advanced Reasoning with Web Search",
+    "description": "Perplexity Sonar Reasoning - Step-by-step reasoning with web search",
     "input_modalities": [
-      "text",
-      "image"
+      "text"
     ],
     "is_specialized": false,
     "name": "perplexity-reasoning",
@@ -1057,9 +1098,9 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.000008",
+      "completionTextTokens": "0.000012",
       "currency": "pollen",
-      "promptTextTokens": "0.000002"
+      "promptTextTokens": "0.000003"
     },
     "reasoning": true,
     "tools": false
@@ -1222,6 +1263,32 @@
       "completionTextTokens": "0.0000026",
       "currency": "pollen",
       "promptTextTokens": "0.00000026"
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "stepfun-flash",
+      "step-3.7-flash",
+      "step-flash-3.7"
+    ],
+    "context_length": 256000,
+    "description": "StepFun Step 3.7 Flash - Fast multimodal reasoning model",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "step-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.00000115",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000004",
+      "promptTextTokens": "0.0000002"
     },
     "reasoning": true,
     "tools": true
