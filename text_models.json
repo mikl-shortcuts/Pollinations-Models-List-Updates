@@ -19,6 +19,7 @@
     "pricing": {
       "completionTextTokens": "0.0000165",
       "currency": "pollen",
+      "promptCacheWriteTokens": "0.000004125",
       "promptCachedTokens": "0.00000033",
       "promptTextTokens": "0.0000033"
     },
@@ -43,6 +44,7 @@
     "pricing": {
       "completionTextTokens": "0.0000055",
       "currency": "pollen",
+      "promptCacheWriteTokens": "0.000001375",
       "promptCachedTokens": "0.00000011",
       "promptTextTokens": "0.0000011"
     },
@@ -69,6 +71,7 @@
     "pricing": {
       "completionTextTokens": "0.0000275",
       "currency": "pollen",
+      "promptCacheWriteTokens": "0.000006875",
       "promptCachedTokens": "0.00000055",
       "promptTextTokens": "0.0000055"
     },
@@ -91,8 +94,32 @@
     "pricing": {
       "completionTextTokens": "0.0000275",
       "currency": "pollen",
+      "promptCacheWriteTokens": "0.000006875",
       "promptCachedTokens": "0.00000055",
       "promptTextTokens": "0.0000055"
+    },
+    "tools": true
+  },
+  {
+    "aliases": [],
+    "context_length": 1000000,
+    "description": "Claude Opus 4.8 - Most Intelligent Model",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "name": "claude-opus-4.8",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.00004125",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.0000103125",
+      "promptCachedTokens": "0.000000825",
+      "promptTextTokens": "0.00000825"
     },
     "tools": true
   },
@@ -1263,6 +1290,30 @@
       "completionTextTokens": "0.0000026",
       "currency": "pollen",
       "promptTextTokens": "0.00000026"
+    },
+    "reasoning": true,
+    "tools": true
+  },
+  {
+    "aliases": [
+      "stepfun-3.5-flash",
+      "step-flash-3.5"
+    ],
+    "context_length": 262144,
+    "description": "StepFun Step 3.5 Flash - Fast text reasoning model",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "step-3.5-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000002",
+      "promptTextTokens": "0.00000009"
     },
     "reasoning": true,
     "tools": true
