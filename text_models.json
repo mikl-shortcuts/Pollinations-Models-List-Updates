@@ -6,13 +6,14 @@
     ],
     "brand": "Anthropic",
     "category": "text",
-    "context_length": 200000,
+    "context_length": 1000000,
     "description": "Claude Sonnet 4.6 - Most Capable & Balanced",
     "input_modalities": [
       "text",
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 20,
     "name": "claude",
     "output_modalities": [
       "text"
@@ -25,6 +26,7 @@
       "promptCachedTokens": "0.0000003",
       "promptTextTokens": "0.000003"
     },
+    "title": "Claude Sonnet 4.6",
     "tools": true
   },
   {
@@ -41,6 +43,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 20,
     "name": "claude-fast",
     "output_modalities": [
       "text"
@@ -53,6 +56,7 @@
       "promptCachedTokens": "0.0000001",
       "promptTextTokens": "0.000001"
     },
+    "title": "Claude Haiku 4.5",
     "tools": true
   },
   {
@@ -63,13 +67,14 @@
     ],
     "brand": "Anthropic",
     "category": "text",
-    "context_length": 200000,
+    "context_length": 1000000,
     "description": "Claude Opus 4.6 - Most Intelligent Model",
     "input_modalities": [
       "text",
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 20,
     "name": "claude-large",
     "output_modalities": [
       "text"
@@ -82,19 +87,21 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000005"
     },
+    "title": "Claude Opus 4.6",
     "tools": true
   },
   {
     "aliases": [],
     "brand": "Anthropic",
     "category": "text",
-    "context_length": 200000,
+    "context_length": 1000000,
     "description": "Claude Opus 4.7 - Most Intelligent Model",
     "input_modalities": [
       "text",
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 20,
     "name": "claude-opus-4.7",
     "output_modalities": [
       "text"
@@ -107,6 +114,7 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000005"
     },
+    "title": "Claude Opus 4.7",
     "tools": true
   },
   {
@@ -120,6 +128,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 20,
     "name": "claude-opus-4.8",
     "output_modalities": [
       "text"
@@ -132,6 +141,7 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000005"
     },
+    "title": "Claude Opus 4.8",
     "tools": true
   },
   {
@@ -161,6 +171,7 @@
       "promptTextTokens": "0.00000014"
     },
     "reasoning": true,
+    "title": "DeepSeek V4 Flash (Lite)",
     "tools": true
   },
   {
@@ -186,6 +197,7 @@
       "promptTextTokens": "0.00000174"
     },
     "reasoning": true,
+    "title": "DeepSeek V4 Pro",
     "tools": true
   },
   {
@@ -204,6 +216,8 @@
       "video"
     ],
     "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
     "name": "gemini",
     "output_modalities": [
       "text"
@@ -216,6 +230,7 @@
       "promptCachedTokens": "0.00000005",
       "promptTextTokens": "0.0000005"
     },
+    "title": "Gemini 3 Flash",
     "tools": true
   },
   {
@@ -233,6 +248,8 @@
       "video"
     ],
     "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
     "name": "gemini-3.5-flash",
     "output_modalities": [
       "text"
@@ -245,6 +262,7 @@
       "promptCachedTokens": "0.00000015",
       "promptTextTokens": "0.0000015"
     },
+    "title": "Gemini 3.5 Flash",
     "tools": true
   },
   {
@@ -257,9 +275,12 @@
     "description": "Gemini 2.5 Flash Lite - Ultra Fast & Cost-Effective",
     "input_modalities": [
       "text",
-      "image"
+      "image",
+      "video"
     ],
     "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
     "name": "gemini-fast",
     "output_modalities": [
       "text"
@@ -272,6 +293,7 @@
       "promptCachedTokens": "0.00000001",
       "promptTextTokens": "0.0000001"
     },
+    "title": "Gemini 2.5 Flash Lite",
     "tools": true
   },
   {
@@ -287,9 +309,12 @@
     "input_modalities": [
       "text",
       "image",
-      "audio"
+      "audio",
+      "video"
     ],
     "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
     "name": "gemini-flash-lite-3.1",
     "output_modalities": [
       "text"
@@ -302,6 +327,7 @@
       "promptCachedTokens": "0.000000025",
       "promptTextTokens": "0.00000025"
     },
+    "title": "Gemini 3.1 Flash Lite",
     "tools": true
   },
   {
@@ -320,6 +346,8 @@
       "video"
     ],
     "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
     "name": "gemini-large",
     "output_modalities": [
       "text"
@@ -332,6 +360,7 @@
       "promptTextTokens": "0.000002"
     },
     "reasoning": true,
+    "title": "Gemini 3.1 Pro",
     "tools": true
   },
   {
@@ -345,9 +374,12 @@
     "description": "Google Gemini 2.5 Flash Lite Search - Web-grounded answers via Google Search",
     "input_modalities": [
       "text",
-      "image"
+      "image",
+      "video"
     ],
     "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
     "name": "gemini-search",
     "output_modalities": [
       "text"
@@ -360,6 +392,7 @@
       "promptCachedTokens": "0.00000001",
       "promptTextTokens": "0.0000001"
     },
+    "title": "Google Gemini 2.5 Flash Lite Search",
     "tools": false
   },
   {
@@ -373,9 +406,12 @@
     "input_modalities": [
       "text",
       "image",
-      "audio"
+      "audio",
+      "video"
     ],
     "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
     "name": "gemini-search-fast",
     "output_modalities": [
       "text"
@@ -388,6 +424,7 @@
       "promptCachedTokens": "0.000000025",
       "promptTextTokens": "0.00000025"
     },
+    "title": "Gemini 3.1 Flash Lite Search",
     "tools": false
   },
   {
@@ -405,6 +442,8 @@
       "video"
     ],
     "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
     "name": "gemini-search-large",
     "output_modalities": [
       "text"
@@ -417,6 +456,7 @@
       "promptCachedTokens": "0.00000015",
       "promptTextTokens": "0.0000015"
     },
+    "title": "Gemini 3.5 Flash Search",
     "tools": false
   },
   {
@@ -435,6 +475,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "gemma",
     "output_modalities": [
       "text"
@@ -445,6 +486,7 @@
       "promptTextTokens": "0.00000006"
     },
     "reasoning": true,
+    "title": "Gemma 4 26B A4B",
     "tools": true
   },
   {
@@ -474,6 +516,7 @@
       "promptTextTokens": "0.000001"
     },
     "reasoning": true,
+    "title": "Z.ai GLM-5.1",
     "tools": true
   },
   {
@@ -490,6 +533,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "gpt-5.4-mini",
     "output_modalities": [
       "text"
@@ -500,6 +544,7 @@
       "promptCachedTokens": "0.00000005625",
       "promptTextTokens": "0.0000005625"
     },
+    "title": "GPT-5.4 Mini",
     "tools": true
   },
   {
@@ -508,13 +553,14 @@
     ],
     "brand": "OpenAI",
     "category": "text",
-    "context_length": 1000000,
+    "context_length": 1050000,
     "description": "GPT-5.5 - Frontier Reasoning",
     "input_modalities": [
       "text",
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "gpt-5.5",
     "output_modalities": [
       "text"
@@ -526,6 +572,7 @@
       "promptTextTokens": "0.000005"
     },
     "reasoning": true,
+    "title": "GPT-5.5",
     "tools": true
   },
   {
@@ -548,6 +595,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 100,
     "name": "grok",
     "output_modalities": [
       "text"
@@ -559,6 +607,7 @@
       "promptImageTokens": "0.000002",
       "promptTextTokens": "0.000002"
     },
+    "title": "Grok 4.20 Non-Reasoning",
     "tools": true
   },
   {
@@ -567,13 +616,14 @@
     ],
     "brand": "xAI",
     "category": "text",
-    "context_length": 262144,
+    "context_length": 1048576,
     "description": "Grok 4.3 - Newer & cheaper multimodal reasoning",
     "input_modalities": [
       "text",
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 100,
     "name": "grok-4.3",
     "output_modalities": [
       "text"
@@ -586,6 +636,7 @@
       "promptTextTokens": "0.00000125"
     },
     "reasoning": true,
+    "title": "Grok 4.3",
     "tools": true
   },
   {
@@ -604,6 +655,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 100,
     "name": "grok-large",
     "output_modalities": [
       "text"
@@ -616,6 +668,7 @@
       "promptTextTokens": "0.000002"
     },
     "reasoning": true,
+    "title": "Grok 4.20 Reasoning",
     "tools": true
   },
   {
@@ -636,6 +689,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 30,
     "name": "kimi",
     "output_modalities": [
       "text"
@@ -647,6 +701,7 @@
       "promptTextTokens": "0.0000006"
     },
     "reasoning": true,
+    "title": "Moonshot Kimi K2.5",
     "tools": true
   },
   {
@@ -662,6 +717,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 30,
     "name": "kimi-k2.6",
     "output_modalities": [
       "text"
@@ -673,6 +729,7 @@
       "promptTextTokens": "0.00000095"
     },
     "reasoning": true,
+    "title": "Moonshot Kimi K2.6",
     "tools": true
   },
   {
@@ -698,6 +755,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000005325"
     },
+    "title": "Meta Llama 3.3 70B",
     "tools": true
   },
   {
@@ -716,6 +774,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "llama-maverick",
     "output_modalities": [
       "text"
@@ -726,6 +785,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000001875"
     },
+    "title": "Meta Llama 4 Maverick",
     "tools": true
   },
   {
@@ -743,6 +803,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "llama-scout",
     "output_modalities": [
       "text"
@@ -752,6 +813,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000008"
     },
+    "title": "Meta Llama 4 Scout",
     "tools": true
   },
   {
@@ -773,6 +835,7 @@
       "promptCachedTokens": "0.00000005625",
       "promptTextTokens": "0.0000005625"
     },
+    "title": "MIDIjourney",
     "tools": true
   },
   {
@@ -794,6 +857,7 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000005"
     },
+    "title": "MIDIjourney Large",
     "tools": true
   },
   {
@@ -822,6 +886,7 @@
       "promptTextTokens": "0.0000003"
     },
     "reasoning": true,
+    "title": "MiniMax M2.7",
     "tools": true
   },
   {
@@ -838,6 +903,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "minimax-m3",
     "output_modalities": [
       "text"
@@ -849,6 +915,7 @@
       "promptTextTokens": "0.0000003"
     },
     "reasoning": true,
+    "title": "MiniMax M3",
     "tools": true
   },
   {
@@ -868,6 +935,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "mistral",
     "output_modalities": [
       "text"
@@ -878,6 +946,7 @@
       "promptCachedTokens": "0.000000075",
       "promptTextTokens": "0.000000075"
     },
+    "title": "Mistral Small 3.2",
     "tools": true
   },
   {
@@ -894,6 +963,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "mistral-4",
     "output_modalities": [
       "text"
@@ -905,6 +975,7 @@
       "promptTextTokens": "0.00000015"
     },
     "reasoning": true,
+    "title": "Mistral Small 4",
     "tools": true
   },
   {
@@ -920,6 +991,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "mistral-large",
     "output_modalities": [
       "text"
@@ -931,6 +1003,7 @@
       "promptTextTokens": "0.000000375"
     },
     "reasoning": true,
+    "title": "Mistral Large 3",
     "tools": true
   },
   {
@@ -948,6 +1021,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 20,
     "name": "nova",
     "output_modalities": [
       "text"
@@ -958,6 +1032,7 @@
       "promptTextTokens": "0.00000033"
     },
     "reasoning": true,
+    "title": "Nova 2 Lite",
     "tools": true
   },
   {
@@ -982,6 +1057,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.000000035"
     },
+    "title": "Nova Micro",
     "tools": true
   },
   {
@@ -997,6 +1073,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "openai",
     "output_modalities": [
       "text"
@@ -1007,6 +1084,7 @@
       "promptCachedTokens": "0.000000015",
       "promptTextTokens": "0.00000015"
     },
+    "title": "GPT-5.4 Nano",
     "tools": true
   },
   {
@@ -1037,6 +1115,7 @@
       "promptAudioTokens": "0.00001",
       "promptTextTokens": "0.0000006"
     },
+    "title": "GPT Audio Mini",
     "tools": true,
     "voices": [
       "alloy",
@@ -1081,6 +1160,7 @@
       "promptAudioTokens": "0.00004",
       "promptTextTokens": "0.0000025"
     },
+    "title": "GPT Audio 1.5",
     "tools": true,
     "voices": [
       "alloy",
@@ -1112,6 +1192,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "openai-fast",
     "output_modalities": [
       "text"
@@ -1122,6 +1203,7 @@
       "promptCachedTokens": "0.00000000375",
       "promptTextTokens": "0.0000000375"
     },
+    "title": "GPT-5 Nano",
     "tools": true
   },
   {
@@ -1134,13 +1216,14 @@
     ],
     "brand": "OpenAI",
     "category": "text",
-    "context_length": 400000,
+    "context_length": 1050000,
     "description": "GPT-5.4 - Most Powerful & Intelligent",
     "input_modalities": [
       "text",
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "openai-large",
     "output_modalities": [
       "text"
@@ -1152,6 +1235,7 @@
       "promptTextTokens": "0.0000025"
     },
     "reasoning": true,
+    "title": "GPT-5.4",
     "tools": true
   },
   {
@@ -1176,6 +1260,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.000003"
     },
+    "title": "Perplexity Sonar Pro",
     "tools": false
   },
   {
@@ -1199,6 +1284,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.000001"
     },
+    "title": "Perplexity Sonar",
     "tools": false
   },
   {
@@ -1222,6 +1308,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.000001"
     },
+    "title": "Perplexity Sonar",
     "tools": false
   },
   {
@@ -1247,6 +1334,7 @@
       "promptTextTokens": "0.000002"
     },
     "reasoning": true,
+    "title": "Perplexity Sonar Reasoning",
     "tools": false
   },
   {
@@ -1262,6 +1350,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 3,
     "name": "polly",
     "output_modalities": [
       "text"
@@ -1270,6 +1359,7 @@
       "currency": "pollen"
     },
     "reasoning": true,
+    "title": "Polly by @Itachi-1824",
     "tools": true
   },
   {
@@ -1294,6 +1384,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000006"
     },
+    "title": "Qwen3 Coder 30B",
     "tools": true
   },
   {
@@ -1318,6 +1409,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000003"
     },
+    "title": "Qwen3 Coder Next",
     "tools": true
   },
   {
@@ -1335,6 +1427,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 30,
     "name": "qwen-large",
     "output_modalities": [
       "text"
@@ -1346,6 +1439,7 @@
       "promptTextTokens": "0.0000005"
     },
     "reasoning": true,
+    "title": "Qwen3.6 Plus",
     "tools": true
   },
   {
@@ -1367,7 +1461,8 @@
       "completionTextTokens": "0.00000001",
       "currency": "pollen",
       "promptTextTokens": "0.00000001"
-    }
+    },
+    "title": "Qwen3Guard 8B"
   },
   {
     "aliases": [
@@ -1386,6 +1481,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "qwen-vision",
     "output_modalities": [
       "text"
@@ -1396,6 +1492,7 @@
       "promptTextTokens": "0.00000013"
     },
     "reasoning": false,
+    "title": "Qwen3 VL 30B A3B Instruct",
     "tools": true
   },
   {
@@ -1414,6 +1511,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "qwen-vision-pro",
     "output_modalities": [
       "text"
@@ -1424,6 +1522,7 @@
       "promptTextTokens": "0.00000026"
     },
     "reasoning": true,
+    "title": "Qwen3 VL 235B A22B Thinking",
     "tools": true
   },
   {
@@ -1450,6 +1549,7 @@
       "promptTextTokens": "0.00000009"
     },
     "reasoning": true,
+    "title": "StepFun Step 3.5 Flash",
     "tools": true
   },
   {
@@ -1467,6 +1567,7 @@
       "image"
     ],
     "is_specialized": false,
+    "max_reference_images": 10,
     "name": "step-flash",
     "output_modalities": [
       "text"
@@ -1478,6 +1579,7 @@
       "promptTextTokens": "0.0000002"
     },
     "reasoning": true,
+    "title": "StepFun Step 3.7 Flash",
     "tools": true
   }
 ]
