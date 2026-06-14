@@ -900,7 +900,7 @@
       "image"
     ],
     "is_specialized": false,
-    "max_reference_images": 10,
+    "max_reference_images": 30,
     "name": "kimi-k2.7-code",
     "output_modalities": [
       "text"
@@ -1109,14 +1109,14 @@
       "reasoning"
     ],
     "category": "text",
-    "context_length": 1048576,
-    "description": "MiniMax M3 - Coding, agentic & 1M-context reasoning",
+    "context_length": 524288,
+    "description": "MiniMax M3 - Coding, agentic & 512K-context reasoning",
     "input_modalities": [
       "text",
       "image"
     ],
     "is_specialized": false,
-    "max_reference_images": 10,
+    "max_reference_images": 30,
     "name": "minimax-m3",
     "output_modalities": [
       "text"
@@ -1703,8 +1703,11 @@
     "tools": true
   },
   {
-    "added_date": 1774137600000,
+    "added_date": 1781222400000,
     "aliases": [
+      "qwen3.7",
+      "qwen3.7-plus",
+      "qwen3p7-plus",
       "qwen3.6",
       "qwen3.6-plus",
       "qwen3p6-plus"
@@ -1715,8 +1718,8 @@
       "reasoning"
     ],
     "category": "text",
-    "context_length": 1048576,
-    "description": "Qwen3.6 Plus - 396B MoE Flagship with Reasoning (Fireworks)",
+    "context_length": 262000,
+    "description": "Qwen3.7 Plus - Multimodal agent intelligence (Fireworks)",
     "input_modalities": [
       "text",
       "image"
@@ -1728,13 +1731,13 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.000003",
+      "completionTextTokens": "0.0000016",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000001",
-      "promptTextTokens": "0.0000005"
+      "promptCachedTokens": "0.00000008",
+      "promptTextTokens": "0.0000004"
     },
     "reasoning": true,
-    "title": "Qwen3.6 Plus",
+    "title": "Qwen3.7 Plus",
     "tools": true
   },
   {
