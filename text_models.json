@@ -68,10 +68,42 @@
     "tools": true
   },
   {
+    "added_date": 1780012800000,
+    "aliases": [
+      "claude-opus-4.8",
+      "claude-opus"
+    ],
+    "brand": "Anthropic",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "context_length": 1000000,
+    "description": "Claude Opus 4.8 - Most Intelligent Model",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 20,
+    "name": "claude-large",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.000025",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.00000625",
+      "promptCachedTokens": "0.0000005",
+      "promptTextTokens": "0.000005"
+    },
+    "title": "Claude Opus 4.8",
+    "tools": true
+  },
+  {
     "added_date": 1762732800000,
     "aliases": [
-      "claude-opus-4.6",
-      "claude-opus",
       "claude-opus-4.5"
     ],
     "brand": "Anthropic",
@@ -87,7 +119,7 @@
     ],
     "is_specialized": false,
     "max_reference_images": 20,
-    "name": "claude-large",
+    "name": "claude-opus-4.6",
     "output_modalities": [
       "text"
     ],
@@ -131,37 +163,6 @@
       "promptTextTokens": "0.000005"
     },
     "title": "Claude Opus 4.7",
-    "tools": true
-  },
-  {
-    "added_date": 1780012800000,
-    "aliases": [],
-    "brand": "Anthropic",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "context_length": 1000000,
-    "description": "Claude Opus 4.8 - Most Intelligent Model",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "is_specialized": false,
-    "max_reference_images": 20,
-    "name": "claude-opus-4.8",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionTextTokens": "0.000025",
-      "currency": "pollen",
-      "promptCacheWriteTokens": "0.00000625",
-      "promptCachedTokens": "0.0000005",
-      "promptTextTokens": "0.000005"
-    },
-    "title": "Claude Opus 4.8",
     "tools": true
   },
   {
@@ -231,45 +232,6 @@
     "tools": true
   },
   {
-    "added_date": 1759795200000,
-    "aliases": [
-      "gemini-3-flash",
-      "gemini-3-flash-preview"
-    ],
-    "brand": "Google",
-    "capabilities": [
-      "tool_calling",
-      "web_search",
-      "code_execution"
-    ],
-    "category": "text",
-    "context_length": 1048576,
-    "description": "Gemini 3 Flash - Pro-Grade Reasoning at Flash Speed",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "is_specialized": false,
-    "max_reference_images": 3600,
-    "max_reference_videos": 10,
-    "name": "gemini",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionTextTokens": "0.000003",
-      "currency": "pollen",
-      "promptAudioTokens": "0.000001",
-      "promptCachedTokens": "0.00000005",
-      "promptTextTokens": "0.0000005"
-    },
-    "title": "Gemini 3 Flash",
-    "tools": true
-  },
-  {
     "added_date": 1779148800000,
     "aliases": [
       "gemini-3.5-flash"
@@ -292,7 +254,7 @@
     "is_specialized": false,
     "max_reference_images": 3600,
     "max_reference_videos": 10,
-    "name": "gemini-3.5-flash",
+    "name": "gemini",
     "output_modalities": [
       "text"
     ],
@@ -305,6 +267,44 @@
       "promptTextTokens": "0.0000015"
     },
     "title": "Gemini 3.5 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1759795200000,
+    "aliases": [
+      "gemini-3-flash-preview"
+    ],
+    "brand": "Google",
+    "capabilities": [
+      "tool_calling",
+      "web_search",
+      "code_execution"
+    ],
+    "category": "text",
+    "context_length": 1048576,
+    "description": "Gemini 3 Flash - Pro-Grade Reasoning at Flash Speed",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 3600,
+    "max_reference_videos": 10,
+    "name": "gemini-3-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.000003",
+      "currency": "pollen",
+      "promptAudioTokens": "0.000001",
+      "promptCachedTokens": "0.00000005",
+      "promptTextTokens": "0.0000005"
+    },
+    "title": "Gemini 3 Flash",
     "tools": true
   },
   {
@@ -592,13 +592,48 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000044",
+      "completionTextTokens": "0.0000022",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000026",
-      "promptTextTokens": "0.0000014"
+      "promptCachedTokens": "0.00000013",
+      "promptTextTokens": "0.0000007"
     },
     "reasoning": true,
     "title": "Z.ai GLM-5.2",
+    "tools": true
+  },
+  {
+    "added_date": 1759795200000,
+    "aliases": [
+      "gpt-5.4-reasoning",
+      "gpt-5.2",
+      "gpt-5.2-reasoning"
+    ],
+    "brand": "OpenAI",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "context_length": 1050000,
+    "description": "GPT-5.4 - Most Powerful & Intelligent",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 10,
+    "name": "gpt-5.4",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.000015",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000025",
+      "promptTextTokens": "0.0000025"
+    },
+    "reasoning": true,
+    "title": "GPT-5.4",
     "tools": true
   },
   {
@@ -631,39 +666,6 @@
       "promptTextTokens": "0.0000005625"
     },
     "title": "GPT-5.4 Mini",
-    "tools": true
-  },
-  {
-    "added_date": 1777680000000,
-    "aliases": [
-      "gpt-5.5-reasoning"
-    ],
-    "brand": "OpenAI",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "context_length": 1050000,
-    "description": "GPT-5.5 - Frontier Reasoning",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "is_specialized": false,
-    "max_reference_images": 10,
-    "name": "gpt-5.5",
-    "output_modalities": [
-      "text"
-    ],
-    "pricing": {
-      "completionTextTokens": "0.00003",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000005",
-      "promptTextTokens": "0.000005"
-    },
-    "reasoning": true,
-    "title": "GPT-5.5",
     "tools": true
   },
   {
@@ -706,45 +708,9 @@
     "tools": true
   },
   {
-    "added_date": 1779753600000,
-    "aliases": [
-      "grok-4-3"
-    ],
-    "brand": "xAI",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "context_length": 1048576,
-    "description": "Grok 4.3 - Newer & cheaper multimodal reasoning",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "is_specialized": false,
-    "max_reference_images": 100,
-    "name": "grok-4.3",
-    "output_modalities": [
-      "text"
-    ],
-    "pricing": {
-      "completionTextTokens": "0.0000025",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000002",
-      "promptImageTokens": "0.00000125",
-      "promptTextTokens": "0.00000125"
-    },
-    "reasoning": true,
-    "title": "Grok 4.3",
-    "tools": true
-  },
-  {
     "added_date": 1775692800000,
     "aliases": [
       "grok-4-20",
-      "grok-4-20-reasoning",
-      "grok-reasoning",
       "grok-4-1-fast-reasoning"
     ],
     "brand": "xAI",
@@ -761,7 +727,7 @@
     ],
     "is_specialized": false,
     "max_reference_images": 100,
-    "name": "grok-large",
+    "name": "grok-4-20-reasoning",
     "output_modalities": [
       "text"
     ],
@@ -777,47 +743,49 @@
     "tools": true
   },
   {
-    "added_date": 1768003200000,
+    "added_date": 1779753600000,
     "aliases": [
-      "kimi-k2.5",
-      "kimi-k2p5",
-      "kimi-reasoning",
-      "kimi-large",
-      "kimi-k2-thinking",
-      "kimi-thinking"
+      "grok-4.3",
+      "grok-4-3",
+      "grok-reasoning"
     ],
-    "brand": "Moonshot AI",
+    "brand": "xAI",
     "capabilities": [
       "tool_calling",
       "reasoning"
     ],
     "category": "text",
-    "context_length": 262000,
-    "description": "Moonshot Kimi K2.5 - Flagship Agentic Model with CoT Reasoning",
+    "context_length": 1048576,
+    "description": "Grok 4.3 - Newer & cheaper multimodal reasoning",
     "input_modalities": [
       "text",
       "image"
     ],
     "is_specialized": false,
-    "max_reference_images": 30,
-    "name": "kimi",
+    "max_reference_images": 100,
+    "name": "grok-large",
     "output_modalities": [
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.000003",
+      "completionTextTokens": "0.0000025",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000001",
-      "promptTextTokens": "0.0000006"
+      "promptCachedTokens": "0.0000002",
+      "promptImageTokens": "0.00000125",
+      "promptTextTokens": "0.00000125"
     },
     "reasoning": true,
-    "title": "Moonshot Kimi K2.5",
+    "title": "Grok 4.3",
     "tools": true
   },
   {
     "added_date": 1776816000000,
     "aliases": [
-      "kimi-k2p6"
+      "kimi-k2.6",
+      "kimi-k2p6",
+      "kimi-reasoning",
+      "kimi-large",
+      "kimi-thinking"
     ],
     "brand": "Moonshot AI",
     "capabilities": [
@@ -833,7 +801,7 @@
     ],
     "is_specialized": false,
     "max_reference_images": 30,
-    "name": "kimi-k2.6",
+    "name": "kimi",
     "output_modalities": [
       "text"
     ],
@@ -850,6 +818,7 @@
   {
     "added_date": 1781222400000,
     "aliases": [
+      "kimi-k2.7-code",
       "kimi-k2.7",
       "kimi-k2p7"
     ],
@@ -867,7 +836,7 @@
     ],
     "is_specialized": false,
     "max_reference_images": 30,
-    "name": "kimi-k2.7-code",
+    "name": "kimi-code",
     "output_modalities": [
       "text"
     ],
@@ -879,6 +848,40 @@
     },
     "reasoning": true,
     "title": "Moonshot Kimi K2.7 Code",
+    "tools": true
+  },
+  {
+    "added_date": 1768003200000,
+    "aliases": [
+      "kimi-k2p5",
+      "kimi-k2-thinking"
+    ],
+    "brand": "Moonshot AI",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "context_length": 262000,
+    "description": "Moonshot Kimi K2.5 - Flagship Agentic Model with CoT Reasoning",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 30,
+    "name": "kimi-k2.5",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.000003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.0000001",
+      "promptTextTokens": "0.0000006"
+    },
+    "reasoning": true,
+    "title": "Moonshot Kimi K2.5",
     "tools": true
   },
   {
@@ -1030,42 +1033,9 @@
     "tools": true
   },
   {
-    "added_date": 1767657600000,
-    "aliases": [
-      "minimax-m2.7",
-      "minimax-m2p7",
-      "minimax-m2.5",
-      "minimax-m2p5"
-    ],
-    "brand": "MiniMax",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "context_length": 200000,
-    "description": "MiniMax M2.7 - Coding, Agentic & Multi-Language",
-    "input_modalities": [
-      "text"
-    ],
-    "is_specialized": false,
-    "name": "minimax",
-    "output_modalities": [
-      "text"
-    ],
-    "pricing": {
-      "completionTextTokens": "0.0000012",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000006",
-      "promptTextTokens": "0.0000003"
-    },
-    "reasoning": true,
-    "title": "MiniMax M2.7",
-    "tools": true
-  },
-  {
     "added_date": 1780358400000,
     "aliases": [
+      "minimax-m3",
       "minimax3",
       "minimax-3"
     ],
@@ -1083,7 +1053,7 @@
     ],
     "is_specialized": false,
     "max_reference_images": 30,
-    "name": "minimax-m3",
+    "name": "minimax",
     "output_modalities": [
       "text"
     ],
@@ -1098,43 +1068,43 @@
     "tools": true
   },
   {
-    "added_date": 1759795200000,
+    "added_date": 1767657600000,
     "aliases": [
-      "mistral-small",
-      "mistral-small-3.1",
-      "mistral-small-2503",
-      "mistral-small-3.2",
-      "mistral-small-3.2-24b-instruct-2506"
+      "minimax-m2p7",
+      "minimax-m2.5",
+      "minimax-m2p5"
     ],
-    "brand": "Mistral",
+    "brand": "MiniMax",
     "capabilities": [
-      "tool_calling"
+      "tool_calling",
+      "reasoning"
     ],
     "category": "text",
-    "context_length": 128000,
-    "description": "Mistral Small 3.2 - Improved Instruction Following & Function Calling",
+    "context_length": 200000,
+    "description": "MiniMax M2.7 - Coding, Agentic & Multi-Language",
     "input_modalities": [
-      "text",
-      "image"
+      "text"
     ],
     "is_specialized": false,
-    "max_reference_images": 10,
-    "name": "mistral",
+    "name": "minimax-m2.7",
     "output_modalities": [
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.0000002",
+      "completionTextTokens": "0.0000012",
       "currency": "pollen",
-      "promptCachedTokens": "0.000000075",
-      "promptTextTokens": "0.000000075"
+      "promptCachedTokens": "0.00000006",
+      "promptTextTokens": "0.0000003"
     },
-    "title": "Mistral Small 3.2",
+    "reasoning": true,
+    "title": "MiniMax M2.7",
     "tools": true
   },
   {
     "added_date": 1778803200000,
     "aliases": [
+      "mistral-4",
+      "mistral-small",
       "mistral-small-4",
       "mistral-small-2603"
     ],
@@ -1152,7 +1122,7 @@
     ],
     "is_specialized": false,
     "max_reference_images": 10,
-    "name": "mistral-4",
+    "name": "mistral",
     "output_modalities": [
       "text"
     ],
@@ -1197,6 +1167,39 @@
     },
     "reasoning": true,
     "title": "Mistral Large 3",
+    "tools": true
+  },
+  {
+    "added_date": 1759795200000,
+    "aliases": [
+      "mistral-small-3.1",
+      "mistral-small-2503",
+      "mistral-small-3.2-24b-instruct-2506"
+    ],
+    "brand": "Mistral",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "context_length": 128000,
+    "description": "Mistral Small 3.2 - Improved Instruction Following & Function Calling",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 10,
+    "name": "mistral-small-3.2",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000002",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000075",
+      "promptTextTokens": "0.000000075"
+    },
+    "title": "Mistral Small 3.2",
     "tools": true
   },
   {
@@ -1425,13 +1428,11 @@
     "tools": true
   },
   {
-    "added_date": 1759795200000,
+    "added_date": 1777680000000,
     "aliases": [
-      "gpt-5.4",
-      "gpt-5.4-reasoning",
-      "gpt-5.2",
-      "openai-reasoning",
-      "gpt-5.2-reasoning"
+      "gpt-5.5",
+      "gpt-5.5-reasoning",
+      "openai-reasoning"
     ],
     "brand": "OpenAI",
     "capabilities": [
@@ -1440,7 +1441,7 @@
     ],
     "category": "text",
     "context_length": 1050000,
-    "description": "GPT-5.4 - Most Powerful & Intelligent",
+    "description": "GPT-5.5 - Frontier Reasoning",
     "input_modalities": [
       "text",
       "image"
@@ -1452,13 +1453,13 @@
       "text"
     ],
     "pricing": {
-      "completionTextTokens": "0.000015",
+      "completionTextTokens": "0.00003",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000025",
-      "promptTextTokens": "0.0000025"
+      "promptCachedTokens": "0.0000005",
+      "promptTextTokens": "0.000005"
     },
     "reasoning": true,
-    "title": "GPT-5.4",
+    "title": "GPT-5.5",
     "tools": true
   },
   {
