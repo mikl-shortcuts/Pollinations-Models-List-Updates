@@ -25,57 +25,70 @@ jobs:
           sparse-checkout: |
             text_models.json
             image_models.json
+            video_models.json
+            embeddings_models.json
+            audio_models.json
           sparse-checkout-cone-mode: false
         continue-on-error: true
 
-      - name: Check Text Models
+      - name: Prepare Checker Script
         run: |
-          set +e
-          for i in {1..3}; do
-            curl -sS --fail -A "github-actions-bot" "https://gen.pollinations.ai/text/models" -o /tmp/text_models.json && break
-            sleep 5
-          done
-          
-          if [ ! -f /tmp/text_models.json ]; then
-             curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
-               -d chat_id="${{ env.TG_ERROR }}" \
-               -d text="‼️<i>Maybe</i> <b>Pollinations AI Text API is down</b>‼️" \
-               -d parse_mode="HTML"
-             exit 0
-          fi
-          set -e
-
-          python3 - <<'PY'
-          import json, sys
+          cat << 'EOF' > /tmp/check.py
+          import json, sys, urllib.request, time, os
           from pathlib import Path
 
-          def to_monospace(s):
-              mono_map = {'a': '𝚊', 'b': '𝚋', 'c': '𝚌', 'd': '𝚍', 'e': '𝚎', 'f': '𝚏', 'g': '𝚐', 'h': '𝚑', 'i': '𝚒', 'j': '𝚓', 'k': '𝚔', 'l': '𝚕', 'm': '𝚖', 'n': '𝚗', 'o': '𝚘', 'p': '𝚙', 'q': '𝚚', 'r': '𝚛', 's': '𝚜', 't': '𝚝', 'u': '𝚞', 'v': '𝚟', 'w': '𝚠', 'x': '𝚡', 'y': '𝚢', 'z': '𝚣', '0': '𝟶', '1': '𝟷', '2': '𝟸', '3': '𝟹', '4': '𝟺', '5': '𝟻', '6': '𝟼', '7': '𝟽', '8': '𝟾', '9': '𝟿'}
-              return "".join(mono_map.get(c, c) for c in s)
-
-          def paid_tag(m):
-              return " [PAID]" if m.get("paid_only") else ""
+          cat_id = sys.argv[1]
+          url = sys.argv[2]
+          dest_path = sys.argv[3]
+          emoji = sys.argv[4]
+          title = sys.argv[5]
+          filter_cat = sys.argv[6] if len(sys.argv) > 6 else None
 
           MAX_LEN = 3500
-          tmp = Path("/tmp/text_models.json")
-          try:
-              data = json.loads(tmp.read_text(encoding="utf-8"))
-          except: sys.exit(0)
-          
-          models = data.get("data", []) if isinstance(data, dict) else data
-          normalized = [dict(m) for m in models]
-          normalized.sort(key=lambda x: str(x.get("name","")))
-          curr_txt = json.dumps(normalized, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-          prev_path = Path("text_models.json")
 
+          data = None
+          for _ in range(3):
+              try:
+                  req = urllib.request.Request(url, headers={'User-Agent': 'github-actions-bot'})
+                  with urllib.request.urlopen(req, timeout=10) as response:
+                      data = json.loads(response.read().decode('utf-8'))
+                      break
+              except Exception:
+                  time.sleep(5)
+
+          if data is None:
+              tg_token = os.environ.get("TG_TOKEN")
+              tg_error = os.environ.get("TG_ERROR")
+              if tg_token and tg_error:
+                  err_msg = f"‼️<i>Maybe</i> <b>Pollinations AI {title} API is down</b>‼️"
+                  err_url = f"https://api.telegram.org/bot{tg_token}/sendMessage"
+                  payload = json.dumps({"chat_id": tg_error, "text": err_msg, "parse_mode": "HTML"}).encode('utf-8')
+                  try:
+                      err_req = urllib.request.Request(err_url, data=payload, headers={'Content-Type': 'application/json'})
+                      urllib.request.urlopen(err_req)
+                  except Exception: pass
+              sys.exit(0)
+
+          models = data.get("data", []) if isinstance(data, dict) else data
+          if not isinstance(models, list):
+              sys.exit(0)
+
+          if filter_cat:
+              models = [m for m in models if isinstance(m, dict) and m.get("category") == filter_cat]
+
+          normalized = [dict(m) for m in models if isinstance(m, dict)]
+          normalized.sort(key=lambda x: str(x.get("name", "")))
+          curr_txt = json.dumps(normalized, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+
+          prev_path = Path(dest_path)
           if not prev_path.exists():
               prev_path.write_text(curr_txt, encoding="utf-8")
-              Path("/tmp/changed_text.flag").write_text("false", encoding="utf-8")
+              Path(f"/tmp/changed_{cat_id}.flag").write_text("false", encoding="utf-8")
               sys.exit(0)
 
           prev = json.loads(prev_path.read_text(encoding="utf-8"))
-          prev_map = {str(i.get("name","")): i for i in prev if i.get("name")}
-          curr_map = {str(i.get("name","")): i for i in normalized if i.get("name")}
+          prev_map = {str(i.get("name", "")): i for i in prev if i.get("name")}
+          curr_map = {str(i.get("name", "")): i for i in normalized if i.get("name")}
 
           added = sorted(set(curr_map) - set(prev_map))
           removed = sorted(set(prev_map) - set(curr_map))
@@ -94,16 +107,23 @@ jobs:
                       else:
                           d[full_key] = {"old": ov, "new": nv}
               return d
+
           for name in common:
               d = diff_dicts(prev_map[name], curr_map[name])
               if d: modified[name] = d
 
           has_changes = bool(added or removed or modified)
-          Path("/tmp/changed_text.flag").write_text("true" if has_changes else "false", encoding="utf-8")
+          Path(f"/tmp/changed_{cat_id}.flag").write_text("true" if has_changes else "false", encoding="utf-8")
+
+          def to_monospace(s):
+              mono_map = {'a': '𝚊', 'b': '𝚋', 'c': '𝚌', 'd': '𝚍', 'e': '𝚎', 'f': '𝚏', 'g': '𝚐', 'h': '𝚑', 'i': '𝚒', 'j': '𝚓', 'k': '𝚔', 'l': '𝚕', 'm': '𝚖', 'n': '𝚗', 'o': '𝚘', 'p': '𝚙', 'q': '𝚚', 'r': '𝚛', 's': '𝚜', 't': '𝚝', 'u': '𝚞', 'v': '𝚟', 'w': '𝚠', 'x': '𝚡', 'y': '𝚢', 'z': '𝚣', '0': '𝟶', '1': '𝟷', '2': '𝟸', '3': '𝟹', '4': '𝟺', '5': '𝟻', '6': '𝟼', '7': '𝟽', '8': '𝟾', '9': '𝟿'}
+              return "".join(mono_map.get(c, c) for c in s)
+
+          def paid_tag(m):
+              return " [PAID]" if m.get("paid_only") else ""
 
           if has_changes:
               prev_path.write_text(curr_txt, encoding="utf-8")
-              
               blocks = []
               for n in added:
                   blocks.append(("added", f"  - <code>{n}</code>{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')})"))
@@ -114,7 +134,7 @@ jobs:
                   for k, ch in sorted(modified[n].items()): mlines.append(f"      • {k}: {ch['old']} → {ch['new']}")
                   blocks.append(("modified", "\n".join(mlines)))
 
-              header = "<b>💬 Pollinations AI Text Models Update:</b>"
+              header = f"<b>{emoji} Pollinations AI {title} Models Update:</b>"
               sec_h = {"added": "\n<b>+ Added models:</b>", "removed": "\n<b>- Deleted models:</b>", "modified": "\n<b>&gt; Updated models:</b>"}
               parts = []
               cur_lines = []
@@ -125,14 +145,18 @@ jobs:
                   add_len = len("\n".join(to_add)) + 1
                   if cur_len + add_len > MAX_LEN and cur_lines:
                       parts.append("\n".join(cur_lines))
-                      cur_lines = [sec_h[sec], blk]; cur_len = len("\n".join(cur_lines)) + 1; cur_sec = sec
+                      cur_lines = [sec_h[sec], blk]
+                      cur_len = len("\n".join(cur_lines)) + 1
+                      cur_sec = sec
                   else:
-                      cur_lines.extend(to_add); cur_len += add_len; cur_sec = sec
+                      cur_lines.extend(to_add)
+                      cur_len += add_len
+                      cur_sec = sec
               if cur_lines: parts.append("\n".join(cur_lines))
-              
+
               for i, p in enumerate(parts):
-                  Path(f"/tmp/msg_text_{i}.txt").write_text(f"{header}\n{p}", encoding="utf-8")
-              Path("/tmp/text_count.txt").write_text(str(len(parts)), encoding="utf-8")
+                  Path(f"/tmp/msg_{cat_id}_{i}.txt").write_text(f"{header}\n{p}", encoding="utf-8")
+              Path(f"/tmp/{cat_id}_count.txt").write_text(str(len(parts)), encoding="utf-8")
 
               embeds = []
               if added:
@@ -142,182 +166,66 @@ jobs:
                   desc = []
                   for n in sorted(modified):
                       desc.append(f"- {to_monospace(n)}{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')}):")
-                      for k,ch in modified[n].items(): desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
+                      for k, ch in modified[n].items():
+                          desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
                   embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
               if removed:
                   desc = [f"- {to_monospace(n)}{paid_tag(prev_map[n])} ({prev_map[n].get('description','?')})" for n in removed]
                   embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
 
               discord_payload = {
-                  "content": "## 💬 Pollinations AI Text Models Update:",
+                  "content": f"## {emoji} Pollinations AI {title} Models Update:",
                   "username": "Pollinations Models List Updates Bot",
                   "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
                   "embeds": embeds
               }
-              Path("/tmp/discord_text.json").write_text(json.dumps(discord_payload), encoding="utf-8")
-          PY
+              Path(f"/tmp/discord_{cat_id}.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+          EOF
+
+      - name: Check Text Models
+        run: python3 /tmp/check.py text "https://gen.pollinations.ai/text/models" text_models.json "💬" "Text"
 
       - name: Check Image Models
-        run: |
-          set +e
-          for i in {1..3}; do
-            curl -sS --fail -A "github-actions-bot" "https://gen.pollinations.ai/image/models" -o /tmp/image_models.json && break
-            sleep 5
-          done
-          if [ ! -f /tmp/image_models.json ]; then
-             curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
-               -d chat_id="${{ env.TG_ERROR }}" \
-               -d text="‼️<i>Maybe</i> <b>Pollinations AI Image API is down</b>‼️" -d parse_mode="HTML"
-             exit 0
-          fi
-          set -e
+        run: python3 /tmp/check.py image "https://gen.pollinations.ai/image/models" image_models.json "🖼️" "Image" "image"
 
-          python3 - <<'PY'
-          import json, sys
-          from pathlib import Path
+      - name: Check Video Models
+        run: python3 /tmp/check.py video "https://gen.pollinations.ai/image/models" video_models.json "🎥" "Video" "video"
 
-          def to_monospace(s):
-              mono_map = {'a': '𝚊', 'b': '𝚋', 'c': '𝚌', 'd': '𝚍', 'e': '𝚎', 'f': '𝚏', 'g': '𝚐', 'h': '𝚑', 'i': '𝚒', 'j': '𝚓', 'k': '𝚔', 'l': '𝚕', 'm': '𝚖', 'n': '𝚗', 'o': '𝚘', 'p': '𝚙', 'q': '𝚚', 'r': '𝚛', 's': '𝚜', 't': '𝚝', 'u': '𝚞', 'v': '𝚟', 'w': '𝚠', 'x': '𝚡', 'y': '𝚢', 'z': '𝚣', '0': '𝟶', '1': '𝟷', '2': '𝟸', '3': '𝟹', '4': '𝟺', '5': '𝟻', '6': '𝟼', '7': '𝟽', '8': '𝟾', '9': '𝟿'}
-              return "".join(mono_map.get(c, c) for c in s)
+      - name: Check Embeddings Models
+        run: python3 /tmp/check.py embeddings "https://gen.pollinations.ai/embeddings/models" embeddings_models.json "🧬" "Embeddings"
 
-          def paid_tag(m):
-              return " [PAID]" if m.get("paid_only") else ""
-
-          MAX_LEN = 3500
-          tmp = Path("/tmp/image_models.json")
-          try:
-              data = json.loads(tmp.read_text(encoding="utf-8"))
-          except: sys.exit(0)
-          
-          models = data.get("data", []) if isinstance(data, dict) else data
-          normalized = [dict(m) for m in models]
-          normalized.sort(key=lambda x: str(x.get("name","")))
-          curr_txt = json.dumps(normalized, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-          prev_path = Path("image_models.json")
-
-          if not prev_path.exists():
-              prev_path.write_text(curr_txt, encoding="utf-8")
-              Path("/tmp/changed_image.flag").write_text("false", encoding="utf-8")
-              sys.exit(0)
-
-          prev = json.loads(prev_path.read_text(encoding="utf-8"))
-          prev_map = {str(i.get("name","")): i for i in prev if i.get("name")}
-          curr_map = {str(i.get("name","")): i for i in normalized if i.get("name")}
-
-          added = sorted(set(curr_map) - set(prev_map))
-          removed = sorted(set(prev_map) - set(curr_map))
-          common = sorted(set(prev_map) & set(curr_map))
-          modified = {}
-
-          def diff_dicts(o, n, prefix=""):
-              d = {}
-              for k in sorted(set(o.keys()) | set(n.keys())):
-                  if k == "created": continue
-                  full_key = f"{prefix}.{k}" if prefix else k
-                  ov, nv = o.get(k), n.get(k)
-                  if ov != nv:
-                      if isinstance(ov, dict) and isinstance(nv, dict):
-                          d.update(diff_dicts(ov, nv, full_key))
-                      else:
-                          d[full_key] = {"old": ov, "new": nv}
-              return d
-          for name in common:
-              d = diff_dicts(prev_map[name], curr_map[name])
-              if d: modified[name] = d
-
-          has_changes = bool(added or removed or modified)
-          Path("/tmp/changed_image.flag").write_text("true" if has_changes else "false", encoding="utf-8")
-
-          if has_changes:
-              prev_path.write_text(curr_txt, encoding="utf-8")
-              
-              blocks = []
-              for n in added:
-                  blocks.append(("added", f"  - <code>{n}</code>{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')})"))
-              for n in removed:
-                  blocks.append(("removed", f"  - <code>{n}</code>{paid_tag(prev_map[n])} ({prev_map[n].get('description','?')})"))
-              for n in sorted(modified):
-                  mlines = [f"  - <code>{n}</code>{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')}):"]
-                  for k, ch in sorted(modified[n].items()): mlines.append(f"      • {k}: {ch['old']} → {ch['new']}")
-                  blocks.append(("modified", "\n".join(mlines)))
-
-              header = "<b>🖼️ Pollinations AI Image Models Update:</b>"
-              sec_h = {"added": "\n<b>+ Added models:</b>", "removed": "\n<b>- Deleted models:</b>", "modified": "\n<b>&gt; Updated models:</b>"}
-              parts = []
-              cur_lines = []
-              cur_sec = None
-              cur_len = 0
-              for sec, blk in blocks:
-                  to_add = ([sec_h[sec]] if sec != cur_sec else []) + [blk]
-                  add_len = len("\n".join(to_add)) + 1
-                  if cur_len + add_len > MAX_LEN and cur_lines:
-                      parts.append("\n".join(cur_lines))
-                      cur_lines = [sec_h[sec], blk]; cur_len = len("\n".join(cur_lines)) + 1; cur_sec = sec
-                  else:
-                      cur_lines.extend(to_add); cur_len += add_len; cur_sec = sec
-              if cur_lines: parts.append("\n".join(cur_lines))
-              
-              for i, p in enumerate(parts):
-                  Path(f"/tmp/msg_image_{i}.txt").write_text(f"{header}\n{p}", encoding="utf-8")
-              Path("/tmp/image_count.txt").write_text(str(len(parts)), encoding="utf-8")
-
-              embeds = []
-              if added:
-                  desc = [f"- {to_monospace(n)}{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')})" for n in added]
-                  embeds.append({"title": "Added Models:", "description": "\n".join(desc), "color": 0x86B953})
-              if modified:
-                  desc = []
-                  for n in sorted(modified):
-                      desc.append(f"- {to_monospace(n)}{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')}):")
-                      for k,ch in modified[n].items(): desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
-                  embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
-              if removed:
-                  desc = [f"- {to_monospace(n)}{paid_tag(prev_map[n])} ({prev_map[n].get('description','?')})" for n in removed]
-                  embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
-
-              discord_payload = {
-                  "content": "## 🖼️ Pollinations AI Image Models Update:",
-                  "username": "Pollinations Models List Updates Bot",
-                  "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
-                  "embeds": embeds
-              }
-              Path("/tmp/discord_image.json").write_text(json.dumps(discord_payload), encoding="utf-8")
-          PY
+      - name: Check Audio Models
+        run: python3 /tmp/check.py audio "https://gen.pollinations.ai/audio/models" audio_models.json "🎵" "Audio"
 
       - name: Send Notifications
         run: |
-          if [ "$(cat /tmp/changed_text.flag 2>/dev/null)" = "true" ]; then
-             PARTS=$(cat /tmp/text_count.txt)
-             for i in $(seq 0 $((PARTS - 1))); do
-               MSG=$(cat /tmp/msg_text_${i}.txt)
-               curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
-                 -H "Content-Type: application/json" \
-                 -d "$(jq -n --arg chat "${{ env.TG_NOTIFY }}" --arg text "$MSG" '{chat_id: $chat, text: $text, parse_mode: "HTML", disable_web_page_preview: true}')"
-               sleep 1
-             done
-             curl -H "Content-Type: application/json" -d @/tmp/discord_text.json "${{ env.DS_WEBHOOK }}"
-          fi
-
-          if [ "$(cat /tmp/changed_image.flag 2>/dev/null)" = "true" ]; then
-             PARTS=$(cat /tmp/image_count.txt)
-             for i in $(seq 0 $((PARTS - 1))); do
-               MSG=$(cat /tmp/msg_image_${i}.txt)
-               curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
-                 -H "Content-Type: application/json" \
-                 -d "$(jq -n --arg chat "${{ env.TG_NOTIFY }}" --arg text "$MSG" '{chat_id: $chat, text: $text, parse_mode: "HTML", disable_web_page_preview: true}')"
-               sleep 1
-             done
-             curl -H "Content-Type: application/json" -d @/tmp/discord_image.json "${{ env.DS_WEBHOOK }}"
-          fi
+          CATEGORIES=("text" "image" "video" "embeddings" "audio")
+          for CAT in "${CATEGORIES[@]}"; do
+            if [ "$(cat /tmp/changed_${CAT}.flag 2>/dev/null)" = "true" ]; then
+              PARTS=$(cat /tmp/${CAT}_count.txt 2>/dev/null || echo 0)
+              if [ "$PARTS" -gt 0 ]; then
+                for i in $(seq 0 $((PARTS - 1))); do
+                  MSG=$(cat /tmp/msg_${CAT}_${i}.txt)
+                  curl -s -X POST "https://api.telegram.org/bot${{ env.TG_TOKEN }}/sendMessage" \
+                    -H "Content-Type: application/json" \
+                    -d "$(jq -n --arg chat "${{ env.TG_NOTIFY }}" --arg text "$MSG" '{chat_id: $chat, text: $text, parse_mode: "HTML", disable_web_page_preview: true}')"
+                  sleep 1
+                done
+              fi
+              if [ -f /tmp/discord_${CAT}.json ]; then
+                curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}.json "${{ env.DS_WEBHOOK }}"
+              fi
+            fi
+          done
 
       - name: Commit and Push
         run: |
-          if git diff --quiet text_models.json image_models.json; then
-             exit 0
+          if git diff --quiet text_models.json image_models.json video_models.json embeddings_models.json audio_models.json; then
+            exit 0
           fi
-          
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add text_models.json image_models.json
+          git add text_models.json image_models.json video_models.json embeddings_models.json audio_models.json
           git commit -m "Update Pollinations models [$(date +'%Y-%m-%d %H:%M')]"
           git push origin saves
