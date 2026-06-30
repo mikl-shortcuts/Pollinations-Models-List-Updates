@@ -119,20 +119,47 @@ jobs:
               mono_map = {'a': '𝚊', 'b': '𝚋', 'c': '𝚌', 'd': '𝚍', 'e': '𝚎', 'f': '𝚏', 'g': '𝚐', 'h': '𝚑', 'i': '𝚒', 'j': '𝚓', 'k': '𝚔', 'l': '𝚕', 'm': '𝚖', 'n': '𝚗', 'o': '𝚘', 'p': '𝚙', 'q': '𝚚', 'r': '𝚛', 's': '𝚜', 't': '𝚝', 'u': '𝚞', 'v': '𝚟', 'w': '𝚠', 'x': '𝚡', 'y': '𝚢', 'z': '𝚣', '0': '𝟶', '1': '𝟷', '2': '𝟸', '3': '𝟹', '4': '𝟺', '5': '𝟻', '6': '𝟼', '7': '𝟽', '8': '𝟾', '9': '𝟿'}
               return "".join(mono_map.get(c, c) for c in s)
 
-          def paid_tag(m):
-              return " [PAID]" if m.get("paid_only") else ""
+          def get_tags(m):
+              tags = []
+              if m.get("alpha"):
+                  tags.append("[ALPHA]")
+              if m.get("paid_only"):
+                  tags.append("[PAID]")
+              if m.get("community"):
+                  tags.append("[COMMUNITY]")
+              return " " + " ".join(tags) if tags else ""
+
+          def format_val(val):
+              return "None" if val in ([], "", None) else str(val)
 
           if has_changes:
               prev_path.write_text(curr_txt, encoding="utf-8")
               blocks = []
+              
               for n in added:
-                  blocks.append(("added", f"  - <code>{n}</code>{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')})"))
-              for n in removed:
-                  blocks.append(("removed", f"  - <code>{n}</code>{paid_tag(prev_map[n])} ({prev_map[n].get('description','?')})"))
+                  m = curr_map[n]
+                  lines = [f"  - <code>{n}</code>{get_tags(m)} ({m.get('description','?')})"]
+                  for k in sorted(m.keys()):
+                      if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                          continue
+                      lines.append(f"      • {k}: {format_val(m[k])}")
+                  blocks.append(("added", "\n".join(lines)))
+                  
               for n in sorted(modified):
-                  mlines = [f"  - <code>{n}</code>{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')}):"]
-                  for k, ch in sorted(modified[n].items()): mlines.append(f"      • {k}: {ch['old']} → {ch['new']}")
+                  m = curr_map[n]
+                  mlines = [f"  - <code>{n}</code>{get_tags(m)} ({m.get('description','?')}):"]
+                  for k, ch in sorted(modified[n].items()):
+                      mlines.append(f"      • {k}: {ch['old']} → {ch['new']}")
                   blocks.append(("modified", "\n".join(mlines)))
+                  
+              for n in removed:
+                  m = prev_map[n]
+                  lines = [f"  - <code>{n}</code>{get_tags(m)} ({m.get('description','?')})"]
+                  for k in sorted(m.keys()):
+                      if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                          continue
+                      lines.append(f"      • {k}: {format_val(m[k])}")
+                  blocks.append(("removed", "\n".join(lines)))
 
               header = f"<b>{emoji} Pollinations AI {title} Models Update:</b>"
               sec_h = {"added": "\n<b>+ Added models:</b>", "removed": "\n<b>- Deleted models:</b>", "modified": "\n<b>&gt; Updated models:</b>"}
@@ -160,17 +187,34 @@ jobs:
 
               embeds = []
               if added:
-                  desc = [f"- {to_monospace(n)}{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')})" for n in added]
+                  desc = []
+                  for n in added:
+                      m = curr_map[n]
+                      desc.append(f"- {to_monospace(n)}{get_tags(m)} ({m.get('description','?')})")
+                      for k in sorted(m.keys()):
+                          if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                              continue
+                          desc.append(f"   - {k}: {format_val(m[k])}")
                   embeds.append({"title": "Added Models:", "description": "\n".join(desc), "color": 0x86B953})
+                  
               if modified:
                   desc = []
                   for n in sorted(modified):
-                      desc.append(f"- {to_monospace(n)}{paid_tag(curr_map[n])} ({curr_map[n].get('description','?')}):")
-                      for k, ch in modified[n].items():
+                      m = curr_map[n]
+                      desc.append(f"- {to_monospace(n)}{get_tags(m)} ({m.get('description','?')}):")
+                      for k, ch in sorted(modified[n].items()):
                           desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
                   embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
+                  
               if removed:
-                  desc = [f"- {to_monospace(n)}{paid_tag(prev_map[n])} ({prev_map[n].get('description','?')})" for n in removed]
+                  desc = []
+                  for n in removed:
+                      m = prev_map[n]
+                      desc.append(f"- {to_monospace(n)}{get_tags(m)} ({m.get('description','?')})")
+                      for k in sorted(m.keys()):
+                          if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                              continue
+                          desc.append(f"   - {k}: {format_val(m[k])}")
                   embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
 
               discord_payload = {
@@ -192,7 +236,7 @@ jobs:
         run: python3 /tmp/check.py video "https://gen.pollinations.ai/image/models" video_models.json "🎥" "Video" "video"
 
       - name: Check Embeddings Models
-        run: python3 /tmp/check.py embeddings "https://gen.pollinations.ai/embeddings/models" embeddings_models.json "🧬" "Embeddings"
+        run: python3 /tmp/check.py embeddings "https://gen.pollinations.ai/embeddings/models" embeddings_models.json "🧪" "Embeddings"
 
       - name: Check Audio Models
         run: python3 /tmp/check.py audio "https://gen.pollinations.ai/audio/models" audio_models.json "🎵" "Audio"
