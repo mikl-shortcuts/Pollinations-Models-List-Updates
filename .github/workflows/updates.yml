@@ -13,6 +13,12 @@ env:
   TG_NOTIFY: ${{ secrets.TELEGRAM_CHANNEL }}
   TG_ERROR: ${{ secrets.TELEGRAM_ERRORS }}
   DS_WEBHOOK: ${{ secrets.DS_WEBHOOK }}
+  DS_WEBHOOK_TEXT: ${{ secrets.DS_WEBHOOK_TEXT }}
+  DS_WEBHOOK_IMAGE: ${{ secrets.DS_WEBHOOK_IMAGE }}
+  DS_WEBHOOK_VIDEO: ${{ secrets.DS_WEBHOOK_VIDEO }}
+  DS_WEBHOOK_AUDIO: ${{ secrets.DS_WEBHOOK_AUDIO }}
+  DS_WEBHOOK_EMBEDDINGS: ${{ secrets.DS_WEBHOOK_EMBEDDINGS }}
+  DS_WEBHOOK_COMMUNITY: ${{ secrets.DS_WEBHOOK_COMMUNITY }}
 
 jobs:
   check-and-update:
@@ -26,8 +32,8 @@ jobs:
             text_models.json
             image_models.json
             video_models.json
-            embeddings_models.json
             audio_models.json
+            embeddings_models.json
           sparse-checkout-cone-mode: false
         continue-on-error: true
 
@@ -185,45 +191,91 @@ jobs:
                   Path(f"/tmp/msg_{cat_id}_{i}.txt").write_text(f"{header}\n{p}", encoding="utf-8")
               Path(f"/tmp/{cat_id}_count.txt").write_text(str(len(parts)), encoding="utf-8")
 
-              embeds = []
-              if added:
-                  desc = []
-                  for n in added:
-                      m = curr_map[n]
-                      desc.append(f"- {to_monospace(n)}{get_tags(m)} ({m.get('description','?')})")
-                      for k in sorted(m.keys()):
-                          if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
-                              continue
-                          desc.append(f"   - {k}: {format_val(m[k])}")
-                  embeds.append({"title": "Added Models:", "description": "\n".join(desc), "color": 0x86B953})
-                  
-              if modified:
-                  desc = []
-                  for n in sorted(modified):
-                      m = curr_map[n]
-                      desc.append(f"- {to_monospace(n)}{get_tags(m)} ({m.get('description','?')}):")
-                      for k, ch in sorted(modified[n].items()):
-                          desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
-                  embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
-                  
-              if removed:
-                  desc = []
-                  for n in removed:
-                      m = prev_map[n]
-                      desc.append(f"- {to_monospace(n)}{get_tags(m)} ({m.get('description','?')})")
-                      for k in sorted(m.keys()):
-                          if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
-                              continue
-                          desc.append(f"   - {k}: {format_val(m[k])}")
-                  embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
+              added_std = [n for n in added if not curr_map[n].get("community")]
+              added_comm = [n for n in added if curr_map[n].get("community")]
+              
+              modified_std = [n for n in modified if not curr_map[n].get("community")]
+              modified_comm = [n for n in modified if curr_map[n].get("community")]
+              
+              removed_std = [n for n in removed if not prev_map[n].get("community")]
+              removed_comm = [n for n in removed if prev_map[n].get("community")]
 
-              discord_payload = {
-                  "content": f"## {emoji} Pollinations AI {title} Models Update:",
-                  "username": "Pollinations Models List Updates Bot",
-                  "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
-                  "embeds": embeds
-              }
-              Path(f"/tmp/discord_{cat_id}.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+              def make_discord_embeds(added_list, modified_list, removed_list, is_comm_channel=False):
+                  embeds = []
+                  
+                  def clean_tags(item):
+                      tags = []
+                      if item.get("alpha"):
+                          tags.append("[ALPHA]")
+                      if item.get("paid_only"):
+                          tags.append("[PAID]")
+                      if not is_comm_channel and item.get("community"):
+                          tags.append("[COMMUNITY]")
+                      return " " + " ".join(tags) if tags else ""
+
+                  if added_list:
+                      desc = []
+                      for n in added_list:
+                          m = curr_map[n]
+                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({m.get('description','?')})")
+                          for k in sorted(m.keys()):
+                              if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                                  continue
+                              desc.append(f"   - {k}: {format_val(m[k])}")
+                      embeds.append({"title": "Added Models:", "description": "\n".join(desc), "color": 0x86B953})
+
+                  if modified_list:
+                      desc = []
+                      for n in sorted(modified_list):
+                          m = curr_map[n]
+                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({m.get('description','?')}):")
+                          for k, ch in sorted(modified[n].items()):
+                              desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
+                      embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
+
+                  if removed_list:
+                      desc = []
+                      for n in removed_list:
+                          m = prev_map[n]
+                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({m.get('description','?')})")
+                          for k in sorted(m.keys()):
+                              if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                                  continue
+                              desc.append(f"   - {k}: {format_val(m[k])}")
+                      embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
+
+                  return embeds
+
+              embeds_old = make_discord_embeds(added, modified, removed, is_comm_channel=False)
+              if embeds_old:
+                  discord_payload = {
+                      "content": f"## {emoji} Pollinations AI {title} Models Update:",
+                      "username": "Pollinations Models List Updates Bot",
+                      "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
+                      "embeds": embeds_old,
+                      "flags": 4096
+                  }
+                  Path(f"/tmp/discord_{cat_id}_old.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+
+              embeds_std = make_discord_embeds(added_std, modified_std, removed_std, is_comm_channel=False)
+              if embeds_std:
+                  discord_payload = {
+                      "content": f"## {emoji} Pollinations AI {title} Models Update:",
+                      "username": "Pollinations Models List Updates Bot",
+                      "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
+                      "embeds": embeds_std
+                  }
+                  Path(f"/tmp/discord_{cat_id}_std.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+
+              embeds_comm = make_discord_embeds(added_comm, modified_comm, removed_comm, is_comm_channel=True)
+              if embeds_comm:
+                  discord_payload = {
+                      "content": f"## {emoji} Pollinations AI {title} (Community) Models Update:",
+                      "username": "Pollinations Models List Updates Bot",
+                      "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
+                      "embeds": embeds_comm
+                  }
+                  Path(f"/tmp/discord_{cat_id}_comm.json").write_text(json.dumps(discord_payload), encoding="utf-8")
           EOF
 
       - name: Check Text Models
@@ -235,15 +287,16 @@ jobs:
       - name: Check Video Models
         run: python3 /tmp/check.py video "https://gen.pollinations.ai/image/models" video_models.json "🎥" "Video" "video"
 
-      - name: Check Embeddings Models
-        run: python3 /tmp/check.py embeddings "https://gen.pollinations.ai/embeddings/models" embeddings_models.json "🧪" "Embeddings"
-
       - name: Check Audio Models
         run: python3 /tmp/check.py audio "https://gen.pollinations.ai/audio/models" audio_models.json "🎵" "Audio"
 
+      - name: Check Embeddings Models
+        run: python3 /tmp/check.py embeddings "https://gen.pollinations.ai/embeddings/models" embeddings_models.json "🧪" "Embeddings"
+
       - name: Send Notifications
         run: |
-          CATEGORIES=("text" "image" "video" "embeddings" "audio")
+          CATEGORIES=("text" "image" "video" "audio" "embeddings")
+
           for CAT in "${CATEGORIES[@]}"; do
             if [ "$(cat /tmp/changed_${CAT}.flag 2>/dev/null)" = "true" ]; then
               PARTS=$(cat /tmp/${CAT}_count.txt 2>/dev/null || echo 0)
@@ -256,20 +309,41 @@ jobs:
                   sleep 1
                 done
               fi
-              if [ -f /tmp/discord_${CAT}.json ]; then
-                curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}.json "${{ env.DS_WEBHOOK }}"
+
+              if [ -f /tmp/discord_${CAT}_old.json ] && [ -n "${{ env.DS_WEBHOOK }}" ]; then
+                curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_old.json "${{ env.DS_WEBHOOK }}"
+              fi
+
+              case "$CAT" in
+                text) WEBHOOK_URL="${{ env.DS_WEBHOOK_TEXT }}" ;;
+                image) WEBHOOK_URL="${{ env.DS_WEBHOOK_IMAGE }}" ;;
+                video) WEBHOOK_URL="${{ env.DS_WEBHOOK_VIDEO }}" ;;
+                audio) WEBHOOK_URL="${{ env.DS_WEBHOOK_AUDIO }}" ;;
+                embeddings) WEBHOOK_URL="${{ env.DS_WEBHOOK_EMBEDDINGS }}" ;;
+              esac
+
+              if [ -f /tmp/discord_${CAT}_std.json ] && [ -n "$WEBHOOK_URL" ]; then
+                curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_std.json "$WEBHOOK_URL"
+              fi
+            fi
+          done
+
+          for CAT in "${CATEGORIES[@]}"; do
+            if [ "$(cat /tmp/changed_${CAT}.flag 2>/dev/null)" = "true" ]; then
+              if [ -f /tmp/discord_${CAT}_comm.json ] && [ -n "${{ env.DS_WEBHOOK_COMMUNITY }}" ]; then
+                curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_comm.json "${{ env.DS_WEBHOOK_COMMUNITY }}"
               fi
             fi
           done
 
       - name: Commit and Push
         run: |
-          if git diff --quiet text_models.json image_models.json video_models.json embeddings_models.json audio_models.json; then
+          if git diff --quiet text_models.json image_models.json video_models.json audio_models.json embeddings_models.json; then
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add text_models.json image_models.json video_models.json embeddings_models.json audio_models.json
+          git add text_models.json image_models.json video_models.json audio_models.json embeddings_models.json
           git commit -m "Update Pollinations models [$(date +'%Y-%m-%d %H:%M')]"
           git push origin saves
