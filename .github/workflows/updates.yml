@@ -17,6 +17,7 @@ env:
   DS_WEBHOOK_IMAGE: ${{ secrets.DS_WEBHOOK_IMAGE }}
   DS_WEBHOOK_VIDEO: ${{ secrets.DS_WEBHOOK_VIDEO }}
   DS_WEBHOOK_AUDIO: ${{ secrets.DS_WEBHOOK_AUDIO }}
+  DS_WEBHOOK_3D: ${{ secrets.DS_WEBHOOK_3D }}
   DS_WEBHOOK_EMBEDDINGS: ${{ secrets.DS_WEBHOOK_EMBEDDINGS }}
   DS_WEBHOOK_COMMUNITY: ${{ secrets.DS_WEBHOOK_COMMUNITY }}
 
@@ -33,6 +34,7 @@ jobs:
             image_models.json
             video_models.json
             audio_models.json
+            3d_models.json
             embeddings_models.json
           sparse-checkout-cone-mode: false
         continue-on-error: true
@@ -290,12 +292,15 @@ jobs:
       - name: Check Audio Models
         run: python3 /tmp/check.py audio "https://gen.pollinations.ai/audio/models" audio_models.json "🎵" "Audio"
 
+      - name: Check 3D Models
+        run: python3 /tmp/check.py 3d "https://gen.pollinations.ai/3d/models" 3d_models.json "💠" "3D"
+
       - name: Check Embeddings Models
         run: python3 /tmp/check.py embeddings "https://gen.pollinations.ai/embeddings/models" embeddings_models.json "🧪" "Embeddings"
 
       - name: Send Notifications
         run: |
-          CATEGORIES=("text" "image" "video" "audio" "embeddings")
+          CATEGORIES=("text" "image" "video" "audio" "3d" "embeddings")
 
           for CAT in "${CATEGORIES[@]}"; do
             if [ "$(cat /tmp/changed_${CAT}.flag 2>/dev/null)" = "true" ]; then
@@ -319,6 +324,7 @@ jobs:
                 image) WEBHOOK_URL="${{ env.DS_WEBHOOK_IMAGE }}" ;;
                 video) WEBHOOK_URL="${{ env.DS_WEBHOOK_VIDEO }}" ;;
                 audio) WEBHOOK_URL="${{ env.DS_WEBHOOK_AUDIO }}" ;;
+                3d) WEBHOOK_URL="${{ env.DS_WEBHOOK_3D }}" ;;
                 embeddings) WEBHOOK_URL="${{ env.DS_WEBHOOK_EMBEDDINGS }}" ;;
               esac
 
@@ -338,12 +344,12 @@ jobs:
 
       - name: Commit and Push
         run: |
-          if git diff --quiet text_models.json image_models.json video_models.json audio_models.json embeddings_models.json; then
+          if git diff --quiet text_models.json image_models.json video_models.json audio_models.json 3d_models.json embeddings_models.json; then
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add text_models.json image_models.json video_models.json audio_models.json embeddings_models.json
+          git add text_models.json image_models.json video_models.json audio_models.json 3d_models.json embeddings_models.json
           git commit -m "Update Pollinations models [$(date +'%Y-%m-%d %H:%M')]"
           git push origin saves
