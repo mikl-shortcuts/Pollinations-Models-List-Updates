@@ -428,6 +428,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config add text_models.json image_models.json video_models.json audio_models.json 3d_models.json embeddings_models.json
+          git add text_models.json image_models.json video_models.json audio_models.json 3d_models.json embeddings_models.json
           git commit -m "Update Pollinations models [$(date +'%Y-%m-%d %H:%M')]"
           git push origin saves
