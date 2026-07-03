@@ -162,7 +162,7 @@ jobs:
                   s_str = f"{scaled:.10f}".rstrip('0').rstrip('.')
                   if not s_str or s_str == "-0":
                       s_str = "0"
-                  return f"{s_str} {currency}/M tokens"
+                  return f"{s_str} {currency}/M"
               except (ValueError, TypeError):
                   return str(val)
 
