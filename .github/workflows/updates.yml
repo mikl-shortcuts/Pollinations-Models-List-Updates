@@ -158,11 +158,18 @@ jobs:
               if val in ([], "", None):
                   return "None"
               try:
-                  scaled = float(val) * 1000000
-                  s_str = f"{scaled:.10f}".rstrip('0').rstrip('.')
-                  if not s_str or s_str == "-0":
-                      s_str = "0"
-                  return f"{s_str} {currency}/M"
+                  if cat_id == "text":
+                      scaled = float(val) * 1000000
+                      s_str = f"{scaled:.10f}".rstrip('0').rstrip('.')
+                      if not s_str or s_str == "-0":
+                          s_str = "0"
+                      return f"{s_str} {currency}/M"
+                  else:
+                      f_val = float(val)
+                      s_str = f"{f_val:.10f}".rstrip('0').rstrip('.')
+                      if not s_str or s_str == "-0":
+                          s_str = "0"
+                      return f"{s_str} {currency}"
               except (ValueError, TypeError):
                   return str(val)
 
