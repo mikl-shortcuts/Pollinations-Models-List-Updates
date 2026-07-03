@@ -118,6 +118,20 @@ jobs:
 
           for name in common:
               d = diff_dicts(prev_map[name], curr_map[name])
+              old_p = prev_map[name].get("pricing")
+              new_p = curr_map[name].get("pricing")
+              if isinstance(old_p, dict) and isinstance(new_p, dict):
+                  old_cur = old_p.get("currency", "pollen")
+                  new_cur = new_p.get("currency", "pollen")
+                  if old_cur != new_cur:
+                      for pk in set(old_p.keys()) | set(new_p.keys()):
+                          if pk == "currency":
+                              continue
+                          full_pk = f"pricing.{pk}"
+                          d[full_pk] = {
+                              "old": old_p.get(pk),
+                              "new": new_p.get(pk)
+                          }
               if d: modified[name] = d
 
           has_changes = bool(added or removed or modified)
@@ -140,6 +154,18 @@ jobs:
           def format_val(val):
               return "None" if val in ([], "", None) else str(val)
 
+          def format_pricing_value(val, currency="pollen"):
+              if val in ([], "", None):
+                  return "None"
+              try:
+                  scaled = float(val) * 1000000
+                  s_str = f"{scaled:.10f}".rstrip('0').rstrip('.')
+                  if not s_str or s_str == "-0":
+                      s_str = "0"
+                  return f"{s_str} {currency}/M tokens"
+              except (ValueError, TypeError):
+                  return str(val)
+
           if has_changes:
               prev_path.write_text(curr_txt, encoding="utf-8")
               blocks = []
@@ -150,14 +176,33 @@ jobs:
                   for k in sorted(m.keys()):
                       if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
                           continue
-                      lines.append(f"      • {k}: {format_val(m[k])}")
+                      if k == "pricing" and isinstance(m[k], dict):
+                          currency = m[k].get("currency", "pollen")
+                          for pk in sorted(m[k].keys()):
+                              if pk == "currency":
+                                  continue
+                              lines.append(f"      • pricing.{pk}: {format_pricing_value(m[k][pk], currency)}")
+                      else:
+                          lines.append(f"      • {k}: {format_val(m[k])}")
                   blocks.append(("added", "\n".join(lines)))
                   
               for n in sorted(modified):
                   m = curr_map[n]
+                  prev_m = prev_map[n]
                   mlines = [f"  - <code>{n}</code>{get_tags(m)} ({m.get('description','?')}):"]
                   for k, ch in sorted(modified[n].items()):
-                      mlines.append(f"      • {k}: {ch['old']} → {ch['new']}")
+                      if k == "pricing.currency":
+                          continue
+                      if k.startswith("pricing."):
+                          old_p = prev_m.get("pricing", {}) if isinstance(prev_m.get("pricing"), dict) else {}
+                          new_p = m.get("pricing", {}) if isinstance(m.get("pricing"), dict) else {}
+                          old_cur = old_p.get("currency", "pollen")
+                          new_cur = new_p.get("currency", "pollen")
+                          f_old = format_pricing_value(ch['old'], old_cur)
+                          f_new = format_pricing_value(ch['new'], new_cur)
+                          mlines.append(f"      • {k}: {f_old} → {f_new}")
+                      else:
+                          mlines.append(f"      • {k}: {format_val(ch['old'])} → {format_val(ch['new'])}")
                   blocks.append(("modified", "\n".join(mlines)))
                   
               for n in removed:
@@ -166,7 +211,14 @@ jobs:
                   for k in sorted(m.keys()):
                       if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
                           continue
-                      lines.append(f"      • {k}: {format_val(m[k])}")
+                      if k == "pricing" and isinstance(m[k], dict):
+                          currency = m[k].get("currency", "pollen")
+                          for pk in sorted(m[k].keys()):
+                              if pk == "currency":
+                                  continue
+                              lines.append(f"      • pricing.{pk}: {format_pricing_value(m[k][pk], currency)}")
+                      else:
+                          lines.append(f"      • {k}: {format_val(m[k])}")
                   blocks.append(("removed", "\n".join(lines)))
 
               header = f"<b>{emoji} Pollinations AI {title} Models Update:</b>"
@@ -223,16 +275,35 @@ jobs:
                           for k in sorted(m.keys()):
                               if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
                                   continue
-                              desc.append(f"   - {k}: {format_val(m[k])}")
+                              if k == "pricing" and isinstance(m[k], dict):
+                                  currency = m[k].get("currency", "pollen")
+                                  for pk in sorted(m[k].keys()):
+                                      if pk == "currency":
+                                          continue
+                                      desc.append(f"   - pricing.{pk}: {format_pricing_value(m[k][pk], currency)}")
+                              else:
+                                  desc.append(f"   - {k}: {format_val(m[k])}")
                       embeds.append({"title": "Added Models:", "description": "\n".join(desc), "color": 0x86B953})
 
                   if modified_list:
                       desc = []
                       for n in sorted(modified_list):
                           m = curr_map[n]
+                          prev_m = prev_map[n]
                           desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({m.get('description','?')}):")
                           for k, ch in sorted(modified[n].items()):
-                              desc.append(f"   - {k}: {ch['old']} -> {ch['new']}")
+                              if k == "pricing.currency":
+                                  continue
+                              if k.startswith("pricing."):
+                                  old_p = prev_m.get("pricing", {}) if isinstance(prev_m.get("pricing"), dict) else {}
+                                  new_p = m.get("pricing", {}) if isinstance(m.get("pricing"), dict) else {}
+                                  old_cur = old_p.get("currency", "pollen")
+                                  new_cur = new_p.get("currency", "pollen")
+                                  f_old = format_pricing_value(ch['old'], old_cur)
+                                  f_new = format_pricing_value(ch['new'], new_cur)
+                                  desc.append(f"   - {k}: {f_old} -> {f_new}")
+                              else:
+                                  desc.append(f"   - {k}: {format_val(ch['old'])} -> {format_val(ch['new'])}")
                       embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
 
                   if removed_list:
@@ -243,7 +314,14 @@ jobs:
                           for k in sorted(m.keys()):
                               if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
                                   continue
-                              desc.append(f"   - {k}: {format_val(m[k])}")
+                              if k == "pricing" and isinstance(m[k], dict):
+                                  currency = m[k].get("currency", "pollen")
+                                  for pk in sorted(m[k].keys()):
+                                      if pk == "currency":
+                                          continue
+                                      desc.append(f"   - pricing.{pk}: {format_pricing_value(m[k][pk], currency)}")
+                              else:
+                                  desc.append(f"   - {k}: {format_val(m[k])}")
                       embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
 
                   return embeds
@@ -350,6 +428,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add text_models.json image_models.json video_models.json audio_models.json 3d_models.json embeddings_models.json
+          git config add text_models.json image_models.json video_models.json audio_models.json 3d_models.json embeddings_models.json
           git commit -m "Update Pollinations models [$(date +'%Y-%m-%d %H:%M')]"
           git push origin saves
