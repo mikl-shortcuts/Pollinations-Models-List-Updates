@@ -143,6 +143,15 @@ jobs:
               mono_map = {'a': '𝚊', 'b': '𝚋', 'c': '𝚌', 'd': '𝚍', 'e': '𝚎', 'f': '𝚏', 'g': '𝚐', 'h': '𝚑', 'i': '𝚒', 'j': '𝚓', 'k': '𝚔', 'l': '𝚕', 'm': '𝚖', 'n': '𝚗', 'o': '𝚘', 'p': '𝚙', 'q': '𝚚', 'r': '𝚛', 's': '𝚜', 't': '𝚝', 'u': '𝚞', 'v': '𝚟', 'w': '𝚠', 'x': '𝚡', 'y': '𝚢', 'z': '𝚣', '0': '𝟶', '1': '𝟷', '2': '𝟸', '3': '𝟹', '4': '𝟺', '5': '𝟻', '6': '𝟼', '7': '𝟽', '8': '𝟾', '9': '𝟿'}
               return "".join(mono_map.get(c, c) for c in s)
 
+          def get_model_desc(m):
+              t = m.get("title") or ""
+              d = m.get("description") or "?"
+              if t and d != "?":
+                  if d.lower().startswith(t.lower()):
+                      return d
+                  return f"{t} - {d}"
+              return d
+
           def get_tags(m):
               tags = []
               if m.get("alpha"):
@@ -181,7 +190,7 @@ jobs:
               
               for n in added:
                   m = curr_map[n]
-                  lines = [f"  - <code>{n}</code>{get_tags(m)} ({m.get('description','?')})"]
+                  lines = [f"  - <code>{n}</code>{get_tags(m)} ({get_model_desc(m)})"]
                   for k in sorted(m.keys()):
                       if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
                           continue
@@ -198,7 +207,7 @@ jobs:
               for n in sorted(modified):
                   m = curr_map[n]
                   prev_m = prev_map[n]
-                  mlines = [f"  - <code>{n}</code>{get_tags(m)} ({m.get('description','?')}):"]
+                  mlines = [f"  - <code>{n}</code>{get_tags(m)} ({get_model_desc(m)}):"]
                   for k, ch in sorted(modified[n].items()):
                       if k == "pricing.currency":
                           continue
@@ -216,7 +225,7 @@ jobs:
                   
               for n in removed:
                   m = prev_map[n]
-                  lines = [f"  - <code>{n}</code>{get_tags(m)} ({m.get('description','?')})"]
+                  lines = [f"  - <code>{n}</code>{get_tags(m)} ({get_model_desc(m)})"]
                   for k in sorted(m.keys()):
                       if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
                           continue
@@ -280,7 +289,7 @@ jobs:
                       desc = []
                       for n in added_list:
                           m = curr_map[n]
-                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({m.get('description','?')})")
+                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)})")
                           for k in sorted(m.keys()):
                               if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
                                   continue
@@ -299,7 +308,7 @@ jobs:
                       for n in sorted(modified_list):
                           m = curr_map[n]
                           prev_m = prev_map[n]
-                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({m.get('description','?')}):")
+                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)}):")
                           for k, ch in sorted(modified[n].items()):
                               if k == "pricing.currency":
                                   continue
@@ -319,7 +328,7 @@ jobs:
                       desc = []
                       for n in removed_list:
                           m = prev_map[n]
-                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({m.get('description','?')})")
+                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)})")
                           for k in sorted(m.keys()):
                               if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
                                   continue
