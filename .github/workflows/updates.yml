@@ -2,7 +2,7 @@ name: Pollinations Models Monitor
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '41 * * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [run-monitor]
@@ -144,13 +144,13 @@ jobs:
               return "".join(mono_map.get(c, c) for c in s)
 
           def get_model_desc(m):
-              t = m.get("title") or ""
-              d = m.get("description") or "?"
-              if t and d != "?":
+              t = (m.get("title") or "").strip()
+              d = (m.get("description") or "").strip()
+              if t and d:
                   if d.lower().startswith(t.lower()):
                       return d
                   return f"{t} - {d}"
-              return d
+              return t or d or "?"
 
           def get_tags(m):
               tags = []
