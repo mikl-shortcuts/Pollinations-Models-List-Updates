@@ -204,12 +204,13 @@
     "added_date": 1764201600000,
     "aliases": [
       "veo-3.1-fast",
+      "veo-720p",
       "video"
     ],
     "brand": "Google",
     "capabilities": [],
     "category": "video",
-    "description": "Veo 3.1 Fast - Fast text-to-video with audio (preview)",
+    "description": "Fast text-to-video with optional audio at 720p",
     "input_modalities": [
       "text",
       "image"
@@ -221,10 +222,43 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.15",
+      "completionAudioSeconds": "0.02",
+      "completionVideoSeconds": "0.08",
       "currency": "pollen"
     },
-    "title": "Veo 3.1 Fast",
+    "title": "Veo 3.1 Fast 720p",
+    "video_capabilities": [
+      "start_frame",
+      "end_frame",
+      "audio_output"
+    ]
+  },
+  {
+    "added_date": 1784073600000,
+    "aliases": [
+      "veo-3.1-fast-1080p",
+      "veo-1080"
+    ],
+    "brand": "Google",
+    "capabilities": [],
+    "category": "video",
+    "description": "Fast text-to-video with optional audio at 1080p",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_reference_images": 2,
+    "name": "veo-1080p",
+    "output_modalities": [
+      "video"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionAudioSeconds": "0.02",
+      "completionVideoSeconds": "0.1",
+      "currency": "pollen"
+    },
+    "title": "Veo 3.1 Fast 1080p",
     "video_capabilities": [
       "start_frame",
       "end_frame",
