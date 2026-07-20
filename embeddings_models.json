@@ -9,9 +9,10 @@
     "capabilities": [],
     "category": "embedding",
     "context_length": 128000,
-    "description": "Cohere Embed v4 - Multilingual text embeddings. 1536 dimensions, 128K context.",
+    "description": "Multilingual text and image vectors. 1536 dimensions, 128K context.",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "cohere-embed-v4",
     "output_modalities": [
@@ -19,6 +20,7 @@
     ],
     "pricing": {
       "currency": "pollen",
+      "promptImageTokens": "0.0000003525",
       "promptTextTokens": "0.00000009"
     },
     "title": "Cohere Embed v4"
@@ -32,7 +34,7 @@
     "capabilities": [],
     "category": "embedding",
     "context_length": 8192,
-    "description": "Gemini Embedding 2 - Multimodal Embeddings for Text, Images, Audio, and Video. 3072 dimensions, 8192 token limit.",
+    "description": "Turns text, images, audio and video into vectors for semantic search. 3072 dimensions, 8192 token limit.",
     "input_modalities": [
       "text",
       "image",
@@ -62,7 +64,7 @@
     "capabilities": [],
     "category": "embedding",
     "context_length": 8192,
-    "description": "Text Embedding 3 Large - High-Quality Text Embeddings. 3072 dimensions, 8192 token limit.",
+    "description": "High-quality text vectors for demanding search. 3072 dimensions, 8192 token limit.",
     "input_modalities": [
       "text"
     ],
@@ -85,7 +87,7 @@
     "capabilities": [],
     "category": "embedding",
     "context_length": 8192,
-    "description": "Text Embedding 3 Small - Low-Cost Text Embeddings. 1536 dimensions, 8192 token limit.",
+    "description": "Low-cost text vectors for search and similarity. 1536 dimensions, 8192 token limit.",
     "input_modalities": [
       "text"
     ],
@@ -107,8 +109,8 @@
     "brand": "Qwen",
     "capabilities": [],
     "category": "embedding",
-    "context_length": 32768,
-    "description": "Qwen3 Embedding 8B - Multilingual text embeddings. 4096 dimensions.",
+    "context_length": 40960,
+    "description": "Multilingual text vectors. 4096 dimensions, 40,960-token context.",
     "input_modalities": [
       "text"
     ],
