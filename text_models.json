@@ -134,6 +134,60 @@
   {
     "added_date": 0,
     "aliases": [
+      "community/Catniti/deepseek-v4-flash"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Deepseek v4 flash",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "Catniti/deepseek-v4-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionReasoningTokens": "0.00000009",
+      "completionTextTokens": "0.00000018",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000018",
+      "promptTextTokens": "0.00000009"
+    },
+    "title": "Deepseek v4 flash"
+  },
+  {
+    "added_date": 0,
+    "aliases": [
+      "community/Catniti/gemini-3.6-flash"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Gemini 3.6 flash",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "Catniti/gemini-3.6-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionTextTokens": "0.0000075",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000015"
+    },
+    "title": "Gemini 3.6 flash"
+  },
+  {
+    "added_date": 0,
+    "aliases": [
       "community/Catniti/gemma-4-31b"
     ],
     "alpha": true,
@@ -3027,34 +3081,6 @@
     "tools": false
   },
   {
-    "added_date": 1780012800000,
-    "aliases": [
-      "sonar-deep"
-    ],
-    "brand": "Perplexity",
-    "capabilities": [
-      "web_search"
-    ],
-    "category": "text",
-    "context_length": 128000,
-    "description": "Digs through many sources for thorough, cited research answers",
-    "input_modalities": [
-      "text"
-    ],
-    "is_specialized": false,
-    "name": "perplexity-deep",
-    "output_modalities": [
-      "text"
-    ],
-    "pricing": {
-      "completionTextTokens": "0.000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "title": "Perplexity Sonar",
-    "tools": false
-  },
-  {
     "added_date": 1762214400000,
     "aliases": [
       "sonar"
@@ -3079,7 +3105,36 @@
       "currency": "pollen",
       "promptTextTokens": "0.000001"
     },
-    "title": "Perplexity Sonar",
+    "title": "Perplexity Sonar Fast Search",
+    "tools": false
+  },
+  {
+    "added_date": 1780012800000,
+    "aliases": [
+      "perplexity-deep",
+      "sonar-deep"
+    ],
+    "brand": "Perplexity",
+    "capabilities": [
+      "web_search"
+    ],
+    "category": "text",
+    "context_length": 128000,
+    "description": "Digs through many sources for thorough, cited research answers",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "perplexity-high",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.000001",
+      "currency": "pollen",
+      "promptTextTokens": "0.000001"
+    },
+    "title": "Perplexity Sonar High-Context Search",
     "tools": false
   },
   {
