@@ -244,6 +244,34 @@
   {
     "added_date": 0,
     "aliases": [
+      "community/Catniti/glm-4.7-flash"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Glm 4.7 flash",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "Catniti/glm-4.7-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionReasoningTokens": "0.00000006",
+      "completionTextTokens": "0.0000004",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000001",
+      "promptTextTokens": "0.00000006"
+    },
+    "title": "Glm 4.7 flash"
+  },
+  {
+    "added_date": 0,
+    "aliases": [
       "community/Catniti/gpt-oss-120b"
     ],
     "alpha": true,
@@ -645,11 +673,11 @@
     ],
     "paid_only": false,
     "pricing": {
-      "completionReasoningTokens": "0.00000009",
-      "completionTextTokens": "0.00000018",
+      "completionReasoningTokens": "0.0000000675",
+      "completionTextTokens": "0.000000135",
       "currency": "pollen",
-      "promptCachedTokens": "0.000000006",
-      "promptTextTokens": "0.00000006"
+      "promptCachedTokens": "0.0000000045",
+      "promptTextTokens": "0.000000045"
     },
     "title": "Gemma 4 31B via JankRouter"
   },
@@ -1439,13 +1467,13 @@
   {
     "added_date": 1779148800000,
     "aliases": [
+      "gemini-3.6-flash",
       "gemini-3.5-flash"
     ],
     "brand": "Google",
     "capabilities": [
       "tool_calling",
-      "web_search",
-      "code_execution"
+      "web_search"
     ],
     "category": "text",
     "context_length": 1048576,
@@ -1465,14 +1493,16 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.000009",
+      "completionTextTokens": "0.0000075",
       "currency": "pollen",
       "promptAudioTokens": "0.0000015",
       "promptCacheWriteTokens": "0.0000015",
       "promptCachedTokens": "0.00000015",
-      "promptTextTokens": "0.0000015"
+      "promptImageTokens": "0.0000015",
+      "promptTextTokens": "0.0000015",
+      "promptVideoTokens": "0.0000015"
     },
-    "title": "Gemini 3.5 Flash",
+    "title": "Gemini 3.6 Flash",
     "tools": true
   },
   {
@@ -1483,8 +1513,7 @@
     "brand": "Google",
     "capabilities": [
       "tool_calling",
-      "web_search",
-      "code_execution"
+      "web_search"
     ],
     "category": "text",
     "context_length": 1048576,
@@ -1509,7 +1538,9 @@
       "promptAudioTokens": "0.000001",
       "promptCacheWriteTokens": "0.0000005",
       "promptCachedTokens": "0.00000005",
-      "promptTextTokens": "0.0000005"
+      "promptImageTokens": "0.0000005",
+      "promptTextTokens": "0.0000005",
+      "promptVideoTokens": "0.0000005"
     },
     "title": "Gemini 3 Flash",
     "tools": true
@@ -1522,8 +1553,7 @@
     "brand": "Google",
     "capabilities": [
       "tool_calling",
-      "web_search",
-      "code_execution"
+      "web_search"
     ],
     "category": "text",
     "context_length": 1048576,
@@ -1541,14 +1571,16 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
+    "paid_only": false,
     "pricing": {
       "completionTextTokens": "0.0000004",
       "currency": "pollen",
       "promptAudioTokens": "0.0000003",
       "promptCacheWriteTokens": "0.0000001",
       "promptCachedTokens": "0.00000001",
-      "promptTextTokens": "0.0000001"
+      "promptImageTokens": "0.0000001",
+      "promptTextTokens": "0.0000001",
+      "promptVideoTokens": "0.0000001"
     },
     "title": "Gemini 2.5 Flash Lite",
     "tools": true
@@ -1563,8 +1595,7 @@
     "brand": "Google",
     "capabilities": [
       "tool_calling",
-      "web_search",
-      "code_execution"
+      "web_search"
     ],
     "category": "text",
     "context_length": 1048576,
@@ -1589,7 +1620,9 @@
       "promptAudioTokens": "0.0000005",
       "promptCacheWriteTokens": "0.00000025",
       "promptCachedTokens": "0.000000025",
-      "promptTextTokens": "0.00000025"
+      "promptImageTokens": "0.00000025",
+      "promptTextTokens": "0.00000025",
+      "promptVideoTokens": "0.00000025"
     },
     "title": "Gemini 3.1 Flash Lite",
     "tools": true
@@ -1645,8 +1678,7 @@
     ],
     "brand": "Google",
     "capabilities": [
-      "web_search",
-      "code_execution"
+      "web_search"
     ],
     "category": "text",
     "context_length": 1048576,
@@ -1670,7 +1702,9 @@
       "promptAudioTokens": "0.0000003",
       "promptCacheWriteTokens": "0.0000001",
       "promptCachedTokens": "0.00000001",
-      "promptTextTokens": "0.0000001"
+      "promptImageTokens": "0.0000001",
+      "promptTextTokens": "0.0000001",
+      "promptVideoTokens": "0.0000001"
     },
     "title": "Google Gemini 2.5 Flash Lite Search",
     "tools": false
@@ -1682,8 +1716,7 @@
     ],
     "brand": "Google",
     "capabilities": [
-      "web_search",
-      "code_execution"
+      "web_search"
     ],
     "category": "text",
     "context_length": 1048576,
@@ -1708,7 +1741,9 @@
       "promptAudioTokens": "0.0000005",
       "promptCacheWriteTokens": "0.00000025",
       "promptCachedTokens": "0.000000025",
-      "promptTextTokens": "0.00000025"
+      "promptImageTokens": "0.00000025",
+      "promptTextTokens": "0.00000025",
+      "promptVideoTokens": "0.00000025"
     },
     "title": "Gemini 3.1 Flash Lite Search",
     "tools": false
@@ -1716,12 +1751,12 @@
   {
     "added_date": 1779753600000,
     "aliases": [
+      "gemini-3.6-flash-search",
       "gemini-3.5-flash-search"
     ],
     "brand": "Google",
     "capabilities": [
-      "web_search",
-      "code_execution"
+      "web_search"
     ],
     "category": "text",
     "context_length": 1048576,
@@ -1741,14 +1776,16 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.000009",
+      "completionTextTokens": "0.0000075",
       "currency": "pollen",
       "promptAudioTokens": "0.0000015",
       "promptCacheWriteTokens": "0.0000015",
       "promptCachedTokens": "0.00000015",
-      "promptTextTokens": "0.0000015"
+      "promptImageTokens": "0.0000015",
+      "promptTextTokens": "0.0000015",
+      "promptVideoTokens": "0.0000015"
     },
-    "title": "Gemini 3.5 Flash Search",
+    "title": "Gemini 3.6 Flash Search",
     "tools": false
   },
   {
@@ -2301,6 +2338,40 @@
     },
     "reasoning": true,
     "title": "Kimi K3",
+    "tools": true
+  },
+  {
+    "added_date": 1784678400000,
+    "aliases": [
+      "laguna-s-2.1",
+      "laguna-s2.1",
+      "poolside-laguna-s-2.1"
+    ],
+    "brand": "Poolside",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "context_length": 1048576,
+    "description": "Long-context reasoning for coding agents and complex software tasks",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "laguna",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000002",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000001",
+      "promptTextTokens": "0.0000001"
+    },
+    "reasoning": true,
+    "title": "Laguna S 2.1",
     "tools": true
   },
   {
