@@ -427,9 +427,9 @@
     ],
     "paid_only": false,
     "pricing": {
-      "completionTextTokens": "0.00000035",
+      "completionTextTokens": "0.00000045",
       "currency": "pollen",
-      "promptTextTokens": "0.00000025"
+      "promptTextTokens": "0.0000002"
     },
     "title": "Agnes Image 2.1 Flash 1k (responds with url)"
   },
@@ -453,9 +453,9 @@
     ],
     "paid_only": false,
     "pricing": {
-      "completionTextTokens": "0.00000035",
+      "completionTextTokens": "0.0000005",
       "currency": "pollen",
-      "promptTextTokens": "0.00000025"
+      "promptTextTokens": "0.0000003"
     },
     "title": "Agnes Image 2.1 Flash 2k res (Responds with a media.polli url)"
   },
@@ -815,32 +815,6 @@
   {
     "added_date": 0,
     "aliases": [
-      "community/MarcosFRG/ternary-bonsai-27b"
-    ],
-    "alpha": true,
-    "brand": "Community",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Ternary Bonsai 27B via JankRouter",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "MarcosFRG/ternary-bonsai-27b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "pricing": {
-      "completionTextTokens": "0.00000003",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000001"
-    },
-    "title": "Ternary Bonsai 27B via JankRouter"
-  },
-  {
-    "added_date": 0,
-    "aliases": [
       "community/Minor-fun/deepseek-v3.2"
     ],
     "alpha": true,
@@ -910,10 +884,10 @@
     ],
     "paid_only": false,
     "pricing": {
-      "completionReasoningTokens": "0.000012",
-      "completionTextTokens": "0.000012",
+      "completionReasoningTokens": "0.000006",
+      "completionTextTokens": "0.000006",
       "currency": "pollen",
-      "promptTextTokens": "0.000002"
+      "promptTextTokens": "0.000001"
     },
     "title": "gemini-3.1-pro-preview"
   },
@@ -937,9 +911,9 @@
     ],
     "paid_only": false,
     "pricing": {
-      "completionTextTokens": "0.000009",
+      "completionTextTokens": "0.000004",
       "currency": "pollen",
-      "promptTextTokens": "0.0000015"
+      "promptTextTokens": "0.000001"
     },
     "title": "gemini-3.5-flash"
   },
@@ -1485,9 +1459,11 @@
   {
     "added_date": 1775174400000,
     "aliases": [
+      "gemini-flash-lite-3.1",
       "gemini-3.1-flash-lite",
       "gemini-3.1-flash-lite-preview",
-      "gemini-flash-lite"
+      "gemini-flash-lite",
+      "gemini-3.5-flash-lite"
     ],
     "brand": "Google",
     "capabilities": [
@@ -1496,7 +1472,7 @@
     ],
     "category": "text",
     "context_length": 1048576,
-    "description": "Quick, low-cost answers across text, images, audio and video",
+    "description": "Fast multimodal reasoning for high-throughput agents and data processing",
     "input_modalities": [
       "text",
       "image",
@@ -1506,22 +1482,22 @@
     "is_specialized": false,
     "max_reference_images": 3600,
     "max_reference_videos": 10,
-    "name": "gemini-flash-lite-3.1",
+    "name": "gemini-flash-lite-3.5",
     "output_modalities": [
       "text"
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.0000015",
+      "completionTextTokens": "0.0000025",
       "currency": "pollen",
-      "promptAudioTokens": "0.0000005",
-      "promptCacheWriteTokens": "0.00000025",
-      "promptCachedTokens": "0.000000025",
-      "promptImageTokens": "0.00000025",
-      "promptTextTokens": "0.00000025",
-      "promptVideoTokens": "0.00000025"
+      "promptAudioTokens": "0.0000003",
+      "promptCacheWriteTokens": "0.0000003",
+      "promptCachedTokens": "0.00000003",
+      "promptImageTokens": "0.0000003",
+      "promptTextTokens": "0.0000003",
+      "promptVideoTokens": "0.0000003"
     },
-    "title": "Gemini 3.1 Flash Lite",
+    "title": "Gemini 3.5 Flash Lite",
     "tools": true
   },
   {
@@ -1609,7 +1585,8 @@
   {
     "added_date": 1779753600000,
     "aliases": [
-      "gemini-3.1-flash-lite-search"
+      "gemini-3.1-flash-lite-search",
+      "gemini-3.5-flash-lite-search"
     ],
     "brand": "Google",
     "capabilities": [
@@ -1617,7 +1594,7 @@
     ],
     "category": "text",
     "context_length": 1048576,
-    "description": "Low-cost answers grounded in live web search results",
+    "description": "Fast multimodal answers grounded in live web results",
     "input_modalities": [
       "text",
       "image",
@@ -1633,16 +1610,16 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.0000015",
+      "completionTextTokens": "0.0000025",
       "currency": "pollen",
-      "promptAudioTokens": "0.0000005",
-      "promptCacheWriteTokens": "0.00000025",
-      "promptCachedTokens": "0.000000025",
-      "promptImageTokens": "0.00000025",
-      "promptTextTokens": "0.00000025",
-      "promptVideoTokens": "0.00000025"
+      "promptAudioTokens": "0.0000003",
+      "promptCacheWriteTokens": "0.0000003",
+      "promptCachedTokens": "0.00000003",
+      "promptImageTokens": "0.0000003",
+      "promptTextTokens": "0.0000003",
+      "promptVideoTokens": "0.0000003"
     },
-    "title": "Gemini 3.1 Flash Lite Search",
+    "title": "Gemini 3.5 Flash Lite Search",
     "tools": false
   },
   {
