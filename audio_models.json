@@ -33,6 +33,70 @@
     ]
   },
   {
+    "added_date": 1785024000000,
+    "aliases": [
+      "dialogue",
+      "text-to-dialogue"
+    ],
+    "brand": "ElevenLabs",
+    "capabilities": [],
+    "category": "audio",
+    "description": "Multi-speaker conversations with expressive voices and audio cues",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "eleven-dialogue",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionAudioTokens": "0.0001",
+      "currency": "pollen"
+    },
+    "supported_endpoints": [
+      "/v1/audio/dialogue"
+    ],
+    "title": "ElevenLabs Text to Dialogue",
+    "voices": [
+      "alloy",
+      "echo",
+      "fable",
+      "onyx",
+      "nova",
+      "shimmer",
+      "ash",
+      "ballad",
+      "coral",
+      "sage",
+      "verse",
+      "rachel",
+      "domi",
+      "bella",
+      "elli",
+      "charlotte",
+      "dorothy",
+      "sarah",
+      "emily",
+      "lily",
+      "matilda",
+      "adam",
+      "antoni",
+      "arnold",
+      "josh",
+      "sam",
+      "daniel",
+      "charlie",
+      "james",
+      "fin",
+      "callum",
+      "liam",
+      "george",
+      "brian",
+      "bill"
+    ]
+  },
+  {
     "added_date": 1782086400000,
     "aliases": [
       "multilingual-v2",
@@ -42,7 +106,7 @@
     "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
-    "description": "Lifelike, emotionally rich speech in 29 languages",
+    "description": "Emotionally rich speech in 29 languages with character timestamps",
     "input_modalities": [
       "text"
     ],
@@ -55,6 +119,11 @@
       "completionAudioTokens": "0.0001",
       "currency": "pollen"
     },
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech",
+      "/v1/audio/speech/with-timestamps"
+    ],
     "title": "ElevenLabs Multilingual v2",
     "voices": [
       "alloy",
@@ -120,6 +189,98 @@
     "title": "ElevenLabs Sound Effects"
   },
   {
+    "added_date": 1785024000000,
+    "aliases": [
+      "voice-changer",
+      "speech-to-speech"
+    ],
+    "brand": "ElevenLabs",
+    "capabilities": [],
+    "category": "audio",
+    "description": "Preserves delivery and emotion while transforming speaker identity",
+    "input_modalities": [
+      "audio"
+    ],
+    "name": "eleven-voice-changer",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.002"
+    },
+    "supported_endpoints": [
+      "/v1/audio/voice-changer"
+    ],
+    "title": "ElevenLabs Voice Changer",
+    "voices": [
+      "alloy",
+      "echo",
+      "fable",
+      "onyx",
+      "nova",
+      "shimmer",
+      "ash",
+      "ballad",
+      "coral",
+      "sage",
+      "verse",
+      "rachel",
+      "domi",
+      "bella",
+      "elli",
+      "charlotte",
+      "dorothy",
+      "sarah",
+      "emily",
+      "lily",
+      "matilda",
+      "adam",
+      "antoni",
+      "arnold",
+      "josh",
+      "sam",
+      "daniel",
+      "charlie",
+      "james",
+      "fin",
+      "callum",
+      "liam",
+      "george",
+      "brian",
+      "bill"
+    ]
+  },
+  {
+    "added_date": 1785024000000,
+    "aliases": [
+      "voice-isolator",
+      "audio-cleanup"
+    ],
+    "brand": "ElevenLabs",
+    "capabilities": [],
+    "category": "audio",
+    "description": "Removes background noise while preserving clear spoken audio",
+    "input_modalities": [
+      "audio",
+      "video"
+    ],
+    "name": "eleven-voice-isolator",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.002"
+    },
+    "supported_endpoints": [
+      "/v1/audio/voice-isolator"
+    ],
+    "title": "ElevenLabs Voice Isolator"
+  },
+  {
     "added_date": 1778716800000,
     "aliases": [
       "tts-flash",
@@ -129,7 +290,7 @@
     "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
-    "description": "Snappy low-latency speech in 32 languages; leaner than the premium voices",
+    "description": "Low-latency speech in 32 languages with character timestamps",
     "input_modalities": [
       "text"
     ],
@@ -142,6 +303,11 @@
       "completionAudioTokens": "0.00005",
       "currency": "pollen"
     },
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech",
+      "/v1/audio/speech/with-timestamps"
+    ],
     "title": "ElevenLabs Flash v2.5",
     "voices": [
       "alloy",
@@ -193,7 +359,7 @@
     "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
-    "description": "Expressive speech with emotion control and audio tags",
+    "description": "Expressive speech with emotion controls, audio tags, and character timestamps",
     "input_modalities": [
       "text"
     ],
@@ -206,6 +372,11 @@
       "completionAudioTokens": "0.0001",
       "currency": "pollen"
     },
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech",
+      "/v1/audio/speech/with-timestamps"
+    ],
     "title": "ElevenLabs v3 TTS",
     "voices": [
       "alloy",
