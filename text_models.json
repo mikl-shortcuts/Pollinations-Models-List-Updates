@@ -1201,6 +1201,38 @@
     "tools": true
   },
   {
+    "added_date": 1785369600000,
+    "aliases": [
+      "cohere-command-a-plus",
+      "command-a-plus-05-2026",
+      "cohere-command-a-plus-05-2026"
+    ],
+    "brand": "Cohere",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "context_length": 128000,
+    "description": "Multilingual agentic reasoning with tools and long context",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "command-a-plus",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000024",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000006"
+    },
+    "reasoning": true,
+    "title": "Cohere Command A+",
+    "tools": true
+  },
+  {
     "added_date": 1760054400000,
     "aliases": [
       "deepseek-v4",
@@ -1272,6 +1304,20 @@
       "gemini-3.6-flash",
       "gemini-3.5-flash"
     ],
+    "billing_adjustments": [
+      {
+        "description": "OpenRouter native Google Search adds $14 / 1K search requests reported by provider usage.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.014"
+      },
+      {
+        "description": "OpenRouter Google cache writes add $1 / 1M tokens / hour for the five-minute cache TTL.",
+        "kind": "cache_storage",
+        "unit": "token_hour",
+        "unit_price": "0.000000083333"
+      }
+    ],
     "brand": "Google",
     "capabilities": [
       "tool_calling",
@@ -1312,6 +1358,20 @@
     "aliases": [
       "gemini-3-flash-preview"
     ],
+    "billing_adjustments": [
+      {
+        "description": "OpenRouter native Google Search adds $14 / 1K search requests reported by provider usage.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.014"
+      },
+      {
+        "description": "OpenRouter Google cache writes add $1 / 1M tokens / hour for the five-minute cache TTL.",
+        "kind": "cache_storage",
+        "unit": "token_hour",
+        "unit_price": "0.000000083333"
+      }
+    ],
     "brand": "Google",
     "capabilities": [
       "tool_calling",
@@ -1351,6 +1411,20 @@
     "added_date": 1766016000000,
     "aliases": [
       "gemini-2.5-flash-lite"
+    ],
+    "billing_adjustments": [
+      {
+        "description": "OpenRouter native Google Search adds $14 / 1K search requests reported by provider usage.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.014"
+      },
+      {
+        "description": "OpenRouter Google cache writes add $1 / 1M tokens / hour for the five-minute cache TTL.",
+        "kind": "cache_storage",
+        "unit": "token_hour",
+        "unit_price": "0.000000083333"
+      }
     ],
     "brand": "Google",
     "capabilities": [
@@ -1396,6 +1470,20 @@
       "gemini-flash-lite",
       "gemini-3.5-flash-lite"
     ],
+    "billing_adjustments": [
+      {
+        "description": "OpenRouter native Google Search adds $14 / 1K search requests reported by provider usage.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.014"
+      },
+      {
+        "description": "OpenRouter Google cache writes add $1 / 1M tokens / hour for the five-minute cache TTL.",
+        "kind": "cache_storage",
+        "unit": "token_hour",
+        "unit_price": "0.000000083333"
+      }
+    ],
     "brand": "Google",
     "capabilities": [
       "tool_calling",
@@ -1436,6 +1524,20 @@
     "aliases": [
       "gemini-3.1-pro",
       "gemini-2.5-pro"
+    ],
+    "billing_adjustments": [
+      {
+        "description": "OpenRouter native Google Search adds $14 / 1K search requests reported by provider usage.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.014"
+      },
+      {
+        "description": "OpenRouter Google cache writes add $4.5 / 1M tokens / hour for the five-minute cache TTL.",
+        "kind": "cache_storage",
+        "unit": "token_hour",
+        "unit_price": "0.000000375"
+      }
     ],
     "brand": "Google",
     "capabilities": [
@@ -1480,6 +1582,20 @@
       "gemini-2.5-flash-search",
       "gemini-2.5-flash-lite-search"
     ],
+    "billing_adjustments": [
+      {
+        "description": "Google Search grounding adds $35 / 1K grounded prompts when grounding metadata is present.",
+        "kind": "grounded_prompt",
+        "unit": "prompt",
+        "unit_price": "0.035"
+      },
+      {
+        "description": "Vertex explicit context caching storage: $1 / 1M tokens / hour, billed for the one-hour TTL on each cache create.",
+        "kind": "cache_storage",
+        "unit": "token_hour",
+        "unit_price": "0.000001"
+      }
+    ],
     "brand": "Google",
     "capabilities": [
       "web_search"
@@ -1518,6 +1634,20 @@
     "aliases": [
       "gemini-3.1-flash-lite-search",
       "gemini-3.5-flash-lite-search"
+    ],
+    "billing_adjustments": [
+      {
+        "description": "Google Search grounding adds $14 / 1K search queries when grounding metadata is present.",
+        "kind": "search_query",
+        "unit": "query",
+        "unit_price": "0.014"
+      },
+      {
+        "description": "Vertex explicit context caching storage: $1 / 1M tokens / hour, billed for the one-hour TTL on each cache create.",
+        "kind": "cache_storage",
+        "unit": "token_hour",
+        "unit_price": "0.000001"
+      }
     ],
     "brand": "Google",
     "capabilities": [
@@ -1558,6 +1688,20 @@
     "aliases": [
       "gemini-3.6-flash-search",
       "gemini-3.5-flash-search"
+    ],
+    "billing_adjustments": [
+      {
+        "description": "Google Search grounding adds $14 / 1K search queries when grounding metadata is present.",
+        "kind": "search_query",
+        "unit": "query",
+        "unit_price": "0.014"
+      },
+      {
+        "description": "Vertex explicit context caching storage: $1 / 1M tokens / hour, billed for the one-hour TTL on each cache create.",
+        "kind": "cache_storage",
+        "unit": "token_hour",
+        "unit_price": "0.000001"
+      }
     ],
     "brand": "Google",
     "capabilities": [
@@ -2628,6 +2772,43 @@
     "tools": true
   },
   {
+    "added_date": 1785024000000,
+    "aliases": [
+      "mistral-ocr-4",
+      "mistral-ocr-4-0"
+    ],
+    "billing_adjustments": [
+      {
+        "description": "Mistral OCR 4 costs $4 per 1,000 processed pages.",
+        "kind": "document_ocr",
+        "unit": "page",
+        "unit_price": "0.004"
+      }
+    ],
+    "brand": "Mistral",
+    "capabilities": [],
+    "category": "text",
+    "description": "Extracts structured Markdown, tables, layout blocks and confidence scores",
+    "input_modalities": [
+      "document",
+      "image"
+    ],
+    "is_specialized": true,
+    "name": "mistral-ocr",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text"
+    ],
+    "title": "Mistral OCR 4"
+  },
+  {
     "added_date": 1759795200000,
     "aliases": [
       "mistral-small-3.1",
@@ -3024,6 +3205,14 @@
       "sonar-pro",
       "perplexity-pro"
     ],
+    "billing_adjustments": [
+      {
+        "description": "Perplexity Search adds $14 / 1K requests for high search context.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.014"
+      }
+    ],
     "brand": "Perplexity",
     "capabilities": [
       "web_search"
@@ -3051,6 +3240,14 @@
     "added_date": 1762214400000,
     "aliases": [
       "sonar"
+    ],
+    "billing_adjustments": [
+      {
+        "description": "Perplexity Search adds $5 / 1K requests for low search context.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.005"
+      }
     ],
     "brand": "Perplexity",
     "capabilities": [
@@ -3081,6 +3278,14 @@
       "perplexity-deep",
       "sonar-deep"
     ],
+    "billing_adjustments": [
+      {
+        "description": "Perplexity Search adds $12 / 1K requests for high search context.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.012"
+      }
+    ],
     "brand": "Perplexity",
     "capabilities": [
       "web_search"
@@ -3109,6 +3314,14 @@
     "aliases": [
       "sonar-reasoning",
       "sonar-reasoning-pro"
+    ],
+    "billing_adjustments": [
+      {
+        "description": "Perplexity Search adds $14 / 1K requests for high search context.",
+        "kind": "search_request",
+        "unit": "request",
+        "unit_price": "0.014"
+      }
     ],
     "brand": "Perplexity",
     "capabilities": [
@@ -3945,6 +4158,34 @@
   {
     "added_date": 0,
     "aliases": [
+      "community/vendouple/deepseek-v3.2"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Deepseek v3.2",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "vendouple/deepseek-v3.2",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionReasoningTokens": "0.0000001",
+      "completionTextTokens": "0.0000001",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000001",
+      "promptTextTokens": "0.00000002"
+    },
+    "title": "DeepSeek V3.2"
+  },
+  {
+    "added_date": 0,
+    "aliases": [
       "community/vendouple/deepseek-v4-flash"
     ],
     "alpha": true,
@@ -4308,5 +4549,29 @@
       "promptTextTokens": "0.000000035"
     },
     "title": "DeepSeek Chat via AnyVM"
+  },
+  {
+    "added_date": 0,
+    "aliases": [
+      "community/voodoohop/weaver"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Chains image, video and audio generation to fulfil a single prompt",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "voodoohop/weaver",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "title": "Weaver"
   }
 ]
