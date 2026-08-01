@@ -528,7 +528,10 @@
     "community": true,
     "description": "Reliable everyday multimodal workhorse; fast, consistent, no-frills responses (10% OFF)",
     "input_modalities": [
-      "text"
+      "text",
+      "image",
+      "audio",
+      "video"
     ],
     "name": "MarcosFRG/gemini-2.5-flash-lite",
     "output_modalities": [
@@ -538,6 +541,8 @@
     "pricing": {
       "completionTextTokens": "0.00000036",
       "currency": "pollen",
+      "promptAudioTokens": "0.00000027",
+      "promptImageTokens": "0.00000009",
       "promptTextTokens": "0.00000009"
     },
     "title": "Gemini 2.5 Flash Lite via JankRouter"
@@ -554,7 +559,10 @@
     "community": true,
     "description": "Frontier-class speed for agentic workflows and multi-turn chat; sharp without being slow (10% OFF)",
     "input_modalities": [
-      "text"
+      "text",
+      "image",
+      "audio",
+      "video"
     ],
     "name": "MarcosFRG/gemini-3-flash-preview",
     "output_modalities": [
@@ -584,7 +592,10 @@
     "community": true,
     "description": "Blazing-fast reasoning that punches above its weight; quick without dumbing down (10% OFF)",
     "input_modalities": [
-      "text"
+      "text",
+      "image",
+      "audio",
+      "video"
     ],
     "name": "MarcosFRG/gemini-3.1-flash-lite",
     "output_modalities": [
@@ -597,6 +608,7 @@
       "currency": "pollen",
       "promptAudioTokens": "0.00000045",
       "promptCachedTokens": "0.0000000225",
+      "promptImageTokens": "0.000000225",
       "promptTextTokens": "0.000000225"
     },
     "title": "Gemini 3.1 Flash Lite via JankRouter"
@@ -613,7 +625,10 @@
     "community": true,
     "description": "Top-tier reasoning and agentic coding for complex multi-step problems; the heavy hitter (10% OFF)",
     "input_modalities": [
-      "text"
+      "text",
+      "image",
+      "audio",
+      "video"
     ],
     "name": "MarcosFRG/gemini-3.1-pro-preview",
     "output_modalities": [
@@ -624,6 +639,8 @@
       "completionReasoningTokens": "0.0000054",
       "completionTextTokens": "0.0000108",
       "currency": "pollen",
+      "promptAudioTokens": "0.0000018",
+      "promptImageTokens": "0.0000018",
       "promptTextTokens": "0.0000018"
     },
     "title": "Gemini 3.1 Pro via JankRouter"
@@ -640,7 +657,8 @@
     "community": true,
     "description": "Reliable chat for straightforward tasks; predictable, easy to steer, good instruction adherence",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "MarcosFRG/gemma-3-27b",
     "output_modalities": [
@@ -666,7 +684,8 @@
     "community": true,
     "description": "Configurable reasoning depth with strong instruction following; balances logic and creativity well",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "MarcosFRG/gemma-4-31b",
     "output_modalities": [
@@ -694,7 +713,8 @@
     "community": true,
     "description": "Sharp visual understanding — screenshots to code, document parsing, layout comprehension",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "MarcosFRG/glm-4.6v-flash",
     "output_modalities": [
@@ -746,7 +766,10 @@
     "community": true,
     "description": "Native omnimodal perception — image, video, audio, text — with strong agentic follow-through",
     "input_modalities": [
-      "text"
+      "text",
+      "image",
+      "audio",
+      "video"
     ],
     "name": "MarcosFRG/mimo-v2.5",
     "output_modalities": [
@@ -757,6 +780,7 @@
       "completionReasoningTokens": "0.00000007",
       "completionTextTokens": "0.00000014",
       "currency": "pollen",
+      "promptCacheWriteTokens": "0.000000014",
       "promptCachedTokens": "0.000000007",
       "promptTextTokens": "0.00000007"
     },
@@ -774,7 +798,8 @@
     "community": true,
     "description": "Autonomous coding with tool use and task decomposition; handles full-repo workflows end to end",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "MarcosFRG/minimax-m3",
     "output_modalities": [
@@ -3962,18 +3987,18 @@
   {
     "added_date": 0,
     "aliases": [
-      "community/vendouple/deepseek-v4-flash"
+      "community/vendouple/deepseek-v4"
     ],
     "alpha": true,
     "brand": "Community",
     "capabilities": [],
     "category": "text",
     "community": true,
-    "description": "This model has a 32k context limit",
+    "description": "LATEST VERSION",
     "input_modalities": [
       "text"
     ],
-    "name": "vendouple/deepseek-v4-flash",
+    "name": "vendouple/deepseek-v4",
     "output_modalities": [
       "text"
     ],
@@ -4016,32 +4041,6 @@
   {
     "added_date": 0,
     "aliases": [
-      "community/vendouple/gemma-4-31B"
-    ],
-    "alpha": true,
-    "brand": "Community",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Gemma 4 31B",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "vendouple/gemma-4-31B",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "pricing": {
-      "completionTextTokens": "0.0000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000005"
-    },
-    "title": "Gemma 4 31B"
-  },
-  {
-    "added_date": 0,
-    "aliases": [
       "community/vendouple/gpt-5.5"
     ],
     "alpha": true,
@@ -4076,7 +4075,8 @@
     "category": "text",
     "community": true,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "vendouple/kimi-k2.6",
     "output_modalities": [
@@ -4103,7 +4103,8 @@
     "community": true,
     "description": "To use this in agentic tasks please remove all params (ex. top_p, top_k, temperature)",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "vendouple/kimi-k3",
     "output_modalities": [
@@ -4117,6 +4118,33 @@
       "promptTextTokens": "0.0000025"
     },
     "title": "Kimi K3 (Read Desc)"
+  },
+  {
+    "added_date": 0,
+    "aliases": [
+      "community/vendouple/kimi-k3:s2"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Kimi K3 (Per Day Limit)",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/kimi-k3:s2",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionTextTokens": "0.0000045",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000025"
+    },
+    "title": "Kimi K3 (Daily Limit)"
   },
   {
     "added_date": 0,
@@ -4202,7 +4230,8 @@
     "category": "text",
     "community": true,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "vendouple/qwen3.8-max-preview",
     "output_modalities": [
