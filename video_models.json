@@ -85,49 +85,23 @@
     ]
   },
   {
-    "added_date": 1780963200000,
+    "added_date": 1773446400000,
     "aliases": [
+      "pruna-video",
+      "p-video-720p",
+      "p-video-1080p",
       "pruna-video-1080p"
     ],
     "brand": "Pruna",
     "capabilities": [],
     "category": "video",
-    "description": "Affordable video from text or an image at 1080p",
+    "description": "Affordable video from text or an image at 720p or 1080p",
     "input_modalities": [
       "text",
       "image"
     ],
     "max_reference_images": 1,
-    "name": "p-video-1080p",
-    "output_modalities": [
-      "video"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionVideoSeconds": "0.04",
-      "currency": "pollen"
-    },
-    "title": "Pruna p-video 1080p",
-    "video_capabilities": [
-      "start_frame"
-    ]
-  },
-  {
-    "added_date": 1773446400000,
-    "aliases": [
-      "p-video",
-      "pruna-video"
-    ],
-    "brand": "Pruna",
-    "capabilities": [],
-    "category": "video",
-    "description": "Affordable video from text or an image at 720p",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "max_reference_images": 1,
-    "name": "p-video-720p",
+    "name": "p-video",
     "output_modalities": [
       "video"
     ],
@@ -136,7 +110,22 @@
       "completionVideoSeconds": "0.02",
       "currency": "pollen"
     },
-    "title": "Pruna p-video 720p",
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 1080p.",
+        "label": "1080p",
+        "name": "1080p",
+        "pricing": {
+          "completionVideoSeconds": "0.04",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "resolutions": [
+      "720p",
+      "1080p"
+    ],
+    "title": "Pruna p-video",
     "video_capabilities": [
       "start_frame"
     ]
@@ -178,7 +167,7 @@
     "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
-    "description": "720p video from text or a start image, with strong prompt adherence",
+    "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "input_modalities": [
       "text",
       "image"
@@ -193,6 +182,31 @@
       "completionVideoSeconds": "0.025",
       "currency": "pollen"
     },
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 480p.",
+        "label": "480p",
+        "name": "480p",
+        "pricing": {
+          "completionVideoSeconds": "0.015",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Applies when the requested video resolution is 1080p.",
+        "label": "1080p",
+        "name": "1080p",
+        "pricing": {
+          "completionVideoSeconds": "0.06",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "resolutions": [
+      "720p",
+      "480p",
+      "1080p"
+    ],
     "title": "Seedance Pro-Fast",
     "video_capabilities": [
       "start_frame"
@@ -203,12 +217,15 @@
     "aliases": [
       "veo-3.1-fast",
       "veo-720p",
-      "video"
+      "video",
+      "veo-1080p",
+      "veo-3.1-fast-1080p",
+      "veo-1080"
     ],
     "brand": "Google",
     "capabilities": [],
     "category": "video",
-    "description": "Fast text-to-video with optional audio at 720p",
+    "description": "Fast video with optional audio at 720p or 1080p",
     "input_modalities": [
       "text",
       "image"
@@ -224,39 +241,23 @@
       "completionVideoSeconds": "0.08",
       "currency": "pollen"
     },
-    "title": "Veo 3.1 Fast 720p",
-    "video_capabilities": [
-      "start_frame",
-      "end_frame",
-      "audio_output"
-    ]
-  },
-  {
-    "added_date": 1784073600000,
-    "aliases": [
-      "veo-3.1-fast-1080p",
-      "veo-1080"
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 1080p.",
+        "label": "1080p",
+        "name": "1080p",
+        "pricing": {
+          "completionAudioSeconds": "0.02",
+          "completionVideoSeconds": "0.1",
+          "currency": "pollen"
+        }
+      }
     ],
-    "brand": "Google",
-    "capabilities": [],
-    "category": "video",
-    "description": "Fast text-to-video with optional audio at 1080p",
-    "input_modalities": [
-      "text",
-      "image"
+    "resolutions": [
+      "720p",
+      "1080p"
     ],
-    "max_reference_images": 2,
-    "name": "veo-1080p",
-    "output_modalities": [
-      "video"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionAudioSeconds": "0.02",
-      "completionVideoSeconds": "0.1",
-      "currency": "pollen"
-    },
-    "title": "Veo 3.1 Fast 1080p",
+    "title": "Veo 3.1 Fast",
     "video_capabilities": [
       "start_frame",
       "end_frame",
@@ -327,12 +328,15 @@
     "added_date": 1779753600000,
     "aliases": [
       "wan2.7",
-      "wan-2.7"
+      "wan-2.7",
+      "wan-pro-1080p",
+      "wan2.7-1080p",
+      "wan-pro-1080"
     ],
     "brand": "Alibaba",
     "capabilities": [],
     "category": "video",
-    "description": "Keyframe-controlled video with sound at 720p",
+    "description": "Keyframe-controlled video with sound at 720p or 1080p",
     "input_modalities": [
       "text",
       "image"
@@ -348,39 +352,31 @@
       "completionVideoSeconds": "0.1",
       "currency": "pollen"
     },
+    "pricing_variants": [
+      {
+        "description": "Applies to 1080p requests without an input image.",
+        "label": "1080p text-to-video",
+        "name": "1080p",
+        "pricing": {
+          "completionVideoSeconds": "0.1",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Applies to 1080p requests with an input image.",
+        "label": "1080p image-to-video",
+        "name": "1080p_image",
+        "pricing": {
+          "completionVideoSeconds": "0.15",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "resolutions": [
+      "720p",
+      "1080p"
+    ],
     "title": "Wan 2.7",
-    "video_capabilities": [
-      "start_frame",
-      "end_frame",
-      "audio_output"
-    ]
-  },
-  {
-    "added_date": 1781308800000,
-    "aliases": [
-      "wan2.7-1080p",
-      "wan-pro-1080"
-    ],
-    "brand": "Alibaba",
-    "capabilities": [],
-    "category": "video",
-    "description": "Keyframe-controlled video with sound in full 1080p",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "max_reference_images": 2,
-    "name": "wan-pro-1080p",
-    "output_modalities": [
-      "video",
-      "audio"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionVideoSeconds": "0.15",
-      "currency": "pollen"
-    },
-    "title": "Wan 2.7 1080p",
     "video_capabilities": [
       "start_frame",
       "end_frame",

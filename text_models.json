@@ -1294,7 +1294,7 @@
     "pricing": {
       "completionTextTokens": "0.00000348",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000014",
+      "promptCachedTokens": "0.000000145",
       "promptTextTokens": "0.00000174"
     },
     "reasoning": true,
@@ -1505,6 +1505,23 @@
       "promptTextTokens": "0.000002",
       "promptVideoTokens": "0.000002"
     },
+    "pricing_variants": [
+      {
+        "description": "At least 200,000 prompt tokens; text, cached, cache-write, audio, video, and output rates increase while image input stays at its separately advertised base price.",
+        "label": "Long context (200K+)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.000018",
+          "currency": "pollen",
+          "promptAudioTokens": "0.000004",
+          "promptCacheWriteTokens": "0.000004",
+          "promptCachedTokens": "0.0000004",
+          "promptImageTokens": "0.000002",
+          "promptTextTokens": "0.000004",
+          "promptVideoTokens": "0.000004"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "Gemini 3.1 Pro",
     "tools": true
@@ -1761,6 +1778,19 @@
       "promptCachedTokens": "0.00000025",
       "promptTextTokens": "0.0000025"
     },
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the whole request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.0000225",
+          "currency": "pollen",
+          "promptCachedTokens": "0.0000005",
+          "promptTextTokens": "0.000005"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "GPT-5.4",
     "tools": true
@@ -1828,6 +1858,20 @@
       "promptCachedTokens": "0.00000005",
       "promptTextTokens": "0.0000005"
     },
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.0000045",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.00000125",
+          "promptCachedTokens": "0.0000001",
+          "promptTextTokens": "0.000001"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "ChatGPT 5.6 Luna",
     "tools": true
@@ -1863,6 +1907,20 @@
       "promptCachedTokens": "0.00000025",
       "promptTextTokens": "0.0000025"
     },
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.0000225",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.00000625",
+          "promptCachedTokens": "0.0000005",
+          "promptTextTokens": "0.000005"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "ChatGPT 5.6 Sol",
     "tools": true
@@ -1898,6 +1956,20 @@
       "promptCachedTokens": "0.000000125",
       "promptTextTokens": "0.00000125"
     },
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.00001125",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.000003125",
+          "promptCachedTokens": "0.00000025",
+          "promptTextTokens": "0.0000025"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "ChatGPT 5.6 Terra",
     "tools": true
@@ -2034,9 +2106,22 @@
     "pricing": {
       "completionTextTokens": "0.000006",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000005",
+      "promptCachedTokens": "0.0000003",
       "promptTextTokens": "0.000002"
     },
+    "pricing_variants": [
+      {
+        "description": "At least 200,000 prompt tokens; the higher rates apply to the whole request.",
+        "label": "Long context (200K+)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.000012",
+          "currency": "pollen",
+          "promptCachedTokens": "0.0000006",
+          "promptTextTokens": "0.000004"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "Grok 4.5",
     "tools": true
@@ -2461,6 +2546,19 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000005"
     },
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the whole request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.000045",
+          "currency": "pollen",
+          "promptCachedTokens": "0.000001",
+          "promptTextTokens": "0.00001"
+        }
+      }
+    ],
     "title": "MIDIjourney Large",
     "tools": true
   },
@@ -3108,6 +3206,19 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000005"
     },
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the whole request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.000045",
+          "currency": "pollen",
+          "promptCachedTokens": "0.000001",
+          "promptTextTokens": "0.00001"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "GPT-5.5",
     "tools": true
@@ -3324,6 +3435,20 @@
       "promptCachedTokens": "0.000000064",
       "promptTextTokens": "0.00000032"
     },
+    "pricing_variants": [
+      {
+        "description": "At least 256,000 prompt tokens; the higher rates apply to the whole request.",
+        "label": "Long context (256K+)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.00000384",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.0000012",
+          "promptCachedTokens": "0.000000192",
+          "promptTextTokens": "0.00000096"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "Qwen3.7 Plus",
     "tools": true
@@ -3453,8 +3578,40 @@
       "currency": "pollen",
       "promptCacheWriteTokens": "0.000000038",
       "promptCachedTokens": "0.000000006",
-      "promptTextTokens": "0.00000003"
+      "promptImageTokens": "0.00000003",
+      "promptTextTokens": "0.00000003",
+      "promptVideoTokens": "0.00000003"
     },
+    "pricing_variants": [
+      {
+        "description": "At least 32,000 prompt tokens; the higher rates apply to the whole request.",
+        "label": "32K+ context",
+        "name": "context_32k",
+        "pricing": {
+          "completionTextTokens": "0.0000004",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.000000125",
+          "promptCachedTokens": "0.00000002",
+          "promptImageTokens": "0.0000001",
+          "promptTextTokens": "0.0000001",
+          "promptVideoTokens": "0.0000001"
+        }
+      },
+      {
+        "description": "At least 256,000 prompt tokens; the highest rates apply to the whole request.",
+        "label": "256K+ context",
+        "name": "context_256k",
+        "pricing": {
+          "completionTextTokens": "0.0000008",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.00000025",
+          "promptCachedTokens": "0.00000004",
+          "promptImageTokens": "0.0000002",
+          "promptTextTokens": "0.0000002",
+          "promptVideoTokens": "0.0000002"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "Qwen3.7 Flash",
     "tools": true
