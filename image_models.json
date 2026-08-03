@@ -418,6 +418,29 @@
     "title": "FLUX.1 Kontext"
   },
   {
+    "added_date": 1785542400000,
+    "aliases": [
+      "krea-2"
+    ],
+    "brand": "Krea",
+    "capabilities": [],
+    "category": "image",
+    "description": "Style-rich generation with strong prompt adherence and clean typography",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "krea",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.03",
+      "currency": "pollen"
+    },
+    "title": "Krea 2 Medium"
+  },
+  {
     "added_date": 0,
     "aliases": [
       "community/meow18838/image-1"
@@ -649,9 +672,20 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionImageTokens": "0.03",
+      "completionImageTokens": "0.025",
       "currency": "pollen"
     },
+    "pricing_variants": [
+      {
+        "description": "Applies when the request includes one or more input images.",
+        "label": "Image editing",
+        "name": "edit",
+        "pricing": {
+          "completionImageTokens": "0.03",
+          "currency": "pollen"
+        }
+      }
+    ],
     "title": "Qwen Image Plus"
   },
   {
