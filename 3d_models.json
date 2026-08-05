@@ -27,39 +27,21 @@
   },
   {
     "added_date": 1782259200000,
-    "aliases": [],
+    "aliases": [
+      "trellis-2-low",
+      "trellis-2-medium",
+      "trellis-2-high"
+    ],
     "brand": "Microsoft",
     "capabilities": [],
     "category": "3d",
-    "description": "Turns a photo into a 3D model at maximum detail; the priciest tier",
+    "description": "Image-to-3D generation with selectable output detail",
     "flat_rate": true,
     "input_modalities": [
       "image"
     ],
     "max_reference_images": 1,
-    "name": "trellis-2-high",
-    "output_modalities": [
-      "3d"
-    ],
-    "pricing": {
-      "completionImageTokens": "0.35",
-      "currency": "pollen"
-    },
-    "title": "Trellis 2 (High)"
-  },
-  {
-    "added_date": 1782259200000,
-    "aliases": [],
-    "brand": "Microsoft",
-    "capabilities": [],
-    "category": "3d",
-    "description": "Turns a photo into a 3D model — fastest option, lowest detail",
-    "flat_rate": true,
-    "input_modalities": [
-      "image"
-    ],
-    "max_reference_images": 1,
-    "name": "trellis-2-low",
+    "name": "trellis-2",
     "output_modalities": [
       "3d"
     ],
@@ -67,28 +49,31 @@
       "completionImageTokens": "0.24",
       "currency": "pollen"
     },
-    "title": "Trellis 2 (Low)"
-  },
-  {
-    "added_date": 1782259200000,
-    "aliases": [],
-    "brand": "Microsoft",
-    "capabilities": [],
-    "category": "3d",
-    "description": "Turns a photo into a 3D model with balanced detail and cost",
-    "flat_rate": true,
-    "input_modalities": [
-      "image"
+    "pricing_variants": [
+      {
+        "description": "Balanced output detail and generation cost.",
+        "label": "Medium resolution",
+        "name": "medium",
+        "pricing": {
+          "completionImageTokens": "0.29",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Maximum output detail.",
+        "label": "High resolution",
+        "name": "high",
+        "pricing": {
+          "completionImageTokens": "0.35",
+          "currency": "pollen"
+        }
+      }
     ],
-    "max_reference_images": 1,
-    "name": "trellis-2-medium",
-    "output_modalities": [
-      "3d"
+    "resolutions": [
+      "low",
+      "medium",
+      "high"
     ],
-    "pricing": {
-      "completionImageTokens": "0.29",
-      "currency": "pollen"
-    },
-    "title": "Trellis 2 (Medium)"
+    "title": "Trellis 2"
   }
 ]

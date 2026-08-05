@@ -471,7 +471,8 @@
       "community/MarcosFRG/deepseek-v4-flash"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -499,7 +500,8 @@
       "community/MarcosFRG/deepseek-v4-pro"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -527,7 +529,8 @@
       "community/MarcosFRG/gemini-2.5-flash-lite"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -558,7 +561,8 @@
       "community/MarcosFRG/gemini-3-flash-preview"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -591,7 +595,8 @@
       "community/MarcosFRG/gemini-3.1-flash-lite"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -624,7 +629,8 @@
       "community/MarcosFRG/gemini-3.1-pro-preview"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -656,7 +662,8 @@
       "community/MarcosFRG/gemma-3-27b"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -683,7 +690,8 @@
       "community/MarcosFRG/gemma-4-31b"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -712,7 +720,8 @@
       "community/MarcosFRG/glm-4.6v-flash"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -737,7 +746,8 @@
       "community/MarcosFRG/glm-5.2"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -765,7 +775,8 @@
       "community/MarcosFRG/mimo-v2.5"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -797,7 +808,8 @@
       "community/MarcosFRG/minimax-m3"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -826,7 +838,8 @@
       "community/MarcosFRG/north-mini-code"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "JankRouter",
+    "brand_url": "https://router.wisp.uno/jank",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -1194,7 +1207,8 @@
     "context_length": 128000,
     "description": "Multilingual agentic reasoning with tools and long context",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "is_specialized": false,
     "name": "command-a-plus",
@@ -1354,7 +1368,7 @@
       "promptTextTokens": "0.0000005",
       "promptVideoTokens": "0.0000005"
     },
-    "title": "Gemini 3 Flash",
+    "title": "Gemini 3 Flash Preview",
     "tools": true
   },
   {
@@ -1498,14 +1512,20 @@
       }
     ],
     "reasoning": true,
-    "title": "Gemini 3.1 Pro",
+    "title": "Gemini 3.1 Pro Preview",
     "tools": true
   },
   {
     "added_date": 1760054400000,
     "aliases": [
       "gemini-2.5-flash-search",
-      "gemini-2.5-flash-lite-search"
+      "gemini-2.5-flash-lite-search",
+      "gemini-search-fast",
+      "gemini-3.1-flash-lite-search",
+      "gemini-3.5-flash-lite-search",
+      "gemini-search-large",
+      "gemini-3.6-flash-search",
+      "gemini-3.5-flash-search"
     ],
     "brand": "Google",
     "capabilities": [
@@ -1538,86 +1558,6 @@
       "promptVideoTokens": "0.0000001"
     },
     "title": "Google Gemini 2.5 Flash Lite Search",
-    "tools": false
-  },
-  {
-    "added_date": 1779753600000,
-    "aliases": [
-      "gemini-3.1-flash-lite-search",
-      "gemini-3.5-flash-lite-search"
-    ],
-    "brand": "Google",
-    "capabilities": [
-      "web_search"
-    ],
-    "category": "text",
-    "context_length": 1048576,
-    "description": "Fast multimodal answers grounded in live web results",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "is_specialized": false,
-    "max_reference_images": 3600,
-    "max_reference_videos": 10,
-    "name": "gemini-search-fast",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionTextTokens": "0.0000025",
-      "currency": "pollen",
-      "promptAudioTokens": "0.0000003",
-      "promptCacheWriteTokens": "0.0000003",
-      "promptCachedTokens": "0.00000003",
-      "promptImageTokens": "0.0000003",
-      "promptTextTokens": "0.0000003",
-      "promptVideoTokens": "0.0000003"
-    },
-    "title": "Gemini 3.5 Flash Lite Search",
-    "tools": false
-  },
-  {
-    "added_date": 1779753600000,
-    "aliases": [
-      "gemini-3.6-flash-search",
-      "gemini-3.5-flash-search"
-    ],
-    "brand": "Google",
-    "capabilities": [
-      "web_search"
-    ],
-    "category": "text",
-    "context_length": 1048576,
-    "description": "Premium web research with grounded, up-to-date answers",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "is_specialized": false,
-    "max_reference_images": 3600,
-    "max_reference_videos": 10,
-    "name": "gemini-search-large",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionTextTokens": "0.0000075",
-      "currency": "pollen",
-      "promptAudioTokens": "0.0000015",
-      "promptCacheWriteTokens": "0.0000015",
-      "promptCachedTokens": "0.00000015",
-      "promptImageTokens": "0.0000015",
-      "promptTextTokens": "0.0000015",
-      "promptVideoTokens": "0.0000015"
-    },
-    "title": "Gemini 3.6 Flash Search",
     "tools": false
   },
   {
@@ -1848,7 +1788,7 @@
       }
     ],
     "reasoning": true,
-    "title": "ChatGPT 5.6 Luna",
+    "title": "GPT-5.6 Luna",
     "tools": true
   },
   {
@@ -1897,7 +1837,7 @@
       }
     ],
     "reasoning": true,
-    "title": "ChatGPT 5.6 Sol",
+    "title": "GPT-5.6 Sol",
     "tools": true
   },
   {
@@ -1946,7 +1886,7 @@
       }
     ],
     "reasoning": true,
-    "title": "ChatGPT 5.6 Terra",
+    "title": "GPT-5.6 Terra",
     "tools": true
   },
   {
@@ -1990,15 +1930,19 @@
       "grok-4",
       "grok-4-fast",
       "grok-4-20-non-reasoning",
-      "grok-non-reasoning"
+      "grok-non-reasoning",
+      "grok-4-20-reasoning",
+      "grok-4-20",
+      "grok-4-1-fast-reasoning"
     ],
     "brand": "xAI",
     "capabilities": [
-      "tool_calling"
+      "tool_calling",
+      "reasoning"
     ],
     "category": "text",
     "context_length": 262144,
-    "description": "Snappy multimodal chat with tool calling; skips step-by-step reasoning",
+    "description": "Multimodal chat and tool calling with optional reasoning",
     "input_modalities": [
       "text",
       "image"
@@ -2016,42 +1960,8 @@
       "promptImageTokens": "0.000002",
       "promptTextTokens": "0.000002"
     },
-    "title": "Grok 4.20 Non-Reasoning",
-    "tools": true
-  },
-  {
-    "added_date": 1775692800000,
-    "aliases": [
-      "grok-4-20",
-      "grok-4-1-fast-reasoning"
-    ],
-    "brand": "xAI",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "context_length": 262144,
-    "description": "Step-by-step multimodal reasoning for agentic tasks; slower than the non-thinking variant",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "is_specialized": false,
-    "max_reference_images": 100,
-    "name": "grok-4-20-reasoning",
-    "output_modalities": [
-      "text"
-    ],
-    "pricing": {
-      "completionTextTokens": "0.000006",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000002",
-      "promptImageTokens": "0.000002",
-      "promptTextTokens": "0.000002"
-    },
     "reasoning": true,
-    "title": "Grok 4.20 Reasoning",
+    "title": "Grok 4.20",
     "tools": true
   },
   {
@@ -3230,7 +3140,10 @@
   {
     "added_date": 1762214400000,
     "aliases": [
-      "sonar"
+      "sonar",
+      "perplexity-high",
+      "perplexity-deep",
+      "sonar-deep"
     ],
     "brand": "Perplexity",
     "capabilities": [
@@ -3253,35 +3166,6 @@
       "promptTextTokens": "0.000001"
     },
     "title": "Perplexity Sonar Fast Search",
-    "tools": false
-  },
-  {
-    "added_date": 1780012800000,
-    "aliases": [
-      "perplexity-deep",
-      "sonar-deep"
-    ],
-    "brand": "Perplexity",
-    "capabilities": [
-      "web_search"
-    ],
-    "category": "text",
-    "context_length": 128000,
-    "description": "Digs through many sources for thorough, cited research answers",
-    "input_modalities": [
-      "text"
-    ],
-    "is_specialized": false,
-    "name": "perplexity-high",
-    "output_modalities": [
-      "text"
-    ],
-    "pricing": {
-      "completionTextTokens": "0.000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "title": "Perplexity Sonar High-Context Search",
     "tools": false
   },
   {
@@ -3312,7 +3196,7 @@
       "promptTextTokens": "0.000002"
     },
     "reasoning": true,
-    "title": "Perplexity Sonar Reasoning",
+    "title": "Perplexity Sonar Reasoning Pro",
     "tools": false
   },
   {
@@ -4464,30 +4348,6 @@
       "currency": "pollen"
     },
     "title": "Laguna s2.1 (Free)"
-  },
-  {
-    "added_date": 0,
-    "aliases": [
-      "community/vendouple/nemotron-3-ultra:free"
-    ],
-    "alpha": true,
-    "brand": "Community",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "This model has a 32k context limit, it will fail above that",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "vendouple/nemotron-3-ultra:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "title": "Nemotron 3 Ultra (Free)"
   },
   {
     "added_date": 0,
