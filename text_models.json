@@ -1201,6 +1201,27 @@
       "promptTextTokens": "0.0000015",
       "promptVideoTokens": "0.0000015"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "openrouter.google.web_search.v1",
+        "price": "14",
+        "quantity": 1000,
+        "unit": "search requests"
+      },
+      {
+        "currency": "pollen",
+        "kind": "cache_storage",
+        "label": "Cache storage",
+        "name": "openrouter.google.cache_storage.v1",
+        "price": "0.083333333333",
+        "quantity": 1000000,
+        "suffix": "5 min",
+        "unit": "tokens written"
+      }
+    ],
     "title": "Gemini 3.6 Flash",
     "tools": true
   },
@@ -1241,6 +1262,27 @@
       "promptTextTokens": "0.0000005",
       "promptVideoTokens": "0.0000005"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "openrouter.google.web_search.v1",
+        "price": "14",
+        "quantity": 1000,
+        "unit": "search requests"
+      },
+      {
+        "currency": "pollen",
+        "kind": "cache_storage",
+        "label": "Cache storage",
+        "name": "openrouter.google.cache_storage.v1",
+        "price": "0.083333333333",
+        "quantity": 1000000,
+        "suffix": "5 min",
+        "unit": "tokens written"
+      }
+    ],
     "title": "Gemini 3 Flash Preview",
     "tools": true
   },
@@ -1281,6 +1323,27 @@
       "promptTextTokens": "0.0000001",
       "promptVideoTokens": "0.0000001"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "openrouter.google.web_search.v1",
+        "price": "14",
+        "quantity": 1000,
+        "unit": "search requests"
+      },
+      {
+        "currency": "pollen",
+        "kind": "cache_storage",
+        "label": "Cache storage",
+        "name": "openrouter.google.cache_storage.v1",
+        "price": "0.083333333333",
+        "quantity": 1000000,
+        "suffix": "5 min",
+        "unit": "tokens written"
+      }
+    ],
     "title": "Gemini 2.5 Flash Lite",
     "tools": true
   },
@@ -1325,6 +1388,27 @@
       "promptTextTokens": "0.0000003",
       "promptVideoTokens": "0.0000003"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "openrouter.google.web_search.v1",
+        "price": "14",
+        "quantity": 1000,
+        "unit": "search requests"
+      },
+      {
+        "currency": "pollen",
+        "kind": "cache_storage",
+        "label": "Cache storage",
+        "name": "openrouter.google.cache_storage.v1",
+        "price": "0.083333333333",
+        "quantity": 1000000,
+        "suffix": "5 min",
+        "unit": "tokens written"
+      }
+    ],
     "title": "Gemini 3.5 Flash Lite",
     "tools": true
   },
@@ -1367,6 +1451,28 @@
       "promptTextTokens": "0.000002",
       "promptVideoTokens": "0.000002"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "openrouter.google.web_search.v1",
+        "price": "14",
+        "quantity": 1000,
+        "unit": "search requests"
+      },
+      {
+        "currency": "pollen",
+        "kind": "cache_storage",
+        "label": "Cache storage",
+        "name": "openrouter.google.cache_storage.v1",
+        "price": "0.375",
+        "quantity": 1000000,
+        "suffix": "5 min",
+        "unit": "tokens written"
+      }
+    ],
+    "pricing_default_label": "<200K context",
     "pricing_variants": [
       {
         "description": "At least 200,000 prompt tokens; text, cached, cache-write, audio, video, and output rates increase while image input stays at its separately advertised base price.",
@@ -1430,6 +1536,27 @@
       "promptTextTokens": "0.0000001",
       "promptVideoTokens": "0.0000001"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "grounded_prompt",
+        "label": "Search",
+        "name": "google.gemini_2.grounded_prompt.v1",
+        "price": "35",
+        "quantity": 1000,
+        "unit": "grounded prompts"
+      },
+      {
+        "currency": "pollen",
+        "kind": "cache_storage",
+        "label": "Cache storage",
+        "name": "google.vertex.cache_storage.v1",
+        "price": "1",
+        "quantity": 1000000,
+        "suffix": "1 hour",
+        "unit": "tokens written"
+      }
+    ],
     "title": "Google Gemini 2.5 Flash Lite Search",
     "tools": false
   },
@@ -1622,6 +1749,7 @@
       "promptCachedTokens": "0.00000025",
       "promptTextTokens": "0.0000025"
     },
+    "pricing_default_label": "≤272K context",
     "pricing_variants": [
       {
         "description": "More than 272,000 prompt tokens; the higher rates apply to the whole request.",
@@ -1702,6 +1830,7 @@
       "promptCachedTokens": "0.00000005",
       "promptTextTokens": "0.0000005"
     },
+    "pricing_default_label": "≤272K context",
     "pricing_variants": [
       {
         "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
@@ -1751,6 +1880,7 @@
       "promptCachedTokens": "0.00000025",
       "promptTextTokens": "0.0000025"
     },
+    "pricing_default_label": "≤272K context",
     "pricing_variants": [
       {
         "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
@@ -1800,6 +1930,7 @@
       "promptCachedTokens": "0.000000125",
       "promptTextTokens": "0.00000125"
     },
+    "pricing_default_label": "≤272K context",
     "pricing_variants": [
       {
         "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
@@ -1923,6 +2054,7 @@
       "promptCachedTokens": "0.0000003",
       "promptTextTokens": "0.000002"
     },
+    "pricing_default_label": "<200K context",
     "pricing_variants": [
       {
         "description": "At least 200,000 prompt tokens; the higher rates apply to the whole request.",
@@ -2360,6 +2492,7 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000005"
     },
+    "pricing_default_label": "≤272K context",
     "pricing_variants": [
       {
         "description": "More than 272,000 prompt tokens; the higher rates apply to the whole request.",
@@ -3020,6 +3153,7 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000005"
     },
+    "pricing_default_label": "≤272K context",
     "pricing_variants": [
       {
         "description": "More than 272,000 prompt tokens; the higher rates apply to the whole request.",
@@ -3063,6 +3197,17 @@
       "currency": "pollen",
       "promptTextTokens": "0.000003"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "perplexity.sonar_pro_high.search_request.v1",
+        "price": "14",
+        "quantity": 1000,
+        "unit": "requests"
+      }
+    ],
     "title": "Perplexity Sonar Pro",
     "tools": false
   },
@@ -3094,6 +3239,37 @@
       "currency": "pollen",
       "promptTextTokens": "0.000001"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "perplexity.sonar_low.search_request.v1",
+        "option": {
+          "default": true,
+          "group": "search_context",
+          "label": "Low search context",
+          "value": "low"
+        },
+        "price": "5",
+        "quantity": 1000,
+        "unit": "requests"
+      },
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "perplexity.sonar_high.search_request.v1",
+        "option": {
+          "group": "search_context",
+          "label": "High search context",
+          "value": "high"
+        },
+        "price": "12",
+        "quantity": 1000,
+        "unit": "requests"
+      }
+    ],
     "title": "Perplexity Sonar Fast Search",
     "tools": false
   },
@@ -3124,6 +3300,17 @@
       "currency": "pollen",
       "promptTextTokens": "0.000002"
     },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "search_request",
+        "label": "Search",
+        "name": "perplexity.sonar_reasoning_high.search_request.v1",
+        "price": "14",
+        "quantity": 1000,
+        "unit": "requests"
+      }
+    ],
     "reasoning": true,
     "title": "Perplexity Sonar Reasoning Pro",
     "tools": false
@@ -3134,7 +3321,8 @@
       "community/pollinations-router/polli"
     ],
     "alpha": true,
-    "brand": "Community",
+    "brand": "Pollinations",
+    "brand_url": "https://pollinations.ai/",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -3249,6 +3437,7 @@
       "promptCachedTokens": "0.000000064",
       "promptTextTokens": "0.00000032"
     },
+    "pricing_default_label": "<256K context",
     "pricing_variants": [
       {
         "description": "At least 256,000 prompt tokens; the higher rates apply to the whole request.",
@@ -3396,6 +3585,7 @@
       "promptTextTokens": "0.00000003",
       "promptVideoTokens": "0.00000003"
     },
+    "pricing_default_label": "<32K context",
     "pricing_variants": [
       {
         "description": "At least 32,000 prompt tokens; the higher rates apply to the whole request.",
