@@ -4159,9 +4159,9 @@
     "title": "Ling 3.0 flash"
   },
   {
-    "added_date": 1784719879000,
+    "added_date": 1784374276000,
     "aliases": [
-      "community/vendouple/claude-opus-4-8"
+      "community/vendouple/deepseek-v3.2"
     ],
     "alpha": true,
     "brand": "OrchidLLM Proxy",
@@ -4169,21 +4169,23 @@
     "capabilities": [],
     "category": "text",
     "community": true,
-    "description": "Claude Opus 4.8",
+    "description": "Deepseek v3.2",
     "input_modalities": [
       "text"
     ],
-    "name": "vendouple/claude-opus-4-8",
+    "name": "vendouple/deepseek-v3.2",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
     "pricing": {
-      "completionTextTokens": "0.000008",
+      "completionReasoningTokens": "0.0000001",
+      "completionTextTokens": "0.0000001",
       "currency": "pollen",
-      "promptTextTokens": "0.000003"
+      "promptCachedTokens": "0.000000001",
+      "promptTextTokens": "0.00000002"
     },
-    "title": "Claude Opus 4.8"
+    "title": "DeepSeek V3.2"
   },
   {
     "added_date": 1783698620000,
@@ -4271,6 +4273,35 @@
     "title": "Gemma 4 RP (20K, Daily Limit)"
   },
   {
+    "added_date": 1786040071000,
+    "aliases": [
+      "community/vendouple/gpt-5.6-sol"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "This model has a daily limit.",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/gpt-5.6-sol",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionReasoningTokens": "0.00001",
+      "completionTextTokens": "0.00001",
+      "currency": "pollen",
+      "promptTextTokens": "0.000005"
+    },
+    "title": "Gpt 5.6 Sol (Daily Limit)"
+  },
+  {
     "added_date": 1785330839000,
     "aliases": [
       "community/vendouple/kimi-k3"
@@ -4323,6 +4354,31 @@
       "currency": "pollen"
     },
     "title": "Laguna s2.1 (Free)"
+  },
+  {
+    "added_date": 1784372748000,
+    "aliases": [
+      "community/vendouple/nemotron-3-ultra:free"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "This model has a 32k context limit, it will fail above that",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "vendouple/nemotron-3-ultra:free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "title": "Nemotron 3 Ultra (Free)"
   },
   {
     "added_date": 1784737002000,
