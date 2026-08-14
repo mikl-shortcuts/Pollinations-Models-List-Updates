@@ -889,6 +889,32 @@
     "title": "Muse Glimmer 30B"
   },
   {
+    "added_date": 1786704476000,
+    "aliases": [
+      "community/chigwell/DeepSeek-V4-Flash-0731"
+    ],
+    "alpha": true,
+    "brand": "LLM7.io",
+    "brand_url": "https://llm7.io/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "chigwell/DeepSeek-V4-Flash-0731",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionTextTokens": "0.00000004",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000002"
+    },
+    "title": "DeepSeek-V4-Flash-0731"
+  },
+  {
     "added_date": 1786612526000,
     "aliases": [
       "community/chigwell/claude-sonnet-5"
@@ -1491,14 +1517,14 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.0000075",
+      "completionTextTokens": "0.000001875",
       "currency": "pollen",
-      "promptAudioTokens": "0.0000015",
-      "promptCacheWriteTokens": "0.0000015",
-      "promptCachedTokens": "0.00000015",
-      "promptImageTokens": "0.0000015",
-      "promptTextTokens": "0.0000015",
-      "promptVideoTokens": "0.0000015"
+      "promptAudioTokens": "0.000000375",
+      "promptCacheWriteTokens": "0.000000375",
+      "promptCachedTokens": "0.0000000375",
+      "promptImageTokens": "0.000000375",
+      "promptTextTokens": "0.000000375",
+      "promptVideoTokens": "0.000000375"
     },
     "pricing_adjustments": [
       {
@@ -1506,7 +1532,7 @@
         "kind": "search_request",
         "label": "Search",
         "name": "openrouter.google.web_search.v1",
-        "price": "14",
+        "price": "7",
         "quantity": 1000,
         "unit": "search requests"
       },
@@ -1515,13 +1541,13 @@
         "kind": "cache_storage",
         "label": "Cache storage",
         "name": "openrouter.google.cache_storage.v1",
-        "price": "0.083333333333",
+        "price": "0.020833333333",
         "quantity": 1000000,
         "suffix": "5 min",
         "unit": "tokens written"
       }
     ],
-    "title": "Gemini 3.6 Flash",
+    "title": "Gemini 3.7 Flash",
     "tools": true
   },
   {
@@ -2349,6 +2375,7 @@
   {
     "added_date": 1784332800000,
     "aliases": [
+      "grok-4.5",
       "grok-4-5"
     ],
     "brand": "xAI",
@@ -2365,7 +2392,7 @@
     ],
     "is_specialized": false,
     "max_reference_images": 10,
-    "name": "grok-4.5",
+    "name": "grok-4.6",
     "output_modalities": [
       "text"
     ],
@@ -2373,7 +2400,7 @@
     "pricing": {
       "completionTextTokens": "0.000006",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000003",
+      "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.000002"
     },
     "pricing_default_label": "<200K context",
@@ -2385,13 +2412,13 @@
         "pricing": {
           "completionTextTokens": "0.000012",
           "currency": "pollen",
-          "promptCachedTokens": "0.0000006",
+          "promptCachedTokens": "0.000001",
           "promptTextTokens": "0.000004"
         }
       }
     ],
     "reasoning": true,
-    "title": "Grok 4.5",
+    "title": "Grok 4.6",
     "tools": true
   },
   {
@@ -3126,8 +3153,41 @@
     "tools": true
   },
   {
-    "added_date": 1783814400000,
+    "added_date": 1786665600000,
+    "aliases": [],
+    "brand": "Meta",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "context_length": 131072,
+    "description": "Compact multimodal agent for reasoning, tool use and failure recovery",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 30,
+    "name": "muse-glimmer",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionTextTokens": "0.0000015",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000004",
+      "promptTextTokens": "0.00000035"
+    },
+    "reasoning": true,
+    "title": "Muse Glimmer 30B",
+    "tools": true
+  },
+  {
+    "added_date": 1786665600000,
     "aliases": [
+      "muse-spark-1.1",
       "muse-spark",
       "spark",
       "spark-1.1"
@@ -3146,7 +3206,7 @@
     ],
     "is_specialized": false,
     "max_reference_images": 10,
-    "name": "muse-spark-1.1",
+    "name": "muse-spark-1.2",
     "output_modalities": [
       "text"
     ],
@@ -3158,7 +3218,7 @@
       "promptTextTokens": "0.00000125"
     },
     "reasoning": true,
-    "title": "Muse Spark 1.1",
+    "title": "Muse Spark 1.2",
     "tools": true
   },
   {
