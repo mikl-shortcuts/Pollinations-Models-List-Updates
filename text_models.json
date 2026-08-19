@@ -437,7 +437,7 @@
   {
     "added_date": 1785273203000,
     "aliases": [
-      "community/JustScriptzz/gemini-3.6-flash"
+      "community/JustScriptzz/gemini-3.5-flash"
     ],
     "alpha": true,
     "brand": "Community",
@@ -450,7 +450,7 @@
       "audio",
       "video"
     ],
-    "name": "JustScriptzz/gemini-3.6-flash",
+    "name": "JustScriptzz/gemini-3.5-flash",
     "output_modalities": [
       "text"
     ],
@@ -461,7 +461,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000075"
     },
-    "title": "Gemini 3.6 Flash"
+    "title": "Gemini 3.5 Flash"
   },
   {
     "added_date": 1785486588000,
@@ -519,6 +519,33 @@
     "title": "GPT OSS 120B Free"
   },
   {
+    "added_date": 1787158831000,
+    "aliases": [
+      "community/JustScriptzz/grape-2-pro"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "JustScriptzz/grape-2-pro",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000075",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000045"
+    },
+    "title": "Grape 2 Pro"
+  },
+  {
     "added_date": 1787102161000,
     "aliases": [
       "community/JustScriptzz/grok-4.6"
@@ -556,20 +583,18 @@
       "community/JustScriptzz/helix-agent"
     ],
     "alpha": true,
-    "base_model": "kimi-k3",
+    "base_model": "JustScriptzz/kimi-k3",
     "brand": "Community",
     "capabilities": [
-      "tool_calling",
-      "reasoning",
       "pollinations_models"
     ],
     "category": "text",
     "community": true,
-    "context_length": 1048576,
-    "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done.",
+    "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done. Powered by Kimi K3",
     "input_modalities": [
       "text",
-      "image"
+      "image",
+      "audio"
     ],
     "name": "JustScriptzz/helix-agent",
     "output_modalities": [
@@ -578,14 +603,16 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.000015",
+      "completionAudioTokens": "0.000001",
+      "completionReasoningTokens": "0.0000005",
+      "completionTextTokens": "0.000004",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000003",
-      "promptTextTokens": "0.000003"
+      "promptAudioTokens": "0.0000005",
+      "promptCachedTokens": "0.00000025",
+      "promptImageTokens": "0.000001",
+      "promptTextTokens": "0.0000025"
     },
-    "reasoning": true,
-    "title": "Helix Agent",
-    "tools": true
+    "title": "Helix Agent"
   },
   {
     "added_date": 1787141363000,
