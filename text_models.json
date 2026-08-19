@@ -407,6 +407,94 @@
     "title": "Agnes 2.5 Flash"
   },
   {
+    "added_date": 1787158595000,
+    "aliases": [
+      "community/JustScriptzz/deepseek-v4-pro-0813"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Meet Deepseek v4 Pro 0813, the 7th best AI model overall in the entire planet.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "JustScriptzz/deepseek-v4-pro-0813",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 5,
+    "pricing": {
+      "completionTextTokens": "0.000001",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000015",
+      "promptTextTokens": "0.0000004"
+    },
+    "title": "Deepseek v4 Pro 0813 Latest"
+  },
+  {
+    "added_date": 1785273203000,
+    "aliases": [
+      "community/JustScriptzz/gemini-3.6-flash"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "JustScriptzz/gemini-3.6-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 5,
+    "pricing": {
+      "completionTextTokens": "0.000003",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000075"
+    },
+    "title": "Gemini 3.6 Flash"
+  },
+  {
+    "added_date": 1785486588000,
+    "aliases": [
+      "community/JustScriptzz/glm-5.2"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "JustScriptzz/glm-5.2",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "completionAudioTokens": "0.00000075",
+      "completionReasoningTokens": "0.0000005",
+      "completionTextTokens": "0.0000015",
+      "currency": "pollen",
+      "promptAudioTokens": "0.0000005",
+      "promptCachedTokens": "0.0000001",
+      "promptImageTokens": "0.00000025",
+      "promptTextTokens": "0.0000005"
+    },
+    "title": "GLM 5.2"
+  },
+  {
     "added_date": 1787143187000,
     "aliases": [
       "community/JustScriptzz/gpt-oss-120b"
@@ -468,13 +556,16 @@
       "community/JustScriptzz/helix-agent"
     ],
     "alpha": true,
-    "base_model": "vendouple/kimi-k3",
+    "base_model": "kimi-k3",
     "brand": "Community",
     "capabilities": [
+      "tool_calling",
+      "reasoning",
       "pollinations_models"
     ],
     "category": "text",
     "community": true,
+    "context_length": 1048576,
     "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done.",
     "input_modalities": [
       "text",
@@ -487,12 +578,14 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.0000045",
-      "completionTextTokens": "0.0000045",
+      "completionTextTokens": "0.000015",
       "currency": "pollen",
+      "promptCachedTokens": "0.0000003",
       "promptTextTokens": "0.000003"
     },
-    "title": "Helix Agent"
+    "reasoning": true,
+    "title": "Helix Agent",
+    "tools": true
   },
   {
     "added_date": 1787141363000,
@@ -553,32 +646,6 @@
       "promptTextTokens": "0.0000025"
     },
     "title": "Kimi K3"
-  },
-  {
-    "added_date": 1787101628000,
-    "aliases": [
-      "community/JustScriptzz/mercury-2"
-    ],
-    "alpha": true,
-    "brand": "Community",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "JustScriptzz/mercury-2",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 15,
-    "pricing": {
-      "completionTextTokens": "0.00000075",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000005"
-    },
-    "title": "Mercury 2"
   },
   {
     "added_date": 1787149908000,
@@ -1090,7 +1157,7 @@
     "capabilities": [],
     "category": "text",
     "community": true,
-    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class (50% OFF)",
+    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class (25% OFF)",
     "input_modalities": [
       "text",
       "image",
@@ -1103,9 +1170,9 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.0000015",
+      "completionTextTokens": "0.00000225",
       "currency": "pollen",
-      "promptTextTokens": "0.0000002"
+      "promptTextTokens": "0.0000003"
     },
     "title": "Qwen3.8 27B via JankRouter"
   },
