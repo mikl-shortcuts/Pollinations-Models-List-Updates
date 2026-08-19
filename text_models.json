@@ -468,34 +468,31 @@
       "community/JustScriptzz/helix-agent"
     ],
     "alpha": true,
-    "base_model": "glm",
+    "base_model": "vendouple/kimi-k3",
     "brand": "Community",
     "capabilities": [
-      "tool_calling",
-      "reasoning",
       "pollinations_models"
     ],
     "category": "text",
     "community": true,
-    "context_length": 1048576,
     "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done.",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "JustScriptzz/helix-agent",
     "output_modalities": [
       "text"
     ],
+    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.0000044",
+      "completionReasoningTokens": "0.0000045",
+      "completionTextTokens": "0.0000045",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000014",
-      "promptTextTokens": "0.0000014"
+      "promptTextTokens": "0.000003"
     },
-    "reasoning": true,
-    "title": "Helix Agent",
-    "tools": true
+    "title": "Helix Agent"
   },
   {
     "added_date": 1787141363000,
@@ -1074,9 +1071,11 @@
       "text"
     ],
     "paid_only": false,
-    "per_user_rpm": 12,
+    "per_user_rpm": null,
     "pricing": {
-      "currency": "pollen"
+      "completionTextTokens": "0.00000004",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000001"
     },
     "title": "Nemotron 3.5 Lightning via JankRouter"
   },
@@ -1091,7 +1090,7 @@
     "capabilities": [],
     "category": "text",
     "community": true,
-    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class (60% OFF)",
+    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class (50% OFF)",
     "input_modalities": [
       "text",
       "image",
@@ -1104,9 +1103,9 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.0000012",
+      "completionTextTokens": "0.0000015",
       "currency": "pollen",
-      "promptTextTokens": "0.00000016"
+      "promptTextTokens": "0.0000002"
     },
     "title": "Qwen3.8 27B via JankRouter"
   },
@@ -2809,6 +2808,36 @@
     "tools": true
   },
   {
+    "added_date": 1787097600000,
+    "aliases": [],
+    "brand": "Z.ai",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "context_length": 1048576,
+    "description": "Mandatory-reasoning model for complex software engineering and long-horizon agent workflows",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "glm-5.3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000044",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000026",
+      "promptTextTokens": "0.0000014"
+    },
+    "reasoning": true,
+    "title": "Z.ai GLM-5.3",
+    "tools": true
+  },
+  {
     "added_date": 1759795200000,
     "aliases": [
       "gpt-5.4-reasoning",
@@ -3999,6 +4028,36 @@
     "tools": true
   },
   {
+    "added_date": 1787097600000,
+    "aliases": [],
+    "brand": "NVIDIA",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "context_length": 262144,
+    "description": "Fast open-weight reasoning for high-volume agent tasks, tool use and structured output",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "nemotron-3.5-lightning",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionTextTokens": "0.0000002",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000001",
+      "promptTextTokens": "0.00000005"
+    },
+    "reasoning": true,
+    "title": "NVIDIA Nemotron 3.5 Lightning",
+    "tools": true
+  },
+  {
     "added_date": 1774224000000,
     "aliases": [
       "nova-2-lite",
@@ -4814,6 +4873,42 @@
     },
     "reasoning": true,
     "title": "Qwen3.8 2.4T A95B",
+    "tools": true
+  },
+  {
+    "added_date": 1787011200000,
+    "aliases": [],
+    "brand": "Qwen",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "context_length": 262144,
+    "description": "Dense multimodal reasoning for coding, tool use, and structured generation",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 10,
+    "max_reference_videos": 10,
+    "name": "qwen3.8-27b",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.000003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000004",
+      "promptImageTokens": "0.0000004",
+      "promptTextTokens": "0.0000004",
+      "promptVideoTokens": "0.0000004"
+    },
+    "reasoning": true,
+    "title": "Qwen3.8 27B",
     "tools": true
   },
   {
