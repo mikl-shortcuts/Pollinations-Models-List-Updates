@@ -498,7 +498,7 @@
   {
     "added_date": 1787166668000,
     "aliases": [
-      "community/JustScriptzz/k2d6"
+      "community/JustScriptzz/kimi-k2.6"
     ],
     "alpha": true,
     "brand": "Community",
@@ -510,7 +510,7 @@
       "image",
       "audio"
     ],
-    "name": "JustScriptzz/k2d6",
+    "name": "JustScriptzz/kimi-k2.6",
     "output_modalities": [
       "text"
     ],
@@ -788,7 +788,10 @@
     "alpha": true,
     "brand": "JankRouter",
     "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "Production-ready reasoning powerhouse with 1M token context — enhanced agentic capabilities and deep coding analysis that rivals frontier models (25% OFF)",
@@ -807,7 +810,9 @@
       "promptCachedTokens": "0.000000033",
       "promptTextTokens": "0.00000099"
     },
-    "title": "DeepSeek V4 Pro Official via JankRouter"
+    "reasoning": true,
+    "title": "DeepSeek V4 Pro Official via JankRouter",
+    "tools": true
   },
   {
     "added_date": 1782845346000,
@@ -913,6 +918,45 @@
     "title": "Gemini 3.1 Flash Lite via JankRouter"
   },
   {
+    "added_date": 1784939014000,
+    "aliases": [
+      "community/MarcosFRG/gemini-3.1-pro-preview"
+    ],
+    "alpha": true,
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Top-tier reasoning and agentic coding for complex multi-step problems; the heavy hitter (25% OFF)",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "MarcosFRG/gemini-3.1-pro-preview",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000045",
+      "completionTextTokens": "0.000009",
+      "currency": "pollen",
+      "promptAudioTokens": "0.0000015",
+      "promptImageTokens": "0.0000015",
+      "promptTextTokens": "0.0000015"
+    },
+    "reasoning": true,
+    "title": "Gemini 3.1 Pro Preview via JankRouter",
+    "tools": true
+  },
+  {
     "added_date": 1786977193000,
     "aliases": [
       "community/MarcosFRG/gemma-4-26b-a4b"
@@ -920,7 +964,10 @@
     "alpha": true,
     "brand": "JankRouter",
     "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "Ultra-efficient MoE engine with only 3.8B active parameters — multimodal reasoning and agentic workflows that punch way above its 26B weight class (25% OFF)",
@@ -940,7 +987,9 @@
       "promptCachedTokens": "0.0000000045",
       "promptTextTokens": "0.000000045"
     },
-    "title": "Gemma 4 26B A4B via JankRouter"
+    "reasoning": true,
+    "title": "Gemma 4 26B A4B via JankRouter",
+    "tools": true
   },
   {
     "added_date": 1782842551000,
@@ -1011,7 +1060,10 @@
     "alpha": true,
     "brand": "JankRouter",
     "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "Ultra-fast nano-tier engine with 1M context — purpose-built for high-volume, low-latency workloads at a fraction of the cost (25% OFF)",
@@ -1033,7 +1085,9 @@
       "promptCachedTokens": "0.000000015",
       "promptTextTokens": "0.00000015"
     },
-    "title": "GPT 5.6 Luna via JankRouter"
+    "reasoning": true,
+    "title": "GPT 5.6 Luna via JankRouter",
+    "tools": true
   },
   {
     "added_date": 1786828204000,
@@ -1046,6 +1100,8 @@
     "brand": "JankRouter",
     "brand_url": "https://jankrouter.waifly.com/",
     "capabilities": [
+      "tool_calling",
+      "reasoning",
       "pollinations_models"
     ],
     "category": "text",
@@ -1069,7 +1125,9 @@
       "promptCachedTokens": "0.000000015",
       "promptTextTokens": "0.00000015"
     },
-    "title": "MetraxAI"
+    "reasoning": true,
+    "title": "MetraxAI",
+    "tools": true
   },
   {
     "added_date": 1783266858000,
@@ -1172,10 +1230,13 @@
     "alpha": true,
     "brand": "JankRouter",
     "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
-    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class (25% OFF)",
+    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class (10% OFF)",
     "input_modalities": [
       "text",
       "image",
@@ -1188,11 +1249,13 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000225",
+      "completionTextTokens": "0.0000027",
       "currency": "pollen",
-      "promptTextTokens": "0.0000003"
+      "promptTextTokens": "0.00000036"
     },
-    "title": "Qwen3.8 27B via JankRouter"
+    "reasoning": true,
+    "title": "Qwen3.8 27B via JankRouter",
+    "tools": true
   },
   {
     "added_date": 1784506309000,
