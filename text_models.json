@@ -4846,7 +4846,8 @@
     "community": true,
     "description": "Claude Sonnet 4.6: advanced Anthropic AI for reasoning, coding, agents, analysis, and complex tasks.",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "rodrigookk/claude-sonnet-4.6",
     "output_modalities": [
@@ -4856,9 +4857,10 @@
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.000002",
-      "completionTextTokens": "0.000001",
+      "completionTextTokens": "0.000003",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000005",
+      "promptCacheWriteTokens": "0.0000005",
+      "promptCachedTokens": "0.0000001",
       "promptTextTokens": "0.000001"
     },
     "title": "Claude Sonnet 4.6"
@@ -4911,8 +4913,10 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
+      "completionReasoningTokens": "0.0000002",
       "completionTextTokens": "0.0000002",
       "currency": "pollen",
+      "promptCachedTokens": "0.0000002",
       "promptTextTokens": "0.0000002"
     },
     "title": "nemotron-3.5-lightning-30b-a3b"
