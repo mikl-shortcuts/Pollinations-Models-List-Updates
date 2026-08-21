@@ -923,42 +923,6 @@
     "tools": true
   },
   {
-    "added_date": 1787312321000,
-    "aliases": [
-      "community/JustScriptzz/ox-alpha"
-    ],
-    "alpha": true,
-    "brand": "Community",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text",
-      "image",
-      "audio"
-    ],
-    "name": "JustScriptzz/ox-alpha",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000007",
-      "completionTextTokens": "0.000005",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000003",
-      "promptTextTokens": "0.000001"
-    },
-    "reasoning": true,
-    "title": "Ox Alpha",
-    "tools": true
-  },
-  {
     "added_date": 1787252433000,
     "aliases": [
       "community/JustScriptzz/qwen-3.8-max"
@@ -1890,17 +1854,22 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "chigwell/claude-fable-5",
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.000027",
@@ -1909,7 +1878,9 @@
       "promptCachedTokens": "0.00000055",
       "promptTextTokens": "0.0000054"
     },
-    "title": "claude-fable-5"
+    "reasoning": true,
+    "title": "claude-fable-5",
+    "tools": true
   },
   {
     "added_date": 1786737646000,
@@ -1919,9 +1890,12 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 200000,
     "input_modalities": [
       "text"
     ],
@@ -1938,7 +1912,8 @@
       "promptCachedTokens": "0.000000006",
       "promptTextTokens": "0.000000055"
     },
-    "title": "claude-haiku-4-5"
+    "title": "claude-haiku-4-5",
+    "tools": true
   },
   {
     "added_date": 1786716162000,
@@ -1948,17 +1923,22 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "chigwell/claude-opus-4-8",
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.000003",
@@ -1967,7 +1947,9 @@
       "promptCachedTokens": "0.00000027",
       "promptTextTokens": "0.000001"
     },
-    "title": "claude-opus-4-8"
+    "reasoning": true,
+    "title": "claude-opus-4-8",
+    "tools": true
   },
   {
     "added_date": 1786725332000,
@@ -1977,17 +1959,22 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "chigwell/claude-opus-5",
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000135",
@@ -1996,7 +1983,9 @@
       "promptCachedTokens": "0.00000027",
       "promptTextTokens": "0.0000027"
     },
-    "title": "claude-opus-5"
+    "reasoning": true,
+    "title": "claude-opus-5",
+    "tools": true
   },
   {
     "added_date": 1786781630000,
@@ -2006,24 +1995,31 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "chigwell/claude-sonnet-4-6",
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.00000045",
       "currency": "pollen",
       "promptTextTokens": "0.00000012"
     },
-    "title": "claude-sonnet-4-6"
+    "reasoning": true,
+    "title": "claude-sonnet-4-6",
+    "tools": true
   },
   {
     "added_date": 1786612526000,
@@ -2033,9 +2029,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text"
     ],
@@ -2043,7 +2043,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.000001",
@@ -2052,7 +2052,9 @@
       "promptCachedTokens": "0.0000004",
       "promptTextTokens": "0.0000005"
     },
-    "title": "claude-sonnet-5"
+    "reasoning": true,
+    "title": "claude-sonnet-5",
+    "tools": true
   },
   {
     "added_date": 1786715496000,
@@ -2062,9 +2064,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1048576,
     "input_modalities": [
       "text"
     ],
@@ -2072,7 +2078,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000011",
@@ -2080,7 +2086,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000005"
     },
-    "title": "gemini-3-flash"
+    "reasoning": true,
+    "title": "gemini-3-flash",
+    "tools": true
   },
   {
     "added_date": 1786605419000,
@@ -2090,11 +2098,16 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 256000,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "chigwell/gemini-3.1-flash-lite",
     "output_modalities": [
@@ -2107,7 +2120,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000003"
     },
-    "title": "gemini-3.1-flash-lite"
+    "reasoning": true,
+    "title": "gemini-3.1-flash-lite",
+    "tools": true
   },
   {
     "added_date": 1786725461000,
@@ -2117,9 +2132,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1040000,
     "input_modalities": [
       "text"
     ],
@@ -2127,7 +2146,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000026",
@@ -2135,7 +2154,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000005"
     },
-    "title": "gemini-3.5-flash-low"
+    "reasoning": true,
+    "title": "gemini-3.5-flash-low",
+    "tools": true
   },
   {
     "added_date": 1787066649000,
@@ -2145,9 +2166,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text",
       "image"
@@ -2164,7 +2189,44 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000007"
     },
-    "title": "gemini-3.7-flash"
+    "reasoning": true,
+    "title": "gemini-3.7-flash",
+    "tools": true
+  },
+  {
+    "added_date": 1787313650000,
+    "aliases": [
+      "community/chigwell/glm-5.3"
+    ],
+    "alpha": true,
+    "brand": "LLM7.io",
+    "brand_url": "https://llm7.io/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "chigwell/glm-5.3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000025",
+      "completionTextTokens": "0.0000025",
+      "currency": "pollen",
+      "promptCachedTokens": "0.0000002",
+      "promptTextTokens": "0.00000075"
+    },
+    "reasoning": true,
+    "title": "glm-5.3",
+    "tools": true
   },
   {
     "added_date": 1786615449000,
@@ -2174,9 +2236,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1050000,
     "input_modalities": [
       "text"
     ],
@@ -2184,7 +2250,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000015",
@@ -2192,7 +2258,9 @@
       "promptCachedTokens": "0.0000005",
       "promptTextTokens": "0.00000025"
     },
-    "title": "gpt-5.4"
+    "reasoning": true,
+    "title": "gpt-5.4",
+    "tools": true
   },
   {
     "added_date": 1786610905000,
@@ -2202,11 +2270,16 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 400000,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "chigwell/gpt-5.4-mini",
     "output_modalities": [
@@ -2220,7 +2293,9 @@
       "promptCachedTokens": "0.00000015",
       "promptTextTokens": "0.000000075"
     },
-    "title": "gpt-5.4-mini"
+    "reasoning": true,
+    "title": "gpt-5.4-mini",
+    "tools": true
   },
   {
     "added_date": 1786647318000,
@@ -2230,17 +2305,22 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1050000,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "chigwell/gpt-5.5",
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000058",
@@ -2248,7 +2328,44 @@
       "promptCachedTokens": "0.00000074",
       "promptTextTokens": "0.000001"
     },
-    "title": "gpt-5.5"
+    "reasoning": true,
+    "title": "gpt-5.5",
+    "tools": true
+  },
+  {
+    "added_date": 1787316327000,
+    "aliases": [
+      "community/chigwell/gpt-5.6-sol"
+    ],
+    "alpha": true,
+    "brand": "LLM7.io",
+    "brand_url": "https://llm7.io/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "chigwell/gpt-5.6-sol",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000008",
+      "currency": "pollen",
+      "promptCachedTokens": "0.0000005",
+      "promptTextTokens": "0.0000027"
+    },
+    "reasoning": true,
+    "title": "gpt-5.6-sol",
+    "tools": true
   },
   {
     "added_date": 1786616839000,
@@ -2258,9 +2375,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text",
       "image"
@@ -2269,14 +2390,16 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000027",
       "currency": "pollen",
       "promptTextTokens": "0.0000007"
     },
-    "title": "gpt-5.6-terra"
+    "reasoning": true,
+    "title": "gpt-5.6-terra",
+    "tools": true
   },
   {
     "added_date": 1786632892000,
@@ -2286,9 +2409,12 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 500000,
     "input_modalities": [
       "text"
     ],
@@ -2296,7 +2422,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionAudioTokens": "0.00000134",
@@ -2308,7 +2434,8 @@
       "promptImageTokens": "0.0000004",
       "promptTextTokens": "0.0000004"
     },
-    "title": "grok-4.5"
+    "title": "grok-4.5",
+    "tools": true
   },
   {
     "added_date": 1786703584000,
@@ -2318,9 +2445,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 500000,
     "input_modalities": [
       "text"
     ],
@@ -2328,7 +2459,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionAudioTokens": "0.0000007",
@@ -2340,7 +2471,9 @@
       "promptImageTokens": "0.0000004",
       "promptTextTokens": "0.00000054"
     },
-    "title": "grok-4.6"
+    "reasoning": true,
+    "title": "grok-4.6",
+    "tools": true
   },
   {
     "added_date": 1786780077000,
@@ -2375,9 +2508,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 256000,
     "input_modalities": [
       "text"
     ],
@@ -2385,7 +2522,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.0000015",
@@ -2394,7 +2531,9 @@
       "promptCachedTokens": "0.00000025",
       "promptTextTokens": "0.00000025"
     },
-    "title": "llm7-pro"
+    "reasoning": true,
+    "title": "llm7-pro",
+    "tools": true
   },
   {
     "added_date": 1786603882000,
@@ -2404,9 +2543,13 @@
     "alpha": true,
     "brand": "LLM7.io",
     "brand_url": "https://llm7.io/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 128000,
     "input_modalities": [
       "text"
     ],
@@ -2417,11 +2560,13 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000002",
+      "completionTextTokens": "0.00000001",
       "currency": "pollen",
       "promptTextTokens": "0.000000005"
     },
-    "title": "minimax-m2.7"
+    "reasoning": true,
+    "title": "minimax-m2.7",
+    "tools": true
   },
   {
     "added_date": 1785522941000,
@@ -5682,6 +5827,158 @@
     "tools": true
   },
   {
+    "added_date": 1784518040000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-codestral-2508"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Codestral 25.08",
+    "input_modalities": [
+      "text",
+      "audio"
+    ],
+    "name": "sharktide/inferenceport-ai-codestral-2508",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000007",
+      "currency": "pollen",
+      "promptCachedTokens": "0.0000004",
+      "promptTextTokens": "0.0000005"
+    },
+    "title": "Codestral 25.08"
+  },
+  {
+    "added_date": 1782878489000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-command-r-plus"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Cohere Command R+",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "sharktide/inferenceport-ai-command-r-plus",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionAudioTokens": "0.000007",
+      "completionReasoningTokens": "0.000005",
+      "completionTextTokens": "0.000005",
+      "currency": "pollen",
+      "promptAudioTokens": "0.000007",
+      "promptCachedTokens": "0.000005",
+      "promptTextTokens": "0.000005"
+    },
+    "title": "Cohere Command R+"
+  },
+  {
+    "added_date": 1782964107000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-gpt-4.1"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "OpenAI GPT-4.1",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/inferenceport-ai-gpt-4.1",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionAudioTokens": "0.00005",
+      "completionReasoningTokens": "0.000006",
+      "completionTextTokens": "0.000006",
+      "currency": "pollen",
+      "promptAudioTokens": "0.00003",
+      "promptCachedTokens": "0.000006",
+      "promptTextTokens": "0.000006"
+    },
+    "title": "OpenAI GPT-4.1"
+  },
+  {
+    "added_date": 1784344080000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-kimi-k2.7-code"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Kimi k2.7 Code",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "sharktide/inferenceport-ai-kimi-k2.7-code",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000004",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000016"
+    },
+    "title": "Kimi K2.7 Code"
+  },
+  {
+    "added_date": 1784349589000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-lightning-text-v2"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "InferencePort AI Lightning Text v2 (Router)",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/inferenceport-ai-lightning-text-v2",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000075",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000075"
+    },
+    "title": "Lightning Text V2 (Router)"
+  },
+  {
     "added_date": 1786833740000,
     "agent": true,
     "aliases": [
@@ -5713,6 +6010,124 @@
       "promptTextTokens": "0.00000075"
     },
     "title": "Lightning Text v2 (Expanded Knowledge)"
+  },
+  {
+    "added_date": 1782878639000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-mimo-v2.5"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Mimo v2.5",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "sharktide/inferenceport-ai-mimo-v2.5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.00000085",
+      "completionTextTokens": "0.00000085",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000085",
+      "promptTextTokens": "0.00000085"
+    },
+    "title": "MiMo V2.5"
+  },
+  {
+    "added_date": 1784344466000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-minimax-m3"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "MiniMax M3",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "sharktide/inferenceport-ai-minimax-m3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000007",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000007"
+    },
+    "title": "MiniMax M3"
+  },
+  {
+    "added_date": 1784344621000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-qwen-3.6-27b"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Qwen 3.6 27b",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/inferenceport-ai-qwen-3.6-27b",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000012",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000012"
+    },
+    "title": "Qwen 3.6 27B"
+  },
+  {
+    "added_date": 1784434226000,
+    "aliases": [
+      "community/sharktide/inferenceport.ai-gpt-oss-20b"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "GPT-OSS 20b",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "sharktide/inferenceport.ai-gpt-oss-20b",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000003",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000007"
+    },
+    "title": "GPT-OSS 20B"
   },
   {
     "added_date": 1786903011000,
@@ -5965,6 +6380,41 @@
     "title": "DeepSeek V3.2"
   },
   {
+    "added_date": 1783698620000,
+    "aliases": [
+      "community/vendouple/deepseek-v4-flash-0731"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "LATEST VERSION",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "vendouple/deepseek-v4-flash-0731",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000001",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000001",
+      "promptTextTokens": "0.00000002"
+    },
+    "reasoning": true,
+    "title": "DeepSeek V4 Flash",
+    "tools": true
+  },
+  {
     "added_date": 1783916168000,
     "aliases": [
       "community/vendouple/deepseek-v4-pro"
@@ -5972,9 +6422,13 @@
     "alpha": true,
     "brand": "OrchidLLM Proxy",
     "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "description": "ITS BACK!",
     "input_modalities": [
       "text"
@@ -5991,7 +6445,9 @@
       "promptCachedTokens": "0.0000000125",
       "promptTextTokens": "0.0000001"
     },
-    "title": "DeepSeek V4 Pro"
+    "reasoning": true,
+    "title": "DeepSeek V4 Pro",
+    "tools": true
   },
   {
     "added_date": 1786965688000,
@@ -6020,6 +6476,71 @@
       "promptTextTokens": "0.000002"
     },
     "title": "Gemini 3.6"
+  },
+  {
+    "added_date": 1786965563000,
+    "aliases": [
+      "community/vendouple/gemini-3.7"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/gemini-3.7",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000045",
+      "completionTextTokens": "0.0000045",
+      "currency": "pollen",
+      "promptTextTokens": "0.000002"
+    },
+    "title": "Gemini 3.7"
+  },
+  {
+    "added_date": 1784523185000,
+    "aliases": [
+      "community/vendouple/gemma-4-31b-sdft-heretic-rp"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 32000,
+    "description": "This has a limit of 20k context window",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/gemma-4-31b-sdft-heretic-rp",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000005",
+      "completionTextTokens": "0.0000005",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000002"
+    },
+    "reasoning": true,
+    "title": "Gemma 4 RP (20K, Daily Limit)",
+    "tools": true
   },
   {
     "added_date": 1786965046000,
@@ -6051,16 +6572,21 @@
     "title": "GLM 5.3"
   },
   {
-    "added_date": 1786632806000,
+    "added_date": 1786040071000,
     "aliases": [
       "community/vendouple/gpt-5.6-terra"
     ],
     "alpha": true,
     "brand": "OrchidLLM Proxy",
     "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
+    "description": "This model has a daily limit but *mostly stable.",
     "input_modalities": [
       "text",
       "image"
@@ -6069,15 +6595,18 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.000003",
+      "completionReasoningTokens": "0.000002",
+      "completionTextTokens": "0.000002",
       "currency": "pollen",
       "promptCachedTokens": "0.0000000125",
-      "promptTextTokens": "0.0000015"
+      "promptTextTokens": "0.0000005"
     },
-    "title": "GPT 5.6 Terra (Daily Limit)"
+    "reasoning": true,
+    "title": "GPT 5.6 Terra",
+    "tools": true
   },
   {
     "added_date": 1786679432000,
@@ -6145,7 +6674,10 @@
     "alpha": true,
     "brand": "OrchidLLM Proxy",
     "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "To use this in agentic tasks please remove all params (ex. top_p, top_k, temperature)",
@@ -6165,7 +6697,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.000003"
     },
-    "title": "Kimi K3"
+    "reasoning": true,
+    "title": "Kimi K3",
+    "tools": true
   },
   {
     "added_date": 1784906182000,
