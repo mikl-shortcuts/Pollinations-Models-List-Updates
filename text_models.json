@@ -654,7 +654,7 @@
       "community/JustScriptzz/helix-agent"
     ],
     "alpha": true,
-    "base_model": "kimi-code",
+    "base_model": "gpt-5.6-sol",
     "brand": "Community",
     "capabilities": [
       "tool_calling",
@@ -663,8 +663,8 @@
     ],
     "category": "text",
     "community": true,
-    "context_length": 262144,
-    "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done. Powered by Kimi K2.7 Code",
+    "context_length": 1050000,
+    "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done. Powered by GPT 5.6 Sol",
     "input_modalities": [
       "text",
       "image"
@@ -675,11 +675,27 @@
     ],
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.000004",
+      "completionTextTokens": "0.000015",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000019",
-      "promptTextTokens": "0.00000095"
+      "promptCacheWriteTokens": "0.000003125",
+      "promptCachedTokens": "0.00000025",
+      "promptTextTokens": "0.0000025"
     },
+    "pricing_default_label": "≤272K context",
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.0000225",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.00000625",
+          "promptCachedTokens": "0.0000005",
+          "promptTextTokens": "0.000005"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "Helix Agent",
     "tools": true
@@ -1045,6 +1061,37 @@
     },
     "reasoning": true,
     "title": "MiniMax M3",
+    "tools": true
+  },
+  {
+    "added_date": 1787343332000,
+    "aliases": [
+      "community/Lorodn4x/qwen3.8-max"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "Lorodn4x/qwen3.8-max",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000001",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000005"
+    },
+    "reasoning": true,
+    "title": "qwen3.8-max",
     "tools": true
   },
   {
@@ -5634,7 +5681,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.000015",
