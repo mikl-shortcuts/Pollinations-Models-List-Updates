@@ -979,11 +979,15 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "Lorodn4x/gpt-5.6-sol",
     "output_modalities": [
@@ -996,7 +1000,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000013"
     },
-    "title": "GPT-5.6-sol"
+    "reasoning": true,
+    "title": "GPT-5.6-sol",
+    "tools": true
   },
   {
     "added_date": 1786922197000,
@@ -1143,7 +1149,7 @@
     "category": "text",
     "community": true,
     "context_length": 1048576,
-    "description": "Production-ready reasoning powerhouse with 1M token context — enhanced agentic capabilities and deep coding analysis that rivals frontier models (25% OFF)",
+    "description": "Production-ready reasoning powerhouse with 1M token context — enhanced agentic capabilities and deep coding analysis that rivals frontier models",
     "input_modalities": [
       "text"
     ],
@@ -1154,10 +1160,10 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000279",
+      "completionTextTokens": "0.00000087",
       "currency": "pollen",
-      "promptCachedTokens": "0.000000033",
-      "promptTextTokens": "0.00000099"
+      "promptCachedTokens": "0.0000000435",
+      "promptTextTokens": "0.000000435"
     },
     "reasoning": true,
     "title": "DeepSeek V4 Pro Official via JankRouter",
@@ -5693,6 +5699,43 @@
     },
     "reasoning": true,
     "title": "Claude Fable 5",
+    "tools": true
+  },
+  {
+    "added_date": 1787346133000,
+    "aliases": [
+      "community/rodrigookk/claude-opus-5"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Advanced AI model for deep reasoning, coding, analysis, creativity, and complex problem-solving with exceptional accuracy.",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "rodrigookk/claude-opus-5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.000005",
+      "completionTextTokens": "0.00001",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.0000001",
+      "promptCachedTokens": "0.000001",
+      "promptTextTokens": "0.000001"
+    },
+    "reasoning": true,
+    "title": "Claude Opus 5",
     "tools": true
   },
   {
