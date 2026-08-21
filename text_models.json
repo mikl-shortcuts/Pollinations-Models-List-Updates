@@ -85,36 +85,6 @@
     "title": "Gemma 4 31B"
   },
   {
-    "added_date": 1784188769000,
-    "aliases": [
-      "community/Catniti/glm-4.7"
-    ],
-    "alpha": true,
-    "brand": "Catniti AI",
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Glm 4.7",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "Catniti/glm-4.7",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000004",
-      "completionTextTokens": "0.00000175",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000008",
-      "promptTextTokens": "0.0000004"
-    },
-    "title": "GLM 4.7"
-  },
-  {
     "added_date": 1783934988000,
     "aliases": [
       "community/Catniti/gpt-oss-120b"
@@ -239,7 +209,10 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "input_modalities": [
@@ -257,7 +230,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000015"
     },
-    "title": "Agnes 2.5 Flash"
+    "reasoning": true,
+    "title": "Agnes 2.5 Flash",
+    "tools": true
   },
   {
     "added_date": 1787167891000,
@@ -266,9 +241,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1310720,
     "input_modalities": [
       "text",
       "image"
@@ -284,7 +263,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000005"
     },
-    "title": "Deepseek v4 Flash 0731"
+    "reasoning": true,
+    "title": "Deepseek v4 Flash 0731",
+    "tools": true
   },
   {
     "added_date": 1785188647000,
@@ -293,9 +274,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text"
     ],
@@ -310,7 +295,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000005"
     },
-    "title": "Deepseek v4 Pro"
+    "reasoning": true,
+    "title": "Deepseek v4 Pro",
+    "tools": true
   },
   {
     "added_date": 1787158595000,
@@ -322,6 +309,7 @@
     "capabilities": [],
     "category": "text",
     "community": true,
+    "context_length": 1048576,
     "description": "Meet Deepseek v4 Pro 0813, the 7th best AI model overall in the entire planet.",
     "input_modalities": [
       "text"
@@ -347,9 +335,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text",
       "image",
@@ -367,7 +359,41 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000075"
     },
-    "title": "Gemini 3.5 Flash"
+    "reasoning": true,
+    "title": "Gemini 3.5 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1787270805000,
+    "aliases": [
+      "community/JustScriptzz/gemini-3.6-flash"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 3000000,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "JustScriptzz/gemini-3.6-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 5,
+    "pricing": {
+      "completionTextTokens": "0.00000325",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000005"
+    },
+    "reasoning": true,
+    "title": "Gemini 3.6 Flash",
+    "tools": true
   },
   {
     "added_date": 1785486588000,
@@ -376,9 +402,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text"
     ],
@@ -398,7 +428,9 @@
       "promptImageTokens": "0.00000025",
       "promptTextTokens": "0.0000005"
     },
-    "title": "GLM 5.2"
+    "reasoning": true,
+    "title": "GLM 5.2",
+    "tools": true
   },
   {
     "added_date": 1787143187000,
@@ -407,9 +439,12 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 131072,
     "input_modalities": [
       "text"
     ],
@@ -424,7 +459,8 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000004"
     },
-    "title": "GPT OSS 120B"
+    "title": "GPT OSS 120B",
+    "tools": true
   },
   {
     "added_date": 1787102161000,
@@ -433,9 +469,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 500000,
     "input_modalities": [
       "text",
       "image",
@@ -450,21 +490,23 @@
     "per_user_rpm": 5,
     "pricing": {
       "completionReasoningTokens": "0.0000003",
-      "completionTextTokens": "0.0000015",
+      "completionTextTokens": "0.00000375",
       "currency": "pollen",
       "promptCachedTokens": "0.00000015",
       "promptTextTokens": "0.0000005"
     },
-    "title": "Grok 4.6"
+    "reasoning": true,
+    "title": "Grok 4.6",
+    "tools": true
   },
   {
-    "added_date": 1786919543000,
+    "added_date": 1787273246000,
     "agent": true,
     "aliases": [
       "community/JustScriptzz/helix-agent"
     ],
     "alpha": true,
-    "base_model": "kimi-k3",
+    "base_model": "kimi-code",
     "brand": "Community",
     "capabilities": [
       "tool_calling",
@@ -473,8 +515,8 @@
     ],
     "category": "text",
     "community": true,
-    "context_length": 1048576,
-    "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done. Powered by Kimi K3",
+    "context_length": 262144,
+    "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done. Powered by Kimi K2.7 Code",
     "input_modalities": [
       "text",
       "image"
@@ -483,13 +525,12 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.000015",
+      "completionTextTokens": "0.000004",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000003",
-      "promptTextTokens": "0.000003"
+      "promptCachedTokens": "0.00000019",
+      "promptTextTokens": "0.00000095"
     },
     "reasoning": true,
     "title": "Helix Agent",
@@ -502,9 +543,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 256000,
     "input_modalities": [
       "text",
       "image",
@@ -521,7 +566,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000004"
     },
-    "title": "Kimi K2.6"
+    "reasoning": true,
+    "title": "Kimi K2.6",
+    "tools": true
   },
   {
     "added_date": 1787141763000,
@@ -530,9 +577,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text",
       "image",
@@ -554,7 +605,9 @@
       "promptImageTokens": "0.000001",
       "promptTextTokens": "0.0000025"
     },
-    "title": "Kimi K3"
+    "reasoning": true,
+    "title": "Kimi K3",
+    "tools": true
   },
   {
     "added_date": 1787149908000,
@@ -563,9 +616,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text",
       "image",
@@ -588,7 +645,9 @@
       "promptImageTokens": "0.000001",
       "promptTextTokens": "0.0000008"
     },
-    "title": "Minimax M3"
+    "reasoning": true,
+    "title": "Minimax M3",
+    "tools": true
   },
   {
     "added_date": 1787142079000,
@@ -625,9 +684,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
       "text"
     ],
@@ -642,7 +705,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000006"
     },
-    "title": "Qwen 3.8 Max"
+    "reasoning": true,
+    "title": "Qwen 3.8 Max",
+    "tools": true
   },
   {
     "added_date": 1787086362000,
@@ -1052,6 +1117,40 @@
     },
     "reasoning": true,
     "title": "Gemma 4 31B via JankRouter",
+    "tools": true
+  },
+  {
+    "added_date": 1784672514000,
+    "aliases": [
+      "community/MarcosFRG/glm-4.6v-flash"
+    ],
+    "alpha": true,
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 131072,
+    "description": "Sharp visual understanding — screenshots to code, document parsing, layout comprehension",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "MarcosFRG/glm-4.6v-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 5,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "reasoning": true,
+    "title": "GLM 4.6V Flash via JankRouter",
     "tools": true
   },
   {
@@ -4106,6 +4205,36 @@
     "tools": true
   },
   {
+    "added_date": 1785635986000,
+    "aliases": [
+      "community/morriszdweck/osaii-api-fast"
+    ],
+    "alpha": true,
+    "brand": "OSAII",
+    "brand_url": "https://osaii.wyvernhub.net/",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "description": "Fast model with great agentic capability for everyday tasks",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "morriszdweck/osaii-api-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "title": "OSAII Fast",
+    "tools": true
+  },
+  {
     "added_date": 1785636118000,
     "aliases": [
       "community/morriszdweck/osaii-api-smart"
@@ -4113,9 +4242,12 @@
     "alpha": true,
     "brand": "OSAII",
     "brand_url": "https://osaii.wyvernhub.net/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 262144,
     "description": "Smart; free model for everyday agentic work and coding tasks.",
     "input_modalities": [
       "text"
@@ -4125,11 +4257,45 @@
       "text"
     ],
     "paid_only": false,
+    "per_user_rpm": 15,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "title": "OSAII Smart",
+    "tools": true
+  },
+  {
+    "added_date": 1787276615000,
+    "agent": true,
+    "aliases": [
+      "community/morriszdweck/osaii-swarm"
+    ],
+    "alpha": true,
+    "base_model": "morriszdweck/osaii-api-smart",
+    "brand": "OSAII",
+    "brand_url": "https://osaii.wyvernhub.net/",
+    "capabilities": [
+      "tool_calling",
+      "pollinations_models"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "description": "Multi Agent team",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "morriszdweck/osaii-swarm",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
       "currency": "pollen"
     },
-    "title": "OSAII Smart"
+    "title": "OSAII Swarm",
+    "tools": true
   },
   {
     "added_date": 1786665600000,
@@ -5492,39 +5658,6 @@
     "title": "Lightning Text v2 (Expanded Knowledge)"
   },
   {
-    "added_date": 1782878639000,
-    "aliases": [
-      "community/sharktide/inferenceport-ai-mimo-v2.5"
-    ],
-    "alpha": true,
-    "brand": "InferencePort AI",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Mimo v2.5",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "name": "sharktide/inferenceport-ai-mimo-v2.5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.00000085",
-      "completionTextTokens": "0.00000085",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000085",
-      "promptTextTokens": "0.00000085"
-    },
-    "title": "MiMo V2.5"
-  },
-  {
     "added_date": 1784344621000,
     "aliases": [
       "community/sharktide/inferenceport-ai-qwen-3.6-27b"
@@ -5766,6 +5899,42 @@
     "title": "Ezra"
   },
   {
+    "added_date": 1784364469000,
+    "aliases": [
+      "community/tomdacatto/gemma-4-31b-fast"
+    ],
+    "alpha": true,
+    "brand": "TomdacatAI",
+    "brand_url": "https://ai.tomdacat.com/",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Ultra fast gemma 4 31b",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "tomdacatto/gemma-4-31b-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000002",
+      "completionTextTokens": "0.0000005",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000025",
+      "promptTextTokens": "0.0000005"
+    },
+    "title": "Gemma 4 31B (Ultra Fast)",
+    "tools": true
+  },
+  {
     "added_date": 1784374276000,
     "aliases": [
       "community/vendouple/deepseek-v3.2"
@@ -5794,6 +5963,36 @@
       "promptTextTokens": "0.00000002"
     },
     "title": "DeepSeek V3.2"
+  },
+  {
+    "added_date": 1783698620000,
+    "aliases": [
+      "community/vendouple/deepseek-v4"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "LATEST VERSION",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "vendouple/deepseek-v4",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000001",
+      "completionTextTokens": "0.0000001",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000001",
+      "promptTextTokens": "0.00000002"
+    },
+    "title": "DeepSeek V4 Flash"
   },
   {
     "added_date": 1783916168000,
@@ -5853,6 +6052,35 @@
     "title": "Gemini 3.6"
   },
   {
+    "added_date": 1786965563000,
+    "aliases": [
+      "community/vendouple/gemini-3.7"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/gemini-3.7",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000045",
+      "completionTextTokens": "0.0000045",
+      "currency": "pollen",
+      "promptTextTokens": "0.000002"
+    },
+    "title": "Gemini 3.7"
+  },
+  {
     "added_date": 1784523185000,
     "aliases": [
       "community/vendouple/gemma-4-31b-sdft-heretic-rp"
@@ -5881,6 +6109,35 @@
       "promptTextTokens": "0.0000002"
     },
     "title": "Gemma 4 RP (20K, Daily Limit)"
+  },
+  {
+    "added_date": 1786965046000,
+    "aliases": [
+      "community/vendouple/glm-5.3"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Daily Limit",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "vendouple/glm-5.3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000035",
+      "completionTextTokens": "0.0000035",
+      "currency": "pollen",
+      "promptTextTokens": "0.000001"
+    },
+    "title": "GLM 5.3"
   },
   {
     "added_date": 1786632806000,
