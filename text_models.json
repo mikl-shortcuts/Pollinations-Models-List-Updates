@@ -5763,8 +5763,8 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.000002",
-      "completionTextTokens": "0.000003",
+      "completionReasoningTokens": "0.000001",
+      "completionTextTokens": "0.000002",
       "currency": "pollen",
       "promptCacheWriteTokens": "0.0000005",
       "promptCachedTokens": "0.0000001",
@@ -5939,7 +5939,10 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "Cohere Command R+",
@@ -5961,7 +5964,9 @@
       "promptCachedTokens": "0.000005",
       "promptTextTokens": "0.000005"
     },
-    "title": "Cohere Command R+"
+    "reasoning": true,
+    "title": "Cohere Command R+",
+    "tools": true
   },
   {
     "added_date": 1784524119000,
@@ -5971,7 +5976,10 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "Gemini 2.5 Flash",
@@ -5991,7 +5999,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000007"
     },
-    "title": "Gemini 2.5 Flash"
+    "reasoning": true,
+    "title": "Gemini 2.5 Flash",
+    "tools": true
   },
   {
     "added_date": 1782964107000,
@@ -6001,7 +6011,9 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling"
+    ],
     "category": "text",
     "community": true,
     "description": "OpenAI GPT-4.1",
@@ -6024,7 +6036,8 @@
       "promptCachedTokens": "0.000006",
       "promptTextTokens": "0.000006"
     },
-    "title": "OpenAI GPT-4.1"
+    "title": "OpenAI GPT-4.1",
+    "tools": true
   },
   {
     "added_date": 1784344080000,
@@ -6034,7 +6047,10 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "Kimi k2.7 Code",
@@ -6052,7 +6068,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000016"
     },
-    "title": "Kimi K2.7 Code"
+    "reasoning": true,
+    "title": "Kimi K2.7 Code",
+    "tools": true
   },
   {
     "added_date": 1784349589000,
@@ -6062,7 +6080,10 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "InferencePort AI Lightning Text v2 (Router)",
@@ -6081,7 +6102,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000075"
     },
-    "title": "Lightning Text V2 (Router)"
+    "reasoning": true,
+    "title": "Lightning Text V2 (Router)",
+    "tools": true
   },
   {
     "added_date": 1786833740000,
@@ -6094,6 +6117,8 @@
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
     "capabilities": [
+      "tool_calling",
+      "reasoning",
       "pollinations_models"
     ],
     "category": "text",
@@ -6114,7 +6139,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000075"
     },
-    "title": "Lightning Text v2 (Expanded Knowledge)"
+    "reasoning": true,
+    "title": "Lightning Text v2 (Expanded Knowledge)",
+    "tools": true
   },
   {
     "added_date": 1782878639000,
@@ -6124,7 +6151,10 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "Mimo v2.5",
@@ -6147,7 +6177,9 @@
       "promptCachedTokens": "0.00000085",
       "promptTextTokens": "0.00000085"
     },
-    "title": "MiMo V2.5"
+    "reasoning": true,
+    "title": "MiMo V2.5",
+    "tools": true
   },
   {
     "added_date": 1784344466000,
@@ -6157,12 +6189,16 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "MiniMax M3",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "name": "sharktide/inferenceport-ai-minimax-m3",
     "output_modalities": [
@@ -6175,7 +6211,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000007"
     },
-    "title": "MiniMax M3"
+    "reasoning": true,
+    "title": "MiniMax M3",
+    "tools": true
   },
   {
     "added_date": 1784344621000,
@@ -6185,7 +6223,10 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "Qwen 3.6 27b",
@@ -6204,7 +6245,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000012"
     },
-    "title": "Qwen 3.6 27B"
+    "reasoning": true,
+    "title": "Qwen 3.6 27B",
+    "tools": true
   },
   {
     "added_date": 1784434226000,
@@ -6214,7 +6257,10 @@
     "alpha": true,
     "brand": "InferencePort AI",
     "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "description": "GPT-OSS 20b",
@@ -6232,7 +6278,9 @@
       "currency": "pollen",
       "promptTextTokens": "0.00000007"
     },
-    "title": "GPT-OSS 20B"
+    "reasoning": true,
+    "title": "GPT-OSS 20B",
+    "tools": true
   },
   {
     "added_date": 1786903011000,
