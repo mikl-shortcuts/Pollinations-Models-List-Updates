@@ -5,12 +5,15 @@
     "brand": "xAI",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Video from text or a start image with synchronized audio at 480p, 720p, or 1080p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 15,
     "max_reference_images": 1,
+    "min_duration": 1,
     "name": "grok-imagine-video-1.5",
     "output_modalities": [
       "video",
@@ -64,12 +67,15 @@
     "brand": "xAI",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Short videos from text or an image (720p, 1-15s)",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 15,
     "max_reference_images": 1,
+    "min_duration": 1,
     "name": "grok-video-pro",
     "output_modalities": [
       "video"
@@ -94,12 +100,15 @@
     "brand": "Alibaba",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Text and first-frame video generation at 720p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 15,
     "max_reference_images": 1,
+    "min_duration": 3,
     "name": "happyhorse-1.1",
     "output_modalities": [
       "video"
@@ -120,10 +129,13 @@
     "brand": "MiniMax",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Five-second text-to-video clips with synchronized stereo audio at 480p, 768p, or 2K",
     "input_modalities": [
       "text"
     ],
+    "max_duration": 5,
+    "min_duration": 5,
     "name": "minimax-h3",
     "output_modalities": [
       "video",
@@ -173,12 +185,16 @@
     "brand": "Amazon",
     "capabilities": [],
     "category": "video",
+    "default_duration": 6,
     "description": "Long-form video — clips from 6 seconds up to 2 minutes at 720p",
+    "duration_step": 6,
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 120,
     "max_reference_images": 1,
+    "min_duration": 6,
     "name": "nova-reel",
     "output_modalities": [
       "video"
@@ -203,12 +219,15 @@
     "brand": "Pruna",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Affordable video from text or an image at 720p or 1080p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 10,
     "max_reference_images": 1,
+    "min_duration": 1,
     "name": "p-video",
     "output_modalities": [
       "video"
@@ -247,12 +266,15 @@
     "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "720p video with natively synced sound, from text or images",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 15,
     "max_reference_images": 2,
+    "min_duration": 4,
     "name": "seedance-2.0",
     "output_modalities": [
       "video",
@@ -276,12 +298,15 @@
     "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 5,
     "max_reference_images": 2,
+    "min_duration": 4,
     "name": "seedance-2.0-fast",
     "output_modalities": [
       "video",
@@ -308,12 +333,15 @@
     "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Lower-cost 4–10 second video with synchronized sound and first/last-frame control at 480p or 720p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 10,
     "max_reference_images": 2,
+    "min_duration": 4,
     "name": "seedance-2.0-mini",
     "output_modalities": [
       "video",
@@ -353,12 +381,15 @@
     "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
+    "default_duration": 4,
     "description": "Four-second video with synchronized audio and first/last-frame control at 480p or 720p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 4,
     "max_reference_images": 2,
+    "min_duration": 4,
     "name": "seedance-2.5",
     "output_modalities": [
       "video",
@@ -398,12 +429,15 @@
     "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 10,
     "max_reference_images": 1,
+    "min_duration": 2,
     "name": "seedance-pro",
     "output_modalities": [
       "video"
@@ -454,15 +488,23 @@
       "veo-3.1-fast-1080p",
       "veo-1080"
     ],
+    "allowed_durations": [
+      4,
+      6,
+      8
+    ],
     "brand": "Google",
     "capabilities": [],
     "category": "video",
+    "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 8,
     "max_reference_images": 2,
+    "min_duration": 4,
     "name": "veo",
     "output_modalities": [
       "video"
@@ -503,15 +545,23 @@
       "wan2.6",
       "wan-i2v"
     ],
+    "allowed_durations": [
+      5,
+      10,
+      15
+    ],
     "brand": "Alibaba",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Video with sound from text or an image (720p, 5/10/15s clips)",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 15,
     "max_reference_images": 1,
+    "min_duration": 5,
     "name": "wan",
     "output_modalities": [
       "video"
@@ -536,12 +586,15 @@
     "brand": "Alibaba",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Cheap 5-second silent clips at 480p — great for quick drafts",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 5,
     "max_reference_images": 2,
+    "min_duration": 5,
     "name": "wan-fast",
     "output_modalities": [
       "video"
@@ -569,12 +622,15 @@
     "brand": "Alibaba",
     "capabilities": [],
     "category": "video",
+    "default_duration": 5,
     "description": "Keyframe-controlled video with sound at 720p or 1080p",
     "input_modalities": [
       "text",
       "image"
     ],
+    "max_duration": 15,
     "max_reference_images": 2,
+    "min_duration": 2,
     "name": "wan-pro",
     "output_modalities": [
       "video",
