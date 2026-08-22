@@ -1122,6 +1122,7 @@
     "pricing": {
       "completionTextTokens": "0.0000000132",
       "currency": "pollen",
+      "promptCachedTokens": "0.0000000014",
       "promptTextTokens": "0.0000000044"
     },
     "reasoning": true,
@@ -4060,6 +4061,176 @@
     "tools": true
   },
   {
+    "added_date": 1787397509000,
+    "aliases": [
+      "community/iotserver24/alpha-code"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1,
+    "description": "for coding and long runnig agents",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "iotserver24/alpha-code",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000001",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000002"
+    },
+    "reasoning": true,
+    "title": "alpha shealth",
+    "tools": true
+  },
+  {
+    "added_date": 1787330803000,
+    "aliases": [
+      "community/iotserver24/cheap-opus-4-8"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "iotserver24/cheap-opus-4-8",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000002",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000005"
+    },
+    "reasoning": true,
+    "title": "opus 4.8",
+    "tools": true
+  },
+  {
+    "added_date": 1787330758000,
+    "aliases": [
+      "community/iotserver24/cheap-opus-4-8-thinking"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "for coding",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "iotserver24/cheap-opus-4-8-thinking",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000002",
+      "completionTextTokens": "0.000002",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000005"
+    },
+    "reasoning": true,
+    "title": "opus 4.8 thinking",
+    "tools": true
+  },
+  {
+    "added_date": 1787330587000,
+    "aliases": [
+      "community/iotserver24/cheap-opus-5"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "fast for coding",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "iotserver24/cheap-opus-5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000007",
+      "completionTextTokens": "0.000003",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000007"
+    },
+    "reasoning": true,
+    "title": "opus 5",
+    "tools": true
+  },
+  {
+    "added_date": 1787330663000,
+    "aliases": [
+      "community/iotserver24/cheap-opus-5-thinking"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "long running agents",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "iotserver24/cheap-opus-5-thinking",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000005",
+      "completionTextTokens": "0.000003",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000007"
+    },
+    "reasoning": true,
+    "title": "opus 5 thinking",
+    "tools": true
+  },
+  {
     "added_date": 1776816000000,
     "aliases": [
       "kimi-k2.6",
@@ -5132,8 +5303,8 @@
     "paid_only": true,
     "per_user_rpm": 15,
     "pricing": {
-      "completionReasoningTokens": "0.000011",
-      "completionTextTokens": "0.000011",
+      "completionReasoningTokens": "0.0000105",
+      "completionTextTokens": "0.0000105",
       "currency": "pollen",
       "promptAudioTokens": "0.00000175",
       "promptCachedTokens": "0.0000002",
@@ -5286,6 +5457,43 @@
     },
     "reasoning": true,
     "title": "Ox Alpha",
+    "tools": true
+  },
+  {
+    "added_date": 1787413176000,
+    "agent": true,
+    "aliases": [
+      "community/pegalink/ox-alpha-agent"
+    ],
+    "alpha": true,
+    "base_model": "pegalink/ox-alpha",
+    "brand": "Openrouter",
+    "brand_url": "https://openrouter.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning",
+      "pollinations_models"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Ox Alpha model that has access to pollinations MCP, and has a tailored system prompt to be suited for coding tasks.",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "pegalink/ox-alpha-agent",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "reasoning": true,
+    "title": "Coding Agent | Ox Alpha",
     "tools": true
   },
   {
