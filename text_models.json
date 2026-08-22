@@ -2526,7 +2526,7 @@
       "text"
     ],
     "paid_only": false,
-    "per_user_rpm": 250,
+    "per_user_rpm": 300,
     "pricing": {
       "currency": "pollen"
     },
@@ -5104,6 +5104,114 @@
     "tools": true
   },
   {
+    "added_date": 1787396660000,
+    "aliases": [
+      "community/pegalink/gemini-3.1-pro-preview"
+    ],
+    "alpha": true,
+    "brand": "Openrouter",
+    "brand_url": "https://openrouter.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Gemini 3.1 Pro Preview is Google’s frontier reasoning model, delivering enhanced software engineering performance, improved agentic reliability, and more.",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "pegalink/gemini-3.1-pro-preview",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": 15,
+    "pricing": {
+      "completionReasoningTokens": "0.000011",
+      "completionTextTokens": "0.000011",
+      "currency": "pollen",
+      "promptAudioTokens": "0.00000175",
+      "promptCachedTokens": "0.0000002",
+      "promptTextTokens": "0.00000175"
+    },
+    "reasoning": true,
+    "title": "Gemini 3.1 Pro Preview",
+    "tools": true
+  },
+  {
+    "added_date": 1787402178000,
+    "aliases": [
+      "community/pegalink/ox-alpha"
+    ],
+    "alpha": true,
+    "brand": "Openrouter",
+    "brand_url": "https://openrouter.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Ox Alpha is a reasoning model designed for coding, sustained agentic work, and production workloads.",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "pegalink/ox-alpha",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 3,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "reasoning": true,
+    "title": "Ox Alpha",
+    "tools": true
+  },
+  {
+    "added_date": 1787322875000,
+    "aliases": [
+      "community/pegalink/solar-pro4"
+    ],
+    "alpha": true,
+    "brand": "Openrouter",
+    "brand_url": "https://openrouter.ai/",
+    "capabilities": [
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 524000,
+    "description": "Solar Pro 4 is Upstage's cost-efficient large language model, featuring a 524K context window. It is built for long-horizon tasks and agentic workflows.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "pegalink/solar-pro4",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.000000176",
+      "completionTextTokens": "0.000000176",
+      "currency": "pollen",
+      "promptCachedTokens": "0.0000000088",
+      "promptTextTokens": "0.000000044"
+    },
+    "reasoning": true,
+    "title": "Solar Pro V4"
+  },
+  {
     "added_date": 1780012800000,
     "aliases": [
       "sonar-pro",
@@ -6346,6 +6454,71 @@
     "title": "Gemini 3.6"
   },
   {
+    "added_date": 1786965563000,
+    "aliases": [
+      "community/vendouple/gemini-3.7"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/gemini-3.7",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000045",
+      "completionTextTokens": "0.0000045",
+      "currency": "pollen",
+      "promptTextTokens": "0.000002"
+    },
+    "title": "Gemini 3.7"
+  },
+  {
+    "added_date": 1784523185000,
+    "aliases": [
+      "community/vendouple/gemma-4-31b-sdft-heretic-rp"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 32000,
+    "description": "This has a limit of 20k context window",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/gemma-4-31b-sdft-heretic-rp",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000005",
+      "completionTextTokens": "0.0000005",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000002"
+    },
+    "reasoning": true,
+    "title": "Gemma 4 RP (20K, Daily Limit)",
+    "tools": true
+  },
+  {
     "added_date": 1786965046000,
     "aliases": [
       "community/vendouple/glm-5.3"
@@ -6611,7 +6784,7 @@
       "text"
     ],
     "paid_only": false,
-    "per_user_rpm": 5,
+    "per_user_rpm": 3,
     "pricing": {
       "currency": "pollen"
     },
@@ -6622,31 +6795,37 @@
   {
     "added_date": 1784737002000,
     "aliases": [
-      "community/vendouple/qwen3.8-max"
+      "community/vendouple/qwen-3.8-max"
     ],
     "alpha": true,
     "brand": "OrchidLLM Proxy",
     "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
     "input_modalities": [
       "text",
       "image"
     ],
-    "name": "vendouple/qwen3.8-max",
+    "name": "vendouple/qwen-3.8-max",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.0000025",
-      "completionTextTokens": "0.0000025",
+      "completionReasoningTokens": "0.000002",
+      "completionTextTokens": "0.000002",
       "currency": "pollen",
-      "promptTextTokens": "0.0000015"
+      "promptCachedTokens": "0.0000000125",
+      "promptTextTokens": "0.000001"
     },
-    "title": "Qwen 3.8 Max"
+    "reasoning": true,
+    "title": "Qwen 3.8 Max",
+    "tools": true
   },
   {
     "added_date": 1782759075000,
