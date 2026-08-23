@@ -817,6 +817,18 @@
       "currency": "pollen",
       "promptAudioSeconds": "0.000041666667"
     },
+    "pricing_default_label": "Standard transcription",
+    "pricing_variants": [
+      {
+        "description": "Applies when response_format is diarized_json.",
+        "label": "Speaker diarization",
+        "name": "diarization",
+        "pricing": {
+          "currency": "pollen",
+          "promptAudioSeconds": "0.000047222222"
+        }
+      }
+    ],
     "supported_endpoints": [
       "/v1/audio/transcriptions"
     ],
@@ -849,6 +861,36 @@
       "currency": "pollen",
       "promptAudioSeconds": "0.000058333333"
     },
+    "pricing_default_label": "Standard transcription",
+    "pricing_variants": [
+      {
+        "description": "Applies when a prompt is provided.",
+        "label": "Prompting",
+        "name": "prompting",
+        "pricing": {
+          "currency": "pollen",
+          "promptAudioSeconds": "0.000072222222"
+        }
+      },
+      {
+        "description": "Applies when response_format is diarized_json.",
+        "label": "Speaker diarization",
+        "name": "diarization",
+        "pricing": {
+          "currency": "pollen",
+          "promptAudioSeconds": "0.000063888889"
+        }
+      },
+      {
+        "description": "Applies when a prompt is provided and response_format is diarized_json.",
+        "label": "Prompting and speaker diarization",
+        "name": "prompting_diarization",
+        "pricing": {
+          "currency": "pollen",
+          "promptAudioSeconds": "0.000077777778"
+        }
+      }
+    ],
     "supported_endpoints": [
       "/v1/audio/transcriptions"
     ],
@@ -901,7 +943,7 @@
     ],
     "pricing": {
       "currency": "pollen",
-      "promptAudioSeconds": "0.0000445"
+      "promptAudioSeconds": "0.000045277778"
     },
     "supported_endpoints": [
       "/v1/audio/transcriptions"
