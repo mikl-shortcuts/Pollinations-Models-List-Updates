@@ -452,18 +452,15 @@
       "community/JustScriptzz/helix-agent"
     ],
     "alpha": true,
-    "base_model": "gpt-5.6-sol",
+    "base_model": "JustScriptzz/moondream-3.1",
     "brand": "NextRouter REborn",
     "brand_url": "https://nextrouter-vert.vercel.app/",
     "capabilities": [
-      "tool_calling",
-      "reasoning",
       "pollinations_models"
     ],
     "category": "text",
     "community": true,
-    "context_length": 1050000,
-    "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done. Powered by GPT 5.6 Sol",
+    "description": "Helix is an autonomous AI agent built to think beyond prompts, use tools, solve problems, and get things done.",
     "input_modalities": [
       "text",
       "image"
@@ -472,32 +469,15 @@
     "output_modalities": [
       "text"
     ],
+    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.000015",
+      "completionTextTokens": "0.000001",
       "currency": "pollen",
-      "promptCacheWriteTokens": "0.000003125",
-      "promptCachedTokens": "0.00000025",
-      "promptTextTokens": "0.0000025"
+      "promptCachedTokens": "0.0000003",
+      "promptTextTokens": "0.0000005"
     },
-    "pricing_default_label": "≤272K context",
-    "pricing_variants": [
-      {
-        "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
-        "label": "Long context (>272K)",
-        "name": "long_context",
-        "pricing": {
-          "completionTextTokens": "0.0000225",
-          "currency": "pollen",
-          "promptCacheWriteTokens": "0.00000625",
-          "promptCachedTokens": "0.0000005",
-          "promptTextTokens": "0.000005"
-        }
-      }
-    ],
-    "reasoning": true,
-    "title": "Helix Agent",
-    "tools": true
+    "title": "Helix Agent"
   },
   {
     "added_date": 1787141763000,
