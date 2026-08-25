@@ -86,34 +86,6 @@
     "title": "Agnes 2.5 Flash"
   },
   {
-    "added_date": 1784555574000,
-    "aliases": [
-      "community/Catniti/claude-sonnet-5"
-    ],
-    "alpha": true,
-    "brand": "Catniti AI",
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "Catniti/claude-sonnet-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000006",
-      "currency": "pollen",
-      "promptTextTokens": "0.000004"
-    },
-    "title": "Claude Sonnet 5"
-  },
-  {
     "added_date": 1784555762000,
     "aliases": [
       "community/Catniti/gemma-4-31b"
@@ -478,46 +450,6 @@
       "promptTextTokens": "0.0000005"
     },
     "title": "Helix Agent"
-  },
-  {
-    "added_date": 1787141763000,
-    "aliases": [
-      "community/JustScriptzz/kimi-k3"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text",
-      "image",
-      "audio"
-    ],
-    "name": "JustScriptzz/kimi-k3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionAudioTokens": "0.000001",
-      "completionReasoningTokens": "0.0000005",
-      "completionTextTokens": "0.000004",
-      "currency": "pollen",
-      "promptAudioTokens": "0.0000005",
-      "promptCachedTokens": "0.00000025",
-      "promptImageTokens": "0.000001",
-      "promptTextTokens": "0.0000025"
-    },
-    "reasoning": true,
-    "title": "Kimi K3",
-    "tools": true
   },
   {
     "added_date": 1787149908000,
@@ -5732,41 +5664,6 @@
     "tools": true
   },
   {
-    "added_date": 1784524119000,
-    "aliases": [
-      "community/sharktide/inferenceport-ai-gemini-2.5-flash"
-    ],
-    "alpha": true,
-    "brand": "InferencePort AI",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Gemini 2.5 Flash",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio"
-    ],
-    "name": "sharktide/inferenceport-ai-gemini-2.5-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000007",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000007"
-    },
-    "reasoning": true,
-    "title": "Gemini 2.5 Flash",
-    "tools": true
-  },
-  {
     "added_date": 1782964107000,
     "aliases": [
       "community/sharktide/inferenceport-ai-gpt-4.1"
@@ -6017,10 +5914,13 @@
     "base_model": "solarnode-developement/hy3",
     "brand": "Community",
     "capabilities": [
+      "tool_calling",
+      "reasoning",
       "pollinations_models"
     ],
     "category": "text",
     "community": true,
+    "context_length": 256000,
     "description": "Efficient and intelligent coding agent for a variety of full-stack development tasks powered by Hy3.",
     "input_modalities": [
       "text"
@@ -6037,7 +5937,9 @@
       "promptCachedTokens": "0.00000003",
       "promptTextTokens": "0.00000014"
     },
-    "title": "AgenticHy3"
+    "reasoning": true,
+    "title": "AgenticHy3",
+    "tools": true
   },
   {
     "added_date": 1784458154000,
@@ -6046,9 +5948,13 @@
     ],
     "alpha": true,
     "brand": "Community",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 256000,
     "description": "A new 295B-paramater MoE model from Tencent, Bringing affordability to agentic coding workflows. Please note this could get rate limited.",
     "input_modalities": [
       "text"
@@ -6065,7 +5971,9 @@
       "promptCachedTokens": "0.00000003",
       "promptTextTokens": "0.00000014"
     },
-    "title": "Tencent Hy3"
+    "reasoning": true,
+    "title": "Tencent Hy3",
+    "tools": true
   },
   {
     "added_date": 1780012800000,
@@ -6289,35 +6197,6 @@
       "promptTextTokens": "0.000002"
     },
     "title": "Gemini 3.6"
-  },
-  {
-    "added_date": 1786965563000,
-    "aliases": [
-      "community/vendouple/gemini-3.7"
-    ],
-    "alpha": true,
-    "brand": "OrchidLLM Proxy",
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "vendouple/gemini-3.7",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000045",
-      "completionTextTokens": "0.0000045",
-      "currency": "pollen",
-      "promptTextTokens": "0.000002"
-    },
-    "title": "Gemini 3.7"
   },
   {
     "added_date": 1784523185000,
