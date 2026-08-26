@@ -1252,6 +1252,15 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-08-26T15:31:58.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionTextTokens": "0.00000081",
+        "currency": "pollen",
+        "promptTextTokens": "0.000000135"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.00000108",
@@ -1269,7 +1278,7 @@
       "community/MarcosFRG/metraxai"
     ],
     "alpha": true,
-    "base_model": "MarcosFRG/gpt-5.6-luna",
+    "base_model": "gpt-5.6-luna",
     "brand": "JankRouter",
     "brand_url": "https://jankrouter.waifly.com/",
     "capabilities": [
@@ -1289,13 +1298,29 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000108",
+      "completionTextTokens": "0.0000009",
       "currency": "pollen",
-      "promptTextTokens": "0.00000018"
+      "promptCacheWriteTokens": "0.0000001875",
+      "promptCachedTokens": "0.000000015",
+      "promptTextTokens": "0.00000015"
     },
+    "pricing_default_label": "≤272K context",
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.00000135",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.000000375",
+          "promptCachedTokens": "0.00000003",
+          "promptTextTokens": "0.0000003"
+        }
+      }
+    ],
     "reasoning": true,
     "title": "MetraxAI",
     "tools": true
@@ -6842,5 +6867,66 @@
       "promptTextTokens": "0.000000035"
     },
     "title": "DeepSeek Chat via AnyVM"
+  },
+  {
+    "added_date": 1787713695000,
+    "aliases": [
+      "community/zero2launch/gemini-3.6-flash"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Fast coding model, long context",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "zero2launch/gemini-3.6-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": 60,
+    "pricing": {
+      "completionTextTokens": "0.0000014",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000002"
+    },
+    "title": "gemini-3.6-flash",
+    "tools": true
+  },
+  {
+    "added_date": 1787713813000,
+    "aliases": [
+      "community/zero2launch/gemini-3.7-flash"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Fast coding model, long context",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "zero2launch/gemini-3.7-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 60,
+    "pricing": {
+      "completionTextTokens": "0.0000015",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000025"
+    },
+    "title": "gemini-3.7-flash",
+    "tools": true
   }
 ]
