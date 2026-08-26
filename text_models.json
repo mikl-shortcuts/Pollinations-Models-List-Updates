@@ -123,9 +123,13 @@
     "alpha": true,
     "brand": "Elixpo",
     "brand_url": "https://elixpo.com/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 256000,
     "description": "Fast, source-grounded web research with search, images, memory, deep research, and OpenAI-compatible streaming.",
     "input_modalities": [
       "text",
@@ -136,13 +140,15 @@
       "text"
     ],
     "paid_only": false,
-    "per_user_rpm": null,
+    "per_user_rpm": 3,
     "pricing": {
       "completionTextTokens": "0.000002",
       "currency": "pollen",
       "promptTextTokens": "0.0000006"
     },
-    "title": "OreoLook — AI Web Research Scout"
+    "reasoning": true,
+    "title": "OreoLook — AI Web Research Scout",
+    "tools": true
   },
   {
     "added_date": 1784471442000,
