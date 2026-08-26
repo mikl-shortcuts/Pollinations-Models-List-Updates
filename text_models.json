@@ -558,9 +558,9 @@
     "title": "Helix Agent"
   },
   {
-    "added_date": 1787754514000,
+    "added_date": 1787652954000,
     "aliases": [
-      "community/JustScriptzz/kimi-k2.7-code-free"
+      "community/JustScriptzz/kimi-k2.7-code"
     ],
     "alpha": true,
     "brand": "NextRouter REborn",
@@ -571,21 +571,34 @@
     ],
     "category": "text",
     "community": true,
-    "context_length": 256000,
+    "context_length": 262144,
     "input_modalities": [
       "text"
     ],
-    "name": "JustScriptzz/kimi-k2.7-code-free",
+    "name": "JustScriptzz/kimi-k2.7-code",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-08-27T02:26:50.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionTextTokens": "0.000003",
+        "currency": "pollen",
+        "promptCachedTokens": "0.00000015",
+        "promptTextTokens": "0.0000005"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
-      "currency": "pollen"
+      "completionTextTokens": "0.000003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000015",
+      "promptTextTokens": "0.0000005"
     },
     "reasoning": true,
-    "title": "Kimi K2.7 Code Free (1 Week)",
+    "title": "Kimi K2.7 Code",
     "tools": true
   },
   {
@@ -687,6 +700,40 @@
     },
     "reasoning": true,
     "title": "Qwen 3.8 2.4t a95b",
+    "tools": true
+  },
+  {
+    "added_date": 1787327782000,
+    "aliases": [
+      "community/Lorodn4x/claude-fable-5"
+    ],
+    "alpha": true,
+    "brand": "Lordos",
+    "brand_url": "https://github.com/Lorodn4x",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "Lorodn4x/claude-fable-5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.000008",
+      "completionTextTokens": "0.000008",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000002",
+      "promptTextTokens": "0.000003"
+    },
+    "reasoning": true,
+    "title": "Claude-fable-5",
     "tools": true
   },
   {
@@ -4731,6 +4778,99 @@
       "promptTextTokens": "0.000000075"
     },
     "title": "Mistral Small 3.2",
+    "tools": true
+  },
+  {
+    "added_date": 1785635986000,
+    "aliases": [
+      "community/morriszdweck/osaii-api-fast"
+    ],
+    "alpha": true,
+    "brand": "OSAII",
+    "brand_url": "https://osaii.wyvernhub.net/",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "description": "Fast model with great agentic capability for everyday tasks",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "morriszdweck/osaii-api-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "title": "OSAII Fast",
+    "tools": true
+  },
+  {
+    "added_date": 1785636118000,
+    "aliases": [
+      "community/morriszdweck/osaii-api-smart"
+    ],
+    "alpha": true,
+    "brand": "OSAII",
+    "brand_url": "https://osaii.wyvernhub.net/",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "description": "Smart; free model for everyday agentic work and coding tasks.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "morriszdweck/osaii-api-smart",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 15,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "title": "OSAII Smart",
+    "tools": true
+  },
+  {
+    "added_date": 1787276615000,
+    "agent": true,
+    "aliases": [
+      "community/morriszdweck/osaii-swarm"
+    ],
+    "alpha": true,
+    "base_model": "morriszdweck/osaii-api-smart",
+    "brand": "OSAII",
+    "brand_url": "https://osaii.wyvernhub.net/",
+    "capabilities": [
+      "tool_calling",
+      "pollinations_models"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "description": "Multi Agent team",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "morriszdweck/osaii-swarm",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "title": "OSAII Swarm",
     "tools": true
   },
   {
