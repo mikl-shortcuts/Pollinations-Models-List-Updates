@@ -267,10 +267,12 @@
     "capabilities": [],
     "category": "video",
     "default_duration": 5,
-    "description": "720p video with natively synced sound, from text or images",
+    "description": "720p video with natively synced sound, from text, images, or references",
     "input_modalities": [
       "text",
-      "image"
+      "image",
+      "video",
+      "audio"
     ],
     "max_duration": 15,
     "max_reference_images": 2,
@@ -285,11 +287,26 @@
       "completionVideoSeconds": "0.18",
       "currency": "pollen"
     },
+    "pricing_default_label": "720p",
+    "pricing_variants": [
+      {
+        "description": "Applies when the request includes a reference video input.",
+        "label": "720p with reference video",
+        "name": "video_in",
+        "pricing": {
+          "completionVideoSeconds": "0.22",
+          "currency": "pollen"
+        }
+      }
+    ],
     "title": "Seedance 2.0",
     "video_capabilities": [
       "start_frame",
       "end_frame",
-      "audio_output"
+      "audio_output",
+      "reference_images",
+      "reference_videos",
+      "reference_audios"
     ]
   },
   {
@@ -382,10 +399,12 @@
     "capabilities": [],
     "category": "video",
     "default_duration": 4,
-    "description": "Four-second video with synchronized audio and first/last-frame control at 480p or 720p",
+    "description": "Four-second video with synchronized audio and reference media at 480p or 720p",
     "input_modalities": [
       "text",
-      "image"
+      "image",
+      "video",
+      "audio"
     ],
     "max_duration": 4,
     "max_reference_images": 2,
@@ -410,6 +429,24 @@
           "completionVideoSeconds": "0.2312",
           "currency": "pollen"
         }
+      },
+      {
+        "description": "Applies when the request includes a reference video input at 480p.",
+        "label": "480p with reference video",
+        "name": "video_in_480p",
+        "pricing": {
+          "completionVideoSeconds": "0.4304",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Applies when the request includes a reference video input at 720p.",
+        "label": "720p with reference video",
+        "name": "video_in_720p",
+        "pricing": {
+          "completionVideoSeconds": "0.9676",
+          "currency": "pollen"
+        }
       }
     ],
     "resolutions": [
@@ -420,7 +457,10 @@
     "video_capabilities": [
       "start_frame",
       "end_frame",
-      "audio_output"
+      "audio_output",
+      "reference_images",
+      "reference_videos",
+      "reference_audios"
     ]
   },
   {
