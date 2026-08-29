@@ -1274,6 +1274,41 @@
     "tools": true
   },
   {
+    "added_date": 1787970009000,
+    "aliases": [
+      "community/MarcosFRG/kimi-k2.7-code"
+    ],
+    "alpha": true,
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "description": "Frontier-scale 1T MoE coding specialist — agentic long-horizon task completion with 30% fewer reasoning tokens than K2.6 (50% OFF)",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "MarcosFRG/kimi-k2.7-code",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000002",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000095",
+      "promptTextTokens": "0.000000475"
+    },
+    "reasoning": true,
+    "title": "Kimi K2.7 Code",
+    "tools": true
+  },
+  {
     "added_date": 1786828204000,
     "agent": true,
     "aliases": [
@@ -2788,14 +2823,14 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.000001875",
+      "completionTextTokens": "0.00000375",
       "currency": "pollen",
-      "promptAudioTokens": "0.000000375",
-      "promptCacheWriteTokens": "0.000000375",
-      "promptCachedTokens": "0.0000000375",
-      "promptImageTokens": "0.000000375",
-      "promptTextTokens": "0.000000375",
-      "promptVideoTokens": "0.000000375"
+      "promptAudioTokens": "0.00000075",
+      "promptCacheWriteTokens": "0.00000075",
+      "promptCachedTokens": "0.000000075",
+      "promptImageTokens": "0.00000075",
+      "promptTextTokens": "0.00000075",
+      "promptVideoTokens": "0.00000075"
     },
     "pricing_adjustments": [
       {
@@ -2812,7 +2847,7 @@
         "kind": "cache_storage",
         "label": "Cache storage",
         "name": "openrouter.google.cache_storage.v1",
-        "price": "0.020833333333",
+        "price": "0.041666666667",
         "quantity": 1000000,
         "suffix": "5 min",
         "unit": "tokens written"
@@ -3462,7 +3497,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
+    "paid_only": false,
     "pricing": {
       "completionTextTokens": "0.0000044",
       "currency": "pollen",
@@ -7110,6 +7145,52 @@
     },
     "reasoning": true,
     "title": "Qwen 3.8 Max",
+    "tools": true
+  },
+  {
+    "added_date": 1784374276000,
+    "aliases": [
+      "community/vendouple/qwen3.8-27b"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/qwen3.8-27b",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-08-30T01:54:13.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionReasoningTokens": "0.0000001",
+        "completionTextTokens": "0.0000001",
+        "currency": "pollen",
+        "promptCachedTokens": "0.000000001",
+        "promptTextTokens": "0.00000002"
+      }
+    },
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000001",
+      "completionTextTokens": "0.0000001",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000001",
+      "promptTextTokens": "0.00000002"
+    },
+    "reasoning": true,
+    "title": "Qwen 3.8 27B",
     "tools": true
   },
   {
