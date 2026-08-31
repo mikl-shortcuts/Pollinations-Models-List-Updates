@@ -2023,7 +2023,7 @@
     "capabilities": [],
     "category": "text",
     "community": true,
-    "description": "2.5 flash ENTERPRISE KEY",
+    "description": "Fast, decently smart",
     "input_modalities": [
       "text",
       "image"
@@ -2033,7 +2033,17 @@
       "text"
     ],
     "paid_only": false,
-    "per_user_rpm": 7,
+    "pending_change": {
+      "effective_at": "2026-09-01T06:31:35.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionReasoningTokens": "0.00000005",
+        "completionTextTokens": "0.00000009",
+        "currency": "pollen",
+        "promptTextTokens": "0.00000005"
+      }
+    },
+    "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000005",
       "completionTextTokens": "0.00000009",
@@ -2309,34 +2319,6 @@
     "reasoning": true,
     "title": "Deepseek v4 Pro 0813",
     "tools": true
-  },
-  {
-    "added_date": 1788140233000,
-    "aliases": [
-      "community/JustScriptzz/gemini-3.6-flash"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "JustScriptzz/gemini-3.6-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00000375",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000005"
-    },
-    "title": "Gemini 3.6 Flash"
   },
   {
     "added_date": 1785486588000,
@@ -2839,7 +2821,7 @@
     "category": "text",
     "community": true,
     "context_length": 1048576,
-    "description": "Advanced reasoning and strong coding for agentic workflows with massive context at bargain prices (98% OFF)",
+    "description": "Advanced reasoning and strong coding for agentic workflows with massive context at bargain prices (97% OFF)",
     "input_modalities": [
       "text"
     ],
@@ -2848,6 +2830,16 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-01T06:29:48.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionTextTokens": "0.0000000198",
+        "currency": "pollen",
+        "promptCachedTokens": "0.00000000021",
+        "promptTextTokens": "0.0000000066"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000000132",
@@ -3213,7 +3205,7 @@
     "category": "text",
     "community": true,
     "context_length": 1048576,
-    "description": "Natively multimodal 320B MoE with 18B active parameters — frontier coding and agentic performance at flash cost (35% OFF)",
+    "description": "Natively multimodal 320B MoE with 18B active parameters — frontier coding and agentic performance at flash cost",
     "input_modalities": [
       "text",
       "image"
@@ -3223,6 +3215,18 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-01T03:39:51.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionReasoningTokens": "0.000000195",
+        "completionTextTokens": "0.00000039",
+        "currency": "pollen",
+        "promptCachedTokens": "0.000000032",
+        "promptImageTokens": "0.00000011",
+        "promptTextTokens": "0.00000011"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000008125",
@@ -3409,24 +3413,13 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-08-31T15:07:32.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionReasoningTokens": "0.0000003",
-        "completionTextTokens": "0.0000006",
-        "currency": "pollen",
-        "promptCachedTokens": "0.00000003",
-        "promptTextTokens": "0.00000015"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.00000015",
-      "completionTextTokens": "0.0000003",
+      "completionReasoningTokens": "0.0000003",
+      "completionTextTokens": "0.0000006",
       "currency": "pollen",
-      "promptCachedTokens": "0.000000015",
-      "promptTextTokens": "0.000000075"
+      "promptCachedTokens": "0.00000003",
+      "promptTextTokens": "0.00000015"
     },
     "reasoning": true,
     "title": "MiniMax M3",
@@ -3684,12 +3677,13 @@
     "brand": "Free AI API",
     "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
     "capabilities": [
-      "tool_calling"
+      "tool_calling",
+      "reasoning"
     ],
     "category": "text",
     "community": true,
     "context_length": 262000,
-    "description": "Laguna S 2.1",
+    "description": "Will be shutdown 09/09, please switch to vercel-laguna-s-2.1:free or poolside-laguna-s-2.1:free",
     "input_modalities": [
       "text"
     ],
@@ -3702,6 +3696,7 @@
     "pricing": {
       "currency": "pollen"
     },
+    "reasoning": true,
     "title": "Laguna S 2.1",
     "tools": true
   },
@@ -3796,6 +3791,17 @@
       "text"
     ],
     "paid_only": true,
+    "pending_change": {
+      "effective_at": "2026-09-01T07:20:07.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionTextTokens": "0.00000027",
+        "currency": "pollen",
+        "promptCacheWriteTokens": "0.00000011",
+        "promptCachedTokens": "0.000000006",
+        "promptTextTokens": "0.000000055"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.00000027",
