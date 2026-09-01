@@ -340,7 +340,8 @@
     "brand": "FreeAIXYZ",
     "brand_url": "https://freeaixyz4all.vercel.app/",
     "capabilities": [
-      "tool_calling"
+      "tool_calling",
+      "pollinations_models"
     ],
     "category": "text",
     "community": true,
@@ -1730,7 +1731,8 @@
     "brand_url": "https://freeaixyz4all.vercel.app/",
     "capabilities": [
       "tool_calling",
-      "reasoning"
+      "reasoning",
+      "pollinations_models"
     ],
     "category": "text",
     "community": true,
@@ -1834,7 +1836,8 @@
     "brand": "FreeAIXYZ",
     "brand_url": "https://freeaixyz4all.vercel.app/",
     "capabilities": [
-      "tool_calling"
+      "tool_calling",
+      "pollinations_models"
     ],
     "category": "text",
     "community": true,
@@ -2089,16 +2092,6 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-01T06:31:35.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionReasoningTokens": "0.00000005",
-        "completionTextTokens": "0.00000009",
-        "currency": "pollen",
-        "promptTextTokens": "0.00000005"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000005",
@@ -2577,22 +2570,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-01T06:29:48.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.0000000198",
-        "currency": "pollen",
-        "promptCachedTokens": "0.00000000021",
-        "promptTextTokens": "0.0000000066"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.0000000132",
+      "completionTextTokens": "0.0000000198",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000000014",
-      "promptTextTokens": "0.0000000044"
+      "promptCachedTokens": "0.00000000021",
+      "promptTextTokens": "0.0000000066"
     },
     "reasoning": true,
     "title": "DeepSeek V4 Flash Official",
@@ -2925,24 +2908,13 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-01T09:53:00.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionReasoningTokens": "0.00000055",
-        "completionTextTokens": "0.0000011",
-        "currency": "pollen",
-        "promptCachedTokens": "0.000000035",
-        "promptTextTokens": "0.00000035"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.00000022",
-      "completionTextTokens": "0.00000044",
+      "completionReasoningTokens": "0.00000055",
+      "completionTextTokens": "0.0000011",
       "currency": "pollen",
-      "promptCachedTokens": "0.000000014",
-      "promptTextTokens": "0.00000014"
+      "promptCachedTokens": "0.000000035",
+      "promptTextTokens": "0.00000035"
     },
     "reasoning": true,
     "title": "GLM 5.2",
@@ -3684,18 +3656,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
-    "pending_change": {
-      "effective_at": "2026-09-01T07:20:07.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.00000027",
-        "currency": "pollen",
-        "promptCacheWriteTokens": "0.00000011",
-        "promptCachedTokens": "0.000000006",
-        "promptTextTokens": "0.000000055"
-      }
-    },
+    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.00000027",
@@ -4630,11 +4591,11 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionTextTokens": "0.00001",
+      "completionTextTokens": "0.000015",
       "currency": "pollen",
       "promptCacheWriteTokens": "0.0000025",
       "promptCachedTokens": "0.0000002",
-      "promptTextTokens": "0.000002"
+      "promptTextTokens": "0.000003"
     },
     "title": "Claude Sonnet 5",
     "tools": true
@@ -8768,6 +8729,41 @@
     "title": "Ezra"
   },
   {
+    "added_date": 1788201845000,
+    "aliases": [
+      "community/vendouple/claude-opus-5"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Bomboclat",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/claude-opus-5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000085",
+      "completionTextTokens": "0.0000085",
+      "currency": "pollen",
+      "promptTextTokens": "0.000002"
+    },
+    "reasoning": true,
+    "title": "Claude Opus 5",
+    "tools": true
+  },
+  {
     "added_date": 1783698620000,
     "aliases": [
       "community/vendouple/deepseek-v4-flash-0731"
@@ -9163,6 +9159,32 @@
       "promptTextTokens": "0.000000035"
     },
     "title": "DeepSeek Chat via AnyVM"
+  },
+  {
+    "added_date": 1788236417000,
+    "aliases": [
+      "community/voodoohop/humans-api"
+    ],
+    "alpha": true,
+    "brand": "Pollinations.AI",
+    "brand_url": "https://pollinations.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Chat completions answered live by humans in #humans-api: https://discord.com/channels/885844321461485618/1544162520586129538",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "voodoohop/humans-api",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "title": "Humans API"
   },
   {
     "added_date": 1787788800000,
