@@ -330,6 +330,39 @@
     "title": "Claude (auto + search)"
   },
   {
+    "added_date": 1788231532000,
+    "agent": true,
+    "aliases": [
+      "community/AkshayCoder48/code-pair"
+    ],
+    "alpha": true,
+    "base_model": "qwen-coder",
+    "brand": "FreeAIXYZ",
+    "brand_url": "https://freeaixyz4all.vercel.app/",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "description": "A coding pair-programmer: explains, debugs, and writes code with live web docs. Supports most languages and frameworks.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "AkshayCoder48/code-pair",
+    "output_modalities": [
+      "text"
+    ],
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000026",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000007"
+    },
+    "title": "Code Pair (Coders)",
+    "tools": true
+  },
+  {
     "added_date": 1788023726000,
     "aliases": [
       "community/AkshayCoder48/cohere-north-mini-code:free"
@@ -506,32 +539,112 @@
     "tools": true
   },
   {
-    "added_date": 1788023816000,
+    "added_date": 1788231524000,
+    "agent": true,
     "aliases": [
-      "community/AkshayCoder48/dots-studio-dots-3-note-preview:free"
+      "community/AkshayCoder48/free-clips"
     ],
     "alpha": true,
+    "base_model": "qwen3.7-flash",
     "brand": "FreeAIXYZ",
     "brand_url": "https://freeaixyz4all.vercel.app/",
     "capabilities": [
-      "tool_calling"
+      "tool_calling",
+      "reasoning",
+      "pollinations_models"
     ],
     "category": "text",
     "community": true,
-    "description": "Dots 3 Note (preview): open-weight MoE note model from Dots Studio (16B active of 280B), free tier. Tool calling.",
+    "context_length": 1000000,
+    "description": "Free AI video: text-to-video and image-to-video with built-in free video models. Short clips, no cost, no signup.",
     "input_modalities": [
-      "text"
+      "text",
+      "image",
+      "video"
     ],
-    "name": "AkshayCoder48/dots-studio-dots-3-note-preview:free",
+    "name": "AkshayCoder48/free-clips",
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
-    "per_user_rpm": 10,
+    "paid_only": true,
+    "per_user_rpm": null,
     "pricing": {
-      "currency": "pollen"
+      "completionTextTokens": "0.00000013",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.000000038",
+      "promptCachedTokens": "0.000000006",
+      "promptImageTokens": "0.00000003",
+      "promptTextTokens": "0.00000003",
+      "promptVideoTokens": "0.00000003"
     },
-    "title": "Dots 3 Note (preview)",
+    "pricing_default_label": "<32K context",
+    "pricing_variants": [
+      {
+        "description": "At least 32,000 prompt tokens; the higher rates apply to the whole request.",
+        "label": "32K+ context",
+        "name": "context_32k",
+        "pricing": {
+          "completionTextTokens": "0.0000004",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.000000125",
+          "promptCachedTokens": "0.00000002",
+          "promptImageTokens": "0.0000001",
+          "promptTextTokens": "0.0000001",
+          "promptVideoTokens": "0.0000001"
+        }
+      },
+      {
+        "description": "At least 256,000 prompt tokens; the highest rates apply to the whole request.",
+        "label": "256K+ context",
+        "name": "context_256k",
+        "pricing": {
+          "completionTextTokens": "0.0000008",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.00000025",
+          "promptCachedTokens": "0.00000004",
+          "promptImageTokens": "0.0000002",
+          "promptTextTokens": "0.0000002",
+          "promptVideoTokens": "0.0000002"
+        }
+      }
+    ],
+    "reasoning": true,
+    "title": "Free Clips (Video)",
+    "tools": true
+  },
+  {
+    "added_date": 1788231519000,
+    "agent": true,
+    "aliases": [
+      "community/AkshayCoder48/free-voice"
+    ],
+    "alpha": true,
+    "base_model": "nova-fast",
+    "brand": "FreeAIXYZ",
+    "brand_url": "https://freeaixyz4all.vercel.app/",
+    "capabilities": [
+      "tool_calling",
+      "pollinations_models"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 128000,
+    "description": "Paste any text, get a free audio file. Text-to-speech with free built-in voice models, no credit card, no watermark.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "AkshayCoder48/free-voice",
+    "output_modalities": [
+      "text"
+    ],
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000014",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000000875",
+      "promptTextTokens": "0.000000035"
+    },
+    "title": "Free Voice (TTS)",
     "tools": true
   },
   {
@@ -1079,35 +1192,6 @@
     "tools": true
   },
   {
-    "added_date": 1788023729000,
-    "aliases": [
-      "community/AkshayCoder48/kilo-auto-free"
-    ],
-    "alpha": true,
-    "brand": "FreeAIXYZ",
-    "brand_url": "https://freeaixyz4all.vercel.app/",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Kilo Auto (free): Kilo Code's auto-router that picks the best model for each request, free to call. Tool calling.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "AkshayCoder48/kilo-auto-free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "title": "Kilo Auto (free)",
-    "tools": true
-  },
-  {
     "added_date": 1788023732000,
     "aliases": [
       "community/AkshayCoder48/kilo-auto-small"
@@ -1249,6 +1333,34 @@
     "title": "Llama 3 8B"
   },
   {
+    "added_date": 1788178730000,
+    "aliases": [
+      "community/AkshayCoder48/meituan-longcat-2.0-free"
+    ],
+    "alpha": true,
+    "brand": "FreeAIXYZ",
+    "brand_url": "https://freeaixyz4all.vercel.app/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "LongCat 2.0 by Meituan, served free through the Kilo AI gateway - a keyless route to one of the largest open MoE chat models available today.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "AkshayCoder48/meituan-longcat-2.0-free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "completionTextTokens": "0.0000012",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000003"
+    },
+    "title": "Meituan LongCat 2.0 (free)"
+  },
+  {
     "added_date": 1788023771000,
     "aliases": [
       "community/AkshayCoder48/meta"
@@ -1334,33 +1446,32 @@
     "tools": true
   },
   {
-    "added_date": 1788023741000,
+    "added_date": 1788179146000,
     "aliases": [
-      "community/AkshayCoder48/nemotron-3-ultra-free"
+      "community/AkshayCoder48/mistral-nemo-instruct-2407"
     ],
     "alpha": true,
     "brand": "FreeAIXYZ",
     "brand_url": "https://freeaixyz4all.vercel.app/",
-    "capabilities": [
-      "reasoning"
-    ],
+    "capabilities": [],
     "category": "text",
     "community": true,
-    "description": "NVIDIA Nemotron 3 Ultra 550B on a free OpenCode route: frontier reasoning without the bill.",
+    "description": "Mistral Nemo Instruct 24.07: Mistral's 12B open-weight chat model, served free through the LLM7 gateway. Fast, keyless, fully streaming.",
     "input_modalities": [
       "text"
     ],
-    "name": "AkshayCoder48/nemotron-3-ultra-free",
+    "name": "AkshayCoder48/mistral-nemo-instruct-2407",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
     "per_user_rpm": 10,
     "pricing": {
-      "currency": "pollen"
+      "completionTextTokens": "0.00000015",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000005"
     },
-    "reasoning": true,
-    "title": "Nemotron 3 Ultra (free)"
+    "title": "Mistral Nemo Instruct 24.07"
   },
   {
     "added_date": 1788023720000,
@@ -1419,37 +1530,6 @@
       "currency": "pollen"
     },
     "title": "Nemotron 3 Super 120B"
-  },
-  {
-    "added_date": 1788023714000,
-    "aliases": [
-      "community/AkshayCoder48/nvidia-nemotron-3-ultra-550b-a55b:free"
-    ],
-    "alpha": true,
-    "brand": "FreeAIXYZ",
-    "brand_url": "https://freeaixyz4all.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "NVIDIA Nemotron 3 Ultra 550B: frontier MoE for multi-step reasoning, coding and agents. Tool calling.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "AkshayCoder48/nvidia-nemotron-3-ultra-550b-a55b:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "reasoning": true,
-    "title": "Nemotron 3 Ultra 550B",
-    "tools": true
   },
   {
     "added_date": 1788023768000,
@@ -1537,6 +1617,80 @@
     "tools": true
   },
   {
+    "added_date": 1788231516000,
+    "agent": true,
+    "aliases": [
+      "community/AkshayCoder48/prompt-to-art"
+    ],
+    "alpha": true,
+    "base_model": "qwen3.7-flash",
+    "brand": "FreeAIXYZ",
+    "brand_url": "https://freeaixyz4all.vercel.app/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning",
+      "pollinations_models"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Describe anything, get a free image. Turns your words into optimized prompts and generates art with free built-in image models.",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "AkshayCoder48/prompt-to-art",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000013",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.000000038",
+      "promptCachedTokens": "0.000000006",
+      "promptImageTokens": "0.00000003",
+      "promptTextTokens": "0.00000003",
+      "promptVideoTokens": "0.00000003"
+    },
+    "pricing_default_label": "<32K context",
+    "pricing_variants": [
+      {
+        "description": "At least 32,000 prompt tokens; the higher rates apply to the whole request.",
+        "label": "32K+ context",
+        "name": "context_32k",
+        "pricing": {
+          "completionTextTokens": "0.0000004",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.000000125",
+          "promptCachedTokens": "0.00000002",
+          "promptImageTokens": "0.0000001",
+          "promptTextTokens": "0.0000001",
+          "promptVideoTokens": "0.0000001"
+        }
+      },
+      {
+        "description": "At least 256,000 prompt tokens; the highest rates apply to the whole request.",
+        "label": "256K+ context",
+        "name": "context_256k",
+        "pricing": {
+          "completionTextTokens": "0.0000008",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.00000025",
+          "promptCachedTokens": "0.00000004",
+          "promptImageTokens": "0.0000002",
+          "promptTextTokens": "0.0000002",
+          "promptVideoTokens": "0.0000002"
+        }
+      }
+    ],
+    "reasoning": true,
+    "title": "Prompt to Art (Free)",
+    "tools": true
+  },
+  {
     "added_date": 1788023774000,
     "aliases": [
       "community/AkshayCoder48/qwen"
@@ -1563,6 +1717,43 @@
       "promptTextTokens": "0.0000003"
     },
     "title": "Qwen (auto-route)"
+  },
+  {
+    "added_date": 1788231527000,
+    "agent": true,
+    "aliases": [
+      "community/AkshayCoder48/researcher"
+    ],
+    "alpha": true,
+    "base_model": "laguna",
+    "brand": "FreeAIXYZ",
+    "brand_url": "https://freeaixyz4all.vercel.app/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "Ask any question, get sourced answers. Live web search with citations, summaries, and comparisons. Cheap and fast.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "AkshayCoder48/researcher",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000018",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000009",
+      "promptTextTokens": "0.00000009"
+    },
+    "reasoning": true,
+    "title": "Researcher (Web)",
+    "tools": true
   },
   {
     "added_date": 1788023735000,
@@ -1597,43 +1788,49 @@
     "tools": true
   },
   {
-    "added_date": 1788023711000,
+    "added_date": 1788231521000,
+    "agent": true,
     "aliases": [
-      "community/AkshayCoder48/tencent-hy3:free"
+      "community/AkshayCoder48/transcriber"
     ],
     "alpha": true,
+    "base_model": "gpt-oss",
     "brand": "FreeAIXYZ",
     "brand_url": "https://freeaixyz4all.vercel.app/",
     "capabilities": [
       "tool_calling",
-      "reasoning"
+      "reasoning",
+      "pollinations_models"
     ],
     "category": "text",
     "community": true,
-    "context_length": 262144,
-    "description": "Tencent Hy3: 295B open MoE (21B active) tuned for grounded, agentic work with a 256K context. Tool calling.",
+    "context_length": 131072,
+    "description": "Send audio, get clean text. Free speech-to-text with built-in whisper-class models. Handles long recordings and multiple speakers.",
     "input_modalities": [
       "text"
     ],
-    "name": "AkshayCoder48/tencent-hy3:free",
+    "name": "AkshayCoder48/transcriber",
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
-    "per_user_rpm": 10,
+    "per_user_rpm": null,
     "pricing": {
-      "currency": "pollen"
+      "completionTextTokens": "0.00000018",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000005"
     },
     "reasoning": true,
-    "title": "Tencent Hy3",
+    "title": "Transcriber (Free)",
     "tools": true
   },
   {
-    "added_date": 1788023635000,
+    "added_date": 1788231530000,
+    "agent": true,
     "aliases": [
-      "community/AkshayCoder48/toolbaz-v4.5-fast"
+      "community/AkshayCoder48/tutor"
     ],
     "alpha": true,
+    "base_model": "openai-fast",
     "brand": "FreeAIXYZ",
     "brand_url": "https://freeaixyz4all.vercel.app/",
     "capabilities": [
@@ -1641,49 +1838,24 @@
     ],
     "category": "text",
     "community": true,
-    "description": "Toolbaz V4.5 Fast: the Toolbaz network's fast general-purpose chat model.",
+    "context_length": 400000,
+    "description": "A patient Socratic tutor for any subject. Guides you with questions instead of answers, checks your understanding, adapts to your level.",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
-    "name": "AkshayCoder48/toolbaz-v4.5-fast",
+    "name": "AkshayCoder48/tutor",
     "output_modalities": [
       "text"
     ],
-    "paid_only": false,
-    "per_user_rpm": 5,
+    "per_user_rpm": null,
     "pricing": {
-      "currency": "pollen"
+      "completionTextTokens": "0.0000003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000000375",
+      "promptTextTokens": "0.0000000375"
     },
-    "title": "Toolbaz V4.5 Fast",
-    "tools": true
-  },
-  {
-    "added_date": 1788023638000,
-    "aliases": [
-      "community/AkshayCoder48/toolbaz_v4"
-    ],
-    "alpha": true,
-    "brand": "FreeAIXYZ",
-    "brand_url": "https://freeaixyz4all.vercel.app/",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Toolbaz V4: general-purpose chat model on the Toolbaz network.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "AkshayCoder48/toolbaz_v4",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 5,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "title": "Toolbaz V4",
+    "title": "Tutor (Socratic)",
     "tools": true
   },
   {
@@ -1832,64 +2004,6 @@
     "title": "Agnes 2.5 Flash"
   },
   {
-    "added_date": 1784555703000,
-    "aliases": [
-      "community/Catniti/auto-router-1"
-    ],
-    "alpha": true,
-    "brand": "Catniti AI",
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Auto router 1",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "Catniti/auto-router-1",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.000001",
-      "completionTextTokens": "0.000005",
-      "currency": "pollen",
-      "promptCachedTokens": "0.000001",
-      "promptTextTokens": "0.000001"
-    },
-    "title": "Auto Router 1"
-  },
-  {
-    "added_date": 1784555574000,
-    "aliases": [
-      "community/Catniti/claude-sonnet-5"
-    ],
-    "alpha": true,
-    "brand": "Catniti AI",
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "Catniti/claude-sonnet-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000006",
-      "currency": "pollen",
-      "promptTextTokens": "0.000004"
-    },
-    "title": "Claude Sonnet 5"
-  },
-  {
     "added_date": 1784555762000,
     "aliases": [
       "community/Catniti/gemma-4-31b"
@@ -1918,95 +2032,6 @@
       "promptTextTokens": "0.0000005"
     },
     "title": "Gemma 4 31B"
-  },
-  {
-    "added_date": 1783934988000,
-    "aliases": [
-      "community/Catniti/gpt-oss-120b"
-    ],
-    "alpha": true,
-    "brand": "Catniti AI",
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Gpt oss 120b",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "Catniti/gpt-oss-120b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.00000027",
-      "completionTextTokens": "0.00000035",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000027",
-      "promptTextTokens": "0.00000027"
-    },
-    "title": "GPT-OSS 120B"
-  },
-  {
-    "added_date": 1786213396000,
-    "aliases": [
-      "community/Catniti/kimi-k2.6"
-    ],
-    "alpha": true,
-    "brand": "Catniti AI",
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "Catniti/kimi-k2.6",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000003",
-      "currency": "pollen",
-      "promptCacheWriteTokens": "0.0000005",
-      "promptCachedTokens": "0.0000005",
-      "promptTextTokens": "0.000002"
-    },
-    "title": "Kimi k2.6"
-  },
-  {
-    "added_date": 1785588654000,
-    "aliases": [
-      "community/Catniti/qwen3.7-flash"
-    ],
-    "alpha": true,
-    "brand": "Catniti AI",
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "Catniti/qwen3.7-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.00000003",
-      "completionTextTokens": "0.00000013",
-      "currency": "pollen",
-      "promptCachedTokens": "0.000000006",
-      "promptTextTokens": "0.00000003"
-    },
-    "title": "Qwen3.7 flash"
   },
   {
     "added_date": 1783668035000,
@@ -2149,40 +2174,6 @@
     "tools": true
   },
   {
-    "added_date": 1788139142000,
-    "aliases": [
-      "community/JustScriptzz/claude-fable-5"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "JustScriptzz/claude-fable-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000004",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "reasoning": true,
-    "title": "Claude Fable 5",
-    "tools": true
-  },
-  {
     "added_date": 1788139688000,
     "aliases": [
       "community/JustScriptzz/claude-haiku-4-5"
@@ -2213,72 +2204,6 @@
     },
     "reasoning": true,
     "title": "Claude Haiku 4.5",
-    "tools": true
-  },
-  {
-    "added_date": 1788139758000,
-    "aliases": [
-      "community/JustScriptzz/claude-opus-5"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "JustScriptzz/claude-opus-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000035",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "reasoning": true,
-    "title": "Claude Opus 5",
-    "tools": true
-  },
-  {
-    "added_date": 1788139808000,
-    "aliases": [
-      "community/JustScriptzz/claude-sonnet-5"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "JustScriptzz/claude-sonnet-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000003",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000007"
-    },
-    "reasoning": true,
-    "title": "Claude Sonnet 5",
     "tools": true
   },
   {
@@ -2314,41 +2239,6 @@
     },
     "reasoning": true,
     "title": "Deepseek v4 Flash 0731",
-    "tools": true
-  },
-  {
-    "added_date": 1787158595000,
-    "aliases": [
-      "community/JustScriptzz/deepseek-v4-pro-0813"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1048576,
-    "description": "Meet Deepseek v4 Pro 0813, the 7th best AI model overall in the entire planet.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "JustScriptzz/deepseek-v4-pro-0813",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000015",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000015",
-      "promptTextTokens": "0.0000006"
-    },
-    "reasoning": true,
-    "title": "Deepseek v4 Pro 0813",
     "tools": true
   },
   {
@@ -2389,77 +2279,6 @@
     },
     "reasoning": true,
     "title": "GLM 5.2",
-    "tools": true
-  },
-  {
-    "added_date": 1787791470000,
-    "aliases": [
-      "community/JustScriptzz/glm-5.3-flash"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "description": "The Mysterious Ox Alpha AI model turned out to be this exact model, so if you liked it, you can have it :D",
-    "input_modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "name": "JustScriptzz/glm-5.3-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000002",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000015",
-      "promptTextTokens": "0.0000005"
-    },
-    "reasoning": true,
-    "title": "GLM 5.3 Flash",
-    "tools": true
-  },
-  {
-    "added_date": 1786920595000,
-    "aliases": [
-      "community/JustScriptzz/gpt-5.6-sol"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 10000000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "JustScriptzz/gpt-5.6-sol",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000002"
-    },
-    "reasoning": true,
-    "title": "GPT 5.6 Sol",
     "tools": true
   },
   {
@@ -2564,42 +2383,6 @@
       "promptTextTokens": "0.0000005"
     },
     "title": "Helix Agent"
-  },
-  {
-    "added_date": 1787252433000,
-    "aliases": [
-      "community/JustScriptzz/kimi-k3"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouter-vert.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "name": "JustScriptzz/kimi-k3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000025",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "reasoning": true,
-    "title": "Kimi K3",
-    "tools": true
   },
   {
     "added_date": 1787149908000,
@@ -2768,73 +2551,6 @@
     },
     "reasoning": true,
     "title": "Deepseek-v4-pro-0813",
-    "tools": true
-  },
-  {
-    "added_date": 1787252310000,
-    "aliases": [
-      "community/Lorodn4x/gpt-5.6-sol"
-    ],
-    "alpha": true,
-    "brand": "Lordos",
-    "brand_url": "https://github.com/Lorodn4x",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "Lorodn4x/gpt-5.6-sol",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000005",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000013"
-    },
-    "reasoning": true,
-    "title": "GPT-5.6-sol",
-    "tools": true
-  },
-  {
-    "added_date": 1787083987000,
-    "aliases": [
-      "community/Lorodn4x/minimax-m3"
-    ],
-    "alpha": true,
-    "brand": "Lordos",
-    "brand_url": "https://github.com/Lorodn4x",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Original, without quantization.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "Lorodn4x/minimax-m3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000008",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000005",
-      "promptTextTokens": "0.0000002"
-    },
-    "reasoning": true,
-    "title": "MiniMax M3",
     "tools": true
   },
   {
@@ -3257,26 +2973,14 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-01T03:39:51.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionReasoningTokens": "0.000000195",
-        "completionTextTokens": "0.00000039",
-        "currency": "pollen",
-        "promptCachedTokens": "0.000000032",
-        "promptImageTokens": "0.00000011",
-        "promptTextTokens": "0.00000011"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.00000008125",
-      "completionTextTokens": "0.0000001625",
+      "completionReasoningTokens": "0.000000195",
+      "completionTextTokens": "0.00000039",
       "currency": "pollen",
-      "promptCachedTokens": "0.00000000975",
-      "promptImageTokens": "0.00000004875",
-      "promptTextTokens": "0.00000004875"
+      "promptCachedTokens": "0.000000032",
+      "promptImageTokens": "0.00000011",
+      "promptTextTokens": "0.00000011"
     },
     "reasoning": true,
     "title": "GLM 5.3 Flash",
@@ -3359,7 +3063,7 @@
       "community/MarcosFRG/metraxai"
     ],
     "alpha": true,
-    "base_model": "MarcosFRG/gpt-5.6-luna",
+    "base_model": "MarcosFRG/glm-5.3-flash",
     "brand": "JankRouter",
     "brand_url": "https://jankrouter.waifly.com/",
     "capabilities": [
@@ -3369,7 +3073,7 @@
     ],
     "category": "text",
     "community": true,
-    "context_length": 1050000,
+    "context_length": 1048576,
     "description": "MetraxAI is an assistant for casual chat and entertainment. It adapts to the user and combines programming, psychology, and mathematics.",
     "input_modalities": [
       "text",
@@ -3382,9 +3086,12 @@
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000081",
+      "completionReasoningTokens": "0.000000195",
+      "completionTextTokens": "0.00000039",
       "currency": "pollen",
-      "promptTextTokens": "0.000000135"
+      "promptCachedTokens": "0.000000032",
+      "promptImageTokens": "0.00000011",
+      "promptTextTokens": "0.00000011"
     },
     "reasoning": true,
     "title": "MetraxAI",
@@ -3504,7 +3211,7 @@
   {
     "added_date": 1786983348000,
     "aliases": [
-      "community/MarcosFRG/nemotron-3.5-lightning-30b"
+      "community/MarcosFRG/nemotron-3.5-lightning"
     ],
     "alpha": true,
     "brand": "JankRouter",
@@ -3520,11 +3227,20 @@
     "input_modalities": [
       "text"
     ],
-    "name": "MarcosFRG/nemotron-3.5-lightning-30b",
+    "name": "MarcosFRG/nemotron-3.5-lightning",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-01T14:28:31.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionTextTokens": "0.00000008",
+        "currency": "pollen",
+        "promptTextTokens": "0.00000002"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.00000004",
@@ -3711,6 +3427,41 @@
     "title": "DiffusionGemma 26b A4b"
   },
   {
+    "added_date": 1788190840000,
+    "aliases": [
+      "community/YoannDev90/gemini-3-flash"
+    ],
+    "alpha": true,
+    "brand": "Free AI API",
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "YoannDev90/gemini-3-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 2,
+    "pricing": {
+      "currency": "pollen",
+      "promptTextTokens": "0.0000001"
+    },
+    "reasoning": true,
+    "title": "Gemini 3 Flash",
+    "tools": true
+  },
+  {
     "added_date": 1785434187000,
     "aliases": [
       "community/YoannDev90/laguna-s-2.1:free"
@@ -3773,6 +3524,107 @@
     },
     "reasoning": true,
     "title": "Muse Glimmer 30B",
+    "tools": true
+  },
+  {
+    "added_date": 1788189088000,
+    "aliases": [
+      "community/YoannDev90/poolside-laguna-s-2.1:free"
+    ],
+    "alpha": true,
+    "brand": "Free AI API",
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262000,
+    "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "YoannDev90/poolside-laguna-s-2.1:free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "reasoning": true,
+    "title": "Laguna S 2.1",
+    "tools": true
+  },
+  {
+    "added_date": 1788189807000,
+    "aliases": [
+      "community/YoannDev90/qwen3.7-flash"
+    ],
+    "alpha": true,
+    "brand": "Free AI API",
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 991000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "YoannDev90/qwen3.7-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "completionReasoningTokens": "0.0000004",
+      "completionTextTokens": "0.0000004",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.00000015",
+      "promptCachedTokens": "0.00000002",
+      "promptTextTokens": "0.0000001"
+    },
+    "reasoning": true,
+    "title": "Qwen 3.7 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1788189253000,
+    "aliases": [
+      "community/YoannDev90/vercel-laguna-s-2.1:free"
+    ],
+    "alpha": true,
+    "brand": "Free AI API",
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262000,
+    "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "YoannDev90/vercel-laguna-s-2.1:free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "reasoning": true,
+    "title": "Laguna S 2.1",
     "tools": true
   },
   {
@@ -6998,6 +6850,37 @@
     "tools": true
   },
   {
+    "added_date": 1788181026000,
+    "aliases": [
+      "community/morriszdweck/glm-fast"
+    ],
+    "alpha": true,
+    "brand": "OSAII",
+    "brand_url": "https://osaii.wyvernhub.net/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Fast, efficient, free. Opus 4.8 level.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "morriszdweck/glm-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 100,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "reasoning": true,
+    "title": "GLM-5.3 Flash",
+    "tools": true
+  },
+  {
     "added_date": 1785636118000,
     "aliases": [
       "community/morriszdweck/osaii-api-smart"
@@ -7588,36 +7471,6 @@
     "reasoning": true,
     "title": "Gemini 3.5 Flash Lite|temp for quest pllns",
     "tools": true
-  },
-  {
-    "added_date": 1787413176000,
-    "agent": true,
-    "aliases": [
-      "community/pegalink/ox-alpha-agent"
-    ],
-    "alpha": true,
-    "base_model": "pegalink/ox-alpha",
-    "brand": "Openrouter",
-    "brand_url": "https://openrouter.ai/",
-    "capabilities": [
-      "pollinations_models"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Ox Alpha model that has access to pollinations MCP, and has a tailored system prompt to be suited for coding tasks.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "pegalink/ox-alpha-agent",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "title": "Coding Agent | Ox Alpha"
   },
   {
     "added_date": 1780012800000,
@@ -8354,42 +8207,6 @@
     "tools": true
   },
   {
-    "added_date": 1782964107000,
-    "aliases": [
-      "community/sharktide/inferenceport-ai-gpt-4.1"
-    ],
-    "alpha": true,
-    "brand": "InferencePort AI",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "OpenAI GPT-4.1",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "sharktide/inferenceport-ai-gpt-4.1",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionAudioTokens": "0.00005",
-      "completionReasoningTokens": "0.000006",
-      "completionTextTokens": "0.000006",
-      "currency": "pollen",
-      "promptAudioTokens": "0.00003",
-      "promptCachedTokens": "0.000006",
-      "promptTextTokens": "0.000006"
-    },
-    "title": "OpenAI GPT-4.1",
-    "tools": true
-  },
-  {
     "added_date": 1784344080000,
     "aliases": [
       "community/sharktide/inferenceport-ai-kimi-k2.7-code"
@@ -8629,40 +8446,6 @@
     },
     "reasoning": true,
     "title": "AgenticHy3",
-    "tools": true
-  },
-  {
-    "added_date": 1784458154000,
-    "aliases": [
-      "community/solarnode-developement/hy3"
-    ],
-    "alpha": true,
-    "brand": "Community",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 256000,
-    "description": "A new 295B-paramater MoE model from Tencent, Bringing affordability to agentic coding workflows. Please note this could get rate limited.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "solarnode-developement/hy3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00000057",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000003",
-      "promptTextTokens": "0.00000014"
-    },
-    "reasoning": true,
-    "title": "Tencent Hy3",
     "tools": true
   },
   {
@@ -9295,41 +9078,6 @@
     },
     "reasoning": true,
     "title": "Qwen 3.8 Max",
-    "tools": true
-  },
-  {
-    "added_date": 1784374276000,
-    "aliases": [
-      "community/vendouple/qwen3.8-27b"
-    ],
-    "alpha": true,
-    "brand": "OrchidLLM Proxy",
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "vendouple/qwen3.8-27b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000001",
-      "completionTextTokens": "0.0000001",
-      "currency": "pollen",
-      "promptCachedTokens": "0.000000001",
-      "promptTextTokens": "0.00000002"
-    },
-    "reasoning": true,
-    "title": "Qwen 3.8 27B",
     "tools": true
   },
   {
