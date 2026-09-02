@@ -685,13 +685,15 @@
     "capabilities": [],
     "category": "video",
     "default_duration": 5,
-    "description": "Five-second video from text or a start image with optional audio at 480p, 720p, or 1080p",
+    "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
     "input_modalities": [
       "text",
-      "image"
+      "image",
+      "video",
+      "audio"
     ],
     "max_duration": 5,
-    "max_reference_images": 1,
+    "max_reference_images": 2,
     "min_duration": 5,
     "name": "wan-3.0",
     "output_modalities": [
@@ -732,7 +734,11 @@
     "title": "Wan 3.0",
     "video_capabilities": [
       "start_frame",
-      "audio_output"
+      "end_frame",
+      "audio_output",
+      "reference_images",
+      "reference_videos",
+      "reference_audios"
     ]
   },
   {
@@ -783,10 +789,11 @@
     "capabilities": [],
     "category": "video",
     "default_duration": 5,
-    "description": "Keyframe-controlled video with sound at 720p or 1080p",
+    "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
     "input_modalities": [
       "text",
-      "image"
+      "image",
+      "video"
     ],
     "max_duration": 15,
     "max_reference_images": 2,
@@ -830,7 +837,9 @@
     "video_capabilities": [
       "start_frame",
       "end_frame",
-      "audio_output"
+      "audio_output",
+      "reference_images",
+      "reference_videos"
     ]
   }
 ]
