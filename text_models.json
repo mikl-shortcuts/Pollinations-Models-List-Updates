@@ -2607,6 +2607,41 @@
     "tools": true
   },
   {
+    "added_date": 1787083987000,
+    "aliases": [
+      "community/Lorodn4x/minimax-m3"
+    ],
+    "alpha": true,
+    "brand": "Lordos",
+    "brand_url": "https://github.com/Lorodn4x",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Original, without quantization.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "Lorodn4x/minimax-m3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000008",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000005",
+      "promptTextTokens": "0.0000002"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "title": "MiniMax M3",
+    "tools": true
+  },
+  {
     "added_date": 1786632944000,
     "aliases": [
       "community/MarcosFRG/deepseek-v4-flash"
@@ -3158,45 +3193,6 @@
     "tools": true
   },
   {
-    "added_date": 1783111218000,
-    "aliases": [
-      "community/MarcosFRG/minimax-m3"
-    ],
-    "alpha": true,
-    "brand": "JankRouter",
-    "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1048576,
-    "description": "Autonomous coding with tool use and task decomposition; handles full-repo workflows end to end (50% OFF)",
-    "input_modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "name": "MarcosFRG/minimax-m3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000003",
-      "completionTextTokens": "0.0000006",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000003",
-      "promptTextTokens": "0.00000015"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "title": "MiniMax M3",
-    "tools": true
-  },
-  {
     "added_date": 1787758883000,
     "aliases": [
       "community/MarcosFRG/moondream-3.1"
@@ -3384,22 +3380,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-02T19:34:34.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.00000025",
-        "currency": "pollen",
-        "promptCachedTokens": "0.0000001",
-        "promptTextTokens": "0.00000015"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.0000005",
+      "completionTextTokens": "0.00000025",
       "currency": "pollen",
       "promptCachedTokens": "0.0000001",
-      "promptTextTokens": "0.0000002"
+      "promptTextTokens": "0.00000015"
     },
     "reasoning": true,
     "required_safety": [],
@@ -3430,20 +3416,11 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-02T19:34:07.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.00000025",
-        "currency": "pollen",
-        "promptTextTokens": "0.0000001"
-      }
-    },
     "per_user_rpm": 320,
     "pricing": {
-      "completionTextTokens": "0.0000005",
+      "completionTextTokens": "0.00000025",
       "currency": "pollen",
-      "promptTextTokens": "0.0000002"
+      "promptTextTokens": "0.0000001"
     },
     "reasoning": true,
     "required_safety": [],
@@ -3474,22 +3451,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-02T19:35:43.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.000005",
-        "currency": "pollen",
-        "promptCachedTokens": "0.0000002",
-        "promptTextTokens": "0.0000015"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00001",
+      "completionTextTokens": "0.000005",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000005",
-      "promptTextTokens": "0.000002"
+      "promptCachedTokens": "0.0000002",
+      "promptTextTokens": "0.0000015"
     },
     "reasoning": true,
     "required_safety": [],
@@ -3653,7 +3620,7 @@
     },
     "reasoning": true,
     "required_safety": [],
-    "title": "Laguna S 2.1",
+    "title": "Laguna S 2.1 (shutdown 09/09, see desc)",
     "tools": true
   },
   {
@@ -3759,6 +3726,39 @@
     "reasoning": true,
     "required_safety": [],
     "title": "Qwen 3.7 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1788189253000,
+    "aliases": [
+      "community/YoannDev90/vercel-laguna-s-2.1:free"
+    ],
+    "alpha": true,
+    "brand": "Free AI API",
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262000,
+    "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "YoannDev90/vercel-laguna-s-2.1:free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "title": "Laguna S 2.1",
     "tools": true
   },
   {
@@ -8078,6 +8078,59 @@
     "tools": true
   },
   {
+    "added_date": 1787477967000,
+    "aliases": [
+      "community/pegalink/gemini-3.8-flash"
+    ],
+    "alpha": true,
+    "brand": "Openrouter",
+    "brand_url": "https://openrouter.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Gemini 3.8 Flash is Google's frontier model excelling in general tasks and coding.",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "pegalink/gemini-3.8-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pending_change": {
+      "effective_at": "2026-09-03T06:43:50.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionReasoningTokens": "0.0000055",
+        "completionTextTokens": "0.0000055",
+        "currency": "pollen",
+        "promptAudioTokens": "0.0000011",
+        "promptCachedTokens": "0.00000011",
+        "promptTextTokens": "0.0000011"
+      }
+    },
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000050625",
+      "completionTextTokens": "0.0000050625",
+      "currency": "pollen",
+      "promptAudioTokens": "0.0000010125",
+      "promptCachedTokens": "0.00000010125",
+      "promptTextTokens": "0.0000010125"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "title": "Gemini 3.8 Flash",
+    "tools": true
+  },
+  {
     "added_date": 1788278345000,
     "agent": true,
     "aliases": [
@@ -8937,6 +8990,43 @@
     "reasoning": true,
     "required_safety": [],
     "title": "Gemini 2.5 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1782964107000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-gpt-4.1"
+    ],
+    "alpha": true,
+    "brand": "InferencePort AI",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "OpenAI GPT-4.1",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/inferenceport-ai-gpt-4.1",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionAudioTokens": "0.00005",
+      "completionReasoningTokens": "0.000006",
+      "completionTextTokens": "0.000006",
+      "currency": "pollen",
+      "promptAudioTokens": "0.00003",
+      "promptCachedTokens": "0.000006",
+      "promptTextTokens": "0.000006"
+    },
+    "required_safety": [],
+    "title": "OpenAI GPT-4.1",
     "tools": true
   },
   {
@@ -9937,39 +10027,6 @@
     "required_safety": [],
     "title": "Important Email Finder",
     "tools": true
-  },
-  {
-    "added_date": 1788236417000,
-    "aliases": [
-      "community/voodoohop/humans-api"
-    ],
-    "alpha": true,
-    "brand": "Pollinations.AI",
-    "brand_url": "https://pollinations.ai/",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Chat completions answered live by humans in #humans-api: https://discord.com/channels/885844321461485618/1544162520586129538",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "voodoohop/humans-api",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "required_safety": [
-      "privacy",
-      "secrets",
-      "sexual",
-      "violence",
-      "shield"
-    ],
-    "title": "Humans API"
   },
   {
     "added_date": 1787788800000,
