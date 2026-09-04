@@ -3218,24 +3218,30 @@
       "/text",
       "/text/{prompt}"
     ],
-    "title": "Fable 5",
+    "title": "Claude Fable 5",
     "tools": true
   },
   {
     "added_date": 1788471111000,
     "aliases": [
-      "community/JustScriptzz/gemini-3.7-flash"
+      "community/JustScriptzz/gemini-3.8-flash"
     ],
     "alpha": true,
     "brand": "NextRouter REborn",
     "brand_url": "https://nextrouterfree.duckdns.org/",
-    "capabilities": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 1000000,
     "input_modalities": [
-      "text"
+      "text",
+      "image",
+      "video"
     ],
-    "name": "JustScriptzz/gemini-3.7-flash",
+    "name": "JustScriptzz/gemini-3.8-flash",
     "output_modalities": [
       "text"
     ],
@@ -3246,13 +3252,15 @@
       "currency": "pollen",
       "promptTextTokens": "0.000001"
     },
+    "reasoning": true,
     "required_safety": [],
     "supported_endpoints": [
       "/v1/chat/completions",
       "/text",
       "/text/{prompt}"
     ],
-    "title": "Gemini 3.7 Flash"
+    "title": "Gemini 3.8 Flash",
+    "tools": true
   },
   {
     "added_date": 1785486588000,
@@ -4078,22 +4086,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-04T21:48:35.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.0000003",
-        "currency": "pollen",
-        "promptCachedTokens": "0.00000000975",
-        "promptImageTokens": "0.0000000975",
-        "promptTextTokens": "0.0000000975"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000003",
       "currency": "pollen",
       "promptCachedTokens": "0.00000000975",
+      "promptImageTokens": "0.0000000975",
       "promptTextTokens": "0.0000000975"
     },
     "reasoning": true,
@@ -4132,24 +4130,13 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-04T21:49:07.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionReasoningTokens": "0.00000005",
-        "completionTextTokens": "0.0000001",
-        "currency": "pollen",
-        "promptCachedTokens": "0.0000000035",
-        "promptImageTokens": "0.000000035",
-        "promptTextTokens": "0.000000035"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000005",
       "completionTextTokens": "0.0000001",
       "currency": "pollen",
       "promptCachedTokens": "0.0000000035",
+      "promptImageTokens": "0.000000035",
       "promptTextTokens": "0.000000035"
     },
     "reasoning": true,
@@ -4612,24 +4599,13 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-04T21:41:45.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionReasoningTokens": "0.000000235",
-        "completionTextTokens": "0.00000047",
-        "currency": "pollen",
-        "promptImageTokens": "0.00000015",
-        "promptTextTokens": "0.00000015"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.000000235",
       "completionTextTokens": "0.00000047",
       "currency": "pollen",
-      "promptImageTokens": "0.00000016",
-      "promptTextTokens": "0.00000016"
+      "promptImageTokens": "0.00000015",
+      "promptTextTokens": "0.00000015"
     },
     "reasoning": true,
     "required_safety": [],
@@ -7419,6 +7395,39 @@
     "title": "inkling"
   },
   {
+    "added_date": 1788547059000,
+    "aliases": [
+      "community/gggff123/claude-haiku-4.5"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "claude-haiku-4.5",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "gggff123/claude-haiku-4.5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 4,
+    "pricing": {
+      "completionTextTokens": "0.00000077",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000077"
+    },
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "claude-haiku-4.5"
+  },
+  {
     "added_date": 1788324226000,
     "aliases": [
       "community/gggff123/glm-5.3-flash-search"
@@ -9924,6 +9933,60 @@
       "/v1/responses"
     ],
     "title": "GPT-5.5",
+    "tools": true
+  },
+  {
+    "added_date": 1788480000000,
+    "aliases": [],
+    "brand": "OpenAI",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": false,
+    "context_length": 1050000,
+    "description": "Frontier reasoning for complex agentic, coding, and multimodal work",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 10,
+    "name": "openai/gpt-6-astra",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "completionTextTokens": "0.0000375",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.000009375",
+      "promptCachedTokens": "0.00000075",
+      "promptTextTokens": "0.0000075"
+    },
+    "pricing_default_label": "≤272K context",
+    "pricing_variants": [
+      {
+        "description": "More than 272,000 prompt tokens; the higher rates apply to the full request.",
+        "label": "Long context (>272K)",
+        "name": "long_context",
+        "pricing": {
+          "completionTextTokens": "0.00005625",
+          "currency": "pollen",
+          "promptCacheWriteTokens": "0.00001875",
+          "promptCachedTokens": "0.0000015",
+          "promptTextTokens": "0.000015"
+        }
+      }
+    ],
+    "reasoning": true,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "GPT-6 Astra",
     "tools": true
   },
   {
