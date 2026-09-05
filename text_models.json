@@ -3254,45 +3254,6 @@
     "tools": true
   },
   {
-    "added_date": 1788350989000,
-    "aliases": [
-      "community/JustScriptzz/fable-5"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouterfree.duckdns.org/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "JustScriptzz/fable-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000004",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Claude Fable 5",
-    "tools": true
-  },
-  {
     "added_date": 1788471111000,
     "aliases": [
       "community/JustScriptzz/gemini-3.8-flash"
@@ -7694,42 +7655,6 @@
     "title": "gpt-5-nano"
   },
   {
-    "added_date": 1788588827000,
-    "aliases": [
-      "community/gggff123/ling-3.0-flash-fin"
-    ],
-    "alpha": true,
-    "brand": "Community",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "ling-3.0-flash-fin",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "gggff123/ling-3.0-flash-fin",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionAudioTokens": "0.00000034",
-      "completionReasoningTokens": "0.0000012",
-      "completionTextTokens": "0.000001",
-      "currency": "pollen",
-      "promptAudioTokens": "0.00000034",
-      "promptTextTokens": "0.000001"
-    },
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "ling-3.0-flash-fin"
-  },
-  {
     "added_date": 1786161381000,
     "aliases": [
       "community/gggff123/step-3.7-flash"
@@ -11018,6 +10943,50 @@
     "tools": true
   },
   {
+    "added_date": 1788566400000,
+    "aliases": [],
+    "brand": "Qwen",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": false,
+    "context_length": 1000000,
+    "description": "Low-cost multimodal reasoning with 1M context and 131K output for agents and coding",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 10,
+    "max_reference_videos": 10,
+    "name": "qwen/qwen3.8-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.00000047",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.0000002",
+      "promptCachedTokens": "0.000000016",
+      "promptImageTokens": "0.00000015",
+      "promptTextTokens": "0.00000015",
+      "promptVideoTokens": "0.00000015"
+    },
+    "reasoning": true,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "Qwen3.8 Flash",
+    "tools": true
+  },
+  {
     "added_date": 1788393600000,
     "aliases": [],
     "brand": "Qwen",
@@ -11668,6 +11637,46 @@
       "/text/{prompt}"
     ],
     "title": "GPT-OSS 20B",
+    "tools": true
+  },
+  {
+    "added_date": 1788479833000,
+    "aliases": [
+      "community/solarnode-developement/M3"
+    ],
+    "alpha": true,
+    "brand": "Community",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Minimax-M3 is a pretty good all round agentic model. Vision and Reasoning and Fast.  Yes the price is legit gng",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "solarnode-developement/M3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000001",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000005"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Minimax M3",
     "tools": true
   },
   {
