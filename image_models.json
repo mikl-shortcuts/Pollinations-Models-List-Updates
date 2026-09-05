@@ -303,6 +303,41 @@
     "title": "Leonardo Lucid Origin"
   },
   {
+    "added_date": 1788638191000,
+    "aliases": [
+      "community/MarcosFRG/lucid-origin:paid"
+    ],
+    "alpha": true,
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "Hyper-realistic creative engine with sharp text rendering — Leonardo's most prompt-responsive model for dynamic, design-ready Full HD visuals (90% OFF)",
+    "flat_rate": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "MarcosFRG/lucid-origin:paid",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionImageTokens": "0.001",
+      "currency": "pollen"
+    },
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits"
+    ],
+    "title": "Leonardo Lucid Origin (Paid)"
+  },
+  {
     "added_date": 1787598951000,
     "aliases": [
       "community/MarcosFRG/sdxl-lightning"
@@ -323,18 +358,10 @@
     "output_modalities": [
       "image"
     ],
-    "paid_only": true,
-    "pending_change": {
-      "effective_at": "2026-09-05T22:53:33.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionImageTokens": "0.0014",
-        "currency": "pollen"
-      }
-    },
+    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionImageTokens": "0.001",
+      "completionImageTokens": "0.0014",
       "currency": "pollen"
     },
     "required_safety": [],

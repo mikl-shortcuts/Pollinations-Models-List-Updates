@@ -4110,6 +4110,48 @@
     "tools": true
   },
   {
+    "added_date": 1788638750000,
+    "aliases": [
+      "community/MarcosFRG/qwen3.8-27b"
+    ],
+    "alpha": true,
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "MarcosFRG/qwen3.8-27b",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000025",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000032"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Qwen3.8 27B",
+    "tools": true
+  },
+  {
     "added_date": 1786829751000,
     "aliases": [
       "community/MarcosFRG/qwen3.8-27b:paid"
@@ -4177,24 +4219,13 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-05T22:58:22.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionReasoningTokens": "0.00000024",
-        "completionTextTokens": "0.00000048",
-        "currency": "pollen",
-        "promptImageTokens": "0.00000016",
-        "promptTextTokens": "0.00000016"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.000000235",
-      "completionTextTokens": "0.00000047",
+      "completionReasoningTokens": "0.00000024",
+      "completionTextTokens": "0.00000048",
       "currency": "pollen",
-      "promptImageTokens": "0.00000015",
-      "promptTextTokens": "0.00000015"
+      "promptImageTokens": "0.00000016",
+      "promptTextTokens": "0.00000016"
     },
     "reasoning": true,
     "required_safety": [],
@@ -4204,6 +4235,50 @@
       "/text/{prompt}"
     ],
     "title": "Qwen3.8 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1788638456000,
+    "aliases": [
+      "community/MarcosFRG/qwen3.8-flash:paid"
+    ],
+    "alpha": true,
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "Next-gen multimodal MoE with 125B main and 6B active parameters — Qwen4 architecture delivering blazing-fast reasoning and 1M context efficiency (50% OFF)",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "MarcosFRG/qwen3.8-flash:paid",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.00000012",
+      "completionTextTokens": "0.00000024",
+      "currency": "pollen",
+      "promptImageTokens": "0.00000008",
+      "promptTextTokens": "0.00000008"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Qwen3.8 Flash (Paid)",
     "tools": true
   },
   {
@@ -11506,6 +11581,51 @@
     "tools": true
   },
   {
+    "added_date": 1788201845000,
+    "aliases": [
+      "community/vendouple/claude-opus-5"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 500007,
+    "description": "Bomboclat",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/claude-opus-5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000085",
+      "currency": "pollen",
+      "promptTextTokens": "0.000002"
+    },
+    "reasoning": true,
+    "required_safety": [
+      "sexual",
+      "violence",
+      "shield"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Claude Opus 5",
+    "tools": true
+  },
+  {
     "added_date": 1783698620000,
     "aliases": [
       "community/vendouple/deepseek-v4-flash"
@@ -11584,6 +11704,40 @@
     ],
     "title": "DeepSeek V4 Pro",
     "tools": true
+  },
+  {
+    "added_date": 1786965688000,
+    "aliases": [
+      "community/vendouple/gemini-3.6"
+    ],
+    "alpha": true,
+    "brand": "OrchidLLM Proxy",
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "vendouple/gemini-3.6",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000003",
+      "currency": "pollen",
+      "promptTextTokens": "0.000001"
+    },
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Gemini 3.6"
   },
   {
     "added_date": 1784523185000,
