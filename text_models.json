@@ -7435,6 +7435,47 @@
     "tools": true
   },
   {
+    "added_date": 1787330587000,
+    "aliases": [
+      "community/iotserver24/cheap-opus-5"
+    ],
+    "alpha": true,
+    "brand": "R3AP3R editz",
+    "brand_url": "https://xibeai.in/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "fast for coding",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "iotserver24/cheap-opus-5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000007",
+      "completionTextTokens": "0.0000032",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000009"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "opus 5",
+    "tools": true
+  },
+  {
     "added_date": 1787330663000,
     "aliases": [
       "community/iotserver24/cheap-opus-5-thinking"
@@ -11018,46 +11059,6 @@
     "tools": true
   },
   {
-    "added_date": 1783698620000,
-    "aliases": [
-      "community/vendouple/deepseek-v4-flash"
-    ],
-    "alpha": true,
-    "brand": "OrchidLLM Proxy",
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "description": "LATEST VERSION",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "vendouple/deepseek-v4-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000002"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "DeepSeek V4 Flash",
-    "tools": true
-  },
-  {
     "added_date": 1783916168000,
     "aliases": [
       "community/vendouple/deepseek-v4-pro"
@@ -11246,52 +11247,9 @@
     "tools": true
   },
   {
-    "added_date": 1788491655000,
-    "aliases": [
-      "community/vendouple/gpt-5.6-sol:free"
-    ],
-    "alpha": true,
-    "brand": "OrchidLLM Proxy",
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 256000,
-    "description": "Might not be real, please test before use in real projects. This has to be real..",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "vendouple/gpt-5.6-sol:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 3,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "required_safety": [
-      "privacy",
-      "secrets",
-      "sexual",
-      "violence",
-      "shield"
-    ],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "GPT 5.6 Sol (Promotional)",
-    "tools": true
-  },
-  {
     "added_date": 1786040071000,
     "aliases": [
-      "community/vendouple/gpt-5.6-terra"
+      "community/vendouple/gpt-6-astra"
     ],
     "alpha": true,
     "brand": "OrchidLLM Proxy",
@@ -11308,27 +11266,31 @@
       "text",
       "image"
     ],
-    "name": "vendouple/gpt-5.6-terra",
+    "name": "vendouple/gpt-6-astra",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.000002",
-      "completionTextTokens": "0.000002",
+      "completionReasoningTokens": "0.0000085",
+      "completionTextTokens": "0.0000085",
       "currency": "pollen",
       "promptCachedTokens": "0.0000000125",
-      "promptTextTokens": "0.0000005"
+      "promptTextTokens": "0.000005"
     },
     "reasoning": true,
-    "required_safety": [],
+    "required_safety": [
+      "sexual",
+      "violence",
+      "shield"
+    ],
     "supported_endpoints": [
       "/v1/chat/completions",
       "/text",
       "/text/{prompt}"
     ],
-    "title": "GPT 5.6 Terra",
+    "title": "GPT 6 Astra",
     "tools": true
   },
   {
