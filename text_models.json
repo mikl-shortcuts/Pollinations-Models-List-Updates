@@ -3328,6 +3328,48 @@
     "tools": true
   },
   {
+    "added_date": 1783969807000,
+    "aliases": [
+      "community/MarcosFRG/glm-5.2"
+    ],
+    "alpha": true,
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "Long-horizon coding and full-codebase analysis; adjustable thinking effort for deep or quick passes (75% OFF)",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "MarcosFRG/glm-5.2",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.00000055",
+      "completionTextTokens": "0.0000011",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000035",
+      "promptTextTokens": "0.00000035"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GLM 5.2",
+    "tools": true
+  },
+  {
     "added_date": 1788383838000,
     "aliases": [
       "community/MarcosFRG/glm-5.3"
@@ -3410,6 +3452,55 @@
       "/text/{prompt}"
     ],
     "title": "GLM 5.3 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1786828204000,
+    "agent": true,
+    "aliases": [
+      "community/MarcosFRG/metraxai"
+    ],
+    "alpha": true,
+    "base_model": "MarcosFRG/glm-5.3-flash",
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning",
+      "pollinations_models",
+      "web_search"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "MetraxAI is an assistant for casual chat and entertainment. It adapts to the user and combines programming, psychology, and mathematics.",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "MarcosFRG/metraxai",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.000000195",
+      "completionTextTokens": "0.00000039",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000032",
+      "promptImageTokens": "0.00000011",
+      "promptTextTokens": "0.00000011"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "MetraxAI",
     "tools": true
   },
   {
@@ -3618,7 +3709,7 @@
       "/text",
       "/text/{prompt}"
     ],
-    "title": "Qwen3.8 27B",
+    "title": "Qwen3.8 27B (Paid)",
     "tools": true
   },
   {
@@ -3647,6 +3738,17 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-06T21:53:54.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionReasoningTokens": "0.000000235",
+        "completionTextTokens": "0.00000047",
+        "currency": "pollen",
+        "promptImageTokens": "0.00000015",
+        "promptTextTokens": "0.00000015"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000024",
@@ -3680,7 +3782,7 @@
     "category": "text",
     "community": true,
     "context_length": 1048576,
-    "description": "Next-gen multimodal MoE with 125B main and 6B active parameters — Qwen4 architecture delivering blazing-fast reasoning and 1M context efficiency",
+    "description": "Next-gen multimodal MoE with 125B main and 6B active parameters — Qwen4 architecture delivering blazing-fast reasoning and 1M context efficiency (50% OFF)",
     "input_modalities": [
       "text",
       "image",
@@ -3691,6 +3793,17 @@
       "text"
     ],
     "paid_only": true,
+    "pending_change": {
+      "effective_at": "2026-09-06T21:55:30.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionReasoningTokens": "0.0000001175",
+        "completionTextTokens": "0.000000235",
+        "currency": "pollen",
+        "promptImageTokens": "0.000000075",
+        "promptTextTokens": "0.000000075"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000012",
@@ -10371,22 +10484,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-06T18:08:33.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.00000004",
-        "currency": "pollen",
-        "promptCachedTokens": "0.00000001",
-        "promptTextTokens": "0.00000002"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000002",
+      "completionTextTokens": "0.00000004",
       "currency": "pollen",
-      "promptCachedTokens": "0.000000005",
-      "promptTextTokens": "0.00000001"
+      "promptCachedTokens": "0.00000001",
+      "promptTextTokens": "0.00000002"
     },
     "required_safety": [],
     "supported_endpoints": [
@@ -10395,47 +10498,6 @@
       "/text/{prompt}"
     ],
     "title": "Falcon H1 Tiny 90M Instruct"
-  },
-  {
-    "added_date": 1788708027000,
-    "agent": true,
-    "aliases": [
-      "community/smplstuff/title-generator"
-    ],
-    "alpha": true,
-    "base_model": "openai-fast",
-    "brand": "Community",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 400000,
-    "description": "Generates concise, relevant titles from arbitrary text",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "smplstuff/title-generator",
-    "output_modalities": [
-      "text"
-    ],
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000003",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000000375",
-      "promptTextTokens": "0.0000000375"
-    },
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses"
-    ],
-    "title": "Title Generator",
-    "tools": true
   },
   {
     "added_date": 1780012800000,
@@ -10853,48 +10915,6 @@
     "tools": true
   },
   {
-    "added_date": 1788593004000,
-    "aliases": [
-      "community/tomdacatto/gpt-6-astra"
-    ],
-    "alpha": true,
-    "brand": "TomdacatAI",
-    "brand_url": "https://ai.tomdacat.com/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "tomdacatto/gpt-6-astra",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.000001",
-      "completionTextTokens": "0.000005",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000001",
-      "promptTextTokens": "0.000001"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "GPT 6 astra",
-    "tools": true
-  },
-  {
     "added_date": 1788517990000,
     "aliases": [
       "community/tomdacatto/muse-spark-1.3-contributor"
@@ -11023,48 +11043,6 @@
       "/text/{prompt}"
     ],
     "title": "Qwen 3.8 27B Fast",
-    "tools": true
-  },
-  {
-    "added_date": 1784523185000,
-    "aliases": [
-      "community/vendouple/gemma-4-31b-sdft-heretic-rp"
-    ],
-    "alpha": true,
-    "brand": "OrchidLLM Proxy",
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 32000,
-    "description": "This has a limit of 20k context window",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "vendouple/gemma-4-31b-sdft-heretic-rp",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000005",
-      "completionTextTokens": "0.0000005",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000002"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Gemma 4 RP (20K, Daily Limit)",
     "tools": true
   },
   {
