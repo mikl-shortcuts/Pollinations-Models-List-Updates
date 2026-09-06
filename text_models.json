@@ -1515,41 +1515,6 @@
     "tools": true
   },
   {
-    "added_date": 1788023729000,
-    "aliases": [
-      "community/AkshayCoder48/kilo-auto-free"
-    ],
-    "alpha": true,
-    "brand": "FreeAIXYZ",
-    "brand_url": "https://freeaixyz4all.vercel.app/",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Kilo Auto (free): Kilo Code's auto-router that picks the best model for each request, free to call. Tool calling.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "AkshayCoder48/kilo-auto-free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Kilo Auto (free)",
-    "tools": true
-  },
-  {
     "added_date": 1788023732000,
     "aliases": [
       "community/AkshayCoder48/kilo-auto-small"
@@ -5108,30 +5073,16 @@
       "text"
     ],
     "paid_only": true,
-    "pending_change": {
-      "effective_at": "2026-09-06T11:58:34.000Z",
-      "paid_only": true,
-      "pricing": {
-        "completionAudioTokens": "0.0000005",
-        "completionReasoningTokens": "0.0000005",
-        "completionTextTokens": "0.0000005",
-        "currency": "pollen",
-        "promptAudioTokens": "0.00000015",
-        "promptCacheWriteTokens": "0.00000003",
-        "promptCachedTokens": "0.00000003",
-        "promptTextTokens": "0.00000015"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionAudioTokens": "0.0000002",
-      "completionReasoningTokens": "0.0000002",
-      "completionTextTokens": "0.0000002",
+      "completionAudioTokens": "0.0000005",
+      "completionReasoningTokens": "0.0000005",
+      "completionTextTokens": "0.0000005",
       "currency": "pollen",
-      "promptAudioTokens": "0.00000005",
-      "promptCacheWriteTokens": "0.00000002",
-      "promptCachedTokens": "0.00000002",
-      "promptTextTokens": "0.00000005"
+      "promptAudioTokens": "0.00000015",
+      "promptCacheWriteTokens": "0.00000003",
+      "promptCachedTokens": "0.00000003",
+      "promptTextTokens": "0.00000015"
     },
     "reasoning": true,
     "required_safety": [],
@@ -10414,6 +10365,51 @@
     "tools": true
   },
   {
+    "added_date": 1786833740000,
+    "agent": true,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge"
+    ],
+    "alpha": true,
+    "base_model": "sharktide/inferenceport-ai-lightning-text-v2",
+    "brand": "InferencePort AI, InferencePort LLC.",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning",
+      "pollinations_models",
+      "web_search"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "InferencePort AI Lightning Text v2 with Advanced Web Search and External Capabilities",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000075",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000075"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "Lightning Text v2 (Expanded Knowledge)",
+    "tools": true
+  },
+  {
     "added_date": 1784344466000,
     "aliases": [
       "community/sharktide/inferenceport-ai-minimax-m3"
@@ -10906,6 +10902,99 @@
       "/text/{prompt}"
     ],
     "title": "Ezra"
+  },
+  {
+    "added_date": 1788593299000,
+    "aliases": [
+      "community/tomdacatto/fable-5.1"
+    ],
+    "alpha": true,
+    "brand": "TomdacatAI",
+    "brand_url": "https://ai.tomdacat.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "tomdacatto/fable-5.1",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000015",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000001",
+      "promptTextTokens": "0.000005"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Fable 5.1",
+    "tools": true
+  },
+  {
+    "added_date": 1788593004000,
+    "aliases": [
+      "community/tomdacatto/gpt-6-astra"
+    ],
+    "alpha": true,
+    "brand": "TomdacatAI",
+    "brand_url": "https://ai.tomdacat.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "tomdacatto/gpt-6-astra",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-06T16:59:20.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionReasoningTokens": "0.000001",
+        "completionTextTokens": "0.000005",
+        "currency": "pollen",
+        "promptCachedTokens": "0.0000001",
+        "promptTextTokens": "0.000001"
+      }
+    },
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.00001",
+      "completionTextTokens": "0.00002",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000001",
+      "promptTextTokens": "0.000005"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GPT 6 astra",
+    "tools": true
   },
   {
     "added_date": 1788517990000,
