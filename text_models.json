@@ -4030,6 +4030,47 @@
     "tools": true
   },
   {
+    "added_date": 1788076738000,
+    "aliases": [
+      "community/NamanSoni78/deepseek-v4-flash-0731"
+    ],
+    "alpha": true,
+    "brand": "APIs For Devs & Students",
+    "brand_url": "https://api.namansoni.in/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "284B MoE (13B active) model ideal for long-context workloads optimized for coding, chat, and agentic..",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "NamanSoni78/deepseek-v4-flash-0731",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000025",
+      "currency": "pollen",
+      "promptCachedTokens": "0.0000001",
+      "promptTextTokens": "0.00000015"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "DEEPSEEK-v4-Flash",
+    "tools": true
+  },
+  {
     "added_date": 1788076838000,
     "aliases": [
       "community/NamanSoni78/deepseek-v4-pro-0813"
@@ -4354,47 +4395,6 @@
       "/text/{prompt}"
     ],
     "title": "DiffusionGemma 26b A4b"
-  },
-  {
-    "added_date": 1788190840000,
-    "aliases": [
-      "community/YoannDev90/gemini-3-flash"
-    ],
-    "alpha": true,
-    "brand": "Free AI API",
-    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "name": "YoannDev90/gemini-3-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 2,
-    "pricing": {
-      "currency": "pollen",
-      "promptTextTokens": "0.0000001"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Gemini 3 Flash",
-    "tools": true
   },
   {
     "added_date": 1785434187000,
@@ -5108,6 +5108,20 @@
       "text"
     ],
     "paid_only": true,
+    "pending_change": {
+      "effective_at": "2026-09-06T11:58:34.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionAudioTokens": "0.0000005",
+        "completionReasoningTokens": "0.0000005",
+        "completionTextTokens": "0.0000005",
+        "currency": "pollen",
+        "promptAudioTokens": "0.00000015",
+        "promptCacheWriteTokens": "0.00000003",
+        "promptCachedTokens": "0.00000003",
+        "promptTextTokens": "0.00000015"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionAudioTokens": "0.0000002",
@@ -7435,47 +7449,6 @@
     "tools": true
   },
   {
-    "added_date": 1787330587000,
-    "aliases": [
-      "community/iotserver24/cheap-opus-5"
-    ],
-    "alpha": true,
-    "brand": "R3AP3R editz",
-    "brand_url": "https://xibeai.in/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "fast for coding",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "iotserver24/cheap-opus-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000007",
-      "completionTextTokens": "0.0000032",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000009"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "opus 5",
-    "tools": true
-  },
-  {
     "added_date": 1787330663000,
     "aliases": [
       "community/iotserver24/cheap-opus-5-thinking"
@@ -9393,6 +9366,52 @@
     "tools": true
   },
   {
+    "added_date": 1787477967000,
+    "aliases": [
+      "community/pegalink/gemini-3.8-flash"
+    ],
+    "alpha": true,
+    "brand": "Openrouter",
+    "brand_url": "https://openrouter.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Gemini 3.8 Flash is Google's frontier model excelling in general tasks and coding.",
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "pegalink/gemini-3.8-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000055",
+      "completionTextTokens": "0.0000055",
+      "currency": "pollen",
+      "promptAudioTokens": "0.0000011",
+      "promptCachedTokens": "0.00000011",
+      "promptTextTokens": "0.0000011"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Gemini 3.8 Flash",
+    "tools": true
+  },
+  {
     "added_date": 1788278345000,
     "agent": true,
     "aliases": [
@@ -10355,45 +10374,6 @@
     "tools": true
   },
   {
-    "added_date": 1784344080000,
-    "aliases": [
-      "community/sharktide/inferenceport-ai-kimi-k2.7-code"
-    ],
-    "alpha": true,
-    "brand": "InferencePort AI, InferencePort LLC.",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Kimi k2.7 Code",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "sharktide/inferenceport-ai-kimi-k2.7-code",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000004",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000016"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Kimi K2.7 Code",
-    "tools": true
-  },
-  {
     "added_date": 1784349589000,
     "aliases": [
       "community/sharktide/inferenceport-ai-lightning-text-v2"
@@ -11059,80 +11039,6 @@
     "tools": true
   },
   {
-    "added_date": 1783916168000,
-    "aliases": [
-      "community/vendouple/deepseek-v4-pro"
-    ],
-    "alpha": true,
-    "brand": "OrchidLLM Proxy",
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "description": "ITS BACK!",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "vendouple/deepseek-v4-pro",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000005",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000001"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "DeepSeek V4 Pro",
-    "tools": true
-  },
-  {
-    "added_date": 1786965688000,
-    "aliases": [
-      "community/vendouple/gemini-3.6"
-    ],
-    "alpha": true,
-    "brand": "OrchidLLM Proxy",
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "vendouple/gemini-3.6",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000003",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Gemini 3.6"
-  },
-  {
     "added_date": 1784523185000,
     "aliases": [
       "community/vendouple/gemma-4-31b-sdft-heretic-rp"
@@ -11441,47 +11347,6 @@
       "/text/{prompt}"
     ],
     "title": "Muse Glimmer (Free)"
-  },
-  {
-    "added_date": 1784737002000,
-    "aliases": [
-      "community/vendouple/qwen-3.8-max"
-    ],
-    "alpha": true,
-    "brand": "OrchidLLM Proxy",
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "vendouple/qwen-3.8-max",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.000002",
-      "completionTextTokens": "0.000002",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000000125",
-      "promptTextTokens": "0.000001"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Qwen 3.8 Max",
-    "tools": true
   },
   {
     "added_date": 1782759075000,
