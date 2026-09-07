@@ -5,7 +5,6 @@
       "community/NamanSoni78/aura-2-amalthea-en"
     ],
     "alpha": true,
-    "brand": "APIs For Devs & Students",
     "brand_url": "https://api.namansoni.in/",
     "capabilities": [],
     "category": "audio",
@@ -22,6 +21,7 @@
     "pricing": {
       "currency": "pollen"
     },
+    "publisher": "APIs For Devs & Students",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/audio/speech"
@@ -34,7 +34,6 @@
       "community/NamanSoni78/aura-2-atlas-en"
     ],
     "alpha": true,
-    "brand": "APIs For Devs & Students",
     "brand_url": "https://api.namansoni.in/",
     "capabilities": [],
     "category": "audio",
@@ -51,6 +50,7 @@
     "pricing": {
       "currency": "pollen"
     },
+    "publisher": "APIs For Devs & Students",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/audio/speech"
@@ -63,7 +63,6 @@
       "community/NamanSoni78/aura-2-orpheus-en"
     ],
     "alpha": true,
-    "brand": "APIs For Devs & Students",
     "brand_url": "https://api.namansoni.in/",
     "capabilities": [],
     "category": "audio",
@@ -80,6 +79,7 @@
     "pricing": {
       "currency": "pollen"
     },
+    "publisher": "APIs For Devs & Students",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/audio/speech"
@@ -92,7 +92,6 @@
       "community/NamanSoni78/aura-2-thalia-en"
     ],
     "alpha": true,
-    "brand": "APIs For Devs & Students",
     "brand_url": "https://api.namansoni.in/",
     "capabilities": [],
     "category": "audio",
@@ -109,6 +108,7 @@
     "pricing": {
       "currency": "pollen"
     },
+    "publisher": "APIs For Devs & Students",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/audio/speech"
@@ -121,7 +121,6 @@
       "community/NamanSoni78/nova-3"
     ],
     "alpha": true,
-    "brand": "APIs For Devs & Students",
     "brand_url": "https://api.namansoni.in/",
     "capabilities": [],
     "category": "audio",
@@ -140,6 +139,7 @@
       "currency": "pollen",
       "promptAudioSeconds": "0.00001"
     },
+    "publisher": "APIs For Devs & Students",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/audio/transcriptions"
@@ -152,7 +152,6 @@
       "community/NamanSoni78/whisper-large-v3"
     ],
     "alpha": true,
-    "brand": "APIs For Devs & Students",
     "brand_url": "https://api.namansoni.in/",
     "capabilities": [],
     "category": "audio",
@@ -171,6 +170,7 @@
       "currency": "pollen",
       "promptAudioSeconds": "0.0002"
     },
+    "publisher": "APIs For Devs & Students",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/audio/transcriptions"
@@ -183,7 +183,6 @@
       "community/NamanSoni78/whisper-large-v3-turbo"
     ],
     "alpha": true,
-    "brand": "APIs For Devs & Students",
     "brand_url": "https://api.namansoni.in/",
     "capabilities": [],
     "category": "audio",
@@ -202,6 +201,7 @@
       "currency": "pollen",
       "promptAudioSeconds": "0.00001"
     },
+    "publisher": "APIs For Devs & Students",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/audio/transcriptions"
@@ -209,73 +209,206 @@
     "title": "openai/whisper-large-v3-turbo (Fast)"
   },
   {
-    "added_date": 1784764800000,
+    "added_date": 1777680000000,
     "aliases": [
-      "csm",
-      "sesame-csm",
-      "sesame-csm-1b",
-      "sesame/csm-1b"
+      "assemblyai-universal-2",
+      "assemblyai-u2",
+      "universal-2"
     ],
-    "brand": "Sesame",
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "English conversational speech with six reading and dialogue voices",
+    "description": "Fast transcription with support for 99 languages",
+    "input_modalities": [
+      "audio"
+    ],
+    "name": "assemblyai/universal-2",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.000041666667"
+    },
+    "pricing_default_label": "Standard transcription",
+    "pricing_variants": [
+      {
+        "description": "Applies when response_format is diarized_json.",
+        "label": "Speaker diarization",
+        "name": "diarization",
+        "pricing": {
+          "currency": "pollen",
+          "promptAudioSeconds": "0.000047222222"
+        }
+      }
+    ],
+    "publisher": "AssemblyAI",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "title": "AssemblyAI Universal-2"
+  },
+  {
+    "added_date": 1777680000000,
+    "aliases": [
+      "universal-3-pro",
+      "universal-3-5-pro",
+      "assemblyai-universal-3.5-pro",
+      "assemblyai-universal-3-5-pro",
+      "assemblyai-u3.5-pro",
+      "assemblyai-universal-3-pro",
+      "assemblyai-u3-pro",
+      "assemblyai-pro",
+      "universal-3.5-pro"
+    ],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "High-accuracy transcription with multilingual code switching and prompts",
+    "input_modalities": [
+      "audio"
+    ],
+    "name": "assemblyai/universal-3.5-pro",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.000058333333"
+    },
+    "pricing_default_label": "Standard transcription",
+    "pricing_variants": [
+      {
+        "description": "Applies when a prompt is provided.",
+        "label": "Prompting",
+        "name": "prompting",
+        "pricing": {
+          "currency": "pollen",
+          "promptAudioSeconds": "0.000072222222"
+        }
+      },
+      {
+        "description": "Applies when response_format is diarized_json.",
+        "label": "Speaker diarization",
+        "name": "diarization",
+        "pricing": {
+          "currency": "pollen",
+          "promptAudioSeconds": "0.000063888889"
+        }
+      },
+      {
+        "description": "Applies when a prompt is provided and response_format is diarized_json.",
+        "label": "Prompting and speaker diarization",
+        "name": "prompting_diarization",
+        "pricing": {
+          "currency": "pollen",
+          "promptAudioSeconds": "0.000077777778"
+        }
+      }
+    ],
+    "publisher": "AssemblyAI",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "title": "AssemblyAI Universal-3.5 Pro"
+  },
+  {
+    "added_date": 1778716800000,
+    "aliases": [
+      "tts-flash",
+      "eleven-flash",
+      "flash",
+      "elevenflash"
+    ],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Low-latency speech in 32 languages with character timestamps",
     "input_modalities": [
       "text"
     ],
-    "name": "csm-1b",
+    "name": "elevenlabs/eleven-flash-v2.5",
     "output_modalities": [
       "audio"
     ],
     "paid_only": true,
     "pricing": {
-      "completionAudioTokens": "0.000007",
+      "completionAudioTokens": "0.00005",
       "currency": "pollen"
     },
+    "publisher": "ElevenLabs",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/audio/speech/with-timestamps"
     ],
-    "title": "CSM 1B",
+    "title": "ElevenLabs Flash v2.5",
     "voices": [
-      "conversational_a",
-      "conversational_b",
-      "read_speech_a",
-      "read_speech_b",
-      "read_speech_c",
-      "read_speech_d"
+      "alloy",
+      "echo",
+      "fable",
+      "onyx",
+      "nova",
+      "shimmer",
+      "ash",
+      "ballad",
+      "coral",
+      "sage",
+      "verse",
+      "rachel",
+      "domi",
+      "bella",
+      "elli",
+      "charlotte",
+      "dorothy",
+      "sarah",
+      "emily",
+      "lily",
+      "matilda",
+      "adam",
+      "antoni",
+      "arnold",
+      "josh",
+      "sam",
+      "daniel",
+      "charlie",
+      "james",
+      "fin",
+      "callum",
+      "liam",
+      "george",
+      "brian",
+      "bill"
     ]
   },
   {
     "added_date": 1785024000000,
     "aliases": [
-      "dialogue",
-      "text-to-dialogue",
-      "elevenlabs/eleven-v3:dialogue"
+      "voice-changer",
+      "speech-to-speech",
+      "eleven-voice-changer"
     ],
-    "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Multi-speaker conversations with expressive voices and audio cues",
+    "description": "Preserves delivery and emotion while transforming speaker identity",
     "input_modalities": [
-      "text"
+      "audio"
     ],
-    "name": "eleven-dialogue",
+    "name": "elevenlabs/eleven-multilingual-sts-v2",
     "output_modalities": [
       "audio"
     ],
     "paid_only": true,
     "pricing": {
-      "completionAudioTokens": "0.0001",
-      "currency": "pollen"
+      "currency": "pollen",
+      "promptAudioSeconds": "0.002"
     },
+    "publisher": "ElevenLabs",
     "supported_endpoints": [
-      "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/voice-changer"
     ],
-    "title": "ElevenLabs Text to Dialogue",
+    "title": "ElevenLabs Voice Changer",
     "voices": [
       "alloy",
       "echo",
@@ -320,9 +453,8 @@
       "multilingual-v2",
       "eleven-v2",
       "tts-multilingual",
-      "elevenlabs/eleven-multilingual-v2"
+      "eleven-multilingual-v2"
     ],
-    "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -330,7 +462,7 @@
     "input_modalities": [
       "text"
     ],
-    "name": "eleven-multilingual-v2",
+    "name": "elevenlabs/eleven-multilingual-v2",
     "output_modalities": [
       "audio"
     ],
@@ -339,6 +471,7 @@
       "completionAudioTokens": "0.0001",
       "currency": "pollen"
     },
+    "publisher": "ElevenLabs",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech",
@@ -389,9 +522,8 @@
       "sfx",
       "sound-effects",
       "eleven-sound-effects",
-      "elevenlabs/eleven-text-to-sound-v2"
+      "eleven-sfx"
     ],
-    "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -399,7 +531,7 @@
     "input_modalities": [
       "text"
     ],
-    "name": "eleven-sfx",
+    "name": "elevenlabs/eleven-text-to-sound-v2",
     "output_modalities": [
       "audio"
     ],
@@ -408,176 +540,12 @@
       "completionAudioSeconds": "0.002",
       "currency": "pollen"
     },
+    "publisher": "ElevenLabs",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
     ],
     "title": "ElevenLabs Sound Effects"
-  },
-  {
-    "added_date": 1785024000000,
-    "aliases": [
-      "voice-changer",
-      "speech-to-speech",
-      "elevenlabs/eleven-multilingual-sts-v2"
-    ],
-    "brand": "ElevenLabs",
-    "capabilities": [],
-    "category": "audio",
-    "community": false,
-    "description": "Preserves delivery and emotion while transforming speaker identity",
-    "input_modalities": [
-      "audio"
-    ],
-    "name": "eleven-voice-changer",
-    "output_modalities": [
-      "audio"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "currency": "pollen",
-      "promptAudioSeconds": "0.002"
-    },
-    "supported_endpoints": [
-      "/v1/audio/voice-changer"
-    ],
-    "title": "ElevenLabs Voice Changer",
-    "voices": [
-      "alloy",
-      "echo",
-      "fable",
-      "onyx",
-      "nova",
-      "shimmer",
-      "ash",
-      "ballad",
-      "coral",
-      "sage",
-      "verse",
-      "rachel",
-      "domi",
-      "bella",
-      "elli",
-      "charlotte",
-      "dorothy",
-      "sarah",
-      "emily",
-      "lily",
-      "matilda",
-      "adam",
-      "antoni",
-      "arnold",
-      "josh",
-      "sam",
-      "daniel",
-      "charlie",
-      "james",
-      "fin",
-      "callum",
-      "liam",
-      "george",
-      "brian",
-      "bill"
-    ]
-  },
-  {
-    "added_date": 1785024000000,
-    "aliases": [
-      "voice-isolator",
-      "audio-cleanup",
-      "elevenlabs/voice-isolator"
-    ],
-    "brand": "ElevenLabs",
-    "capabilities": [],
-    "category": "audio",
-    "community": false,
-    "description": "Removes background noise while preserving clear spoken audio",
-    "input_modalities": [
-      "audio",
-      "video"
-    ],
-    "name": "eleven-voice-isolator",
-    "output_modalities": [
-      "audio"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "currency": "pollen",
-      "promptAudioSeconds": "0.002"
-    },
-    "supported_endpoints": [
-      "/v1/audio/voice-isolator"
-    ],
-    "title": "ElevenLabs Voice Isolator"
-  },
-  {
-    "added_date": 1778716800000,
-    "aliases": [
-      "tts-flash",
-      "eleven-flash",
-      "flash",
-      "elevenlabs/eleven-flash-v2.5"
-    ],
-    "brand": "ElevenLabs",
-    "capabilities": [],
-    "category": "audio",
-    "community": false,
-    "description": "Low-latency speech in 32 languages with character timestamps",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "elevenflash",
-    "output_modalities": [
-      "audio"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionAudioTokens": "0.00005",
-      "currency": "pollen"
-    },
-    "supported_endpoints": [
-      "/audio/{text}",
-      "/v1/audio/speech",
-      "/v1/audio/speech/with-timestamps"
-    ],
-    "title": "ElevenLabs Flash v2.5",
-    "voices": [
-      "alloy",
-      "echo",
-      "fable",
-      "onyx",
-      "nova",
-      "shimmer",
-      "ash",
-      "ballad",
-      "coral",
-      "sage",
-      "verse",
-      "rachel",
-      "domi",
-      "bella",
-      "elli",
-      "charlotte",
-      "dorothy",
-      "sarah",
-      "emily",
-      "lily",
-      "matilda",
-      "adam",
-      "antoni",
-      "arnold",
-      "josh",
-      "sam",
-      "daniel",
-      "charlie",
-      "james",
-      "fin",
-      "callum",
-      "liam",
-      "george",
-      "brian",
-      "bill"
-    ]
   },
   {
     "added_date": 1770422400000,
@@ -587,9 +555,8 @@
       "eleven",
       "tts-1",
       "tts-1-hd",
-      "elevenlabs/eleven-v3"
+      "elevenlabs"
     ],
-    "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -597,7 +564,7 @@
     "input_modalities": [
       "text"
     ],
-    "name": "elevenlabs",
+    "name": "elevenlabs/eleven-v3",
     "output_modalities": [
       "audio"
     ],
@@ -606,6 +573,7 @@
       "completionAudioTokens": "0.0001",
       "currency": "pollen"
     },
+    "publisher": "ElevenLabs",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech",
@@ -651,12 +619,78 @@
     ]
   },
   {
+    "added_date": 1785024000000,
+    "aliases": [
+      "eleven-dialogue",
+      "dialogue",
+      "text-to-dialogue"
+    ],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Multi-speaker conversations with expressive voices and audio cues",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "elevenlabs/eleven-v3:dialogue",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionAudioTokens": "0.0001",
+      "currency": "pollen"
+    },
+    "publisher": "ElevenLabs",
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech"
+    ],
+    "title": "ElevenLabs Text to Dialogue",
+    "voices": [
+      "alloy",
+      "echo",
+      "fable",
+      "onyx",
+      "nova",
+      "shimmer",
+      "ash",
+      "ballad",
+      "coral",
+      "sage",
+      "verse",
+      "rachel",
+      "domi",
+      "bella",
+      "elli",
+      "charlotte",
+      "dorothy",
+      "sarah",
+      "emily",
+      "lily",
+      "matilda",
+      "adam",
+      "antoni",
+      "arnold",
+      "josh",
+      "sam",
+      "daniel",
+      "charlie",
+      "james",
+      "fin",
+      "callum",
+      "liam",
+      "george",
+      "brian",
+      "bill"
+    ]
+  },
+  {
     "added_date": 1770508800000,
     "aliases": [
       "music",
-      "elevenlabs/music-v2"
+      "elevenmusic"
     ],
-    "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -665,7 +699,7 @@
       "text",
       "audio"
     ],
-    "name": "elevenmusic",
+    "name": "elevenlabs/music-v2",
     "output_modalities": [
       "audio"
     ],
@@ -675,6 +709,7 @@
       "currency": "pollen",
       "promptAudioSeconds": "0.0025"
     },
+    "publisher": "ElevenLabs",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
@@ -682,11 +717,69 @@
     "title": "ElevenLabs Music"
   },
   {
+    "added_date": 1770940800000,
+    "aliases": [
+      "scribe_v2",
+      "scribe-v2",
+      "scribe"
+    ],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Transcription in 90+ languages with speaker labels",
+    "input_modalities": [
+      "audio"
+    ],
+    "name": "elevenlabs/scribe-v2",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.000061111111"
+    },
+    "publisher": "ElevenLabs",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "title": "Scribe v2"
+  },
+  {
+    "added_date": 1785024000000,
+    "aliases": [
+      "voice-isolator",
+      "audio-cleanup",
+      "eleven-voice-isolator"
+    ],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Removes background noise while preserving clear spoken audio",
+    "input_modalities": [
+      "audio",
+      "video"
+    ],
+    "name": "elevenlabs/voice-isolator",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.002"
+    },
+    "publisher": "ElevenLabs",
+    "supported_endpoints": [
+      "/v1/audio/voice-isolator"
+    ],
+    "title": "ElevenLabs Voice Isolator"
+  },
+  {
     "added_date": 1787097600000,
     "aliases": [
-      "fish-audio/s2.1-pro"
+      "fish-audio-s2.1-pro"
     ],
-    "brand": "Fish Audio",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -694,7 +787,7 @@
     "input_modalities": [
       "text"
     ],
-    "name": "fish-audio-s2.1-pro",
+    "name": "fish-audio/s2.1-pro",
     "output_modalities": [
       "audio"
     ],
@@ -703,6 +796,7 @@
       "completionAudioTokens": "0.000015",
       "currency": "pollen"
     },
+    "publisher": "Fish Audio",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
@@ -710,116 +804,34 @@
     "title": "Fish Audio S2.1 Pro"
   },
   {
-    "added_date": 1787097600000,
+    "added_date": 1784851200000,
     "aliases": [
-      "openai/gpt-transcribe"
+      "lyria",
+      "lyria-3",
+      "lyria-3-clip"
     ],
-    "brand": "OpenAI",
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Fast multilingual speech recognition with optional language and prompt context",
-    "input_modalities": [
-      "audio"
-    ],
-    "name": "gpt-transcribe",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "pricing": {
-      "currency": "pollen",
-      "promptAudioSeconds": "0.00005625"
-    },
-    "supported_endpoints": [
-      "/v1/audio/transcriptions"
-    ],
-    "title": "GPT Transcribe"
-  },
-  {
-    "added_date": 1786060800000,
-    "aliases": [
-      "x-ai/grok-transcribe"
-    ],
-    "brand": "xAI",
-    "capabilities": [],
-    "category": "audio",
-    "community": false,
-    "description": "Fast multilingual speech recognition with word timestamps, speaker labels, and text formatting",
-    "input_modalities": [
-      "audio"
-    ],
-    "name": "grok-transcribe",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "currency": "pollen",
-      "promptAudioSeconds": "0.000027777778"
-    },
-    "supported_endpoints": [
-      "/v1/audio/transcriptions"
-    ],
-    "title": "Grok Transcribe"
-  },
-  {
-    "added_date": 1787097600000,
-    "aliases": [
-      "x-ai/grok-tts"
-    ],
-    "brand": "xAI",
-    "capabilities": [],
-    "category": "audio",
-    "community": false,
-    "description": "Expressive multilingual speech across 28 built-in voices with inline style controls",
+    "description": "30-second music with vocals, lyrics, or instrumental arrangements",
     "input_modalities": [
       "text"
     ],
-    "name": "grok-tts",
+    "name": "google/lyria-3-clip-preview",
     "output_modalities": [
       "audio"
     ],
     "paid_only": true,
     "pricing": {
-      "completionAudioTokens": "0.000015",
+      "completionAudioTokens": "0.04",
       "currency": "pollen"
     },
+    "publisher": "Google",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
     ],
-    "title": "Grok TTS",
-    "voices": [
-      "altair",
-      "ara",
-      "atlas",
-      "aurora",
-      "carina",
-      "castor",
-      "celeste",
-      "cosmo",
-      "eve",
-      "helios",
-      "helix",
-      "iris",
-      "kepler",
-      "leo",
-      "liora",
-      "lumen",
-      "luna",
-      "lux",
-      "naksh",
-      "orion",
-      "perseus",
-      "rex",
-      "rigel",
-      "sal",
-      "sirius",
-      "ursa",
-      "zagan",
-      "zenith"
-    ]
+    "title": "Lyria 3 Clip Preview"
   },
   {
     "added_date": 1785456000000,
@@ -827,9 +839,8 @@
       "kokoro-82m",
       "kokoro-tts",
       "hexgrad-kokoro-82m",
-      "hexgrad/kokoro-82m"
+      "kokoro"
     ],
-    "brand": "Hexgrad",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -837,7 +848,7 @@
     "input_modalities": [
       "text"
     ],
-    "name": "kokoro",
+    "name": "hexgrad/kokoro-82m",
     "output_modalities": [
       "audio"
     ],
@@ -846,6 +857,7 @@
       "completionAudioTokens": "0.00000062",
       "currency": "pollen"
     },
+    "publisher": "Hexgrad",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
@@ -909,43 +921,67 @@
     ]
   },
   {
-    "added_date": 1784851200000,
+    "added_date": 1787097600000,
     "aliases": [
-      "lyria",
-      "lyria-3",
-      "google/lyria-3-clip-preview"
+      "gpt-transcribe"
     ],
-    "brand": "Google",
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "30-second music with vocals, lyrics, or instrumental arrangements",
+    "description": "Fast multilingual speech recognition with optional language and prompt context",
     "input_modalities": [
-      "text"
-    ],
-    "name": "lyria-3-clip",
-    "output_modalities": [
       "audio"
     ],
-    "paid_only": true,
-    "pricing": {
-      "completionAudioTokens": "0.04",
-      "currency": "pollen"
-    },
-    "supported_endpoints": [
-      "/audio/{text}",
-      "/v1/audio/speech"
+    "name": "openai/gpt-transcribe",
+    "output_modalities": [
+      "text"
     ],
-    "title": "Lyria 3 Clip Preview"
+    "paid_only": false,
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.00005625"
+    },
+    "publisher": "OpenAI",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "title": "GPT Transcribe"
+  },
+  {
+    "added_date": 1770508800000,
+    "aliases": [
+      "whisper-1",
+      "whisper-large-v3",
+      "whisper"
+    ],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Accurate, affordable speech-to-text transcription",
+    "input_modalities": [
+      "audio"
+    ],
+    "name": "openai/whisper-large-v3",
+    "output_modalities": [
+      "text"
+    ],
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.000045277778"
+    },
+    "publisher": "OpenAI",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "title": "Whisper Large V3"
   },
   {
     "added_date": 1776816000000,
     "aliases": [
       "qwen3-tts",
       "qwen3-tts-flash",
-      "qwen/qwen3-tts-flash"
+      "qwen-tts"
     ],
-    "brand": "Qwen",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -953,7 +989,7 @@
     "input_modalities": [
       "text"
     ],
-    "name": "qwen-tts",
+    "name": "qwen/qwen3-tts-flash",
     "output_modalities": [
       "audio"
     ],
@@ -963,6 +999,7 @@
       "completionAudioTokens": "0.00001",
       "currency": "pollen"
     },
+    "publisher": "Qwen",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
@@ -974,9 +1011,8 @@
     "aliases": [
       "qwen3-tts-instruct",
       "qwen3-tts-instruct-flash",
-      "qwen/qwen3-tts-instruct-flash"
+      "qwen-tts-instruct"
     ],
-    "brand": "Qwen",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -984,7 +1020,7 @@
     "input_modalities": [
       "text"
     ],
-    "name": "qwen-tts-instruct",
+    "name": "qwen/qwen3-tts-instruct-flash",
     "output_modalities": [
       "audio"
     ],
@@ -993,6 +1029,7 @@
       "completionAudioTokens": "0.0000115",
       "currency": "pollen"
     },
+    "publisher": "Qwen",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
@@ -1000,42 +1037,51 @@
     "title": "Qwen3-TTS Instruct Flash"
   },
   {
-    "added_date": 1770940800000,
+    "added_date": 1784764800000,
     "aliases": [
-      "scribe_v2",
-      "scribe-v2",
-      "elevenlabs/scribe-v2"
+      "csm",
+      "sesame-csm",
+      "sesame-csm-1b",
+      "csm-1b"
     ],
-    "brand": "ElevenLabs",
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Transcription in 90+ languages with speaker labels",
+    "description": "English conversational speech with six reading and dialogue voices",
     "input_modalities": [
-      "audio"
-    ],
-    "name": "scribe",
-    "output_modalities": [
       "text"
+    ],
+    "name": "sesame/csm-1b",
+    "output_modalities": [
+      "audio"
     ],
     "paid_only": true,
     "pricing": {
-      "currency": "pollen",
-      "promptAudioSeconds": "0.000061111111"
+      "completionAudioTokens": "0.000007",
+      "currency": "pollen"
     },
+    "publisher": "Sesame",
     "supported_endpoints": [
-      "/v1/audio/transcriptions"
+      "/audio/{text}",
+      "/v1/audio/speech"
     ],
-    "title": "Scribe v2"
+    "title": "CSM 1B",
+    "voices": [
+      "conversational_a",
+      "conversational_b",
+      "read_speech_a",
+      "read_speech_b",
+      "read_speech_c",
+      "read_speech_d"
+    ]
   },
   {
     "added_date": 1782172800000,
     "aliases": [
-      "stable-audio-3",
       "stable-audio-large",
-      "stability-ai/stable-audio-3"
+      "stable-audio-3-large",
+      "stable-audio-3"
     ],
-    "brand": "Stability AI",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -1045,7 +1091,7 @@
       "text",
       "audio"
     ],
-    "name": "stable-audio-3-large",
+    "name": "stability-ai/stable-audio-3",
     "output_modalities": [
       "audio"
     ],
@@ -1054,6 +1100,7 @@
       "completionAudioTokens": "0.26",
       "currency": "pollen"
     },
+    "publisher": "Stability AI",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
@@ -1066,9 +1113,9 @@
       "stable-audio",
       "stability-audio",
       "stable-audio-2.5",
-      "stability-ai/stable-audio-3-medium"
+      "stable-audio-3-medium",
+      "fal-ai/stable-audio-3/medium"
     ],
-    "brand": "Stability AI",
     "capabilities": [],
     "category": "audio",
     "community": false,
@@ -1078,7 +1125,7 @@
       "text",
       "audio"
     ],
-    "name": "stable-audio-3-medium",
+    "name": "stability-ai/stable-audio-3-medium",
     "output_modalities": [
       "audio"
     ],
@@ -1088,6 +1135,7 @@
       "currency": "pollen",
       "promptAudioTokens": "0.0041"
     },
+    "publisher": "Stability AI",
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech"
@@ -1095,135 +1143,88 @@
     "title": "Stable Audio 3 Medium"
   },
   {
-    "added_date": 1777680000000,
+    "added_date": 1786060800000,
     "aliases": [
-      "assemblyai-universal-2",
-      "assemblyai-u2",
-      "assemblyai/universal-2"
+      "grok-transcribe"
     ],
-    "brand": "AssemblyAI",
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Fast transcription with support for 99 languages",
+    "description": "Fast multilingual speech recognition with word timestamps, speaker labels, and text formatting",
     "input_modalities": [
       "audio"
     ],
-    "name": "universal-2",
+    "name": "x-ai/grok-transcribe",
     "output_modalities": [
       "text"
     ],
+    "paid_only": true,
     "pricing": {
       "currency": "pollen",
-      "promptAudioSeconds": "0.000041666667"
+      "promptAudioSeconds": "0.000027777778"
     },
-    "pricing_default_label": "Standard transcription",
-    "pricing_variants": [
-      {
-        "description": "Applies when response_format is diarized_json.",
-        "label": "Speaker diarization",
-        "name": "diarization",
-        "pricing": {
-          "currency": "pollen",
-          "promptAudioSeconds": "0.000047222222"
-        }
-      }
-    ],
+    "publisher": "xAI",
     "supported_endpoints": [
       "/v1/audio/transcriptions"
     ],
-    "title": "AssemblyAI Universal-2"
+    "title": "Grok Transcribe"
   },
   {
-    "added_date": 1777680000000,
+    "added_date": 1787097600000,
     "aliases": [
-      "universal-3-pro",
-      "universal-3-5-pro",
-      "assemblyai-universal-3.5-pro",
-      "assemblyai-universal-3-5-pro",
-      "assemblyai-u3.5-pro",
-      "assemblyai-universal-3-pro",
-      "assemblyai-u3-pro",
-      "assemblyai-pro",
-      "assemblyai/universal-3.5-pro"
+      "grok-tts"
     ],
-    "brand": "AssemblyAI",
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "High-accuracy transcription with multilingual code switching and prompts",
+    "description": "Expressive multilingual speech across 28 built-in voices with inline style controls",
     "input_modalities": [
-      "audio"
-    ],
-    "name": "universal-3.5-pro",
-    "output_modalities": [
       "text"
     ],
-    "pricing": {
-      "currency": "pollen",
-      "promptAudioSeconds": "0.000058333333"
-    },
-    "pricing_default_label": "Standard transcription",
-    "pricing_variants": [
-      {
-        "description": "Applies when a prompt is provided.",
-        "label": "Prompting",
-        "name": "prompting",
-        "pricing": {
-          "currency": "pollen",
-          "promptAudioSeconds": "0.000072222222"
-        }
-      },
-      {
-        "description": "Applies when response_format is diarized_json.",
-        "label": "Speaker diarization",
-        "name": "diarization",
-        "pricing": {
-          "currency": "pollen",
-          "promptAudioSeconds": "0.000063888889"
-        }
-      },
-      {
-        "description": "Applies when a prompt is provided and response_format is diarized_json.",
-        "label": "Prompting and speaker diarization",
-        "name": "prompting_diarization",
-        "pricing": {
-          "currency": "pollen",
-          "promptAudioSeconds": "0.000077777778"
-        }
-      }
-    ],
-    "supported_endpoints": [
-      "/v1/audio/transcriptions"
-    ],
-    "title": "AssemblyAI Universal-3.5 Pro"
-  },
-  {
-    "added_date": 1770508800000,
-    "aliases": [
-      "whisper-1",
-      "whisper-large-v3",
-      "openai/whisper-large-v3"
-    ],
-    "brand": "OpenAI",
-    "capabilities": [],
-    "category": "audio",
-    "community": false,
-    "description": "Accurate, affordable speech-to-text transcription",
-    "input_modalities": [
+    "name": "x-ai/grok-tts",
+    "output_modalities": [
       "audio"
     ],
-    "name": "whisper",
-    "output_modalities": [
-      "text"
-    ],
+    "paid_only": true,
     "pricing": {
-      "currency": "pollen",
-      "promptAudioSeconds": "0.000045277778"
+      "completionAudioTokens": "0.000015",
+      "currency": "pollen"
     },
+    "publisher": "xAI",
     "supported_endpoints": [
-      "/v1/audio/transcriptions"
+      "/audio/{text}",
+      "/v1/audio/speech"
     ],
-    "title": "Whisper Large V3"
+    "title": "Grok TTS",
+    "voices": [
+      "altair",
+      "ara",
+      "atlas",
+      "aurora",
+      "carina",
+      "castor",
+      "celeste",
+      "cosmo",
+      "eve",
+      "helios",
+      "helix",
+      "iris",
+      "kepler",
+      "leo",
+      "liora",
+      "lumen",
+      "luna",
+      "lux",
+      "naksh",
+      "orion",
+      "perseus",
+      "rex",
+      "rigel",
+      "sal",
+      "sirius",
+      "ursa",
+      "zagan",
+      "zenith"
+    ]
   }
 ]

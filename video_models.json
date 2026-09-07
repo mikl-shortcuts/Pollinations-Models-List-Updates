@@ -5,7 +5,6 @@
       "community/NamanSoni78/Seedance-2.5"
     ],
     "alpha": true,
-    "brand": "APIs For Devs & Students",
     "brand_url": "https://api.namansoni.in/",
     "capabilities": [],
     "category": "video",
@@ -23,6 +22,7 @@
       "completionVideoSeconds": "0.4",
       "currency": "pollen"
     },
+    "publisher": "APIs For Devs & Students",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/images/generations",
@@ -32,166 +32,12 @@
     "title": "Seedance 2.5 HIGH"
   },
   {
-    "added_date": 1787875200000,
-    "aliases": [],
-    "brand": "Google",
-    "capabilities": [],
-    "category": "video",
-    "community": false,
-    "default_duration": 5,
-    "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "max_duration": 10,
-    "max_reference_images": 2,
-    "min_duration": 3,
-    "name": "google/gemini-omni-1.1-flash",
-    "output_modalities": [
-      "video"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionTextTokens": "0.000009",
-      "completionVideoTokens": "0.0000175",
-      "currency": "pollen",
-      "promptImageTokens": "0.0000015",
-      "promptTextTokens": "0.0000015"
-    },
-    "resolutions": [
-      "720p",
-      "360p",
-      "1080p",
-      "4k"
-    ],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/v1/images/edits",
-      "/image/{prompt}"
-    ],
-    "title": "Gemini Omni 1.1 Flash",
-    "video_capabilities": [
-      "start_frame",
-      "end_frame",
-      "audio_output"
-    ]
-  },
-  {
-    "added_date": 1785715200000,
-    "aliases": [
-      "x-ai/grok-imagine-video-1.5"
-    ],
-    "brand": "xAI",
-    "capabilities": [],
-    "category": "video",
-    "community": false,
-    "default_duration": 5,
-    "description": "Video from text or a start image with synchronized audio at 480p, 720p, or 1080p",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "max_duration": 15,
-    "max_reference_images": 1,
-    "min_duration": 1,
-    "name": "grok-imagine-video-1.5",
-    "output_modalities": [
-      "video",
-      "audio"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionVideoSeconds": "0.14",
-      "currency": "pollen",
-      "promptImageTokens": "0.01"
-    },
-    "pricing_default_label": "720p",
-    "pricing_variants": [
-      {
-        "description": "Applies when the requested video resolution is 480p.",
-        "label": "480p",
-        "name": "480p",
-        "pricing": {
-          "completionVideoSeconds": "0.08",
-          "currency": "pollen",
-          "promptImageTokens": "0.01"
-        }
-      },
-      {
-        "description": "Applies when the requested video resolution is 1080p.",
-        "label": "1080p",
-        "name": "1080p",
-        "pricing": {
-          "completionVideoSeconds": "0.25",
-          "currency": "pollen",
-          "promptImageTokens": "0.01"
-        }
-      }
-    ],
-    "resolutions": [
-      "720p",
-      "480p",
-      "1080p"
-    ],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/v1/images/edits",
-      "/image/{prompt}"
-    ],
-    "title": "Grok Imagine Video 1.5",
-    "video_capabilities": [
-      "start_frame",
-      "audio_output"
-    ]
-  },
-  {
-    "added_date": 1774224000000,
-    "aliases": [
-      "grok-imagine-video",
-      "x-ai/grok-imagine-video"
-    ],
-    "brand": "xAI",
-    "capabilities": [],
-    "category": "video",
-    "community": false,
-    "default_duration": 5,
-    "description": "Short videos from text or an image (720p, 1-15s)",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "max_duration": 15,
-    "max_reference_images": 1,
-    "min_duration": 1,
-    "name": "grok-video-pro",
-    "output_modalities": [
-      "video"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionVideoSeconds": "0.07",
-      "currency": "pollen",
-      "promptImageTokens": "0.002"
-    },
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/v1/images/edits",
-      "/image/{prompt}"
-    ],
-    "title": "Grok Video Pro",
-    "video_capabilities": [
-      "start_frame"
-    ]
-  },
-  {
     "added_date": 1784332800000,
     "aliases": [
       "happyhorse",
       "happy-horse-1.1",
-      "alibaba/happyhorse-1.1"
+      "happyhorse-1.1"
     ],
-    "brand": "Alibaba",
     "capabilities": [],
     "category": "video",
     "community": false,
@@ -204,7 +50,7 @@
     "max_duration": 15,
     "max_reference_images": 1,
     "min_duration": 3,
-    "name": "happyhorse-1.1",
+    "name": "alibaba/happyhorse-1.1",
     "output_modalities": [
       "video"
     ],
@@ -213,6 +59,7 @@
       "completionVideoSeconds": "0.0988",
       "currency": "pollen"
     },
+    "publisher": "Alibaba",
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits",
@@ -224,133 +71,240 @@
     ]
   },
   {
-    "added_date": 1786665600000,
+    "added_date": 1774224000000,
     "aliases": [
-      "minimax/minimax-h3"
+      "wan2.2",
+      "wan-2.2",
+      "wan-fast"
     ],
-    "brand": "MiniMax",
     "capabilities": [],
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Five-second text-to-video clips with synchronized stereo audio at 480p, 768p, or 2K",
+    "description": "Cheap 5-second silent clips at 480p — great for quick drafts",
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
     "max_duration": 5,
+    "max_reference_images": 2,
     "min_duration": 5,
-    "name": "minimax-h3",
+    "name": "alibaba/wan-2.2-fast",
     "output_modalities": [
-      "video",
-      "audio"
+      "video"
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.05",
+      "completionVideoSeconds": "0.01",
       "currency": "pollen"
     },
-    "pricing_default_label": "480p",
-    "pricing_variants": [
-      {
-        "description": "Applies when the requested video resolution is 768p.",
-        "label": "768p",
-        "name": "768p",
-        "pricing": {
-          "completionVideoSeconds": "0.06",
-          "currency": "pollen"
-        }
-      },
-      {
-        "description": "Applies when the requested video resolution is 2K.",
-        "label": "2K",
-        "name": "2k",
-        "pricing": {
-          "completionVideoSeconds": "0.13",
-          "currency": "pollen"
-        }
-      }
-    ],
-    "resolutions": [
-      "480p",
-      "768p",
-      "2k"
-    ],
+    "publisher": "Alibaba",
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits",
       "/image/{prompt}"
     ],
-    "title": "MiniMax H3",
+    "title": "Wan 2.2",
     "video_capabilities": [
-      "audio_output"
+      "start_frame",
+      "end_frame"
     ]
   },
   {
-    "added_date": 1788480000000,
-    "aliases": [],
+    "added_date": 1768953600000,
+    "aliases": [
+      "wan2.6",
+      "wan-i2v",
+      "wan"
+    ],
     "allowed_durations": [
       5,
       10,
       15
     ],
-    "brand": "MiniMax",
     "capabilities": [],
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p or 768p",
+    "description": "Video with sound from text or an image (720p, 5/10/15s clips)",
     "input_modalities": [
       "text",
       "image"
     ],
     "max_duration": 15,
-    "max_reference_images": 2,
+    "max_reference_images": 1,
     "min_duration": 5,
-    "name": "minimax/minimax-h3-max-turbo",
+    "name": "alibaba/wan-2.6",
+    "output_modalities": [
+      "video"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.1",
+      "currency": "pollen"
+    },
+    "publisher": "Alibaba",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}"
+    ],
+    "title": "Wan 2.6",
+    "video_capabilities": [
+      "start_frame",
+      "audio_output"
+    ]
+  },
+  {
+    "added_date": 1779753600000,
+    "aliases": [
+      "wan2.7",
+      "wan-2.7",
+      "wan-pro-1080p",
+      "wan2.7-1080p",
+      "wan-pro-1080",
+      "wan-pro"
+    ],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "max_duration": 15,
+    "max_reference_images": 2,
+    "min_duration": 2,
+    "name": "alibaba/wan-2.7",
     "output_modalities": [
       "video",
       "audio"
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.00625",
+      "completionVideoSeconds": "0.1",
       "currency": "pollen"
     },
-    "pricing_default_label": "480p",
+    "pricing_default_label": "720p",
     "pricing_variants": [
       {
-        "description": "Applies when the requested video resolution is 768p.",
-        "label": "768p",
-        "name": "768p",
+        "description": "Applies to 1080p requests without an input image.",
+        "label": "1080p text-to-video",
+        "name": "1080p",
         "pricing": {
-          "completionVideoSeconds": "0.01",
+          "completionVideoSeconds": "0.1",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Applies to 1080p requests with an input image.",
+        "label": "1080p image-to-video",
+        "name": "1080p_image",
+        "pricing": {
+          "completionVideoSeconds": "0.15",
           "currency": "pollen"
         }
       }
     ],
+    "publisher": "Alibaba",
     "resolutions": [
-      "480p",
-      "768p"
+      "720p",
+      "1080p"
     ],
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits",
       "/image/{prompt}"
     ],
-    "title": "MiniMax H3 Max Turbo",
+    "title": "Wan 2.7",
     "video_capabilities": [
       "start_frame",
       "end_frame",
-      "audio_output"
+      "audio_output",
+      "reference_images",
+      "reference_videos"
+    ]
+  },
+  {
+    "added_date": 1787616000000,
+    "aliases": [
+      "wan-3.0"
+    ],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
+    "input_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "max_duration": 5,
+    "max_reference_images": 2,
+    "min_duration": 5,
+    "name": "alibaba/wan-3.0",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.068",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "480p",
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 720p.",
+        "label": "720p",
+        "name": "720p",
+        "pricing": {
+          "completionVideoSeconds": "0.14",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Applies when the requested video resolution is 1080p.",
+        "label": "1080p",
+        "name": "1080p",
+        "pricing": {
+          "completionVideoSeconds": "0.28",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "Alibaba",
+    "resolutions": [
+      "480p",
+      "720p",
+      "1080p"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}"
+    ],
+    "title": "Wan 3.0",
+    "video_capabilities": [
+      "start_frame",
+      "end_frame",
+      "audio_output",
+      "reference_images",
+      "reference_videos",
+      "reference_audios"
     ]
   },
   {
     "added_date": 1774224000000,
     "aliases": [
       "amazon-nova-reel",
-      "amazon/nova-reel-v1"
+      "nova-reel"
     ],
-    "brand": "Amazon",
     "capabilities": [],
     "category": "video",
     "community": false,
@@ -364,7 +318,7 @@
     "max_duration": 120,
     "max_reference_images": 1,
     "min_duration": 6,
-    "name": "nova-reel",
+    "name": "amazon/nova-reel-v1",
     "output_modalities": [
       "video"
     ],
@@ -372,6 +326,7 @@
       "completionVideoSeconds": "0.08",
       "currency": "pollen"
     },
+    "publisher": "Amazon",
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits",
@@ -383,50 +338,56 @@
     ]
   },
   {
-    "added_date": 1773446400000,
+    "added_date": 1764806400000,
     "aliases": [
-      "pruna-video",
-      "p-video-720p",
-      "p-video-1080p",
-      "pruna-video-1080p",
-      "prunaai/p-video"
+      "seedance-pro"
     ],
-    "brand": "Pruna",
     "capabilities": [],
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Affordable video from text or an image at 720p or 1080p",
+    "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "input_modalities": [
       "text",
       "image"
     ],
     "max_duration": 10,
     "max_reference_images": 1,
-    "min_duration": 1,
-    "name": "p-video",
+    "min_duration": 2,
+    "name": "bytedance/seedance-1-pro-fast",
     "output_modalities": [
       "video"
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.02",
+      "completionVideoSeconds": "0.025",
       "currency": "pollen"
     },
     "pricing_default_label": "720p",
     "pricing_variants": [
       {
+        "description": "Applies when the requested video resolution is 480p.",
+        "label": "480p",
+        "name": "480p",
+        "pricing": {
+          "completionVideoSeconds": "0.015",
+          "currency": "pollen"
+        }
+      },
+      {
         "description": "Applies when the requested video resolution is 1080p.",
         "label": "1080p",
         "name": "1080p",
         "pricing": {
-          "completionVideoSeconds": "0.04",
+          "completionVideoSeconds": "0.06",
           "currency": "pollen"
         }
       }
     ],
+    "publisher": "ByteDance",
     "resolutions": [
       "720p",
+      "480p",
       "1080p"
     ],
     "supported_endpoints": [
@@ -434,7 +395,7 @@
       "/v1/images/edits",
       "/image/{prompt}"
     ],
-    "title": "Pruna p-video",
+    "title": "Seedance 1.0 Pro Fast",
     "video_capabilities": [
       "start_frame"
     ]
@@ -443,9 +404,8 @@
     "added_date": 1778112000000,
     "aliases": [
       "seedance-2",
-      "bytedance/seedance-2.0"
+      "seedance-2.0"
     ],
-    "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
     "community": false,
@@ -460,7 +420,7 @@
     "max_duration": 15,
     "max_reference_images": 2,
     "min_duration": 4,
-    "name": "seedance-2.0",
+    "name": "bytedance/seedance-2.0",
     "output_modalities": [
       "video",
       "audio"
@@ -482,6 +442,7 @@
         }
       }
     ],
+    "publisher": "ByteDance",
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits",
@@ -500,9 +461,8 @@
   {
     "added_date": 1786665600000,
     "aliases": [
-      "bytedance/seedance-2.0-fast"
+      "seedance-2.0-fast"
     ],
-    "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
     "community": false,
@@ -515,7 +475,7 @@
     "max_duration": 5,
     "max_reference_images": 2,
     "min_duration": 4,
-    "name": "seedance-2.0-fast",
+    "name": "bytedance/seedance-2.0-fast",
     "output_modalities": [
       "video",
       "audio"
@@ -525,6 +485,7 @@
       "completionVideoSeconds": "0.07",
       "currency": "pollen"
     },
+    "publisher": "ByteDance",
     "resolutions": [
       "480p"
     ],
@@ -543,9 +504,8 @@
   {
     "added_date": 1786665600000,
     "aliases": [
-      "bytedance/seedance-2.0-mini"
+      "seedance-2.0-mini"
     ],
-    "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
     "community": false,
@@ -558,7 +518,7 @@
     "max_duration": 10,
     "max_reference_images": 2,
     "min_duration": 4,
-    "name": "seedance-2.0-mini",
+    "name": "bytedance/seedance-2.0-mini",
     "output_modalities": [
       "video",
       "audio"
@@ -580,6 +540,7 @@
         }
       }
     ],
+    "publisher": "ByteDance",
     "resolutions": [
       "720p",
       "480p"
@@ -599,9 +560,8 @@
   {
     "added_date": 1786233600000,
     "aliases": [
-      "bytedance/seedance-2.5"
+      "seedance-2.5"
     ],
-    "brand": "ByteDance",
     "capabilities": [],
     "category": "video",
     "community": false,
@@ -616,7 +576,7 @@
     "max_duration": 4,
     "max_reference_images": 2,
     "min_duration": 4,
-    "name": "seedance-2.5",
+    "name": "bytedance/seedance-2.5",
     "output_modalities": [
       "video",
       "audio"
@@ -656,6 +616,7 @@
         }
       }
     ],
+    "publisher": "ByteDance",
     "resolutions": [
       "480p",
       "720p"
@@ -676,66 +637,49 @@
     ]
   },
   {
-    "added_date": 1764806400000,
-    "aliases": [
-      "bytedance/seedance-1-pro-fast"
-    ],
-    "brand": "ByteDance",
+    "added_date": 1787875200000,
+    "aliases": [],
     "capabilities": [],
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Video from text or a start image at 480p, 720p, or 1080p",
+    "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
     "input_modalities": [
       "text",
       "image"
     ],
     "max_duration": 10,
-    "max_reference_images": 1,
-    "min_duration": 2,
-    "name": "seedance-pro",
+    "max_reference_images": 2,
+    "min_duration": 3,
+    "name": "google/gemini-omni-1.1-flash",
     "output_modalities": [
       "video"
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.025",
-      "currency": "pollen"
+      "completionTextTokens": "0.000009",
+      "completionVideoTokens": "0.0000175",
+      "currency": "pollen",
+      "promptImageTokens": "0.0000015",
+      "promptTextTokens": "0.0000015"
     },
-    "pricing_default_label": "720p",
-    "pricing_variants": [
-      {
-        "description": "Applies when the requested video resolution is 480p.",
-        "label": "480p",
-        "name": "480p",
-        "pricing": {
-          "completionVideoSeconds": "0.015",
-          "currency": "pollen"
-        }
-      },
-      {
-        "description": "Applies when the requested video resolution is 1080p.",
-        "label": "1080p",
-        "name": "1080p",
-        "pricing": {
-          "completionVideoSeconds": "0.06",
-          "currency": "pollen"
-        }
-      }
-    ],
+    "publisher": "Google",
     "resolutions": [
       "720p",
-      "480p",
-      "1080p"
+      "360p",
+      "1080p",
+      "4k"
     ],
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits",
       "/image/{prompt}"
     ],
-    "title": "Seedance 1.0 Pro Fast",
+    "title": "Gemini Omni 1.1 Flash",
     "video_capabilities": [
-      "start_frame"
+      "start_frame",
+      "end_frame",
+      "audio_output"
     ]
   },
   {
@@ -747,14 +691,13 @@
       "veo-1080p",
       "veo-3.1-fast-1080p",
       "veo-1080",
-      "google/veo-3.1-fast"
+      "veo"
     ],
     "allowed_durations": [
       4,
       6,
       8
     ],
-    "brand": "Google",
     "capabilities": [],
     "category": "video",
     "community": false,
@@ -767,7 +710,7 @@
     "max_duration": 8,
     "max_reference_images": 2,
     "min_duration": 4,
-    "name": "veo",
+    "name": "google/veo-3.1-fast",
     "output_modalities": [
       "video"
     ],
@@ -790,6 +733,7 @@
         }
       }
     ],
+    "publisher": "Google",
     "resolutions": [
       "720p",
       "1080p"
@@ -807,89 +751,260 @@
     ]
   },
   {
-    "added_date": 1768953600000,
+    "added_date": 1786665600000,
     "aliases": [
-      "wan2.6",
-      "wan-i2v",
-      "alibaba/wan-2.6"
+      "minimax-h3"
     ],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "Five-second text-to-video clips with synchronized stereo audio at 480p, 768p, or 2K",
+    "input_modalities": [
+      "text"
+    ],
+    "max_duration": 5,
+    "min_duration": 5,
+    "name": "minimax/minimax-h3",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.05",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "480p",
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 768p.",
+        "label": "768p",
+        "name": "768p",
+        "pricing": {
+          "completionVideoSeconds": "0.06",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Applies when the requested video resolution is 2K.",
+        "label": "2K",
+        "name": "2k",
+        "pricing": {
+          "completionVideoSeconds": "0.13",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "MiniMax",
+    "resolutions": [
+      "480p",
+      "768p",
+      "2k"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}"
+    ],
+    "title": "MiniMax H3",
+    "video_capabilities": [
+      "audio_output"
+    ]
+  },
+  {
+    "added_date": 1788480000000,
+    "aliases": [],
     "allowed_durations": [
       5,
       10,
       15
     ],
-    "brand": "Alibaba",
     "capabilities": [],
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Video with sound from text or an image (720p, 5/10/15s clips)",
+    "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p or 768p",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_duration": 15,
+    "max_reference_images": 2,
+    "min_duration": 5,
+    "name": "minimax/minimax-h3-max-turbo",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.00625",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "480p",
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 768p.",
+        "label": "768p",
+        "name": "768p",
+        "pricing": {
+          "completionVideoSeconds": "0.01",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "MiniMax",
+    "resolutions": [
+      "480p",
+      "768p"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}"
+    ],
+    "title": "MiniMax H3 Max Turbo",
+    "video_capabilities": [
+      "start_frame",
+      "end_frame",
+      "audio_output"
+    ]
+  },
+  {
+    "added_date": 1773446400000,
+    "aliases": [
+      "pruna-video",
+      "p-video-720p",
+      "p-video-1080p",
+      "pruna-video-1080p",
+      "p-video"
+    ],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "Affordable video from text or an image at 720p or 1080p",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_duration": 10,
+    "max_reference_images": 1,
+    "min_duration": 1,
+    "name": "prunaai/p-video",
+    "output_modalities": [
+      "video"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.02",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "720p",
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 1080p.",
+        "label": "1080p",
+        "name": "1080p",
+        "pricing": {
+          "completionVideoSeconds": "0.04",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "Pruna",
+    "resolutions": [
+      "720p",
+      "1080p"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}"
+    ],
+    "title": "Pruna p-video",
+    "video_capabilities": [
+      "start_frame"
+    ]
+  },
+  {
+    "added_date": 1774224000000,
+    "aliases": [
+      "grok-imagine-video",
+      "grok-video-pro"
+    ],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "Short videos from text or an image (720p, 1-15s)",
     "input_modalities": [
       "text",
       "image"
     ],
     "max_duration": 15,
     "max_reference_images": 1,
-    "min_duration": 5,
-    "name": "wan",
+    "min_duration": 1,
+    "name": "x-ai/grok-imagine-video",
     "output_modalities": [
       "video"
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.1",
-      "currency": "pollen"
+      "completionVideoSeconds": "0.07",
+      "currency": "pollen",
+      "promptImageTokens": "0.002"
     },
+    "publisher": "xAI",
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits",
       "/image/{prompt}"
     ],
-    "title": "Wan 2.6",
+    "title": "Grok Video Pro",
     "video_capabilities": [
-      "start_frame",
-      "audio_output"
+      "start_frame"
     ]
   },
   {
-    "added_date": 1787616000000,
+    "added_date": 1785715200000,
     "aliases": [
-      "alibaba/wan-3.0"
+      "grok-imagine-video-1.5"
     ],
-    "brand": "Alibaba",
     "capabilities": [],
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
+    "description": "Video from text or a start image with synchronized audio at 480p, 720p, or 1080p",
     "input_modalities": [
       "text",
-      "image",
-      "video",
-      "audio"
+      "image"
     ],
-    "max_duration": 5,
-    "max_reference_images": 2,
-    "min_duration": 5,
-    "name": "wan-3.0",
+    "max_duration": 15,
+    "max_reference_images": 1,
+    "min_duration": 1,
+    "name": "x-ai/grok-imagine-video-1.5",
     "output_modalities": [
       "video",
       "audio"
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.068",
-      "currency": "pollen"
+      "completionVideoSeconds": "0.14",
+      "currency": "pollen",
+      "promptImageTokens": "0.01"
     },
-    "pricing_default_label": "480p",
+    "pricing_default_label": "720p",
     "pricing_variants": [
       {
-        "description": "Applies when the requested video resolution is 720p.",
-        "label": "720p",
-        "name": "720p",
+        "description": "Applies when the requested video resolution is 480p.",
+        "label": "480p",
+        "name": "480p",
         "pricing": {
-          "completionVideoSeconds": "0.14",
-          "currency": "pollen"
+          "completionVideoSeconds": "0.08",
+          "currency": "pollen",
+          "promptImageTokens": "0.01"
         }
       },
       {
@@ -897,14 +1012,16 @@
         "label": "1080p",
         "name": "1080p",
         "pricing": {
-          "completionVideoSeconds": "0.28",
-          "currency": "pollen"
+          "completionVideoSeconds": "0.25",
+          "currency": "pollen",
+          "promptImageTokens": "0.01"
         }
       }
     ],
+    "publisher": "xAI",
     "resolutions": [
+      "720p",
       "480p",
-      "720p",
       "1080p"
     ],
     "supported_endpoints": [
@@ -912,127 +1029,10 @@
       "/v1/images/edits",
       "/image/{prompt}"
     ],
-    "title": "Wan 3.0",
+    "title": "Grok Imagine Video 1.5",
     "video_capabilities": [
       "start_frame",
-      "end_frame",
-      "audio_output",
-      "reference_images",
-      "reference_videos",
-      "reference_audios"
-    ]
-  },
-  {
-    "added_date": 1774224000000,
-    "aliases": [
-      "wan2.2",
-      "wan-2.2",
-      "alibaba/wan-2.2-fast"
-    ],
-    "brand": "Alibaba",
-    "capabilities": [],
-    "category": "video",
-    "community": false,
-    "default_duration": 5,
-    "description": "Cheap 5-second silent clips at 480p — great for quick drafts",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "max_duration": 5,
-    "max_reference_images": 2,
-    "min_duration": 5,
-    "name": "wan-fast",
-    "output_modalities": [
-      "video"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionVideoSeconds": "0.01",
-      "currency": "pollen"
-    },
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/v1/images/edits",
-      "/image/{prompt}"
-    ],
-    "title": "Wan 2.2",
-    "video_capabilities": [
-      "start_frame",
-      "end_frame"
-    ]
-  },
-  {
-    "added_date": 1779753600000,
-    "aliases": [
-      "wan2.7",
-      "wan-2.7",
-      "wan-pro-1080p",
-      "wan2.7-1080p",
-      "wan-pro-1080",
-      "alibaba/wan-2.7"
-    ],
-    "brand": "Alibaba",
-    "capabilities": [],
-    "category": "video",
-    "community": false,
-    "default_duration": 5,
-    "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
-    "input_modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "max_duration": 15,
-    "max_reference_images": 2,
-    "min_duration": 2,
-    "name": "wan-pro",
-    "output_modalities": [
-      "video",
-      "audio"
-    ],
-    "paid_only": true,
-    "pricing": {
-      "completionVideoSeconds": "0.1",
-      "currency": "pollen"
-    },
-    "pricing_default_label": "720p",
-    "pricing_variants": [
-      {
-        "description": "Applies to 1080p requests without an input image.",
-        "label": "1080p text-to-video",
-        "name": "1080p",
-        "pricing": {
-          "completionVideoSeconds": "0.1",
-          "currency": "pollen"
-        }
-      },
-      {
-        "description": "Applies to 1080p requests with an input image.",
-        "label": "1080p image-to-video",
-        "name": "1080p_image",
-        "pricing": {
-          "completionVideoSeconds": "0.15",
-          "currency": "pollen"
-        }
-      }
-    ],
-    "resolutions": [
-      "720p",
-      "1080p"
-    ],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/v1/images/edits",
-      "/image/{prompt}"
-    ],
-    "title": "Wan 2.7",
-    "video_capabilities": [
-      "start_frame",
-      "end_frame",
-      "audio_output",
-      "reference_images",
-      "reference_videos"
+      "audio_output"
     ]
   }
 ]
