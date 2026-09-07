@@ -600,40 +600,6 @@
     "tools": true
   },
   {
-    "added_date": 1788023759000,
-    "aliases": [
-      "community/AkshayCoder48/deepseek"
-    ],
-    "alpha": true,
-    "brand": "FreeAIXYZ",
-    "brand_url": "https://freeaixyz4all.vercel.app/",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "FreeAIXYZ DeepSeek auto-route: best available DeepSeek model, streamed live.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "AkshayCoder48/deepseek",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "completionTextTokens": "0.00000095",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000025"
-    },
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "DeepSeek (auto-route)"
-  },
-  {
     "added_date": 1788023783000,
     "aliases": [
       "community/AkshayCoder48/deepseek-search"
@@ -939,43 +905,6 @@
       "/text/{prompt}"
     ],
     "title": "Gemini 2.5 Flash",
-    "tools": true
-  },
-  {
-    "added_date": 1788023659000,
-    "aliases": [
-      "community/AkshayCoder48/gemini-2.5-pro"
-    ],
-    "alpha": true,
-    "brand": "FreeAIXYZ",
-    "brand_url": "https://freeaixyz4all.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Google Gemini 2.5 Pro: deep reasoning for math, science and complex code. Tool calling.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "AkshayCoder48/gemini-2.5-pro",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 5,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Gemini 2.5 Pro",
     "tools": true
   },
   {
@@ -2981,45 +2910,6 @@
     "title": "MoonDream 3.1"
   },
   {
-    "added_date": 1788139758000,
-    "aliases": [
-      "community/JustScriptzz/opus-5"
-    ],
-    "alpha": true,
-    "brand": "NextRouter REborn",
-    "brand_url": "https://nextrouterfree.duckdns.org/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "JustScriptzz/opus-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00000375",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Claude Opus 5",
-    "tools": true
-  },
-  {
     "added_date": 1787327782000,
     "aliases": [
       "community/Lorodn4x/claude-sonnet-5"
@@ -3661,6 +3551,55 @@
       "/text/{prompt}"
     ],
     "title": "GLM 5.3 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1786828204000,
+    "agent": true,
+    "aliases": [
+      "community/MarcosFRG/metraxai"
+    ],
+    "alpha": true,
+    "base_model": "MarcosFRG/glm-5.3-flash",
+    "brand": "JankRouter",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning",
+      "pollinations_models",
+      "web_search"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "MetraxAI is an assistant for casual chat and entertainment. It adapts to the user and combines programming, psychology, and mathematics.",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "MarcosFRG/metraxai",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.000000195",
+      "completionTextTokens": "0.00000039",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000032",
+      "promptImageTokens": "0.00000011",
+      "promptTextTokens": "0.00000011"
+    },
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "MetraxAI",
     "tools": true
   },
   {
