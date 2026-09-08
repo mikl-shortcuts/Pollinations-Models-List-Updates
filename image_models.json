@@ -223,20 +223,10 @@
     "output_modalities": [
       "image"
     ],
-    "paid_only": true,
-    "pending_change": {
-      "effective_at": "2026-09-08T21:52:33.000Z",
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      }
-    },
+    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
-      "completionImageTokens": "0.00005",
-      "currency": "pollen",
-      "promptImageTokens": "0.00005",
-      "promptTextTokens": "0.00005"
+      "currency": "pollen"
     },
     "publisher": "APIs For Devs & Students",
     "required_safety": [],
@@ -1162,6 +1152,72 @@
       "/image/{prompt}"
     ],
     "title": "GPT Image 2"
+  },
+  {
+    "added_date": 1788825600000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "image",
+    "community": false,
+    "description": "Fast image generation and precise editing with reference images",
+    "flat_rate": false,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_reference_images": 16,
+    "name": "openai/gpt-image-2.5-flare",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.00003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000125",
+      "promptImageTokens": "0.000008",
+      "promptTextTokens": "0.000005"
+    },
+    "publisher": "OpenAI",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}"
+    ],
+    "title": "GPT Image 2.5 Flare"
+  },
+  {
+    "added_date": 1788825600000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "image",
+    "community": false,
+    "description": "Detailed image generation with precise control over reference-image edits",
+    "flat_rate": false,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_reference_images": 16,
+    "name": "openai/gpt-image-2.5-sunburst",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.00003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000125",
+      "promptImageTokens": "0.000008",
+      "promptTextTokens": "0.000005"
+    },
+    "publisher": "OpenAI",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}"
+    ],
+    "title": "GPT Image 2.5 Sunburst"
   },
   {
     "added_date": 1773446400000,
