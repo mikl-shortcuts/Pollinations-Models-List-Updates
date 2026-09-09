@@ -100,6 +100,41 @@
     "title": "FLUX.2 Klein 4B"
   },
   {
+    "added_date": 1787195461000,
+    "aliases": [
+      "community/MarcosFRG/lucid-origin"
+    ],
+    "alpha": true,
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "Hyper-realistic creative engine with sharp text rendering — Leonardo's most prompt-responsive model for dynamic, design-ready Full HD visuals",
+    "flat_rate": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "MarcosFRG/lucid-origin",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 6,
+    "pricing": {
+      "completionImageTokens": "0.01",
+      "currency": "pollen"
+    },
+    "publisher": "JankRouter",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits"
+    ],
+    "title": "Leonardo Lucid Origin"
+  },
+  {
     "added_date": 1788638191000,
     "aliases": [
       "community/MarcosFRG/lucid-origin:paid"
@@ -120,17 +155,9 @@
       "image"
     ],
     "paid_only": true,
-    "pending_change": {
-      "effective_at": "2026-09-09T02:28:39.000Z",
-      "paid_only": true,
-      "pricing": {
-        "completionImageTokens": "0.005",
-        "currency": "pollen"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionImageTokens": "0.002",
+      "completionImageTokens": "0.005",
       "currency": "pollen"
     },
     "publisher": "JankRouter",
@@ -211,6 +238,41 @@
       "/v1/images/edits"
     ],
     "title": "Leonardo Phoenix 1.0 (Paid)"
+  },
+  {
+    "added_date": 1787598951000,
+    "aliases": [
+      "community/MarcosFRG/sdxl-lightning"
+    ],
+    "alpha": true,
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "Ultra-fast distilled text-to-image engine — generates high-quality 1024px visuals in just 1 to 8 steps without sacrificing fidelity",
+    "flat_rate": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "MarcosFRG/sdxl-lightning",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 6,
+    "pricing": {
+      "completionImageTokens": "0.0014",
+      "currency": "pollen"
+    },
+    "publisher": "JankRouter",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits"
+    ],
+    "title": "Stable Diffusion XL Lightning"
   },
   {
     "added_date": 1788451362000,
@@ -1493,6 +1555,150 @@
     "title": "Rekty Dev V2"
   },
   {
+    "added_date": 1788906336000,
+    "aliases": [
+      "community/sharktide/gpt-image-2.5-flare-input-cheap"
+    ],
+    "alpha": true,
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "Cheap Input, Output more expensive, Token Pricing, GPT Image 2.5 Flare",
+    "flat_rate": false,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/gpt-image-2.5-flare-input-cheap",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionImageTokens": "0.00005",
+      "currency": "pollen",
+      "promptImageTokens": "0.000005",
+      "promptTextTokens": "0.000001"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits"
+    ],
+    "title": "GPT Image 2.5 Flare (INPUT CHEAP)"
+  },
+  {
+    "added_date": 1788904711000,
+    "aliases": [
+      "community/sharktide/gpt-image-2.5-sunburst-input-cheap"
+    ],
+    "alpha": true,
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "Cheap Input, Output more expensive, Token Pricing, GPT Image 2.5 Sunburst",
+    "flat_rate": false,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/gpt-image-2.5-sunburst-input-cheap",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionImageTokens": "0.00005",
+      "currency": "pollen",
+      "promptImageTokens": "0.000005",
+      "promptTextTokens": "0.000001"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits"
+    ],
+    "title": "GPT Image 2.5 Sunburst (INPUT CHEAP)"
+  },
+  {
+    "added_date": 1788907370000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-gpt-image-2.5-flare"
+    ],
+    "alpha": true,
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "GPT Image 2.5 Flare (Flat, Per-Image Pricing)",
+    "flat_rate": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/inferenceport-ai-gpt-image-2.5-flare",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionImageTokens": "0.25",
+      "currency": "pollen"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits"
+    ],
+    "title": "GPT Image 2.5 Flare (Flat Pricing)"
+  },
+  {
+    "added_date": 1788907527000,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-gpt-image-2.5-sunburst"
+    ],
+    "alpha": true,
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "GPT Image 2.5 Sunburst (Flat, Per Generation Pricing)",
+    "flat_rate": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/inferenceport-ai-gpt-image-2.5-sunburst",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionImageTokens": "0.25",
+      "currency": "pollen"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits"
+    ],
+    "title": "GPT Image 2.5 Sunburst (Flat Pricing)"
+  },
+  {
     "added_date": 1787424224000,
     "aliases": [
       "community/sharktide/inferenceport-ai-gpt-image-router"
@@ -1591,41 +1797,6 @@
       "/v1/images/edits"
     ],
     "title": "InferencePort AI Lightning Image Plus"
-  },
-  {
-    "added_date": 1784796750000,
-    "aliases": [
-      "community/sharktide/inferenceport-ai-lightning-image-turbo"
-    ],
-    "alpha": true,
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
-    "category": "image",
-    "community": true,
-    "description": "InferencePort AI Lightning-Image Turbo",
-    "flat_rate": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "sharktide/inferenceport-ai-lightning-image-turbo",
-    "output_modalities": [
-      "image"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionImageTokens": "0.02",
-      "currency": "pollen"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
-      "/v1/images/edits"
-    ],
-    "title": "Lightning Image Turbo"
   },
   {
     "added_date": 1765152000000,

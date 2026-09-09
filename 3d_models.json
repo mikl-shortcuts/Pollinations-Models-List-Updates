@@ -90,5 +90,35 @@
       "/image/{prompt}"
     ],
     "title": "Trellis 2"
+  },
+  {
+    "added_date": 1788739200000,
+    "aliases": [
+      "asset-harvester"
+    ],
+    "capabilities": [],
+    "category": "3d",
+    "community": false,
+    "description": "Image-to-3D Gaussian Splat (PLY)",
+    "flat_rate": true,
+    "input_modalities": [
+      "image"
+    ],
+    "max_reference_images": 1,
+    "name": "nvidia/asset-harvester",
+    "output_modalities": [
+      "3d"
+    ],
+    "pricing": {
+      "completionImageTokens": "0.07",
+      "currency": "pollen"
+    },
+    "publisher": "NVIDIA",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}"
+    ],
+    "title": "NVIDIA Asset Harvester"
   }
 ]
