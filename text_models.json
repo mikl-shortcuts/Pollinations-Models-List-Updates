@@ -3602,6 +3602,61 @@
     "tools": true
   },
   {
+    "added_date": 1783111218000,
+    "aliases": [
+      "community/MarcosFRG/minimax-m3:paid"
+    ],
+    "alpha": true,
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "Autonomous coding with tool use and task decomposition; handles full-repo workflows end to end (90% OFF)",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "MarcosFRG/minimax-m3:paid",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-10T00:46:56.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionReasoningTokens": "0.00000006",
+        "completionTextTokens": "0.00000012",
+        "currency": "pollen",
+        "promptCachedTokens": "0.000000006",
+        "promptTextTokens": "0.00000003"
+      }
+    },
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000004",
+      "completionTextTokens": "0.0000008",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000004",
+      "promptTextTokens": "0.0000002"
+    },
+    "publisher": "JankRouter",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "MiniMax M3 (Paid)",
+    "tools": true
+  },
+  {
     "added_date": 1787758883000,
     "aliases": [
       "community/MarcosFRG/moondream-3.1"
@@ -11082,46 +11137,6 @@
       "/text/{prompt}"
     ],
     "title": "Grok 4.6"
-  },
-  {
-    "added_date": 1788489056000,
-    "aliases": [
-      "community/vendouple/kimi-k2.6"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 250000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "vendouple/kimi-k2.6",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000015",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000006"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Kimi K2.6",
-    "tools": true
   },
   {
     "added_date": 1785330839000,
