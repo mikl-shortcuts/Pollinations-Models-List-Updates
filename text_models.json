@@ -3872,24 +3872,13 @@
       "text"
     ],
     "paid_only": true,
-    "pending_change": {
-      "effective_at": "2026-09-09T17:06:59.000Z",
-      "paid_only": true,
-      "pricing": {
-        "completionReasoningTokens": "0.00000017625",
-        "completionTextTokens": "0.0000003525",
-        "currency": "pollen",
-        "promptImageTokens": "0.0000001125",
-        "promptTextTokens": "0.0000001125"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.0000001175",
-      "completionTextTokens": "0.000000235",
+      "completionReasoningTokens": "0.00000017625",
+      "completionTextTokens": "0.0000003525",
       "currency": "pollen",
-      "promptImageTokens": "0.000000075",
-      "promptTextTokens": "0.000000075"
+      "promptImageTokens": "0.0000001125",
+      "promptTextTokens": "0.0000001125"
     },
     "publisher": "JankRouter",
     "reasoning": true,
@@ -4352,44 +4341,6 @@
     "tools": true
   },
   {
-    "added_date": 1788077036000,
-    "aliases": [
-      "community/NamanSoni78/nemotron-3-ultra-550b-a55b"
-    ],
-    "alpha": true,
-    "brand_url": "https://api.namansoni.in/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1048576,
-    "description": "Open, efficient hybrid Mamba-Transformer MoE with 1M context, excelling in agentic reasoning, coding, planning, tool calling, and more.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "NamanSoni78/nemotron-3-ultra-550b-a55b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 40,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "APIs For Devs & Students",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "NEMOTRON-3-Ultra-550b",
-    "tools": true
-  },
-  {
     "added_date": 1787064353000,
     "aliases": [
       "community/Spit-fires/muse-glimmer"
@@ -4456,44 +4407,6 @@
       "/text/{prompt}"
     ],
     "title": "Muse Glimmer 30B",
-    "tools": true
-  },
-  {
-    "added_date": 1788189088000,
-    "aliases": [
-      "community/YoannDev90/poolside-laguna-s-2.1:free"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 262000,
-    "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "YoannDev90/poolside-laguna-s-2.1:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 30,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Free AI API",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Laguna S 2.1",
     "tools": true
   },
   {
@@ -9870,6 +9783,51 @@
       "/text/{prompt}"
     ],
     "title": "Lightning Text V2 (Router)",
+    "tools": true
+  },
+  {
+    "added_date": 1786833740000,
+    "agent": true,
+    "aliases": [
+      "community/sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge"
+    ],
+    "alpha": true,
+    "base_model": "sharktide/inferenceport-ai-lightning-text-v2",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning",
+      "pollinations_models",
+      "web_search"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "InferencePort AI Lightning Text v2 with Advanced Web Search and External Capabilities",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000075",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000075"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "Lightning Text v2 (Expanded Knowledge)",
     "tools": true
   },
   {
