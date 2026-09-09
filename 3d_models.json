@@ -28,7 +28,9 @@
     "supported_endpoints": [
       "/v1/images/generations",
       "/v1/images/edits",
-      "/image/{prompt}"
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Hyper3D Rodin 2.5"
   },
@@ -93,9 +95,7 @@
   },
   {
     "added_date": 1788739200000,
-    "aliases": [
-      "asset-harvester"
-    ],
+    "aliases": [],
     "capabilities": [],
     "category": "3d",
     "community": false,
@@ -109,6 +109,7 @@
     "output_modalities": [
       "3d"
     ],
+    "paid_only": true,
     "pricing": {
       "completionImageTokens": "0.07",
       "currency": "pollen"

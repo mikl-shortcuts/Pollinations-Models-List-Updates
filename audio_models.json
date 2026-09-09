@@ -134,7 +134,14 @@
       "text"
     ],
     "paid_only": false,
-    "per_user_rpm": 25,
+    "pending_change": {
+      "effective_at": "2026-09-09T10:44:42.000Z",
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      }
+    },
+    "per_user_rpm": null,
     "pricing": {
       "currency": "pollen",
       "promptAudioSeconds": "0.00001"
@@ -144,7 +151,7 @@
     "supported_endpoints": [
       "/v1/audio/transcriptions"
     ],
-    "title": "nova-3"
+    "title": "nova-3 (FREE)"
   },
   {
     "added_date": 1788352935000,
@@ -165,6 +172,13 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-09T10:44:08.000Z",
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "currency": "pollen",
@@ -175,7 +189,7 @@
     "supported_endpoints": [
       "/v1/audio/transcriptions"
     ],
-    "title": "whisper-large-v3"
+    "title": "whisper-large-v3 (FREE)"
   },
   {
     "added_date": 1788352753000,
@@ -196,6 +210,13 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-09T10:43:35.000Z",
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "currency": "pollen",
@@ -206,7 +227,7 @@
     "supported_endpoints": [
       "/v1/audio/transcriptions"
     ],
-    "title": "openai/whisper-large-v3-turbo (Fast)"
+    "title": "openai/whisper-large-v3-turbo (Free)"
   },
   {
     "added_date": 1777680000000,
@@ -340,7 +361,9 @@
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech",
-      "/v1/audio/speech/with-timestamps"
+      "/v1/audio/speech/with-timestamps",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "ElevenLabs Flash v2.5",
     "voices": [
@@ -475,7 +498,9 @@
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech",
-      "/v1/audio/speech/with-timestamps"
+      "/v1/audio/speech/with-timestamps",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "ElevenLabs Multilingual v2",
     "voices": [
@@ -543,7 +568,9 @@
     "publisher": "ElevenLabs",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "ElevenLabs Sound Effects"
   },
@@ -577,7 +604,9 @@
     "supported_endpoints": [
       "/audio/{text}",
       "/v1/audio/speech",
-      "/v1/audio/speech/with-timestamps"
+      "/v1/audio/speech/with-timestamps",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "ElevenLabs v3 TTS",
     "voices": [
@@ -644,7 +673,9 @@
     "publisher": "ElevenLabs",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "ElevenLabs Text to Dialogue",
     "voices": [
@@ -712,7 +743,9 @@
     "publisher": "ElevenLabs",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "ElevenLabs Music"
   },
@@ -799,7 +832,9 @@
     "publisher": "Fish Audio",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Fish Audio S2.1 Pro"
   },
@@ -829,7 +864,9 @@
     "publisher": "Google",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Lyria 3 Clip Preview"
   },
@@ -860,7 +897,9 @@
     "publisher": "Hexgrad",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Kokoro 82M",
     "voices": [
@@ -1002,7 +1041,9 @@
     "publisher": "Qwen",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Qwen3-TTS Flash"
   },
@@ -1032,7 +1073,9 @@
     "publisher": "Qwen",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Qwen3-TTS Instruct Flash"
   },
@@ -1063,7 +1106,9 @@
     "publisher": "Sesame",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "CSM 1B",
     "voices": [
@@ -1103,7 +1148,9 @@
     "publisher": "Stability AI",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Stable Audio 3 Large"
   },
@@ -1138,7 +1185,9 @@
     "publisher": "Stability AI",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Stable Audio 3 Medium"
   },
@@ -1193,7 +1242,9 @@
     "publisher": "xAI",
     "supported_endpoints": [
       "/audio/{text}",
-      "/v1/audio/speech"
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
     ],
     "title": "Grok TTS",
     "voices": [
