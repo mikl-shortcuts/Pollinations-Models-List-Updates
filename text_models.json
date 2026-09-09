@@ -3381,6 +3381,48 @@
     "tools": true
   },
   {
+    "added_date": 1783969807000,
+    "aliases": [
+      "community/MarcosFRG/glm-5.2"
+    ],
+    "alpha": true,
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "Long-horizon coding and full-codebase analysis; adjustable thinking effort for deep or quick passes (75% OFF)",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "MarcosFRG/glm-5.2",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.00000055",
+      "completionTextTokens": "0.0000011",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000035",
+      "promptTextTokens": "0.00000035"
+    },
+    "publisher": "JankRouter",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GLM 5.2",
+    "tools": true
+  },
+  {
     "added_date": 1788383838000,
     "aliases": [
       "community/MarcosFRG/glm-5.3"
@@ -3602,7 +3644,7 @@
   {
     "added_date": 1786983348000,
     "aliases": [
-      "community/MarcosFRG/nemotron-3.5-lightning"
+      "community/MarcosFRG/nemotron-3.5-lightning:paid"
     ],
     "alpha": true,
     "brand_url": "https://jankrouter.waifly.com/",
@@ -3617,7 +3659,7 @@
     "input_modalities": [
       "text"
     ],
-    "name": "MarcosFRG/nemotron-3.5-lightning",
+    "name": "MarcosFRG/nemotron-3.5-lightning:paid",
     "output_modalities": [
       "text"
     ],
@@ -3636,7 +3678,7 @@
       "/text",
       "/text/{prompt}"
     ],
-    "title": "Nemotron 3.5 Lightning",
+    "title": "Nemotron 3.5 Lightning (Paid)",
     "tools": true
   },
   {
@@ -3819,7 +3861,7 @@
     "category": "text",
     "community": true,
     "context_length": 1048576,
-    "description": "Next-gen multimodal MoE with 125B main and 6B active parameters — Qwen4 architecture delivering blazing-fast reasoning and 1M context efficiency (50% OFF)",
+    "description": "Next-gen multimodal MoE with 125B main and 6B active parameters — Qwen4 architecture delivering blazing-fast reasoning and 1M context efficiency (25% OFF)",
     "input_modalities": [
       "text",
       "image",
@@ -3830,6 +3872,17 @@
       "text"
     ],
     "paid_only": true,
+    "pending_change": {
+      "effective_at": "2026-09-09T17:06:59.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionReasoningTokens": "0.00000017625",
+        "completionTextTokens": "0.0000003525",
+        "currency": "pollen",
+        "promptImageTokens": "0.0000001125",
+        "promptTextTokens": "0.0000001125"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.0000001175",
@@ -3939,22 +3992,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-09T10:42:32.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.000005",
-        "currency": "pollen",
-        "promptCachedTokens": "0.000005",
-        "promptTextTokens": "0.000005"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.000005",
       "currency": "pollen",
-      "promptCachedTokens": "0.000001",
-      "promptTextTokens": "0.000002"
+      "promptCachedTokens": "0.000005",
+      "promptTextTokens": "0.000005"
     },
     "publisher": "APIs For Devs & Students",
     "reasoning": true,
@@ -4031,22 +4074,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-09T10:40:23.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.0000005",
-        "currency": "pollen",
-        "promptCachedTokens": "0.0000005",
-        "promptTextTokens": "0.0000005"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000025",
+      "completionTextTokens": "0.0000005",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000001",
-      "promptTextTokens": "0.00000015"
+      "promptCachedTokens": "0.0000005",
+      "promptTextTokens": "0.0000005"
     },
     "publisher": "APIs For Devs & Students",
     "reasoning": true,
@@ -4082,20 +4115,11 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-09T10:40:45.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.0000007",
-        "currency": "pollen",
-        "promptTextTokens": "0.0000007"
-      }
-    },
     "per_user_rpm": 320,
     "pricing": {
-      "completionTextTokens": "0.00000025",
+      "completionTextTokens": "0.0000007",
       "currency": "pollen",
-      "promptTextTokens": "0.0000001"
+      "promptTextTokens": "0.0000007"
     },
     "publisher": "APIs For Devs & Students",
     "reasoning": true,
@@ -4229,22 +4253,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-09T10:46:34.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.000005",
-        "currency": "pollen",
-        "promptCachedTokens": "0.000005",
-        "promptTextTokens": "0.000005"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00005",
+      "completionTextTokens": "0.000005",
       "currency": "pollen",
-      "promptCachedTokens": "0.000008",
-      "promptTextTokens": "0.00001"
+      "promptCachedTokens": "0.000005",
+      "promptTextTokens": "0.000005"
     },
     "publisher": "APIs For Devs & Students",
     "reasoning": true,
@@ -4256,6 +4270,45 @@
     ],
     "title": "OPENAI/GPT-6-ASTRA (XHIGH , DISCOUNTED)",
     "tools": true
+  },
+  {
+    "added_date": 1788951575000,
+    "aliases": [
+      "community/NamanSoni78/gpt-6-astra-pro"
+    ],
+    "alpha": true,
+    "brand_url": "https://api.namansoni.in/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "GPT 6 Astra Pro Is OpenAi's Most Capable Flagship Model.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "NamanSoni78/gpt-6-astra-pro",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionAudioTokens": "0.000012",
+      "completionReasoningTokens": "0.000008",
+      "completionTextTokens": "0.000012",
+      "currency": "pollen",
+      "promptAudioTokens": "0.000012",
+      "promptCacheWriteTokens": "0.000005",
+      "promptCachedTokens": "0.000005",
+      "promptTextTokens": "0.000012"
+    },
+    "publisher": "APIs For Devs & Students",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GPT-6-ASTRA-PRO (DISCOUNTED)"
   },
   {
     "added_date": 1788076396000,
@@ -4280,22 +4333,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-09T10:40:01.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.000003",
-        "currency": "pollen",
-        "promptCachedTokens": "0.000003",
-        "promptTextTokens": "0.000003"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.000005",
+      "completionTextTokens": "0.000003",
       "currency": "pollen",
-      "promptCachedTokens": "0.0000002",
-      "promptTextTokens": "0.0000015"
+      "promptCachedTokens": "0.000003",
+      "promptTextTokens": "0.000003"
     },
     "publisher": "APIs For Devs & Students",
     "reasoning": true,
@@ -4413,6 +4456,44 @@
       "/text/{prompt}"
     ],
     "title": "Muse Glimmer 30B",
+    "tools": true
+  },
+  {
+    "added_date": 1788189088000,
+    "aliases": [
+      "community/YoannDev90/poolside-laguna-s-2.1:free"
+    ],
+    "alpha": true,
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262000,
+    "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "YoannDev90/poolside-laguna-s-2.1:free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "Free AI API",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Laguna S 2.1",
     "tools": true
   },
   {
@@ -9943,6 +10024,47 @@
       "/text/{prompt}"
     ],
     "title": "Falcon H1 Tiny 90M Instruct"
+  },
+  {
+    "added_date": 1788708027000,
+    "agent": true,
+    "aliases": [
+      "community/smplstuff/title-generator"
+    ],
+    "alpha": true,
+    "base_model": "openai/gpt-5-nano",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 400000,
+    "description": "Generates concise, relevant titles from arbitrary text",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "smplstuff/title-generator",
+    "output_modalities": [
+      "text"
+    ],
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000000375",
+      "promptTextTokens": "0.0000000375"
+    },
+    "publisher": "Community",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "Title Generator",
+    "tools": true
   },
   {
     "added_date": 1780012800000,
