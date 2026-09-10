@@ -1760,6 +1760,45 @@
     "title": "Auto Router 1"
   },
   {
+    "added_date": 1789070997000,
+    "aliases": [
+      "community/Catniti/nemotron-3.5-lightning"
+    ],
+    "alpha": true,
+    "brand_url": "https://t.me/CatnitiAI_bot",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "Catniti/nemotron-3.5-lightning",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000003",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000005",
+      "promptTextTokens": "0.0000002"
+    },
+    "publisher": "Catniti AI",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Nemotron 3.5 lightning",
+    "tools": true
+  },
+  {
     "added_date": 1785588654000,
     "aliases": [
       "community/Catniti/qwen3.7-flash"
@@ -1794,6 +1833,137 @@
       "/text/{prompt}"
     ],
     "title": "Qwen3.7 flash"
+  },
+  {
+    "added_date": 1789065289000,
+    "aliases": [
+      "community/CloudCompile/auto"
+    ],
+    "alpha": true,
+    "brand_url": "https://instagram.com/@sneezejayhauser",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "CloudCompile/auto",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000001",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000001",
+      "promptTextTokens": "0.0000001"
+    },
+    "publisher": "SneezeJay",
+    "required_safety": [
+      "privacy",
+      "secrets",
+      "shield"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Auto Router",
+    "tools": true
+  },
+  {
+    "added_date": 1789064885000,
+    "aliases": [
+      "community/CloudCompile/gemma-4-26b"
+    ],
+    "alpha": true,
+    "brand_url": "https://instagram.com/@sneezejayhauser",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262144,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "CloudCompile/gemma-4-26b",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000005",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000001",
+      "promptTextTokens": "0.00000001"
+    },
+    "publisher": "SneezeJay",
+    "reasoning": true,
+    "required_safety": [
+      "privacy",
+      "secrets",
+      "shield"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Gemma 4 26B",
+    "tools": true
+  },
+  {
+    "added_date": 1789064565000,
+    "aliases": [
+      "community/CloudCompile/glm-5.3"
+    ],
+    "alpha": true,
+    "brand_url": "https://instagram.com/@sneezejayhauser",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000500,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "CloudCompile/glm-5.3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.00000001",
+      "completionTextTokens": "0.0000002",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000005",
+      "promptTextTokens": "0.0000001"
+    },
+    "publisher": "SneezeJay",
+    "reasoning": true,
+    "required_safety": [
+      "privacy",
+      "secrets",
+      "shield"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GLM 5.3",
+    "tools": true
   },
   {
     "added_date": 1787671293000,
@@ -2914,22 +3084,12 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-10T21:56:55.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionReasoningTokens": "0.0000011",
-        "completionTextTokens": "0.0000022",
-        "currency": "pollen",
-        "promptTextTokens": "0.0000007"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionReasoningTokens": "0.00000154",
-      "completionTextTokens": "0.00000308",
+      "completionReasoningTokens": "0.0000011",
+      "completionTextTokens": "0.0000022",
       "currency": "pollen",
-      "promptTextTokens": "0.00000098"
+      "promptTextTokens": "0.0000007"
     },
     "publisher": "JankRouter",
     "reasoning": true,
@@ -3025,6 +3185,51 @@
       "/text/{prompt}"
     ],
     "title": "GPT 5.6 Luna (Paid)",
+    "tools": true
+  },
+  {
+    "added_date": 1789064356000,
+    "aliases": [
+      "community/MarcosFRG/gpt-6-astra:paid"
+    ],
+    "alpha": true,
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1050000,
+    "description": "OpenAI's flagship frontier model — state-of-the-art computer use, advanced reasoning, and 1M+ context for demanding end-to-end work (80% OFF)",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "MarcosFRG/gpt-6-astra:paid",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.000005",
+      "completionTextTokens": "0.00001",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.0000025",
+      "promptCachedTokens": "0.0000002",
+      "promptTextTokens": "0.000002"
+    },
+    "publisher": "JankRouter",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GPT 6 Astra (Paid)",
     "tools": true
   },
   {
