@@ -2290,7 +2290,7 @@
     "category": "text",
     "community": true,
     "context_length": 1048576,
-    "description": "Advanced reasoning and strong coding for agentic workflows with massive context at bargain prices (96% OFF)",
+    "description": "Advanced reasoning and strong coding for agentic workflows with massive context at bargain prices (98% OFF)",
     "input_modalities": [
       "text"
     ],
@@ -2299,6 +2299,16 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-10T19:16:00.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionTextTokens": "0.0000000132",
+        "currency": "pollen",
+        "promptCachedTokens": "0.00000000014",
+        "promptTextTokens": "0.0000000044"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000000264",
@@ -2331,7 +2341,7 @@
     "category": "text",
     "community": true,
     "context_length": 1048576,
-    "description": "Advanced reasoning and strong coding for agentic workflows with massive context at bargain prices (99% OFF)",
+    "description": "Advanced reasoning and strong coding for agentic workflows with massive context at bargain prices (99.8% OFF)",
     "input_modalities": [
       "text"
     ],
@@ -2340,6 +2350,15 @@
       "text"
     ],
     "paid_only": true,
+    "pending_change": {
+      "effective_at": "2026-09-10T19:12:56.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionTextTokens": "0.00000000132",
+        "currency": "pollen",
+        "promptTextTokens": "0.00000000044"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000000088",
@@ -2847,6 +2866,59 @@
       "/text/{prompt}"
     ],
     "title": "GLM 4.6V Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1783969807000,
+    "aliases": [
+      "community/MarcosFRG/glm-5.2:paid"
+    ],
+    "alpha": true,
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "description": "Long-horizon coding and full-codebase analysis; adjustable thinking effort for deep or quick passes (80% OFF)",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "MarcosFRG/glm-5.2:paid",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-10T18:11:10.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionReasoningTokens": "0.00000044",
+        "completionTextTokens": "0.00000088",
+        "currency": "pollen",
+        "promptCachedTokens": "0.000000028",
+        "promptTextTokens": "0.00000028"
+      }
+    },
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.00000055",
+      "completionTextTokens": "0.0000011",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000035",
+      "promptTextTokens": "0.00000035"
+    },
+    "publisher": "JankRouter",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GLM 5.2 (Paid)",
     "tools": true
   },
   {
@@ -9960,45 +10032,6 @@
       "/text/{prompt}"
     ],
     "title": "Qwen 3.8 27B Fast",
-    "tools": true
-  },
-  {
-    "added_date": 1788921459000,
-    "aliases": [
-      "community/vendouple/deepseek-v3.2"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 500000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "vendouple/deepseek-v3.2",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000001"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Deepseek v3.2",
     "tools": true
   },
   {
