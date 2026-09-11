@@ -35,6 +35,42 @@
     "title": "Agnes Image 2.1 Flash"
   },
   {
+    "added_date": 1785166877000,
+    "aliases": [
+      "community/CloudCompile/agnes-image-2.0-flash"
+    ],
+    "alpha": true,
+    "brand_url": "https://github.com/cloudcompile",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "flat_rate": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "CloudCompile/agnes-image-2.0-flash",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 3,
+    "pricing": {
+      "completionImageTokens": "0.01",
+      "currency": "pollen"
+    },
+    "publisher": "My Github",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Agnes Image 2.0 Flash"
+  },
+  {
     "added_date": 1789068901000,
     "aliases": [
       "community/CloudCompile/flux-2-klein-4b"
@@ -973,6 +1009,43 @@
       "/v1/chat/completions"
     ],
     "title": "gpt-image-2"
+  },
+  {
+    "added_date": 1789142370000,
+    "aliases": [
+      "community/chigwell/gpt-image-2.5"
+    ],
+    "alpha": true,
+    "brand_url": "https://llm7.io/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "flat_rate": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "chigwell/gpt-image-2.5",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionImageTokens": "0.065",
+      "currency": "pollen"
+    },
+    "publisher": "LLM7.io",
+    "required_safety": [
+      "sexual",
+      "violence"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "gpt-image-2.5"
   },
   {
     "added_date": 1759795200000,
