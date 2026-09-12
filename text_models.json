@@ -1656,42 +1656,6 @@
     "title": "Gemma 4 31B IT"
   },
   {
-    "added_date": 1784555703000,
-    "aliases": [
-      "community/Catniti/auto-router-1"
-    ],
-    "alpha": true,
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Auto router 1",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "Catniti/auto-router-1",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.000001",
-      "completionTextTokens": "0.000005",
-      "currency": "pollen",
-      "promptCachedTokens": "0.000001",
-      "promptTextTokens": "0.000001"
-    },
-    "publisher": "Catniti AI",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Auto Router 1"
-  },
-  {
     "added_date": 1789106208000,
     "aliases": [
       "community/Catniti/claude-sonnet-4"
@@ -2218,16 +2182,7 @@
     "output_modalities": [
       "text"
     ],
-    "paid_only": true,
-    "pending_change": {
-      "effective_at": "2026-09-12T01:00:07.000Z",
-      "paid_only": false,
-      "pricing": {
-        "completionTextTokens": "0.0000001",
-        "currency": "pollen",
-        "promptTextTokens": "0.00000005"
-      }
-    },
+    "paid_only": false,
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.0000001",
@@ -3430,46 +3385,6 @@
       "/text/{prompt}"
     ],
     "title": "Gemma 4 31B (Paid)",
-    "tools": true
-  },
-  {
-    "added_date": 1784672514000,
-    "aliases": [
-      "community/MarcosFRG/glm-4.6v-flash"
-    ],
-    "alpha": true,
-    "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 131072,
-    "description": "Sharp visual understanding — screenshots to code, document parsing, layout comprehension",
-    "input_modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "name": "MarcosFRG/glm-4.6v-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 5,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "JankRouter",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "GLM 4.6V Flash",
     "tools": true
   },
   {
@@ -7022,43 +6937,6 @@
     "tools": true
   },
   {
-    "added_date": 1788320757000,
-    "aliases": [
-      "community/iotserver24/deepseek-v4f"
-    ],
-    "alpha": true,
-    "brand_url": "https://xibeai.in/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "free deepseek model",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "iotserver24/deepseek-v4f",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 30,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "R3AP3R editz",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "deepseek v4 flash free",
-    "tools": true
-  },
-  {
     "added_date": 1788365133000,
     "aliases": [
       "community/iotserver24/glm-5.3"
@@ -7095,6 +6973,46 @@
       "/text/{prompt}"
     ],
     "title": "glm 5.3",
+    "tools": true
+  },
+  {
+    "added_date": 1787414026000,
+    "aliases": [
+      "community/iotserver24/gpt-5-6-sol"
+    ],
+    "alpha": true,
+    "brand_url": "https://xibeai.in/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "for coding",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "iotserver24/gpt-5-6-sol",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000021",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000007"
+    },
+    "publisher": "R3AP3R editz",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "gpt 5.6 sol",
     "tools": true
   },
   {
@@ -9931,51 +9849,6 @@
     "tools": true
   },
   {
-    "added_date": 1786833740000,
-    "agent": true,
-    "aliases": [
-      "community/sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge"
-    ],
-    "alpha": true,
-    "base_model": "sharktide/inferenceport-ai-lightning-text-v2",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning",
-      "pollinations_models",
-      "web_search"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "InferencePort AI Lightning Text v2 with Advanced Web Search and External Capabilities",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00000075",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000075"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses"
-    ],
-    "title": "Lightning Text v2 (Expanded Knowledge)",
-    "tools": true
-  },
-  {
     "added_date": 1784344466000,
     "aliases": [
       "community/sharktide/inferenceport-ai-minimax-m3"
@@ -10709,46 +10582,6 @@
       "/text/{prompt}"
     ],
     "title": "Qwen 3.8 27B Fast",
-    "tools": true
-  },
-  {
-    "added_date": 1783698620000,
-    "aliases": [
-      "community/vendouple/deepseek-v4-flash"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "description": "LATEST VERSION",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "vendouple/deepseek-v4-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000002"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "DeepSeek V4 Flash",
     "tools": true
   },
   {
@@ -11585,43 +11418,6 @@
       "/v1/responses"
     ],
     "title": "Z.ai GLM-5.3 Flash",
-    "tools": true
-  },
-  {
-    "added_date": 1787713813000,
-    "aliases": [
-      "community/zero2launch/gemini-3.7-flash"
-    ],
-    "alpha": true,
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "description": "Fast coding model, long context",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "zero2launch/gemini-3.7-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 60,
-    "pricing": {
-      "completionTextTokens": "0.0000015",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000025"
-    },
-    "publisher": "Community",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "gemini-3.7-flash",
     "tools": true
   }
 ]
