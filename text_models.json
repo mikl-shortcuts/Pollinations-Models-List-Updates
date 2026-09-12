@@ -5035,6 +5035,85 @@
     "title": "Muse Glimmer Free"
   },
   {
+    "added_date": 1784404563000,
+    "aliases": [
+      "YoannDev90/diffusiongemma-26b-a4b-it:free"
+    ],
+    "alpha": true,
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262000,
+    "description": "Diffusion-based 26B parameter LLM enabling parallel token generation for real-time text apps",
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "community/YoannDev90/diffusiongemma-26b-a4b-it:free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "Free AI API",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "DiffusionGemma 26b A4b"
+  },
+  {
+    "added_date": 1788190840000,
+    "aliases": [
+      "YoannDev90/gemini-3-flash"
+    ],
+    "alpha": true,
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "input_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "name": "community/YoannDev90/gemini-3-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 2,
+    "pricing": {
+      "currency": "pollen",
+      "promptTextTokens": "0.0000001"
+    },
+    "publisher": "Free AI API",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Gemini 3 Flash",
+    "tools": true
+  },
+  {
     "added_date": 1786463585000,
     "aliases": [
       "YoannDev90/muse-glimmer-30b:free"
@@ -5074,9 +5153,9 @@
     "tools": true
   },
   {
-    "added_date": 1788189088000,
+    "added_date": 1788189807000,
     "aliases": [
-      "YoannDev90/poolside-laguna-s-2.1:free"
+      "YoannDev90/qwen3.7-flash"
     ],
     "alpha": true,
     "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
@@ -5086,19 +5165,24 @@
     ],
     "category": "text",
     "community": true,
-    "context_length": 262000,
-    "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
+    "context_length": 991000,
     "input_modalities": [
-      "text"
+      "text",
+      "image"
     ],
-    "name": "community/YoannDev90/poolside-laguna-s-2.1:free",
+    "name": "community/YoannDev90/qwen3.7-flash",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
     "per_user_rpm": 30,
     "pricing": {
-      "currency": "pollen"
+      "completionReasoningTokens": "0.0000004",
+      "completionTextTokens": "0.0000004",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.00000015",
+      "promptCachedTokens": "0.00000002",
+      "promptTextTokens": "0.0000001"
     },
     "publisher": "Free AI API",
     "reasoning": true,
@@ -5108,7 +5192,80 @@
       "/text",
       "/text/{prompt}"
     ],
-    "title": "Laguna S 2.1",
+    "title": "Qwen 3.7 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1789216118000,
+    "aliases": [
+      "ZapGaming/llama3.1-8b-ultrafast"
+    ],
+    "alpha": true,
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "context_length": 6000,
+    "description": "Llama3.1 8B  But Ultrafast",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/ZapGaming/llama3.1-8b-ultrafast",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000002",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000002"
+    },
+    "publisher": "Community",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Llama3.1 8B Ultrafast"
+  },
+  {
+    "added_date": 1789215763000,
+    "aliases": [
+      "ZapGaming/mercury-2-ultrafast"
+    ],
+    "alpha": true,
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 90000,
+    "description": "MERCURY 2 BUT ITS ULTRAFAST",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/ZapGaming/mercury-2-ultrafast",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000015",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000005"
+    },
+    "publisher": "Community",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Mercury 2 Ultrafast",
     "tools": true
   },
   {
@@ -6765,6 +6922,39 @@
     ],
     "title": "Coding Agent | Gemini 3.1 Pro Preview",
     "tools": true
+  },
+  {
+    "added_date": 1788095153000,
+    "agent": true,
+    "aliases": [
+      "pollinations-router/floret"
+    ],
+    "alpha": true,
+    "brand_url": "https://pollinations.ai/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "Autonomous multimodal agent — one prompt, any mix of text, image, video, audio, and search, returned as one response.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/pollinations-router/floret",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "Pollinations",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Floret"
   },
   {
     "added_date": 1784518040000,
