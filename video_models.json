@@ -1,40 +1,5 @@
 [
   {
-    "added_date": 1788600412000,
-    "aliases": [
-      "community/NamanSoni78/Seedance-2.5"
-    ],
-    "alpha": true,
-    "brand_url": "https://talkaicompanion.com/",
-    "capabilities": [],
-    "category": "video",
-    "community": true,
-    "description": "visit https://talkaicompanion.com/ for support",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "NamanSoni78/Seedance-2.5",
-    "output_modalities": [
-      "video"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionVideoSeconds": "0.25",
-      "currency": "pollen"
-    },
-    "publisher": "APIs For Devs & Students",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
-      "/video/{prompt}",
-      "/v1/responses",
-      "/v1/chat/completions"
-    ],
-    "title": "Seedance-2.5"
-  },
-  {
     "added_date": 1784332800000,
     "aliases": [
       "happyhorse",
@@ -662,6 +627,41 @@
     ]
   },
   {
+    "added_date": 1788600412000,
+    "aliases": [
+      "NamanSoni78/Seedance-2.5"
+    ],
+    "alpha": true,
+    "brand_url": "https://talkaicompanion.com/",
+    "capabilities": [],
+    "category": "video",
+    "community": true,
+    "description": "visit https://talkaicompanion.com/ for support",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/NamanSoni78/Seedance-2.5",
+    "output_modalities": [
+      "video"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionVideoSeconds": "0.25",
+      "currency": "pollen"
+    },
+    "publisher": "APIs For Devs & Students",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/video/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Seedance-2.5"
+  },
+  {
     "added_date": 1787875200000,
     "aliases": [],
     "capabilities": [],
@@ -855,7 +855,7 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p or 768p",
+    "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "input_modalities": [
       "text",
       "image"
@@ -883,12 +883,22 @@
           "completionVideoSeconds": "0.01",
           "currency": "pollen"
         }
+      },
+      {
+        "description": "Applies when the requested video resolution is 1080p.",
+        "label": "1080p",
+        "name": "1080p",
+        "pricing": {
+          "completionVideoSeconds": "0.02",
+          "currency": "pollen"
+        }
       }
     ],
     "publisher": "MiniMax",
     "resolutions": [
       "480p",
-      "768p"
+      "768p",
+      "1080p"
     ],
     "supported_endpoints": [
       "/v1/images/generations",
