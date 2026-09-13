@@ -2646,41 +2646,6 @@
     "title": "North mini code"
   },
   {
-    "added_date": 1784555703000,
-    "aliases": [
-      "Catniti/qwen3.7-flash"
-    ],
-    "alpha": true,
-    "brand_url": "https://t.me/CatnitiAI_bot",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/Catniti/qwen3.7-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.000001",
-      "completionTextTokens": "0.000005",
-      "currency": "pollen",
-      "promptCachedTokens": "0.000001",
-      "promptTextTokens": "0.000001"
-    },
-    "publisher": "Catniti AI",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Qwen3.7 flash"
-  },
-  {
     "added_date": 1789106306000,
     "aliases": [
       "Catniti/step-3.7-flash"
@@ -4502,7 +4467,7 @@
     "category": "text",
     "community": true,
     "context_length": 262144,
-    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class (50% OFF)",
+    "description": "Agentic reasoning with massive 256K context — autonomous coding and long-horizon tasks that punch way above its 27B weight class",
     "input_modalities": [
       "text",
       "image",
@@ -4513,6 +4478,15 @@
       "text"
     ],
     "paid_only": true,
+    "pending_change": {
+      "effective_at": "2026-09-13T04:15:54.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionTextTokens": "0.0000009375",
+        "currency": "pollen",
+        "promptTextTokens": "0.00000012"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionTextTokens": "0.00000125",
@@ -5035,85 +5009,6 @@
     "title": "Muse Glimmer Free"
   },
   {
-    "added_date": 1784404563000,
-    "aliases": [
-      "YoannDev90/diffusiongemma-26b-a4b-it:free"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
-    "capabilities": [
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 262000,
-    "description": "Diffusion-based 26B parameter LLM enabling parallel token generation for real-time text apps",
-    "input_modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "name": "community/YoannDev90/diffusiongemma-26b-a4b-it:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Free AI API",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "DiffusionGemma 26b A4b"
-  },
-  {
-    "added_date": 1788190840000,
-    "aliases": [
-      "YoannDev90/gemini-3-flash"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "name": "community/YoannDev90/gemini-3-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 2,
-    "pricing": {
-      "currency": "pollen",
-      "promptTextTokens": "0.0000001"
-    },
-    "publisher": "Free AI API",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Gemini 3 Flash",
-    "tools": true
-  },
-  {
     "added_date": 1789237652000,
     "aliases": [
       "YoannDev90/kilocode-laguna-s-2.1:free"
@@ -5238,6 +5133,7 @@
       "ZapGaming/llama3.1-8b-ultrafast"
     ],
     "alpha": true,
+    "brand_url": "https://failure.zo.space/ai",
     "capabilities": [],
     "category": "text",
     "community": true,
@@ -5257,7 +5153,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000002"
     },
-    "publisher": "Community",
+    "publisher": "Failure AI",
     "required_safety": [],
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -5272,6 +5168,7 @@
       "ZapGaming/mercury-2-ultrafast"
     ],
     "alpha": true,
+    "brand_url": "https://failure.zo.space/ai",
     "capabilities": [
       "tool_calling",
       "reasoning"
@@ -5294,7 +5191,7 @@
       "currency": "pollen",
       "promptTextTokens": "0.0000005"
     },
-    "publisher": "Community",
+    "publisher": "Failure AI",
     "reasoning": true,
     "required_safety": [],
     "supported_endpoints": [
@@ -7914,43 +7811,6 @@
       "/text/{prompt}"
     ],
     "title": "GLM 5.3"
-  },
-  {
-    "added_date": 1787372962000,
-    "aliases": [
-      "vendouple/gpt-5.6-luna"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/vendouple/gpt-5.6-luna",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000008",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000002"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "GPT 5.6 Luna",
-    "tools": true
   },
   {
     "added_date": 1786679432000,
