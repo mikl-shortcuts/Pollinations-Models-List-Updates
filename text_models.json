@@ -1413,50 +1413,6 @@
     "tools": true
   },
   {
-    "added_date": 1787102161000,
-    "aliases": [
-      "JustScriptzz/grok-4.6"
-    ],
-    "alpha": true,
-    "brand_url": "https://nextrouter-reborn.pages.dev/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 500000,
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "name": "community/JustScriptzz/grok-4.6",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 5,
-    "pricing": {
-      "completionReasoningTokens": "0.0000003",
-      "completionTextTokens": "0.00000375",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000015",
-      "promptTextTokens": "0.0000005"
-    },
-    "publisher": "NextRouter REborn",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Grok 4.6",
-    "tools": true
-  },
-  {
     "added_date": 1787652954000,
     "aliases": [
       "JustScriptzz/kimi-k2-7-code"
@@ -5224,6 +5180,90 @@
     "tools": true
   },
   {
+    "added_date": 1784344080000,
+    "aliases": [
+      "sharktide/inferenceport-ai-kimi-k2.7-code"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Kimi k2.7 Code",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/sharktide/inferenceport-ai-kimi-k2.7-code",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000004",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000016"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Kimi K2.7 Code",
+    "tools": true
+  },
+  {
+    "added_date": 1789421406000,
+    "agent": true,
+    "aliases": [
+      "sharktide/inferenceport-ai-kimi-k2.7-code-deep-logician"
+    ],
+    "alpha": true,
+    "base_model": "community/sharktide/inferenceport-ai-kimi-k2.7-code",
+    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning",
+      "pollinations_models",
+      "web_search"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/sharktide/inferenceport-ai-kimi-k2.7-code-deep-logician",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000004",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000016"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "Kimi K2.7 Code Deep Logician",
+    "tools": true
+  },
+  {
     "added_date": 1784349589000,
     "aliases": [
       "sharktide/inferenceport-ai-lightning-text-v2"
@@ -5308,6 +5348,47 @@
       "/v1/responses"
     ],
     "title": "Lightning Text v2 (Expanded Knowledge)",
+    "tools": true
+  },
+  {
+    "added_date": 1784344466000,
+    "aliases": [
+      "sharktide/inferenceport-ai-minimax-m3"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "MiniMax M3",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/sharktide/inferenceport-ai-minimax-m3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000007",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000007"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "MiniMax M3",
     "tools": true
   },
   {
@@ -5847,51 +5928,6 @@
       "/text/{prompt}"
     ],
     "title": "Qwen 3.8 27B Fast",
-    "tools": true
-  },
-  {
-    "added_date": 1788201845000,
-    "aliases": [
-      "vendouple/claude-opus-5"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 500007,
-    "description": "Bomboclat",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/vendouple/claude-opus-5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000085",
-      "currency": "pollen",
-      "promptTextTokens": "0.000002"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [
-      "sexual",
-      "violence",
-      "shield"
-    ],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Claude Opus 5",
     "tools": true
   },
   {
