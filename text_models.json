@@ -1299,44 +1299,6 @@
     "tools": true
   },
   {
-    "added_date": 1787671293000,
-    "aliases": [
-      "CloudCompile/moondream3.1"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/cloudcompile",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 32768,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/CloudCompile/moondream3.1",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 8,
-    "pricing": {
-      "completionTextTokens": "0.0000005",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000002"
-    },
-    "publisher": "My Github",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Moondream 3.1 9B",
-    "tools": true
-  },
-  {
     "added_date": 1789388135000,
     "agent": true,
     "aliases": [
@@ -1723,46 +1685,6 @@
     "tools": true
   },
   {
-    "added_date": 1787083987000,
-    "aliases": [
-      "Lorodn4x/minimax-m3"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/Lorodn4x",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Original, without quantization.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/Lorodn4x/minimax-m3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000008",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000005",
-      "promptTextTokens": "0.0000002"
-    },
-    "publisher": "Lordos",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "MiniMax M3",
-    "tools": true
-  },
-  {
     "added_date": 1786632944000,
     "aliases": [
       "MarcosFRG/deepseek-v4-flash-0731"
@@ -1888,52 +1810,6 @@
     "tools": true
   },
   {
-    "added_date": 1782845346000,
-    "aliases": [
-      "MarcosFRG/gemini-2.5-flash-lite"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/e7e9716e-9c2d-4cfb-83bd-2188344cdce9",
-    "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [
-      "tool_calling"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1048576,
-    "description": "Reliable everyday multimodal workhorse; fast, consistent, no-frills responses",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "name": "community/MarcosFRG/gemini-2.5-flash-lite",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00000044",
-      "currency": "pollen",
-      "promptAudioTokens": "0.00000033",
-      "promptCacheWriteTokens": "0.00000019",
-      "promptCachedTokens": "0.000000011",
-      "promptImageTokens": "0.00000011",
-      "promptTextTokens": "0.00000011"
-    },
-    "publisher": "JankRouter",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Gemini 2.5 Flash Lite",
-    "tools": true
-  },
-  {
     "added_date": 1788817020000,
     "aliases": [
       "MarcosFRG/gemini-2.5-flash-lite:paid"
@@ -1982,7 +1858,7 @@
   {
     "added_date": 1782878905000,
     "aliases": [
-      "MarcosFRG/gemini-3-flash-preview"
+      "MarcosFRG/gemini-3-flash-preview:paid"
     ],
     "alpha": true,
     "brand_icon_url": "https://media.pollinations.ai/e7e9716e-9c2d-4cfb-83bd-2188344cdce9",
@@ -2001,11 +1877,25 @@
       "audio",
       "video"
     ],
-    "name": "community/MarcosFRG/gemini-3-flash-preview",
+    "name": "community/MarcosFRG/gemini-3-flash-preview:paid",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-16T21:59:44.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionReasoningTokens": "0.0000012",
+        "completionTextTokens": "0.0000024",
+        "currency": "pollen",
+        "promptAudioTokens": "0.0000008",
+        "promptCacheWriteTokens": "0.00000046",
+        "promptCachedTokens": "0.00000004",
+        "promptImageTokens": "0.0000004",
+        "promptTextTokens": "0.0000004"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.0000012",
@@ -2025,7 +1915,7 @@
       "/text",
       "/text/{prompt}"
     ],
-    "title": "Gemini 3 Flash Preview",
+    "title": "Gemini 3 Flash Preview (Paid)",
     "tools": true
   },
   {
@@ -2055,6 +1945,20 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-16T22:08:32.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionReasoningTokens": "0.00000075",
+        "completionTextTokens": "0.0000015",
+        "currency": "pollen",
+        "promptAudioTokens": "0.00000045",
+        "promptCacheWriteTokens": "0.000000225",
+        "promptCachedTokens": "0.000000025",
+        "promptImageTokens": "0.00000025",
+        "promptTextTokens": "0.00000025"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.000000575",
@@ -2104,6 +2008,20 @@
       "text"
     ],
     "paid_only": true,
+    "pending_change": {
+      "effective_at": "2026-09-16T22:04:22.000Z",
+      "paid_only": true,
+      "pricing": {
+        "completionReasoningTokens": "0.0000052",
+        "completionTextTokens": "0.0000104",
+        "currency": "pollen",
+        "promptAudioTokens": "0.00000172",
+        "promptCacheWriteTokens": "0.00000202",
+        "promptCachedTokens": "0.00000018",
+        "promptImageTokens": "0.00000172",
+        "promptTextTokens": "0.00000172"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.0000052",
@@ -3062,44 +2980,6 @@
     "tools": true
   },
   {
-    "added_date": 1788076838000,
-    "aliases": [
-      "NamanSoni78/GPT-5.5-xHigh"
-    ],
-    "alpha": true,
-    "brand_url": "https://talkaicompanion.com/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1048576,
-    "description": "visit https://talkaicompanion.com/ for support . GPT-5.5 xhigh is a maximum-effort reasoning setting designed for high-risk, complex technical tasks.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/NamanSoni78/GPT-5.5-xHigh",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 40,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Visit TalkAiCompanion.com For Support Me",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "GPT-5.5-xHigh (FREE, TalkAiCompanion.com)",
-    "tools": true
-  },
-  {
     "added_date": 1789286060000,
     "aliases": [
       "NamanSoni78/Glm-5.3-Thinking-Max"
@@ -3449,44 +3329,6 @@
       "/text/{prompt}"
     ],
     "title": "Muse Glimmer 30B",
-    "tools": true
-  },
-  {
-    "added_date": 1788189088000,
-    "aliases": [
-      "YoannDev90/poolside-laguna-s-2.1:free"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 262000,
-    "description": "Open-weight Mixture-of-Experts model built for agentic coding and long-running tasks",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/YoannDev90/poolside-laguna-s-2.1:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 30,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Free AI API",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Laguna S 2.1",
     "tools": true
   },
   {
@@ -4501,117 +4343,6 @@
     "tools": true
   },
   {
-    "added_date": 1786780077000,
-    "aliases": [
-      "chigwell/llm7-fast"
-    ],
-    "alpha": true,
-    "brand_url": "https://llm7.io/",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/chigwell/llm7-fast",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 100,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "LLM7.io",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "llm7-fast Free"
-  },
-  {
-    "added_date": 1786745674000,
-    "aliases": [
-      "chigwell/llm7-pro"
-    ],
-    "alpha": true,
-    "brand_url": "https://llm7.io/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 256000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/chigwell/llm7-pro",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000015",
-      "completionTextTokens": "0.0000015",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000025",
-      "promptTextTokens": "0.00000025"
-    },
-    "publisher": "LLM7.io",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "llm7-pro",
-    "tools": true
-  },
-  {
-    "added_date": 1787733590000,
-    "aliases": [
-      "chigwell/minimax-m2.7"
-    ],
-    "alpha": true,
-    "brand_url": "https://llm7.io/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 128000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/chigwell/minimax-m2.7",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.000000004"
-    },
-    "publisher": "LLM7.io",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "minimax-m2.7",
-    "tools": true
-  },
-  {
     "added_date": 1787145395000,
     "aliases": [
       "gggff123/Glm-5.3"
@@ -5387,6 +5118,45 @@
     "title": "Jimmy"
   },
   {
+    "added_date": 1789578919000,
+    "aliases": [
+      "pegalink/union-alpha"
+    ],
+    "alpha": true,
+    "brand_url": "https://openrouter.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262000,
+    "description": "Union Alpha is a multimodal model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of tasks.",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/pegalink/union-alpha",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 15,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "Openrouter",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Union Alpha",
+    "tools": true
+  },
+  {
     "added_date": 1788095153000,
     "agent": true,
     "aliases": [
@@ -5553,6 +5323,45 @@
     "title": "GLM 5.3 Flash (FREE)"
   },
   {
+    "added_date": 1789389888000,
+    "aliases": [
+      "scriptsnsenses-sys/gpt-5.6-luna"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/fc0903eb-fcf0-4bb1-97af-88ea3be8f2d3",
+    "brand_url": "https://dg-ai.scriptsnsenses.workers.dev/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "description": "OpenAI's GPT 5.6 Luna for free",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/scriptsnsenses-sys/gpt-5.6-luna",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 8,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "dgAI API",
+    "required_safety": [
+      "privacy",
+      "secrets",
+      "sexual",
+      "violence",
+      "shield"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GPT 5.6 Luna (FREE)"
+  },
+  {
     "added_date": 1789391239000,
     "aliases": [
       "scriptsnsenses-sys/muse-spark-1.2-contributor-free"
@@ -5631,169 +5440,6 @@
     "tools": true
   },
   {
-    "added_date": 1784518040000,
-    "aliases": [
-      "sharktide/inferenceport-ai-codestral-2508"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Codestral 25.08",
-    "input_modalities": [
-      "text",
-      "audio"
-    ],
-    "name": "community/sharktide/inferenceport-ai-codestral-2508",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000007",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000004",
-      "promptTextTokens": "0.0000005"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Codestral 25.08"
-  },
-  {
-    "added_date": 1782878489000,
-    "aliases": [
-      "sharktide/inferenceport-ai-command-r-plus"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Cohere Command R+",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/sharktide/inferenceport-ai-command-r-plus",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionAudioTokens": "0.000007",
-      "completionReasoningTokens": "0.000005",
-      "completionTextTokens": "0.000005",
-      "currency": "pollen",
-      "promptAudioTokens": "0.000007",
-      "promptCachedTokens": "0.000005",
-      "promptTextTokens": "0.000005"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Cohere Command R+",
-    "tools": true
-  },
-  {
-    "added_date": 1784524119000,
-    "aliases": [
-      "sharktide/inferenceport-ai-gemini-2.5-flash"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Gemini 2.5 Flash",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio"
-    ],
-    "name": "community/sharktide/inferenceport-ai-gemini-2.5-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000007",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000007"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Gemini 2.5 Flash",
-    "tools": true
-  },
-  {
-    "added_date": 1784344080000,
-    "aliases": [
-      "sharktide/inferenceport-ai-kimi-k2.7-code"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Kimi k2.7 Code",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/sharktide/inferenceport-ai-kimi-k2.7-code",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000004",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000016"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Kimi K2.7 Code",
-    "tools": true
-  },
-  {
     "added_date": 1789421406000,
     "agent": true,
     "aliases": [
@@ -5835,47 +5481,6 @@
       "/v1/responses"
     ],
     "title": "Kimi K2.7 Code Deep Logician",
-    "tools": true
-  },
-  {
-    "added_date": 1784349589000,
-    "aliases": [
-      "sharktide/inferenceport-ai-lightning-text-v2"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "InferencePort AI Lightning Text v2 (Router)",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/sharktide/inferenceport-ai-lightning-text-v2",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00000075",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000075"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Lightning Text V2 (Router)",
     "tools": true
   },
   {
@@ -5922,128 +5527,6 @@
       "/v1/responses"
     ],
     "title": "Lightning Text v2 (Expanded Knowledge)",
-    "tools": true
-  },
-  {
-    "added_date": 1784344466000,
-    "aliases": [
-      "sharktide/inferenceport-ai-minimax-m3"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "MiniMax M3",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/sharktide/inferenceport-ai-minimax-m3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000007",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000007"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "MiniMax M3",
-    "tools": true
-  },
-  {
-    "added_date": 1784344621000,
-    "aliases": [
-      "sharktide/inferenceport-ai-qwen-3.8-27b"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Qwen 3.8 27b",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/sharktide/inferenceport-ai-qwen-3.8-27b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000029",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000029"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Qwen 3.8 27B (Groq)",
-    "tools": true
-  },
-  {
-    "added_date": 1784434226000,
-    "aliases": [
-      "sharktide/inferenceport.ai-gpt-oss-20b"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "GPT-OSS 20b",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/sharktide/inferenceport.ai-gpt-oss-20b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000003",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000007"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "GPT-OSS 20B",
     "tools": true
   },
   {
@@ -6729,6 +6212,46 @@
     "title": "GLM 5.3"
   },
   {
+    "added_date": 1789575335000,
+    "aliases": [
+      "vendouple/glm-5.3-flash"
+    ],
+    "alpha": true,
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/vendouple/glm-5.3-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000001",
+      "currency": "pollen",
+      "promptTextTokens": "0.00000005"
+    },
+    "publisher": "OrchidLLM Proxy",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "GLM 5.3 Flash",
+    "tools": true
+  },
+  {
     "added_date": 1786040071000,
     "aliases": [
       "vendouple/gpt-6-astra"
@@ -6810,46 +6333,6 @@
       "/text/{prompt}"
     ],
     "title": "Grok 4.6"
-  },
-  {
-    "added_date": 1788489056000,
-    "aliases": [
-      "vendouple/kimi-k2.6"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 250000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/vendouple/kimi-k2.6",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000015",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000006"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Kimi K2.6",
-    "tools": true
   },
   {
     "added_date": 1785330839000,
