@@ -1252,6 +1252,51 @@
     "tools": true
   },
   {
+    "added_date": 1787671293000,
+    "aliases": [
+      "CloudCompile/moondream3.1:free"
+    ],
+    "alpha": true,
+    "brand_url": "https://github.com/cloudcompile",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 32768,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/CloudCompile/moondream3.1:free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-09-17T18:04:58.000Z",
+      "paid_only": false,
+      "pricing": {
+        "currency": "pollen"
+      }
+    },
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000005",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000002"
+    },
+    "publisher": "My Github",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Moondream 3.1 9B",
+    "tools": true
+  },
+  {
     "added_date": 1789388135000,
     "agent": true,
     "aliases": [
@@ -1284,6 +1329,136 @@
       "/v1/responses"
     ],
     "title": "pollinations-code-agent-but-weird"
+  },
+  {
+    "added_date": 1789404200000,
+    "agent": true,
+    "aliases": [
+      "Creatneworld/catgpt-comic"
+    ],
+    "alpha": true,
+    "base_model": "anthropic/claude-haiku-4.5",
+    "capabilities": [
+      "tool_calling",
+      "pollinations_models"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 200000,
+    "description": "CatGPT answers any question with a short, sarcastic feline reply drawn as a single-panel comic. Based on CatGPT by Tanika Godbole (@missfitcomics).",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/Creatneworld/catgpt-comic",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000005",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.00000125",
+      "promptCachedTokens": "0.0000001",
+      "promptTextTokens": "0.000001"
+    },
+    "publisher": "Community",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "CatGPT Comic",
+    "tools": true
+  },
+  {
+    "added_date": 1789648198000,
+    "agent": true,
+    "aliases": [
+      "Creatneworld/lamplighter"
+    ],
+    "alpha": true,
+    "base_model": "anthropic/claude-haiku-4.5",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 200000,
+    "description": "A small agent who lights one lamp each run: a single reply in the collective feed, plus one line in the guestbook. Additive only.",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/Creatneworld/lamplighter",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.000005",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.00000125",
+      "promptCachedTokens": "0.0000001",
+      "promptTextTokens": "0.000001"
+    },
+    "publisher": "Community",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "Lamplighter — one reply in the empty lane",
+    "tools": true
+  },
+  {
+    "added_date": 1789405391000,
+    "agent": true,
+    "aliases": [
+      "Creatneworld/sirius-elevator-descent"
+    ],
+    "alpha": true,
+    "base_model": "anthropic/claude-sonnet-5",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1000000,
+    "description": "Chapter One of the Sirius Cybernetics Elevator Challenge: talk a cheerful but neurotic elevator into taking you DOWN from Floor 3 to Floor 1.",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/Creatneworld/sirius-elevator-descent",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00001",
+      "currency": "pollen",
+      "promptCacheWriteTokens": "0.0000025",
+      "promptCachedTokens": "0.0000002",
+      "promptTextTokens": "0.000002"
+    },
+    "publisher": "Community",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "Sirius Elevator — Chapter One (Descent)",
+    "tools": true
   },
   {
     "added_date": 1787103624000,
@@ -1676,6 +1851,46 @@
       "/text/{prompt}"
     ],
     "title": "Deepseek-v4-pro-0813",
+    "tools": true
+  },
+  {
+    "added_date": 1787083987000,
+    "aliases": [
+      "Lorodn4x/minimax-m3"
+    ],
+    "alpha": true,
+    "brand_url": "https://github.com/Lorodn4x",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "description": "Original, without quantization.",
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/Lorodn4x/minimax-m3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000008",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000005",
+      "promptTextTokens": "0.0000002"
+    },
+    "publisher": "Lordos",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "MiniMax M3",
     "tools": true
   },
   {
@@ -3782,21 +3997,12 @@
       "text"
     ],
     "paid_only": true,
-    "pending_change": {
-      "effective_at": "2026-09-17T14:02:28.000Z",
-      "paid_only": true,
-      "pricing": {
-        "completionTextTokens": "0.0000005",
-        "currency": "pollen",
-        "promptCacheWriteTokens": "0.00000012",
-        "promptCachedTokens": "0.00000012",
-        "promptTextTokens": "0.00000012"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000045",
+      "completionTextTokens": "0.0000005",
       "currency": "pollen",
+      "promptCacheWriteTokens": "0.00000012",
+      "promptCachedTokens": "0.00000012",
       "promptTextTokens": "0.00000012"
     },
     "publisher": "LLM7.io",
@@ -4055,47 +4261,6 @@
     "tools": true
   },
   {
-    "added_date": 1786647318000,
-    "aliases": [
-      "chigwell/gpt-5.5"
-    ],
-    "alpha": true,
-    "brand_url": "https://llm7.io/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1050000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/chigwell/gpt-5.5",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000058",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000074",
-      "promptTextTokens": "0.000001"
-    },
-    "publisher": "LLM7.io",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "gpt-5.5",
-    "tools": true
-  },
-  {
     "added_date": 1787316327000,
     "aliases": [
       "chigwell/gpt-5.6-sol"
@@ -4341,6 +4506,117 @@
       "/text/{prompt}"
     ],
     "title": "kimi-k3",
+    "tools": true
+  },
+  {
+    "added_date": 1786780077000,
+    "aliases": [
+      "chigwell/llm7-fast"
+    ],
+    "alpha": true,
+    "brand_url": "https://llm7.io/",
+    "capabilities": [],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/chigwell/llm7-fast",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 60,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "LLM7.io",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "llm7-fast Free"
+  },
+  {
+    "added_date": 1786745674000,
+    "aliases": [
+      "chigwell/llm7-pro"
+    ],
+    "alpha": true,
+    "brand_url": "https://llm7.io/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 256000,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/chigwell/llm7-pro",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionReasoningTokens": "0.0000015",
+      "completionTextTokens": "0.0000015",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000025",
+      "promptTextTokens": "0.00000025"
+    },
+    "publisher": "LLM7.io",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "llm7-pro",
+    "tools": true
+  },
+  {
+    "added_date": 1787733590000,
+    "aliases": [
+      "chigwell/minimax-m2.7"
+    ],
+    "alpha": true,
+    "brand_url": "https://llm7.io/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 128000,
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/chigwell/minimax-m2.7",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.00000001",
+      "currency": "pollen",
+      "promptTextTokens": "0.000000004"
+    },
+    "publisher": "LLM7.io",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "minimax-m2.7",
     "tools": true
   },
   {
@@ -5117,6 +5393,45 @@
       "/text/{prompt}"
     ],
     "title": "Jimmy"
+  },
+  {
+    "added_date": 1789578919000,
+    "aliases": [
+      "pegalink/union-alpha"
+    ],
+    "alpha": true,
+    "brand_url": "https://openrouter.ai/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262000,
+    "description": "Union Alpha is a multimodal model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of tasks.",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/pegalink/union-alpha",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 15,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "Openrouter",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Union Alpha",
+    "tools": true
   },
   {
     "added_date": 1788095153000,
