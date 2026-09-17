@@ -1273,18 +1273,9 @@
       "text"
     ],
     "paid_only": false,
-    "pending_change": {
-      "effective_at": "2026-09-17T18:04:58.000Z",
-      "paid_only": false,
-      "pricing": {
-        "currency": "pollen"
-      }
-    },
     "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.0000005",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000002"
+      "currency": "pollen"
     },
     "publisher": "My Github",
     "required_safety": [],
@@ -1815,6 +1806,45 @@
     "tools": true
   },
   {
+    "added_date": 1789073129000,
+    "aliases": [
+      "Lorodn4x/deepseek-v4-flash"
+    ],
+    "alpha": true,
+    "brand_url": "https://github.com/Lorodn4x",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/Lorodn4x/deepseek-v4-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 50,
+    "pricing": {
+      "completionTextTokens": "0.00005",
+      "currency": "pollen",
+      "promptTextTokens": "0.00005"
+    },
+    "publisher": "Lordos",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "cu/auto",
+    "tools": true
+  },
+  {
     "added_date": 1787086362000,
     "aliases": [
       "Lorodn4x/deepseek-v4-pro-0813"
@@ -1851,46 +1881,6 @@
       "/text/{prompt}"
     ],
     "title": "Deepseek-v4-pro-0813",
-    "tools": true
-  },
-  {
-    "added_date": 1787083987000,
-    "aliases": [
-      "Lorodn4x/minimax-m3"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/Lorodn4x",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Original, without quantization.",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/Lorodn4x/minimax-m3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000008",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000005",
-      "promptTextTokens": "0.0000002"
-    },
-    "publisher": "Lordos",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "MiniMax M3",
     "tools": true
   },
   {
@@ -4814,50 +4804,6 @@
     "tools": true
   },
   {
-    "added_date": 1788021667000,
-    "aliases": [
-      "iotserver24/kimi-k3"
-    ],
-    "alpha": true,
-    "brand_url": "https://xibeai.in/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "The trillion param model given out cheap and fast",
-    "input_modalities": [
-      "text",
-      "image",
-      "audio",
-      "video"
-    ],
-    "name": "community/iotserver24/kimi-k3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000004",
-      "completionTextTokens": "0.000003",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000002",
-      "promptTextTokens": "0.0000005"
-    },
-    "publisher": "R3AP3R editz",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Kimi k3",
-    "tools": true
-  },
-  {
     "added_date": 1787598206000,
     "aliases": [
       "iotserver24/route-r3ap3r"
@@ -6544,45 +6490,6 @@
     "tools": true
   },
   {
-    "added_date": 1788921459000,
-    "aliases": [
-      "vendouple/deepseek-v3.2"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 500000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/vendouple/deepseek-v3.2",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.000001",
-      "currency": "pollen",
-      "promptTextTokens": "0.00000001"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Deepseek v3.2",
-    "tools": true
-  },
-  {
     "added_date": 1783698620000,
     "aliases": [
       "vendouple/deepseek-v4-flash"
@@ -6621,82 +6528,6 @@
     ],
     "title": "DeepSeek V4 Flash",
     "tools": true
-  },
-  {
-    "added_date": 1783916168000,
-    "aliases": [
-      "vendouple/deepseek-v4-pro"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "description": "ITS BACK!",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/vendouple/deepseek-v4-pro",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000005",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000001"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "DeepSeek V4 Pro",
-    "tools": true
-  },
-  {
-    "added_date": 1786965688000,
-    "aliases": [
-      "vendouple/gemini-3.8-flash"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/vendouple/gemini-3.8-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000035",
-      "completionTextTokens": "0.0000035",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000015"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Gemini 3.8"
   },
   {
     "added_date": 1784523185000,
@@ -6739,41 +6570,6 @@
     ],
     "title": "Gemma 4 RP (20K, Daily Limit)",
     "tools": true
-  },
-  {
-    "added_date": 1786965046000,
-    "aliases": [
-      "vendouple/glm-5.3"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Daily Limit",
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/vendouple/glm-5.3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000035",
-      "completionTextTokens": "0.0000035",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000015"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "GLM 5.3"
   },
   {
     "added_date": 1789575335000,
@@ -6852,47 +6648,6 @@
     "title": "Grok 4.6"
   },
   {
-    "added_date": 1785330839000,
-    "aliases": [
-      "vendouple/kimi-k3"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "To use this in agentic tasks please remove all params (ex. top_p, top_k, temperature)",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/vendouple/kimi-k3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000035",
-      "completionTextTokens": "0.0000035",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000025"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Kimi K3",
-    "tools": true
-  },
-  {
     "added_date": 1784372748000,
     "aliases": [
       "vendouple/muse-glimmer-30b:free"
@@ -6923,46 +6678,6 @@
       "/text/{prompt}"
     ],
     "title": "Muse Glimmer (Free)"
-  },
-  {
-    "added_date": 1784737002000,
-    "aliases": [
-      "vendouple/qwen-3.8-max"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/vendouple/qwen-3.8-max",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.000002",
-      "completionTextTokens": "0.000002",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Qwen 3.8 Max",
-    "tools": true
   },
   {
     "added_date": 1782759075000,
