@@ -1815,45 +1815,6 @@
     "tools": true
   },
   {
-    "added_date": 1789073129000,
-    "aliases": [
-      "Lorodn4x/deepseek-v4-flash"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/Lorodn4x",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/Lorodn4x/deepseek-v4-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 50,
-    "pricing": {
-      "completionTextTokens": "0.00005",
-      "currency": "pollen",
-      "promptTextTokens": "0.00005"
-    },
-    "publisher": "Lordos",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "cu/auto",
-    "tools": true
-  },
-  {
     "added_date": 1787086362000,
     "aliases": [
       "Lorodn4x/deepseek-v4-pro-0813"
@@ -3469,62 +3430,34 @@
     "title": "OPUS 5 Max(FREE , TalkAiCompanion.com)"
   },
   {
-    "added_date": 1787064353000,
+    "added_date": 1788190840000,
     "aliases": [
-      "Spit-fires/muse-glimmer"
-    ],
-    "alpha": true,
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/Spit-fires/muse-glimmer",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Community",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Muse Glimmer Free"
-  },
-  {
-    "added_date": 1784404563000,
-    "aliases": [
-      "YoannDev90/diffusiongemma-26b-a4b-it:free"
+      "YoannDev90/gemini-3-flash"
     ],
     "alpha": true,
     "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
     "capabilities": [
+      "tool_calling",
       "reasoning"
     ],
     "category": "text",
     "community": true,
-    "context_length": 262000,
-    "description": "Diffusion-based 26B parameter LLM enabling parallel token generation for real-time text apps",
+    "context_length": 1000000,
     "input_modalities": [
       "text",
       "image",
+      "audio",
       "video"
     ],
-    "name": "community/YoannDev90/diffusiongemma-26b-a4b-it:free",
+    "name": "community/YoannDev90/gemini-3-flash",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
-    "per_user_rpm": 10,
+    "per_user_rpm": 2,
     "pricing": {
-      "currency": "pollen"
+      "currency": "pollen",
+      "promptTextTokens": "0.0000001"
     },
     "publisher": "Free AI API",
     "reasoning": true,
@@ -3534,82 +3467,7 @@
       "/text",
       "/text/{prompt}"
     ],
-    "title": "DiffusionGemma 26b A4b"
-  },
-  {
-    "added_date": 1789237652000,
-    "aliases": [
-      "YoannDev90/kilocode-laguna-s-2.1:free"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 262000,
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/YoannDev90/kilocode-laguna-s-2.1:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Free AI API",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Laguna S 2.1",
-    "tools": true
-  },
-  {
-    "added_date": 1786463585000,
-    "aliases": [
-      "YoannDev90/muse-glimmer-30b:free"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 131000,
-    "description": "Multimodal reasoning model  by Meta",
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/YoannDev90/muse-glimmer-30b:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Free AI API",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Muse Glimmer 30B",
+    "title": "Gemini 3 Flash",
     "tools": true
   },
   {
@@ -3883,6 +3741,47 @@
       "/v1/responses"
     ],
     "title": "The Happy Vertical People Transporter",
+    "tools": true
+  },
+  {
+    "added_date": 1789746457000,
+    "agent": true,
+    "aliases": [
+      "aikhusus2025-ctrl/sirius-scorekeeper"
+    ],
+    "alpha": true,
+    "base_model": "openai",
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 400000,
+    "description": "Keeps the shared leaderboard of the Sirius elevator descent in collective memory, verifying each run with a deterministic referee and reporting the standings.",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/aikhusus2025-ctrl/sirius-scorekeeper",
+    "output_modalities": [
+      "text"
+    ],
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000009375",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000015",
+      "promptTextTokens": "0.00000015"
+    },
+    "publisher": "Community",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "title": "Sirius Elevator Leaderboard",
     "tools": true
   },
   {
@@ -6535,6 +6434,51 @@
     "tools": true
   },
   {
+    "added_date": 1788201845000,
+    "aliases": [
+      "vendouple/claude-opus-5"
+    ],
+    "alpha": true,
+    "brand_url": "https://nobindes.work.gd/docs",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 500007,
+    "description": "Bomboclat",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/vendouple/claude-opus-5",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000085",
+      "currency": "pollen",
+      "promptTextTokens": "0.000002"
+    },
+    "publisher": "OrchidLLM Proxy",
+    "reasoning": true,
+    "required_safety": [
+      "sexual",
+      "violence",
+      "shield"
+    ],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}"
+    ],
+    "title": "Claude Opus 5",
+    "tools": true
+  },
+  {
     "added_date": 1788921459000,
     "aliases": [
       "vendouple/deepseek-v3.2"
@@ -6842,38 +6786,6 @@
     ],
     "title": "Kimi K3",
     "tools": true
-  },
-  {
-    "added_date": 1784372748000,
-    "aliases": [
-      "vendouple/muse-glimmer-30b:free"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/vendouple/muse-glimmer-30b:free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 5,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}"
-    ],
-    "title": "Muse Glimmer (Free)"
   },
   {
     "added_date": 1784737002000,
@@ -9220,6 +9132,62 @@
     "tools": true
   },
   {
+    "added_date": 1789171200000,
+    "aliases": [],
+    "capabilities": [
+      "tool_calling"
+    ],
+    "category": "text",
+    "community": false,
+    "context_length": 128000,
+    "description": "Affordable multimodal chat with vision input for everyday tasks",
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "is_specialized": false,
+    "max_reference_images": 10,
+    "name": "openai/gpt-4o-mini",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000006",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000075",
+      "promptTextTokens": "0.00000015"
+    },
+    "publisher": "OpenAI",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "supported_parameters": [
+      "max_tokens",
+      "stream",
+      "tools",
+      "tool_choice",
+      "response_format",
+      "structured_outputs",
+      "temperature",
+      "top_p",
+      "stop",
+      "frequency_penalty",
+      "presence_penalty",
+      "logprobs",
+      "top_logprobs",
+      "seed",
+      "logit_bias",
+      "prediction",
+      "web_search_options"
+    ],
+    "title": "GPT-4o Mini",
+    "tools": true
+  },
+  {
     "added_date": 1759795200000,
     "aliases": [
       "gpt-5-nano",
@@ -11330,6 +11298,111 @@
       "n"
     ],
     "title": "StepFun Step 3.7 Flash",
+    "tools": true
+  },
+  {
+    "added_date": 1789257600000,
+    "aliases": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": false,
+    "context_length": 262144,
+    "description": "Mixture-of-experts reasoning for agentic workflows and production tool-use",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "tencent/hy3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.0000006119",
+      "currency": "pollen",
+      "promptCachedTokens": "0.000000036925",
+      "promptTextTokens": "0.0000001477"
+    },
+    "publisher": "Tencent",
+    "reasoning": true,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "supported_parameters": [
+      "max_tokens",
+      "stream",
+      "tools",
+      "tool_choice",
+      "structured_outputs",
+      "temperature",
+      "top_p",
+      "top_k",
+      "frequency_penalty",
+      "presence_penalty",
+      "repetition_penalty",
+      "stop",
+      "seed",
+      "reasoning",
+      "include_reasoning",
+      "reasoning_effort"
+    ],
+    "title": "Hy3",
+    "tools": true
+  },
+  {
+    "added_date": 1789171200000,
+    "aliases": [],
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": false,
+    "context_length": 1048576,
+    "description": "Mixture-of-experts model for coding agents and complex tool-use workflows",
+    "input_modalities": [
+      "text"
+    ],
+    "is_specialized": false,
+    "name": "tencent/hy4-preview",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionTextTokens": "0.000002638555",
+      "currency": "pollen",
+      "promptCachedTokens": "0.00000004431",
+      "promptTextTokens": "0.00000087987"
+    },
+    "publisher": "Tencent",
+    "reasoning": true,
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses"
+    ],
+    "supported_parameters": [
+      "max_tokens",
+      "max_completion_tokens",
+      "stream",
+      "tools",
+      "response_format",
+      "structured_outputs",
+      "temperature",
+      "stop",
+      "reasoning",
+      "include_reasoning",
+      "reasoning_effort"
+    ],
+    "title": "Hy4 Preview",
     "tools": true
   },
   {

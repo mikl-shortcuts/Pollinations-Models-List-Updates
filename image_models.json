@@ -253,6 +253,50 @@
     "title": "FLUX.2 Klein 4B"
   },
   {
+    "added_date": 1789257600000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "image",
+    "community": false,
+    "description": "Flagship-tier generation and multi-reference editing with the highest consistency and prompt adherence in the FLUX.2 line",
+    "flat_rate": true,
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_reference_images": 8,
+    "name": "black-forest-labs/flux.2-max",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.03",
+      "currency": "pollen",
+      "promptImageTokens": "0.03"
+    },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "image",
+        "label": "Execution fee",
+        "name": "replicate.flux_2_max.run.v1",
+        "price": "0.04",
+        "quantity": 1,
+        "unit": "generation"
+      }
+    ],
+    "publisher": "Black Forest Labs",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "FLUX.2 Max"
+  },
+  {
     "added_date": 1788134400000,
     "aliases": [
       "flux-2-pro"
