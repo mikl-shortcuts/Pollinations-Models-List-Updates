@@ -108,7 +108,7 @@ jobs:
           def diff_dicts(o, n, prefix=""):
               d = {}
               for k in sorted(set(o.keys()) | set(n.keys())):
-                  if k == ("created", "health"): continue
+                  if k in ("created", "health"): continue
                   full_key = f"{prefix}.{k}" if prefix else k
                   ov, nv = o.get(k), n.get(k)
                   if ov != nv:
@@ -273,7 +273,7 @@ jobs:
               removed_comm = [n for n in removed if prev_map[n].get("community")]
 
               def make_discord_embeds(added_list, modified_list, removed_list, is_comm_channel=False):
-                  embeds = []
+                  MAX_DISCORD_LEN = 900
                   
                   def clean_tags(item):
                       tags = []
@@ -285,11 +285,33 @@ jobs:
                           tags.append("[COMMUNITY]")
                       return " " + " ".join(tags) if tags else ""
 
+                  def split_into_chunks(text, header):
+                      lines = text.split('\n')
+                      chunks = []
+                      current_lines = []
+                      current_len = len(header) + 1
+                      
+                      for line in lines:
+                          line_len = len(line) + 1
+                          if current_len + line_len > MAX_DISCORD_LEN and current_lines:
+                              chunks.append('\n'.join(current_lines))
+                              current_lines = [line]
+                              current_len = line_len
+                          else:
+                              current_lines.append(line)
+                              current_len += line_len
+                      
+                      if current_lines:
+                          chunks.append('\n'.join(current_lines))
+                      return chunks
+
+                  embeds = []
+                  
                   if added_list:
-                      desc = []
+                      desc_lines = []
                       for n in added_list:
                           m = curr_map[n]
-                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)})")
+                          desc_lines.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)})")
                           for k in sorted(m.keys()):
                               if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only", "health"):
                                   continue
@@ -298,17 +320,28 @@ jobs:
                                   for pk in sorted(m[k].keys()):
                                       if pk == "currency":
                                           continue
-                                      desc.append(f"   - pricing.{pk}: {format_pricing_value(m[k][pk], currency)}")
+                                      desc_lines.append(f"   - pricing.{pk}: {format_pricing_value(m[k][pk], currency)}")
                               else:
-                                  desc.append(f"   - {k}: {format_val(m[k])}")
-                      embeds.append({"title": "Added Models:", "description": "\n".join(desc), "color": 0x86B953})
+                                  desc_lines.append(f"   - {k}: {format_val(m[k])}")
+                      
+                      full_text = '\n'.join(desc_lines)
+                      header = "**Added Models:**"
+                      chunks = split_into_chunks(full_text, header)
+                      
+                      for i, chunk in enumerate(chunks):
+                          title = "Added Models:" if i == 0 else f"Added Models: (part {i+1})"
+                          embeds.append({
+                              "title": title,
+                              "description": chunk,
+                              "color": 0x86B953
+                          })
 
                   if modified_list:
-                      desc = []
+                      desc_lines = []
                       for n in sorted(modified_list):
                           m = curr_map[n]
                           prev_m = prev_map[n]
-                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)}):")
+                          desc_lines.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)}):")
                           for k, ch in sorted(modified[n].items()):
                               if k == "pricing.currency":
                                   continue
@@ -319,16 +352,27 @@ jobs:
                                   new_cur = new_p.get("currency", "pollen")
                                   f_old = format_pricing_value(ch['old'], old_cur)
                                   f_new = format_pricing_value(ch['new'], new_cur)
-                                  desc.append(f"   - {k}: {f_old} -> {f_new}")
+                                  desc_lines.append(f"   - {k}: {f_old} -> {f_new}")
                               else:
-                                  desc.append(f"   - {k}: {format_val(ch['old'])} -> {format_val(ch['new'])}")
-                      embeds.append({"title": "Updated Models:", "description": "\n".join(desc), "color": 0xF5C944})
+                                  desc_lines.append(f"   - {k}: {format_val(ch['old'])} -> {format_val(ch['new'])}")
+                      
+                      full_text = '\n'.join(desc_lines)
+                      header = "**Updated Models:**"
+                      chunks = split_into_chunks(full_text, header)
+                      
+                      for i, chunk in enumerate(chunks):
+                          title = "Updated Models:" if i == 0 else f"Updated Models: (part {i+1})"
+                          embeds.append({
+                              "title": title,
+                              "description": chunk,
+                              "color": 0xF5C944
+                          })
 
                   if removed_list:
-                      desc = []
+                      desc_lines = []
                       for n in removed_list:
                           m = prev_map[n]
-                          desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)})")
+                          desc_lines.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)})")
                           for k in sorted(m.keys()):
                               if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only", "health"):
                                   continue
@@ -337,43 +381,60 @@ jobs:
                                   for pk in sorted(m[k].keys()):
                                       if pk == "currency":
                                           continue
-                                      desc.append(f"   - pricing.{pk}: {format_pricing_value(m[k][pk], currency)}")
+                                      desc_lines.append(f"   - pricing.{pk}: {format_pricing_value(m[k][pk], currency)}")
                               else:
-                                  desc.append(f"   - {k}: {format_val(m[k])}")
-                      embeds.append({"title": "Deleted Models:", "description": "\n".join(desc), "color": 0xEB512E})
+                                  desc_lines.append(f"   - {k}: {format_val(m[k])}")
+                      
+                      full_text = '\n'.join(desc_lines)
+                      header = "**Deleted Models:**"
+                      chunks = split_into_chunks(full_text, header)
+                      
+                      for i, chunk in enumerate(chunks):
+                          title = "Deleted Models:" if i == 0 else f"Deleted Models: (part {i+1})"
+                          embeds.append({
+                              "title": title,
+                              "description": chunk,
+                              "color": 0xEB512E
+                          })
 
                   return embeds
 
               embeds_old = make_discord_embeds(added, modified, removed, is_comm_channel=False)
               if embeds_old:
-                  discord_payload = {
-                      "content": f"## {emoji} Pollinations AI {title} Models Update:",
-                      "username": "Pollinations Models List Updates Bot",
-                      "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
-                      "embeds": embeds_old,
-                      "flags": 4096
-                  }
-                  Path(f"/tmp/discord_{cat_id}_old.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+                  for i, embed in enumerate(embeds_old):
+                      discord_payload = {
+                          "content": f"## {emoji} Pollinations AI {title} Models Update:" if i == 0 else f"## {emoji} Pollinations AI {title} Models Update: (part {i+1})",
+                          "username": "Pollinations Models List Updates Bot",
+                          "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
+                          "embeds": [embed],
+                          "flags": 4096
+                      }
+                      Path(f"/tmp/discord_{cat_id}_old_{i}.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+                  Path(f"/tmp/discord_{cat_id}_old_count.txt").write_text(str(len(embeds_old)), encoding="utf-8")
 
               embeds_std = make_discord_embeds(added_std, modified_std, removed_std, is_comm_channel=False)
               if embeds_std:
-                  discord_payload = {
-                      "content": f"## {emoji} Pollinations AI {title} Models Update:",
-                      "username": "Pollinations Models List Updates Bot",
-                      "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
-                      "embeds": embeds_std
-                  }
-                  Path(f"/tmp/discord_{cat_id}_std.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+                  for i, embed in enumerate(embeds_std):
+                      discord_payload = {
+                          "content": f"## {emoji} Pollinations AI {title} Models Update:" if i == 0 else f"## {emoji} Pollinations AI {title} Models Update: (part {i+1})",
+                          "username": "Pollinations Models List Updates Bot",
+                          "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
+                          "embeds": [embed]
+                      }
+                      Path(f"/tmp/discord_{cat_id}_std_{i}.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+                  Path(f"/tmp/discord_{cat_id}_std_count.txt").write_text(str(len(embeds_std)), encoding="utf-8")
 
               embeds_comm = make_discord_embeds(added_comm, modified_comm, removed_comm, is_comm_channel=True)
               if embeds_comm:
-                  discord_payload = {
-                      "content": f"## {emoji} Pollinations AI {title} (Community) Models Update:",
-                      "username": "Pollinations Models List Updates Bot",
-                      "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
-                      "embeds": embeds_comm
-                  }
-                  Path(f"/tmp/discord_{cat_id}_comm.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+                  for i, embed in enumerate(embeds_comm):
+                      discord_payload = {
+                          "content": f"## {emoji} Pollinations AI {title} (Community) Models Update:" if i == 0 else f"## {emoji} Pollinations AI {title} (Community) Models Update: (part {i+1})",
+                          "username": "Pollinations Models List Updates Bot",
+                          "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
+                          "embeds": [embed]
+                      }
+                      Path(f"/tmp/discord_{cat_id}_comm_{i}.json").write_text(json.dumps(discord_payload), encoding="utf-8")
+                  Path(f"/tmp/discord_{cat_id}_comm_count.txt").write_text(str(len(embeds_comm)), encoding="utf-8")
           EOF
 
       - name: Check Text Models
@@ -411,8 +472,12 @@ jobs:
                 done
               fi
 
-              if [ -f /tmp/discord_${CAT}_old.json ] && [ -n "${{ env.DS_WEBHOOK }}" ]; then
-                curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_old.json "${{ env.DS_WEBHOOK }}"
+              OLD_COUNT=$(cat /tmp/discord_${CAT}_old_count.txt 2>/dev/null || echo 0)
+              if [ "$OLD_COUNT" -gt 0 ] && [ -n "${{ env.DS_WEBHOOK }}" ]; then
+                for i in $(seq 0 $((OLD_COUNT - 1))); do
+                  curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_old_${i}.json "${{ env.DS_WEBHOOK }}"
+                  sleep 1
+                done
               fi
 
               case "$CAT" in
@@ -424,16 +489,24 @@ jobs:
                 embeddings) WEBHOOK_URL="${{ env.DS_WEBHOOK_EMBEDDINGS }}" ;;
               esac
 
-              if [ -f /tmp/discord_${CAT}_std.json ] && [ -n "$WEBHOOK_URL" ]; then
-                curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_std.json "$WEBHOOK_URL"
+              STD_COUNT=$(cat /tmp/discord_${CAT}_std_count.txt 2>/dev/null || echo 0)
+              if [ "$STD_COUNT" -gt 0 ] && [ -n "$WEBHOOK_URL" ]; then
+                for i in $(seq 0 $((STD_COUNT - 1))); do
+                  curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_std_${i}.json "$WEBHOOK_URL"
+                  sleep 1
+                done
               fi
             fi
           done
 
           for CAT in "${CATEGORIES[@]}"; do
             if [ "$(cat /tmp/changed_${CAT}.flag 2>/dev/null)" = "true" ]; then
-              if [ -f /tmp/discord_${CAT}_comm.json ] && [ -n "${{ env.DS_WEBHOOK_COMMUNITY }}" ]; then
-                curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_comm.json "${{ env.DS_WEBHOOK_COMMUNITY }}"
+              COMM_COUNT=$(cat /tmp/discord_${CAT}_comm_count.txt 2>/dev/null || echo 0)
+              if [ "$COMM_COUNT" -gt 0 ] && [ -n "${{ env.DS_WEBHOOK_COMMUNITY }}" ]; then
+                for i in $(seq 0 $((COMM_COUNT - 1))); do
+                  curl -H "Content-Type: application/json" -d @/tmp/discord_${CAT}_comm_${i}.json "${{ env.DS_WEBHOOK_COMMUNITY }}"
+                  sleep 1
+                done
               fi
             fi
           done
