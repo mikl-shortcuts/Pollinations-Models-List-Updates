@@ -108,7 +108,7 @@ jobs:
           def diff_dicts(o, n, prefix=""):
               d = {}
               for k in sorted(set(o.keys()) | set(n.keys())):
-                  if k == "created": continue
+                  if k == ("created", "health"): continue
                   full_key = f"{prefix}.{k}" if prefix else k
                   ov, nv = o.get(k), n.get(k)
                   if ov != nv:
@@ -192,7 +192,7 @@ jobs:
                   m = curr_map[n]
                   lines = [f"  - <code>{n}</code>{get_tags(m)} ({get_model_desc(m)})"]
                   for k in sorted(m.keys()):
-                      if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                      if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only", "health"):
                           continue
                       if k == "pricing" and isinstance(m[k], dict):
                           currency = m[k].get("currency", "pollen")
@@ -227,7 +227,7 @@ jobs:
                   m = prev_map[n]
                   lines = [f"  - <code>{n}</code>{get_tags(m)} ({get_model_desc(m)})"]
                   for k in sorted(m.keys()):
-                      if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                      if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only", "health"):
                           continue
                       if k == "pricing" and isinstance(m[k], dict):
                           currency = m[k].get("currency", "pollen")
@@ -291,7 +291,7 @@ jobs:
                           m = curr_map[n]
                           desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)})")
                           for k in sorted(m.keys()):
-                              if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                              if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only", "health"):
                                   continue
                               if k == "pricing" and isinstance(m[k], dict):
                                   currency = m[k].get("currency", "pollen")
@@ -330,7 +330,7 @@ jobs:
                           m = prev_map[n]
                           desc.append(f"- {to_monospace(n)}{clean_tags(m)} ({get_model_desc(m)})")
                           for k in sorted(m.keys()):
-                              if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only"):
+                              if k in ("category", "community", "added_date", "is_specialized", "alpha", "name", "description", "created", "title", "paid_only", "health"):
                                   continue
                               if k == "pricing" and isinstance(m[k], dict):
                                   currency = m[k].get("currency", "pollen")
