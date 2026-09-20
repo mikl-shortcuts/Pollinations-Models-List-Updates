@@ -273,7 +273,7 @@ jobs:
               removed_comm = [n for n in removed if prev_map[n].get("community")]
 
               def make_discord_embeds(added_list, modified_list, removed_list, is_comm_channel=False):
-                  MAX_DISCORD_LEN = 900
+                  MAX_DISCORD_LEN = 3800
                   
                   def clean_tags(item):
                       tags = []
@@ -285,11 +285,11 @@ jobs:
                           tags.append("[COMMUNITY]")
                       return " " + " ".join(tags) if tags else ""
 
-                  def split_into_chunks(text, header):
+                  def split_into_chunks(text, header=""):
                       lines = text.split('\n')
                       chunks = []
                       current_lines = []
-                      current_len = len(header) + 1
+                      current_len = 0
                       
                       for line in lines:
                           line_len = len(line) + 1
@@ -329,7 +329,7 @@ jobs:
                       chunks = split_into_chunks(full_text, header)
                       
                       for i, chunk in enumerate(chunks):
-                          title = "Added Models:" if i == 0 else f"Added Models: (part {i+1})"
+                          title = "Added Models:"
                           embeds.append({
                               "title": title,
                               "description": chunk,
@@ -361,7 +361,7 @@ jobs:
                       chunks = split_into_chunks(full_text, header)
                       
                       for i, chunk in enumerate(chunks):
-                          title = "Updated Models:" if i == 0 else f"Updated Models: (part {i+1})"
+                          title = "Updated Models:"
                           embeds.append({
                               "title": title,
                               "description": chunk,
@@ -390,7 +390,7 @@ jobs:
                       chunks = split_into_chunks(full_text, header)
                       
                       for i, chunk in enumerate(chunks):
-                          title = "Deleted Models:" if i == 0 else f"Deleted Models: (part {i+1})"
+                          title = "Deleted Models:"
                           embeds.append({
                               "title": title,
                               "description": chunk,
@@ -403,7 +403,7 @@ jobs:
               if embeds_old:
                   for i, embed in enumerate(embeds_old):
                       discord_payload = {
-                          "content": f"## {emoji} Pollinations AI {title} Models Update:" if i == 0 else f"## {emoji} Pollinations AI {title} Models Update: (part {i+1})",
+                          "content": f"## {emoji} Pollinations AI {title} Models Update:"",
                           "username": "Pollinations Models List Updates Bot",
                           "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
                           "embeds": [embed],
@@ -416,7 +416,7 @@ jobs:
               if embeds_std:
                   for i, embed in enumerate(embeds_std):
                       discord_payload = {
-                          "content": f"## {emoji} Pollinations AI {title} Models Update:" if i == 0 else f"## {emoji} Pollinations AI {title} Models Update: (part {i+1})",
+                          "content": f"## {emoji} Pollinations AI {title} Models Update:",
                           "username": "Pollinations Models List Updates Bot",
                           "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
                           "embeds": [embed]
@@ -428,7 +428,7 @@ jobs:
               if embeds_comm:
                   for i, embed in enumerate(embeds_comm):
                       discord_payload = {
-                          "content": f"## {emoji} Pollinations AI {title} (Community) Models Update:" if i == 0 else f"## {emoji} Pollinations AI {title} (Community) Models Update: (part {i+1})",
+                          "content": f"## {emoji} Pollinations AI {title} (Community) Models Update:",
                           "username": "Pollinations Models List Updates Bot",
                           "avatar_url": "https://raw.githubusercontent.com/mikl-shortcuts/Pollinations-Models-List-Updates/refs/heads/main/Logo.JPG",
                           "embeds": [embed]
