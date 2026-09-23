@@ -58,7 +58,7 @@
     "default_duration": 5,
     "description": "Cheap 5-second silent clips at 480p — great for quick drafts",
     "health": {
-      "requests": 50,
+      "requests": 32,
       "status": "healthy",
       "success_rate": 100
     },
@@ -160,7 +160,7 @@
     "default_duration": 5,
     "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
     "health": {
-      "requests": 1,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -235,7 +235,7 @@
     "default_duration": 5,
     "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 6,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -318,7 +318,7 @@
     "description": "Long-form video — clips from 6 seconds up to 2 minutes at 720p",
     "duration_step": 6,
     "health": {
-      "requests": 16,
+      "requests": 27,
       "status": "healthy",
       "success_rate": 100
     },
@@ -361,7 +361,7 @@
     "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 2,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -432,9 +432,9 @@
     "default_duration": 5,
     "description": "720p video with natively synced sound, from text, images, or references",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -496,9 +496,9 @@
     "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "health": {
-      "requests": 7,
-      "status": "down",
-      "success_rate": 57.14285714285714
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -609,7 +609,7 @@
     "default_duration": 4,
     "description": "Four-second video with synchronized audio and reference media at 480p or 720p",
     "health": {
-      "requests": 1,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -683,46 +683,6 @@
       "reference_videos",
       "reference_audios"
     ]
-  },
-  {
-    "added_date": 1788600412000,
-    "aliases": [
-      "NamanSoni78/Seedance-2.5"
-    ],
-    "alpha": true,
-    "brand_url": "https://talkaicompanion.com/",
-    "capabilities": [],
-    "category": "video",
-    "community": true,
-    "description": "visit https://talkaicompanion.com/ for support",
-    "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/NamanSoni78/Seedance-2.5",
-    "output_modalities": [
-      "video"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionVideoSeconds": "0.3",
-      "currency": "pollen"
-    },
-    "publisher": "Visit TalkAiCompanion.com For Support Me",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
-      "/video/{prompt}",
-      "/v1/responses",
-      "/v1/chat/completions"
-    ],
-    "title": "Seedance-2.5"
   },
   {
     "added_date": 1787875200000,
@@ -799,9 +759,9 @@
     "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "health": {
-      "requests": 13,
+      "requests": 45,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 97.77777777777777
     },
     "input_modalities": [
       "text",
@@ -935,7 +895,7 @@
     "default_duration": 5,
     "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "health": {
-      "requests": 105,
+      "requests": 157,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1012,7 +972,7 @@
     "default_duration": 5,
     "description": "Affordable video from text or an image at 720p or 1080p",
     "health": {
-      "requests": 18,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1073,7 +1033,7 @@
     "default_duration": 5,
     "description": "Short videos from text or an image (720p, 1-15s)",
     "health": {
-      "requests": 5,
+      "requests": 10,
       "status": "healthy",
       "success_rate": 100
     },
