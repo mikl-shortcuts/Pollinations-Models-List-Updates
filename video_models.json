@@ -12,9 +12,9 @@
     "default_duration": 5,
     "description": "Text and first-frame video generation at 720p",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -58,7 +58,7 @@
     "default_duration": 5,
     "description": "Cheap 5-second silent clips at 480p — great for quick drafts",
     "health": {
-      "requests": 32,
+      "requests": 39,
       "status": "healthy",
       "success_rate": 100
     },
@@ -160,7 +160,7 @@
     "default_duration": 5,
     "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
     "health": {
-      "requests": 2,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -183,6 +183,26 @@
       "currency": "pollen"
     },
     "pricing_default_label": "720p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "720p",
+          "1080p": "1080p",
+          "1080p_image": "1080p"
+        }
+      },
+      {
+        "key": "input",
+        "label": "Input",
+        "values": {
+          "": "Any",
+          "1080p": "Text/video",
+          "1080p_image": "Image"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies to 1080p requests without an input image.",
@@ -235,7 +255,7 @@
     "default_duration": 5,
     "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 2,
+      "requests": 7,
       "status": "healthy",
       "success_rate": 100
     },
@@ -260,6 +280,17 @@
       "promptVideoSeconds": "0.068"
     },
     "pricing_default_label": "480p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "480p",
+          "1080p": "1080p",
+          "720p": "720p"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 720p.",
@@ -318,7 +349,7 @@
     "description": "Long-form video — clips from 6 seconds up to 2 minutes at 720p",
     "duration_step": 6,
     "health": {
-      "requests": 27,
+      "requests": 26,
       "status": "healthy",
       "success_rate": 100
     },
@@ -361,7 +392,7 @@
     "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 6,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -382,6 +413,17 @@
       "currency": "pollen"
     },
     "pricing_default_label": "720p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "720p",
+          "1080p": "1080p",
+          "480p": "480p"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 480p.",
@@ -432,9 +474,9 @@
     "default_duration": 5,
     "description": "720p video with natively synced sound, from text, images, or references",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -456,6 +498,24 @@
       "currency": "pollen"
     },
     "pricing_default_label": "720p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "720p",
+          "video_in": "720p"
+        }
+      },
+      {
+        "key": "reference_video",
+        "label": "Video input",
+        "values": {
+          "": "No",
+          "video_in": "Yes"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the request includes a reference video input.",
@@ -496,9 +556,9 @@
     "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -568,6 +628,16 @@
       "currency": "pollen"
     },
     "pricing_default_label": "720p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "720p",
+          "480p": "480p"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 480p.",
@@ -609,7 +679,7 @@
     "default_duration": 4,
     "description": "Four-second video with synchronized audio and reference media at 480p or 720p",
     "health": {
-      "requests": 2,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -633,6 +703,28 @@
       "currency": "pollen"
     },
     "pricing_default_label": "480p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "480p",
+          "720p": "720p",
+          "video_in_480p": "480p",
+          "video_in_720p": "720p"
+        }
+      },
+      {
+        "key": "reference_video",
+        "label": "Video input",
+        "values": {
+          "": "No",
+          "720p": "No",
+          "video_in_480p": "Yes",
+          "video_in_720p": "Yes"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 720p.",
@@ -693,9 +785,9 @@
     "default_duration": 5,
     "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -759,9 +851,9 @@
     "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "health": {
-      "requests": 45,
+      "requests": 25,
       "status": "healthy",
-      "success_rate": 97.77777777777777
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -781,6 +873,16 @@
       "currency": "pollen"
     },
     "pricing_default_label": "720p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "720p",
+          "1080p": "1080p"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 1080p.",
@@ -823,9 +925,9 @@
     "default_duration": 5,
     "description": "Five-second text-to-video clips with synchronized stereo audio at 480p, 768p, or 2K",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -843,6 +945,17 @@
       "currency": "pollen"
     },
     "pricing_default_label": "480p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "480p",
+          "2k": "2K",
+          "768p": "768p"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 768p.",
@@ -895,9 +1008,9 @@
     "default_duration": 5,
     "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "health": {
-      "requests": 157,
+      "requests": 138,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 97.82608695652173
     },
     "input_modalities": [
       "text",
@@ -917,6 +1030,17 @@
       "currency": "pollen"
     },
     "pricing_default_label": "480p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "480p",
+          "1080p": "1080p",
+          "768p": "768p"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 768p.",
@@ -972,7 +1096,7 @@
     "default_duration": 5,
     "description": "Affordable video from text or an image at 720p or 1080p",
     "health": {
-      "requests": 1,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -993,6 +1117,16 @@
       "currency": "pollen"
     },
     "pricing_default_label": "720p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "720p",
+          "1080p": "1080p"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 1080p.",
@@ -1033,7 +1167,7 @@
     "default_duration": 5,
     "description": "Short videos from text or an image (720p, 1-15s)",
     "health": {
-      "requests": 10,
+      "requests": 31,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1078,9 +1212,9 @@
     "default_duration": 5,
     "description": "Video from text or a start image with synchronized audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1101,6 +1235,17 @@
       "promptImageTokens": "0.01055"
     },
     "pricing_default_label": "720p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "720p",
+          "1080p": "1080p",
+          "480p": "480p"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when the requested video resolution is 480p.",

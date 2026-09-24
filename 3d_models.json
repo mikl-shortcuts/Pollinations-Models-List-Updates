@@ -11,7 +11,7 @@
     "description": "Textured 3D models from an image or a text prompt",
     "flat_rate": true,
     "health": {
-      "requests": 2,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -53,9 +53,9 @@
     "description": "Image-to-3D generation with selectable output detail",
     "flat_rate": true,
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "image"
@@ -70,6 +70,17 @@
       "currency": "pollen"
     },
     "pricing_default_label": "Low resolution",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "Low",
+          "high": "High",
+          "medium": "Medium"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Balanced output detail and generation cost.",

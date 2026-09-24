@@ -11,9 +11,9 @@
     "community": false,
     "description": "Fast transcription with support for 99 languages",
     "health": {
-      "requests": 4,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 8,
+      "status": "down",
+      "success_rate": 12.5
     },
     "input_modalities": [
       "audio"
@@ -27,6 +27,16 @@
       "promptAudioSeconds": "0.000041666667"
     },
     "pricing_default_label": "Standard transcription",
+    "pricing_dimensions": [
+      {
+        "key": "diarization",
+        "label": "Speakers",
+        "values": {
+          "": "Standard",
+          "diarization": "Identify"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when response_format is diarized_json.",
@@ -62,7 +72,7 @@
     "community": false,
     "description": "High-accuracy transcription with multilingual code switching and prompts",
     "health": {
-      "requests": 19,
+      "requests": 14,
       "status": "healthy",
       "success_rate": 100
     },
@@ -78,6 +88,28 @@
       "promptAudioSeconds": "0.000058333333"
     },
     "pricing_default_label": "Standard transcription",
+    "pricing_dimensions": [
+      {
+        "key": "prompting",
+        "label": "Prompting",
+        "values": {
+          "": "Off",
+          "diarization": "Off",
+          "prompting": "On",
+          "prompting_diarization": "On"
+        }
+      },
+      {
+        "key": "diarization",
+        "label": "Speakers",
+        "values": {
+          "": "Standard",
+          "diarization": "Identify",
+          "prompting": "Standard",
+          "prompting_diarization": "Identify"
+        }
+      }
+    ],
     "pricing_variants": [
       {
         "description": "Applies when a prompt is provided.",
@@ -126,7 +158,7 @@
     "community": false,
     "description": "Low-latency speech in 32 languages with character timestamps",
     "health": {
-      "requests": 21,
+      "requests": 59,
       "status": "healthy",
       "success_rate": 100
     },
@@ -201,9 +233,9 @@
     "community": false,
     "description": "Preserves delivery and emotion while transforming speaker identity",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -273,7 +305,7 @@
     "community": false,
     "description": "Emotionally rich speech in 29 languages with character timestamps",
     "health": {
-      "requests": 7,
+      "requests": 11,
       "status": "healthy",
       "success_rate": 100
     },
@@ -349,7 +381,7 @@
     "community": false,
     "description": "Sound effects from a text description",
     "health": {
-      "requests": 4,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -389,9 +421,9 @@
     "community": false,
     "description": "Expressive speech with emotion controls, audio tags, and character timestamps",
     "health": {
-      "requests": 278,
+      "requests": 532,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.62406015037594
     },
     "input_modalities": [
       "text"
@@ -537,7 +569,7 @@
     "community": false,
     "description": "Studio-grade music from a text prompt or reference track",
     "health": {
-      "requests": 58,
+      "requests": 52,
       "status": "healthy",
       "success_rate": 100
     },
@@ -572,9 +604,9 @@
     "community": false,
     "description": "Richer, better prompt-following music from text or a reference track",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 4,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -611,7 +643,7 @@
     "community": false,
     "description": "Transcription in 90+ languages with speaker labels",
     "health": {
-      "requests": 124,
+      "requests": 5,
       "status": "healthy",
       "success_rate": 100
     },
@@ -678,9 +710,9 @@
     "community": false,
     "description": "Multilingual expressive speech with natural-language emotion and delivery control",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -715,9 +747,9 @@
     "community": false,
     "description": "30-second music with vocals, lyrics, or instrumental arrangements",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -844,7 +876,7 @@
     "community": false,
     "description": "Fast multilingual speech recognition with optional language and prompt context",
     "health": {
-      "requests": 4,
+      "requests": 23,
       "status": "healthy",
       "success_rate": 100
     },
@@ -878,7 +910,7 @@
     "community": false,
     "description": "Accurate, affordable speech-to-text transcription",
     "health": {
-      "requests": 23,
+      "requests": 57,
       "status": "healthy",
       "success_rate": 100
     },
@@ -911,7 +943,7 @@
     "community": false,
     "description": "Fast multilingual text-to-speech at low cost",
     "health": {
-      "requests": 74,
+      "requests": 14,
       "status": "healthy",
       "success_rate": 100
     },
@@ -949,9 +981,9 @@
     "community": false,
     "description": "Text-to-speech you can direct with emotion and style instructions",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 5,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -987,9 +1019,9 @@
     "community": false,
     "description": "English conversational speech with six reading and dialogue voices",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -1074,9 +1106,9 @@
     "description": "Long-form stereo music and soundscapes in studio quality",
     "flat_rate": true,
     "health": {
-      "requests": 11,
-      "status": "degraded",
-      "success_rate": 90.9090909090909
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1111,9 +1143,9 @@
     "community": false,
     "description": "Fast multilingual speech recognition with word timestamps, speaker labels, and text formatting",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "audio"
@@ -1143,7 +1175,7 @@
     "community": false,
     "description": "Expressive multilingual speech across 28 built-in voices with inline style controls",
     "health": {
-      "requests": 8,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
