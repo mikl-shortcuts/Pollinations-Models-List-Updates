@@ -58,7 +58,7 @@
     "default_duration": 5,
     "description": "Cheap 5-second silent clips at 480p — great for quick drafts",
     "health": {
-      "requests": 39,
+      "requests": 124,
       "status": "healthy",
       "success_rate": 100
     },
@@ -110,9 +110,9 @@
     "default_duration": 5,
     "description": "Video with sound from text or an image (720p, 5/10/15s clips)",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -160,7 +160,7 @@
     "default_duration": 5,
     "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
     "health": {
-      "requests": 1,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -255,7 +255,7 @@
     "default_duration": 5,
     "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 7,
+      "requests": 9,
       "status": "healthy",
       "success_rate": 100
     },
@@ -349,7 +349,7 @@
     "description": "Long-form video — clips from 6 seconds up to 2 minutes at 720p",
     "duration_step": 6,
     "health": {
-      "requests": 26,
+      "requests": 21,
       "status": "healthy",
       "success_rate": 100
     },
@@ -392,7 +392,7 @@
     "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 4,
+      "requests": 17,
       "status": "healthy",
       "success_rate": 100
     },
@@ -474,9 +474,9 @@
     "default_duration": 5,
     "description": "720p video with natively synced sound, from text, images, or references",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 1,
+      "status": "down",
+      "success_rate": 0
     },
     "input_modalities": [
       "text",
@@ -556,9 +556,9 @@
     "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -679,9 +679,9 @@
     "default_duration": 4,
     "description": "Four-second video with synchronized audio and reference media at 480p or 720p",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 5,
+      "status": "down",
+      "success_rate": 80
     },
     "input_modalities": [
       "text",
@@ -785,7 +785,7 @@
     "default_duration": 5,
     "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
     "health": {
-      "requests": 2,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -851,7 +851,7 @@
     "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "health": {
-      "requests": 25,
+      "requests": 16,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1008,9 +1008,9 @@
     "default_duration": 5,
     "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "health": {
-      "requests": 138,
+      "requests": 224,
       "status": "healthy",
-      "success_rate": 97.82608695652173
+      "success_rate": 99.55357142857143
     },
     "input_modalities": [
       "text",
@@ -1026,7 +1026,7 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.00625",
+      "completionVideoSeconds": "0.025",
       "currency": "pollen"
     },
     "pricing_default_label": "480p",
@@ -1047,7 +1047,7 @@
         "label": "768p",
         "name": "768p",
         "pricing": {
-          "completionVideoSeconds": "0.01",
+          "completionVideoSeconds": "0.04",
           "currency": "pollen"
         }
       },
@@ -1056,7 +1056,7 @@
         "label": "1080p",
         "name": "1080p",
         "pricing": {
-          "completionVideoSeconds": "0.02",
+          "completionVideoSeconds": "0.08",
           "currency": "pollen"
         }
       }
@@ -1167,7 +1167,7 @@
     "default_duration": 5,
     "description": "Short videos from text or an image (720p, 1-15s)",
     "health": {
-      "requests": 31,
+      "requests": 20,
       "status": "healthy",
       "success_rate": 100
     },
