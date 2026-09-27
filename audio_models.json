@@ -11,9 +11,9 @@
     "community": false,
     "description": "Fast transcription with support for 99 languages",
     "health": {
-      "requests": 8,
+      "requests": 15,
       "status": "down",
-      "success_rate": 12.5
+      "success_rate": 0
     },
     "input_modalities": [
       "audio"
@@ -72,9 +72,9 @@
     "community": false,
     "description": "High-accuracy transcription with multilingual code switching and prompts",
     "health": {
-      "requests": 14,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "audio"
@@ -158,7 +158,7 @@
     "community": false,
     "description": "Low-latency speech in 32 languages with character timestamps",
     "health": {
-      "requests": 59,
+      "requests": 45,
       "status": "healthy",
       "success_rate": 100
     },
@@ -233,7 +233,7 @@
     "community": false,
     "description": "Preserves delivery and emotion while transforming speaker identity",
     "health": {
-      "requests": 3,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -305,9 +305,9 @@
     "community": false,
     "description": "Emotionally rich speech in 29 languages with character timestamps",
     "health": {
-      "requests": 11,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -381,7 +381,7 @@
     "community": false,
     "description": "Sound effects from a text description",
     "health": {
-      "requests": 1,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -421,9 +421,9 @@
     "community": false,
     "description": "Expressive speech with emotion controls, audio tags, and character timestamps",
     "health": {
-      "requests": 532,
+      "requests": 316,
       "status": "healthy",
-      "success_rate": 99.62406015037594
+      "success_rate": 99.68354430379746
     },
     "input_modalities": [
       "text"
@@ -569,9 +569,9 @@
     "community": false,
     "description": "Studio-grade music from a text prompt or reference track",
     "health": {
-      "requests": 52,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 8,
+      "status": "degraded",
+      "success_rate": 87.5
     },
     "input_modalities": [
       "text",
@@ -604,9 +604,9 @@
     "community": false,
     "description": "Richer, better prompt-following music from text or a reference track",
     "health": {
-      "requests": 4,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -643,7 +643,7 @@
     "community": false,
     "description": "Transcription in 90+ languages with speaker labels",
     "health": {
-      "requests": 5,
+      "requests": 24,
       "status": "healthy",
       "success_rate": 100
     },
@@ -677,9 +677,9 @@
     "community": false,
     "description": "Removes background noise while preserving clear spoken audio",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio",
@@ -710,7 +710,7 @@
     "community": false,
     "description": "Multilingual expressive speech with natural-language emotion and delivery control",
     "health": {
-      "requests": 3,
+      "requests": 65,
       "status": "healthy",
       "success_rate": 100
     },
@@ -736,6 +736,138 @@
     "title": "Fish Audio S2.1 Pro"
   },
   {
+    "added_date": 1790208000000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Fast, high-throughput speech across 30 voices",
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "google/gemini-3.8-flash-lite-tts",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionAudioTokens": "0.000006",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000005"
+    },
+    "publisher": "Google",
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Gemini 3.8 Flash Lite TTS",
+    "voices": [
+      "Zephyr",
+      "Puck",
+      "Charon",
+      "Kore",
+      "Fenrir",
+      "Leda",
+      "Orus",
+      "Aoede",
+      "Callirrhoe",
+      "Autonoe",
+      "Enceladus",
+      "Iapetus",
+      "Umbriel",
+      "Algieba",
+      "Despina",
+      "Erinome",
+      "Algenib",
+      "Rasalgethi",
+      "Laomedeia",
+      "Achernar",
+      "Alnilam",
+      "Schedar",
+      "Gacrux",
+      "Pulcherrima",
+      "Achird",
+      "Zubenelgenubi",
+      "Vindemiatrix",
+      "Sadachbia",
+      "Sadaltager",
+      "Sulafat"
+    ]
+  },
+  {
+    "added_date": 1790208000000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Expressive, style-steerable speech across 30 voices for creative narration",
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "google/gemini-3.8-flash-tts",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionAudioTokens": "0.000009",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000005"
+    },
+    "publisher": "Google",
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Gemini 3.8 Flash TTS",
+    "voices": [
+      "Zephyr",
+      "Puck",
+      "Charon",
+      "Kore",
+      "Fenrir",
+      "Leda",
+      "Orus",
+      "Aoede",
+      "Callirrhoe",
+      "Autonoe",
+      "Enceladus",
+      "Iapetus",
+      "Umbriel",
+      "Algieba",
+      "Despina",
+      "Erinome",
+      "Algenib",
+      "Rasalgethi",
+      "Laomedeia",
+      "Achernar",
+      "Alnilam",
+      "Schedar",
+      "Gacrux",
+      "Pulcherrima",
+      "Achird",
+      "Zubenelgenubi",
+      "Vindemiatrix",
+      "Sadachbia",
+      "Sadaltager",
+      "Sulafat"
+    ]
+  },
+  {
     "added_date": 1784851200000,
     "aliases": [
       "lyria",
@@ -747,9 +879,9 @@
     "community": false,
     "description": "30-second music with vocals, lyrics, or instrumental arrangements",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -773,6 +905,39 @@
     "title": "Lyria 3 Clip Preview"
   },
   {
+    "added_date": 1790380800000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Full songs with vocals or instrumental arrangements; describe structure and approximate duration in the prompt",
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "google/lyria-3.5",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionAudioTokens": "0.08",
+      "currency": "pollen"
+    },
+    "publisher": "Google",
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Lyria 3.5"
+  },
+  {
     "added_date": 1785456000000,
     "aliases": [
       "kokoro-82m",
@@ -785,7 +950,7 @@
     "community": false,
     "description": "Lightweight multilingual speech across 54 voices and eight languages",
     "health": {
-      "requests": 14,
+      "requests": 53,
       "status": "healthy",
       "success_rate": 100
     },
@@ -910,9 +1075,9 @@
     "community": false,
     "description": "Accurate, affordable speech-to-text transcription",
     "health": {
-      "requests": 57,
+      "requests": 625,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.83999999999999
     },
     "input_modalities": [
       "audio"
@@ -943,7 +1108,7 @@
     "community": false,
     "description": "Fast multilingual text-to-speech at low cost",
     "health": {
-      "requests": 14,
+      "requests": 16,
       "status": "healthy",
       "success_rate": 100
     },
@@ -981,7 +1146,7 @@
     "community": false,
     "description": "Text-to-speech you can direct with emotion and style instructions",
     "health": {
-      "requests": 5,
+      "requests": 21,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1106,9 +1271,9 @@
     "description": "Long-form stereo music and soundscapes in studio quality",
     "flat_rate": true,
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1143,9 +1308,9 @@
     "community": false,
     "description": "Fast multilingual speech recognition with word timestamps, speaker labels, and text formatting",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -1175,7 +1340,7 @@
     "community": false,
     "description": "Expressive multilingual speech across 28 built-in voices with inline style controls",
     "health": {
-      "requests": 4,
+      "requests": 95,
       "status": "healthy",
       "success_rate": 100
     },

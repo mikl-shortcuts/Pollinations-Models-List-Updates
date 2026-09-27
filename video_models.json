@@ -58,7 +58,7 @@
     "default_duration": 5,
     "description": "Cheap 5-second silent clips at 480p — great for quick drafts",
     "health": {
-      "requests": 124,
+      "requests": 98,
       "status": "healthy",
       "success_rate": 100
     },
@@ -160,7 +160,7 @@
     "default_duration": 5,
     "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
     "health": {
-      "requests": 3,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -255,7 +255,7 @@
     "default_duration": 5,
     "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 9,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -349,7 +349,7 @@
     "description": "Long-form video — clips from 6 seconds up to 2 minutes at 720p",
     "duration_step": 6,
     "health": {
-      "requests": 21,
+      "requests": 17,
       "status": "healthy",
       "success_rate": 100
     },
@@ -392,7 +392,7 @@
     "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 17,
+      "requests": 15,
       "status": "healthy",
       "success_rate": 100
     },
@@ -474,9 +474,9 @@
     "default_duration": 5,
     "description": "720p video with natively synced sound, from text, images, or references",
     "health": {
-      "requests": 1,
-      "status": "down",
-      "success_rate": 0
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -556,9 +556,9 @@
     "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -679,9 +679,9 @@
     "default_duration": 4,
     "description": "Four-second video with synchronized audio and reference media at 480p or 720p",
     "health": {
-      "requests": 5,
-      "status": "down",
-      "success_rate": 80
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -851,7 +851,7 @@
     "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "health": {
-      "requests": 16,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -925,9 +925,9 @@
     "default_duration": 5,
     "description": "Five-second text-to-video clips with synchronized stereo audio at 480p, 768p, or 2K",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -995,6 +995,106 @@
     ]
   },
   {
+    "added_date": 1790208000000,
+    "aliases": [],
+    "allowed_durations": [
+      5,
+      10,
+      15
+    ],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "High-quality 5–15 second video from text, start/end frames, or reference media with synchronized audio at 480p, 768p, or 1080p",
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "max_duration": 15,
+    "max_reference_images": 2,
+    "min_duration": 5,
+    "name": "minimax/minimax-h3-max",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "pricing_adjustments": [
+      {
+        "currency": "pollen",
+        "kind": "video",
+        "label": "Provider cost",
+        "name": "fal.minimax_h3_max.provider_units.v1",
+        "price": "1",
+        "quantity": 1,
+        "unit": "USD"
+      }
+    ],
+    "pricing_default_label": "480p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "480p",
+          "1080p": "1080p",
+          "768p": "768p"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "768p video billed from provider-reported units.",
+        "label": "768p",
+        "name": "768p",
+        "pricing": {
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "1080p video billed from provider-reported units.",
+        "label": "1080p",
+        "name": "1080p",
+        "pricing": {
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "MiniMax",
+    "resolutions": [
+      "480p",
+      "768p",
+      "1080p"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "MiniMax H3 Max",
+    "video_capabilities": [
+      "start_frame",
+      "end_frame",
+      "audio_output",
+      "reference_images",
+      "reference_videos",
+      "reference_audios"
+    ]
+  },
+  {
     "added_date": 1788480000000,
     "aliases": [],
     "allowed_durations": [
@@ -1008,9 +1108,9 @@
     "default_duration": 5,
     "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "health": {
-      "requests": 224,
+      "requests": 98,
       "status": "healthy",
-      "success_rate": 99.55357142857143
+      "success_rate": 98.9795918367347
     },
     "input_modalities": [
       "text",
@@ -1096,7 +1196,7 @@
     "default_duration": 5,
     "description": "Affordable video from text or an image at 720p or 1080p",
     "health": {
-      "requests": 3,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1167,7 +1267,7 @@
     "default_duration": 5,
     "description": "Short videos from text or an image (720p, 1-15s)",
     "health": {
-      "requests": 20,
+      "requests": 14,
       "status": "healthy",
       "success_rate": 100
     },
