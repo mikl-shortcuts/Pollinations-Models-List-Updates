@@ -12,9 +12,9 @@
     "default_duration": 5,
     "description": "Text and first-frame video generation at 720p",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -61,7 +61,7 @@
     "default_duration": 5,
     "description": "Cheap 5-second silent clips at 480p — great for quick drafts",
     "health": {
-      "requests": 188,
+      "requests": 158,
       "status": "healthy",
       "success_rate": 100
     },
@@ -116,9 +116,9 @@
     "default_duration": 5,
     "description": "Video with sound from text or an image (720p, 5/10/15s clips)",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -169,9 +169,9 @@
     "default_duration": 5,
     "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
     "health": {
-      "requests": 10,
+      "requests": 24,
       "status": "degraded",
-      "success_rate": 90
+      "success_rate": 83.33333333333334
     },
     "input_modalities": [
       "text",
@@ -356,7 +356,7 @@
     "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 14,
+      "requests": 15,
       "status": "healthy",
       "success_rate": 100
     },
@@ -438,9 +438,9 @@
     "default_duration": 5,
     "description": "720p video with natively synced sound, from text, images, or references",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 12,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -523,9 +523,9 @@
     "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -573,9 +573,9 @@
     "default_duration": 5,
     "description": "Lower-cost 4–10 second video with synchronized sound and first/last-frame control at 480p or 720p",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -752,7 +752,7 @@
     "default_duration": 5,
     "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
     "health": {
-      "requests": 12,
+      "requests": 7,
       "status": "healthy",
       "success_rate": 100
     },
@@ -818,7 +818,7 @@
     "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "health": {
-      "requests": 24,
+      "requests": 38,
       "status": "healthy",
       "success_rate": 100
     },
@@ -878,6 +878,76 @@
     "video_capabilities": [
       "start_frame",
       "end_frame",
+      "audio_output"
+    ]
+  },
+  {
+    "added_date": 1790726400000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "Text and first-frame video with synchronized dialogue, ambience and effects at 480p or 768p",
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_duration": 15,
+    "max_reference_images": 1,
+    "min_duration": 5,
+    "name": "heygen/heygen-video-1",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.01055",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "480p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "480p",
+          "768p": "768p"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 768p.",
+        "label": "768p",
+        "name": "768p",
+        "pricing": {
+          "completionVideoSeconds": "0.015825",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "HeyGen",
+    "resolutions": [
+      "480p",
+      "768p"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "HeyGen Video 1",
+    "video_capabilities": [
+      "start_frame",
       "audio_output"
     ]
   },
@@ -1075,9 +1145,9 @@
     "default_duration": 5,
     "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "health": {
-      "requests": 72,
+      "requests": 42,
       "status": "healthy",
-      "success_rate": 98.61111111111111
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1163,7 +1233,7 @@
     "default_duration": 5,
     "description": "Affordable video from text or an image at 720p or 1080p",
     "health": {
-      "requests": 3,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1234,7 +1304,7 @@
     "default_duration": 5,
     "description": "Short videos from text or an image (720p, 1-15s)",
     "health": {
-      "requests": 62,
+      "requests": 16,
       "status": "healthy",
       "success_rate": 100
     },
