@@ -11,9 +11,9 @@
     "community": false,
     "description": "Fast transcription with support for 99 languages",
     "health": {
-      "requests": 20,
-      "status": "degraded",
-      "success_rate": 95
+      "requests": 2,
+      "status": "down",
+      "success_rate": 50
     },
     "input_modalities": [
       "audio"
@@ -72,9 +72,9 @@
     "community": false,
     "description": "High-accuracy transcription with multilingual code switching and prompts",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -158,7 +158,7 @@
     "community": false,
     "description": "Low-latency speech in 32 languages with character timestamps",
     "health": {
-      "requests": 14,
+      "requests": 55,
       "status": "healthy",
       "success_rate": 100
     },
@@ -233,7 +233,7 @@
     "community": false,
     "description": "Preserves delivery and emotion while transforming speaker identity",
     "health": {
-      "requests": 1,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -305,7 +305,7 @@
     "community": false,
     "description": "Emotionally rich speech in 29 languages with character timestamps",
     "health": {
-      "requests": 53,
+      "requests": 22,
       "status": "healthy",
       "success_rate": 100
     },
@@ -381,7 +381,7 @@
     "community": false,
     "description": "Sound effects from a text description",
     "health": {
-      "requests": 5,
+      "requests": 16,
       "status": "healthy",
       "success_rate": 100
     },
@@ -412,8 +412,6 @@
       "tts",
       "text-to-speech",
       "eleven",
-      "tts-1",
-      "tts-1-hd",
       "elevenlabs"
     ],
     "capabilities": [],
@@ -421,9 +419,9 @@
     "community": false,
     "description": "Expressive speech with emotion controls, audio tags, and character timestamps",
     "health": {
-      "requests": 537,
+      "requests": 285,
       "status": "healthy",
-      "success_rate": 99.81378026070763
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -569,7 +567,7 @@
     "community": false,
     "description": "Studio-grade music from a text prompt or reference track",
     "health": {
-      "requests": 15,
+      "requests": 42,
       "status": "healthy",
       "success_rate": 100
     },
@@ -604,7 +602,7 @@
     "community": false,
     "description": "Richer, better prompt-following music from text or a reference track",
     "health": {
-      "requests": 10,
+      "requests": 7,
       "status": "healthy",
       "success_rate": 100
     },
@@ -643,9 +641,9 @@
     "community": false,
     "description": "Transcription in 90+ languages with speaker labels",
     "health": {
-      "requests": 11,
-      "status": "degraded",
-      "success_rate": 90.9090909090909
+      "requests": 30,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -729,9 +727,9 @@
     "community": false,
     "description": "Removes background noise while preserving clear spoken audio",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "audio",
@@ -762,9 +760,9 @@
     "community": false,
     "description": "Multilingual expressive speech with natural-language emotion and delivery control",
     "health": {
-      "requests": 119,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -777,6 +775,11 @@
     "pricing": {
       "completionAudioTokens": "0.000015825",
       "currency": "pollen"
+    },
+    "pricing_units": {
+      "completionAudioTokens": {
+        "unit": "byte"
+      }
     },
     "publisher": "Fish Audio",
     "supported_endpoints": [
@@ -826,9 +829,9 @@
     "community": false,
     "description": "Fast, high-throughput speech across 30 voices",
     "health": {
-      "requests": 4,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 5,
+      "status": "down",
+      "success_rate": 60
     },
     "input_modalities": [
       "text"
@@ -842,6 +845,11 @@
       "completionAudioTokens": "0.000006",
       "currency": "pollen",
       "promptTextTokens": "0.0000005"
+    },
+    "pricing_units": {
+      "completionAudioTokens": {
+        "unit": "token"
+      }
     },
     "publisher": "Google",
     "supported_endpoints": [
@@ -892,9 +900,9 @@
     "community": false,
     "description": "Expressive, style-steerable speech across 30 voices for creative narration",
     "health": {
-      "requests": 35,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 62,
+      "status": "down",
+      "success_rate": 43.54838709677419
     },
     "input_modalities": [
       "text"
@@ -908,6 +916,11 @@
       "completionAudioTokens": "0.000009",
       "currency": "pollen",
       "promptTextTokens": "0.0000005"
+    },
+    "pricing_units": {
+      "completionAudioTokens": {
+        "unit": "token"
+      }
     },
     "publisher": "Google",
     "supported_endpoints": [
@@ -961,8 +974,9 @@
     "category": "audio",
     "community": false,
     "description": "30-second music with vocals, lyrics, or instrumental arrangements",
+    "flat_rate": true,
     "health": {
-      "requests": 6,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -996,7 +1010,7 @@
     "description": "Full songs with vocals or instrumental arrangements; describe structure and approximate duration in the prompt",
     "flat_rate": true,
     "health": {
-      "requests": 5,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1034,7 +1048,7 @@
     "community": false,
     "description": "Lightweight multilingual speech across 54 voices and eight languages",
     "health": {
-      "requests": 6,
+      "requests": 30,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1125,9 +1139,9 @@
     "community": false,
     "description": "Fast multilingual speech recognition with optional language and prompt context",
     "health": {
-      "requests": 9,
-      "status": "degraded",
-      "success_rate": 88.88888888888889
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -1149,15 +1163,17 @@
   },
   {
     "added_date": 1790640000000,
-    "aliases": [],
+    "aliases": [
+      "tts-1"
+    ],
     "capabilities": [],
     "category": "audio",
     "community": false,
     "description": "Low-latency speech synthesis with six voices and six output formats",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 89,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -1190,15 +1206,17 @@
   },
   {
     "added_date": 1790640000000,
-    "aliases": [],
+    "aliases": [
+      "tts-1-hd"
+    ],
     "capabilities": [],
     "category": "audio",
     "community": false,
     "description": "Higher-quality speech synthesis with six voices and six output formats",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 16,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -1241,9 +1259,9 @@
     "community": false,
     "description": "Accurate, affordable speech-to-text transcription",
     "health": {
-      "requests": 289,
+      "requests": 183,
       "status": "healthy",
-      "success_rate": 99.30795847750865
+      "success_rate": 98.36065573770492
     },
     "input_modalities": [
       "audio"
@@ -1274,9 +1292,9 @@
     "community": false,
     "description": "Fast multilingual text-to-speech at low cost",
     "health": {
-      "requests": 40,
-      "status": "degraded",
-      "success_rate": 95
+      "requests": 6,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -1312,7 +1330,7 @@
     "community": false,
     "description": "Text-to-speech you can direct with emotion and style instructions",
     "health": {
-      "requests": 2,
+      "requests": 78,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1506,9 +1524,9 @@
     "community": false,
     "description": "Expressive multilingual speech across 28 built-in voices with inline style controls",
     "health": {
-      "requests": 493,
+      "requests": 53,
       "status": "healthy",
-      "success_rate": 99.79716024340772
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
