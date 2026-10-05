@@ -12,7 +12,7 @@
     "description": "Text-to-image and instruction-based editing up to 2K resolution",
     "flat_rate": true,
     "health": {
-      "requests": 141,
+      "requests": 119,
       "status": "healthy",
       "success_rate": 100
     },
@@ -53,9 +53,9 @@
     "description": "Detailed 4K image generation and editing with a thinking mode",
     "flat_rate": true,
     "health": {
-      "requests": 61,
+      "requests": 62,
       "status": "healthy",
-      "success_rate": 96.72131147540983
+      "success_rate": 96.7741935483871
     },
     "input_modalities": [
       "text",
@@ -82,6 +82,69 @@
     "title": "Wan 2.7 Image Pro"
   },
   {
+    "added_date": 1790899200000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "image",
+    "community": false,
+    "description": "Flagship text-to-image and multi-reference editing at 1K or 2K with up to ten references",
+    "flat_rate": true,
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_reference_images": 10,
+    "name": "black-forest-labs/flux-3-image",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.02532",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "1K",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "1K",
+          "2k": "2K"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested image resolution is 2K.",
+        "label": "2K",
+        "name": "2k",
+        "pricing": {
+          "completionImageTokens": "0.05275",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "Black Forest Labs",
+    "resolutions": [
+      "1k",
+      "2k"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "FLUX.3 Image"
+  },
+  {
     "added_date": 1759795200000,
     "aliases": [
       "kontext"
@@ -92,7 +155,7 @@
     "description": "Edits an existing image from plain instructions — swap, restyle, refine",
     "flat_rate": true,
     "health": {
-      "requests": 269,
+      "requests": 357,
       "status": "healthy",
       "success_rate": 100
     },
@@ -130,9 +193,9 @@
     "description": "Fast, high-quality images at a tiny cost",
     "flat_rate": true,
     "health": {
-      "requests": 17082,
+      "requests": 16362,
       "status": "healthy",
-      "success_rate": 99.9590211918979
+      "success_rate": 99.95721794401662
     },
     "input_modalities": [
       "text"
@@ -165,9 +228,9 @@
     "description": "Fast text-to-image generation with precise dimensions and reproducible seeds",
     "flat_rate": true,
     "health": {
-      "requests": 47,
+      "requests": 49,
       "status": "degraded",
-      "success_rate": 82.97872340425532
+      "success_rate": 83.6734693877551
     },
     "input_modalities": [
       "text"
@@ -251,9 +314,9 @@
     "description": "Fast image generation and editing up to 2.4 megapixels",
     "flat_rate": true,
     "health": {
-      "requests": 2941,
+      "requests": 1777,
       "status": "healthy",
-      "success_rate": 99.82998979938796
+      "success_rate": 99.83117613956107
     },
     "input_modalities": [
       "text",
@@ -347,7 +410,7 @@
     "description": "High-fidelity generation and multi-reference editing with strong prompt adherence",
     "flat_rate": true,
     "health": {
-      "requests": 93,
+      "requests": 65,
       "status": "healthy",
       "success_rate": 100
     },
@@ -445,7 +508,7 @@
     "description": "Premium photorealism for lifelike scenes and portraits",
     "flat_rate": true,
     "health": {
-      "requests": 12,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -547,7 +610,7 @@
     "description": "Image generation that can search the web and reason about your prompt",
     "flat_rate": true,
     "health": {
-      "requests": 12,
+      "requests": 11,
       "status": "healthy",
       "success_rate": 100
     },
@@ -589,7 +652,7 @@
     "description": "Premium multimodal image generation and editing",
     "flat_rate": true,
     "health": {
-      "requests": 15,
+      "requests": 18,
       "status": "healthy",
       "success_rate": 100
     },
@@ -618,49 +681,6 @@
     "title": "Seedream 5.0 Pro"
   },
   {
-    "added_date": 1787195461000,
-    "aliases": [
-      "MarcosFRG/lucid-origin"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/e7e9716e-9c2d-4cfb-83bd-2188344cdce9",
-    "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [],
-    "category": "image",
-    "community": true,
-    "description": "Hyper-realistic creative engine with sharp text rendering — Leonardo's most prompt-responsive model for dynamic, design-ready Full HD visuals",
-    "flat_rate": true,
-    "health": {
-      "requests": 21,
-      "status": "degraded",
-      "success_rate": 80.95238095238095
-    },
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/MarcosFRG/lucid-origin",
-    "output_modalities": [
-      "image"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 5,
-    "pricing": {
-      "completionImageTokens": "0.02",
-      "currency": "pollen"
-    },
-    "publisher": "JankRouter",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
-      "/v1/images/edits",
-      "/v1/responses",
-      "/v1/chat/completions"
-    ],
-    "title": "Leonardo Lucid Origin"
-  },
-  {
     "added_date": 1788638191000,
     "aliases": [
       "MarcosFRG/lucid-origin:paid"
@@ -675,8 +695,8 @@
     "flat_rate": true,
     "health": {
       "requests": 10,
-      "status": "degraded",
-      "success_rate": 90
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -715,9 +735,9 @@
     "community": true,
     "flat_rate": true,
     "health": {
-      "requests": 26,
-      "status": "degraded",
-      "success_rate": 92.3076923076923
+      "requests": 25,
+      "status": "healthy",
+      "success_rate": 96
     },
     "input_modalities": [
       "text"
@@ -743,48 +763,6 @@
     "title": "gpt-image-2"
   },
   {
-    "added_date": 1789142370000,
-    "aliases": [
-      "chigwell/gpt-image-2.5"
-    ],
-    "alpha": true,
-    "brand_url": "https://llm7.io/",
-    "capabilities": [],
-    "category": "image",
-    "community": true,
-    "flat_rate": true,
-    "health": {
-      "requests": 20,
-      "status": "degraded",
-      "success_rate": 85
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/chigwell/gpt-image-2.5",
-    "output_modalities": [
-      "image"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionImageTokens": "0.065",
-      "currency": "pollen"
-    },
-    "publisher": "LLM7.io",
-    "required_safety": [
-      "sexual",
-      "violence"
-    ],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
-      "/v1/responses",
-      "/v1/chat/completions"
-    ],
-    "title": "gpt-image-2.5"
-  },
-  {
     "added_date": 1787819832000,
     "aliases": [
       "rekty/rekty-dev-3"
@@ -797,7 +775,7 @@
     "description": "rekty dev 3 image gen",
     "flat_rate": true,
     "health": {
-      "requests": 16,
+      "requests": 15,
       "status": "healthy",
       "success_rate": 100
     },
@@ -882,9 +860,9 @@
     "description": "Free open source image model. Heads up: Your prompts and completions are logged and are used to make internal datasets etc. but the data is never sold, licensed, distributed or any derivative of it to anyone. The public benchmark results may be published publicly that are made on your data but the underlying dataset is never revealed and the data is never used to train models. Full privacy policy shared in the discord server linked to the model (in the model card).",
     "flat_rate": true,
     "health": {
-      "requests": 3,
+      "requests": 50,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 98
     },
     "input_modalities": [
       "text",
@@ -931,8 +909,8 @@
     "flat_rate": true,
     "health": {
       "requests": 50,
-      "status": "healthy",
-      "success_rate": 100
+      "status": "degraded",
+      "success_rate": 92
     },
     "input_modalities": [
       "text",
@@ -1023,9 +1001,9 @@
     "description": "Cheap Input, Output more expensive, Token Pricing, GPT Image 2.5 Sunburst",
     "flat_rate": false,
     "health": {
-      "requests": 30,
+      "requests": 29,
       "status": "healthy",
-      "success_rate": 96.66666666666667
+      "success_rate": 96.55172413793103
     },
     "input_modalities": [
       "text",
@@ -1068,9 +1046,9 @@
     "description": "GPT Image 2.5 Flare (Flat, Per-Image Pricing)",
     "flat_rate": true,
     "health": {
-      "requests": 23,
+      "requests": 21,
       "status": "degraded",
-      "success_rate": 86.95652173913044
+      "success_rate": 85.71428571428571
     },
     "input_modalities": [
       "text",
@@ -1111,9 +1089,9 @@
     "description": "GPT Image 2.5 Sunburst (Flat, Per Generation Pricing)",
     "flat_rate": true,
     "health": {
-      "requests": 46,
+      "requests": 45,
       "status": "degraded",
-      "success_rate": 84.78260869565217
+      "success_rate": 84.44444444444444
     },
     "input_modalities": [
       "text",
@@ -1153,9 +1131,9 @@
     "community": true,
     "flat_rate": true,
     "health": {
-      "requests": 26,
+      "requests": 24,
       "status": "healthy",
-      "success_rate": 96.15384615384616
+      "success_rate": 95.83333333333334
     },
     "input_modalities": [
       "text",
@@ -1197,7 +1175,7 @@
     "health": {
       "requests": 50,
       "status": "healthy",
-      "success_rate": 98
+      "success_rate": 96
     },
     "input_modalities": [
       "text",
@@ -1225,49 +1203,6 @@
     "title": "InferencePort AI Lightning Image Plus"
   },
   {
-    "added_date": 1784796750000,
-    "aliases": [
-      "sharktide/inferenceport-ai-lightning-image-turbo"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
-    "brand_url": "https://inferenceport.ai/",
-    "capabilities": [],
-    "category": "image",
-    "community": true,
-    "description": "InferencePort AI Lightning-Image Turbo",
-    "flat_rate": true,
-    "health": {
-      "requests": 50,
-      "status": "degraded",
-      "success_rate": 92
-    },
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/sharktide/inferenceport-ai-lightning-image-turbo",
-    "output_modalities": [
-      "image"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionImageTokens": "0.02",
-      "currency": "pollen"
-    },
-    "publisher": "InferencePort AI, InferencePort LLC.",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
-      "/v1/images/edits",
-      "/v1/responses",
-      "/v1/chat/completions"
-    ],
-    "title": "Lightning Image Turbo"
-  },
-  {
     "added_date": 1787557628000,
     "aliases": [
       "vendouple/anima"
@@ -1280,9 +1215,9 @@
     "description": "It is no longer feasible to keep this on free as the ratio of users using paid compared to free has lessened. \n\nTo keep this on free, more users has to use this model using paid pollen.",
     "flat_rate": true,
     "health": {
-      "requests": 48,
+      "requests": 47,
       "status": "degraded",
-      "success_rate": 85.41666666666666
+      "success_rate": 85.1063829787234
     },
     "input_modalities": [
       "text"
@@ -1320,9 +1255,9 @@
     "description": "Leonardo AI",
     "flat_rate": true,
     "health": {
-      "requests": 34,
+      "requests": 38,
       "status": "degraded",
-      "success_rate": 85.29411764705883
+      "success_rate": 94.73684210526315
     },
     "input_modalities": [
       "text"
@@ -1361,8 +1296,8 @@
     "flat_rate": true,
     "health": {
       "requests": 50,
-      "status": "healthy",
-      "success_rate": 100
+      "status": "degraded",
+      "success_rate": 92
     },
     "input_modalities": [
       "text"
@@ -1398,7 +1333,7 @@
     "description": "Quick image generation and editing that follows instructions well",
     "flat_rate": false,
     "health": {
-      "requests": 207,
+      "requests": 120,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1440,9 +1375,9 @@
     "description": "Studio-quality images up to 4K, with reasoning for tricky prompts",
     "flat_rate": false,
     "health": {
-      "requests": 73,
+      "requests": 77,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 97.40259740259741
     },
     "input_modalities": [
       "text",
@@ -1483,9 +1418,9 @@
     "description": "Sharper detail and better text rendering in generated and edited images",
     "flat_rate": false,
     "health": {
-      "requests": 100,
+      "requests": 91,
       "status": "healthy",
-      "success_rate": 98
+      "success_rate": 97.8021978021978
     },
     "input_modalities": [
       "text",
@@ -1527,7 +1462,7 @@
     "description": "Speedy, affordable image generation and editing for everyday use",
     "flat_rate": false,
     "health": {
-      "requests": 168,
+      "requests": 167,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1606,9 +1541,9 @@
     "description": "Highest-fidelity images with spot-on typography; slower to generate",
     "flat_rate": true,
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -1678,7 +1613,7 @@
     "description": "Image generation with up to two reference images for visual guidance",
     "flat_rate": true,
     "health": {
-      "requests": 2,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1757,9 +1692,9 @@
     "description": "Near-instant images at rock-bottom cost; simpler detail than premium models",
     "flat_rate": true,
     "health": {
-      "requests": 425892,
+      "requests": 431105,
       "status": "healthy",
-      "success_rate": 97.68180665520836
+      "success_rate": 96.92975029285209
     },
     "input_modalities": [
       "text"
@@ -1792,7 +1727,7 @@
     "description": "Detailed photorealistic generation and single-reference editing with strong instruction following",
     "flat_rate": false,
     "health": {
-      "requests": 64,
+      "requests": 61,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1834,7 +1769,7 @@
     "description": "Photorealistic generation and single-reference editing with accurate text rendering",
     "flat_rate": false,
     "health": {
-      "requests": 197,
+      "requests": 155,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1878,9 +1813,9 @@
     "description": "Affordable image creation and editing for everyday use",
     "flat_rate": false,
     "health": {
-      "requests": 557,
+      "requests": 956,
       "status": "healthy",
-      "success_rate": 99.64093357271095
+      "success_rate": 99.16317991631799
     },
     "input_modalities": [
       "text",
@@ -1921,7 +1856,7 @@
     "description": "High-fidelity image generation and editing with fine detail",
     "flat_rate": false,
     "health": {
-      "requests": 151,
+      "requests": 189,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1963,9 +1898,9 @@
     "description": "Premium high-resolution images with excellent prompt following",
     "flat_rate": false,
     "health": {
-      "requests": 1125,
+      "requests": 1030,
       "status": "healthy",
-      "success_rate": 98.04444444444445
+      "success_rate": 97.66990291262137
     },
     "input_modalities": [
       "text",
@@ -2003,9 +1938,9 @@
     "description": "Fast image generation and precise editing with reference images",
     "flat_rate": false,
     "health": {
-      "requests": 454,
+      "requests": 513,
       "status": "healthy",
-      "success_rate": 99.55947136563876
+      "success_rate": 99.61013645224172
     },
     "input_modalities": [
       "text",
@@ -2043,7 +1978,7 @@
     "description": "Detailed image generation with precise control over reference-image edits",
     "flat_rate": false,
     "health": {
-      "requests": 260,
+      "requests": 407,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2087,9 +2022,9 @@
     "description": "Cheap, speedy text-to-image for rapid iteration",
     "flat_rate": true,
     "health": {
-      "requests": 272,
+      "requests": 322,
       "status": "healthy",
-      "success_rate": 99.26470588235294
+      "success_rate": 99.37888198757764
     },
     "input_modalities": [
       "text"
@@ -2228,7 +2163,7 @@
     "description": "Generates and edits images from prompts and up to ten references, with accurate text rendering",
     "flat_rate": true,
     "health": {
-      "requests": 129,
+      "requests": 76,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2356,7 +2291,7 @@
     "description": "Fast, low-cost raster image generation from text",
     "flat_rate": true,
     "health": {
-      "requests": 17,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2396,9 +2331,9 @@
     "description": "Editable SVG generation and reference-guided vector design",
     "flat_rate": true,
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -2437,9 +2372,9 @@
     "description": "Instant, budget-friendly images with crisp upscaled output",
     "flat_rate": true,
     "health": {
-      "requests": 9894,
+      "requests": 11558,
       "status": "healthy",
-      "success_rate": 99.75742874469375
+      "success_rate": 99.79235161792698
     },
     "input_modalities": [
       "text"
@@ -2475,9 +2410,9 @@
     "description": "Photorealistic image generation and quick edits",
     "flat_rate": true,
     "health": {
-      "requests": 85,
+      "requests": 87,
       "status": "healthy",
-      "success_rate": 98.82352941176471
+      "success_rate": 97.70114942528735
     },
     "input_modalities": [
       "text",
@@ -2515,7 +2450,7 @@
     "description": "Creates and edits high-detail images at 1K or 2K with up to three references",
     "flat_rate": true,
     "health": {
-      "requests": 14,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2618,9 +2553,9 @@
     "description": "Higher-fidelity photorealistic images for polished results",
     "flat_rate": true,
     "health": {
-      "requests": 31,
-      "status": "healthy",
-      "success_rate": 96.7741935483871
+      "requests": 19,
+      "status": "degraded",
+      "success_rate": 89.47368421052632
     },
     "input_modalities": [
       "text",
