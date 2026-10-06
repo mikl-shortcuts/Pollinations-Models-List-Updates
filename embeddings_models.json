@@ -85,7 +85,7 @@
     "context_length": 8192,
     "description": "Turns text, images, audio and video into vectors for semantic search. 3072 dimensions, 8192 token limit.",
     "health": {
-      "requests": 149,
+      "requests": 120,
       "status": "healthy",
       "success_rate": 100
     },
@@ -159,9 +159,9 @@
     "context_length": 8192,
     "description": "Low-cost text vectors for search and similarity. 1536 dimensions, 8192 token limit.",
     "health": {
-      "requests": 861,
+      "requests": 708,
       "status": "healthy",
-      "success_rate": 99.53542392566783
+      "success_rate": 99.43502824858757
     },
     "input_modalities": [
       "text"
@@ -193,9 +193,9 @@
     "context_length": 40960,
     "description": "Multilingual text vectors. 4096 dimensions, 40,960-token context.",
     "health": {
-      "requests": 757,
+      "requests": 1193,
       "status": "down",
-      "success_rate": 46.23513870541612
+      "success_rate": 24.476110645431685
     },
     "input_modalities": [
       "text"
@@ -204,10 +204,10 @@
     "output_modalities": [
       "embedding"
     ],
-    "paid_only": false,
+    "paid_only": true,
     "pricing": {
       "currency": "pollen",
-      "promptTextTokens": "0.0000001"
+      "promptTextTokens": "0.00000001"
     },
     "publisher": "Qwen",
     "supported_endpoints": [
