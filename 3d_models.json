@@ -11,9 +11,9 @@
     "description": "Textured 3D models from an image or a text prompt",
     "flat_rate": true,
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -53,9 +53,9 @@
     "description": "Image-to-3D generation with selectable output detail",
     "flat_rate": true,
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 5,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "image"
@@ -65,6 +65,7 @@
     "output_modalities": [
       "3d"
     ],
+    "paid_only": false,
     "pricing": {
       "completionImageTokens": "0.24",
       "currency": "pollen"
