@@ -73,9 +73,9 @@
     "community": false,
     "description": "High-accuracy transcription with multilingual code switching and prompts",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 16,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -160,7 +160,7 @@
     "community": false,
     "description": "Low-latency speech in 32 languages with character timestamps",
     "health": {
-      "requests": 59,
+      "requests": 54,
       "status": "healthy",
       "success_rate": 100
     },
@@ -235,7 +235,7 @@
     "community": false,
     "description": "Preserves delivery and emotion while transforming speaker identity",
     "health": {
-      "requests": 9,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -307,7 +307,7 @@
     "community": false,
     "description": "Emotionally rich speech in 29 languages with character timestamps",
     "health": {
-      "requests": 28,
+      "requests": 86,
       "status": "healthy",
       "success_rate": 100
     },
@@ -383,7 +383,7 @@
     "community": false,
     "description": "Sound effects from a text description",
     "health": {
-      "requests": 9,
+      "requests": 27,
       "status": "healthy",
       "success_rate": 100
     },
@@ -411,7 +411,6 @@
   {
     "added_date": 1770422400000,
     "aliases": [
-      "tts",
       "text-to-speech",
       "eleven",
       "elevenlabs"
@@ -421,7 +420,7 @@
     "community": false,
     "description": "Expressive speech with emotion controls, audio tags, and character timestamps",
     "health": {
-      "requests": 316,
+      "requests": 324,
       "status": "healthy",
       "success_rate": 100
     },
@@ -566,7 +565,7 @@
     "community": false,
     "description": "Expressive speech in 90+ languages with audio tags and character timestamps",
     "health": {
-      "requests": 9,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -637,7 +636,7 @@
     "community": false,
     "description": "Low-latency expressive speech in 90+ languages with audio tags and character timestamps",
     "health": {
-      "requests": 15,
+      "requests": 11,
       "status": "healthy",
       "success_rate": 100
     },
@@ -711,7 +710,7 @@
     "community": false,
     "description": "Studio-grade music from a text prompt or reference track",
     "health": {
-      "requests": 28,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -748,9 +747,9 @@
     "community": false,
     "description": "Richer, better prompt-following music from text or a reference track",
     "health": {
-      "requests": 34,
+      "requests": 12,
       "status": "healthy",
-      "success_rate": 97.05882352941177
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -789,7 +788,7 @@
     "community": false,
     "description": "Transcription in 90+ languages with speaker labels",
     "health": {
-      "requests": 3,
+      "requests": 108,
       "status": "healthy",
       "success_rate": 100
     },
@@ -819,9 +818,9 @@
     "community": false,
     "description": "Separate vocals and instruments into two or six downloadable audio tracks",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "audio"
@@ -875,9 +874,9 @@
     "community": false,
     "description": "Removes background noise while preserving clear spoken audio",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio",
@@ -908,9 +907,9 @@
     "community": false,
     "description": "Multilingual expressive speech with natural-language emotion and delivery control",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -1048,7 +1047,7 @@
     "community": false,
     "description": "Expressive, style-steerable speech across 30 voices for creative narration",
     "health": {
-      "requests": 10,
+      "requests": 258,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1127,9 +1126,9 @@
     "description": "30-second music with vocals, lyrics, or instrumental arrangements",
     "flat_rate": true,
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -1161,7 +1160,7 @@
     "description": "Full songs with vocals or instrumental arrangements; describe structure and approximate duration in the prompt",
     "flat_rate": true,
     "health": {
-      "requests": 7,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1199,7 +1198,7 @@
     "community": false,
     "description": "Lightweight multilingual speech across 54 voices and eight languages",
     "health": {
-      "requests": 15,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1281,6 +1280,300 @@
     ]
   },
   {
+    "added_date": 1791417600000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Multilingual file transcription with automatic language detection and timed segments",
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "audio"
+    ],
+    "name": "microsoft/mai-transcribe-2",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.000020833333"
+    },
+    "publisher": "Microsoft",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "title": "MAI Transcribe 2"
+  },
+  {
+    "added_date": 1791417600000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Expressive speech across 23 languages with consistent voices for long-form narration; mp3 or 24 kHz pcm",
+    "health": {
+      "requests": 58,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "microsoft/mai-voice-2.1",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionAudioTokens": "0.0000165",
+      "currency": "pollen"
+    },
+    "publisher": "Microsoft",
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "MAI-Voice-2.1",
+    "voices": [
+      "cs-CZ-Grant",
+      "cs-CZ-Harper",
+      "da-DK-Grant",
+      "da-DK-Harper",
+      "de-DE-Grant",
+      "de-DE-Harper",
+      "de-DE-Klaus",
+      "de-DE-Mia",
+      "en-AU-Isla",
+      "en-GB-Emily",
+      "en-GB-Harry",
+      "en-IN-Dhruv",
+      "en-IN-Priya",
+      "en-US-Ethan",
+      "en-US-Grant",
+      "en-US-Harper",
+      "en-US-Iris",
+      "en-US-Jasper",
+      "en-US-Olivia",
+      "en-US-Sage",
+      "es-ES-Marta",
+      "es-MX-Alejo",
+      "es-MX-Grant",
+      "es-MX-Harper",
+      "es-MX-Valeria",
+      "fi-FI-Grant",
+      "fi-FI-Harper",
+      "fr-FR-Grant",
+      "fr-FR-Harper",
+      "fr-FR-Marc",
+      "fr-FR-Soleil",
+      "hi-IN-Arjun",
+      "hi-IN-Dhruv",
+      "hi-IN-Grant",
+      "hi-IN-Harper",
+      "hi-IN-Kavya",
+      "hi-IN-Priya",
+      "hu-HU-Bence",
+      "hu-HU-Grant",
+      "hu-HU-Harper",
+      "hu-HU-Levente",
+      "hu-HU-Lilla",
+      "hu-HU-Reka",
+      "id-ID-Grant",
+      "id-ID-Harper",
+      "it-IT-Grant",
+      "it-IT-Harper",
+      "it-IT-Luca",
+      "it-IT-Rosa",
+      "ko-KR-Grant",
+      "ko-KR-Haena",
+      "ko-KR-Harper",
+      "ko-KR-Junho",
+      "nb-NO-Grant",
+      "nb-NO-Harper",
+      "nl-NL-Grant",
+      "nl-NL-Harper",
+      "nl-NL-Sander",
+      "pl-PL-Grant",
+      "pl-PL-Harper",
+      "pt-BR-Caio",
+      "pt-BR-Grant",
+      "pt-BR-Harper",
+      "pt-BR-Luana",
+      "pt-BR-Pedro",
+      "pt-BR-Rafael",
+      "pt-PT-Grant",
+      "pt-PT-Harper",
+      "pt-PT-Rui",
+      "ro-RO-Andrei",
+      "ro-RO-Elena",
+      "ro-RO-Grant",
+      "ro-RO-Harper",
+      "ro-RO-Ioana",
+      "ro-RO-Radu",
+      "ru-RU-Grant",
+      "ru-RU-Harper",
+      "ru-RU-Lev",
+      "ru-RU-Masha",
+      "sv-SE-Grant",
+      "sv-SE-Harper",
+      "th-TH-Grant",
+      "th-TH-Harper",
+      "th-TH-Krit",
+      "th-TH-Nattapong",
+      "tr-TR-Aydin",
+      "tr-TR-Elif",
+      "tr-TR-Grant",
+      "tr-TR-Harper",
+      "vi-VN-Grant",
+      "vi-VN-Harper",
+      "zh-CN-Bo",
+      "zh-CN-Grant",
+      "zh-CN-Harper",
+      "zh-CN-Lan",
+      "zh-CN-Mei",
+      "zh-CN-Wei"
+    ]
+  },
+  {
+    "added_date": 1791417600000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "audio",
+    "community": false,
+    "description": "Low-latency expressive speech across 23 languages for voice agents; mp3 or 24 kHz pcm",
+    "health": {
+      "requests": 4,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "microsoft/mai-voice-2.1-flash",
+    "output_modalities": [
+      "audio"
+    ],
+    "paid_only": false,
+    "pricing": {
+      "completionAudioTokens": "0.00001125",
+      "currency": "pollen"
+    },
+    "publisher": "Microsoft",
+    "supported_endpoints": [
+      "/audio/{text}",
+      "/v1/audio/speech",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "MAI-Voice-2.1 Flash",
+    "voices": [
+      "cs-CZ-Grant",
+      "cs-CZ-Harper",
+      "da-DK-Grant",
+      "da-DK-Harper",
+      "de-DE-Grant",
+      "de-DE-Harper",
+      "de-DE-Klaus",
+      "de-DE-Mia",
+      "en-AU-Isla",
+      "en-GB-Emily",
+      "en-GB-Harry",
+      "en-IN-Dhruv",
+      "en-IN-Priya",
+      "en-US-Ethan",
+      "en-US-Grant",
+      "en-US-Harper",
+      "en-US-Iris",
+      "en-US-Jasper",
+      "en-US-Olivia",
+      "en-US-Sage",
+      "es-ES-Marta",
+      "es-MX-Alejo",
+      "es-MX-Grant",
+      "es-MX-Harper",
+      "es-MX-Valeria",
+      "fi-FI-Grant",
+      "fi-FI-Harper",
+      "fr-FR-Grant",
+      "fr-FR-Harper",
+      "fr-FR-Marc",
+      "fr-FR-Soleil",
+      "hi-IN-Arjun",
+      "hi-IN-Dhruv",
+      "hi-IN-Grant",
+      "hi-IN-Harper",
+      "hi-IN-Kavya",
+      "hi-IN-Priya",
+      "hu-HU-Bence",
+      "hu-HU-Grant",
+      "hu-HU-Harper",
+      "hu-HU-Levente",
+      "hu-HU-Lilla",
+      "hu-HU-Reka",
+      "id-ID-Grant",
+      "id-ID-Harper",
+      "it-IT-Grant",
+      "it-IT-Harper",
+      "it-IT-Luca",
+      "it-IT-Rosa",
+      "ko-KR-Grant",
+      "ko-KR-Haena",
+      "ko-KR-Harper",
+      "ko-KR-Junho",
+      "nb-NO-Grant",
+      "nb-NO-Harper",
+      "nl-NL-Grant",
+      "nl-NL-Harper",
+      "nl-NL-Sander",
+      "pl-PL-Grant",
+      "pl-PL-Harper",
+      "pt-BR-Caio",
+      "pt-BR-Grant",
+      "pt-BR-Harper",
+      "pt-BR-Luana",
+      "pt-BR-Pedro",
+      "pt-BR-Rafael",
+      "pt-PT-Grant",
+      "pt-PT-Harper",
+      "pt-PT-Rui",
+      "ro-RO-Andrei",
+      "ro-RO-Elena",
+      "ro-RO-Grant",
+      "ro-RO-Harper",
+      "ro-RO-Ioana",
+      "ro-RO-Radu",
+      "ru-RU-Grant",
+      "ru-RU-Harper",
+      "ru-RU-Lev",
+      "ru-RU-Masha",
+      "sv-SE-Grant",
+      "sv-SE-Harper",
+      "th-TH-Grant",
+      "th-TH-Harper",
+      "th-TH-Krit",
+      "th-TH-Nattapong",
+      "tr-TR-Aydin",
+      "tr-TR-Elif",
+      "tr-TR-Grant",
+      "tr-TR-Harper",
+      "vi-VN-Grant",
+      "vi-VN-Harper",
+      "zh-CN-Bo",
+      "zh-CN-Grant",
+      "zh-CN-Harper",
+      "zh-CN-Lan",
+      "zh-CN-Mei",
+      "zh-CN-Wei"
+    ]
+  },
+  {
     "added_date": 1787097600000,
     "aliases": [
       "gpt-transcribe",
@@ -1291,9 +1584,9 @@
     "community": false,
     "description": "Fast multilingual speech recognition with optional language and prompt context",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 46,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -1316,14 +1609,15 @@
   {
     "added_date": 1790640000000,
     "aliases": [
-      "tts-1"
+      "tts-1",
+      "tts"
     ],
     "capabilities": [],
     "category": "audio",
     "community": false,
     "description": "Low-latency speech synthesis with six voices and six output formats",
     "health": {
-      "requests": 220,
+      "requests": 308,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1366,7 +1660,7 @@
     "community": false,
     "description": "Higher-quality speech synthesis with six voices and six output formats",
     "health": {
-      "requests": 68,
+      "requests": 13,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1411,7 +1705,7 @@
     "community": false,
     "description": "Accurate, affordable speech-to-text transcription",
     "health": {
-      "requests": 55,
+      "requests": 104,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1446,7 +1740,7 @@
     "community": false,
     "description": "Low-latency speech you can direct with emotion, tone and dialect instructions",
     "health": {
-      "requests": 1,
+      "requests": 9,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1497,7 +1791,7 @@
     "community": false,
     "description": "Fast multilingual text-to-speech at low cost",
     "health": {
-      "requests": 3,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1625,9 +1919,9 @@
     "description": "Long-form stereo music and soundscapes in studio quality",
     "flat_rate": true,
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1696,9 +1990,9 @@
     "community": false,
     "description": "Expressive multilingual speech across 28 built-in voices with inline style controls",
     "health": {
-      "requests": 34,
+      "requests": 6,
       "status": "healthy",
-      "success_rate": 97.05882352941177
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
