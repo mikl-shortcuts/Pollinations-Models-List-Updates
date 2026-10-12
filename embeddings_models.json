@@ -13,9 +13,9 @@
     "context_length": 128000,
     "description": "Multilingual text and image vectors. 1536 dimensions, 128K context.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -38,42 +38,6 @@
     "title": "Cohere Embed v4"
   },
   {
-    "added_date": 1788530725000,
-    "aliases": [
-      "pegalink/embedding-gemma-300m"
-    ],
-    "alpha": true,
-    "brand_url": "https://openrouter.ai/",
-    "capabilities": [],
-    "category": "embedding",
-    "community": true,
-    "description": "For its size, state of the art embeddings model for quick embeddings at a low cost. It has 768 dimensions each.",
-    "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/pegalink/embedding-gemma-300m",
-    "output_modalities": [
-      "embedding"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "currency": "pollen",
-      "promptTextTokens": "0.00000035"
-    },
-    "publisher": "Openrouter",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/embeddings"
-    ],
-    "title": "Embedding Gemma 300m"
-  },
-  {
     "added_date": 1778198400000,
     "aliases": [
       "embedding",
@@ -85,7 +49,7 @@
     "context_length": 8192,
     "description": "Turns text, images, audio and video into vectors for semantic search. 3072 dimensions, 8192 token limit.",
     "health": {
-      "requests": 120,
+      "requests": 446,
       "status": "healthy",
       "success_rate": 100
     },
@@ -125,7 +89,7 @@
     "context_length": 8192,
     "description": "High-quality text vectors for demanding search. 3072 dimensions, 8192 token limit.",
     "health": {
-      "requests": 80,
+      "requests": 138,
       "status": "healthy",
       "success_rate": 100
     },
@@ -159,9 +123,9 @@
     "context_length": 8192,
     "description": "Low-cost text vectors for search and similarity. 1536 dimensions, 8192 token limit.",
     "health": {
-      "requests": 708,
+      "requests": 196,
       "status": "healthy",
-      "success_rate": 99.43502824858757
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -193,9 +157,9 @@
     "context_length": 40960,
     "description": "Multilingual text vectors. 4096 dimensions, 40,960-token context.",
     "health": {
-      "requests": 1193,
-      "status": "down",
-      "success_rate": 24.476110645431685
+      "requests": 390,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
