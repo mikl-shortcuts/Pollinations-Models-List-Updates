@@ -61,9 +61,9 @@
     "default_duration": 5,
     "description": "Generates low-cost, 5-second silent clips at 480p for drafts",
     "health": {
-      "requests": 324,
+      "requests": 255,
       "status": "healthy",
-      "success_rate": 99.07407407407408
+      "success_rate": 98.4313725490196
     },
     "input_modalities": [
       "text",
@@ -169,9 +169,9 @@
     "default_duration": 5,
     "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "down",
+      "success_rate": 33.33333333333333
     },
     "input_modalities": [
       "text",
@@ -264,9 +264,9 @@
     "default_duration": 5,
     "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 10,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -354,7 +354,7 @@
     "default_duration": 5,
     "description": "Fast video from text or start and end frames with optional synchronized audio at 720p or 1080p",
     "health": {
-      "requests": 1,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -427,7 +427,7 @@
     "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 65,
+      "requests": 29,
       "status": "healthy",
       "success_rate": 100
     },
@@ -444,7 +444,7 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.025",
+      "completionVideoSeconds": "0.021021",
       "currency": "pollen"
     },
     "pricing_default_label": "720p",
@@ -465,7 +465,7 @@
         "label": "480p",
         "name": "480p",
         "pricing": {
-          "completionVideoSeconds": "0.015",
+          "completionVideoSeconds": "0.0099225",
           "currency": "pollen"
         }
       },
@@ -474,7 +474,7 @@
         "label": "1080p",
         "name": "1080p",
         "pricing": {
-          "completionVideoSeconds": "0.06",
+          "completionVideoSeconds": "0.0486",
           "currency": "pollen"
         }
       }
@@ -594,7 +594,7 @@
     "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "health": {
-      "requests": 1,
+      "requests": 15,
       "status": "healthy",
       "success_rate": 100
     },
@@ -823,9 +823,9 @@
     "default_duration": 5,
     "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
     "health": {
-      "requests": 20,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 1,
+      "status": "down",
+      "success_rate": 0
     },
     "input_modalities": [
       "text",
@@ -889,7 +889,7 @@
     "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "health": {
-      "requests": 13,
+      "requests": 10,
       "status": "healthy",
       "success_rate": 100
     },
@@ -961,9 +961,9 @@
     "default_duration": 5,
     "description": "Text and first-frame video with synchronized dialogue, ambience and effects at 480p or 768p",
     "health": {
-      "requests": 13,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 25,
+      "status": "degraded",
+      "success_rate": 84
     },
     "input_modalities": [
       "text",
@@ -979,7 +979,7 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.01055",
+      "completionVideoSeconds": "0.01",
       "currency": "pollen"
     },
     "pricing_default_label": "480p",
@@ -999,7 +999,7 @@
         "label": "768p",
         "name": "768p",
         "pricing": {
-          "completionVideoSeconds": "0.015825",
+          "completionVideoSeconds": "0.01",
           "currency": "pollen"
         }
       }
@@ -1151,9 +1151,9 @@
     "default_duration": 5,
     "description": "Five-second text-to-video clips with synchronized stereo audio at 480p, 768p, or 2K",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -1333,7 +1333,7 @@
     "default_duration": 5,
     "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "health": {
-      "requests": 6,
+      "requests": 16,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1475,9 +1475,9 @@
     "default_duration": 5,
     "description": "Affordable video from text or an image at 720p or 1080p",
     "health": {
-      "requests": 107,
+      "requests": 88,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 98.86363636363636
     },
     "input_modalities": [
       "text",
@@ -1546,9 +1546,9 @@
     "default_duration": 5,
     "description": "Short videos from text or an image (720p, 1-15s)",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 10,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1563,9 +1563,8 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.07",
-      "currency": "pollen",
-      "promptImageTokens": "0.002"
+      "completionVideoSeconds": "0.05",
+      "currency": "pollen"
     },
     "publisher": "xAI",
     "resolutions": [
@@ -1612,9 +1611,9 @@
     ],
     "paid_only": true,
     "pricing": {
-      "completionVideoSeconds": "0.1477",
+      "completionVideoSeconds": "0.14",
       "currency": "pollen",
-      "promptImageTokens": "0.01055"
+      "promptImageTokens": "0.01"
     },
     "pricing_default_label": "720p",
     "pricing_dimensions": [
@@ -1634,9 +1633,9 @@
         "label": "480p",
         "name": "480p",
         "pricing": {
-          "completionVideoSeconds": "0.0844",
+          "completionVideoSeconds": "0.08",
           "currency": "pollen",
-          "promptImageTokens": "0.01055"
+          "promptImageTokens": "0.01"
         }
       },
       {
@@ -1644,9 +1643,9 @@
         "label": "1080p",
         "name": "1080p",
         "pricing": {
-          "completionVideoSeconds": "0.26375",
+          "completionVideoSeconds": "0.25",
           "currency": "pollen",
-          "promptImageTokens": "0.01055"
+          "promptImageTokens": "0.01"
         }
       }
     ],
@@ -1678,9 +1677,9 @@
     "default_duration": 5,
     "description": "Faster, lower-cost video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 4,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
