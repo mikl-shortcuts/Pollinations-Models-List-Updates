@@ -11,9 +11,9 @@
     "description": "Textured 3D models from an image or a text prompt",
     "flat_rate": true,
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 31,
+      "status": "degraded",
+      "success_rate": 87.09677419354838
     },
     "input_modalities": [
       "text",
@@ -53,7 +53,7 @@
     "description": "Image-to-3D generation with selectable output detail",
     "flat_rate": true,
     "health": {
-      "requests": 1,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -148,5 +148,40 @@
       "/image/{prompt}"
     ],
     "title": "NVIDIA Asset Harvester"
+  },
+  {
+    "added_date": 1790380800000,
+    "aliases": [],
+    "alpha": true,
+    "capabilities": [],
+    "category": "3d",
+    "community": false,
+    "description": "Text-to-3D GLB meshes with a 10,000-face target and PBR textures",
+    "flat_rate": true,
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "tripo3d/p2",
+    "output_modalities": [
+      "3d"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "1.1",
+      "currency": "pollen"
+    },
+    "publisher": "Tripo",
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Tripo P2"
   }
 ]
