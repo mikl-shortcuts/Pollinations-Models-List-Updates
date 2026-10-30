@@ -11,7 +11,7 @@
     "description": "Textured 3D models from an image or a text prompt",
     "flat_rate": true,
     "health": {
-      "requests": 137,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -31,9 +31,7 @@
     },
     "publisher": "Hyper3D",
     "supported_endpoints": [
-      "/v1/images/generations",
-      "/v1/images/edits",
-      "/image/{prompt}",
+      "/3d/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -53,7 +51,7 @@
     "description": "Image-to-3D generation with selectable output detail",
     "flat_rate": true,
     "health": {
-      "requests": 1,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -109,9 +107,7 @@
       "high"
     ],
     "supported_endpoints": [
-      "/v1/images/generations",
-      "/v1/images/edits",
-      "/image/{prompt}"
+      "/3d/{prompt}"
     ],
     "title": "Trellis 2"
   },
@@ -143,9 +139,7 @@
     },
     "publisher": "NVIDIA",
     "supported_endpoints": [
-      "/v1/images/generations",
-      "/v1/images/edits",
-      "/image/{prompt}"
+      "/3d/{prompt}"
     ],
     "title": "Asset Harvester"
   },
@@ -177,8 +171,7 @@
     },
     "publisher": "Tripo",
     "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
+      "/3d/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],

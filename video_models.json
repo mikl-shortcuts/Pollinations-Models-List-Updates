@@ -12,9 +12,9 @@
     "default_duration": 5,
     "description": "Text and first-frame video generation at 720p",
     "health": {
-      "requests": 9,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -38,8 +38,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -61,9 +61,9 @@
     "default_duration": 5,
     "description": "Generates low-cost, 5-second silent clips at 480p for drafts",
     "health": {
-      "requests": 134,
+      "requests": 133,
       "status": "healthy",
-      "success_rate": 97.01492537313433
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -87,8 +87,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -116,9 +116,9 @@
     "default_duration": 5,
     "description": "Video with sound from text or an image (720p, 5/10/15s clips)",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 4,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -142,8 +142,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -239,8 +239,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -264,7 +264,7 @@
     "default_duration": 5,
     "description": "Five-second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 1,
+      "requests": 29,
       "status": "healthy",
       "success_rate": 100
     },
@@ -330,8 +330,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -354,9 +354,9 @@
     "default_duration": 5,
     "description": "Fast video from text or start and end frames with optional synchronized audio at 720p or 1080p",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 7,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -404,8 +404,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -427,9 +427,9 @@
     "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 315,
+      "requests": 82,
       "status": "healthy",
-      "success_rate": 99.36507936507937
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -487,8 +487,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -568,8 +568,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -594,9 +594,9 @@
     "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "health": {
-      "requests": 7,
-      "status": "degraded",
-      "success_rate": 85.71428571428571
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -621,8 +621,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -694,8 +694,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -717,9 +717,9 @@
     "default_duration": 4,
     "description": "Four-second video with synchronized audio and reference media at 480p or 720p",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -799,8 +799,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -823,9 +823,9 @@
     "default_duration": 5,
     "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
     "health": {
-      "requests": 5,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -855,8 +855,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -889,9 +889,9 @@
     "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "health": {
-      "requests": 16,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -940,8 +940,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -961,7 +961,7 @@
     "default_duration": 5,
     "description": "Text and first-frame video with synchronized dialogue, ambience and effects at 480p or 768p",
     "health": {
-      "requests": 12,
+      "requests": 46,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1011,8 +1011,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1031,9 +1031,9 @@
     "default_duration": 5,
     "description": "Fast 5-second video from text or start image with synchronized audio at 480p",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1080,8 +1080,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1100,7 +1100,7 @@
     "default_duration": 5,
     "description": "Cinematic video with optional synchronized audio from text or start and end frames at 720p",
     "health": {
-      "requests": 5,
+      "requests": 10,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1128,8 +1128,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1211,6 +1211,7 @@
     "supported_endpoints": [
       "/v1/images/generations",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1233,9 +1234,9 @@
     "default_duration": 5,
     "description": "High-quality 5–15 second video from text, start/end frames, or reference media with synchronized audio at 480p, 768p, or 1080p",
     "health": {
-      "requests": 14,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1304,8 +1305,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1333,7 +1334,7 @@
     "default_duration": 5,
     "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "health": {
-      "requests": 2,
+      "requests": 22,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1402,8 +1403,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1451,6 +1452,7 @@
     "supported_endpoints": [
       "/v1/images/generations",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1475,7 +1477,7 @@
     "default_duration": 5,
     "description": "Affordable video from text or an image at 720p or 1080p",
     "health": {
-      "requests": 69,
+      "requests": 19,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1524,8 +1526,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1572,8 +1574,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1593,9 +1595,9 @@
     "default_duration": 5,
     "description": "Video from text or a start image with synchronized audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1657,8 +1659,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
@@ -1740,8 +1742,8 @@
     ],
     "supported_endpoints": [
       "/v1/images/generations",
-      "/v1/images/edits",
       "/image/{prompt}",
+      "/video/{prompt}",
       "/v1/responses",
       "/v1/chat/completions"
     ],
