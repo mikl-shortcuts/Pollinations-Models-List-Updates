@@ -13,9 +13,9 @@
     "context_length": 128000,
     "description": "Multilingual text and image vectors. 1536 dimensions, 128K context.",
     "health": {
-      "requests": 203,
+      "requests": 21,
       "status": "healthy",
-      "success_rate": 99.01477832512316
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -50,9 +50,9 @@
     "community": true,
     "description": "Google's text embedding model for search, retrieval and classification, in over 100 languages. 3072 dimensions, or fewer with dimensions. More at https://ai.saauf.xyz/models/gemini-embedding-1",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -112,6 +112,154 @@
     "title": "Gemini Embedding 2"
   },
   {
+    "added_date": 1793533738000,
+    "aliases": [
+      "Saauf/llama-nemotron-embed-vl-1b"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/93981a58-f161-44b2-95f5-d16cb52d6d8b",
+    "brand_url": "https://ai.saauf.xyz/",
+    "capabilities": [],
+    "category": "embedding",
+    "community": true,
+    "description": "NVIDIA's Llama Nemotron text embedding model for search and retrieval, 2048 dimensions. Takes input_type query or passage. More at https://ai.saauf.xyz/models/llama-nemotron-embed-vl-1b",
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/Saauf/llama-nemotron-embed-vl-1b",
+    "output_modalities": [
+      "embedding"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "currency": "pollen",
+      "promptTextTokens": "0.0000001"
+    },
+    "publisher": "SaaufAI",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/embeddings"
+    ],
+    "title": "Llama Nemotron Embed VL 1B"
+  },
+  {
+    "added_date": 1793533690000,
+    "aliases": [
+      "Saauf/nemotron-3-embed-1b"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/93981a58-f161-44b2-95f5-d16cb52d6d8b",
+    "brand_url": "https://ai.saauf.xyz/",
+    "capabilities": [],
+    "category": "embedding",
+    "community": true,
+    "description": "NVIDIA's compact text embedding model for search and retrieval, 2048 dimensions. Takes input_type query or passage. More at https://ai.saauf.xyz/models/nemotron-3-embed-1b",
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/Saauf/nemotron-3-embed-1b",
+    "output_modalities": [
+      "embedding"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "currency": "pollen",
+      "promptTextTokens": "0.0000001"
+    },
+    "publisher": "SaaufAI",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/embeddings"
+    ],
+    "title": "Nemotron 3 Embed 1B"
+  },
+  {
+    "added_date": 1793533628000,
+    "aliases": [
+      "Saauf/nemotron-3.5-embed-1b"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/93981a58-f161-44b2-95f5-d16cb52d6d8b",
+    "brand_url": "https://ai.saauf.xyz/",
+    "capabilities": [],
+    "category": "embedding",
+    "community": true,
+    "description": "NVIDIA's small, fast text embedding model for search and retrieval, 2048 dimensions. Takes input_type query or passage. More at https://ai.saauf.xyz/models/nemotron-3.5-embed-1b",
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/Saauf/nemotron-3.5-embed-1b",
+    "output_modalities": [
+      "embedding"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "currency": "pollen",
+      "promptTextTokens": "0.0000001"
+    },
+    "publisher": "SaaufAI",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/embeddings"
+    ],
+    "title": "Nemotron 3.5 Embed 1B"
+  },
+  {
+    "added_date": 1793532985000,
+    "aliases": [
+      "Saauf/nemotron-3.5-embed-8b"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/93981a58-f161-44b2-95f5-d16cb52d6d8b",
+    "brand_url": "https://ai.saauf.xyz/",
+    "capabilities": [],
+    "category": "embedding",
+    "community": true,
+    "description": "NVIDIA's largest text embedding model for search and retrieval, 4096 dimensions. Takes input_type query or passage. More at https://ai.saauf.xyz/models/nemotron-3.5-embed-8b",
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/Saauf/nemotron-3.5-embed-8b",
+    "output_modalities": [
+      "embedding"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "currency": "pollen",
+      "promptTextTokens": "0.0000002"
+    },
+    "publisher": "SaaufAI",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/embeddings"
+    ],
+    "title": "Nemotron 3.5 Embed 8B"
+  },
+  {
     "added_date": 1788530725000,
     "aliases": [
       "pegalink/embedding-gemma-300m"
@@ -159,7 +307,7 @@
     "context_length": 8192,
     "description": "Turns text, images, audio and video into vectors for semantic search. 3072 dimensions, 8192 token limit.",
     "health": {
-      "requests": 572,
+      "requests": 400,
       "status": "healthy",
       "success_rate": 100
     },
@@ -199,7 +347,7 @@
     "context_length": 8192,
     "description": "High-quality text vectors for demanding search. 3072 dimensions, 8192 token limit.",
     "health": {
-      "requests": 262,
+      "requests": 211,
       "status": "healthy",
       "success_rate": 100
     },
@@ -233,7 +381,7 @@
     "context_length": 8192,
     "description": "Low-cost text vectors for search and similarity. 1536 dimensions, 8192 token limit.",
     "health": {
-      "requests": 688,
+      "requests": 776,
       "status": "healthy",
       "success_rate": 100
     },
@@ -267,7 +415,7 @@
     "context_length": 40960,
     "description": "Multilingual text vectors. 4096 dimensions, 40,960-token context.",
     "health": {
-      "requests": 346,
+      "requests": 336,
       "status": "healthy",
       "success_rate": 100
     },
