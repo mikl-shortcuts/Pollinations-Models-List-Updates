@@ -16,9 +16,9 @@
     "context_length": 1048576,
     "description": "Budget-friendly reasoning with room for very long documents",
     "health": {
-      "requests": 7,
+      "requests": 8,
       "status": "down",
-      "success_rate": 14.285714285714285
+      "success_rate": 25
     },
     "input_modalities": [
       "text",
@@ -75,7 +75,7 @@
     "context_length": 128000,
     "description": "Instant, ultra-cheap replies for simple tasks; not a deep thinker",
     "health": {
-      "requests": 966,
+      "requests": 864,
       "status": "healthy",
       "success_rate": 100
     },
@@ -239,7 +239,7 @@
     "context_length": 200000,
     "description": "Quick, capable chat and coding at low cost; great for high-volume tasks",
     "health": {
-      "requests": 90,
+      "requests": 105,
       "status": "healthy",
       "success_rate": 100
     },
@@ -297,7 +297,7 @@
     "context_length": 1000000,
     "description": "Low-cost adaptive reasoning for everyday tasks, tool use and high-volume sub-agents",
     "health": {
-      "requests": 71,
+      "requests": 64,
       "status": "healthy",
       "success_rate": 100
     },
@@ -379,7 +379,7 @@
     "context_length": 1000000,
     "description": "Deep analysis and careful reasoning for tough problems; slower and premium-priced",
     "health": {
-      "requests": 5,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -438,7 +438,7 @@
     "context_length": 1000000,
     "description": "Heavyweight reasoning and analysis; built for hard problems, not quick replies",
     "health": {
-      "requests": 3,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -549,7 +549,7 @@
     "context_length": 1000000,
     "description": "Flagship reasoning for demanding coding, multi-step codebase changes and long-horizon agentic work",
     "health": {
-      "requests": 204,
+      "requests": 173,
       "status": "healthy",
       "success_rate": 100
     },
@@ -601,7 +601,7 @@
     "context_length": 1000000,
     "description": "Higher output speed for interactive coding and agentic work, at premium pricing",
     "health": {
-      "requests": 2,
+      "requests": 5,
       "status": "healthy",
       "success_rate": 100
     },
@@ -657,9 +657,9 @@
     "context_length": 1000000,
     "description": "Excellent writing, coding and analysis with balanced speed and cost",
     "health": {
-      "requests": 24,
+      "requests": 6,
       "status": "healthy",
-      "success_rate": 95.83333333333334
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -717,7 +717,7 @@
     "context_length": 1000000,
     "description": "Reasoning model with fast responses for general use",
     "health": {
-      "requests": 32,
+      "requests": 45,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1423,9 +1423,9 @@
     "category": "text",
     "community": true,
     "health": {
-      "requests": 41,
-      "status": "healthy",
-      "success_rate": 95.1219512195122
+      "requests": 39,
+      "status": "degraded",
+      "success_rate": 94.87179487179486
     },
     "input_modalities": [
       "text"
@@ -1561,8 +1561,8 @@
     "description": "NVIDIA Nemotron 3 Ultra: 550B-total / 55B-active hybrid Mamba-Transformer MoE for frontier reasoning and long-running agent orchestration. 1M-token context; up to ~5x throughput vs comparable open models; LatentMoE, MTP, NVFP4, Multi-Teacher On-Policy Distillation. Open weights under the Nemotron open license.",
     "health": {
       "requests": 50,
-      "status": "degraded",
-      "success_rate": 86
+      "status": "healthy",
+      "success_rate": 98
     },
     "input_modalities": [
       "text"
@@ -1980,7 +1980,7 @@
     "context_length": 400000,
     "description": "Jev decides KILL, FIX or SHIP for an idea, plus the biggest risk and a novelty probability. A text model explains the verdict.",
     "health": {
-      "requests": 12,
+      "requests": 13,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2077,7 +2077,7 @@
     "category": "text",
     "community": true,
     "health": {
-      "requests": 26,
+      "requests": 30,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2127,7 +2127,7 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 23,
+      "requests": 24,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2339,8 +2339,8 @@
     "description": "Natively multimodal 320B MoE with 18B active parameters — frontier coding and agentic performance at flash cost",
     "health": {
       "requests": 50,
-      "status": "healthy",
-      "success_rate": 98
+      "status": "degraded",
+      "success_rate": 86
     },
     "input_modalities": [
       "text",
@@ -2390,7 +2390,7 @@
     "context_length": 1310720,
     "description": "Flagship coding model with 1M context — 50% stronger software engineering and agentic execution",
     "health": {
-      "requests": 2,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3233,7 +3233,7 @@
     "context_length": 131072,
     "description": "Poolside's small, fast Laguna coding model. More at https://ai.saauf.xyz/models/laguna-xs-2.1",
     "health": {
-      "requests": 14,
+      "requests": 20,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3312,6 +3312,52 @@
     "tools": true
   },
   {
+    "added_date": 1793477950000,
+    "aliases": [
+      "Saauf/mistral-large-4"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/93981a58-f161-44b2-95f5-d16cb52d6d8b",
+    "brand_url": "https://ai.saauf.xyz/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 1048576,
+    "health": {
+      "requests": 50,
+      "status": "healthy",
+      "success_rate": 96
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/Saauf/mistral-large-4",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "SaaufAI",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses",
+      "/v1/messages"
+    ],
+    "title": "Mistral Large 4",
+    "tools": true
+  },
+  {
     "added_date": 1791495156000,
     "aliases": [
       "Saauf/muse-glimmer-30b"
@@ -3329,8 +3375,8 @@
     "description": "Information about Muse Glimmer 30b is available on our website (https://ai.saauf.xyz/models/muse-glimmer-30b). Muse Glimmer 30b has no safeguards that block or limit requests.",
     "health": {
       "requests": 50,
-      "status": "degraded",
-      "success_rate": 92
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -3375,7 +3421,7 @@
     "context_length": 256000,
     "description": "A small Nemotron 3 reasoning model that reads images and video as well as text. More at https://ai.saauf.xyz/models/nemotron-3-nano-omni",
     "health": {
-      "requests": 6,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3475,7 +3521,7 @@
     "context_length": 131072,
     "description": "Small and very fast Nemotron 3.5 (E4B) for quick answers, chat and light tool use. More at https://ai.saauf.xyz/models/nemotron-3.5-bolt",
     "health": {
-      "requests": 5,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3626,8 +3672,8 @@
     "description": "Multimodal reasoning model  by Meta",
     "health": {
       "requests": 50,
-      "status": "degraded",
-      "success_rate": 82
+      "status": "healthy",
+      "success_rate": 96
     },
     "input_modalities": [
       "text",
@@ -3723,7 +3769,7 @@
     "health": {
       "requests": 50,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 98
     },
     "input_modalities": [
       "text"
@@ -3768,7 +3814,7 @@
     "health": {
       "requests": 50,
       "status": "healthy",
-      "success_rate": 96
+      "success_rate": 98
     },
     "input_modalities": [
       "text"
@@ -3860,7 +3906,7 @@
     "health": {
       "requests": 50,
       "status": "degraded",
-      "success_rate": 90
+      "success_rate": 94
     },
     "input_modalities": [
       "text"
@@ -4283,7 +4329,7 @@
     "health": {
       "requests": 50,
       "status": "healthy",
-      "success_rate": 98
+      "success_rate": 96
     },
     "input_modalities": [
       "text",
@@ -4369,7 +4415,7 @@
     "context_length": 1048576,
     "description": "Paste messy notes, logs or stack traces; get a clean bug report (title, expected vs actual, repro steps, severity S-1..S-5) with best-effort redaction of emails, keys and IDs — review before filing. Logs containing jailbreak-like text may be rejected by the provider's content filter.",
     "health": {
-      "requests": 10,
+      "requests": 30,
       "status": "healthy",
       "success_rate": 100
     },
@@ -4420,7 +4466,7 @@
     "context_length": 400000,
     "description": "Expands a short image idea into a detailed, style-aware prompt for Flux and other image models.",
     "health": {
-      "requests": 21,
+      "requests": 19,
       "status": "healthy",
       "success_rate": 100
     },
@@ -4686,7 +4732,7 @@
     "context_length": 1048576,
     "description": "research agent",
     "health": {
-      "requests": 19,
+      "requests": 18,
       "status": "healthy",
       "success_rate": 100
     },
@@ -4978,7 +5024,7 @@
     "community": true,
     "description": "Pollinations.AI support assistant — it knows the platform's API, models, pricing, auth, and codebase inside out. Sharp, direct, and built for fast answers.",
     "health": {
-      "requests": 66,
+      "requests": 64,
       "status": "healthy",
       "success_rate": 100
     },
@@ -5018,7 +5064,7 @@
     "category": "text",
     "community": true,
     "health": {
-      "requests": 10,
+      "requests": 9,
       "status": "down",
       "success_rate": 0
     },
@@ -5065,7 +5111,7 @@
     "health": {
       "requests": 50,
       "status": "degraded",
-      "success_rate": 84
+      "success_rate": 86
     },
     "input_modalities": [
       "text",
@@ -5092,54 +5138,6 @@
       "/v1/messages"
     ],
     "title": "Gemma Diffusion 26B (FREE)"
-  },
-  {
-    "added_date": 1793020666000,
-    "aliases": [
-      "scriptsnsenses-sys/minimax-m3.1-flash-free"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/7d20bc86-6cd5-415f-aff0-3d7208ab7774",
-    "brand_url": "https://discord.gg/kmPz97gK2k",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 262000,
-    "description": "Minimax's lightweight coder for free. Heads Up: Your use is logged so avoid telling secrets or sharing personal data.",
-    "health": {
-      "requests": 50,
-      "status": "degraded",
-      "success_rate": 86
-    },
-    "input_modalities": [
-      "text",
-      "image",
-      "video"
-    ],
-    "name": "community/scriptsnsenses-sys/minimax-m3.1-flash-free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 8,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "My discord server",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "MiniMax M3.1 Flash (FREE)",
-    "tools": true
   },
   {
     "added_date": 1789431627000,
@@ -6247,9 +6245,9 @@
     "category": "text",
     "community": true,
     "health": {
-      "requests": 47,
+      "requests": 48,
       "status": "degraded",
-      "success_rate": 87.2340425531915
+      "success_rate": 87.5
     },
     "input_modalities": [
       "text",
@@ -6292,7 +6290,7 @@
     "community": true,
     "description": "Code agent: routes Pollinations requests by task difficulty, resolved against the live model catalog and health",
     "health": {
-      "requests": 25,
+      "requests": 19,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6337,9 +6335,9 @@
     "context_length": 400000,
     "description": "Hikers' voice memos become trail condition reports. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 10,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 11,
+      "status": "degraded",
+      "success_rate": 90.9090909090909
     },
     "input_modalities": [
       "text",
@@ -6643,9 +6641,9 @@
     "context_length": 400000,
     "description": "Chases late freelancer invoices politely until they are paid. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 11,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 12,
+      "status": "degraded",
+      "success_rate": 91.66666666666666
     },
     "input_modalities": [
       "text",
@@ -7547,7 +7545,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for Mise en Place: restaurant review digests, prep planning and service experiments.",
     "health": {
-      "requests": 10,
+      "requests": 11,
       "status": "healthy",
       "success_rate": 100
     },
@@ -7913,9 +7911,9 @@
     "context_length": 1048576,
     "description": "Fast reasoning and coding at bargain prices",
     "health": {
-      "requests": 1277,
+      "requests": 1565,
       "status": "healthy",
-      "success_rate": 99.84338292873923
+      "success_rate": 99.87220447284345
     },
     "input_modalities": [
       "text"
@@ -7969,9 +7967,9 @@
     "context_length": 1048576,
     "description": "Low-cost multimodal reasoning for coding, agents and visual analysis",
     "health": {
-      "requests": 10,
+      "requests": 11,
       "status": "degraded",
-      "success_rate": 90
+      "success_rate": 90.9090909090909
     },
     "input_modalities": [
       "text",
@@ -8037,7 +8035,7 @@
     "context_length": 1000000,
     "description": "Deep reasoning and strong coding for demanding problems",
     "health": {
-      "requests": 40,
+      "requests": 41,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8099,9 +8097,9 @@
     "context_length": 1048576,
     "description": "Reasoning, coding, tool calling, and image understanding.",
     "health": {
-      "requests": 4661,
+      "requests": 4961,
       "status": "healthy",
-      "success_rate": 99.78545376528642
+      "success_rate": 99.79842773634347
     },
     "input_modalities": [
       "text",
@@ -8164,9 +8162,9 @@
     "context_length": 1048576,
     "description": "Reasoning, coding, tool calling, and image understanding.",
     "health": {
-      "requests": 5764,
+      "requests": 5693,
       "status": "healthy",
-      "success_rate": 99.98265093684941
+      "success_rate": 99.98243456876867
     },
     "input_modalities": [
       "text",
@@ -8232,9 +8230,9 @@
     "context_length": 1048576,
     "description": "Cheapest way to handle everyday multimodal tasks; trades depth for speed",
     "health": {
-      "requests": 3498,
+      "requests": 3323,
       "status": "healthy",
-      "success_rate": 99.97141223556318
+      "success_rate": 99.96990671080349
     },
     "input_modalities": [
       "text",
@@ -8305,9 +8303,9 @@
     "context_length": 1048576,
     "description": "Answers grounded in live web search; fast and cheap, not a deep reasoner",
     "health": {
-      "requests": 210,
+      "requests": 244,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.18032786885246
     },
     "input_modalities": [
       "text",
@@ -8394,7 +8392,7 @@
     "context_length": 1048576,
     "description": "Pro-grade reasoning at high speed, with web search and a huge context window",
     "health": {
-      "requests": 82,
+      "requests": 73,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8484,7 +8482,7 @@
     "context_length": 1048576,
     "description": "Top-tier multimodal reasoning over huge documents, images and video",
     "health": {
-      "requests": 10,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8606,7 +8604,7 @@
     "context_length": 1048576,
     "description": "Fast multimodal reasoning for high-throughput agents and data processing",
     "health": {
-      "requests": 152,
+      "requests": 190,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8693,7 +8691,7 @@
     "context_length": 1048576,
     "description": "Sharp, fast reasoning over text, images, audio and video, plus web search",
     "health": {
-      "requests": 143,
+      "requests": 156,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8776,9 +8774,9 @@
     "context_length": 1048576,
     "description": "Fast multimodal reasoning for long-horizon coding, autonomous agents and complex workflows",
     "health": {
-      "requests": 323,
+      "requests": 310,
       "status": "healthy",
-      "success_rate": 99.69040247678018
+      "success_rate": 99.35483870967742
     },
     "input_modalities": [
       "text",
@@ -8938,9 +8936,9 @@
     "context_length": 262144,
     "description": "Efficient open-source chat with image understanding; modest on hard problems",
     "health": {
-      "requests": 446,
+      "requests": 528,
       "status": "healthy",
-      "success_rate": 97.08520179372198
+      "success_rate": 97.53787878787878
     },
     "input_modalities": [
       "text",
@@ -9006,7 +9004,7 @@
     "context_length": 262144,
     "description": "Dense multimodal reasoning with configurable thinking",
     "health": {
-      "requests": 310,
+      "requests": 559,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9186,7 +9184,7 @@
     "context_length": 1000000,
     "description": "Diffusion reasoning for agentic workflows and real-time voice and search",
     "health": {
-      "requests": 8,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9625,7 +9623,7 @@
     "context_length": 131072,
     "description": "Open-source workhorse for general chat and summarization; text only",
     "health": {
-      "requests": 85,
+      "requests": 87,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9682,7 +9680,7 @@
     "context_length": 1048576,
     "description": "Open-source chat that understands images, with a huge context window",
     "health": {
-      "requests": 3,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9737,7 +9735,7 @@
     "context_length": 131072,
     "description": "Text and image understanding with a 128K context window; no tool calling or structured output",
     "health": {
-      "requests": 124,
+      "requests": 125,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10079,7 +10077,7 @@
     "context_length": 200000,
     "description": "Multilingual coding and agent tasks at a friendly price",
     "health": {
-      "requests": 2,
+      "requests": 7,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10145,9 +10143,9 @@
     "context_length": 524288,
     "description": "Strong coding and agent skills with a very long memory for big projects",
     "health": {
-      "requests": 368,
+      "requests": 483,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.79296066252587
     },
     "input_modalities": [
       "text",
@@ -10216,7 +10214,7 @@
     "context_length": 256000,
     "description": "Polished multilingual writing and reasoning with image understanding",
     "health": {
-      "requests": 149,
+      "requests": 178,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10271,7 +10269,7 @@
     "context_length": 524288,
     "description": "Frontier multimodal model for reasoning, coding and agentic workloads with a 512K context",
     "health": {
-      "requests": 9,
+      "requests": 152,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10400,9 +10398,9 @@
     "context_length": 262144,
     "description": "Compact all-rounder that combines reasoning with image understanding",
     "health": {
-      "requests": 5130,
+      "requests": 5956,
       "status": "healthy",
-      "success_rate": 99.82456140350877
+      "success_rate": 99.84889187374077
     },
     "input_modalities": [
       "text",
@@ -10471,7 +10469,7 @@
     "context_length": 262000,
     "description": "Agentic all-rounder that shows its chain-of-thought reasoning",
     "health": {
-      "requests": 25,
+      "requests": 24,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10597,7 +10595,7 @@
     "context_length": 1048576,
     "description": "Frontier multimodal model for coding and agents",
     "health": {
-      "requests": 261,
+      "requests": 171,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10654,7 +10652,7 @@
     "context_length": 262144,
     "description": "Compact agentic coding model with image input and switchable reasoning",
     "health": {
-      "requests": 4,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10842,7 +10840,7 @@
     "context_length": 262144,
     "description": "Fast open-weight reasoning for high-volume agent tasks, tool use and structured output",
     "health": {
-      "requests": 879,
+      "requests": 846,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10970,7 +10968,7 @@
     "context_length": 128000,
     "description": "Affordable multimodal chat with vision input for everyday tasks",
     "health": {
-      "requests": 27,
+      "requests": 32,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11037,7 +11035,7 @@
     "context_length": 400000,
     "description": "Ultra-fast and ultra-cheap for simple tasks; not built for hard problems",
     "health": {
-      "requests": 574,
+      "requests": 663,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11093,9 +11091,9 @@
     "context_length": 400000,
     "description": "Coding-focused reasoner for complex software engineering and agentic tasks",
     "health": {
-      "requests": 29,
+      "requests": 31,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 96.7741935483871
     },
     "input_modalities": [
       "text",
@@ -11155,9 +11153,9 @@
     "context_length": 1050000,
     "description": "Deep reasoning for the hardest questions; slower and pricier than lighter tiers",
     "health": {
-      "requests": 152,
+      "requests": 180,
       "status": "healthy",
-      "success_rate": 99.3421052631579
+      "success_rate": 99.44444444444444
     },
     "input_modalities": [
       "text",
@@ -11242,7 +11240,7 @@
     "context_length": 400000,
     "description": "Strong all-round quality at mid cost; a good default when speed matters",
     "health": {
-      "requests": 1386,
+      "requests": 1723,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11300,9 +11298,9 @@
     "context_length": 400000,
     "description": "Fast, affordable all-rounder for everyday chat and image questions",
     "health": {
-      "requests": 81929,
+      "requests": 80979,
       "status": "healthy",
-      "success_rate": 99.97802975747292
+      "success_rate": 99.97653712690945
     },
     "input_modalities": [
       "text",
@@ -11361,9 +11359,9 @@
     "context_length": 1050000,
     "description": "Frontier reasoning for complex, multi-step problems; takes its time thinking",
     "health": {
-      "requests": 108,
+      "requests": 136,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.26470588235294
     },
     "input_modalities": [
       "text",
@@ -11446,7 +11444,7 @@
     "context_length": 1050000,
     "description": "Fast low-cost reasoning for everyday multimodal tasks",
     "health": {
-      "requests": 1019,
+      "requests": 1039,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11532,7 +11530,7 @@
     "context_length": 1050000,
     "description": "Frontier reasoning for complex multimodal tasks",
     "health": {
-      "requests": 9,
+      "requests": 10,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11700,9 +11698,9 @@
     "context_length": 1050000,
     "description": "Frontier reasoning for complex agentic, coding, and multimodal work",
     "health": {
-      "requests": 72,
+      "requests": 78,
       "status": "healthy",
-      "success_rate": 98.61111111111111
+      "success_rate": 98.71794871794873
     },
     "input_modalities": [
       "text",
@@ -11782,9 +11780,9 @@
     "context_length": 1050000,
     "description": "Efficient reasoning for focused, high-volume tasks",
     "health": {
-      "requests": 3311,
+      "requests": 3443,
       "status": "healthy",
-      "success_rate": 99.90939293264874
+      "success_rate": 99.91286668602962
     },
     "input_modalities": [
       "text",
@@ -11933,7 +11931,7 @@
     "context_length": 1050000,
     "description": "Reasoning for complex coding and agentic workflows",
     "health": {
-      "requests": 683,
+      "requests": 619,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12017,9 +12015,9 @@
     "context_length": 1050000,
     "description": "Faster near-Astra reasoning for coding, agents, and professional work",
     "health": {
-      "requests": 650,
+      "requests": 654,
       "status": "healthy",
-      "success_rate": 99.6923076923077
+      "success_rate": 99.69418960244649
     },
     "input_modalities": [
       "text",
@@ -12101,9 +12099,9 @@
     "context_length": 1050000,
     "description": "Fast, efficient model for professional work with strong visual reasoning and computer use",
     "health": {
-      "requests": 1184,
+      "requests": 666,
       "status": "healthy",
-      "success_rate": 98.5641891891892
+      "success_rate": 97.74774774774775
     },
     "input_modalities": [
       "text",
@@ -12186,7 +12184,7 @@
     "context_length": 128000,
     "description": "Rich, natural voice conversations; premium quality at a higher price",
     "health": {
-      "requests": 27,
+      "requests": 20,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12259,7 +12257,7 @@
     "context_length": 128000,
     "description": "Voice conversations with spoken or text replies",
     "health": {
-      "requests": 218,
+      "requests": 238,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12331,9 +12329,9 @@
     "context_length": 131072,
     "description": "Compact open-weight reasoner; solid logic on a budget, limited world knowledge",
     "health": {
-      "requests": 182312,
+      "requests": 180764,
       "status": "healthy",
-      "success_rate": 99.6796700162359
+      "success_rate": 99.69462946161846
     },
     "input_modalities": [
       "text"
@@ -12448,7 +12446,7 @@
     "context_length": 128000,
     "description": "Quick web searches with cited answers; keeps it brief",
     "health": {
-      "requests": 60,
+      "requests": 59,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12513,7 +12511,7 @@
     "community": false,
     "description": "Turns your musical ideas into playable MIDI notation",
     "health": {
-      "requests": 5,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12566,7 +12564,7 @@
     "community": false,
     "description": "Composes richer, more detailed MIDI arrangements; costs more per piece",
     "health": {
-      "requests": 3,
+      "requests": 15,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12706,9 +12704,9 @@
     "context_length": 262144,
     "description": "Writes and fixes code quickly at low cost; best for programming, not chat",
     "health": {
-      "requests": 8,
+      "requests": 12,
       "status": "degraded",
-      "success_rate": 87.5
+      "success_rate": 91.66666666666666
     },
     "input_modalities": [
       "text"
@@ -12893,9 +12891,9 @@
     "context_length": 131072,
     "description": "Describes images, reads text in them, and analyzes visual content",
     "health": {
-      "requests": 60,
-      "status": "down",
-      "success_rate": 80
+      "requests": 61,
+      "status": "degraded",
+      "success_rate": 80.32786885245902
     },
     "input_modalities": [
       "text",
@@ -12955,7 +12953,7 @@
     "context_length": 1000000,
     "description": "Ultra-low-cost multimodal reasoning for agents and visual tasks",
     "health": {
-      "requests": 328,
+      "requests": 359,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13291,7 +13289,7 @@
     "context_length": 262144,
     "description": "Open-weight sparse frontier reasoning for long-horizon coding and autonomous agents",
     "health": {
-      "requests": 21,
+      "requests": 155,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13427,7 +13425,7 @@
     "context_length": 1000000,
     "description": "Low-cost multimodal reasoning with 1M context and 131K output for agents and coding",
     "health": {
-      "requests": 380,
+      "requests": 356,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13683,9 +13681,9 @@
     "community": false,
     "description": "Flags unsafe content for moderation",
     "health": {
-      "requests": 729,
+      "requests": 758,
       "status": "healthy",
-      "success_rate": 99.58847736625515
+      "success_rate": 99.6042216358839
     },
     "input_modalities": [
       "text"
@@ -13727,7 +13725,7 @@
     "community": false,
     "description": "Free behaviour scoring: the probability that plain-language behaviours are present in an agent or LLM conversation. Accepts only noul questions with plain-string instructions, and Respan retains prompts (no training). Post state and questions to /alpha/decisions, or send the same JSON in the last user message on /v1/chat/completions",
     "health": {
-      "requests": 56,
+      "requests": 53,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13770,7 +13768,7 @@
     "context_length": 256000,
     "description": "Experimental coding and long-context reasoning with automatic tool calling. Prompts and responses may be retained and used for training; no zero data retention.",
     "health": {
-      "requests": 1107,
+      "requests": 1018,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14010,9 +14008,9 @@
     "context_length": 262144,
     "description": "Mixture-of-experts reasoning for agentic workflows and production tool-use",
     "health": {
-      "requests": 19,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -14127,7 +14125,7 @@
     "context_length": 1048576,
     "description": "Flagship million-token multimodal reasoning for agents, coding, visual analysis and audio understanding",
     "health": {
-      "requests": 100,
+      "requests": 94,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14200,7 +14198,7 @@
     "context_length": 524288,
     "description": "Multimodal reasoning for agents, coding, image analysis and audio understanding",
     "health": {
-      "requests": 2,
+      "requests": 33,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14264,7 +14262,7 @@
     "context_length": 64000,
     "description": "Typed decisions with calibrated confidence instead of free text; post state and questions to /alpha/decisions, or send the same JSON in the last user message on /v1/chat/completions",
     "health": {
-      "requests": 391,
+      "requests": 358,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14304,9 +14302,9 @@
     "context_length": 65536,
     "description": "Typed choices, yes/no probabilities and scores for routing and classification. Inputs may be logged and used for training",
     "health": {
-      "requests": 8,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -14360,7 +14358,7 @@
     "context_length": 262144,
     "description": "Multimodal chat and tool calling with optional reasoning",
     "health": {
-      "requests": 151,
+      "requests": 161,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14419,7 +14417,7 @@
     "context_length": 200000,
     "description": "Strong multimodal reasoning with a huge context window at a friendly price",
     "health": {
-      "requests": 127,
+      "requests": 137,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14477,7 +14475,7 @@
     "context_length": 200000,
     "description": "Frontier reasoning for coding and knowledge work",
     "health": {
-      "requests": 72,
+      "requests": 43,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14626,7 +14624,7 @@
     "context_length": 1048576,
     "description": "Efficient multimodal reasoning for agents and coding",
     "health": {
-      "requests": 51,
+      "requests": 39,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14690,7 +14688,7 @@
     "context_length": 1048576,
     "description": "Long-context reasoning and coding with higher capability",
     "health": {
-      "requests": 26,
+      "requests": 22,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14809,9 +14807,9 @@
     "context_length": 1048576,
     "description": "Flagship long-context reasoning and coding at higher capability",
     "health": {
-      "requests": 31,
+      "requests": 42,
       "status": "degraded",
-      "success_rate": 93.54838709677419
+      "success_rate": 88.09523809523809
     },
     "input_modalities": [
       "text",
@@ -14873,7 +14871,7 @@
     "context_length": 1048576,
     "description": "Massive open-weight model for long-context reasoning and agent workflows",
     "health": {
-      "requests": 197,
+      "requests": 166,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14931,9 +14929,9 @@
     "context_length": 1048576,
     "description": "Mandatory-reasoning model for complex software engineering and long-horizon agent workflows",
     "health": {
-      "requests": 239,
-      "status": "degraded",
-      "success_rate": 91.21338912133892
+      "requests": 91,
+      "status": "down",
+      "success_rate": 72.52747252747253
     },
     "input_modalities": [
       "text"
@@ -14996,9 +14994,9 @@
     "context_length": 1048576,
     "description": "Low-cost million-token multimodal reasoning for agents and visual analysis",
     "health": {
-      "requests": 4279,
+      "requests": 4407,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.97730882686635
     },
     "input_modalities": [
       "text",
