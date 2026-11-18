@@ -61,7 +61,7 @@
     "default_duration": 5,
     "description": "Generates low-cost, 5-second silent clips at 480p for drafts",
     "health": {
-      "requests": 95,
+      "requests": 254,
       "status": "healthy",
       "success_rate": 100
     },
@@ -116,9 +116,9 @@
     "default_duration": 5,
     "description": "Video with sound from text or an image (720p, 5/10/15s clips)",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -264,7 +264,7 @@
     "default_duration": 5,
     "description": "2-15 second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 16,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -354,7 +354,7 @@
     "default_duration": 5,
     "description": "Fast video from text or start and end frames with optional synchronized audio at 720p or 1080p",
     "health": {
-      "requests": 4,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -427,7 +427,7 @@
     "default_duration": 5,
     "description": "Video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 83,
+      "requests": 126,
       "status": "healthy",
       "success_rate": 100
     },
@@ -509,9 +509,9 @@
     "default_duration": 5,
     "description": "720p video with natively synced sound, from text, images, or references",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -594,9 +594,9 @@
     "default_duration": 5,
     "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
     "health": {
-      "requests": 3,
-      "status": "down",
-      "success_rate": 66.66666666666666
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -644,9 +644,9 @@
     "default_duration": 5,
     "description": "Lower-cost 4–10 second video with synchronized sound and first/last-frame control at 480p or 720p",
     "health": {
-      "requests": 10,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -715,11 +715,11 @@
     "category": "video",
     "community": false,
     "default_duration": 4,
-    "description": "Four-second video with synchronized audio and reference media at 480p or 720p",
+    "description": "Four-second video with synchronized audio and reference media at 480p or 720p; reference-video edits pick their own length",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -823,9 +823,9 @@
     "default_duration": 5,
     "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -942,7 +942,7 @@
     "default_duration": 4,
     "description": "Fast video with optional audio at 720p or 1080p",
     "health": {
-      "requests": 23,
+      "requests": 30,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1014,7 +1014,7 @@
     "default_duration": 5,
     "description": "Text and first-frame video with synchronized dialogue, ambience and effects at 480p or 768p",
     "health": {
-      "requests": 5,
+      "requests": 124,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1085,8 +1085,8 @@
     "description": "Fast 5-second video from text or start image with synchronized audio at 480p",
     "health": {
       "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "status": "down",
+      "success_rate": 0
     },
     "input_modalities": [
       "text",
@@ -1153,7 +1153,7 @@
     "default_duration": 5,
     "description": "Cinematic video with optional synchronized audio from text or start and end frames at 720p",
     "health": {
-      "requests": 4,
+      "requests": 25,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1204,9 +1204,9 @@
     "default_duration": 5,
     "description": "Five-second text-to-video clips with synchronized stereo audio at 480p, 768p, or 2K",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "down",
+      "success_rate": 66.66666666666666
     },
     "input_modalities": [
       "text"
@@ -1287,9 +1287,9 @@
     "default_duration": 5,
     "description": "High-quality 5–15 second video from text, start/end frames, or reference media with synchronized audio at 480p, 768p, or 1080p",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 226,
+      "status": "healthy",
+      "success_rate": 96.90265486725663
     },
     "input_modalities": [
       "text",
@@ -1387,7 +1387,7 @@
     "default_duration": 5,
     "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
     "health": {
-      "requests": 14,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1477,9 +1477,9 @@
     "default_duration": 120,
     "description": "Adds synchronized sound effects to an existing video",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1530,9 +1530,9 @@
     "default_duration": 5,
     "description": "Affordable video from text or an image at 720p or 1080p",
     "health": {
-      "requests": 220,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 16,
+      "status": "degraded",
+      "success_rate": 87.5
     },
     "input_modalities": [
       "text",
@@ -1601,7 +1601,7 @@
     "default_duration": 5,
     "description": "Short videos from text or an image (720p, 1-15s)",
     "health": {
-      "requests": 8,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1648,9 +1648,9 @@
     "default_duration": 5,
     "description": "Video from text or a start image with synchronized audio at 480p, 720p, or 1080p",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1732,7 +1732,7 @@
     "default_duration": 5,
     "description": "Faster, lower-cost video from text or a start image at 480p, 720p, or 1080p",
     "health": {
-      "requests": 20,
+      "requests": 10,
       "status": "healthy",
       "success_rate": 100
     },
