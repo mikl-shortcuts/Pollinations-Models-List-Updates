@@ -9,7 +9,7 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Fast transcription with support for 99 languages",
+    "description": "Turn speech in 99 languages into transcripts or timed subtitles.",
     "health": {
       "requests": 1,
       "status": "healthy",
@@ -71,11 +71,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "High-accuracy transcription with multilingual code switching and prompts",
+    "description": "Transcribe conversations even when speakers switch languages. Supply context for unfamiliar words.",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "audio"
@@ -184,6 +184,42 @@
     "title": "Fish Audio S2.1 Pro"
   },
   {
+    "added_date": 1795095394000,
+    "aliases": [
+      "Catniti/whisper-large-v3-turbo"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/f4747bba-ca12-4803-9a08-d17d5e8c549f",
+    "brand_url": "https://t.me/catniti_channel",
+    "capabilities": [],
+    "category": "audio",
+    "community": true,
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "audio"
+    ],
+    "name": "community/Catniti/whisper-large-v3-turbo",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.0002"
+    },
+    "publisher": "Catniti",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "title": "Whisper Large V3 Turbo"
+  },
+  {
     "added_date": 1793536781000,
     "aliases": [
       "Saauf/whisper-large-v3"
@@ -233,7 +269,7 @@
     "community": true,
     "description": "A faster, cheaper Whisper Large v3 with nearly the same accuracy: speech to text in about 100 languages. More at https://ai.saauf.xyz/models/whisper-large-v3-turbo",
     "health": {
-      "requests": 33,
+      "requests": 32,
       "status": "healthy",
       "success_rate": 100
     },
@@ -268,9 +304,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Low-latency speech in 32 languages with character timestamps",
+    "description": "Read text aloud with little delay in any of 32 languages.",
     "health": {
-      "requests": 247,
+      "requests": 164,
       "status": "healthy",
       "success_rate": 100
     },
@@ -343,11 +379,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Preserves delivery and emotion while transforming speaker identity",
+    "description": "Change the voice in a recording while keeping the speaker's timing and emotion.",
     "health": {
-      "requests": 3,
-      "status": "down",
-      "success_rate": 0
+      "requests": 5,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -415,9 +451,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Emotionally rich speech in 29 languages with character timestamps",
+    "description": "Narrate text in 29 languages, with timestamps for highlighting the words as you listen.",
     "health": {
-      "requests": 38,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -491,9 +527,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Sound effects from a text description",
+    "description": "Turn a short description, such as footsteps on gravel, into a sound effect.",
     "health": {
-      "requests": 9,
+      "requests": 14,
       "status": "healthy",
       "success_rate": 100
     },
@@ -524,11 +560,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Prompt-following sound effects, vocals and loops from text",
+    "description": "Describe a sound effect or vocal sound and turn it into a clip or repeating loop.",
     "health": {
-      "requests": 65,
+      "requests": 97,
       "status": "healthy",
-      "success_rate": 98.46153846153847
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -561,9 +597,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Expressive speech with emotion controls, audio tags, and character timestamps",
+    "description": "Read a script aloud with cues for pauses and emotion.",
     "health": {
-      "requests": 507,
+      "requests": 255,
       "status": "healthy",
       "success_rate": 100
     },
@@ -636,7 +672,7 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Multi-speaker conversations with expressive voices and audio cues",
+    "description": "Turn a script into a conversation with a different voice for each speaker.",
     "health": {
       "requests": 0,
       "status": "unknown",
@@ -706,9 +742,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Expressive speech in 90+ languages with audio tags and character timestamps",
+    "description": "Read a script in over 90 languages, using cues in the text to shape the performance.",
     "health": {
-      "requests": 395,
+      "requests": 143,
       "status": "healthy",
       "success_rate": 100
     },
@@ -777,11 +813,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Low-latency expressive speech in 90+ languages with audio tags and character timestamps",
+    "description": "Generate speech quickly in over 90 languages, with cues in the script to guide delivery.",
     "health": {
-      "requests": 117,
+      "requests": 878,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.88610478359908
     },
     "input_modalities": [
       "text"
@@ -851,9 +887,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Studio-grade music from a text prompt or reference track",
+    "description": "Compose music from a description, optionally using a reference track to guide the sound.",
     "health": {
-      "requests": 3,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -888,9 +924,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Richer, better prompt-following music from text or a reference track",
+    "description": "Compose music from a detailed prompt or guide the result with a reference track.",
     "health": {
-      "requests": 14,
+      "requests": 28,
       "status": "healthy",
       "success_rate": 100
     },
@@ -929,9 +965,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Transcription in 90+ languages with speaker labels",
+    "description": "Transcribe interviews in over 90 languages and label who said what.",
     "health": {
-      "requests": 1758,
+      "requests": 75,
       "status": "healthy",
       "success_rate": 100
     },
@@ -959,9 +995,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Accurate multilingual transcription with speaker labels and word timestamps",
+    "description": "Transcribe a conversation with speaker labels and a timestamp for each word.",
     "health": {
-      "requests": 262,
+      "requests": 23,
       "status": "healthy",
       "success_rate": 100
     },
@@ -989,9 +1025,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Separate vocals and instruments into two or six downloadable audio tracks",
+    "description": "Separate vocals from the accompaniment, or split a recording into six tracks for mixing.",
     "health": {
-      "requests": 4,
+      "requests": 30,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1045,11 +1081,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Removes background noise while preserving clear spoken audio",
+    "description": "Remove background noise from audio or video so the speaker is easier to hear.",
     "health": {
-      "requests": 6,
-      "status": "degraded",
-      "success_rate": 83.33333333333334
+      "requests": 12,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio",
@@ -1078,11 +1114,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Multilingual expressive speech with natural-language emotion and delivery control",
+    "description": "Read a passage aloud in multiple languages and describe the emotion you want the voice to convey.",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -1116,11 +1152,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Speech recognition with word timestamps and speaker labels for up to eight speakers",
+    "description": "Transcribe a discussion and label the voices of up to eight speakers.",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "audio"
@@ -1147,9 +1183,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Fast, high-throughput speech across 30 voices",
+    "description": "Generate spoken clips quickly in a choice of 30 voices.",
     "health": {
-      "requests": 18,
+      "requests": 25,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1218,11 +1254,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Expressive, style-steerable speech across 30 voices for creative narration",
+    "description": "Narrate a passage in one of 30 voices and describe the delivery you want.",
     "health": {
-      "requests": 1267,
+      "requests": 425,
       "status": "healthy",
-      "success_rate": 99.92107340173638
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -1296,7 +1332,7 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "30-second music with vocals, lyrics, or instrumental arrangements",
+    "description": "Turn an idea into a 30-second music clip, with vocals or instruments alone.",
     "flat_rate": true,
     "health": {
       "requests": 0,
@@ -1330,12 +1366,12 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Full songs with vocals or instrumental arrangements; describe structure and approximate duration in the prompt",
+    "description": "Compose a full song with vocals or instruments and describe how each section should sound.",
     "flat_rate": true,
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 4,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -1369,9 +1405,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Lightweight multilingual speech across 54 voices and eight languages",
+    "description": "Read text aloud with a choice of 54 voices across eight languages.",
     "health": {
-      "requests": 147,
+      "requests": 17,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1458,9 +1494,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Multilingual file transcription with automatic language detection and timed segments",
+    "description": "Transcribe a recording with timestamps for each passage. The model detects the language.",
     "health": {
-      "requests": 63,
+      "requests": 15,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1488,9 +1524,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Expressive speech across 23 languages with consistent voices for long-form narration; mp3 or 24 kHz pcm",
+    "description": "Narrate long passages in a consistent voice across 23 languages.",
     "health": {
-      "requests": 260,
+      "requests": 138,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1620,9 +1656,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Low-latency expressive speech across 23 languages for voice agents; mp3 or 24 kHz pcm",
+    "description": "Turn written replies into speech with little delay in any of 23 languages.",
     "health": {
-      "requests": 35,
+      "requests": 132,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1755,9 +1791,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Fast multilingual speech recognition with optional language and prompt context",
+    "description": "Transcribe speech in multiple languages and supply context for names or specialized terms.",
     "health": {
-      "requests": 11,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1788,9 +1824,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Low-latency speech synthesis with six voices and six output formats",
+    "description": "Turn text into speech quickly using one of six voices.",
     "health": {
-      "requests": 334,
+      "requests": 207,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1831,9 +1867,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Higher-quality speech synthesis with six voices and six output formats",
+    "description": "Generate high-quality narration in one of six voices.",
     "health": {
-      "requests": 110,
+      "requests": 90,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1876,11 +1912,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Accurate, affordable speech-to-text transcription",
+    "description": "Turn recorded speech into a transcript or a timed subtitle file.",
     "health": {
-      "requests": 800,
+      "requests": 838,
       "status": "healthy",
-      "success_rate": 99.875
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -1911,9 +1947,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Low-latency speech you can direct with emotion, tone and dialect instructions",
+    "description": "Turn text into speech and describe the tone, emotion or dialect you want.",
     "health": {
-      "requests": 15,
+      "requests": 37,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1962,11 +1998,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Fast multilingual text-to-speech at low cost",
+    "description": "Read text aloud quickly in multiple languages.",
     "health": {
-      "requests": 10,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -2001,11 +2037,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "English conversational speech with six reading and dialogue voices",
+    "description": "Read English dialogue or narration in one of six conversational voices.",
     "health": {
-      "requests": 13,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -2042,11 +2078,11 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Sound effects timed to a video, as a separate audio track",
+    "description": "Add sound effects that follow the action in a video and download them as a separate track.",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -2080,12 +2116,12 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Highest-quality long-form stereo music generation; priced per generation",
+    "description": "Create long stereo music tracks or restyle a recording for a fixed price per generation.",
     "flat_rate": true,
     "health": {
-      "requests": 5,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -2123,12 +2159,12 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Long-form stereo music and soundscapes in studio quality",
+    "description": "Create stereo music or soundscapes that run for over six minutes.",
     "flat_rate": true,
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -2163,9 +2199,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Fast multilingual speech recognition with word timestamps, speaker labels, and text formatting",
+    "description": "Turn speech into formatted text with speaker labels and word timestamps.",
     "health": {
-      "requests": 6,
+      "requests": 66,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2195,9 +2231,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Expressive multilingual speech across 28 built-in voices with inline style controls",
+    "description": "Read text in one of 28 voices, with cues in the script for how each line should sound.",
     "health": {
-      "requests": 170,
+      "requests": 103,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2258,9 +2294,9 @@
     "capabilities": [],
     "category": "audio",
     "community": false,
-    "description": "Speech in the Alloy voice or a voice cloned from a reference recording.",
+    "description": "Read text aloud in the Alloy voice or clone a voice from a reference recording.",
     "health": {
-      "requests": 2,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },

@@ -10,7 +10,7 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Text and first-frame video generation at 720p",
+    "description": "Turn a description or opening image into a 720p clip up to fifteen seconds long.",
     "health": {
       "requests": 0,
       "status": "unknown",
@@ -59,9 +59,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Generates low-cost, 5-second silent clips at 480p for drafts",
+    "description": "Draft a five-second silent clip using text or images for the opening and closing frames.",
     "health": {
-      "requests": 254,
+      "requests": 169,
       "status": "healthy",
       "success_rate": 100
     },
@@ -114,11 +114,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Video with sound from text or an image (720p, 5/10/15s clips)",
+    "description": "Turn a description or starting image into a 720p video with sound lasting five, ten, or fifteen seconds.",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -167,11 +167,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Keyframe-controlled video with sound at 720p or 1080p; also accepts reference images and videos",
+    "description": "Create video with sound using opening and closing images or visual references from pictures and clips.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -262,9 +262,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "2-15 second video from text, start/end frames, or reference media with optional audio at 480p, 720p, or 1080p",
+    "description": "Guide a clip with images, video, or audio references and choose whether to include sound.",
     "health": {
-      "requests": 12,
+      "requests": 7,
       "status": "healthy",
       "success_rate": 100
     },
@@ -352,11 +352,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Fast video from text or start and end frames with optional synchronized audio at 720p or 1080p",
+    "description": "Create a video up to twenty seconds long with optional sound and control over its opening and closing images.",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -425,9 +425,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Video from text or a start image at 480p, 720p, or 1080p",
+    "description": "Animate a starting image or describe a short video up to 1080p.",
     "health": {
-      "requests": 126,
+      "requests": 145,
       "status": "healthy",
       "success_rate": 100
     },
@@ -507,9 +507,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "720p video with natively synced sound, from text, images, or references",
+    "description": "Create a 720p video with synchronized sound. Guide it with reference images, video, or audio.",
     "health": {
-      "requests": 1,
+      "requests": 18,
       "status": "healthy",
       "success_rate": 100
     },
@@ -592,11 +592,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Short 4–5 second video with synchronized sound and first/last-frame control at 480p",
+    "description": "Animate opening and closing images into a four- or five-second clip with synchronized sound.",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -642,11 +642,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Lower-cost 4–10 second video with synchronized sound and first/last-frame control at 480p or 720p",
+    "description": "Choose opening and closing images for a clip up to ten seconds long with synchronized sound.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 10,
+      "status": "degraded",
+      "success_rate": 90
     },
     "input_modalities": [
       "text",
@@ -715,11 +715,11 @@
     "category": "video",
     "community": false,
     "default_duration": 4,
-    "description": "Four-second video with synchronized audio and reference media at 480p or 720p; reference-video edits pick their own length",
+    "description": "Create a four-second clip with synchronized sound, or use a reference video to guide an edit.",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 8,
+      "status": "degraded",
+      "success_rate": 87.5
     },
     "input_modalities": [
       "text",
@@ -821,7 +821,7 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
+    "description": "Create up to 10 seconds of video with synchronized sound at up to 4K, from text or opening and closing images.",
     "health": {
       "requests": 0,
       "status": "unknown",
@@ -874,9 +874,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Cinematic video from text or keyframes with synchronized audio at up to 4K",
+    "description": "Create up to 15 seconds of video with synchronized sound at up to 4K, from text or opening and closing images.",
     "health": {
-      "requests": 1,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -940,9 +940,9 @@
     "category": "video",
     "community": false,
     "default_duration": 4,
-    "description": "Fast video with optional audio at 720p or 1080p",
+    "description": "Create a short video from text or opening and closing images, with optional sound.",
     "health": {
-      "requests": 30,
+      "requests": 19,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1012,11 +1012,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Text and first-frame video with synchronized dialogue, ambience and effects at 480p or 768p",
+    "description": "Create a video from text or an opening image, complete with dialogue, background sounds, and effects.",
     "health": {
-      "requests": 124,
+      "requests": 63,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 98.4126984126984
     },
     "input_modalities": [
       "text",
@@ -1082,11 +1082,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Fast 5-second video from text or start image with synchronized audio at 480p",
+    "description": "Animate an opening image or describe a scene for a five-second clip with synchronized sound.",
     "health": {
-      "requests": 2,
-      "status": "down",
-      "success_rate": 0
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1151,9 +1151,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Cinematic video with optional synchronized audio from text or start and end frames at 720p",
+    "description": "Guide a 720p clip with opening and closing images and add synchronized sound.",
     "health": {
-      "requests": 25,
+      "requests": 5,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1202,11 +1202,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Five-second text-to-video clips with synchronized stereo audio at 480p, 768p, or 2K",
+    "description": "Turn a description into a five-second clip with synchronized stereo sound.",
     "health": {
-      "requests": 3,
-      "status": "down",
-      "success_rate": 66.66666666666666
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -1285,11 +1285,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "High-quality 5–15 second video from text, start/end frames, or reference media with synchronized audio at 480p, 768p, or 1080p",
+    "description": "Guide a video with images, clips, or audio references to create a scene with synchronized sound.",
     "health": {
-      "requests": 226,
+      "requests": 9,
       "status": "healthy",
-      "success_rate": 96.90265486725663
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1385,9 +1385,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Fast 5–15 second video with synchronized audio and first/last-frame control at 480p, 768p, or 1080p",
+    "description": "Quickly turn opening and closing images into a clip up to fifteen seconds long with synchronized sound.",
     "health": {
-      "requests": 1,
+      "requests": 21,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1475,11 +1475,11 @@
     "category": "video",
     "community": false,
     "default_duration": 120,
-    "description": "Adds synchronized sound effects to an existing video",
+    "description": "Add sound effects to an existing video that match the action on screen.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1528,11 +1528,11 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Affordable video from text or an image at 720p or 1080p",
+    "description": "Turn a description or opening image into a short 720p or 1080p video.",
     "health": {
-      "requests": 16,
-      "status": "degraded",
-      "success_rate": 87.5
+      "requests": 58,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1599,9 +1599,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Short videos from text or an image (720p, 1-15s)",
+    "description": "Turn a prompt or starting image into a 720p video up to fifteen seconds long.",
     "health": {
-      "requests": 1,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1646,7 +1646,7 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Video from text or a start image with synchronized audio at 480p, 720p, or 1080p",
+    "description": "Animate an opening image or describe a scene to create video with synchronized sound.",
     "health": {
       "requests": 1,
       "status": "healthy",
@@ -1730,9 +1730,9 @@
     "category": "video",
     "community": false,
     "default_duration": 5,
-    "description": "Faster, lower-cost video from text or a start image at 480p, 720p, or 1080p",
+    "description": "Quickly draft a video up to 1080p from text or a starting image.",
     "health": {
-      "requests": 10,
+      "requests": 26,
       "status": "healthy",
       "success_rate": 100
     },

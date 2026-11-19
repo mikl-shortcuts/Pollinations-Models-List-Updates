@@ -11,9 +11,9 @@
     "category": "embedding",
     "community": false,
     "context_length": 128000,
-    "description": "Multilingual text and image vectors. 1536 dimensions, 128K context.",
+    "description": "Match images with descriptions across languages using embeddings of up to 1,536 dimensions.",
     "health": {
-      "requests": 1,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -50,9 +50,9 @@
     "community": true,
     "description": "Google's text embedding model for search, retrieval and classification, in over 100 languages. 3072 dimensions, or fewer with dimensions. More at https://ai.saauf.xyz/models/gemini-embedding-1",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 96
     },
     "input_modalities": [
       "text"
@@ -158,9 +158,9 @@
     "category": "embedding",
     "community": false,
     "context_length": 8192,
-    "description": "Turns text, images, audio and video into vectors for semantic search. 3072 dimensions, 8192 token limit.",
+    "description": "Match text, images, audio and video by meaning in up to 3,072 dimensions.",
     "health": {
-      "requests": 904,
+      "requests": 936,
       "status": "healthy",
       "success_rate": 100
     },
@@ -198,11 +198,11 @@
     "category": "embedding",
     "community": false,
     "context_length": 8192,
-    "description": "High-quality text vectors for demanding search. 3072 dimensions, 8192 token limit.",
+    "description": "Find relevant passages across languages with text embeddings of up to 3,072 dimensions.",
     "health": {
-      "requests": 1568,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -232,11 +232,11 @@
     "category": "embedding",
     "community": false,
     "context_length": 8192,
-    "description": "Low-cost text vectors for search and similarity. 1536 dimensions, 8192 token limit.",
+    "description": "Find similar passages using low-cost text embeddings of up to 1,536 dimensions.",
     "health": {
-      "requests": 1754,
+      "requests": 521,
       "status": "healthy",
-      "success_rate": 99.94298745724059
+      "success_rate": 99.80806142034548
     },
     "input_modalities": [
       "text"
@@ -266,9 +266,9 @@
     "category": "embedding",
     "community": false,
     "context_length": 40960,
-    "description": "Multilingual text vectors. 4096 dimensions, 40,960-token context.",
+    "description": "Search long documents across languages using text embeddings of up to 4,096 dimensions.",
     "health": {
-      "requests": 168,
+      "requests": 258,
       "status": "healthy",
       "success_rate": 100
     },
