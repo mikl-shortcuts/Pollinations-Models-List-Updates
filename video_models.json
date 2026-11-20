@@ -61,7 +61,7 @@
     "default_duration": 5,
     "description": "Draft a five-second silent clip using text or images for the opening and closing frames.",
     "health": {
-      "requests": 169,
+      "requests": 181,
       "status": "healthy",
       "success_rate": 100
     },
@@ -169,7 +169,7 @@
     "default_duration": 5,
     "description": "Create video with sound using opening and closing images or visual references from pictures and clips.",
     "health": {
-      "requests": 2,
+      "requests": 5,
       "status": "healthy",
       "success_rate": 100
     },
@@ -264,7 +264,7 @@
     "default_duration": 5,
     "description": "Guide a clip with images, video, or audio references and choose whether to include sound.",
     "health": {
-      "requests": 7,
+      "requests": 29,
       "status": "healthy",
       "success_rate": 100
     },
@@ -354,9 +354,9 @@
     "default_duration": 5,
     "description": "Create a video up to twenty seconds long with optional sound and control over its opening and closing images.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -427,7 +427,7 @@
     "default_duration": 5,
     "description": "Animate a starting image or describe a short video up to 1080p.",
     "health": {
-      "requests": 145,
+      "requests": 38,
       "status": "healthy",
       "success_rate": 100
     },
@@ -509,7 +509,7 @@
     "default_duration": 5,
     "description": "Create a 720p video with synchronized sound. Guide it with reference images, video, or audio.",
     "health": {
-      "requests": 18,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -594,9 +594,9 @@
     "default_duration": 5,
     "description": "Animate opening and closing images into a four- or five-second clip with synchronized sound.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 7,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -644,9 +644,9 @@
     "default_duration": 5,
     "description": "Choose opening and closing images for a clip up to ten seconds long with synchronized sound.",
     "health": {
-      "requests": 10,
+      "requests": 12,
       "status": "degraded",
-      "success_rate": 90
+      "success_rate": 91.66666666666666
     },
     "input_modalities": [
       "text",
@@ -717,9 +717,9 @@
     "default_duration": 4,
     "description": "Create a four-second clip with synchronized sound, or use a reference video to guide an edit.",
     "health": {
-      "requests": 8,
-      "status": "degraded",
-      "success_rate": 87.5
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -815,6 +815,114 @@
     ]
   },
   {
+    "added_date": 1794960000000,
+    "aliases": [
+      "seedance-2.5-flash"
+    ],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "Fast video generation from text, keyframes, and multimodal references with optional audio",
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "max_duration": 30,
+    "max_reference_images": 2,
+    "min_duration": 4,
+    "name": "bytedance/seedance-2.5-flash",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoTokens": "0.000007",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "480p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "480p",
+          "720p": "720p",
+          "video_in_480p": "480p",
+          "video_in_720p": "720p"
+        }
+      },
+      {
+        "key": "reference_video",
+        "label": "Video input",
+        "values": {
+          "": "No",
+          "720p": "No",
+          "video_in_480p": "Yes",
+          "video_in_720p": "Yes"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "Applies when the requested video resolution is 720p.",
+        "label": "720p",
+        "name": "720p",
+        "pricing": {
+          "completionVideoTokens": "0.000007",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Applies when the request includes a reference video input at 480p.",
+        "label": "480p with reference video",
+        "name": "video_in_480p",
+        "pricing": {
+          "completionVideoTokens": "0.0000043",
+          "currency": "pollen"
+        }
+      },
+      {
+        "description": "Applies when the request includes a reference video input at 720p.",
+        "label": "720p with reference video",
+        "name": "video_in_720p",
+        "pricing": {
+          "completionVideoTokens": "0.0000043",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "ByteDance",
+    "resolutions": [
+      "480p",
+      "720p"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/video/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Seedance 2.5 Flash",
+    "video_capabilities": [
+      "start_frame",
+      "end_frame",
+      "reference_images",
+      "reference_videos",
+      "reference_audios",
+      "audio_output"
+    ]
+  },
+  {
     "added_date": 1787875200000,
     "aliases": [],
     "capabilities": [],
@@ -876,7 +984,7 @@
     "default_duration": 5,
     "description": "Create up to 15 seconds of video with synchronized sound at up to 4K, from text or opening and closing images.",
     "health": {
-      "requests": 4,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -942,9 +1050,9 @@
     "default_duration": 4,
     "description": "Create a short video from text or opening and closing images, with optional sound.",
     "health": {
-      "requests": 19,
+      "requests": 22,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 95.45454545454545
     },
     "input_modalities": [
       "text",
@@ -1014,9 +1122,9 @@
     "default_duration": 5,
     "description": "Create a video from text or an opening image, complete with dialogue, background sounds, and effects.",
     "health": {
-      "requests": 63,
+      "requests": 53,
       "status": "healthy",
-      "success_rate": 98.4126984126984
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1145,6 +1253,55 @@
     ]
   },
   {
+    "added_date": 1794528000000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 5,
+    "description": "1080p video from text or start and end frames with optional synchronized audio",
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_duration": 15,
+    "max_reference_images": 2,
+    "min_duration": 3,
+    "name": "kwaivgi/kling-v3.0-pro",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionAudioSeconds": "0.056",
+      "completionVideoSeconds": "0.112",
+      "currency": "pollen"
+    },
+    "publisher": "Kuaishou",
+    "resolutions": [
+      "1080p"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/video/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Kling 3.0 Pro",
+    "video_capabilities": [
+      "start_frame",
+      "end_frame",
+      "audio_output"
+    ]
+  },
+  {
     "added_date": 1789776000000,
     "aliases": [],
     "capabilities": [],
@@ -1153,9 +1310,9 @@
     "default_duration": 5,
     "description": "Guide a 720p clip with opening and closing images and add synchronized sound.",
     "health": {
-      "requests": 5,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1187,6 +1344,82 @@
       "/v1/chat/completions"
     ],
     "title": "Kling 3.0 Standard",
+    "video_capabilities": [
+      "start_frame",
+      "end_frame",
+      "audio_output"
+    ]
+  },
+  {
+    "added_date": 1794528000000,
+    "aliases": [],
+    "allowed_durations": [
+      6,
+      8,
+      10
+    ],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "default_duration": 6,
+    "description": "High-fidelity video at 720p or 1080p with synchronized audio and optional start and end frames",
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_duration": 10,
+    "max_reference_images": 2,
+    "min_duration": 6,
+    "name": "lightricks/ltx-2.5-pro",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.12",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "720p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "720p",
+          "1080p": "1080p"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "Output at 1080p.",
+        "label": "1080p",
+        "name": "1080p",
+        "pricing": {
+          "completionVideoSeconds": "0.17",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "Lightricks",
+    "resolutions": [
+      "720p",
+      "1080p"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/video/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "LTX 2.5 Pro",
     "video_capabilities": [
       "start_frame",
       "end_frame",
@@ -1287,7 +1520,7 @@
     "default_duration": 5,
     "description": "Guide a video with images, clips, or audio references to create a scene with synchronized sound.",
     "health": {
-      "requests": 9,
+      "requests": 33,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1387,7 +1620,7 @@
     "default_duration": 5,
     "description": "Quickly turn opening and closing images into a clip up to fifteen seconds long with synchronized sound.",
     "health": {
-      "requests": 21,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1477,9 +1710,9 @@
     "default_duration": 120,
     "description": "Add sound effects to an existing video that match the action on screen.",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1530,9 +1763,9 @@
     "default_duration": 5,
     "description": "Turn a description or opening image into a short 720p or 1080p video.",
     "health": {
-      "requests": 58,
+      "requests": 35,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 97.14285714285714
     },
     "input_modalities": [
       "text",
@@ -1601,9 +1834,9 @@
     "default_duration": 5,
     "description": "Turn a prompt or starting image into a 720p video up to fifteen seconds long.",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -1648,7 +1881,7 @@
     "default_duration": 5,
     "description": "Animate an opening image or describe a scene to create video with synchronized sound.",
     "health": {
-      "requests": 1,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },

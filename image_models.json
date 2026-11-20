@@ -53,7 +53,7 @@
     "description": "Create or edit a detailed 4K image from a description and reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 58,
+      "requests": 57,
       "status": "healthy",
       "success_rate": 100
     },
@@ -90,7 +90,7 @@
     "description": "Create or edit a 1K or 2K image using up to ten reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 14,
+      "requests": 13,
       "status": "healthy",
       "success_rate": 100
     },
@@ -153,7 +153,7 @@
     "description": "Create an image up to 4K or guide an edit with up to ten reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 244,
+      "requests": 60,
       "status": "healthy",
       "success_rate": 100
     },
@@ -198,7 +198,7 @@
     "description": "Edit a picture in plain language to replace an object, change its style, or refine a detail.",
     "flat_rate": true,
     "health": {
-      "requests": 223,
+      "requests": 330,
       "status": "healthy",
       "success_rate": 100
     },
@@ -237,9 +237,9 @@
     "description": "Turn text into quick image drafts to explore several ideas.",
     "flat_rate": true,
     "health": {
-      "requests": 16773,
+      "requests": 16686,
       "status": "healthy",
-      "success_rate": 99.98211411196566
+      "success_rate": 99.89811818290782
     },
     "input_modalities": [
       "text"
@@ -272,9 +272,9 @@
     "description": "Generate images at the dimensions you choose. Reuse a seed to repeat a result.",
     "flat_rate": true,
     "health": {
-      "requests": 70,
+      "requests": 155,
       "status": "healthy",
-      "success_rate": 98.57142857142858
+      "success_rate": 99.35483870967742
     },
     "input_modalities": [
       "text"
@@ -308,7 +308,7 @@
     "description": "Create designs with readable lettering, or adjust how closely an edit follows your instructions.",
     "flat_rate": true,
     "health": {
-      "requests": 70,
+      "requests": 67,
       "status": "healthy",
       "success_rate": 100
     },
@@ -357,9 +357,9 @@
     "description": "Quickly generate or edit an image up to 2.4 megapixels using reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 4002,
+      "requests": 4565,
       "status": "healthy",
-      "success_rate": 99.9000499750125
+      "success_rate": 99.89047097480832
     },
     "input_modalities": [
       "text",
@@ -395,9 +395,9 @@
     "description": "Combine details from several reference pictures while keeping subjects consistent in the finished image.",
     "flat_rate": true,
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -454,7 +454,7 @@
     "description": "Build a detailed image from a description and up to eight reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 62,
+      "requests": 324,
       "status": "healthy",
       "success_rate": 100
     },
@@ -513,7 +513,7 @@
     "description": "Turn a description into a realistic scene or use reference pictures to guide an edit.",
     "flat_rate": true,
     "health": {
-      "requests": 21,
+      "requests": 19,
       "status": "healthy",
       "success_rate": 100
     },
@@ -552,7 +552,7 @@
     "description": "Create lifelike scenes and portraits with up to fourteen reference pictures to guide the details.",
     "flat_rate": true,
     "health": {
-      "requests": 21,
+      "requests": 20,
       "status": "healthy",
       "success_rate": 100
     },
@@ -589,7 +589,7 @@
     "description": "Create a 1K or 2K image from a description and up to ten reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 177,
+      "requests": 100,
       "status": "healthy",
       "success_rate": 100
     },
@@ -654,7 +654,7 @@
     "description": "Create or edit 2K and 3K images with built-in visual reasoning for detailed instructions and reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 15,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -780,8 +780,8 @@
     "flat_rate": true,
     "health": {
       "requests": 50,
-      "status": "healthy",
-      "success_rate": 96
+      "status": "degraded",
+      "success_rate": 94
     },
     "input_modalities": [
       "text",
@@ -938,49 +938,6 @@
     "title": "Leonardo Phoenix 1.0 (Paid)"
   },
   {
-    "added_date": 1787598951000,
-    "aliases": [
-      "MarcosFRG/sdxl-lightning"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/e7e9716e-9c2d-4cfb-83bd-2188344cdce9",
-    "brand_url": "https://jankrouter.waifly.com/",
-    "capabilities": [],
-    "category": "image",
-    "community": true,
-    "description": "Ultra-fast distilled text-to-image engine — generates high-quality 1024px visuals in just 1 to 8 steps without sacrificing fidelity",
-    "flat_rate": true,
-    "health": {
-      "requests": 25,
-      "status": "degraded",
-      "success_rate": 84
-    },
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/MarcosFRG/sdxl-lightning",
-    "output_modalities": [
-      "image"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 6,
-    "pricing": {
-      "completionImageTokens": "0.0012",
-      "currency": "pollen"
-    },
-    "publisher": "JankRouter",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
-      "/v1/images/edits",
-      "/v1/responses",
-      "/v1/chat/completions"
-    ],
-    "title": "Stable Diffusion XL Lightning"
-  },
-  {
     "added_date": 1793486877000,
     "aliases": [
       "Saauf/flux-2-klein-4b"
@@ -1035,9 +992,9 @@
     "description": "The larger FLUX.2 Klein from Black Forest Labs: fast, with more detail than 4B. Up to 1536x1024. More at https://ai.saauf.xyz/models/flux-2-klein-9b",
     "flat_rate": true,
     "health": {
-      "requests": 42,
-      "status": "healthy",
-      "success_rate": 97.61904761904762
+      "requests": 46,
+      "status": "degraded",
+      "success_rate": 93.47826086956522
     },
     "input_modalities": [
       "text"
@@ -1184,6 +1141,48 @@
     "title": "Seedream 5.0 Lite"
   },
   {
+    "added_date": 1792664240000,
+    "aliases": [
+      "chigwell/gemini-3.1-flash-image"
+    ],
+    "alpha": true,
+    "brand_url": "https://llm7.io/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "flat_rate": true,
+    "health": {
+      "requests": 26,
+      "status": "degraded",
+      "success_rate": 80.76923076923077
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/chigwell/gemini-3.1-flash-image",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionImageTokens": "0.04",
+      "currency": "pollen"
+    },
+    "publisher": "LLM7.io",
+    "required_safety": [
+      "sexual",
+      "violence"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "gemini-3.1-flash-image"
+  },
+  {
     "added_date": 1792664358000,
     "aliases": [
       "chigwell/gemini-nano-banana-2.1"
@@ -1195,9 +1194,9 @@
     "community": true,
     "flat_rate": true,
     "health": {
-      "requests": 50,
+      "requests": 49,
       "status": "degraded",
-      "success_rate": 86
+      "success_rate": 83.6734693877551
     },
     "input_modalities": [
       "text"
@@ -1318,9 +1317,9 @@
     "community": true,
     "flat_rate": true,
     "health": {
-      "requests": 39,
+      "requests": 40,
       "status": "healthy",
-      "success_rate": 97.43589743589743
+      "success_rate": 97.5
     },
     "input_modalities": [
       "text"
@@ -1360,7 +1359,7 @@
     "community": true,
     "flat_rate": true,
     "health": {
-      "requests": 6,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1644,6 +1643,96 @@
     "title": "Lucid Origin (FREE ; CONTRIBUTOR)"
   },
   {
+    "added_date": 1795185945000,
+    "aliases": [
+      "scriptsnsenses-sys/phoenix-1.0:free"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/7d20bc86-6cd5-415f-aff0-3d7208ab7774",
+    "brand_url": "https://discord.gg/kmPz97gK2k",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "Leonardo's Phoenix 1.0 Image model for free. However a HEADS UP:\nThe provider will log, train models or sell your prompts and completions to cover the cost. By using the model you agree that the provider may log, train models or sell your prompts and completions.",
+    "flat_rate": true,
+    "health": {
+      "requests": 4,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/scriptsnsenses-sys/phoenix-1.0:free",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "My discord server",
+    "required_safety": [
+      "privacy",
+      "secrets",
+      "sexual",
+      "violence"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "Phoenix 1.0 (FREE ; CONTRIBUTOR)"
+  },
+  {
+    "added_date": 1795181402000,
+    "aliases": [
+      "sharktide/FLUX.2-flex:azure"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/6bbc6a88-94db-49a1-896f-d398d640e291",
+    "brand_url": "https://inferenceport.ai/",
+    "capabilities": [],
+    "category": "image",
+    "community": true,
+    "description": "FLUX.2 Pro served by Azure Black Forest Labs, Flat Pricing, no surcharge for reference images",
+    "flat_rate": true,
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/sharktide/FLUX.2-flex:azure",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionImageTokens": "0.25",
+      "currency": "pollen"
+    },
+    "publisher": "InferencePort AI, InferencePort LLC.",
+    "required_safety": [
+      "sexual"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/v1/images/edits",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "FLUX.2 Flex served by Azure (FLAT PRICING)"
+  },
+  {
     "added_date": 1795142042000,
     "aliases": [
       "sharktide/FLUX.2-pro:azure"
@@ -1657,7 +1746,7 @@
     "description": "FLUX.2 Pro served by Azure Black Forest Labs\n\nQuest Accepted",
     "flat_rate": true,
     "health": {
-      "requests": 2,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2002,9 +2091,9 @@
     "description": "InferencePort AI Lightning-Image Turbo",
     "flat_rate": true,
     "health": {
-      "requests": 36,
+      "requests": 38,
       "status": "degraded",
-      "success_rate": 83.33333333333334
+      "success_rate": 84.21052631578947
     },
     "input_modalities": [
       "text",
@@ -2043,7 +2132,7 @@
     "community": true,
     "flat_rate": true,
     "health": {
-      "requests": 10,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2082,7 +2171,7 @@
     "community": true,
     "flat_rate": true,
     "health": {
-      "requests": 11,
+      "requests": 13,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2148,46 +2237,6 @@
       "/v1/chat/completions"
     ],
     "title": "Anima Uncensored"
-  },
-  {
-    "added_date": 1784872808000,
-    "aliases": [
-      "vendouple/animagine"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
-    "category": "image",
-    "community": true,
-    "description": "Refer to nobindes.work.gd/docs on how to operate this endpoint",
-    "flat_rate": true,
-    "health": {
-      "requests": 32,
-      "status": "degraded",
-      "success_rate": 81.25
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/vendouple/animagine",
-    "output_modalities": [
-      "image"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionImageTokens": "0.08",
-      "currency": "pollen"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/images/generations",
-      "/image/{prompt}",
-      "/v1/responses",
-      "/v1/chat/completions"
-    ],
-    "title": "Animagine (read description)"
   },
   {
     "added_date": 1785303781000,
@@ -2280,7 +2329,7 @@
     "description": "Create an image or quickly revise one by describing what to change.",
     "flat_rate": false,
     "health": {
-      "requests": 175,
+      "requests": 173,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2322,7 +2371,7 @@
     "description": "Turn a complex brief into a detailed image up to 4K.",
     "flat_rate": false,
     "health": {
-      "requests": 71,
+      "requests": 73,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2366,7 +2415,7 @@
     "description": "Create or edit images with sharp details and legible lettering.",
     "flat_rate": false,
     "health": {
-      "requests": 26,
+      "requests": 10,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2411,7 +2460,7 @@
     "description": "Quickly draft an image or try several small edits to a picture.",
     "flat_rate": false,
     "health": {
-      "requests": 188,
+      "requests": 345,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2452,7 +2501,7 @@
     "description": "Create or edit an image up to 2K using a description and reference pictures.",
     "flat_rate": false,
     "health": {
-      "requests": 160,
+      "requests": 66,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2539,9 +2588,9 @@
     "description": "Create posters and other designs that balance readable lettering with image detail.",
     "flat_rate": true,
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -2611,7 +2660,7 @@
     "description": "Quickly turn a headline or slogan into an image with crisp lettering.",
     "flat_rate": true,
     "health": {
-      "requests": 40,
+      "requests": 34,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2682,9 +2731,9 @@
     "description": "Use up to two reference pictures to guide the image you describe.",
     "flat_rate": true,
     "health": {
-      "requests": 7,
-      "status": "down",
-      "success_rate": 28.57142857142857
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -2757,9 +2806,9 @@
     "description": "Build a realistic scene from detailed instructions and up to five reference images.",
     "flat_rate": false,
     "health": {
-      "requests": 207,
+      "requests": 156,
       "status": "healthy",
-      "success_rate": 99.51690821256038
+      "success_rate": 99.35897435897436
     },
     "input_modalities": [
       "text",
@@ -2799,7 +2848,7 @@
     "description": "Create or edit realistic pictures with readable text, such as a label on a product.",
     "flat_rate": false,
     "health": {
-      "requests": 320,
+      "requests": 223,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2839,7 +2888,7 @@
     "description": "Describe precise changes to an image and guide the edit with up to five reference pictures.",
     "flat_rate": false,
     "health": {
-      "requests": 130,
+      "requests": 159,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2879,9 +2928,9 @@
     "description": "Quickly try changes to an image using a description and up to five reference pictures.",
     "flat_rate": false,
     "health": {
-      "requests": 633,
+      "requests": 570,
       "status": "healthy",
-      "success_rate": 99.84202211690362
+      "success_rate": 99.82456140350877
     },
     "input_modalities": [
       "text",
@@ -2911,6 +2960,170 @@
     "title": "MAI Image 2.7 Flash"
   },
   {
+    "added_date": 1794960000000,
+    "aliases": [
+      "minimax-h3-image"
+    ],
+    "capabilities": [],
+    "category": "image",
+    "community": false,
+    "description": "Generate images up to 4K and combine up to 16 references in a single edit",
+    "flat_rate": false,
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_reference_images": 16,
+    "name": "minimax/minimax-h3-image",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.0000038",
+      "currency": "pollen",
+      "promptImageTokens": "0.0000015",
+      "promptTextTokens": "0.0000023"
+    },
+    "pricing_default_label": "1K",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "1K",
+          "2k": "2K",
+          "4k": "4K"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "2K output at the base token rates.",
+        "label": "2K",
+        "name": "2k",
+        "pricing": {
+          "completionImageTokens": "0.0000038",
+          "currency": "pollen",
+          "promptImageTokens": "0.0000015",
+          "promptTextTokens": "0.0000023"
+        }
+      },
+      {
+        "description": "4K output at the base token rates.",
+        "label": "4K",
+        "name": "4k",
+        "pricing": {
+          "completionImageTokens": "0.0000038",
+          "currency": "pollen",
+          "promptImageTokens": "0.0000015",
+          "promptTextTokens": "0.0000023"
+        }
+      }
+    ],
+    "publisher": "MiniMax",
+    "resolutions": [
+      "1k",
+      "2k",
+      "4k"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "MiniMax H3 Image"
+  },
+  {
+    "added_date": 1794960000000,
+    "aliases": [
+      "minimax-h3-image-highspeed"
+    ],
+    "capabilities": [],
+    "category": "image",
+    "community": false,
+    "description": "Generate images quickly at up to 4K and combine up to 16 references in a single edit",
+    "flat_rate": false,
+    "health": {
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "max_reference_images": 16,
+    "name": "minimax/minimax-h3-image-highspeed",
+    "output_modalities": [
+      "image"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionImageTokens": "0.0000076",
+      "currency": "pollen",
+      "promptImageTokens": "0.000003",
+      "promptTextTokens": "0.0000023"
+    },
+    "pricing_default_label": "1K",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "1K",
+          "2k": "2K",
+          "4k": "4K"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "2K output at the base token rates.",
+        "label": "2K",
+        "name": "2k",
+        "pricing": {
+          "completionImageTokens": "0.0000076",
+          "currency": "pollen",
+          "promptImageTokens": "0.000003",
+          "promptTextTokens": "0.0000023"
+        }
+      },
+      {
+        "description": "4K output at the base token rates.",
+        "label": "4K",
+        "name": "4k",
+        "pricing": {
+          "completionImageTokens": "0.0000076",
+          "currency": "pollen",
+          "promptImageTokens": "0.000003",
+          "promptTextTokens": "0.0000023"
+        }
+      }
+    ],
+    "publisher": "MiniMax",
+    "resolutions": [
+      "1k",
+      "2k",
+      "4k"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/v1/images/edits",
+      "/image/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "MiniMax H3 Image Highspeed"
+  },
+  {
     "added_date": 1760054400000,
     "aliases": [
       "gpt-image",
@@ -2923,7 +3136,7 @@
     "description": "Draft images or try everyday edits, such as changing the background of a picture.",
     "flat_rate": false,
     "health": {
-      "requests": 1718,
+      "requests": 1466,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2967,7 +3180,7 @@
     "description": "Create a detailed image or describe a small change to make in an existing picture.",
     "flat_rate": false,
     "health": {
-      "requests": 24,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3010,7 +3223,7 @@
     "description": "Turn detailed instructions into a high-resolution image or use them to edit a picture.",
     "flat_rate": false,
     "health": {
-      "requests": 422,
+      "requests": 269,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3050,7 +3263,7 @@
     "description": "Quickly draft images and use reference pictures to guide targeted changes.",
     "flat_rate": false,
     "health": {
-      "requests": 743,
+      "requests": 625,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3090,7 +3303,7 @@
     "description": "Build a detailed scene or use a reference picture to guide a precise edit.",
     "flat_rate": false,
     "health": {
-      "requests": 115,
+      "requests": 109,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3130,7 +3343,7 @@
     "description": "Quickly generate or edit an image while keeping details from your reference pictures.",
     "flat_rate": false,
     "health": {
-      "requests": 73,
+      "requests": 72,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3181,7 +3394,7 @@
     "description": "Arrange a detailed scene and refine individual elements while preserving details from your references.",
     "flat_rate": false,
     "health": {
-      "requests": 132,
+      "requests": 88,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3236,7 +3449,7 @@
     "description": "Try out visual ideas quickly by turning short descriptions into image drafts.",
     "flat_rate": true,
     "health": {
-      "requests": 128,
+      "requests": 203,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3274,9 +3487,9 @@
     "description": "Quickly edit a photo by describing what to change, such as a color or background.",
     "flat_rate": true,
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -3311,7 +3524,7 @@
     "description": "Generate editable SVG illustrations, icons, and diagrams from text and reference images.",
     "flat_rate": false,
     "health": {
-      "requests": 1,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3414,7 +3627,7 @@
     "description": "Create or edit a design with readable lettering and up to ten reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 8,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3479,7 +3692,7 @@
     "description": "Create a new scene or guide an edit by combining up to ten reference images.",
     "flat_rate": true,
     "health": {
-      "requests": 13,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3516,7 +3729,7 @@
     "description": "Quickly try image variations using a description and up to ten reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 57,
+      "requests": 40,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3555,9 +3768,9 @@
     "description": "Create or edit intricate layouts with crisp text in multiple languages.",
     "flat_rate": true,
     "health": {
-      "requests": 7,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -3616,7 +3829,7 @@
     "description": "Turn a written brief into a quick illustration for a design draft.",
     "flat_rate": true,
     "health": {
-      "requests": 1,
+      "requests": 7,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3655,7 +3868,7 @@
     "description": "Turn text or a reference picture into an editable SVG that stays sharp at any size.",
     "flat_rate": true,
     "health": {
-      "requests": 4,
+      "requests": 5,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3694,9 +3907,9 @@
     "description": "Create an image from a description, or give an existing picture a new style.",
     "flat_rate": true,
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -3733,9 +3946,9 @@
     "description": "Turn a description into an image of about two megapixels.",
     "flat_rate": true,
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -3772,9 +3985,9 @@
     "description": "Quickly generate a sharp image from a description using built-in upscaling.",
     "flat_rate": true,
     "health": {
-      "requests": 10217,
+      "requests": 11178,
       "status": "healthy",
-      "success_rate": 99.90212391112851
+      "success_rate": 99.91053855788155
     },
     "input_modalities": [
       "text"
@@ -3810,7 +4023,7 @@
     "description": "Create realistic images or quickly edit a photo by describing the change.",
     "flat_rate": true,
     "health": {
-      "requests": 33,
+      "requests": 43,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3850,7 +4063,7 @@
     "description": "Create or edit a detailed 1K or 2K image with up to three reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 38,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3953,9 +4166,9 @@
     "description": "Create detailed, lifelike images from a description or up to three reference pictures.",
     "flat_rate": true,
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "down",
+      "success_rate": 0
     },
     "input_modalities": [
       "text",
