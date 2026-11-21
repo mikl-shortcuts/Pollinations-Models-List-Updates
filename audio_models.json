@@ -11,9 +11,9 @@
     "community": false,
     "description": "Turn speech in 99 languages into transcripts or timed subtitles.",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "audio"
@@ -184,6 +184,42 @@
     "title": "Fish Audio S2.1 Pro"
   },
   {
+    "added_date": 1794809825000,
+    "aliases": [
+      "Catniti/whisper-large-v3"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/f4747bba-ca12-4803-9a08-d17d5e8c549f",
+    "brand_url": "https://t.me/catniti_channel",
+    "capabilities": [],
+    "category": "audio",
+    "community": true,
+    "health": {
+      "requests": 6,
+      "status": "degraded",
+      "success_rate": 83.33333333333334
+    },
+    "input_modalities": [
+      "audio"
+    ],
+    "name": "community/Catniti/whisper-large-v3",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 30,
+    "pricing": {
+      "currency": "pollen",
+      "promptAudioSeconds": "0.0002"
+    },
+    "publisher": "Catniti",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "title": "Whisper Large V3"
+  },
+  {
     "added_date": 1795095394000,
     "aliases": [
       "Catniti/whisper-large-v3-turbo"
@@ -195,9 +231,9 @@
     "category": "audio",
     "community": true,
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -232,9 +268,9 @@
     "community": true,
     "description": "OpenAI's most accurate Whisper model: speech to text in about 100 languages, with timestamps. More at https://ai.saauf.xyz/models/whisper-large-v3",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -269,7 +305,7 @@
     "community": true,
     "description": "A faster, cheaper Whisper Large v3 with nearly the same accuracy: speech to text in about 100 languages. More at https://ai.saauf.xyz/models/whisper-large-v3-turbo",
     "health": {
-      "requests": 32,
+      "requests": 22,
       "status": "healthy",
       "success_rate": 100
     },
@@ -306,9 +342,9 @@
     "community": false,
     "description": "Read text aloud with little delay in any of 32 languages.",
     "health": {
-      "requests": 164,
+      "requests": 320,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.6875
     },
     "input_modalities": [
       "text"
@@ -381,7 +417,7 @@
     "community": false,
     "description": "Change the voice in a recording while keeping the speaker's timing and emotion.",
     "health": {
-      "requests": 5,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -453,7 +489,7 @@
     "community": false,
     "description": "Narrate text in 29 languages, with timestamps for highlighting the words as you listen.",
     "health": {
-      "requests": 6,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -529,7 +565,7 @@
     "community": false,
     "description": "Turn a short description, such as footsteps on gravel, into a sound effect.",
     "health": {
-      "requests": 14,
+      "requests": 4,
       "status": "healthy",
       "success_rate": 100
     },
@@ -562,7 +598,7 @@
     "community": false,
     "description": "Describe a sound effect or vocal sound and turn it into a clip or repeating loop.",
     "health": {
-      "requests": 97,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -599,7 +635,7 @@
     "community": false,
     "description": "Read a script aloud with cues for pauses and emotion.",
     "health": {
-      "requests": 255,
+      "requests": 114,
       "status": "healthy",
       "success_rate": 100
     },
@@ -744,7 +780,7 @@
     "community": false,
     "description": "Read a script in over 90 languages, using cues in the text to shape the performance.",
     "health": {
-      "requests": 143,
+      "requests": 433,
       "status": "healthy",
       "success_rate": 100
     },
@@ -815,9 +851,9 @@
     "community": false,
     "description": "Generate speech quickly in over 90 languages, with cues in the script to guide delivery.",
     "health": {
-      "requests": 878,
+      "requests": 12,
       "status": "healthy",
-      "success_rate": 99.88610478359908
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -889,9 +925,9 @@
     "community": false,
     "description": "Compose music from a description, optionally using a reference track to guide the sound.",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -926,7 +962,7 @@
     "community": false,
     "description": "Compose music from a detailed prompt or guide the result with a reference track.",
     "health": {
-      "requests": 28,
+      "requests": 29,
       "status": "healthy",
       "success_rate": 100
     },
@@ -967,7 +1003,7 @@
     "community": false,
     "description": "Transcribe interviews in over 90 languages and label who said what.",
     "health": {
-      "requests": 75,
+      "requests": 33,
       "status": "healthy",
       "success_rate": 100
     },
@@ -997,7 +1033,7 @@
     "community": false,
     "description": "Transcribe a conversation with speaker labels and a timestamp for each word.",
     "health": {
-      "requests": 23,
+      "requests": 41,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1027,7 +1063,7 @@
     "community": false,
     "description": "Separate vocals from the accompaniment, or split a recording into six tracks for mixing.",
     "health": {
-      "requests": 30,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1083,7 +1119,7 @@
     "community": false,
     "description": "Remove background noise from audio or video so the speaker is easier to hear.",
     "health": {
-      "requests": 12,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1154,9 +1190,9 @@
     "community": false,
     "description": "Transcribe a discussion and label the voices of up to eight speakers.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "audio"
@@ -1185,7 +1221,7 @@
     "community": false,
     "description": "Generate spoken clips quickly in a choice of 30 voices.",
     "health": {
-      "requests": 25,
+      "requests": 112,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1256,7 +1292,7 @@
     "community": false,
     "description": "Narrate a passage in one of 30 voices and describe the delivery you want.",
     "health": {
-      "requests": 425,
+      "requests": 623,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1369,7 +1405,7 @@
     "description": "Compose a full song with vocals or instruments and describe how each section should sound.",
     "flat_rate": true,
     "health": {
-      "requests": 4,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1407,7 +1443,7 @@
     "community": false,
     "description": "Read text aloud with a choice of 54 voices across eight languages.",
     "health": {
-      "requests": 17,
+      "requests": 83,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1496,7 +1532,7 @@
     "community": false,
     "description": "Transcribe a recording with timestamps for each passage. The model detects the language.",
     "health": {
-      "requests": 15,
+      "requests": 23,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1526,7 +1562,7 @@
     "community": false,
     "description": "Narrate long passages in a consistent voice across 23 languages.",
     "health": {
-      "requests": 138,
+      "requests": 70,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1658,7 +1694,7 @@
     "community": false,
     "description": "Turn written replies into speech with little delay in any of 23 languages.",
     "health": {
-      "requests": 132,
+      "requests": 51,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1793,7 +1829,7 @@
     "community": false,
     "description": "Transcribe speech in multiple languages and supply context for names or specialized terms.",
     "health": {
-      "requests": 8,
+      "requests": 15,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1826,7 +1862,7 @@
     "community": false,
     "description": "Turn text into speech quickly using one of six voices.",
     "health": {
-      "requests": 207,
+      "requests": 231,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1869,7 +1905,7 @@
     "community": false,
     "description": "Generate high-quality narration in one of six voices.",
     "health": {
-      "requests": 90,
+      "requests": 96,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1914,7 +1950,7 @@
     "community": false,
     "description": "Turn recorded speech into a transcript or a timed subtitle file.",
     "health": {
-      "requests": 838,
+      "requests": 516,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1949,7 +1985,7 @@
     "community": false,
     "description": "Turn text into speech and describe the tone, emotion or dialect you want.",
     "health": {
-      "requests": 37,
+      "requests": 10,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2000,9 +2036,9 @@
     "community": false,
     "description": "Read text aloud quickly in multiple languages.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 100,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -2119,9 +2155,9 @@
     "description": "Create long stereo music tracks or restyle a recording for a fixed price per generation.",
     "flat_rate": true,
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -2201,9 +2237,9 @@
     "community": false,
     "description": "Turn speech into formatted text with speaker labels and word timestamps.",
     "health": {
-      "requests": 66,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "audio"
@@ -2233,7 +2269,7 @@
     "community": false,
     "description": "Read text in one of 28 voices, with cues in the script for how each line should sound.",
     "health": {
-      "requests": 103,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2296,7 +2332,7 @@
     "community": false,
     "description": "Read text aloud in the Alloy voice or clone a voice from a reference recording.",
     "health": {
-      "requests": 4,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },

@@ -12,9 +12,9 @@
     "default_duration": 5,
     "description": "Turn a description or opening image into a 720p clip up to fifteen seconds long.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -61,7 +61,7 @@
     "default_duration": 5,
     "description": "Draft a five-second silent clip using text or images for the opening and closing frames.",
     "health": {
-      "requests": 181,
+      "requests": 208,
       "status": "healthy",
       "success_rate": 100
     },
@@ -169,7 +169,7 @@
     "default_duration": 5,
     "description": "Create video with sound using opening and closing images or visual references from pictures and clips.",
     "health": {
-      "requests": 5,
+      "requests": 11,
       "status": "healthy",
       "success_rate": 100
     },
@@ -264,7 +264,7 @@
     "default_duration": 5,
     "description": "Guide a clip with images, video, or audio references and choose whether to include sound.",
     "health": {
-      "requests": 29,
+      "requests": 30,
       "status": "healthy",
       "success_rate": 100
     },
@@ -354,7 +354,7 @@
     "default_duration": 5,
     "description": "Create a video up to twenty seconds long with optional sound and control over its opening and closing images.",
     "health": {
-      "requests": 2,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -427,7 +427,7 @@
     "default_duration": 5,
     "description": "Animate a starting image or describe a short video up to 1080p.",
     "health": {
-      "requests": 38,
+      "requests": 30,
       "status": "healthy",
       "success_rate": 100
     },
@@ -594,7 +594,7 @@
     "default_duration": 5,
     "description": "Animate opening and closing images into a four- or five-second clip with synchronized sound.",
     "health": {
-      "requests": 7,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
@@ -644,9 +644,9 @@
     "default_duration": 5,
     "description": "Choose opening and closing images for a clip up to ten seconds long with synchronized sound.",
     "health": {
-      "requests": 12,
-      "status": "degraded",
-      "success_rate": 91.66666666666666
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -717,9 +717,9 @@
     "default_duration": 4,
     "description": "Create a four-second clip with synchronized sound, or use a reference video to guide an edit.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 4,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -984,7 +984,7 @@
     "default_duration": 5,
     "description": "Create up to 15 seconds of video with synchronized sound at up to 4K, from text or opening and closing images.",
     "health": {
-      "requests": 2,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1050,9 +1050,9 @@
     "default_duration": 4,
     "description": "Create a short video from text or opening and closing images, with optional sound.",
     "health": {
-      "requests": 22,
+      "requests": 29,
       "status": "healthy",
-      "success_rate": 95.45454545454545
+      "success_rate": 96.55172413793103
     },
     "input_modalities": [
       "text",
@@ -1114,6 +1114,152 @@
     ]
   },
   {
+    "added_date": 1795132800000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "description": "Animate a photo or an illustrated character reference video with a speech audio track.",
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "max_reference_images": 1,
+    "max_reference_videos": 1,
+    "name": "heygen/heygen-avatar-6",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.1",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "1080p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "1080p",
+          "2k": "2K"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "Applies at 2K resolution.",
+        "label": "2K",
+        "name": "2k",
+        "pricing": {
+          "completionVideoSeconds": "0.145",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "HeyGen",
+    "resolutions": [
+      "1080p",
+      "2k"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/video/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "HeyGen Avatar 6",
+    "video_capabilities": [
+      "start_frame",
+      "reference_images",
+      "reference_videos",
+      "reference_audios",
+      "audio_output"
+    ]
+  },
+  {
+    "added_date": 1795132800000,
+    "aliases": [],
+    "capabilities": [],
+    "category": "video",
+    "community": false,
+    "description": "Animate a photo or an illustrated character reference video with a speech audio track.",
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "max_reference_images": 1,
+    "max_reference_videos": 1,
+    "name": "heygen/heygen-avatar-6-turbo",
+    "output_modalities": [
+      "video",
+      "audio"
+    ],
+    "paid_only": true,
+    "pricing": {
+      "completionVideoSeconds": "0.05",
+      "currency": "pollen"
+    },
+    "pricing_default_label": "1080p",
+    "pricing_dimensions": [
+      {
+        "key": "resolution",
+        "label": "Resolution",
+        "values": {
+          "": "1080p",
+          "2k": "2K"
+        }
+      }
+    ],
+    "pricing_variants": [
+      {
+        "description": "Applies at 2K resolution.",
+        "label": "2K",
+        "name": "2k",
+        "pricing": {
+          "completionVideoSeconds": "0.0875",
+          "currency": "pollen"
+        }
+      }
+    ],
+    "publisher": "HeyGen",
+    "resolutions": [
+      "1080p",
+      "2k"
+    ],
+    "supported_endpoints": [
+      "/v1/images/generations",
+      "/image/{prompt}",
+      "/video/{prompt}",
+      "/v1/responses",
+      "/v1/chat/completions"
+    ],
+    "title": "HeyGen Avatar 6 Turbo",
+    "video_capabilities": [
+      "start_frame",
+      "reference_images",
+      "reference_videos",
+      "reference_audios",
+      "audio_output"
+    ]
+  },
+  {
     "added_date": 1790726400000,
     "aliases": [],
     "capabilities": [],
@@ -1122,7 +1268,7 @@
     "default_duration": 5,
     "description": "Create a video from text or an opening image, complete with dialogue, background sounds, and effects.",
     "health": {
-      "requests": 53,
+      "requests": 57,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1192,9 +1338,9 @@
     "default_duration": 5,
     "description": "Animate an opening image or describe a scene for a five-second clip with synchronized sound.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "down",
+      "success_rate": 0
     },
     "input_modalities": [
       "text",
@@ -1261,7 +1407,7 @@
     "default_duration": 5,
     "description": "1080p video from text or start and end frames with optional synchronized audio",
     "health": {
-      "requests": 1,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1310,9 +1456,9 @@
     "default_duration": 5,
     "description": "Guide a 720p clip with opening and closing images and add synchronized sound.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1364,7 +1510,7 @@
     "default_duration": 6,
     "description": "High-fidelity video at 720p or 1080p with synchronized audio and optional start and end frames",
     "health": {
-      "requests": 1,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1520,7 +1666,7 @@
     "default_duration": 5,
     "description": "Guide a video with images, clips, or audio references to create a scene with synchronized sound.",
     "health": {
-      "requests": 33,
+      "requests": 35,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1620,7 +1766,7 @@
     "default_duration": 5,
     "description": "Quickly turn opening and closing images into a clip up to fifteen seconds long with synchronized sound.",
     "health": {
-      "requests": 4,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1763,9 +1909,9 @@
     "default_duration": 5,
     "description": "Turn a description or opening image into a short 720p or 1080p video.",
     "health": {
-      "requests": 35,
+      "requests": 40,
       "status": "healthy",
-      "success_rate": 97.14285714285714
+      "success_rate": 97.5
     },
     "input_modalities": [
       "text",
@@ -1834,9 +1980,9 @@
     "default_duration": 5,
     "description": "Turn a prompt or starting image into a 720p video up to fifteen seconds long.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 1,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -1965,7 +2111,7 @@
     "default_duration": 5,
     "description": "Quickly draft a video up to 1080p from text or a starting image.",
     "health": {
-      "requests": 26,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
