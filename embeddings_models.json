@@ -13,7 +13,7 @@
     "context_length": 128000,
     "description": "Match images with descriptions across languages using embeddings of up to 1,536 dimensions.",
     "health": {
-      "requests": 6,
+      "requests": 14,
       "status": "healthy",
       "success_rate": 100
     },
@@ -112,43 +112,6 @@
     "title": "Gemini Embedding 2"
   },
   {
-    "added_date": 1793533628000,
-    "aliases": [
-      "Saauf/nemotron-3.5-embed-1b"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/93981a58-f161-44b2-95f5-d16cb52d6d8b",
-    "brand_url": "https://ai.saauf.xyz/",
-    "capabilities": [],
-    "category": "embedding",
-    "community": true,
-    "description": "NVIDIA's small, fast text embedding model for search and retrieval, 2048 dimensions. Takes input_type query or passage. More at https://ai.saauf.xyz/models/nemotron-3.5-embed-1b",
-    "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/Saauf/nemotron-3.5-embed-1b",
-    "output_modalities": [
-      "embedding"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "currency": "pollen",
-      "promptTextTokens": "0.00000013"
-    },
-    "publisher": "SaaufAI",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/embeddings"
-    ],
-    "title": "Nemotron 3.5 Embed 1B"
-  },
-  {
     "added_date": 1778198400000,
     "aliases": [
       "embedding",
@@ -160,7 +123,7 @@
     "context_length": 8192,
     "description": "Match text, images, audio and video by meaning in up to 3,072 dimensions.",
     "health": {
-      "requests": 936,
+      "requests": 860,
       "status": "healthy",
       "success_rate": 100
     },
@@ -234,9 +197,9 @@
     "context_length": 8192,
     "description": "Find similar passages using low-cost text embeddings of up to 1,536 dimensions.",
     "health": {
-      "requests": 521,
+      "requests": 1042,
       "status": "healthy",
-      "success_rate": 99.80806142034548
+      "success_rate": 99.90403071017275
     },
     "input_modalities": [
       "text"
@@ -268,7 +231,7 @@
     "context_length": 40960,
     "description": "Search long documents across languages using text embeddings of up to 4,096 dimensions.",
     "health": {
-      "requests": 258,
+      "requests": 210,
       "status": "healthy",
       "success_rate": 100
     },
