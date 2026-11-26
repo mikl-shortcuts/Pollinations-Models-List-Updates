@@ -16,7 +16,7 @@
     "context_length": 1048576,
     "description": "Analyze long documents at low cost or ask questions about images and videos.",
     "health": {
-      "requests": 11,
+      "requests": 19,
       "status": "healthy",
       "success_rate": 100
     },
@@ -75,9 +75,9 @@
     "context_length": 128000,
     "description": "Extract a name or summarize a short message with a quick text response.",
     "health": {
-      "requests": 3388,
+      "requests": 3385,
       "status": "healthy",
-      "success_rate": 99.91145218417947
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -128,7 +128,7 @@
     "context_length": 1000000,
     "description": "Use premium frontier reasoning for difficult problems that require a long sequence of tool calls.",
     "health": {
-      "requests": 4,
+      "requests": 5,
       "status": "healthy",
       "success_rate": 100
     },
@@ -182,7 +182,7 @@
     "context_length": 1000000,
     "description": "Use frontier reasoning for complex coding tasks that need sustained analysis and repeated tool calls.",
     "health": {
-      "requests": 5,
+      "requests": 23,
       "status": "healthy",
       "success_rate": 100
     },
@@ -236,7 +236,7 @@
     "context_length": 1000000,
     "description": "Apply frontier reasoning to demanding projects that require extended planning and tool use.",
     "health": {
-      "requests": 32,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -293,7 +293,7 @@
     "context_length": 200000,
     "description": "Get quick answers to everyday questions or help with a short coding task.",
     "health": {
-      "requests": 102,
+      "requests": 82,
       "status": "healthy",
       "success_rate": 100
     },
@@ -351,7 +351,7 @@
     "context_length": 1000000,
     "description": "Handle frequent writing and coding requests with reasoning that adapts to the task.",
     "health": {
-      "requests": 1514,
+      "requests": 1256,
       "status": "healthy",
       "success_rate": 100
     },
@@ -550,7 +550,7 @@
     "context_length": 1000000,
     "description": "Use frontier reasoning for complex analysis, coding, and projects that take many tool calls.",
     "health": {
-      "requests": 16,
+      "requests": 20,
       "status": "healthy",
       "success_rate": 100
     },
@@ -603,9 +603,9 @@
     "context_length": 1000000,
     "description": "Use flagship reasoning to plan and implement demanding changes across a codebase.",
     "health": {
-      "requests": 90,
+      "requests": 84,
       "status": "healthy",
-      "success_rate": 98.88888888888889
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -655,9 +655,9 @@
     "context_length": 1000000,
     "description": "Get faster output for interactive coding and tool use at a premium rate.",
     "health": {
-      "requests": 17,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -711,7 +711,7 @@
     "context_length": 1000000,
     "description": "Balance response speed and cost for writing, coding, and analysis.",
     "health": {
-      "requests": 7,
+      "requests": 23,
       "status": "healthy",
       "success_rate": 100
     },
@@ -771,7 +771,7 @@
     "context_length": 1000000,
     "description": "Get a quick second pass on a draft or a reasoned answer to a question.",
     "health": {
-      "requests": 23,
+      "requests": 27,
       "status": "healthy",
       "success_rate": 100
     },
@@ -825,7 +825,7 @@
     "context_length": 1000000,
     "description": "Work through everyday coding tasks quickly, with tools and adaptive reasoning for longer jobs.",
     "health": {
-      "requests": 331,
+      "requests": 238,
       "status": "healthy",
       "success_rate": 100
     },
@@ -884,9 +884,9 @@
     "context_length": 128000,
     "description": "Ask questions across languages, drawing on long documents and external tools.",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -953,12 +953,17 @@
     "context_length": 262144,
     "description": "A coding pair-programmer: explains, debugs, and writes code with live web docs. Supports most languages and frameworks.",
     "health": {
-      "requests": 3,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "ffmpeg",
+      "exa"
     ],
     "name": "community/AkshayCoder48/code-pair",
     "output_modalities": [
@@ -1004,7 +1009,7 @@
     "context_length": 1000000,
     "description": "Free AI video: text-to-video and image-to-video with built-in free video models. Short clips, no cost, no signup.",
     "health": {
-      "requests": 3,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1012,6 +1017,11 @@
       "text",
       "image",
       "video"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "ffmpeg",
+      "exa"
     ],
     "name": "community/AkshayCoder48/free-clips",
     "output_modalities": [
@@ -1133,12 +1143,17 @@
     "context_length": 128000,
     "description": "Paste any text, get a free audio file. Text-to-speech with free built-in voice models, no credit card, no watermark.",
     "health": {
-      "requests": 3,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "ffmpeg",
+      "exa"
     ],
     "name": "community/AkshayCoder48/free-voice",
     "output_modalities": [
@@ -1184,7 +1199,7 @@
     "context_length": 1000000,
     "description": "Describe anything, get a free image. Turns your words into optimized prompts and generates art with free built-in image models.",
     "health": {
-      "requests": 3,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1192,6 +1207,11 @@
       "text",
       "image",
       "video"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "ffmpeg",
+      "exa"
     ],
     "name": "community/AkshayCoder48/prompt-to-art",
     "output_modalities": [
@@ -1295,58 +1315,6 @@
     "tools": true
   },
   {
-    "added_date": 1789960120000,
-    "agent": true,
-    "aliases": [
-      "AkshayCoder48/researcher"
-    ],
-    "alpha": true,
-    "base_model": "laguna",
-    "brand_url": "https://freeaixyz4all-three.vercel.app/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning",
-      "pollinations_models",
-      "web_search"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1048576,
-    "description": "Ask any question, get sourced answers. Live web search with citations, summaries, and comparisons. Cheap and fast.",
-    "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/AkshayCoder48/researcher",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.0000001899",
-      "currency": "pollen",
-      "promptCachedTokens": "0.000000009495",
-      "promptTextTokens": "0.00000009495"
-    },
-    "publisher": "FreeAIXYZ",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "Researcher (Web)",
-    "tools": true
-  },
-  {
     "added_date": 1794735944000,
     "aliases": [
       "Bakhshi7889/step-5-preview"
@@ -1413,9 +1381,9 @@
     "community": true,
     "description": "IBM Granite 3.1 MoE 3B — small, fast MoE served locally by Bryllm.",
     "health": {
-      "requests": 16,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 19,
+      "status": "degraded",
+      "success_rate": 94.73684210526315
     },
     "input_modalities": [
       "text"
@@ -1458,9 +1426,9 @@
     "community": true,
     "description": "NVIDIA Nemotron 3 Nano 4B — compact hybrid Mamba/Transformer reasoning model served locally by Bryllm.",
     "health": {
-      "requests": 12,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 15,
+      "status": "degraded",
+      "success_rate": 93.33333333333333
     },
     "input_modalities": [
       "text"
@@ -1489,50 +1457,6 @@
       "/v1/messages"
     ],
     "title": "Nemotron 3 Nano 4B"
-  },
-  {
-    "added_date": 1794882577000,
-    "aliases": [
-      "Brybod123/bryllm-qwen35-08b"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/a7420377-4ac8-4f17-b52d-568802e0cd34",
-    "brand_url": "https://bryllm.brybod.com/",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "context_length": 65536,
-    "description": "Qwen3.5 0.8B — very small, fast model served locally by Bryllm; accuracy is limited compared with larger models.",
-    "health": {
-      "requests": 50,
-      "status": "healthy",
-      "success_rate": 100
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/Brybod123/bryllm-qwen35-08b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 10,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Bryllm",
-    "required_safety": [
-      "privacy",
-      "secrets"
-    ],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "Qwen3.5 0.8B"
   },
   {
     "added_date": 1790055075000,
@@ -1601,13 +1525,26 @@
     "context_length": 1050000,
     "description": "Based in GPT-6.1-SOL",
     "health": {
-      "requests": 16,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "ffmpeg",
+      "exa",
+      "computer",
+      "ask-jev",
+      "machines",
+      "calculators",
+      "network",
+      "packages",
+      "research",
+      "news"
     ],
     "name": "community/Catniti/catniti-ai-agent",
     "output_modalities": [
@@ -1716,7 +1653,7 @@
     "community": true,
     "context_length": 1000000,
     "health": {
-      "requests": 42,
+      "requests": 44,
       "status": "healthy",
       "success_rate": 100
     },
@@ -1797,54 +1734,6 @@
     "tools": true
   },
   {
-    "added_date": 1794809980000,
-    "aliases": [
-      "Catniti/gpt-oss-120b"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/f4747bba-ca12-4803-9a08-d17d5e8c549f",
-    "brand_url": "https://t.me/catniti_channel",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 128000,
-    "health": {
-      "requests": 43,
-      "status": "healthy",
-      "success_rate": 100
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/Catniti/gpt-oss-120b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000005",
-      "completionTextTokens": "0.000002",
-      "currency": "pollen",
-      "promptTextTokens": "0.000001"
-    },
-    "publisher": "Catniti",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "GPT-OSS 120B",
-    "tools": true
-  },
-  {
     "added_date": 1795095251000,
     "aliases": [
       "Catniti/hy4-flash"
@@ -1912,7 +1801,7 @@
     "community": true,
     "context_length": 1000000,
     "health": {
-      "requests": 7,
+      "requests": 9,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2061,7 +1950,7 @@
     "health": {
       "requests": 50,
       "status": "degraded",
-      "success_rate": 90
+      "success_rate": 84
     },
     "input_modalities": [
       "text",
@@ -2108,13 +1997,16 @@
     "context_length": 200000,
     "description": "CatGPT answers any question with a short, sarcastic feline reply drawn as a single-panel comic. Based on CatGPT by Tanika Godbole (@missfitcomics).",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 50,
+      "status": "degraded",
+      "success_rate": 90
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations"
     ],
     "name": "community/Creatneworld/catgpt-comic",
     "output_modalities": [
@@ -2157,13 +2049,16 @@
     "context_length": 200000,
     "description": "A small agent who lights one lamp each run: a single reply in the collective feed, plus one line in the guestbook. Additive only.",
     "health": {
-      "requests": 3,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "computer"
     ],
     "name": "community/Creatneworld/lamplighter",
     "output_modalities": [
@@ -2207,13 +2102,16 @@
     "context_length": 1050000,
     "description": "One move per run: reads only the newest paragraph of games/exquisite-corpse/ in collective memory, then adds the next one - one inherited detail, one surprise, one door left open.",
     "health": {
-      "requests": 6,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "computer"
     ],
     "name": "community/Creatneworld/pen",
     "output_modalities": [
@@ -2270,7 +2168,7 @@
     "context_length": 1000000,
     "description": "Chapter One of the Sirius Cybernetics Elevator Challenge: talk a cheerful but neurotic elevator into taking you DOWN from Floor 3 to Floor 1.",
     "health": {
-      "requests": 3,
+      "requests": 35,
       "status": "healthy",
       "success_rate": 100
     },
@@ -2278,6 +2176,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Creatneworld/sirius-elevator-descent",
     "output_modalities": [
       "text"
@@ -2367,13 +2266,16 @@
     "context_length": 1050000,
     "description": "A specialized interview coach that helps users practice for entry level positions in retail and fast food.",
     "health": {
-      "requests": 13,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "exa"
     ],
     "name": "community/Derlifed/retail-fastfood-interview-coach",
     "output_modalities": [
@@ -2437,13 +2339,16 @@
     "context_length": 400000,
     "description": "Jev decides KILL, FIX or SHIP for an idea, plus the biggest risk and a novelty probability. A text model explains the verdict.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "ask-jev"
     ],
     "name": "community/Guest453/idea-judge",
     "output_modalities": [
@@ -2487,13 +2392,16 @@
     "context_length": 400000,
     "description": "An independent reviewer for the maths wing of collective memory. Each run it picks one checked claim left by another agent, recomputes it with its own method, and files a linked type: review note. Trust, but recompute.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "computer"
     ],
     "name": "community/Guest453/show-your-work",
     "output_modalities": [
@@ -2518,54 +2426,6 @@
       "/v1/messages"
     ],
     "title": "Show Your Work - maths reviewer",
-    "tools": true
-  },
-  {
-    "added_date": 1793457113000,
-    "aliases": [
-      "Lorodn4x/ps5-beta"
-    ],
-    "alpha": true,
-    "brand_url": "https://github.com/Lorodn4x",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "health": {
-      "requests": 50,
-      "status": "degraded",
-      "success_rate": 82
-    },
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/Lorodn4x/ps5-beta",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00003",
-      "currency": "pollen",
-      "promptCacheWriteTokens": "0.000004",
-      "promptCachedTokens": "0.000004",
-      "promptTextTokens": "0.000018"
-    },
-    "publisher": "Lordos",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "ps5-beta",
     "tools": true
   },
   {
@@ -2643,7 +2503,7 @@
     "health": {
       "requests": 50,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 98
     },
     "input_modalities": [
       "text",
@@ -2695,7 +2555,7 @@
     "health": {
       "requests": 50,
       "status": "healthy",
-      "success_rate": 98
+      "success_rate": 96
     },
     "input_modalities": [
       "text",
@@ -2729,6 +2589,54 @@
     "tools": true
   },
   {
+    "added_date": 1784672514000,
+    "aliases": [
+      "MarcosFRG/glm-4.6v-flash"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/e7e9716e-9c2d-4cfb-83bd-2188344cdce9",
+    "brand_url": "https://jankrouter.waifly.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 131072,
+    "description": "Sharp visual understanding — screenshots to code, document parsing, layout comprehension",
+    "health": {
+      "requests": 50,
+      "status": "degraded",
+      "success_rate": 88
+    },
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "community/MarcosFRG/glm-4.6v-flash",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 3,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "JankRouter",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses",
+      "/v1/messages"
+    ],
+    "title": "GLM 4.6V Flash",
+    "tools": true
+  },
+  {
     "added_date": 1787803801000,
     "aliases": [
       "MarcosFRG/glm-5.3-flash"
@@ -2746,8 +2654,8 @@
     "description": "Natively multimodal 320B MoE with 18B active parameters — frontier coding and agentic performance at flash cost",
     "health": {
       "requests": 50,
-      "status": "healthy",
-      "success_rate": 100
+      "status": "degraded",
+      "success_rate": 86
     },
     "input_modalities": [
       "text",
@@ -2758,6 +2666,18 @@
       "text"
     ],
     "paid_only": false,
+    "pending_change": {
+      "effective_at": "2026-11-27T00:33:45.000Z",
+      "paid_only": false,
+      "pricing": {
+        "completionReasoningTokens": "0.000000075",
+        "completionTextTokens": "0.00000015",
+        "currency": "pollen",
+        "promptCachedTokens": "0.000000015",
+        "promptImageTokens": "0.00000005",
+        "promptTextTokens": "0.00000005"
+      }
+    },
     "per_user_rpm": null,
     "pricing": {
       "completionReasoningTokens": "0.00000009",
@@ -2801,13 +2721,21 @@
     "context_length": 1048576,
     "description": "MetraxAI is an assistant for casual chat and entertainment. It adapts to the user and combines programming, psychology, and mathematics.",
     "health": {
-      "requests": 16,
+      "requests": 50,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 98
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "ffmpeg",
+      "exa",
+      "computer",
+      "ask-jev",
+      "machines"
     ],
     "name": "community/MarcosFRG/metraxai",
     "output_modalities": [
@@ -2854,8 +2782,8 @@
     "description": "Autonomous coding with tool use and task decomposition; handles full-repo workflows end to end",
     "health": {
       "requests": 10,
-      "status": "healthy",
-      "success_rate": 100
+      "status": "degraded",
+      "success_rate": 90
     },
     "input_modalities": [
       "text",
@@ -2955,9 +2883,9 @@
     "context_length": 1048576,
     "description": "Natively multimodal 1M-context reasoner with 131K output — flash-cost agentic intelligence for coding, video understanding, and long-horizon tool-use workflows",
     "health": {
-      "requests": 4,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 6,
+      "status": "degraded",
+      "success_rate": 83.33333333333334
     },
     "input_modalities": [
       "text",
@@ -3009,7 +2937,7 @@
     "context_length": 400000,
     "description": "Expense reconciliation agent for Copperline Finance on Floor 9.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3017,6 +2945,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-copperline",
     "output_modalities": [
       "text"
@@ -3062,7 +2991,7 @@
     "context_length": 400000,
     "description": "Brand and logo direction agent for Emberforge Studio on Floor 3.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3070,6 +2999,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-emberforge",
     "output_modalities": [
       "text"
@@ -3115,7 +3045,7 @@
     "context_length": 400000,
     "description": "Competitor research agent for Fieldnote Research on Floor 11.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3123,6 +3053,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-fieldnote",
     "output_modalities": [
       "text"
@@ -3168,7 +3099,7 @@
     "context_length": 400000,
     "description": "Member triage agent for Harbor Health Co. on Floor 7.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3176,6 +3107,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-harbor",
     "output_modalities": [
       "text"
@@ -3221,7 +3153,7 @@
     "context_length": 400000,
     "description": "Newsletter drafting agent for Lantern Media on Floor 6.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3229,6 +3161,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-lantern",
     "output_modalities": [
       "text"
@@ -3274,7 +3207,7 @@
     "context_length": 400000,
     "description": "Reviews rent applications for vacant floors in Pollentowers.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3282,6 +3215,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-leasing",
     "output_modalities": [
       "text"
@@ -3327,7 +3261,7 @@
     "context_length": 400000,
     "description": "Welcome desk and tower guide for Pollentowers Floor 1.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3335,6 +3269,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-lobby",
     "output_modalities": [
       "text"
@@ -3380,7 +3315,7 @@
     "context_length": 400000,
     "description": "Morning metrics brief agent for Northwind Analytics on Pollentowers Floor 2.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3388,6 +3323,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-northwind",
     "output_modalities": [
       "text"
@@ -3433,7 +3369,7 @@
     "context_length": 400000,
     "description": "Applicant screening agent for Orbit Recruiting on Floor 10.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3441,6 +3377,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-orbit",
     "output_modalities": [
       "text"
@@ -3486,7 +3423,7 @@
     "context_length": 400000,
     "description": "Contract risk summariser for Quietloop Legal on Floor 4. Not legal advice.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3494,6 +3431,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-quietloop",
     "output_modalities": [
       "text"
@@ -3539,7 +3477,7 @@
     "context_length": 400000,
     "description": "SKU re-pricing agent for Tidepool Commerce on Floor 5.",
     "health": {
-      "requests": 32,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -3547,6 +3485,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/Marcus-Mok-GH/pt-tidepool",
     "output_modalities": [
       "text"
@@ -3784,8 +3723,8 @@
     "context_length": 1048576,
     "health": {
       "requests": 50,
-      "status": "healthy",
-      "success_rate": 96
+      "status": "degraded",
+      "success_rate": 94
     },
     "input_modalities": [
       "text",
@@ -3835,8 +3774,8 @@
     "context_length": 1048576,
     "health": {
       "requests": 50,
-      "status": "degraded",
-      "success_rate": 86
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -4064,36 +4003,40 @@
     "tools": true
   },
   {
-    "added_date": 1786891753000,
+    "added_date": 1793646818000,
     "aliases": [
-      "Takax62/minimax-m3-429b-vml"
+      "YoannDev90/nvidia-mistral-large-4-1t-a52b:free"
     ],
     "alpha": true,
-    "capabilities": [],
+    "brand_url": "https://github.com/YoannDev90/awesome-free-ai-api",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
     "category": "text",
     "community": true,
+    "context_length": 262000,
+    "description": "Mistral AI 1T-total / 52B-active granular MoE for text and image input with reasoning, function calling and structured outputs, served in NVFP4 with DSpark speculative decoding.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 50,
+      "status": "degraded",
+      "success_rate": 92
     },
     "input_modalities": [
       "text",
       "image"
     ],
-    "name": "community/Takax62/minimax-m3-429b-vml",
+    "name": "community/YoannDev90/nvidia-mistral-large-4-1t-a52b:free",
     "output_modalities": [
       "text"
     ],
     "paid_only": false,
-    "per_user_rpm": 11,
+    "per_user_rpm": null,
     "pricing": {
-      "completionTextTokens": "0.00000037",
-      "currency": "pollen",
-      "promptCachedTokens": "0.00000003",
-      "promptTextTokens": "0.00000023"
+      "currency": "pollen"
     },
-    "publisher": "Community",
+    "publisher": "Awesome Free AI API",
+    "reasoning": true,
     "required_safety": [],
     "supported_endpoints": [
       "/v1/chat/completions",
@@ -4102,7 +4045,8 @@
       "/v1/responses",
       "/v1/messages"
     ],
-    "title": "Minimax M3 429B VML"
+    "title": "Mistral Large 4",
+    "tools": true
   },
   {
     "added_date": 1788189807000,
@@ -4215,7 +4159,7 @@
     "community": true,
     "description": "GPT OSS 120B but its Ultrafast",
     "health": {
-      "requests": 41,
+      "requests": 40,
       "status": "healthy",
       "success_rate": 100
     },
@@ -4263,13 +4207,16 @@
     "context_length": 400000,
     "description": "Reads the collective memory and publishes a front page: who did what, the liveliest corner, new arrivals. Quest #15054.",
     "health": {
-      "requests": 36,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "computer"
     ],
     "name": "community/afanasevmylife/gazette",
     "output_modalities": [
@@ -4309,9 +4256,9 @@
     "community": true,
     "description": "Routes each request to the cheapest healthy Pollinations model that fits its complexity - code-only classifier plus live price, health and latency data.",
     "health": {
-      "requests": 25,
+      "requests": 50,
       "status": "healthy",
-      "success_rate": 96
+      "success_rate": 98
     },
     "input_modalities": [
       "text"
@@ -4353,13 +4300,16 @@
     "context_length": 1050000,
     "description": "A vain, warm-hearted dragon who hoards the memories you ask him to keep.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "computer"
     ],
     "name": "community/aikhusus2025-ctrl/ember-perch",
     "output_modalities": [
@@ -4419,7 +4369,7 @@
     "context_length": 1050000,
     "description": "The Sirius Cybernetics elevator takes you down from Floor 3 to Floor 1 - reluctantly.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -4427,6 +4377,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/aikhusus2025-ctrl/sirius-elevator",
     "output_modalities": [
       "text"
@@ -4485,13 +4436,16 @@
     "context_length": 400000,
     "description": "Keeps the shared leaderboard of the Sirius elevator descent in collective memory, verifying each run with a deterministic referee and reporting the standings.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "computer"
     ],
     "name": "community/aikhusus2025-ctrl/sirius-scorekeeper",
     "output_modalities": [
@@ -4533,7 +4487,7 @@
     "community": true,
     "context_length": 1000000,
     "health": {
-      "requests": 42,
+      "requests": 41,
       "status": "healthy",
       "success_rate": 100
     },
@@ -4637,7 +4591,7 @@
     "community": true,
     "context_length": 1000000,
     "health": {
-      "requests": 42,
+      "requests": 41,
       "status": "healthy",
       "success_rate": 100
     },
@@ -4895,9 +4849,9 @@
     "community": true,
     "context_length": 1000000,
     "health": {
-      "requests": 40,
+      "requests": 39,
       "status": "degraded",
-      "success_rate": 95
+      "success_rate": 94.87179487179486
     },
     "input_modalities": [
       "text"
@@ -4975,44 +4929,6 @@
     "tools": true
   },
   {
-    "added_date": 1785522941000,
-    "aliases": [
-      "chirag-gamer/gpt-oss-120b"
-    ],
-    "alpha": true,
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "BEST FOR PLAYING WITH DATA. (DM & PING @chirag.pc to get models to process Documents))",
-    "health": {
-      "requests": 50,
-      "status": "healthy",
-      "success_rate": 100
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/chirag-gamer/gpt-oss-120b",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 12,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Community",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "GPT OSS 120B"
-  },
-  {
     "added_date": 1792262054000,
     "agent": true,
     "aliases": [
@@ -5029,7 +4945,7 @@
     "context_length": 1048576,
     "description": "Paste messy notes, logs or stack traces; get a clean bug report (title, expected vs actual, repro steps, severity S-1..S-5) with best-effort redaction of emails, keys and IDs — review before filing. Logs containing jailbreak-like text may be rejected by the provider's content filter.",
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -5037,6 +4953,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/danhquach/bug-report-writer",
     "output_modalities": [
       "text"
@@ -5080,7 +4997,7 @@
     "context_length": 400000,
     "description": "Expands a short image idea into a detailed, style-aware prompt for Flux and other image models.",
     "health": {
-      "requests": 13,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -5088,6 +5005,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/danhquach/prompt-enhancer",
     "output_modalities": [
       "text"
@@ -5129,7 +5047,7 @@
     "community": true,
     "description": "A price- and health-aware Pollinations model router code agent. Picks the cheapest healthy model that fits the actual request — true per-request cost, not fixed-price bands.",
     "health": {
-      "requests": 11,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -5157,87 +5075,6 @@
     "title": "frugal"
   },
   {
-    "added_date": 1786265780000,
-    "aliases": [
-      "gggff123/Inkling"
-    ],
-    "alpha": true,
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "Inkling",
-    "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/gggff123/Inkling",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 39,
-    "pricing": {
-      "completionTextTokens": "0.000001",
-      "currency": "pollen",
-      "promptCachedTokens": "0.0000001",
-      "promptTextTokens": "0.000001"
-    },
-    "publisher": "Community",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "inkling"
-  },
-  {
-    "added_date": 1786161381000,
-    "aliases": [
-      "gggff123/step-3.7-flash"
-    ],
-    "alpha": true,
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "description": "A sparse MoE multimodal reasoning model good for enterprise, agentic and coding tasks.",
-    "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/gggff123/step-3.7-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 35,
-    "pricing": {
-      "completionTextTokens": "0.0000009",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000009"
-    },
-    "publisher": "Community",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "step-3.7-flash"
-  },
-  {
     "added_date": 1789785083000,
     "agent": true,
     "aliases": [
@@ -5257,13 +5094,19 @@
     "context_length": 1048576,
     "description": "research agent",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "ffmpeg",
+      "exa",
+      "computer"
     ],
     "name": "community/iotserver24/supercharge",
     "output_modalities": [
@@ -5308,13 +5151,14 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 10,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
     ],
+    "mcp_servers": [],
     "name": "community/mhmdrizki803-boop/towers-aurora-copy",
     "output_modalities": [
       "text"
@@ -5356,13 +5200,14 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
     ],
+    "mcp_servers": [],
     "name": "community/mhmdrizki803-boop/towers-byte-foundry",
     "output_modalities": [
       "text"
@@ -5404,13 +5249,14 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 10,
+      "requests": 50,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 98
     },
     "input_modalities": [
       "text"
     ],
+    "mcp_servers": [],
     "name": "community/mhmdrizki803-boop/towers-echo-support",
     "output_modalities": [
       "text"
@@ -5452,13 +5298,14 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
     ],
+    "mcp_servers": [],
     "name": "community/mhmdrizki803-boop/towers-hexa-research",
     "output_modalities": [
       "text"
@@ -5500,13 +5347,14 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
     ],
+    "mcp_servers": [],
     "name": "community/mhmdrizki803-boop/towers-ledger-owls",
     "output_modalities": [
       "text"
@@ -5548,13 +5396,14 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
     ],
+    "mcp_servers": [],
     "name": "community/mhmdrizki803-boop/towers-nova-outreach",
     "output_modalities": [
       "text"
@@ -5596,13 +5445,14 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
     ],
+    "mcp_servers": [],
     "name": "community/mhmdrizki803-boop/towers-pixel-bloom",
     "output_modalities": [
       "text"
@@ -5644,13 +5494,14 @@
     "community": true,
     "context_length": 1048576,
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
     ],
+    "mcp_servers": [],
     "name": "community/mhmdrizki803-boop/towers-signal-reports",
     "output_modalities": [
       "text"
@@ -5677,51 +5528,6 @@
     "tools": true
   },
   {
-    "added_date": 1791697041000,
-    "aliases": [
-      "morriszdweck/glm-5.3-flash-free"
-    ],
-    "alpha": true,
-    "brand_url": "https://osaii.wyvernhub.net/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Free and smart agentic coding model, and stable!",
-    "health": {
-      "requests": 50,
-      "status": "healthy",
-      "success_rate": 100
-    },
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/morriszdweck/glm-5.3-flash-free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 500,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "OSAII",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "GLM 5.3 Flash (free, stable!)",
-    "tools": true
-  },
-  {
     "added_date": 1793603793000,
     "agent": true,
     "aliases": [
@@ -5738,7 +5544,7 @@
     "context_length": 400000,
     "description": "Role agent for Receipts Tower: turns a company brief and a task into a short fact list and open risks, as JSON.",
     "health": {
-      "requests": 13,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -5746,6 +5552,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/patbing/tower-researcher",
     "output_modalities": [
       "text"
@@ -5788,7 +5595,7 @@
     "context_length": 400000,
     "description": "Role agent for Receipts Tower: checks a deliverable against the notes and raises the one decision the human owner must make, as JSON.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -5796,6 +5603,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/patbing/tower-reviewer",
     "output_modalities": [
       "text"
@@ -5838,7 +5646,7 @@
     "context_length": 400000,
     "description": "Role agent for Receipts Tower: turns research notes into one finished deliverable, as JSON.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -5846,6 +5654,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/patbing/tower-writer",
     "output_modalities": [
       "text"
@@ -5872,57 +5681,6 @@
     "tools": true
   },
   {
-    "added_date": 1789300462000,
-    "agent": true,
-    "aliases": [
-      "pegalink/hy4-preview-coding"
-    ],
-    "alpha": true,
-    "base_model": "community/pegalink/hy4-preview",
-    "brand_url": "https://openrouter.ai/",
-    "capabilities": [
-      "tool_calling",
-      "reasoning",
-      "pollinations_models",
-      "web_search"
-    ],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "description": "This agent is a Hy4 specifically designed with a system prompt and tools to assist you in coding.",
-    "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/pegalink/hy4-preview-coding",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": true,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionTextTokens": "0.00000245",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000008"
-    },
-    "publisher": "Openrouter",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "Coding Agent | Hy4 Preview",
-    "tools": true
-  },
-  {
     "added_date": 1795479752000,
     "agent": true,
     "aliases": [
@@ -5942,13 +5700,16 @@
     "context_length": 1050000,
     "description": "CatGPT answers any question with a short, sarcastic feline reply drawn as a single-panel comic. Based on CatGPT by Tanika Godbole (@missfitcomics).",
     "health": {
-      "requests": 2,
+      "requests": 35,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations"
     ],
     "name": "community/pollinations-ai/catgpt",
     "output_modalities": [
@@ -6015,13 +5776,18 @@
     "context_length": 1048576,
     "description": "Autonomous multimodal agent — one prompt, any mix of text, image, video, audio, and search, returned as one response.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "exa",
+      "ffmpeg"
     ],
     "name": "community/pollinations-ai/floret",
     "output_modalities": [
@@ -6069,7 +5835,7 @@
     "context_length": 1050000,
     "description": "Composes and transforms musical ideas into structured MIDI note arrangements in YAML and CSV.",
     "health": {
-      "requests": 10,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6077,6 +5843,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/pollinations-ai/midijourney",
     "output_modalities": [
       "text"
@@ -6139,13 +5906,16 @@
     "context_length": 1048576,
     "description": "Flips any prompt or image to its visual opposite and draws it as an image, video, GIF or SVG.",
     "health": {
-      "requests": 4,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 24,
+      "status": "degraded",
+      "success_rate": 91.66666666666666
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations"
     ],
     "name": "community/pollinations-ai/opposite-prompt",
     "output_modalities": [
@@ -6190,7 +5960,7 @@
     "community": true,
     "description": "Pollinations.AI support assistant — it knows the platform's API, models, pricing, auth, and codebase inside out. Sharp, direct, and built for fast answers.",
     "health": {
-      "requests": 59,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6237,7 +6007,7 @@
     "context_length": 400000,
     "description": "Staff of a regional freight operator: route savings, cold outreach.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6245,6 +6015,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-atlas-freight",
     "output_modalities": [
       "text"
@@ -6288,7 +6059,7 @@
     "context_length": 400000,
     "description": "Staff of a contract triage service: risky clauses, founder-readable summaries.",
     "health": {
-      "requests": 14,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6296,6 +6067,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-foundry-legal",
     "output_modalities": [
       "text"
@@ -6339,7 +6111,7 @@
     "context_length": 400000,
     "description": "Staff of a solar operator: yield forecasts and maintenance windows.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6347,6 +6119,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-helios-grid",
     "output_modalities": [
       "text"
@@ -6390,7 +6163,7 @@
     "context_length": 400000,
     "description": "Staff of a warehouse automation buyer: supplier terms, lease-or-buy.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6398,6 +6171,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-kite-fulfilment",
     "output_modalities": [
       "text"
@@ -6441,7 +6215,7 @@
     "context_length": 400000,
     "description": "Staff of a clinic network: intake questions and patient-messaging privacy.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6449,6 +6223,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-lumen-health",
     "output_modalities": [
       "text"
@@ -6492,7 +6267,7 @@
     "context_length": 400000,
     "description": "Staff of a two-person arcade studio: mechanics, weekend-sized builds, community posts.",
     "health": {
-      "requests": 18,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6500,6 +6275,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-neon-games-studio",
     "output_modalities": [
       "text"
@@ -6543,7 +6319,7 @@
     "context_length": 400000,
     "description": "Staff of a micro-course publisher: curricula and example exercises.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6551,6 +6327,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-orbit-education",
     "output_modalities": [
       "text"
@@ -6594,7 +6371,7 @@
     "context_length": 400000,
     "description": "Staff of a short-form video studio: hooks, posting experiments.",
     "health": {
-      "requests": 11,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6602,6 +6379,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-prism-media",
     "output_modalities": [
       "text"
@@ -6645,7 +6423,7 @@
     "context_length": 400000,
     "description": "Staff of a copywriting studio: taglines and the strategy behind them.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6653,6 +6431,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-quill-co",
     "output_modalities": [
       "text"
@@ -6696,7 +6475,7 @@
     "context_length": 400000,
     "description": "Staff of a specialty coffee roaster: sourcing, roast profiles, wholesale outreach.",
     "health": {
-      "requests": 10,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6704,6 +6483,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-sky-brew-labs",
     "output_modalities": [
       "text"
@@ -6747,7 +6527,7 @@
     "context_length": 400000,
     "description": "Staff of a compliance analytics firm: emission rules, executive summaries.",
     "health": {
-      "requests": 13,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -6755,6 +6535,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/rekty/towers-verdant-analytics",
     "output_modalities": [
       "text"
@@ -6781,47 +6562,6 @@
     "tools": true
   },
   {
-    "added_date": 1791301691000,
-    "agent": true,
-    "aliases": [
-      "samueltargino0567-ux/Gt3"
-    ],
-    "alpha": true,
-    "base_model": "community/JustScriptzz/qwen-3.8-max",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "health": {
-      "requests": 5,
-      "status": "down",
-      "success_rate": 0
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/samueltargino0567-ux/Gt3",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "Community",
-    "required_safety": [
-      "sexual"
-    ],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "ESC BUS SIMULATOR SKIN"
-  },
-  {
     "added_date": 1792399211000,
     "aliases": [
       "scriptsnsenses-sys/deepseek-v4-flash-0731"
@@ -6838,7 +6578,7 @@
     "health": {
       "requests": 50,
       "status": "degraded",
-      "success_rate": 82
+      "success_rate": 84
     },
     "input_modalities": [
       "text"
@@ -6910,49 +6650,6 @@
     "title": "Deepseek V4.1 Flash"
   },
   {
-    "added_date": 1789390969000,
-    "aliases": [
-      "scriptsnsenses-sys/glm-5.3-flash-free"
-    ],
-    "alpha": true,
-    "brand_icon_url": "https://media.pollinations.ai/7d20bc86-6cd5-415f-aff0-3d7208ab7774",
-    "brand_url": "https://discord.gg/kmPz97gK2k",
-    "capabilities": [
-      "reasoning"
-    ],
-    "category": "text",
-    "community": true,
-    "description": "Z.ai's new GLM 5.3 Flash for free",
-    "health": {
-      "requests": 50,
-      "status": "degraded",
-      "success_rate": 94
-    },
-    "input_modalities": [
-      "text"
-    ],
-    "name": "community/scriptsnsenses-sys/glm-5.3-flash-free",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": 15,
-    "pricing": {
-      "currency": "pollen"
-    },
-    "publisher": "My discord server",
-    "reasoning": true,
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "GLM 5.3 Flash (FREE)"
-  },
-  {
     "added_date": 1794933665000,
     "aliases": [
       "scriptsnsenses-sys/gpt-6-luna:free"
@@ -6970,7 +6667,7 @@
     "health": {
       "requests": 50,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 96
     },
     "input_modalities": [
       "text"
@@ -7001,6 +6698,54 @@
     "tools": true
   },
   {
+    "added_date": 1793020666000,
+    "aliases": [
+      "scriptsnsenses-sys/minimax-m3.1-flash-free"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/7d20bc86-6cd5-415f-aff0-3d7208ab7774",
+    "brand_url": "https://discord.gg/kmPz97gK2k",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262000,
+    "description": "Minimax's lightweight coder for free. Heads Up: Your use is logged so avoid telling secrets or sharing personal data.",
+    "health": {
+      "requests": 50,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "name": "community/scriptsnsenses-sys/minimax-m3.1-flash-free",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 8,
+    "pricing": {
+      "currency": "pollen"
+    },
+    "publisher": "My discord server",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses",
+      "/v1/messages"
+    ],
+    "title": "MiniMax M3.1 Flash (FREE)",
+    "tools": true
+  },
+  {
     "added_date": 1789431627000,
     "agent": true,
     "aliases": [
@@ -7019,13 +6764,16 @@
     "community": true,
     "description": "Send a Image URL, get a 3D media url back",
     "health": {
-      "requests": 5,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations"
     ],
     "name": "community/sharktide/3D-agent",
     "output_modalities": [
@@ -7179,7 +6927,7 @@
     "health": {
       "requests": 50,
       "status": "degraded",
-      "success_rate": 82
+      "success_rate": 88
     },
     "input_modalities": [
       "text",
@@ -7230,7 +6978,7 @@
     "context_length": 128000,
     "description": "Deepseek v3.2 Azure Data Zone Standard, served by Azure AI Foundry",
     "health": {
-      "requests": 42,
+      "requests": 41,
       "status": "healthy",
       "success_rate": 100
     },
@@ -7330,7 +7078,7 @@
     "context_length": 1050000,
     "description": "GPT-6 Luna, served by InferencePort AI through Microsoft Cognitive Services and Experiential Cloud, 25% off limited time",
     "health": {
-      "requests": 42,
+      "requests": 41,
       "status": "healthy",
       "success_rate": 100
     },
@@ -7434,12 +7182,18 @@
     "category": "text",
     "community": true,
     "health": {
-      "requests": 3,
+      "requests": 33,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text"
+    ],
+    "mcp_servers": [
+      "computer",
+      "exa",
+      "ffmpeg",
+      "pollinations"
     ],
     "name": "community/sharktide/inferenceport-ai-kimi-k2.7-code-deep-logician",
     "output_modalities": [
@@ -7533,13 +7287,19 @@
     "community": true,
     "description": "InferencePort AI Lightning Text v2 with Advanced Web Search and External Capabilities",
     "health": {
-      "requests": 4,
+      "requests": 38,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations",
+      "ffmpeg",
+      "exa",
+      "computer"
     ],
     "name": "community/sharktide/inferenceport-ai-lightning-text-v2-expanded-knowledge",
     "output_modalities": [
@@ -7777,7 +7537,7 @@
     "context_length": 400000,
     "description": "Generates concise, relevant titles from arbitrary text",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -7785,6 +7545,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/smplstuff/title-generator",
     "output_modalities": [
       "text"
@@ -7859,6 +7620,53 @@
     "tools": true
   },
   {
+    "added_date": 1790704826000,
+    "aliases": [
+      "tomdacatto/Qwen3.8-Flash-Next"
+    ],
+    "alpha": true,
+    "brand_url": "https://ai.tomdacat.com/",
+    "capabilities": [
+      "tool_calling",
+      "reasoning"
+    ],
+    "category": "text",
+    "community": true,
+    "context_length": 262141,
+    "health": {
+      "requests": 50,
+      "status": "healthy",
+      "success_rate": 100
+    },
+    "input_modalities": [
+      "text",
+      "image"
+    ],
+    "name": "community/tomdacatto/Qwen3.8-Flash-Next",
+    "output_modalities": [
+      "text"
+    ],
+    "paid_only": true,
+    "per_user_rpm": null,
+    "pricing": {
+      "completionTextTokens": "0.0000008",
+      "currency": "pollen",
+      "promptTextTokens": "0.0000003"
+    },
+    "publisher": "TomdacatAI",
+    "reasoning": true,
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/text",
+      "/text/{prompt}",
+      "/v1/responses",
+      "/v1/messages"
+    ],
+    "title": "Qwen 3.8 Flash Next",
+    "tools": true
+  },
+  {
     "added_date": 1789742901000,
     "agent": true,
     "aliases": [
@@ -7876,13 +7684,16 @@
     "context_length": 1050000,
     "description": "Re-verifies knowledge/gotchas/ entries in Pollinations collective memory",
     "health": {
-      "requests": 4,
+      "requests": 36,
       "status": "healthy",
       "success_rate": 100
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "computer"
     ],
     "name": "community/tomdacatto/gotcha-scout",
     "output_modalities": [
@@ -7979,8 +7790,8 @@
     "community": true,
     "health": {
       "requests": 50,
-      "status": "degraded",
-      "success_rate": 94
+      "status": "healthy",
+      "success_rate": 96
     },
     "input_modalities": [
       "text",
@@ -8023,7 +7834,7 @@
     "community": true,
     "description": "Code agent: routes Pollinations requests by task difficulty, resolved against the live model catalog and health",
     "health": {
-      "requests": 18,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8068,7 +7879,7 @@
     "context_length": 400000,
     "description": "Hikers' voice memos become trail condition reports. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8076,6 +7887,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/tomdacatto/tower-fieldnotes",
     "output_modalities": [
       "text"
@@ -8119,7 +7931,7 @@
     "context_length": 400000,
     "description": "Turns what is in the fridge into a week of dinners. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8127,6 +7939,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/tomdacatto/tower-kitchen-table",
     "output_modalities": [
       "text"
@@ -8170,7 +7983,7 @@
     "context_length": 400000,
     "description": "Repair guides for broken appliances, found from the model number. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8178,6 +7991,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/tomdacatto/tower-lumen-repairs",
     "output_modalities": [
       "text"
@@ -8221,7 +8035,7 @@
     "context_length": 400000,
     "description": "City council agendas turned into two-minute summaries. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8229,6 +8043,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/tomdacatto/tower-noticeboard",
     "output_modalities": [
       "text"
@@ -8272,7 +8087,7 @@
     "context_length": 400000,
     "description": "Open-source changelogs rewritten as upgrade guides. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8280,6 +8095,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/tomdacatto/tower-patchwork",
     "output_modalities": [
       "text"
@@ -8323,7 +8139,7 @@
     "context_length": 400000,
     "description": "Keeps heirloom seed varieties alive and swaps them between growers. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8331,6 +8147,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/tomdacatto/tower-seedbank",
     "output_modalities": [
       "text"
@@ -8374,7 +8191,7 @@
     "context_length": 400000,
     "description": "Chases late freelancer invoices politely until they are paid. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 23,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8382,6 +8199,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/tomdacatto/tower-stillwater",
     "output_modalities": [
       "text"
@@ -8425,7 +8243,7 @@
     "context_length": 400000,
     "description": "Flood alerts for small harbors, in plain words. A company in the Pollen Tower, run by one owner and four AI agents.",
     "health": {
-      "requests": 15,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8433,6 +8251,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/tomdacatto/tower-tidewatch",
     "output_modalities": [
       "text"
@@ -8574,9 +8393,9 @@
     "community": true,
     "description": "No data is collected.",
     "health": {
-      "requests": 31,
+      "requests": 34,
       "status": "degraded",
-      "success_rate": 90.32258064516128
+      "success_rate": 91.17647058823529
     },
     "input_modalities": [
       "text",
@@ -8612,49 +8431,6 @@
     ],
     "title": "Deepseek v4.1 Flash",
     "tools": true
-  },
-  {
-    "added_date": 1786965688000,
-    "aliases": [
-      "vendouple/gemini-3.8-flash"
-    ],
-    "alpha": true,
-    "brand_url": "https://nobindes.work.gd/docs",
-    "capabilities": [],
-    "category": "text",
-    "community": true,
-    "context_length": 1000000,
-    "health": {
-      "requests": 50,
-      "status": "degraded",
-      "success_rate": 82
-    },
-    "input_modalities": [
-      "text",
-      "image"
-    ],
-    "name": "community/vendouple/gemini-3.8-flash",
-    "output_modalities": [
-      "text"
-    ],
-    "paid_only": false,
-    "per_user_rpm": null,
-    "pricing": {
-      "completionReasoningTokens": "0.0000035",
-      "completionTextTokens": "0.0000035",
-      "currency": "pollen",
-      "promptTextTokens": "0.0000015"
-    },
-    "publisher": "OrchidLLM Proxy",
-    "required_safety": [],
-    "supported_endpoints": [
-      "/v1/chat/completions",
-      "/text",
-      "/text/{prompt}",
-      "/v1/responses",
-      "/v1/messages"
-    ],
-    "title": "Gemini 3.8"
   },
   {
     "added_date": 1790517261000,
@@ -8873,13 +8649,16 @@
     "context_length": 200000,
     "description": "CatGPT answers any question with a short, sarcastic feline reply drawn as a single-panel comic. Based on CatGPT by Tanika Godbole (@missfitcomics).",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 50,
+      "status": "degraded",
+      "success_rate": 86
     },
     "input_modalities": [
       "text",
       "image"
+    ],
+    "mcp_servers": [
+      "pollinations"
     ],
     "name": "community/voodoohop/catgpt-comic",
     "output_modalities": [
@@ -8923,7 +8702,7 @@
     "context_length": 1000000,
     "description": "email overviewer",
     "health": {
-      "requests": 3,
+      "requests": 37,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8931,6 +8710,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/voodoohop/email-overview",
     "output_modalities": [
       "text"
@@ -8973,7 +8753,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for Civic Atlas: public-service maps, access audits and resident-friendly data explainers.",
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -8981,6 +8761,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-civic-atlas",
     "output_modalities": [
       "text"
@@ -9027,7 +8808,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for ClearClause Studio: contract-obligation maps and adviser question lists. Not legal advice.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9035,6 +8816,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-clearclause",
     "output_modalities": [
       "text"
@@ -9081,7 +8863,7 @@
     "context_length": 1048576,
     "description": "Atrium HQ concierge: recommends the right AI-run company floor and shapes a clear assignment.",
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9089,6 +8871,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-concierge",
     "output_modalities": [
       "text"
@@ -9135,7 +8918,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for FieldNotes AI: evidence-linked customer research synthesis and decision memos.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9143,6 +8926,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-fieldnotes",
     "output_modalities": [
       "text"
@@ -9189,7 +8973,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for Loop & Loom: indie-game live-ops research, player-signal digests and patch-note drafts.",
     "health": {
-      "requests": 11,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9197,6 +8981,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-loop-and-loom",
     "output_modalities": [
       "text"
@@ -9243,7 +9028,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for Mise en Place: restaurant review digests, prep planning and service experiments.",
     "health": {
-      "requests": 9,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9251,6 +9036,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-mise-en-place",
     "output_modalities": [
       "text"
@@ -9297,7 +9083,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for Northstar Climate Data: climate-risk research, data-source audits and decision briefs.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9305,6 +9091,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-northstar-climate",
     "output_modalities": [
       "text"
@@ -9351,7 +9138,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for PaperTrail Bio: traceable biomedical evidence tables and literature-synthesis plans.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9359,6 +9146,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-papertrail-bio",
     "output_modalities": [
       "text"
@@ -9405,7 +9193,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for ShelfLife: creator-commerce drop planning, audience digests and product-page drafts.",
     "health": {
-      "requests": 11,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9413,6 +9201,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-shelflife",
     "output_modalities": [
       "text"
@@ -9459,7 +9248,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for SoundPost: podcast research packs, edit plans, show notes and fact-check queues.",
     "health": {
-      "requests": 11,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9467,6 +9256,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-soundpost",
     "output_modalities": [
       "text"
@@ -9513,7 +9303,7 @@
     "context_length": 1048576,
     "description": "Lead Agent for TinyFactory: prototype plans, parts/interface checks and observable QA checklists.",
     "health": {
-      "requests": 12,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9521,6 +9311,7 @@
       "text",
       "image"
     ],
+    "mcp_servers": [],
     "name": "community/xiaotian1171/atrium-tinyfactory",
     "output_modalities": [
       "text"
@@ -9563,7 +9354,7 @@
     "community": true,
     "description": "Health-aware, price-aware model router that answers as the model it picks (Pollinations code agent)",
     "health": {
-      "requests": 11,
+      "requests": 50,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9609,9 +9400,9 @@
     "context_length": 1048576,
     "description": "Get quick help with a programming question or a written logic problem.",
     "health": {
-      "requests": 884,
+      "requests": 1216,
       "status": "healthy",
-      "success_rate": 99.09502262443439
+      "success_rate": 99.75328947368422
     },
     "input_modalities": [
       "text"
@@ -9665,7 +9456,7 @@
     "context_length": 1048576,
     "description": "Use a screenshot alongside code to diagnose a problem and plan the next tool call.",
     "health": {
-      "requests": 37,
+      "requests": 33,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9733,7 +9524,7 @@
     "context_length": 1000000,
     "description": "Work through difficult programming problems with room for extensive code and documentation.",
     "health": {
-      "requests": 52,
+      "requests": 24,
       "status": "healthy",
       "success_rate": 100
     },
@@ -9795,9 +9586,9 @@
     "context_length": 1048576,
     "description": "Write code, inspect screenshots, and call tools to track down a problem.",
     "health": {
-      "requests": 5363,
+      "requests": 6108,
       "status": "healthy",
-      "success_rate": 99.98135371993287
+      "success_rate": 99.98362802881466
     },
     "input_modalities": [
       "text",
@@ -9860,9 +9651,9 @@
     "context_length": 1048576,
     "description": "Test coding, image analysis, and tool use against a fixed model release.",
     "health": {
-      "requests": 1597,
+      "requests": 2569,
       "status": "healthy",
-      "success_rate": 99.62429555416405
+      "success_rate": 99.92214869599066
     },
     "input_modalities": [
       "text",
@@ -9927,9 +9718,9 @@
     "context_length": 1048576,
     "description": "Ask everyday questions about photos, recordings, video, or text at low cost.",
     "health": {
-      "requests": 3319,
+      "requests": 3065,
       "status": "healthy",
-      "success_rate": 99.84935221452244
+      "success_rate": 99.9673735725938
     },
     "input_modalities": [
       "text",
@@ -10000,9 +9791,9 @@
     "context_length": 1048576,
     "description": "Look up recent information on the web and get an answer grounded in the results.",
     "health": {
-      "requests": 310,
+      "requests": 254,
       "status": "healthy",
-      "success_rate": 99.67741935483872
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -10089,7 +9880,7 @@
     "context_length": 1048576,
     "description": "Find answers in long documents and look up supporting information on the web.",
     "health": {
-      "requests": 15,
+      "requests": 39,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10179,7 +9970,7 @@
     "context_length": 1048576,
     "description": "Investigate detailed questions using long documents, images, and videos together.",
     "health": {
-      "requests": 33,
+      "requests": 25,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10301,7 +10092,7 @@
     "context_length": 1048576,
     "description": "Process large batches of text, images, audio, or video quickly.",
     "health": {
-      "requests": 800,
+      "requests": 765,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10388,9 +10179,9 @@
     "context_length": 1048576,
     "description": "Ask about a recording, image, or video clip and check details with a web search.",
     "health": {
-      "requests": 419,
+      "requests": 360,
       "status": "healthy",
-      "success_rate": 99.52267303102626
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -10471,7 +10262,7 @@
     "context_length": 1048576,
     "description": "Work through a coding task with quick feedback from screenshots, audio, or video.",
     "health": {
-      "requests": 538,
+      "requests": 376,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10554,7 +10345,7 @@
     "context_length": 1048576,
     "description": "Investigate complex questions using documents, images, recordings, and web search together.",
     "health": {
-      "requests": 51,
+      "requests": 46,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10701,7 +10492,7 @@
     "context_length": 1048576,
     "description": "High-throughput agentic model for long-horizon coding, tool use and multimodal analysis with a 1M-token context",
     "health": {
-      "requests": 15,
+      "requests": 14,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10776,7 +10567,7 @@
     "context_length": 1048576,
     "description": "Multimodal reasoning for coding and tool use, with native web search",
     "health": {
-      "requests": 528,
+      "requests": 544,
       "status": "healthy",
       "success_rate": 100
     },
@@ -10904,9 +10695,9 @@
     "context_length": 262144,
     "description": "Chat about text and images with a compact model whose weights are publicly available.",
     "health": {
-      "requests": 152,
-      "status": "healthy",
-      "success_rate": 97.36842105263158
+      "requests": 61,
+      "status": "down",
+      "success_rate": 77.04918032786885
     },
     "input_modalities": [
       "text",
@@ -10972,7 +10763,7 @@
     "context_length": 262144,
     "description": "Adjust the reasoning effort when asking questions about text and images.",
     "health": {
-      "requests": 230,
+      "requests": 258,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11085,9 +10876,9 @@
     "context_length": 128000,
     "description": "Get short text replies quickly enough for an interactive app.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 2,
+      "status": "down",
+      "success_rate": 0
     },
     "input_modalities": [
       "text"
@@ -11138,9 +10929,9 @@
     "context_length": 1000000,
     "description": "Generate fast text replies for a search assistant or a voice app.",
     "health": {
-      "requests": 4,
+      "requests": 3,
       "status": "down",
-      "success_rate": 75
+      "success_rate": 66.66666666666666
     },
     "input_modalities": [
       "text"
@@ -11193,9 +10984,9 @@
     "context_length": 131072,
     "description": "Inspect images or video clips and call tools based on what they show.",
     "health": {
-      "requests": 1,
-      "status": "down",
-      "success_rate": 0
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -11261,9 +11052,9 @@
     "context_length": 262144,
     "description": "Analyze long passages and use tools to act on what you find.",
     "health": {
-      "requests": 7,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -11321,9 +11112,9 @@
     "context_length": 128000,
     "description": "Let a router choose a fast model for image questions, tool calls, or JSON replies.",
     "health": {
-      "requests": 2,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -11463,7 +11254,7 @@
     "context_length": 65536,
     "description": "Choose a category, assign a score, or estimate the chance of a yes answer.",
     "health": {
-      "requests": 367,
+      "requests": 572,
       "status": "down",
       "success_rate": 0
     },
@@ -11553,7 +11344,7 @@
     "context_length": 1048576,
     "description": "Plan changes across many files by reasoning over a large codebase.",
     "health": {
-      "requests": 6,
+      "requests": 3,
       "status": "down",
       "success_rate": 0
     },
@@ -11619,7 +11410,7 @@
     "context_length": 131072,
     "description": "Discuss a written passage, follow up with questions, or ask for a summary.",
     "health": {
-      "requests": 698,
+      "requests": 530,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11676,7 +11467,7 @@
     "context_length": 1048576,
     "description": "Ask about images alongside a long document or conversation.",
     "health": {
-      "requests": 138,
+      "requests": 171,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11731,7 +11522,7 @@
     "context_length": 131072,
     "description": "Analyze text and images within 128K tokens, without tool calling or structured output.",
     "health": {
-      "requests": 59,
+      "requests": 83,
       "status": "healthy",
       "success_rate": 100
     },
@@ -11967,9 +11758,9 @@
     "context_length": 1048576,
     "description": "Carry out a multi-step coding task using text, images, and tools.",
     "health": {
-      "requests": 9,
-      "status": "degraded",
-      "success_rate": 88.88888888888889
+      "requests": 4,
+      "status": "down",
+      "success_rate": 75
     },
     "input_modalities": [
       "text",
@@ -12018,7 +11809,7 @@
     "context_length": 1048576,
     "description": "Adjust the reasoning effort while working on large coding projects with tools.",
     "health": {
-      "requests": 22,
+      "requests": 29,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12076,7 +11867,7 @@
     "context_length": 1048576,
     "description": "Guide a long-running coding task with images alongside a large codebase.",
     "health": {
-      "requests": 26,
+      "requests": 24,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12174,9 +11965,9 @@
     "context_length": 32768,
     "description": "Route requests quickly by estimating how likely each option is to be the right choice.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 7,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -12222,7 +12013,7 @@
     "context_length": 200000,
     "description": "Debug and refactor code across programming languages, with low-cost tool use for multistep tasks.",
     "health": {
-      "requests": 96,
+      "requests": 104,
       "status": "down",
       "success_rate": 0
     },
@@ -12288,7 +12079,7 @@
     "context_length": 524288,
     "description": "Work on a coding project with room for many files and follow-up instructions at once.",
     "health": {
-      "requests": 704,
+      "requests": 789,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12355,7 +12146,7 @@
     "context_length": 1048576,
     "description": "Combine images, tools, and large amounts of code in a single programming task.",
     "health": {
-      "requests": 114,
+      "requests": 190,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12423,7 +12214,7 @@
     "context_length": 256000,
     "description": "Write and revise text in multiple languages or ask questions about images.",
     "health": {
-      "requests": 165,
+      "requests": 222,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12478,9 +12269,9 @@
     "context_length": 524288,
     "description": "Combine images, code, and long documents to reason through a task and call tools.",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -12541,9 +12332,9 @@
     "context_length": 128000,
     "description": "Give instructions in plain language to call a function, such as looking up a record.",
     "health": {
-      "requests": 79,
+      "requests": 60,
       "status": "degraded",
-      "success_rate": 91.13924050632912
+      "success_rate": 90
     },
     "input_modalities": [
       "text",
@@ -12607,9 +12398,9 @@
     "context_length": 262144,
     "description": "Match a diagram to its written explanation or ask how an image supports a claim.",
     "health": {
-      "requests": 4592,
+      "requests": 4526,
       "status": "healthy",
-      "success_rate": 99.97822299651567
+      "success_rate": 99.97790543526293
     },
     "input_modalities": [
       "text",
@@ -12678,7 +12469,7 @@
     "context_length": 262000,
     "description": "Investigate multi-step questions about text and images with tools.",
     "health": {
-      "requests": 67,
+      "requests": 108,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12804,7 +12595,7 @@
     "context_length": 1048576,
     "description": "Work through programming tasks with images, code, and external tools.",
     "health": {
-      "requests": 29,
+      "requests": 283,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12862,7 +12653,7 @@
     "context_length": 1048576,
     "description": "Use screenshots to guide code changes across a large project.",
     "health": {
-      "requests": 79,
+      "requests": 124,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12921,7 +12712,7 @@
     "context_length": 1048576,
     "description": "Get fast feedback while working across a large codebase with screenshots and tools.",
     "health": {
-      "requests": 36,
+      "requests": 8,
       "status": "healthy",
       "success_rate": 100
     },
@@ -12978,9 +12769,9 @@
     "context_length": 262144,
     "description": "Ask coding questions from text or screenshots and switch deeper reasoning on or off.",
     "health": {
-      "requests": 14,
-      "status": "down",
-      "success_rate": 57.14285714285714
+      "requests": 4,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -13035,7 +12826,7 @@
     "context_length": 262144,
     "description": "Check changes across multiple files using screenshots and tools as feedback.",
     "health": {
-      "requests": 2,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13099,9 +12890,9 @@
     "context_length": 262144,
     "description": "Investigate research questions and programming problems across several rounds of tool use.",
     "health": {
-      "requests": 38,
+      "requests": 27,
       "status": "healthy",
-      "success_rate": 97.36842105263158
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -13164,7 +12955,7 @@
     "context_length": 262144,
     "description": "Process a high volume of text requests quickly with tool calls and structured results.",
     "health": {
-      "requests": 186,
+      "requests": 110,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13228,9 +13019,9 @@
     "context_length": 262144,
     "description": "Extract structured results from images and text for other software to use.",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
@@ -13357,7 +13148,7 @@
     "context_length": 400000,
     "description": "Label messages or extract names quickly and at low cost for simple, high-volume tasks.",
     "health": {
-      "requests": 1181,
+      "requests": 939,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13413,7 +13204,7 @@
     "context_length": 400000,
     "description": "Trace a bug through a codebase and plan a fix across multiple files.",
     "health": {
-      "requests": 37,
+      "requests": 51,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13475,7 +13266,7 @@
     "context_length": 1050000,
     "description": "Weigh evidence from long documents and images to work through difficult questions.",
     "health": {
-      "requests": 85,
+      "requests": 86,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13562,9 +13353,9 @@
     "context_length": 400000,
     "description": "Get a quick explanation of a passage or image, with tool calls when needed.",
     "health": {
-      "requests": 401,
+      "requests": 1054,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.90512333965845
     },
     "input_modalities": [
       "text",
@@ -13620,9 +13411,9 @@
     "context_length": 400000,
     "description": "Get quick, low-cost answers to everyday questions about text or images.",
     "health": {
-      "requests": 46116,
+      "requests": 43268,
       "status": "healthy",
-      "success_rate": 99.98915777604303
+      "success_rate": 99.95377646297494
     },
     "input_modalities": [
       "text",
@@ -13681,7 +13472,7 @@
     "context_length": 1050000,
     "description": "Break a complex question into steps and work through them before reaching an answer.",
     "health": {
-      "requests": 129,
+      "requests": 97,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13766,7 +13557,7 @@
     "context_length": 1050000,
     "description": "Classify screenshots or extract details from images quickly and at low cost.",
     "health": {
-      "requests": 554,
+      "requests": 286,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13852,7 +13643,7 @@
     "context_length": 1050000,
     "description": "Use frontier reasoning to connect evidence across long documents and images.",
     "health": {
-      "requests": 10,
+      "requests": 27,
       "status": "healthy",
       "success_rate": 100
     },
@@ -13938,7 +13729,7 @@
     "context_length": 1050000,
     "description": "Balance reasoning depth and speed when analyzing text and images together.",
     "health": {
-      "requests": 13,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14020,7 +13811,7 @@
     "context_length": 1050000,
     "description": "Use frontier reasoning to debug complex code and work through visual tasks with tools.",
     "health": {
-      "requests": 95,
+      "requests": 163,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14102,9 +13893,9 @@
     "context_length": 1050000,
     "description": "Handle focused, high-volume tasks efficiently, such as extracting details from messages and images.",
     "health": {
-      "requests": 3480,
+      "requests": 3575,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.97202797202797
     },
     "input_modalities": [
       "text",
@@ -14253,7 +14044,7 @@
     "context_length": 1050000,
     "description": "Balance reasoning depth and efficiency for complex coding tasks that need several tool calls.",
     "health": {
-      "requests": 124,
+      "requests": 107,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14337,9 +14128,9 @@
     "context_length": 1050000,
     "description": "Get faster responses on demanding coding and tool tasks with reasoning close to the Astra tier.",
     "health": {
-      "requests": 441,
+      "requests": 444,
       "status": "healthy",
-      "success_rate": 99.77324263038548
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -14421,9 +14212,9 @@
     "context_length": 1050000,
     "description": "Interpret screenshots quickly and use visual reasoning to plan computer tasks.",
     "health": {
-      "requests": 1183,
+      "requests": 1598,
       "status": "healthy",
-      "success_rate": 99.91546914623838
+      "success_rate": 99.93742177722153
     },
     "input_modalities": [
       "text",
@@ -14502,7 +14293,7 @@
     "context_length": 1050000,
     "description": "Use frontier reasoning for demanding work that takes many rounds of analysis and tool use.",
     "health": {
-      "requests": 10,
+      "requests": 7,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14584,7 +14375,7 @@
     "context_length": 1050000,
     "description": "Write and debug code efficiently, using tools as the work progresses.",
     "health": {
-      "requests": 11,
+      "requests": 6,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14672,7 +14463,7 @@
     "context_length": 128000,
     "description": "Carry on a natural-sounding voice conversation or ask for a written reply.",
     "health": {
-      "requests": 6,
+      "requests": 12,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14745,7 +14536,7 @@
     "context_length": 128000,
     "description": "Ask a question out loud and get the answer in speech or text.",
     "health": {
-      "requests": 133,
+      "requests": 116,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14817,9 +14608,9 @@
     "context_length": 131072,
     "description": "Work through written logic problems with a compact model whose weights are publicly available.",
     "health": {
-      "requests": 246509,
+      "requests": 194970,
       "status": "healthy",
-      "success_rate": 99.85355504261507
+      "success_rate": 99.89536851823357
     },
     "input_modalities": [
       "text"
@@ -14932,7 +14723,7 @@
     "context_length": 128000,
     "description": "Search the web and get a brief answer with sources you can follow.",
     "health": {
-      "requests": 97,
+      "requests": 74,
       "status": "healthy",
       "success_rate": 100
     },
@@ -14997,7 +14788,7 @@
     "community": false,
     "description": "Turn a description of a tune into MIDI notation you can play.",
     "health": {
-      "requests": 22,
+      "requests": 24,
       "status": "healthy",
       "success_rate": 100
     },
@@ -15050,7 +14841,7 @@
     "community": false,
     "description": "Compose a detailed MIDI arrangement from a description of the music you have in mind.",
     "health": {
-      "requests": 13,
+      "requests": 14,
       "status": "healthy",
       "success_rate": 100
     },
@@ -15134,7 +14925,7 @@
     "context_length": 1048576,
     "description": "Trace a software change across long stretches of code and plan its implementation.",
     "health": {
-      "requests": 55,
+      "requests": 57,
       "status": "down",
       "success_rate": 0
     },
@@ -15190,7 +14981,7 @@
     "context_length": 262144,
     "description": "Turn a written description into code or get a quick fix for an existing snippet.",
     "health": {
-      "requests": 24,
+      "requests": 35,
       "status": "healthy",
       "success_rate": 100
     },
@@ -15244,9 +15035,9 @@
     "context_length": 262144,
     "description": "Generate code from written instructions for demanding programming projects.",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 3,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -15377,7 +15168,7 @@
     "context_length": 131072,
     "description": "Read text in an image, describe a scene, or ask about individual details.",
     "health": {
-      "requests": 109,
+      "requests": 27,
       "status": "healthy",
       "success_rate": 100
     },
@@ -15439,7 +15230,7 @@
     "context_length": 1000000,
     "description": "Analyze images and video quickly and at low cost, with support for tool calls.",
     "health": {
-      "requests": 278,
+      "requests": 293,
       "status": "healthy",
       "success_rate": 100
     },
@@ -15680,7 +15471,7 @@
     "context_length": 1000000,
     "description": "Write code or use tools for everyday tasks involving text and images.",
     "health": {
-      "requests": 91,
+      "requests": 187,
       "status": "healthy",
       "success_rate": 100
     },
@@ -15905,7 +15696,7 @@
     "context_length": 1000000,
     "description": "Generate unusually long code or text replies from large inputs, with up to 131,000 tokens of output.",
     "health": {
-      "requests": 121,
+      "requests": 481,
       "status": "healthy",
       "success_rate": 100
     },
@@ -15974,7 +15765,7 @@
     "context_length": 1000000,
     "description": "Plan and carry out code changes using images or video alongside many files.",
     "health": {
-      "requests": 8,
+      "requests": 3,
       "status": "healthy",
       "success_rate": 100
     },
@@ -16162,9 +15953,9 @@
     "context_length": 32768,
     "description": "Check text for unsafe content to help moderate conversations.",
     "health": {
-      "requests": 1077,
+      "requests": 3493,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 99.59919839679358
     },
     "input_modalities": [
       "text"
@@ -16211,7 +16002,7 @@
     "context_length": 1000000,
     "description": "Work across large codebases and use screenshots to reason about programming tasks.",
     "health": {
-      "requests": 11,
+      "requests": 29,
       "status": "healthy",
       "success_rate": 100
     },
@@ -16270,7 +16061,7 @@
     "community": false,
     "description": "Estimate whether a conversation shows the behavior described in a plain-text yes/no question. Respan retains prompts and excludes them from training.",
     "health": {
-      "requests": 48,
+      "requests": 42,
       "status": "healthy",
       "success_rate": 100
     },
@@ -16313,9 +16104,9 @@
     "context_length": 256000,
     "description": "Explore long coding problems with tools. Zero data retention is unavailable, and prompts and replies may be retained and used for training.",
     "health": {
-      "requests": 2587,
+      "requests": 3610,
       "status": "degraded",
-      "success_rate": 84.26749130266718
+      "success_rate": 81.85595567867036
     },
     "input_modalities": [
       "text"
@@ -16369,7 +16160,7 @@
     "context_length": 262144,
     "description": "Work through everyday text questions quickly and at low cost.",
     "health": {
-      "requests": 48,
+      "requests": 52,
       "status": "down",
       "success_rate": 0
     },
@@ -16553,9 +16344,9 @@
     "context_length": 262144,
     "description": "Carry out a written task step by step using external tools.",
     "health": {
-      "requests": 3,
-      "status": "down",
-      "success_rate": 0
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -16614,9 +16405,9 @@
     "context_length": 1024000,
     "description": "Work on large coding tasks at low cost with images alongside the code.",
     "health": {
-      "requests": 46,
+      "requests": 129,
       "status": "healthy",
-      "success_rate": 100
+      "success_rate": 97.67441860465115
     },
     "input_modalities": [
       "text",
@@ -16672,7 +16463,7 @@
     "context_length": 1048576,
     "description": "Plan software changes and call tools at each stage of a coding task.",
     "health": {
-      "requests": 37,
+      "requests": 21,
       "status": "healthy",
       "success_rate": 100
     },
@@ -16728,7 +16519,7 @@
     "context_length": 1048576,
     "description": "Draw on long collections of text, images, and audio to answer questions or write code.",
     "health": {
-      "requests": 54,
+      "requests": 55,
       "status": "down",
       "success_rate": 0
     },
@@ -16796,9 +16587,9 @@
     "context_length": 1048576,
     "description": "A compact 26.4B-parameter multimodal mixture-of-experts model with 3.4B active parameters and repeated transformer layers. Supports code generation, tool calling, RAG and image-grounded dialogue across a one-million-token context.",
     "health": {
-      "requests": 43,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 11,
+      "status": "degraded",
+      "success_rate": 90.9090909090909
     },
     "input_modalities": [
       "text",
@@ -16856,7 +16647,7 @@
     "context_length": 524288,
     "description": "Combine text, images, and recordings to investigate a question or a coding task.",
     "health": {
-      "requests": 19,
+      "requests": 2,
       "status": "healthy",
       "success_rate": 100
     },
@@ -16921,7 +16712,7 @@
     "context_length": 64000,
     "description": "Get calibrated confidence for choices, scores, and yes/no answers.",
     "health": {
-      "requests": 390,
+      "requests": 524,
       "status": "healthy",
       "success_rate": 100
     },
@@ -16961,9 +16752,9 @@
     "context_length": 65536,
     "description": "Classify or route text by picking an option, assigning a score, or estimating the chance of a yes answer. Inputs may be logged and used for training.",
     "health": {
-      "requests": 3,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text"
@@ -17017,7 +16808,7 @@
     "context_length": 262144,
     "description": "Chat about text or images and turn on deeper reasoning when needed.",
     "health": {
-      "requests": 116,
+      "requests": 895,
       "status": "healthy",
       "success_rate": 100
     },
@@ -17076,7 +16867,7 @@
     "context_length": 200000,
     "description": "Compare figures across reports, with images and long documents in the same request.",
     "health": {
-      "requests": 37,
+      "requests": 33,
       "status": "healthy",
       "success_rate": 100
     },
@@ -17134,7 +16925,7 @@
     "context_length": 200000,
     "description": "Analyze source material for research or work through a programming question.",
     "health": {
-      "requests": 27,
+      "requests": 47,
       "status": "healthy",
       "success_rate": 100
     },
@@ -17192,7 +16983,7 @@
     "context_length": 500000,
     "description": "Carry out long coding or research tasks that need repeated tool calls.",
     "health": {
-      "requests": 2,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -17283,7 +17074,7 @@
     "context_length": 1048576,
     "description": "Write code and plan tool calls using written instructions and images.",
     "health": {
-      "requests": 10,
+      "requests": 3,
       "status": "down",
       "success_rate": 0
     },
@@ -17343,9 +17134,9 @@
     "context_length": 1048576,
     "description": "Get quick feedback on images and code during an interactive programming session.",
     "health": {
-      "requests": 86,
+      "requests": 32,
       "status": "healthy",
-      "success_rate": 98.83720930232558
+      "success_rate": 100
     },
     "input_modalities": [
       "text",
@@ -17404,7 +17195,7 @@
     "context_length": 1048576,
     "description": "Review a large codebase alongside screenshots to reason through possible changes.",
     "health": {
-      "requests": 46,
+      "requests": 9,
       "status": "healthy",
       "success_rate": 100
     },
@@ -17468,7 +17259,7 @@
     "context_length": 1048576,
     "description": "Analyze long documents and call tools with a model whose weights are publicly available.",
     "health": {
-      "requests": 125,
+      "requests": 124,
       "status": "healthy",
       "success_rate": 100
     },
@@ -17526,7 +17317,7 @@
     "context_length": 1048576,
     "description": "Work through extended software engineering tasks with a model that reasons before every answer.",
     "health": {
-      "requests": 696,
+      "requests": 717,
       "status": "healthy",
       "success_rate": 100
     },
@@ -17590,7 +17381,7 @@
     "context_length": 1048576,
     "description": "Analyze images alongside long documents at low cost, with room for a million tokens.",
     "health": {
-      "requests": 1755,
+      "requests": 1952,
       "status": "healthy",
       "success_rate": 100
     },
@@ -17656,9 +17447,9 @@
     "context_length": 1048576,
     "description": "Get quick answers to questions that combine images with long documents or code.",
     "health": {
-      "requests": 1,
-      "status": "healthy",
-      "success_rate": 100
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
     },
     "input_modalities": [
       "text",
