@@ -13,7 +13,7 @@
     "context_length": 128000,
     "description": "Match images with descriptions across languages using embeddings of up to 1,536 dimensions.",
     "health": {
-      "requests": 28,
+      "requests": 19,
       "status": "healthy",
       "success_rate": 100
     },
@@ -50,7 +50,7 @@
     "community": true,
     "description": "Google's text embedding model for search, retrieval and classification, in over 100 languages. 3072 dimensions, or fewer with dimensions. More at https://ai.saauf.xyz/models/gemini-embedding-1",
     "health": {
-      "requests": 2,
+      "requests": 1,
       "status": "healthy",
       "success_rate": 100
     },
@@ -186,6 +186,43 @@
     "title": "Nemotron 3 Embed 1B"
   },
   {
+    "added_date": 1793533628000,
+    "aliases": [
+      "Saauf/nemotron-3.5-embed-1b"
+    ],
+    "alpha": true,
+    "brand_icon_url": "https://media.pollinations.ai/93981a58-f161-44b2-95f5-d16cb52d6d8b",
+    "brand_url": "https://ai.saauf.xyz/",
+    "capabilities": [],
+    "category": "embedding",
+    "community": true,
+    "description": "NVIDIA's small, fast text embedding model for search and retrieval, 2048 dimensions. Takes input_type query or passage. More at https://ai.saauf.xyz/models/nemotron-3.5-embed-1b",
+    "health": {
+      "requests": 0,
+      "status": "unknown",
+      "success_rate": null
+    },
+    "input_modalities": [
+      "text"
+    ],
+    "name": "community/Saauf/nemotron-3.5-embed-1b",
+    "output_modalities": [
+      "embedding"
+    ],
+    "paid_only": false,
+    "per_user_rpm": 10,
+    "pricing": {
+      "currency": "pollen",
+      "promptTextTokens": "0.00000013"
+    },
+    "publisher": "SaaufAI",
+    "required_safety": [],
+    "supported_endpoints": [
+      "/v1/embeddings"
+    ],
+    "title": "Nemotron 3.5 Embed 1B"
+  },
+  {
     "added_date": 1793532985000,
     "aliases": [
       "Saauf/nemotron-3.5-embed-8b"
@@ -198,9 +235,9 @@
     "community": true,
     "description": "NVIDIA's largest text embedding model for search and retrieval, 4096 dimensions. Takes input_type query or passage. More at https://ai.saauf.xyz/models/nemotron-3.5-embed-8b",
     "health": {
-      "requests": 0,
-      "status": "unknown",
-      "success_rate": null
+      "requests": 7,
+      "status": "healthy",
+      "success_rate": 100
     },
     "input_modalities": [
       "text"
@@ -270,7 +307,7 @@
     "context_length": 8192,
     "description": "Match text, images, audio and video by meaning in up to 3,072 dimensions.",
     "health": {
-      "requests": 1581,
+      "requests": 1813,
       "status": "healthy",
       "success_rate": 100
     },
@@ -310,7 +347,7 @@
     "context_length": 8192,
     "description": "Find relevant passages across languages with text embeddings of up to 3,072 dimensions.",
     "health": {
-      "requests": 1,
+      "requests": 138,
       "status": "healthy",
       "success_rate": 100
     },
@@ -344,7 +381,7 @@
     "context_length": 8192,
     "description": "Find similar passages using low-cost text embeddings of up to 1,536 dimensions.",
     "health": {
-      "requests": 514,
+      "requests": 208,
       "status": "healthy",
       "success_rate": 100
     },
@@ -378,7 +415,7 @@
     "context_length": 40960,
     "description": "Search long documents across languages using text embeddings of up to 4,096 dimensions.",
     "health": {
-      "requests": 138,
+      "requests": 793,
       "status": "healthy",
       "success_rate": 100
     },
